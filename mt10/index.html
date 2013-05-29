@@ -123,20 +123,23 @@ function toFactorPowerList(factors) {
 <style type="text/css"></style></head>
 <body class="claro" style="">
   <div class="container-fluid">
-    <div class="row-fluid">
+    <div class="rrow-fluid clearfix">
         <div class="span12">
-            	<h2>MT10</h2>
+            	<div class="page-header">
+    	<h1>MT10</h1>
+    </div>
             	<div id="smooth">
-					<h4>Smooth & SuperSmooth</h4>
+					<h4>Smooth & Supersmooth</h4>
 					<input class="x" type="text" placeholder="x" value="12"><br>
 					<button type="button" class="btn" onclick="simple_smooth_calcul()">Calculer</button>
 					<b><div class="result">
 					</div></b>
 				</div>
+				<br>
             	<div id="smooth-table">
 					<h4>Tableau des B-Smooth</h4>
-					<input class="x" type="text" placeholder="x max" value="70"><br>
-					<input class="B" type="text" placeholder="B max" value="10"><br>
+					<label>X max:</label> <input class="x" type="text" placeholder="x max" value="70"><br>
+					<label>B max:</label> <input class="B" type="text" placeholder="B max" value="10"><br>
 					<button type="button" class="btn" onclick="generate_smooth_table()">Calculer</button>
 					<table class="table">
 						<thead>
