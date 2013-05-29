@@ -1,14 +1,196 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>MT10 - jsFiddle demo</title>
+  
+  <script type="text/javascript" src="http://code.jquery.com/jquery-git2.js" djconfig="parseOnLoad: true"></script><style type="text/css"></style>
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+    
+      <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css">
+    
+    
+  
+  <style type="text/css">
+    
+  </style>
+  
 
-<head>
-	<title>MT10</title>
-	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<script type="text/javascript">//<![CDATA[ 
+
+function smoofitude(x){
+    return primeFactorList(x);
+}
+
+function smooth() {
+    var Bmax = parseInt($("#max-smooth").val());
+    $("#smooth-table tbody").html("");
+    for(var i = 2;i <= Bmax;i++){
+        var arr = smoofitude(i);
+        var s = "";
+        for(var j = 0;j < arr.length;j++){
+            s += arr[j] + "";
+        }
+        $("#smooth-table tbody").append($("<tr><th>"+i+"</th><th>"+s+"</th></tr>"));
+    }
+	// Reset output line 1 with blank filler to prevent the page layout from bobbing up and down
+	var outElem1 = document.getElementById("factorization1");
+	removeAllChildren(outElem1);
+	outElem1.appendChild(document.createTextNode(NBSP));
+	var temp = document.createElement("sup");
+	temp.appendChild(document.createTextNode(NBSP));
+	outElem1.appendChild(temp);
+	
+	if (!/^-?\d+$/.test(numberText)) {
+		outElem0.firstChild.data = "Not an integer";
+		return;
+	}
+	
+	var n = parseInt(numberText, 10);
+	if (n < 2) {
+		outElem0.firstChild.data = "Number out of range (< 2)";
+	} else if (n >= 9007199254740992) {
+		outElem0.firstChild.data = "Number too large";
+	} else {
+		// Main case
+		var factors = primeFactorList(n);
+		var factorPowers = toFactorPowerList(factors);
+		
+		// Build prime factor list without powers
+		outElem0.firstChild.data = n + " = " + factors.join(" " + TIMES + " ");
+		
+		// Build prime factor list with powers in superscripts
+		if (factorPowers.length < factors.length) {
+			removeAllChildren(outElem1);
+			
+			function appendText(str) {
+				outElem1.appendChild(document.createTextNode(str));
+			}
+			
+			appendText(n + " = ");
+			for (var i = 0; i < factorPowers.length; i++) {
+				if (i != 0)
+					appendText(" " + TIMES + " ");
+				
+				appendText(factorPowers[i][0].toString());
+				if (factorPowers[i][1] > 1) {
+					var temp = document.createElement("sup");
+					temp.appendChild(document.createTextNode(factorPowers[i][1].toString()));
+					outElem1.appendChild(temp);
+				}
+			}
+		}
+	}
+}
+
+
+/* 
+ * Returns the list of prime factors (in ascending order) of the given integer.
+ * Examples:
+ *   primeFactorList(1) = []
+ *   primeFactorList(7) = [7]
+ *   primeFactorList(60) = [2, 2, 3, 5]
+ */
+function primeFactorList(n) {
+	if (n < 1)
+		throw "Argument error";
+	
+	var result = [];
+	while (n != 1) {
+		var factor = smallestFactor(n);
+		result.push(factor);
+		n /= factor;
+	}
+	return result;
+}
+
+
+/* 
+ * Returns the smallest prime factor of the given integer.
+ * Examples:
+ *   smallestFactor(2) = 2
+ *   smallestFactor(15) = 3
+ */
+function smallestFactor(n) {
+	if (n < 2)
+		throw "Argument error";
+	
+	if (n % 2 == 0)
+		return 2;
+	var end = Math.floor(Math.sqrt(n));
+	for (var i = 3; i <= end; i += 2) {
+		if (n % i == 0)
+			return i;
+	}
+	return n;
+}
+
+
+/* 
+ * Returns the prime factorization as a list of factor-power pairs, from the given factor list. The given list must be in ascending order.
+ * Examples:
+ *   toFactorPowerList([2, 2, 2]) = [[2, 3]]
+ *   toFactorPowerList([3, 5]) = [[3, 1], [5, 1]]
+ */
+function toFactorPowerList(factors) {
+	var result = [];
+	var factor = factors[0];
+	var count = 1;
+	for (var i = 1; i < factors.length; i++) {
+		if (factors[i] == factor) {
+			count++;
+		} else {
+			result.push([factor, count]);
+			factor = factors[i];
+			count = 1;
+		}
+	}
+	result.push([factor, count]);
+	return result;
+}
+//]]>  
+
+</script>
+
+
 </head>
+<body class="claro" style="">
+  <div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            	<h3>
+				MT10
+			</h3>
 
-<body>
-<iframe width="100%" height="300" src="http://jsfiddle.net/vcKdF/4566/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-</body>
+            <form>
+                <fieldset>
+                    <legend>Tableau des Smooth</legend>
+                    <label>B max</label>
+                    <input id="max-smooth" type="text" value="14"><br>
+                    <button type="button" class="btn" onclick="smooth()">Calculer</button>
+                </fieldset>
+            </form>
+            <table id="smooth-table" class="table">
+                <thead>
+                    <tr>
+                        <th>B</th>
+                        <th>B-smooth</th>
+                        <th>B-supersmooth</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+  
 
-</html>
+
+
+
+
+</body></html>
