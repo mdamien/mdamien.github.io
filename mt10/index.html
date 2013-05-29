@@ -1,23 +1,11 @@
 <html><head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>MT10 - jsFiddle demo</title>
+  <title>MT10</title>
   
-  <script type="text/javascript" src="http://code.jquery.com/jquery-git2.js" djconfig="parseOnLoad: true"></script>
-  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
-  
-  
-  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
-  
-    
-      <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css">
-    
-    
-  
+  <script type="text/javascript" src="http://code.jquery.com/jquery-git2.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css">
   <style type="text/css">
-    
   </style>
-  
-
 
 <script type="text/javascript">//<![CDATA[ 
 
@@ -33,13 +21,54 @@ function supersmoofitude(x){
     return max;
 }
 
-function smooth() {
-    var Bmax = parseInt($("#max-smooth").val());
+function simple_smooth_calcul() {
+    var x = parseInt($("#smooth .x").val());
+    var s = x + "=" + primeFactorList(x).join("*")+"<br/>";
+    $("#smooth .result").html(s+x+" est "+smoofitude(x)+"-smooth et "+supersmoofitude(x)+"-supersmooth");
+}
+function smoothtable(maxx){
+	var res = {}
+    for(var i = 2;i <= maxx;i++){
+        var r = smoofitude(i);
+        if( res[r] == undefined){
+			res[r] = [i];
+		}else{
+			res[r].push(i);
+		}
+    }
+    return res;
+}
+function supersmoothtable(maxx){
+	var res = {}
+    for(var i = 2;i <= maxx;i++){
+        var r = supersmoofitude(i);
+        if( res[r] == undefined){
+			res[r] = [i];
+		}else{
+			res[r].push(i);
+		}
+    }
+    return res;
+}
+
+function generate_smooth_table() {
+    var maxx = parseInt($("#smooth-table .x").val());
+    var maxB = parseInt($("#smooth-table .B").val());
+    var sm = smoothtable(maxx);
+    var ssm = supersmoothtable(maxx);
     $("#smooth-table tbody").html("");
-    for(var i = 2;i <= Bmax;i++){
-        var s1 = smoofitude(i);
-        var s2 = supersmoofitude(i);
-        $("#smooth-table tbody").append($("<tr><th>"+i+"</th><th>"+s1+"</th><th>"+s2+"</th></tr>"));
+    for(var i = 2;i <= maxB;i++){
+		var r = i == 2 ? "": "Id";
+		if (sm[i] != undefined){
+			r += i == 2 ? "": " + ";
+			r += sm[i];
+		}
+		var r2 = i == 2 ? "": "Id";
+		if (ssm[i] != undefined){
+			r2 += i == 2 ? "": " + ";
+			r2 += ssm[i];
+		}
+        $("#smooth-table tbody").append($("<tr><th>"+i+"</th><th>"+r+"</th><th>"+r2+"</th></tr>"));
     }
 }
 
@@ -96,29 +125,32 @@ function toFactorPowerList(factors) {
   <div class="container-fluid">
     <div class="row-fluid">
         <div class="span12">
-            	<h3>
-				MT10
-			</h3>
-
-            <form>
-                <fieldset>
-                    <legend>Tableau des Smooth</legend>
-                    <label>X max</label>
-                    <input id="max-smooth" type="text" value="14"><br>
-                    <button type="button" class="btn" onclick="smooth()">Calculer</button>
-                </fieldset>
-            </form>
-            <table id="smooth-table" class="table">
-                <thead>
-                    <tr>
-                        <th>X</th>
-                        <th>Smoothitude</th>
-                        <th>Super-Smoothitude</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+            	<h2>MT10</h2>
+            	<div id="smooth">
+					<h4>Smooth & SuperSmooth</h4>
+					<input class="x" type="text" placeholder="x" value="12"><br>
+					<button type="button" class="btn" onclick="simple_smooth_calcul()">Calculer</button>
+					<b><div class="result">
+					</div></b>
+				</div>
+            	<div id="smooth-table">
+					<h4>Tableau des B-Smooth</h4>
+					<input class="x" type="text" placeholder="x max" value="70"><br>
+					<input class="B" type="text" placeholder="B max" value="10"><br>
+					<button type="button" class="btn" onclick="generate_smooth_table()">Calculer</button>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>B</th>
+								<th>B-Smooth</th>
+								<th>B-Supersmooth</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+					</div></b>
+				</div>
         </div>
     </div>
 </div>
