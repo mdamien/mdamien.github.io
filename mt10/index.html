@@ -57,6 +57,9 @@ function generate_smooth_table() {
     var sm = smoothtable(maxx);
     var ssm = supersmoothtable(maxx);
     $("#smooth-table tbody").html("");
+    if(maxB == undefined){
+    	return;
+    }
     for(var i = 2;i <= maxB;i++){
 		var r = i == 2 ? "": "Id";
 		if (sm[i] != undefined){
@@ -115,6 +118,101 @@ function toFactorPowerList(factors) {
 	result.push([factor, count]);
 	return result;
 }
+
+function goRabin(){
+	var p = parseInt($("#rabin .p").val());
+	var a = parseInt($("#rabin .a").val());
+	if(a == undefined || p == undefined){
+    	return;
+    }
+    $("#rabin .result").html(rabinMiller(p,a))
+}
+
+function rapidExpo(a,p,n){ //a^p mod n
+	var prod = 1;
+	while(p > 0){
+		prod = (prod*a) % n;
+		p -= 1;
+	}
+	return prod;
+}
+
+function rabinMiller(p,a){
+	var b = 0;
+	var a2 = a;
+	while(a2 % 2 != 0){
+		a2 /= 2;
+		b += 1;
+	}
+	var m = (p-1)/Math.pow(2,b);
+	z = rapidExpo(a,m,p);
+	if(z == 1 || z == p-1){
+		return "Probablement premier";
+	}
+	for(var j = 1;j < b;j++){
+		z = (z*z) % p;
+		if(z = p-1){
+			return "Probablement premier";
+		}
+		if(z = 1){
+			return "Non premier";
+		}
+	}
+	return "Non premier";
+}
+
+function goPollard(){
+	$("#pollard .result").html("");
+	var N = parseInt($("#pollard .N").val());
+	var a = parseInt($("#pollard .a").val());
+	if( a == undefined || N == undefined){
+    	return;
+    }
+    $("#pollard .result").html(pollard(N,a));
+}
+
+function pollard(N,a){
+	for(var B = 2;B < N-1;B++){
+		D = gcd(a,N);
+		if(D != 1){
+			return "D = "+D+" , B = "+B;
+		}
+		for(var p=2;p < B;p++){
+			if(isPrime(p)){
+				ep = Math.floor(Math.log(B)/Math.log(p));
+				a = rapidExpo(a,Math.pow(p,ep),N);
+			}
+		}
+		if(a-1 == 0) return "Changer a";
+		D = gcd(a-1,N);
+		if(D != 1){
+			return "D = "+D+" , B = "+B;
+		}
+	}
+	return "Echec de la factorisation";
+}
+
+function gcd(x, y) {
+	while (y != 0) {
+		var z = x % y;
+		x = y;
+		y = z;
+	}
+	return x;
+}
+
+function isPrime(n) {
+	if (isNaN(n) || !isFinite(n) || n%1 || n<2) return false; 
+	if (n%2==0) return (n==2);
+	if (n%3==0) return (n==3);
+	var m=Math.sqrt(n);
+	for (var i=5;i<=m;i+=6) {
+		if (n%i==0)     return false;
+		if (n%(i+2)==0) return false;
+	}
+	return true;
+} 
+
 //]]>  
 
 </script>
@@ -127,9 +225,10 @@ function toFactorPowerList(factors) {
         <div class="span12">
             	<div class="page-header">
     	<h1>MT10</h1>
+    	<a href="https://github.com/MDamien/mdamien.github.io/blob/master/mt10/index.html">Code source</a>
     </div>
             	<div id="smooth">
-					<h4>Smooth & Supersmooth</h4>
+					<h4># Smooth & Supersmooth</h4>
 					<input class="x" type="text" placeholder="x" value="12"><br>
 					<button type="button" class="btn" onclick="simple_smooth_calcul()">Calculer</button>
 					<b><div class="result">
@@ -137,7 +236,7 @@ function toFactorPowerList(factors) {
 				</div>
 				<br>
             	<div id="smooth-table">
-					<h4>Tableau des B-Smooth</h4>
+					<h4># Tableau des B-Smooth</h4>
 					<label>X max:</label> <input class="x" type="text" placeholder="x max" value="70"><br>
 					<label>B max:</label> <input class="B" type="text" placeholder="B max" value="10"><br>
 					<button type="button" class="btn" onclick="generate_smooth_table()">Calculer</button>
@@ -153,6 +252,27 @@ function toFactorPowerList(factors) {
 						</tbody>
 					</table>
 					</div></b>
+            	<div id="rabin">
+					<h4># Test de primalité de Rabin-Miller</h4>
+					<label>a</label> <input class="a" type="text" placeholder="a" value="2"><br>
+					<label>p</label> <input class="p" type="text" placeholder="p" value="5"><br>
+					<button type="button" class="btn" onclick="goRabin()">Calculer</button>
+					<b><div class="result">
+					</div></b>
+				</div>
+            	<div id="pollard">
+					<h4># Algorithme p-1 de Pollard</h4>
+					<label>N</label> <input class="N" type="text" placeholder="N" value="654544554677"><br>
+					<label>a</label> <input class="a" type="text" placeholder="a" value="453456546456777"><br>
+					<button type="button" class="btn" onclick="goPollard()">Factoriser</button>
+					<b><div class="result">
+					</div></b>
+				</div>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
 				</div>
         </div>
     </div>
