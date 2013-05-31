@@ -213,6 +213,59 @@ function isPrime(n) {
 	return true;
 } 
 
+function goCarmichael(){
+	$("#carmichael .result").html("");
+	var N = parseInt($("#carmichael .N").val());
+	if( N == undefined){
+    	return;
+    }
+    $("#carmichael .result").html(carmichael(N).join(", "));
+}
+
+function isPrimeFactorListUnique(n) {
+	var result = [];
+	while (n != 1) {
+		var factor = smallestFactor(n);
+		if(result.indexOf(factor) != -1){
+			return false;
+		}
+		result.push(factor);
+		n /= factor;
+	}
+	return result;
+}
+
+function carmichael(maxx) {
+/*
+Is N prime? If yes, you're done. It's not a Carmichael number.
+Otherwise, find the prime factors of N. If there are repeats, you're done. It's not a Carmichael number.
+If one of them is 2, you're done. It's not a Carmichael number.
+For each of these factors b, is b^(n-1) mod n equal to 1? If not, you're done. It's not a Carmichael number.
+Otherwise, yes, it is a Carmichael number.
+*/
+	var arr = [];
+	for(var n=1;n <= maxx;n += 2){
+		if(!isPrime(n)){
+			factors = isPrimeFactorListUnique(n);
+			if(factors != false){
+				var carm = true;
+				for(var i=0;i < factors.length;i++){
+					//if(rapidExpo(factors[i],n-1,n) != 1){
+					if(factors[i]-1 % n-1 != 0){
+						carm = false; //counter-example : factors[i]**(n-1) != 1
+						if(n == 561){alert(factors[i]);}
+						break;
+					}
+				}
+				if(carm){
+					arr.push(n);
+				}
+			}
+		}
+	}
+	return arr;
+}
+
 //]]>  
 
 </script>
@@ -265,6 +318,13 @@ function isPrime(n) {
 					<label>N</label> <input class="N" type="text" placeholder="N" value="654544554677"><br>
 					<label>a</label> <input class="a" type="text" placeholder="a" value="453456546456777"><br>
 					<button type="button" class="btn" onclick="goPollard()">Factoriser</button>
+					<b><div class="result">
+					</div></b>
+				</div>
+            	<div style="display: none;" id="carmichael">
+					<h4># Liste des nombres de carmichael</h4>
+					<label>Max n</label> <input class="N" type="text" placeholder="n" value="1000"><br>
+					<button type="button" class="btn" onclick="goCarmichael()">Calculer</button>
 					<b><div class="result">
 					</div></b>
 				</div>
