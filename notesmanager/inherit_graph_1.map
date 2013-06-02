@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_export_strategy.html" title="Classe abstraite d&#39;export de note." alt="" coords="5,85,115,115"/>
+<area shape="rect" id="node3" href="$class_h_t_m_l_export.html" title="Classe d&#39;export de note en HTML." alt="" coords="173,5,269,35"/>
+<area shape="rect" id="node5" href="$class_la_te_x_export.html" title="Classe d&#39;export de note en LaTeX." alt="" coords="172,59,271,88"/>
+<area shape="rect" id="node7" href="$class_save_text_export.html" title="Classe permettant d&#39;exporter dans le format de sauvegarde sur disque." alt="" coords="164,112,279,141"/>
+<area shape="rect" id="node9" href="$class_text_export.html" title="Classe d&#39;export de note en texte basique mais descriptif." alt="" coords="179,165,264,195"/>
+</map>

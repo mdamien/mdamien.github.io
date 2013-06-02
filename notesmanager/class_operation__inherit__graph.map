@@ -1,0 +1,6 @@
+<map id="Operation" name="Operation">
+<area shape="rect" id="node3" href="$class_modify_article_text.html" title="Opération de modification du texte d&#39;un article." alt="" coords="5,83,128,112"/>
+<area shape="rect" id="node5" href="$class_modify_binary_description.html" title="Opération de modification de la description d&#39;un binaire." alt="" coords="152,83,315,112"/>
+<area shape="rect" id="node7" href="$class_modify_binary_path.html" title="Opération de modification du chemin d&#39;un binaire." alt="" coords="339,83,464,112"/>
+<area shape="rect" id="node9" href="$class_modify_note_title.html" title="Opération de modification du titre d&#39;une note." alt="" coords="488,83,603,112"/>
+</map>

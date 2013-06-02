@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['getdescription',['getDescription',['../class_binary.html#ad1a563026885b1da3ef06d420e34b4f2',1,'Binary']]],
+  ['getexporter',['getExporter',['../class_notes_manager.html#a34d6536de0066662d2333997790f8d61',1,'NotesManager']]],
+  ['getexportstrategies',['getExportStrategies',['../class_export_strategy.html#af0dc803439194ec0278f32305441c135',1,'ExportStrategy']]],
+  ['gethistory',['getHistory',['../class_notes_manager.html#ad104bf3921c1b4d0f55d13ea52639cae',1,'NotesManager']]],
+  ['getid',['getId',['../class_note.html#ac4dec7ff573051d2bdf4ff6d6a149536',1,'Note']]],
+  ['getinstance',['getInstance',['../class_main_window.html#a24fe2c62640fb9e420efd1b00b041f7e',1,'MainWindow::getInstance()'],['../class_notes_manager.html#ad1a91e51ba8506c7ae7cd60d06bd075f',1,'NotesManager::getInstance()'],['../class_tag_manager.html#af7de9966f3731509eef656f015df32c8',1,'TagManager::getInstance()'],['../class_trash.html#abeb75c7e2857b5ff32b16c5bd4c8e294',1,'Trash::getInstance()']]],
+  ['getname',['getName',['../class_tag.html#a0aa1b1560628e5f2ba0ac2782fe1f6a2',1,'Tag']]],
+  ['getnewid',['getNewId',['../class_notes_manager.html#a8cad074a374317f40a8e3efab6176eb7',1,'NotesManager']]],
+  ['getnote',['getNote',['../class_article_widget.html#ab17bc861fd7c09dc8c51f9353e95215e',1,'ArticleWidget::getNote()'],['../class_binary_widget.html#ac564ded19011dc183d02f9b0b94d83a4',1,'BinaryWidget::getNote()'],['../class_document_widget.html#a74a9d025b6ef801e9befb0ddccda2a4f',1,'DocumentWidget::getNote()'],['../class_note_list_item.html#ade7633e1fa103f8b649251c2535857a1',1,'NoteListItem::getNote()'],['../class_note_widget.html#a0b0be1b73c158b938863868998342394',1,'NoteWidget::getNote()'],['../class_trashed_list_item.html#a20909d5023f4aaebef9b53d598c77c49',1,'TrashedListItem::getNote()']]],
+  ['getnotebyid',['getNoteByID',['../class_notes_manager.html#ac5b149a13b8d404ab07b3520d631d832',1,'NotesManager']]],
+  ['getnotetags',['getNoteTags',['../class_tag_manager.html#aee20c8befe2ed38666c458a425c41d98',1,'TagManager']]],
+  ['getnumberofsubnotes',['getNumberOfSubNotes',['../class_document.html#a0304b5aeece38938d31e9591c4dbec8c',1,'Document']]],
+  ['getparentdocument',['getParentDocument',['../class_trashed_sub_note_list_item.html#a31fd7415cb715483e32d2f3df85e19de',1,'TrashedSubNoteListItem']]],
+  ['getpath',['getPath',['../class_binary.html#ad75c0d0915bad3d32b469a0ccc436d8f',1,'Binary::getPath()'],['../class_notes_manager.html#a90d9328de74f6e2c1bb748d0a7fedf64',1,'NotesManager::getPath()']]],
+  ['getsubnote',['getSubNote',['../class_document.html#ac490e86b39d0c33f9f10b50c4aace3da',1,'Document']]],
+  ['gettag',['getTag',['../class_tag_list_item.html#aeb32d83b518e7bbf1db78b65936b3f19',1,'TagListItem::getTag()'],['../class_tag_manager.html#adecdbfce8364fe2152fa0a99a46a0983',1,'TagManager::getTag()']]],
+  ['gettags',['getTags',['../class_tag_manager.html#a191433dc6ce3614d46985ea8a21cb591',1,'TagManager']]],
+  ['gettext',['getText',['../class_article.html#a041f1b02cddca30868acbad351e68f0a',1,'Article']]],
+  ['gettitle',['getTitle',['../class_note.html#afcf3940453d9b9fb6e3e61f5aa209fb6',1,'Note']]]
+];

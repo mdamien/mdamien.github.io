@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['save',['save',['../class_main_window.html#a3ba1a371fb10e731ae0926ae85efeb4f',1,'MainWindow::save()'],['../class_save_text_export.html#a0e32663f6eab914be98ff83abe0c6745',1,'SaveTextExport::save()']]],
+  ['savehtml',['saveHTML',['../class_main_window.html#ae1e15a452120ea38ea956ef4a4766faa',1,'MainWindow']]],
+  ['savelatex',['saveLatex',['../class_main_window.html#a7bd9bdba76238b646d453d1640666fd6',1,'MainWindow']]],
+  ['savesettings',['saveSettings',['../class_settings_dialog.html#a878f9892488d4bb049a68ff1cb964409',1,'SettingsDialog']]],
+  ['savetextexport',['SaveTextExport',['../class_save_text_export.html#ae1ef58f6741114681fc04cacc0627324',1,'SaveTextExport']]],
+  ['sendwidgettodelete',['sendWidgetToDelete',['../class_note_widget.html#ae94adca4a0c577a776b4fd7d27db5683',1,'NoteWidget']]],
+  ['setdescription',['setDescription',['../class_binary.html#adf63e9471a63dde5b6fae5ed52eea970',1,'Binary']]],
+  ['setloaded',['setLoaded',['../class_note.html#a495dc658fc0f260cd1b8cb53cb2ba293',1,'Note']]],
+  ['setmodified',['setModified',['../class_note.html#ad17e92f851195591bc028f854a6366d4',1,'Note']]],
+  ['setnotemodified',['setNoteModified',['../class_notes_manager.html#a70a6df7b9f82e6c864d1c72b331367a0',1,'NotesManager']]],
+  ['setpath',['setPath',['../class_binary.html#af564f148d20972efabb9c84357a40b58',1,'Binary::setPath()'],['../class_notes_manager.html#a440c2c48a85024decf107c2f31b2fc28',1,'NotesManager::setPath()']]],
+  ['setproxyapplicationwide',['setProxyApplicationWide',['../class_settings_dialog.html#a58b2f1f8e4969c2a38d7b42a9c10ca1d',1,'SettingsDialog']]],
+  ['settext',['setText',['../class_article.html#a7144942027b1761cfcbd21761dd5cee8',1,'Article']]],
+  ['settingsdialog',['SettingsDialog',['../class_settings_dialog.html#a9933956b777b2c0451e9119581cc22fb',1,'SettingsDialog']]],
+  ['settitle',['setTitle',['../class_note.html#a65150ecf35f28f67a601f687ea3971c8',1,'Note']]],
+  ['showabout',['showAbout',['../class_main_window.html#aa3aa0f3ce42e748b931d6211921ea197',1,'MainWindow']]],
+  ['showhelp',['showHelp',['../class_main_window.html#a3111788b36503e5ae8eabef2b32a6f62',1,'MainWindow']]],
+  ['showtrash',['showTrash',['../class_trash.html#ad76a634c758163e71305fb4449c2d320',1,'Trash']]]
+];

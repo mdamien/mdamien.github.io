@@ -1,0 +1,8 @@
+<map id="NoteWidget" name="NoteWidget">
+<area shape="rect" id="node5" href="$class_article_widget.html" title="Widget permettant la visualisation et l&#39;édition d&#39;une note de type Article dans l&#39;interface graphique..." alt="" coords="5,160,104,189"/>
+<area shape="rect" id="node7" href="$class_binary_widget.html" title="Widget abstrait permettant la visualisation et l&#39;édition d&#39;une note de type Binary dans l&#39;interface g..." alt="" coords="128,160,227,189"/>
+<area shape="rect" id="node15" href="$class_document_widget.html" title="Widget permettant la visualisation et l&#39;édition d&#39;une note de type Document dans l&#39;interface graphiqu..." alt="" coords="251,160,373,189"/>
+<area shape="rect" id="node9" href="$class_audio_widget.html" title="Widget permettant la visualisation et l&#39;édition d&#39;une note de type Audio dans l&#39;interface graphique..." alt="" coords="8,237,104,267"/>
+<area shape="rect" id="node11" href="$class_image_widget.html" title="Widget permettant la visualisation et l&#39;édition d&#39;une note de type Image dans l&#39;interface graphique..." alt="" coords="128,237,227,267"/>
+<area shape="rect" id="node13" href="$class_video_widget.html" title="Widget permettant la visualisation et l&#39;édition d&#39;une note de type Video dans l&#39;interface graphique..." alt="" coords="251,237,347,267"/>
+</map>

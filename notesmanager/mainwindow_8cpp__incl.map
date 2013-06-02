@@ -1,0 +1,25 @@
+<map id="/home/tic/prog/cours/lo21/notesmanager/mainwindow.cpp" name="/home/tic/prog/cours/lo21/notesmanager/mainwindow.cpp">
+<area shape="rect" id="node3" href="$mainwindow_8h.html" title="mainwindow.h" alt="" coords="1067,101,1171,131"/>
+<area shape="rect" id="node152" href="$savetextexport_8h.html" title="savetextexport.h" alt="" coords="5,333,123,363"/>
+<area shape="rect" id="node156" href="$aboutdialog_8h.html" title="aboutdialog.h" alt="" coords="1389,101,1488,131"/>
+<area shape="rect" id="node9" href="$notesmanager_8h.html" title="notesmanager.h" alt="" coords="500,411,615,440"/>
+<area shape="rect" id="node25" href="$binary_8h.html" title="binary.h" alt="" coords="1603,643,1669,672"/>
+<area shape="rect" id="node45" href="$trash_8h.html" title="trash.h" alt="" coords="949,488,1011,517"/>
+<area shape="rect" id="node66" href="$tagmanager_8h.html" title="tagmanager.h" alt="" coords="131,565,232,595"/>
+<area shape="rect" id="node76" href="$notewidget_8h.html" title="notewidget.h" alt="" coords="1044,333,1140,363"/>
+<area shape="rect" id="node85" href="$articlewidget_8h.html" title="articlewidget.h" alt="" coords="564,179,671,208"/>
+<area shape="rect" id="node91" href="$documentwidget_8h.html" title="documentwidget.h" alt="" coords="1412,256,1540,285"/>
+<area shape="rect" id="node98" href="$imagewidget_8h.html" title="imagewidget.h" alt="" coords="1615,179,1721,208"/>
+<area shape="rect" id="node114" href="$audiowidget_8h.html" title="audiowidget.h" alt="" coords="1787,179,1888,208"/>
+<area shape="rect" id="node124" href="$videowidget_8h.html" title="videowidget.h" alt="" coords="1252,179,1353,208"/>
+<area shape="rect" id="node135" href="$settingsdialog_8h.html" title="settingsdialog.h" alt="" coords="377,179,489,208"/>
+<area shape="rect" id="node11" href="$note_8h.html" title="note.h" alt="" coords="596,720,655,749"/>
+<area shape="rect" id="node19" href="$exportstrategy_8h.html" title="exportstrategy.h" alt="" coords="453,565,568,595"/>
+<area shape="rect" id="node37" href="$textexport_8h.html" title="textexport.h" alt="" coords="248,488,339,517"/>
+<area shape="rect" id="node41" href="$htmlexport_8h.html" title="htmlexport.h" alt="" coords="464,488,557,517"/>
+<area shape="rect" id="node59" href="$historymanager_8h.html" title="historymanager.h" alt="" coords="643,565,765,595"/>
+<area shape="rect" id="node28" href="$article_8h.html" title="article.h" alt="" coords="579,643,645,672"/>
+<area shape="rect" id="node31" href="$document_8h.html" title="document.h" alt="" coords="861,643,952,672"/>
+<area shape="rect" id="node71" href="$tag_8h.html" title="tag.h" alt="" coords="181,643,232,672"/>
+<area shape="rect" id="node106" href="$binarywidget_8h.html" title="binarywidget.h" alt="" coords="1615,256,1721,285"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="ExportStrategy" name="ExportStrategy">
+<area shape="rect" id="node3" href="$class_h_t_m_l_export.html" title="Classe d&#39;export de note en HTML." alt="" coords="5,83,101,112"/>
+<area shape="rect" id="node5" href="$class_la_te_x_export.html" title="Classe d&#39;export de note en LaTeX." alt="" coords="125,83,224,112"/>
+<area shape="rect" id="node7" href="$class_save_text_export.html" title="Classe permettant d&#39;exporter dans le format de sauvegarde sur disque." alt="" coords="248,83,363,112"/>
+<area shape="rect" id="node9" href="$class_text_export.html" title="Classe d&#39;export de note en texte basique mais descriptif." alt="" coords="387,83,472,112"/>
+</map>

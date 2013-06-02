@@ -1,0 +1,6 @@
+<map id="Binary" name="Binary">
+<area shape="rect" id="node5" href="$class_audio.html" title="Classe concréte représentant une note contenant un fichier audio,un titre et une description." alt="" coords="5,160,59,189"/>
+<area shape="rect" id="node7" href="$class_image.html" title="Classe concréte représentant une note contenant une image,un titre et une description." alt="" coords="83,160,141,189"/>
+<area shape="rect" id="node9" href="$class_video.html" title="Classe concréte représentant une note contenant une vidéo,un titre et une description." alt="" coords="165,160,219,189"/>
+<area shape="rect" id="node2" href="$class_note.html" title="Classe abstraite représentant une note et ses états (modifiée et/ou ouverte)" alt="" coords="87,5,137,35"/>
+</map>
