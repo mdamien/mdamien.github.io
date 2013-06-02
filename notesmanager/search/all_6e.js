@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['notes_20manager_20documentation',['Notes Manager Documentation',['../index.html',1,'']]],
   ['networkmanager',['networkManager',['../class_binary_widget.html#ae39f1b6c8f878b0898520ca4576d0714',1,'BinaryWidget']]],
   ['newnote',['newNote',['../class_main_window.html#ae96d83550c8c4e55e2f2f5da3065f260',1,'MainWindow']]],
   ['note',['Note',['../class_note.html',1,'Note'],['../class_note.html#afbc6d9b4a1be86c8c272084dfa5e9f65',1,'Note::Note()'],['../class_binary_widget.html#a4065fc2fa0ad61caaecf06d5cd9cc751',1,'BinaryWidget::note()']]],
