@@ -222,6 +222,15 @@ function goCarmichael(){
     $("#carmichael .result").html(carmichael(N).join(", "));
 }
 
+function goCarmichaelTest(){
+	$("#carmichael-test .result").html("");
+	var N = parseInt($("#carmichael-test .N").val());
+	if( N == undefined){
+    	return;
+    }
+    $("#carmichael-test .result").html(carmichaelTest(N));
+}
+
 function isPrimeFactorListUnique(n) {
 	var result = [];
 	while (n != 1) {
@@ -233,6 +242,24 @@ function isPrimeFactorListUnique(n) {
 		n /= factor;
 	}
 	return result;
+}
+
+function carmichaelTest(n) {
+	if(!isPrime(n)){
+		factors = isPrimeFactorListUnique(n);
+		if(factors != false){
+			for(var i=0;i < factors.length;i++){
+				if( n-1 % factors[i]-1 != 0){
+					return "Ce n'est pas un nombre de carmichael :"+(n-1)+" % "+(factors[i]-1) +" == " + (n-1 % factors[i]-1 ) + "( != 0)";
+				}
+			}
+			return "C'est un nombre de carmichael"
+		}
+		return "Le nombre à plusieurs même facteurs premier donc ce n'est pas un nombre de carmichael: facteurs:"+primeFactorList(n);
+	}else{
+		return "Nombre premier donc pas de carmichael"
+	}
+	return "Humm....comment on à put arrivé ici..."
 }
 
 function carmichael(maxx) {
@@ -321,9 +348,16 @@ Otherwise, yes, it is a Carmichael number.
 					<b><div class="result">
 					</div></b>
 				</div>
-            	<div style="display: none;" id="carmichael">
+            	<div id="carmichael-test">
+					<h4># Test: Nombre de carmichael ?</h4>
+					<label>n</label> <input class="N" type="text" placeholder="n" value="600"><br>
+					<button type="button" class="btn" onclick="goCarmichaelTest()">Calculer</button>
+					<b><div class="result">
+					</div></b>
+				</div>
+            	<div id="carmichael">
 					<h4># Liste des nombres de carmichael</h4>
-					<label>Max n</label> <input class="N" type="text" placeholder="n" value="1000"><br>
+					<label>Max n</label> <input class="N" type="text" placeholder="n" value="567"><br>
 					<button type="button" class="btn" onclick="goCarmichael()">Calculer</button>
 					<b><div class="result">
 					</div></b>
