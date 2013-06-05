@@ -1,4 +1,0 @@
-<map id="ImageWidget" name="ImageWidget">
-<area shape="rect" id="node2" href="$class_binary_widget.html" title="Widget abstrait permettant la visualisation et l&#39;édition d&#39;une note de type Binary dans l&#39;interface g..." alt="" coords="5,160,104,189"/>
-<area shape="rect" id="node4" href="$class_note_widget.html" title="Widget abstrait pour visualiser et éditer une note dans l&#39;interface graphique." alt="" coords="9,83,100,112"/>
-</map>

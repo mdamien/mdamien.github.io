@@ -1,5 +1,0 @@
-<map id="BinaryWidget" name="BinaryWidget">
-<area shape="rect" id="node2" href="$class_note_widget.html" title="Widget abstrait pour visualiser et éditer une note dans l&#39;interface graphique." alt="" coords="5,85,96,115"/>
-<area shape="rect" id="node6" href="$class_binary.html" title="Note abstraite pour tout les types de fichiers binaires." alt="" coords="120,85,179,115"/>
-<area shape="rect" id="node8" href="$class_note.html" title="Classe abstraite représentant une note et ses états (modifiée et/ou ouverte)" alt="" coords="124,5,175,35"/>
-</map>

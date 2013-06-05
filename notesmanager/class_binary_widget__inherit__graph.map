@@ -1,6 +1,0 @@
-<map id="BinaryWidget" name="BinaryWidget">
-<area shape="rect" id="node7" href="$class_audio_widget.html" title="Widget permettant la visualisation et l&#39;édition d&#39;une note de type Audio dans l&#39;interface graphique..." alt="" coords="5,237,101,267"/>
-<area shape="rect" id="node9" href="$class_image_widget.html" title="Widget permettant la visualisation et l&#39;édition d&#39;une note de type Image dans l&#39;interface graphique..." alt="" coords="125,237,224,267"/>
-<area shape="rect" id="node11" href="$class_video_widget.html" title="Widget permettant la visualisation et l&#39;édition d&#39;une note de type Video dans l&#39;interface graphique..." alt="" coords="248,237,344,267"/>
-<area shape="rect" id="node2" href="$class_note_widget.html" title="Widget abstrait pour visualiser et éditer une note dans l&#39;interface graphique." alt="" coords="129,83,220,112"/>
-</map>
