@@ -294,6 +294,164 @@ function carmichael(maxx) {
 	return arr;
 }
 
+function goLogTable() {
+	$("#logtable .result table").html("");
+	var mx = $("#logtable .mx").val();
+    var base = $("#logtable .base").val();
+	var N = parseInt($("#logtable .N").val());
+	if( N == undefined){
+    	return;
+    }
+    var r = exponentsTable(base.split("").reverse(),mx.split("").reverse(),Math.pow(2,N));
+    $("#logtable .result .exponents").html(expTable(r,Math.pow(2,N)));
+    $("#logtable .result .log").html(logTable(r,Math.pow(2,N)));
+}
+
+function replacearr(arr,a,b){
+	return arr.map(function(item) { return item == a ? b : item; });
+}
+
+function add_to_pol(pol,coeff,i){ // mod 2
+	if(coeff == "0"){
+		return;
+	}
+	//coeff == 1
+	if( pol[i] == undefined){
+		pol[i] = coeff;
+	}else{
+		if(pol[i] == "1"){
+			pol[i] = "0";
+		}else{
+			pol[i] = "1";
+		}
+	}
+	return pol;
+}
+
+function degree(p){
+	return p.lastIndexOf("1"); // p non null
+}
+
+function add_pols(p1,p2){//modify p1
+	for(var i=0;i < p2.length;i++){
+		if(p1[i] == undefined){
+			p1[i] = "0";
+		}
+		if(p2[i] == undefined){
+			p2[i] = "0";
+		}
+		add_to_pol(p1,p2[i],i);
+	}
+	return p1;
+}
+
+function dividePol(p,mx,maxx){ // divide the pol by mx: this is really awesome too
+	while (degree(p) >= degree(mx)){
+		var mx_dec = mx.slice();
+		for(var i=0;i < degree(p)-degree(mx);i++){
+			mx_dec = mx_dec.slice(0,0,"0"); //mul pol by x
+		}
+		p = add_pols(p,mx_dec); //p = p - mx*x^(deg(p)-deg(mx))
+	}
+}
+
+function pol2num(pol){
+	return parseInt(pol.reverse().join(""),2);
+}
+
+//The hearth of the log table: the awesome happens here
+function mul_pols(p1,p2,mx,do_mod){
+	if(typeof(do_mod)==='undefined') do_mod = true;
+	var r = replacearr(mx,"1","0");
+	for(var i=0;i < p1.length;i++){//for each el of pol1 add pol1[i]*pol2
+		for(var j=0;j < p2.length;j++){
+			if(p1[i] == undefined){
+				p1[i] = "0";
+			}
+			if(p2[j] == undefined){
+				p2[j] = "0";
+			}
+			//mul p1[i] && p2[j]
+			if( p1[i] == "0" && p2[j] == "0" ){
+				break;
+			}
+			if( p1[i] == "1" && p2[j] == "0" ){
+				add_to_pol(r,"1",i);
+			}
+			if( p1[i] == "0" && p2[j] == "1" ){
+				add_to_pol(r,"1",j);
+			}
+			if( p1[i] == "1" && p2[j] == "1" ){
+				add_to_pol(r,"1",i+j);
+			}
+		}
+	}
+
+	//refill with 0
+	for(var i=0;i < r.length;i++){//for each el of pol1
+		if( r[i] == undefined){
+			r[i] == "0";
+		}
+	}
+
+	//TODO div by m(x) && reduce the 0 fill
+	if(do_mod){
+		dividePol(r,mx);
+	}
+	return r;
+}
+
+function exponentsTable(base,mx,maxx) {
+	var arr = [];
+	arr.push(["1"]);
+	for(var i=1;i < maxx;i++) {
+		arr.push(mul_pols(arr[i-1],base,mx));
+	}
+	return arr;
+}
+
+function logTable(arr,maxx) {
+
+	//to a nice table
+	var r = "<thead><tr><th></th>";
+	for(var i=0;i < maxx;i+=16){
+		r += "<th>"+i.toString(16).toUpperCase()+"</th>";
+	}
+	r += "</tr></thead><tbody>";
+	for(var i=0;i < 16;i++){
+		r += "<tr><th>"+i.toString(16).toUpperCase()+"</th>";
+		for(var j=0;j < maxx;j+=16){
+			r += "<th>"+arr[(j+i)%maxx]+"</th>";
+		}
+		r += "</tr>"
+	}
+	r += "</tbody>";
+	return r;
+}
+
+function expTable(arr,maxx) {
+	//to hex
+	for(var i=0;i < maxx;i++) {
+		arr[i] = pol2num(arr[i]).toString(16).toUpperCase();
+	}
+
+	//to a nice table
+	var r = "<thead><tr><th></th>";
+	for(var i=0;i < maxx;i+=10){
+		r += "<th>"+i+"</th>";
+	}
+	r += "</tr></thead><tbody>";
+	for(var i=0;i < 10;i++){
+		r += "<tr><th>"+i+"</th>";
+		for(var j=0;j < maxx;j+=10){
+			r += "<th>"+arr[(j+i)%maxx]+"</th>";
+		}
+		r += "</tr>"
+	}
+	r += "</tbody>";
+	return r;
+}
+
 //]]>  
 
 </script>
@@ -305,9 +463,22 @@ function carmichael(maxx) {
     <div class="rrow-fluid clearfix">
         <div class="span12">
             	<div class="page-header">
-    	<h1>MT10</h1>
-    	<a href="https://github.com/MDamien/mdamien.github.io/blob/master/mt10/index.html">Code source</a>
-    </div>
+			    	<h1>MT10</h1>
+					<div class="navbar">
+					  <div class="navbar-inner">
+				    	<ul class="nav">
+							  <li><a href="#smooth">Smooth & Supersmooth</a></li>
+							  <li><a href="#smooth-table">Tableau des B-Smooth</a></li>
+							  <li><a href="#rabin">Test de primalité de Rabin-Miller</a></li>
+							  <li><a href="#pollard">Algorithme p-1 de Pollard</a></li>
+							  <li><a href="#carmichael-test">Test: Nombre de carmichael ?</a></li>
+							  <li><a href="#carmichael">Liste des nombres de carmichael</a></li>
+							  <li><a href="#logtable">Tables d'exponentiation et de logarithme dans un corps</a></li>
+						</ul>
+					  </div>
+					</div>
+					<a href="https://github.com/MDamien/mdamien.github.io/blob/master/mt10/index.html">Code source</a>
+    			</div>
             	<div id="smooth">
 					<h4># Smooth & Supersmooth</h4>
 					<input class="x" type="text" placeholder="x" value="12"><br>
@@ -362,6 +533,22 @@ function carmichael(maxx) {
 					<button type="button" class="btn" onclick="goCarmichael()">Calculer</button>
 					<b><div class="result">
 					</div></b>
+				</div>
+            	<div id="logtable">
+					<h4># Tables d'exponentiation et de logarithme dans un corps</h4>
+					<h5>(polynomes en binaire , F(2**N))</h5>
+					<label>m(x)</label> <input class="mx" type="text" placeholder="m(x)" value="10001111" onkeyup=""><span class="mx-preview"><br>
+					<label>base</label> <input class="base" type="text" placeholder="base" value="11" onkeyup=""><span class="base-preview"><br>
+					<label>N</label> <input class="N" type="text" placeholder="n" value="8"><br>
+					<button type="button" class="btn" onclick="goLogTable()">Calculer</button>
+					<div class="result">
+						Tables des puissances
+						<table class="table exponents">
+						</table>
+						Tables des logs
+						<table class="table log">
+						</table>
+					</div>
 				</div>
 				<br/>
 				<br/>
