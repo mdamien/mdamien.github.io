@@ -13,6 +13,7 @@ LT.go = function() {
     var r = LT.expoTable(LT.s2pol(base),LT.s2pol(mx),maxx);
     $("#logtable .result .exponents").html(LT.expoTableHTML(r,maxx));
     $("#logtable .result .log").html(LT.logTableHTML(r,maxx));
+    return r;
 }
 
 LT.s2pol = function(x) {
@@ -24,7 +25,7 @@ LT.s2pol = function(x) {
 LT.zeroFill = function(p,j) {
     for (var i = 0; i == j; i++) {
         if(p[i] == undefined){
-                p.push(0);
+                p[i] = 0;
         }
     };
     return p;
@@ -32,20 +33,23 @@ LT.zeroFill = function(p,j) {
 
 LT.zeros = function(n) {
    var array = new Array(n);
-   for (var i=n+1; i--;) {
+   for (var i=n; i--;) {
      array[i] = 0;
    }
    return array;
 }
 
 //LT.addPols( [0,1] , [1, 0]) == [1,1]  //OK
-//LT.addPols([0,0],[0]) == [0,0] // ok
+//LT.addPols([0,0],[0]) == [0,0] // oko
+//LT.addPols([0],[0,0]) == [0,0] //ok
 LT.addPols = function(p1,p2) {
-    var p3 = p1.slice();
-    for(var i=0; i<p1.length; i++){
-        LT.zeroFill(p1,i);LT.zeroFill(p2,i);
-        p3[i] = (p1[i] + p2[i]) % 2;
+    var p3 = LT.zeros(Math.max(p1.length,p2.length));
+    for(var i=0; i<p3.length; i++){
+        var a = p1[i] == undefined ? 0 : p1[i];
+        var b = p2[i] == undefined ? 0 : p2[i];
+        p3[i] = (a + b) % 2;
     }
+    LT.zeros(p3);
     return p3;
 }
 
@@ -59,12 +63,11 @@ LT.mulMonomes = function(x,n,y,m) {
 }
 
 //LT.mulPol( [0,1], 1, 1 ) == [0,0,1] //ok
-//LT.mulPol([1,1],1,2) == [0,0,1,1]
+//LT.mulPol([1,1],1,2) == [0,0,1,1] //ok
 LT.mulPol = function(p,x,n) {
     if(x == 0) return [0];
     var p2 = LT.zeros(p.length);
     for(var i=0; i<p.length; i++){
-        console.log(LT.mulMonomes(x,n,p[i],i));
         p2 = LT.addPols(p2,LT.mulMonomes(x,n,p[i],i));
     }
     return p2;
@@ -77,13 +80,11 @@ LT.trim = function(pol){
 
 //LT.mulPols( [0,1], [0,1]) == [0,0,1]  //ok
 //LT.mulPols( [0,1], [1,1]) == [0,1,1]  //ok
-//LT.mulPols([1,1],[1,1,1]) == LT.mulPols([1,1,1],[1,1]) //non-ok
+//LT.mulPols([1,1],[1,1,1]) == LT.mulPols([1,1,1],[1,1]) //ok
 LT.mulPols = function(p1,p2) {
     var p3 = LT.zeros(Math.max(p1.length,p2.length));
     for(var i=0; i< p1.length; i++){
-        console.log(LT.mulPol(p2,p1[i],i));
         p3 = LT.addPols(p3,LT.mulPol(p2,p1[i],i));
-        console.log("p3:"+p3);
     }
     return p3;
 }
@@ -92,7 +93,7 @@ LT.degree = function(p){
     return p.lastIndexOf(1);
 }
 
-//LT.dividePol(LT.mulPols([1,1],[1,1,1,1,1,1,1,1]),[1,1,1,1,0,0,0,0,1]) == 1A    // non-ok
+//LT.dividePol(LT.mulPols([1,1],[1,1,1,1,1,1,1,1]),[1,1,1,1,0,0,0,0,1]) == 1A    // ok
 LT.dividePol = function(p,mx){ // divide the pol by mx and return the rest: this is really awesome too
     while (LT.degree(p) >= LT.degree(mx)){
         var mx_dec = mx.slice().reverse();
@@ -106,7 +107,7 @@ LT.dividePol = function(p,mx){ // divide the pol by mx and return the rest: this
 }
 
 
-//LT.expoTable([1,1],[1,0],10) //ok (sans div)
+//LT.expoTable([1,1],[1,0],10) //ok
 LT.expoTable = function(base,mx,maxx) {
     var arr = [];
     arr.push([1]);
@@ -119,7 +120,7 @@ LT.expoTable = function(base,mx,maxx) {
     return arr;
 }
 
-//LT.pol2num([1,1,0]) == 5
+//LT.pol2num([1,1,0]) == 3 //ok
 LT.pol2num = function(pol) {
     return parseInt(pol.reverse().join(""),2);
 }
@@ -130,6 +131,8 @@ LT.expoTableHTML = function(table,maxx) {
     for(var i=0;i < maxx;i++) {
         arr[i] = LT.pol2num(arr[i]).toString(16).toUpperCase();
     }
+
+    console.log("1:"+table[76]);
 
     //to a nice table
     var r = "<thead><tr><th></th>";
@@ -148,27 +151,25 @@ LT.expoTableHTML = function(table,maxx) {
     return r;
 }
 
-LT.logTableHTML = function(arr_orig,maxx) {
-    var arr = arr_orig.slice();
+LT.logTableHTML = function(table,maxx) {
+    var arr = table.slice();
     var logarr = [];
 
-    //to num
+    //to hex
     for(var i=0;i < maxx;i++) {
-        arr[i] = LT.pol2num(arr[i]);
+        arr[i] = LT.pol2num(arr[i].reverse()).toString(16).toUpperCase();
     }
+
+    console.log("2:"+table[76]);
 
     //build the log arr
     for(var i=0;i < maxx;i++) {
-        logarr.push(arr.indexOf(i));
+        logarr.push(arr.indexOf(i.toString(16).toUpperCase()));
         if(logarr[i] == -1){
             logarr[i] = "";
         }
     }
 
-    //to hex
-    for(var i=0;i < maxx;i++) {
-        arr[i] = arr[i].toString(16).toUpperCase();
-    }
     //to a nice table
     var r = "<thead><tr><th></th>";
     for(var i=0;i < maxx;i+=16){
