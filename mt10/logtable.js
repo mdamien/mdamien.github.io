@@ -1,5 +1,9 @@
 var LT = new Object(); //namespace for all methods related to the log table
 
+$(function() {
+     LT.updatePolPreview();
+    });
+
 LT.go = function() {
 	$("#logtable .result table").html("");
 	var mx = $("#logtable .mx").val();
@@ -13,6 +17,26 @@ LT.go = function() {
     var r = LT.expoTable(LT.s2pol(base),LT.s2pol(mx),maxx);
     $("#logtable .result .exponents").html(LT.expoTableHTML(r,maxx));
     $("#logtable .result .log").html(LT.logTableHTML(r,maxx));
+    return r;
+}
+
+LT.updatePolPreview = function(){
+    $("#logtable .mx-preview").html(LT.pol2nicepol(LT.s2pol($("#logtable .mx").val())));
+    $("#logtable .base-preview").html(LT.pol2nicepol(LT.s2pol($("#logtable .base").val())));
+}
+
+LT.pol2nicepol = function(pol){
+    var r = pol[0]+" ";
+    for (var i = 1; i < pol.length; i++) {
+        if(pol[i] != 0){
+            if(i == 1){
+                r += "+ x ";
+            }
+            else{
+                r += "+ x^"+i+" ";
+            }
+        }
+    }
     return r;
 }
 
