@@ -5,6 +5,11 @@
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="script.js"></script>
   <script type="text/javascript" src="logtable.js"></script>
+
+  <script type="text/javascript" src="highcharts.js"></script>
+  <script type="text/javascript" src="exporting.js"></script>
+  <script type="text/javascript" src="elliptic.js"></script>
+
   <link rel="stylesheet" type="text/css" href="bootstrap.css">
   <style type="text/css">
   </style>
@@ -27,6 +32,7 @@
 							  <li><a href="#carmichael-test">Test: Nombre de carmichael ?</a></li>
 							  <li><a href="#carmichael">Liste des nombres de carmichael</a></li>
 							  <li><a href="#logtable">Tables d'exponentiation et de logarithme dans un corps</a></li>
+							  <li><a href="#elliptic">Solutions d'une courbe élliptique</a></li>
 						</ul>
 					  </div>
 					</div>
@@ -101,6 +107,16 @@
 						Tables des logs
 						<table class="table log">
 						</table>
+					</div>
+				</div>
+
+            	<div id="elliptic">
+					<h4># Solutions d'une courbe élliptique</h4>
+					<label>Equation:</label> <input class="equa" type="text" value="y*y = x*x*x + x + 2"><br>
+					<label>Z/nZ</label> <input class="n" type="text" placeholder="n" value="1009"><br>
+					<button type="button" class="btn" onclick="EL.goGraph()">Graphique</button>
+					<div class="result">
+						<div id="container" class="graph" style="height: 400px; margin: 0 auto"></div>
 					</div>
 				</div>
 				<br/>
