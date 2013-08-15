@@ -24,7 +24,7 @@ h1,h2,h3 {
 }
 
 #home {
-	padding-top: 4%;
+	padding-top: 58px;
 	padding-bottom: 40px;
 }
 
@@ -54,11 +54,16 @@ header {
 	position: fixed;
 	width: 100%;
 	top: 0px;
+	opacity: 0.8;
 }
 
-header.hide{
-	background-color: rgb(27, 27, 27);
-	top: 140px;
+header.hide {
+	top:-30px;
+}
+
+header a {
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 .right-aligned {
@@ -178,7 +183,7 @@ hr.little {
 	width: 100%;
 }
 
-.experiences h1 {
+#experiences h1 {
 	margin-bottom: 20px;
 	margin-top: 23px;
 }
@@ -195,6 +200,31 @@ hr.little {
 	display:none;
 }
 
-.porto {
+#porto {
 	padding-top: 20px;
+}
+
+#education h4 {
+	margin-bottom: 0px;
+	margin-top: 13px;
+}
+
+#skills h4 {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-weight: 500;
+}
+
+#skills ul, #skills p {
+	margin:0;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+#skills .col{
+	width:50%;
+	float:left;
+}
+.clear {
+	clear:both;
 }
