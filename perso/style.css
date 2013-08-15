@@ -24,10 +24,13 @@ h1,h2,h3 {
 }
 
 #home {
-	max-width: 519px;
-	margin: auto;
 	padding-top: 4%;
 	padding-bottom: 40px;
+}
+
+.section {
+	max-width: 519px;
+	margin: auto;
 }
 
 h1 {
@@ -111,6 +114,65 @@ hr.little {
 	width:20px;
 	margin:14px 0px;
 }
+
+.map-button {
+	position:absolute;
+	background-color:rgb(54, 54, 54);
+	padding:5px;
+	font-size:13px;
+	transition:all 0.6s;
+}
+
+.map-button:hover {
+	cursor: pointer;
+	background-color: rgb(112, 112, 112);
+}
+
+.for-exp1 {
+	margin-top:30px;
+	margin-left:270px;
+}
+
+.for-exp2 {
+	margin-top:60px;
+	margin-left:260px;
+}
+
+.for-exp3 {
+	margin-top:30px;
+	margin-left:225px;
+}
+
+.for-exp4 {
+	margin-top:120px;
+	margin-left:265px;
+}
+
+.for-exp5 {
+	margin-top:120px;
+	margin-left:105px;
+}
+
+.for-exp6 {
+	margin-top:90px;
+	margin-left:225px;
+}
+
+.for-exp7 {
+	margin-top:90px;
+	margin-left:65px;
+}
+
+.for-exp8 {
+	margin-top:29px;
+	margin-left:103px;
+}
+
+.for-exp9 {
+	margin-top:59px;
+	margin-left:55px;
+}
+
 .map {
 	width: 100%;
 }
@@ -118,4 +180,20 @@ hr.little {
 .experiences h1 {
 	margin-bottom: 20px;
 	margin-top: 23px;
+}
+
+.experience {
+	display: none;
+}
+
+.porto-black {
+	background-color: black;
+	height:	300px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display:none;
+}
+
+.porto {
+	padding-top: 20px;
 }

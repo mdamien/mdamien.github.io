@@ -11,4 +11,8 @@ function triggerHeader(e){
 
 $(function(){
 	$('.everything').mousemove(triggerHeader);
+	$('.map-button').click(function(){
+		$('#exp1').fadeOut();
+		$('#exp1').fadeIn();
+	});
 });
