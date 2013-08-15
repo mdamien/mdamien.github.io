@@ -1,0 +1,121 @@
+body,html,.everything,.page,.viewport {
+	font-family: 'Raleway', sans-serif;
+	color:white;
+	font-weight:300;
+}
+
+a {
+	text-decoration: none;
+	color:inherit;
+}
+
+h1,h2,h3 {
+	font-weight: lighter;
+	background-size: 70px;
+}
+
+.everything {
+	background-color: rgb(32, 32, 32);
+}
+
+.viewport {
+	background: radial-gradient(circle at top, #626767 26%,#1E1F23 100%);
+	background-attachment: fixed;
+}
+
+#home {
+	max-width: 519px;
+	margin: auto;
+	padding-top: 4%;
+	padding-bottom: 40px;
+}
+
+h1 {
+	margin:0;
+}
+
+.header-magic-arrow {
+	box-shadow: 0px 0px 10px rgb(77, 77, 77);
+	margin: auto;
+	height: 20px;
+	background-color: rgb(80, 80, 80);
+	width: 20px;
+}
+
+header {
+	background-color: rgb(70, 70, 70);
+	color: white;
+	text-align: center;
+	transition: all 1s;
+	padding: 10px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+}
+
+header.hide{
+	background-color: rgb(27, 27, 27);
+	top: 140px;
+}
+
+.right-aligned {
+	text-align: right;
+}
+
+.title {
+	margin:0;
+	font-weight:200;
+}
+
+.name {
+	font-weight: 400;
+}
+
+.contactme {
+	padding:8px 20px;
+	float:right;
+	display:inline-block;
+	background-color:#505050;
+	transition:all 1s;
+}
+
+.contactme:hover {
+	background-color:#A8A8A8;
+	color:#000;
+
+}
+
+.sociallinks {
+	margin-top: 10px;
+}
+
+.sociallinks img{
+	width: 19px;
+}
+
+.photo {
+	float:left;
+	width:85px;
+	margin-right:10px;
+	border:3px solid #535353;
+}
+
+.summary {
+	list-style: none;
+	padding: 0;
+	font-weight: 400;
+	text-align: left;
+}
+
+hr.little {
+	width:20px;
+	margin:14px 0px;
+}
+.map {
+	width: 100%;
+}
+
+.experiences h1 {
+	margin-bottom: 20px;
+	margin-top: 23px;
+}
