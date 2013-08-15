@@ -29,7 +29,7 @@ h1,h2,h3 {
 }
 
 .section {
-	max-width: 519px;
+	width: 519px;
 	margin: auto;
 }
 
@@ -80,6 +80,7 @@ header.hide{
 	display:inline-block;
 	background-color:#505050;
 	transition:all 1s;
+	margin-top:20px;
 }
 
 .contactme:hover {
