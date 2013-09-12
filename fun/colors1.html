@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>colors fun</title>
+  <style>
+    html,body,canvas {
+      width: 100px;
+      height: 100px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body onload="draw()">
+  <canvas id="canvas"></canvas>
+  <script type="application/x-javascript">
+
+var canvas = null;
+var ctx = null;
+
+function compRand(){
+  return {
+      r : Math.floor(Math.random()*256),
+      g : Math.floor(Math.random()*256),
+      b : Math.floor(Math.random()*256)
+  }
+}
+
+function col(x,y){
+  if(x < 0 || y < 0){ return null;}
+  var id = ctx.getImageData(x, y, 1, 1);
+  var d = id.data;
+  return {r:d[0],g:d[1],b:d[2],a:d[3]};
+}
+
+function mean(c1,c2){
+  if(c1 == null && c2 == null){return {r:100,g:255,b:100};}//base color
+  if(c1 == null){return c2;}
+  if(c2 == null){return c1;}
+  return {
+    r: (c1.r + c2.r)/2,
+    g: (c1.r + c2.r)/2,
+    b: (c1.b + c2.b)/2
+  }
+}
+
+function walkInThePark(c){
+  var n = 50;
+  var rc = Math.floor(Math.random()*n)-n/2;
+  var rb = Math.floor(Math.random()*n)-n/2;
+  var rg = Math.floor(Math.random()*n)-n/2;
+  return {
+    r: (c.r + rc) % 256,
+    g: (c.g + rg) % 256,
+    b: (c.b + rb) % 256
+  }
+}
+
+function compRandWalk(x,y){
+  return walkInThePark(mean(col(x-1,y),col(x,y-1)));
+}
+
+function draw(){
+  canvas = document.getElementById("canvas");
+  ctx = canvas.getContext("2d");
+
+  var w = canvas.width;
+  var h = canvas.height;
+  var id = ctx.getImageData(0, 0, w, h);
+  var d = id.data;
+
+  for (var i = 0, n = d.length; i < n; i += 4) {
+      var pos = i/4;
+      var x = pos % w;
+      var y = (pos - x) / w;
+      //compute color
+      //var c = compRand();
+      var c = compRandWalk(x,y);
+      d[i] = c.r;
+      d[i+1] = c.g;
+      d[i+2] = c.b;
+      d[i+3] = 255;
+  }
+  ctx.putImageData(id, 0, 0);
+}
+</script>
+</body>
+</html>
