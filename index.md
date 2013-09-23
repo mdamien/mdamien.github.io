@@ -34,7 +34,7 @@ Example of websites: Commercesdepont.fr,edu-survey.org,fetedelabulle.fr
 ##My projects
 
 ###FabLab UTC: A local hackerspace
-Built my own hackerspace with over 100k€ in funding. Developed the website (assos.utc.fr/fablab), built many machines ( 3D printer, quadcopter, robot, ...) & software. I also teached to other student in many subjects like Android or Arduino.  
+Built my own hackerspace with over 100k€ in funding. Developed the website (assos.utc.fr/fablab), built many machines ( 3D printer, quadcopter, robot, ...) & software. I also taught to other student in many subjects like Android or Arduino.  
 Technologies involved: Python, C, Arduino, electronics & Android
 
 ###ACAPL : A local association
@@ -51,5 +51,13 @@ Technologies involved: Django for custom application, node.js, Go, Rails, Nginx,
 ###Web scraping
 As a freelancer, I made a good amount of money doing web scraping of really protective websites like mantra.com, airlines companies, hotels websites,...
 
+###Misc. projects
 
-
+ - [Django News](http://dj.dam.io) : An Hacker News clone in Django ([source](http://github.com/MDamien/djangonews)
+ - [Summer Job CV](http://dam.io/summerjob/): An interactive presentation I made to find a job in the Summer 2013 (and it worked really well)
+ - [MT10](http://dam.io/MT10) : A mathematics heavy page I made to learn more about fundamental mathematics applications and to impress a teacher (got an A+)
+ - [El Canary](http://canary.dam.io): A mystery to r/solve ([source](http://github.com/MDamien/bouyaka) (made to teach Django in 20min)
+ - [Notes Manager](https://github.com/MDamien/NotesManager) : A Qt/C++ software made for a course (got an A+ and finished it in one week)
+ - I also love to build things: [A 3D printer I made] for example (https://dl.dropboxusercontent.com/u/110710535/2013-09-06%2015.06.18.jpg)
+ 
+Also, I love [Webfaction](http://webfaction.com) for hosting and [Gandi](http://gandi.net) for domains.
