@@ -19,7 +19,7 @@ class Database():
         self.states = []
 
     def get(self,var):
-        return self.db[var]
+        return self.db.get(var,False)
 
     def __set(self,var,value):
         self.db[var] = value
@@ -37,7 +37,7 @@ class Database():
         self.__unset(var)
 
     def numequalto(self,var):
-        return len([x for x in self.db if x == var]) #TODO: BST search
+        return len([x for x in self.db if self.db[x] == var]) #TODO: BST search
 
     def __save_state(self,var):
         if self.states:
