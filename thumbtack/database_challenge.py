@@ -1,43 +1,66 @@
-#!/usr/bin/env python3
-#from bintrees import AVLTree
 import copy
+from collections import Counter
+
+class State(dict):
+    """
+A state contains the previous value of each modified key
+and the previous Counter object
+"""
+    def __init__(self,counter):
+        self.counter = counter
 
 class Database():
     """
-    key-integer Database as a mix of:
-    _ a dict (db) containing the key-value data
-    _ an AVLTree of the integers to have an efficient way to count the values
-    The two being in sync at any time
+key-integer Database as a mix of:
+_ a first dict (db) containing the key-value data
+_ another dict (counter) containing the number of occurence of each value
+The two being in sync at any time
 
-    To make the TRANSACTION system performant in term of memory, each
-    state is a dict containing the **previous** value of each modified key
-    (and None for an unset key)
-    """
+Complexity of each function:
+GET: O(1)
+SET: O(1)
+UNSET: O(1)
+NUMEQUALTO: O(1)
+
+But, as we maintain two structure, it use more memory than a simple dict database
+
+Transaction system:
+To make the TRANSACTION system performant in term of memory, eachprevious state 
+is stored as a dict containing:
+_ the previous value of each *modified* key (to save up memory)
+_ the previous counter object
+
+This method could be more memory efficient by maintaining a list of change of
+the counter object too for example (instend of a raw copy)
+"""
     def __init__(self):
         self.db = dict()
-        #self.tree = AVLTree()
+        self.counter = Counter()
         self.states = []
 
     def get(self,var):
         return self.db.get(var,False)
 
     def __set(self,var,value):
+        if var in self.db:
+            self.counter[self.db[var]] -= 1
         self.db[var] = value
-        #self.tree[value] = None #contains only the value
+        self.counter[value] += 1
 
     def set(self,var,value):
         self.__save_state(var)
         self.__set(var,value)
 
     def __unset(self,var):
+        self.counter[self.db[var]] -= 1
         del self.db[var]
 
     def unset(self,var):
         self.__save_state(var)
         self.__unset(var)
 
-    def numequalto(self,var):
-        return len([x for x in self.db if self.db[x] == var]) #TODO: BST search
+    def numequalto(self,value):
+        return self.counter[value]
 
     def __save_state(self,var):
         if self.states:
@@ -55,7 +78,7 @@ class Database():
         return False
 
     def begin(self):
-        self.states.append(dict())
+        self.states.append(State(self.counter))
 
     def rollback(self):
         if self.states:
@@ -69,11 +92,12 @@ class Database():
         return False
 
 def CLI():
+    "Simple CLI without error checking / input sanitizing"
     db = Database()
     while True:
-        line = input()
+        line = raw_input().upper()
         if line == 'END': break
-        if line == 'BEGIN': db.begin()
+        elif line == 'BEGIN': db.begin()
         elif line == 'ROLLBACK':
             if not db.rollback():
                 print("NO TRANSACTION")
