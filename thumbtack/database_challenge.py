@@ -1,4 +1,3 @@
-import copy
 from collections import Counter
 
 class State(dict):
@@ -78,7 +77,7 @@ the counter object too for example (instend of a raw copy)
         return False
 
     def begin(self):
-        self.states.append(State(self.counter))
+        self.states.append(State(self.counter.copy()))
 
     def rollback(self):
         if self.states:
