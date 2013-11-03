@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
+    <head>
+        <rel="stylesheet" type="text/css" href="game.css" />
+        <meta http-equiv="content-type" content="text/php; charset=utf-8" />
+        <title>keep Moving !</title>
+        <script src='jq.js'></script> 
+        <script src='seedrandom.js'></script> 
+        <script src='game.js'></script> 
+    </head>
+    <body>
+        <style>
+        body {
+            background-color:black;
+        }
+        #game {
+            background-color:grey;
+            display:block;
+            margin:auto;
+            border:1px solid black;
+        }
+        #all {
+            margin:auto;
+            width:600px;
+            color:white;
+            text-align:center;
+        }
+        </style>
+        <div id="all">
+        <canvas id="game" width="600" height="400"></canvas>
+        <h3 id="score"></h3>
+        </div>
+    </body>
+</html>

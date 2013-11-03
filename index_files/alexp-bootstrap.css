@@ -5311,7 +5311,7 @@ li {
   margin: 30px 0px;
 }
 @media (min-width: 767px) {
-  .content > #logo {
+  .content {
     display: none;
   }
   .body {
