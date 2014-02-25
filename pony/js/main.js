@@ -35,7 +35,6 @@ function init(){
 }
 
 function play(note,time){
-	console.debug("Play "+note+" at "+time)
 	var source = context.createBufferSource();
 	source.buffer = buffers[note];
 	source.connect(gainNode);
