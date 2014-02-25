@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Pony Synth</a>
+      </div>
+  </div>
+</div>
+<div class="jumbotron">
+  <div class="container">
+    <h1>Make music!</h1>
+    <p><textarea id="song" rows="10" cols="80" onchange="changeUrl()" onkeyup="changeUrl()">ABCDEFG _
+D6 _ D6 _ D6 D6
+
+Eb5/4 Eb6/4 Eb7/4 Eb5/4 Eb6/4 Eb7/4 Gb5/4 Gb6/4 Gb7/4  Eb5/4 Eb6/4 Eb7/4 Gb5/4 Gb6/4 Gb7/4 G4 __ Eb5/2 Eb5/2 Eb5
+</textarea></p>
+    <p>
+        <a class="btn btn-primary btn-lg" onclick="listen()">Listen</a>&nbsp;
+        <a class="btn btn-success" onclick="alert('Share URL to share the song')">Share</a>&nbsp;
+        <input id="volume" type="range" min="0" max="1" step="0.1" value="0.9"/>
+        <span id="loading">Loading...</span>
+    </p>
+</div>
+</div>
+<div class="container">
+    <pre>
+        SYNTAX: (NOTE or _ for rest ) + *factor or /factor to divide or multiply the length of the note
+        Notes availables: <span id="notes-available"></span>
+    </pre>
+    <div id="disqus_thread"></div>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+<script src="js/base64-binary.js"></script>
+<script src="js/soundfont-piano.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">/
+    var disqus_shortname = 'damio';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+</body>
+</html>
