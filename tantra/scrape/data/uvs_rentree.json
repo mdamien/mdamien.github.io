@@ -1,0 +1,1054 @@
+[
+  {
+    "name": "APJE",
+    "restricted": false
+  },
+  {
+    "name": "AP51",
+    "restricted": true
+  },
+  {
+    "name": "AP52",
+    "restricted": true
+  },
+  {
+    "name": "AP53",
+    "restricted": true
+  },
+  {
+    "name": "AR03",
+    "restricted": true
+  },
+  {
+    "name": "AR04",
+    "restricted": true
+  },
+  {
+    "name": "AS01",
+    "restricted": true
+  },
+  {
+    "name": "AV01",
+    "restricted": true
+  },
+  {
+    "name": "BA03",
+    "restricted": true
+  },
+  {
+    "name": "BA04",
+    "restricted": false
+  },
+  {
+    "name": "BA05",
+    "restricted": true
+  },
+  {
+    "name": "BA06",
+    "restricted": true
+  },
+  {
+    "name": "TD01",
+    "restricted": false
+  },
+  {
+    "name": "BL01",
+    "restricted": false
+  },
+  {
+    "name": "BL10",
+    "restricted": true
+  },
+  {
+    "name": "BL16",
+    "restricted": true
+  },
+  {
+    "name": "BL17",
+    "restricted": false
+  },
+  {
+    "name": "XL20",
+    "restricted": true
+  },
+  {
+    "name": "BL20",
+    "restricted": true
+  },
+  {
+    "name": "BM04",
+    "restricted": false
+  },
+  {
+    "name": "BM05",
+    "restricted": false
+  },
+  {
+    "name": "BM06",
+    "restricted": false
+  },
+  {
+    "name": "BM07",
+    "restricted": false
+  },
+  {
+    "name": "BT03",
+    "restricted": false
+  },
+  {
+    "name": "BT07",
+    "restricted": false
+  },
+  {
+    "name": "BT09",
+    "restricted": true
+  },
+  {
+    "name": "C2I1",
+    "restricted": true
+  },
+  {
+    "name": "CM04",
+    "restricted": false
+  },
+  {
+    "name": "CM05",
+    "restricted": false
+  },
+  {
+    "name": "CM06",
+    "restricted": false
+  },
+  {
+    "name": "CM07",
+    "restricted": false
+  },
+  {
+    "name": "TD11",
+    "restricted": false
+  },
+  {
+    "name": "CM11",
+    "restricted": false
+  },
+  {
+    "name": "CM12",
+    "restricted": false
+  },
+  {
+    "name": "TD13",
+    "restricted": false
+  },
+  {
+    "name": "CM13",
+    "restricted": false
+  },
+  {
+    "name": "CX01",
+    "restricted": false
+  },
+  {
+    "name": "CX02",
+    "restricted": false
+  },
+  {
+    "name": "DI01",
+    "restricted": true
+  },
+  {
+    "name": "DI02",
+    "restricted": true
+  },
+  {
+    "name": "DI05",
+    "restricted": true
+  },
+  {
+    "name": "HI05",
+    "restricted": false
+  },
+  {
+    "name": "DI07",
+    "restricted": false
+  },
+  {
+    "name": "DI08",
+    "restricted": false
+  },
+  {
+    "name": "EG01",
+    "restricted": false
+  },
+  {
+    "name": "EI03",
+    "restricted": true
+  },
+  {
+    "name": "EI04",
+    "restricted": true
+  },
+  {
+    "name": "EI05",
+    "restricted": true
+  },
+  {
+    "name": "XN21",
+    "restricted": true
+  },
+  {
+    "name": "EN21",
+    "restricted": true
+  },
+  {
+    "name": "EN90",
+    "restricted": false
+  },
+  {
+    "name": "EV02",
+    "restricted": false
+  },
+  {
+    "name": "FQ01",
+    "restricted": false
+  },
+  {
+    "name": "FQ03",
+    "restricted": false
+  },
+  {
+    "name": "FQ04",
+    "restricted": true
+  },
+  {
+    "name": "FQ05",
+    "restricted": true
+  },
+  {
+    "name": "FM00",
+    "restricted": false
+  },
+  {
+    "name": "FR00",
+    "restricted": false
+  },
+  {
+    "name": "HT00",
+    "restricted": false
+  },
+  {
+    "name": "GE10",
+    "restricted": true
+  },
+  {
+    "name": "GE12",
+    "restricted": true
+  },
+  {
+    "name": "GE13",
+    "restricted": true
+  },
+  {
+    "name": "GE15",
+    "restricted": true
+  },
+  {
+    "name": "GE20",
+    "restricted": true
+  },
+  {
+    "name": "GE21",
+    "restricted": true
+  },
+  {
+    "name": "GE22",
+    "restricted": true
+  },
+  {
+    "name": "GE23",
+    "restricted": true
+  },
+  {
+    "name": "GE25",
+    "restricted": true
+  },
+  {
+    "name": "GE26",
+    "restricted": true
+  },
+  {
+    "name": "GE27",
+    "restricted": true
+  },
+  {
+    "name": "GE28",
+    "restricted": true
+  },
+  {
+    "name": "GE29",
+    "restricted": true
+  },
+  {
+    "name": "GE36",
+    "restricted": true
+  },
+  {
+    "name": "GE37",
+    "restricted": true
+  },
+  {
+    "name": "GE38",
+    "restricted": false
+  },
+  {
+    "name": "GE39",
+    "restricted": false
+  },
+  {
+    "name": "GE40",
+    "restricted": false
+  },
+  {
+    "name": "HE01",
+    "restricted": true
+  },
+  {
+    "name": "HE03",
+    "restricted": true
+  },
+  {
+    "name": "HT01",
+    "restricted": true
+  },
+  {
+    "name": "HT04",
+    "restricted": false
+  },
+  {
+    "name": "IA01",
+    "restricted": false
+  },
+  {
+    "name": "IA03",
+    "restricted": false
+  },
+  {
+    "name": "IC03",
+    "restricted": true
+  },
+  {
+    "name": "IC05",
+    "restricted": true
+  },
+  {
+    "name": "IC07",
+    "restricted": true
+  },
+  {
+    "name": "IS01",
+    "restricted": false
+  },
+  {
+    "name": "IS02",
+    "restricted": false
+  },
+  {
+    "name": "LA00",
+    "restricted": false
+  },
+  {
+    "name": "LA01",
+    "restricted": false
+  },
+  {
+    "name": "LA02",
+    "restricted": false
+  },
+  {
+    "name": "LA03",
+    "restricted": false
+  },
+  {
+    "name": "LA04",
+    "restricted": true
+  },
+  {
+    "name": "LB04",
+    "restricted": true
+  },
+  {
+    "name": "LA11",
+    "restricted": false
+  },
+  {
+    "name": "LA12",
+    "restricted": false
+  },
+  {
+    "name": "LA13",
+    "restricted": false
+  },
+  {
+    "name": "LA14",
+    "restricted": true
+  },
+  {
+    "name": "LB14",
+    "restricted": false
+  },
+  {
+    "name": "LC14",
+    "restricted": false
+  },
+  {
+    "name": "LA15",
+    "restricted": false
+  },
+  {
+    "name": "LC72",
+    "restricted": false
+  },
+  {
+    "name": "LC73",
+    "restricted": false
+  },
+  {
+    "name": "LA20",
+    "restricted": false
+  },
+  {
+    "name": "LA21",
+    "restricted": false
+  },
+  {
+    "name": "LA22",
+    "restricted": false
+  },
+  {
+    "name": "LA23",
+    "restricted": false
+  },
+  {
+    "name": "LA24",
+    "restricted": true
+  },
+  {
+    "name": "LB24",
+    "restricted": true
+  },
+  {
+    "name": "LG30",
+    "restricted": true
+  },
+  {
+    "name": "LG31",
+    "restricted": true
+  },
+  {
+    "name": "LG32",
+    "restricted": true
+  },
+  {
+    "name": "LG40",
+    "restricted": true
+  },
+  {
+    "name": "LG41",
+    "restricted": true
+  },
+  {
+    "name": "LG42",
+    "restricted": true
+  },
+  {
+    "name": "LG50",
+    "restricted": true
+  },
+  {
+    "name": "LG51",
+    "restricted": true
+  },
+  {
+    "name": "LG52",
+    "restricted": true
+  },
+  {
+    "name": "LG53",
+    "restricted": true
+  },
+  {
+    "name": "LG60",
+    "restricted": true
+  },
+  {
+    "name": "LG61",
+    "restricted": true
+  },
+  {
+    "name": "LG62",
+    "restricted": true
+  },
+  {
+    "name": "LG63",
+    "restricted": true
+  },
+  {
+    "name": "LA91",
+    "restricted": false
+  },
+  {
+    "name": "LA92",
+    "restricted": false
+  },
+  {
+    "name": "LA93",
+    "restricted": false
+  },
+  {
+    "name": "LA94",
+    "restricted": false
+  },
+  {
+    "name": "LO01",
+    "restricted": false
+  },
+  {
+    "name": "LO23",
+    "restricted": true
+  },
+  {
+    "name": "MA11",
+    "restricted": false
+  },
+  {
+    "name": "MB11",
+    "restricted": false
+  },
+  {
+    "name": "MC02",
+    "restricted": false
+  },
+  {
+    "name": "MC06",
+    "restricted": false
+  },
+  {
+    "name": "MC08",
+    "restricted": false
+  },
+  {
+    "name": "MEQ1",
+    "restricted": false
+  },
+  {
+    "name": "MI01",
+    "restricted": false
+  },
+  {
+    "name": "MP03",
+    "restricted": true
+  },
+  {
+    "name": "XQ01",
+    "restricted": true
+  },
+  {
+    "name": "MQ01",
+    "restricted": true
+  },
+  {
+    "name": "XQ03",
+    "restricted": true
+  },
+  {
+    "name": "MQ03",
+    "restricted": true
+  },
+  {
+    "name": "MQ05",
+    "restricted": true
+  },
+  {
+    "name": "MQ06",
+    "restricted": true
+  },
+  {
+    "name": "MQ07",
+    "restricted": false
+  },
+  {
+    "name": "MQ12",
+    "restricted": false
+  },
+  {
+    "name": "MQ13",
+    "restricted": false
+  },
+  {
+    "name": "MQ16",
+    "restricted": true
+  },
+  {
+    "name": "XQ17",
+    "restricted": true
+  },
+  {
+    "name": "MQ17",
+    "restricted": true
+  },
+  {
+    "name": "MQ20",
+    "restricted": false
+  },
+  {
+    "name": "MS01",
+    "restricted": true
+  },
+  {
+    "name": "MS03",
+    "restricted": false
+  },
+  {
+    "name": "MT09",
+    "restricted": false
+  },
+  {
+    "name": "MT12",
+    "restricted": false
+  },
+  {
+    "name": "MT22",
+    "restricted": false
+  },
+  {
+    "name": "MT23",
+    "restricted": false
+  },
+  {
+    "name": "MT31",
+    "restricted": false
+  },
+  {
+    "name": "MT33",
+    "restricted": false
+  },
+  {
+    "name": "MT36",
+    "restricted": false
+  },
+  {
+    "name": "MX03",
+    "restricted": false
+  },
+  {
+    "name": "MX04",
+    "restricted": false
+  },
+  {
+    "name": "MX05",
+    "restricted": false
+  },
+  {
+    "name": "NF01",
+    "restricted": false
+  },
+  {
+    "name": "NF02",
+    "restricted": false
+  },
+  {
+    "name": "NF04",
+    "restricted": true
+  },
+  {
+    "name": "NF16",
+    "restricted": false
+  },
+  {
+    "name": "NP16",
+    "restricted": false
+  },
+  {
+    "name": "NA17",
+    "restricted": false
+  },
+  {
+    "name": "NF22",
+    "restricted": true
+  },
+  {
+    "name": "NF29",
+    "restricted": true
+  },
+  {
+    "name": "NF92",
+    "restricted": false
+  },
+  {
+    "name": "NF93",
+    "restricted": false
+  },
+  {
+    "name": "PH01",
+    "restricted": true
+  },
+  {
+    "name": "PH02",
+    "restricted": true
+  },
+  {
+    "name": "PH03",
+    "restricted": true
+  },
+  {
+    "name": "PH09",
+    "restricted": true
+  },
+  {
+    "name": "PH10",
+    "restricted": true
+  },
+  {
+    "name": "PH11",
+    "restricted": true
+  },
+  {
+    "name": "TD04",
+    "restricted": false
+  },
+  {
+    "name": "PS04",
+    "restricted": false
+  },
+  {
+    "name": "PS10",
+    "restricted": false
+  },
+  {
+    "name": "PS12",
+    "restricted": false
+  },
+  {
+    "name": "PS13",
+    "restricted": false
+  },
+  {
+    "name": "PS15",
+    "restricted": false
+  },
+  {
+    "name": "PS90",
+    "restricted": false
+  },
+  {
+    "name": "PS91",
+    "restricted": false
+  },
+  {
+    "name": "TD93",
+    "restricted": false
+  },
+  {
+    "name": "PS93",
+    "restricted": false
+  },
+  {
+    "name": "PS95",
+    "restricted": false
+  },
+  {
+    "name": "RO05",
+    "restricted": false
+  },
+  {
+    "name": "RO06",
+    "restricted": false
+  },
+  {
+    "name": "RR02",
+    "restricted": false
+  },
+  {
+    "name": "RV01",
+    "restricted": false
+  },
+  {
+    "name": "SA11",
+    "restricted": true
+  },
+  {
+    "name": "SC11",
+    "restricted": true
+  },
+  {
+    "name": "SC12",
+    "restricted": true
+  },
+  {
+    "name": "SC21",
+    "restricted": true
+  },
+  {
+    "name": "SC24",
+    "restricted": true
+  },
+  {
+    "name": "SF00",
+    "restricted": false
+  },
+  {
+    "name": "SI01",
+    "restricted": true
+  },
+  {
+    "name": "SI02",
+    "restricted": true
+  },
+  {
+    "name": "SI05",
+    "restricted": true
+  },
+  {
+    "name": "SI06",
+    "restricted": true
+  },
+  {
+    "name": "SI07",
+    "restricted": true
+  },
+  {
+    "name": "SI11",
+    "restricted": true
+  },
+  {
+    "name": "SI14",
+    "restricted": true
+  },
+  {
+    "name": "SI20",
+    "restricted": true
+  },
+  {
+    "name": "SI22",
+    "restricted": true
+  },
+  {
+    "name": "SI24",
+    "restricted": true
+  },
+  {
+    "name": "SI28",
+    "restricted": true
+  },
+  {
+    "name": "SO04",
+    "restricted": true
+  },
+  {
+    "name": "SO05",
+    "restricted": true
+  },
+  {
+    "name": "SO06",
+    "restricted": true
+  },
+  {
+    "name": "SP01",
+    "restricted": true
+  },
+  {
+    "name": "SP22",
+    "restricted": true
+  },
+  {
+    "name": "SR01",
+    "restricted": true
+  },
+  {
+    "name": "SR04",
+    "restricted": false
+  },
+  {
+    "name": "SR05",
+    "restricted": true
+  },
+  {
+    "name": "SR06",
+    "restricted": true
+  },
+  {
+    "name": "SY01",
+    "restricted": false
+  },
+  {
+    "name": "SY02",
+    "restricted": false
+  },
+  {
+    "name": "SY03",
+    "restricted": false
+  },
+  {
+    "name": "SY08",
+    "restricted": true
+  },
+  {
+    "name": "SY10",
+    "restricted": false
+  },
+  {
+    "name": "SY16",
+    "restricted": false
+  },
+  {
+    "name": "SY19",
+    "restricted": true
+  },
+  {
+    "name": "SY27",
+    "restricted": false
+  },
+  {
+    "name": "SY31",
+    "restricted": true
+  },
+  {
+    "name": "TB01",
+    "restricted": false
+  },
+  {
+    "name": "TF01",
+    "restricted": false
+  },
+  {
+    "name": "TF11",
+    "restricted": false
+  },
+  {
+    "name": "TF15",
+    "restricted": false
+  },
+  {
+    "name": "TH02",
+    "restricted": false
+  },
+  {
+    "name": "TH04",
+    "restricted": false
+  },
+  {
+    "name": "TN01",
+    "restricted": false
+  },
+  {
+    "name": "TN02",
+    "restricted": true
+  },
+  {
+    "name": "TD03",
+    "restricted": false
+  },
+  {
+    "name": "TN03",
+    "restricted": false
+  },
+  {
+    "name": "TN04",
+    "restricted": false
+  },
+  {
+    "name": "TD06",
+    "restricted": false
+  },
+  {
+    "name": "TN06",
+    "restricted": false
+  },
+  {
+    "name": "TN08",
+    "restricted": false
+  },
+  {
+    "name": "TN12",
+    "restricted": false
+  },
+  {
+    "name": "TN14",
+    "restricted": true
+  },
+  {
+    "name": "TN20",
+    "restricted": true
+  },
+  {
+    "name": "TN21",
+    "restricted": true
+  },
+  {
+    "name": "TN22",
+    "restricted": true
+  },
+  {
+    "name": "TN23",
+    "restricted": true
+  },
+  {
+    "name": "TO01",
+    "restricted": false
+  },
+  {
+    "name": "TS02",
+    "restricted": false
+  },
+  {
+    "name": "TR91",
+    "restricted": false
+  },
+  {
+    "name": "UB01",
+    "restricted": true
+  },
+  {
+    "name": "UB10",
+    "restricted": false
+  },
+  {
+    "name": "UR02",
+    "restricted": true
+  },
+  {
+    "name": "UR03",
+    "restricted": false
+  },
+  {
+    "name": "UR04",
+    "restricted": false
+  },
+  {
+    "name": "MU01",
+    "restricted": false
+  },
+  {
+    "name": "MU03",
+    "restricted": false
+  },
+  {
+    "name": "TX00",
+    "restricted": false
+  },
+  {
+    "name": "PR00",
+    "restricted": false
+  },
+  {
+    "name": "PRDW",
+    "restricted": false
+  },
+  {
+    "name": "TN15",
+    "restricted": false
+  },
+  {
+    "name": "SPJE",
+    "restricted": false
+  }
+]

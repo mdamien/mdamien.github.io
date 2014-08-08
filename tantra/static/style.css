@@ -1,0 +1,65 @@
+.uv {
+float: left;
+padding: 5px;
+width: 80px;
+text-align: center;
+color: white;
+background: dimgray;
+box-sizing: border-box;
+}
+
+.uv_list, .filters{
+   text-align:center;
+   padding: 20px;
+}
+.uv_list{
+margin-right: 400px;
+}
+.uv_infos {
+float: right;
+margin: 20px;
+width: 400px;
+margin-top:0px;
+}
+
+.uv.restricted {
+  border-bottom: 3px solid rgb(255, 71, 71);
+  padding-bottom: 2px;
+}
+
+.uv.TSH {
+  background-color: rgb(241, 160, 57);
+}
+
+.uv.CS {
+  background-color: rgb(26, 255, 72);
+}
+
+.uv.TM {
+  background-color: rgb(74, 110, 255);
+}
+
+.uv:hover{
+   padding:5px;
+   border:none;
+   cursor:pointer;
+   background-color:white;
+   color:black;
+   font-weight:bold;
+}
+
+.schedule-tables .filled{
+    background-color: rgb(221, 221, 221);;
+}
+.schedule-tables table{
+    table-layout:fixed;
+}
+
+@media (max-width: 800px) {
+    .uv_list{
+    margin-right: 100px;
+    }
+    .uv_infos {
+    width: 150px;
+    }
+}

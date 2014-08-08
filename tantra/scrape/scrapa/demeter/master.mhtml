@@ -1,0 +1,2808 @@
+From: <Saved by WebKit>
+Subject: UTC - DEMETER - Consultation du catalogue des uvs
+Date: Thu, 6 Aug 2014 06:42:44 -0400
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_E98D_66CB4400.D42F66F4"
+
+------=_NextPart_000_E98D_66CB4400.D42F66F4
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://demeter.utc.fr/pls/portal30/ENSEIGNEMENT.CONSULT_ENSEG_TAB_DYN.show
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd"><html><head><meta charset=3D"ISO-8859-1">  	<met=
+a http-equiv=3D"Pragma" content=3D"no-cache">  	<meta http-equiv=3D"Expires=
+" content=3D"Tue, 01 Jan 2000 12:00:00 +0100">  	<meta http-equiv=3D"Cache-=
+Control" content=3D"max-age=3D0, no-store">  	<title>UTC - DEMETER - Consul=
+tation du catalogue des uvs</title>  	<link rel=3D"stylesheet" type=3D"text=
+/css" href=3D"https://demeter.utc.fr/pls/portal30/docs/PAGE/PORTLETREPOSITO=
+RY/OTHER_PROVIDERS/PORTAIL_SIGAM/CSS/commun.css">  	<link rel=3D"stylesheet=
+" type=3D"text/css" href=3D"https://demeter.utc.fr/pls/portal30/docs/PAGE/P=
+ORTLETREPOSITORY/OTHER_PROVIDERS/PORTAIL_SIGAM/CSS/consult_offre_uvs.css"> =
+ 	<style type=3D"text/css">  	.resa {        color: #FF3300;}      .non_dip=
+l {        font-style: italic;}  	h3 {  		background-image:url(none);  		ba=
+ckground-color: #FFCC00;  	}      </style>      <style type=3D"text/css"></=
+style>        	</head><body>      <form name=3D"form_uvs" method=3D"POST" a=
+ction=3D"https://demeter.utc.fr/pls/portal30/ENSEIGNEMENT.CONSULT_ENSEG_TAB=
+_DYN.show">
+<input type=3D"hidden" name=3D"p_arg_names" value=3D"p_action">
+<input type=3D"hidden" name=3D"p_arg_values" value=3D"1" id=3D"hid_action">
+<input type=3D"hidden" name=3D"p_arg_names" value=3D"p_offre">
+<input type=3D"hidden" name=3D"p_arg_values" value=3D"" id=3D"idoffre">
+<input type=3D"hidden" name=3D"p_arg_names" value=3D"p_langue">
+<input type=3D"hidden" name=3D"p_arg_values" value=3D"FR" id=3D"v_langue">
+<input type=3D"hidden" name=3D"p_arg_names" value=3D"p_aff">
+<input type=3D"hidden" name=3D"p_arg_values" value=3D"TAB" id=3D"v_aff">
+<div><h3>
+Crit=E8res de s=E9lection
+<a href=3D"javascript:afficheAnglais('EN');" class=3D"marge100"><img src=3D=
+"https://demeter.utc.fr/pls/portal30/docs/PAGE/PORTLETREPOSITORY/OTHER_PROV=
+IDERS/PORTAIL_SIGAM/IMAGES/DRAPEAU_UK.GIF" alt=3D"EN" title=3D"Show english=
+ version"></a>
+</h3><div class=3D"left"><p><label>
+Affichage
+</label><input type=3D"radio" class=3D"marge100" name=3D"choixaff" value=3D=
+"TAB" onclick=3D"$('v_aff').value=3D'TAB';" checked=3D"">
+Tableau
+<input class=3D"marge50" type=3D"radio" name=3D"choixaff" value=3D"IMA" onc=
+lick=3D"$('v_aff').value=3D'IMA';">
+Alphab=E9tique
+<br>
+<input type=3D"hidden" name=3D"p_arg_names" value=3D"p_periode">
+<label>
+Enseign=E9 au
+</label><select name=3D"p_arg_values" class=3D"marge80"><option value=3D"20=
+1401" selected=3D"selected">Automne 2014</option><option value=3D"201403">P=
+rintemps 2015</option>          </select>&nbsp;
+<br>  	<label>
+Formation
+</label>
+<input type=3D"hidden" name=3D"p_arg_names" value=3D"p_diplome">
+<select id=3D"v_dipl" name=3D"p_arg_values" class=3D"marge80" onchange=3D"l=
+oaddipl('', '');">          <option value=3D"">
+Choisir une formation
+</option>
+<option value=3D"DEUT">Ing=E9nieur UTC - Tronc commun</option>
+<option value=3D"HUTECH">Ing=E9nieur UTC - Humanit=E9s et Technologie</opti=
+on>
+<option value=3D"ING">Ing=E9nieur UTC - Branche</option>
+<option value=3D"LPRO">Licence professionnelle</option>
+<option value=3D"MST" selected=3D"selected">Master Sciences et Technologies=
+</option>
+</select><br><label>
+<span id=3D"libspec">Mention :</span>
+</label>
+<input type=3D"hidden" name=3D"p_arg_names" value=3D"p_spec">
+<select class=3D"marge80" id=3D"v_spec" name=3D"p_arg_values"><option value=
+=3D"">
+Toutes
+</option>
+<option value=3D"319">IC</option>
+<option value=3D"320">ISS</option>
+<option value=3D"321">MSCI</option>
+<option value=3D"300">SIMS</option>
+<option value=3D"303">STIC</option>
+<option value=3D"302">STQS</option>
+<option value=3D"301">TVIA</option>
+<option value=3D"318">TVRN</option>
+</select><br>
+<input type=3D"hidden" name=3D"p_arg_names" value=3D"p_cat_1">
+<input type=3D"hidden" name=3D"p_arg_values" value=3D"CS" id=3D"cat_1">
+<input type=3D"hidden" name=3D"p_arg_names" value=3D"p_cat_2">
+<input type=3D"hidden" name=3D"p_arg_values" value=3D"TM" id=3D"cat_2">
+<input type=3D"hidden" name=3D"p_arg_names" value=3D"p_cat_3">
+<input type=3D"hidden" name=3D"p_arg_values" value=3D"TSH" id=3D"cat_3">
+<input type=3D"hidden" name=3D"p_arg_names" value=3D"p_cat_4">
+<input type=3D"hidden" name=3D"p_arg_values" value=3D"" id=3D"cat_4">
+<input type=3D"hidden" name=3D"p_arg_names" value=3D"p_cat_5">
+<input type=3D"hidden" name=3D"p_arg_values" value=3D"" id=3D"cat_5">
+<input type=3D"hidden" name=3D"p_arg_names" value=3D"p_cat_6">
+<input type=3D"hidden" name=3D"p_arg_values" value=3D"" id=3D"cat_6">
+</p></div><div class=3D"left"><table>
+<tbody><tr><td class=3D"CS"><span class=3D"left"><input type=3D"checkbox" n=
+ame=3D"p_arg_values" value=3D"CS" onclick=3D"if(this.checked){document.getE=
+lementById('cat_1').value=3Dthis.value;}else{document.getElementById('cat_1=
+').value=3D'';}" checked=3D"checked">Scientifiques (CS-ST)</span></td></tr>
+<tr><td class=3D"TM"><span class=3D"left"><input type=3D"checkbox" name=3D"=
+p_arg_values" value=3D"TM" onclick=3D"if(this.checked){document.getElementB=
+yId('cat_2').value=3Dthis.value;}else{document.getElementById('cat_2').valu=
+e=3D'';}" checked=3D"checked">Techniques (TM-ST)</span></td></tr>
+<tr><td class=3D"TSH"><span class=3D"left"><input type=3D"checkbox" name=3D=
+"p_arg_values" value=3D"TSH" onclick=3D"if(this.checked){document.getElemen=
+tById('cat_3').value=3Dthis.value;}else{document.getElementById('cat_3').va=
+lue=3D'';}" checked=3D"checked">Technologie et Sciences de l'Homme</span></=
+td></tr>
+</tbody></table></div></div>
+<div class=3D"full center"><input type=3D"button" class=3D"btn_valider" val=
+ue=3D"Rechercher" onclick=3D"desactiveRadios();document.forms.form_uvs.subm=
+it();"></div>
+<div class=3D"full"><h3>
+R=E9sultats
+</h3>
+<table class=3D"liste"><thead><tr><th></th><th colspan=3D"1">
+</th>
+<th colspan=3D"2"></th><th colspan=3D"3">
+Heures
+</th><th colspan=3D"3"></th></tr>  			<tr class=3D"l2"><th>Code</th><th>Pla=
+ces</th>
+<th style=3D"vertical-align:middle"><span id=3D"txt_nb">206</span>
+enseignements
+</th><th>
+Cr=E9dits
+</th><th>Cours</th><th>TD</th><th>TP</th><th>Final?</th><th>Cat.</th><th>
+Responsable
+</th></tr></thead><tbody>
+<tr class=3D"TM" onclick=3D"consulte_uv(4838);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';" style=3D"cursor: auto; color: blac=
+k;">
+<td style=3D"font-weight:bold">BA04</td>
+<td>48</td>
+<td>Conversion Et Gestion Des Energies Renouvelables</td><td>6</td><td>
+32</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Fabrice L=
+OCMENT</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5098);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';" style=3D"cursor: auto; color: blac=
+k;">
+<td style=3D"font-weight:bold">BIO01</td>
+<td>-</td>
+<td>Du Gene A La Macromolecule</td><td>4</td><td>
+30</td><td>
+-</td><td>
+-</td><td>Non</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Sandri=
+ne MORANDAT</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5099);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BIO02</td>
+<td>-</td>
+<td>Ingenierie Des Proteines Et Exploitation De La Diversite Moleculaire</t=
+d><td>4</td><td>
+30</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>B=E9ra=
+ng=E8re AVALLE-BIHAN</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5100);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BIO03</td>
+<td>-</td>
+<td>De La Fonction A La Physiologie</td><td>4</td><td>
+30</td><td>
+-</td><td>
+-</td><td>Non</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Sandri=
+ne MORANDAT</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5075);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BIO04</td>
+<td>-</td>
+<td>Biologie Structurale</td><td>4</td><td>
+30</td><td>
+-</td><td>
+-</td><td>Non</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Daniel=
+ THOMAS</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5076);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BIO05</td>
+<td>-</td>
+<td>Analyse Du Cycle De Vie II</td><td>2</td><td>
+15</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Daniel=
+ THOMAS</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5102);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BIO11</td>
+<td>-</td>
+<td>Procedes De Transformation Vegetale</td><td>4</td><td>
+30</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Yolande P=
+ERRIN</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5104);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BIO12</td>
+<td>-</td>
+<td>Alternatives Vegetales</td><td>4</td><td>
+30</td><td>
+-</td><td>
+-</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Brigitte =
+THOMASSET</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5106);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BIO13</td>
+<td>-</td>
+<td>Interaction, Reconnaissance Supramoleculaire Et Biomimetisme</td><td>4<=
+/td><td>
+30</td><td>
+-</td><td>
+-</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Karsten H=
+AUPT</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5108);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BIO14</td>
+<td>-</td>
+<td>Genie Metabolique Industriel</td><td>4</td><td>
+30</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Daniel TH=
+OMAS</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5077);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BIO15</td>
+<td>-</td>
+<td>Biophysique Moleculaire Et Metabolique</td><td>4</td><td>
+30</td><td>
+-</td><td>
+-</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Sandrine =
+MORANDAT</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5082);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BIO16</td>
+<td>-</td>
+<td>Capteurs Et Biocapteurs</td><td>4</td><td>
+30</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Sandrine =
+MORANDAT</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(4813);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BL20</td>
+<td>72</td>
+<td>M=E9tabolisme Et Physiologie Cellulaire</td><td>6</td><td>
+32</td><td>
+32</td><td>
+24</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>S=E9v=
+erine PADIOLLEAU-LEFEVRE</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5308);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BMI01</td>
+<td>-</td>
+<td>Propri=E9t=E9s M=E9caniques Des Syst=E8mes Biologiques</td><td>3</td><t=
+d>
+20</td><td>
+12</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Sabine=
+ BENSAMOUN</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5310);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BMI02</td>
+<td>-</td>
+<td>Ing=E9nierie Des Syst=E8mes Biologiques Et Bioartificiels</td><td>3</td=
+><td>
+14</td><td>
+14</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Christ=
+ophe EGLES</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5312);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BMI03</td>
+<td>-</td>
+<td>Syst=E8mes Microfuidiques Et Microsyst=E8mes Appliqu=E9es =C0 La Biolog=
+ie Et =C0 La Sant=E9</td><td>3</td><td>
+16</td><td>
+16</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Eric L=
+ECLERC</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5314);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BMI04</td>
+<td>-</td>
+<td>Modelisation Des Systemes Neuromusculaire Et Musculosquelettique En Int=
+eraction</td><td>3</td><td>
+30</td><td>
+-</td><td>
+-</td><td>Non</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Sofian=
+e BOUDAOUD</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5316);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BMI05</td>
+<td>-</td>
+<td>Mod=E9lisation Des Syst=E8mes Ost=E9o-Articulaire Et Musculosquelettiqu=
+e En Interaction</td><td>3</td><td>
+20</td><td>
+12</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Marie-=
+Christine HO BA THO</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5318);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BMI06</td>
+<td>-</td>
+<td>Nanotecnologies Et Nanobiom=E9canique Des Syst=E8mes Biologiques Comple=
+xes</td><td>3</td><td>
+16</td><td>
+16</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Karim =
+EL KIRAT-CHATEL</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5320);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BMI07</td>
+<td>-</td>
+<td>Mod=E9lisation Multiphysique Du Syst=E8me Vasculaire</td><td>3</td><td>
+20</td><td>
+12</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Anne-V=
+irginie SALSAC</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(3910);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">BT09</td>
+<td>40</td>
+<td>Industries Agro-Alimentaires - Qualites De L'Aliment</td><td>6</td><td>
+32</td><td>
+32</td><td>
+16</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Elisabet=
+h MOUTON</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(5423);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">CP01</td>
+<td>-</td>
+<td>Yes, You Can!</td><td>3</td><td>
+31</td><td>
+-</td><td>
+-</td><td>Non</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Nathalie DARENE</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(3565);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">DI01</td>
+<td>40</td>
+<td>Initiation Au Design Industriel</td><td>4</td><td>
+32</td><td>
+10</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Anne MEULEAU</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(3576);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">DI02</td>
+<td>28</td>
+<td>Initiation Au Design Graphique</td><td>4</td><td>
+32</td><td>
+32</td><td>
+-</td><td>Non</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Christophe HARBONNIER</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(3577);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">DI05</td>
+<td>96</td>
+<td>Methodologie Et Analyse De La Valeur</td><td>6</td><td>
+32</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Nicolas S=
+ALZMANN</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(5233);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">DPP01</td>
+<td>-</td>
+<td>Developper Son Projet Professionnel</td><td>2</td><td>
+18</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Gilbert FARGES</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(3578);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">EI03</td>
+<td>40</td>
+<td>Communication Interculturelle En Entreprises, Organisations Transnation=
+ales</td><td>4</td><td>
+16</td><td>
+30</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Jacques PATEAU</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(5020);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">EI05</td>
+<td>24</td>
+<td>Science, Technologie Et Soci=E9t=E9 Dans L'Union Europ=E9enne</td><td>4=
+</td><td>
+16</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Martin MORGENEYER</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(3579);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">FQ01</td>
+<td>280</td>
+<td>=C9conomie Globale Et Maitrise De La Qualit=E9</td><td>6</td><td>
+45</td><td>
+24</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Jean-Marc=
+ PICARD</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(5132);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GE10</td>
+<td>120</td>
+<td>=C9conomie Politique</td><td>4</td><td>
+16</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Yann MOULIER BOUTANG</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(3583);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GE15</td>
+<td>96</td>
+<td>Initiation A La Cr=E9ation Et Gestion D'Entreprises Innovantes</td><td>=
+4</td><td>
+16</td><td>
+32</td><td>
+-</td><td>Non</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Joseph ORLINSKI</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4253);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GE20</td>
+<td>48</td>
+<td>=C9conomie Industrielle</td><td>4</td><td>
+16</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Frederic HUET</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(3920);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GE21</td>
+<td>48</td>
+<td>=C9conomie Et Gestion De L'Innovation Et Du Num=E9rique</td><td>4</td><=
+td>
+16</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Pascal JOLLIVET-COURTOIS</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4347);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GE22</td>
+<td>144</td>
+<td>=C9conomie Internationale</td><td>4</td><td>
+16</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Luc MEZZA</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4725);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GE23</td>
+<td>48</td>
+<td>Transferts De Technologies Et D=E9veloppements</td><td>4</td><td>
+16</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Alain BERNARD</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4254);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GE25</td>
+<td>48</td>
+<td>Gestion Et Organisation De La Production</td><td>4</td><td>
+16</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Arnaud DUCASTELLE</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4255);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GE26</td>
+<td>24</td>
+<td>Management Strat=E9gique Des Ressources Humaines</td><td>4</td><td>
+16</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Laurence DELTOMBE</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4256);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GE27</td>
+<td>48</td>
+<td>Gestion Financi=E8re De L'Entreprise</td><td>4</td><td>
+16</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Christine DIVRY-GROFF</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4201);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GE28</td>
+<td>72</td>
+<td>=C9conomie Et Droit De La Propri=E9t=E9 Intellectuelle (Industrielle Et=
+ Artistique) Dans Une =C9conomie Reposant Sur La Connaissance</td><td>4</td=
+><td>
+32</td><td>
+16</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Yann MOULIER BOUTANG</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4203);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GE29</td>
+<td>24</td>
+<td>Gestion Et Management International De L'Entreprise</td><td>4</td><td>
+16</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Az-Eddine BENNANI</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(3921);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GE36</td>
+<td>72</td>
+<td>Marketing</td><td>4</td><td>
+16</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Didier SERRANT</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(3584);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GE37</td>
+<td>168</td>
+<td>Gestion De Projet</td><td>6</td><td>
+16</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Manuel MA=
+JADA</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(3585);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GE38</td>
+<td>24</td>
+<td>Management Et Outils D'Aide =C0 La Cr=E9ativit=E9 Industrielle Et =C0 L=
+'Innovation</td><td>6</td><td>
+16</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Pascal AL=
+BERTI</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(3586);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GE39</td>
+<td>48</td>
+<td>Management Et Marketing De L'Innovation</td><td>6</td><td>
+16</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Nathalie =
+DARENE</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(4257);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GE40</td>
+<td>24</td>
+<td>Management De Projets</td><td>6</td><td>
+16</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Thierry G=
+IDEL</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(4553);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GPF50</td>
+<td>-</td>
+<td>Physicochimie Des Interfaces Et Des Systemes Disperses</td><td>3</td><t=
+d>
+24</td><td>
+-</td><td>
+-</td><td>Non</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Isabel=
+le PEZRON</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(4555);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GPF51</td>
+<td>-</td>
+<td>Systemes Emulsionnes En Formulation</td><td>3</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Audrey=
+ DRELICH</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(4556);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GPF52</td>
+<td>-</td>
+<td>Analyse Des Proprietes Optiques Et Structurales</td><td>3</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Isabel=
+le PEZRON</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(4558);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GPF53</td>
+<td>-</td>
+<td>Technologies De Mise En Oeuvre Des Fluides Complexes</td><td>3</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Elisabeth=
+ VAN HECKE</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(4559);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GPF54</td>
+<td>-</td>
+<td>Formulation, Applications Cosmetiques</td><td>3</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Isabelle =
+PEZRON</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(4560);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">GPF55</td>
+<td>-</td>
+<td>Filmication, Peintures Et Encres</td><td>3</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Isabelle =
+PEZRON</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(5491);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">HT01</td>
+<td>48</td>
+<td>Culture Et Histoire Des Techniques</td><td>4</td><td>
+32</td><td>
+16</td><td>
+-</td><td>Non</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Guillaume CARNINO</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(4304);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">IA01</td>
+<td>96</td>
+<td>Intelligence Artificielle : Repr=E9sentation</td><td>6</td><td>
+32</td><td>
+32</td><td>
+12</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Marie=
+-H=E9l=E8ne ABEL</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(3924);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">IA03</td>
+<td>48</td>
+<td>Techniques De Mod=E9lisation, Capitalisation Et Gestion Des Connaissanc=
+es</td><td>6</td><td>
+32</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Marie-H=
+=E9l=E8ne ABEL</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(3587);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">IC05</td>
+<td>24</td>
+<td>Technologies Pour La Documentation Et L'Indexation Dans L'Hyperm=E9dia<=
+/td><td>4</td><td>
+32</td><td>
+32</td><td>
+-</td><td>Non</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Franck GHITALLA</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5058);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ICX01</td>
+<td>-</td>
+<td>Atelier D'Innovation Et Eco-Conception</td><td>6</td><td>
+16</td><td>
+48</td><td>
+-</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Anne GUEN=
+AND-WACQUIEZ</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5059);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ICX02</td>
+<td>-</td>
+<td>Analyse Des Situations</td><td>6</td><td>
+16</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Pierre-He=
+nri DEJEAN</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5061);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ICX03</td>
+<td>-</td>
+<td>Atelier Projet / Experimentation</td><td>6</td><td>
+16</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Olivier G=
+APENNE</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(5062);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ICX04</td>
+<td>-</td>
+<td>Cycle De Conferences</td><td>6</td><td>
+32</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Yann MOULIER BOUTANG</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5063);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ICX05</td>
+<td>-</td>
+<td>Atelier D'Ecritures D'Articles</td><td>2</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Laurence =
+MEREDITH-SMITH</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5064);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ICX06</td>
+<td>-</td>
+<td>Interaction Et Complexite</td><td>5</td><td>
+17</td><td>
+24</td><td>
+10</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Indira T=
+HOUVENIN</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5156);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ISI01</td>
+<td>-</td>
+<td>Veille Et Intelligence =C9conomique</td><td>4</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Domini=
+que LENNE</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5182);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ISI02</td>
+<td>-</td>
+<td>Gestion Globale De L'Entreprise</td><td>4</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Domini=
+que LENNE</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5164);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ISI03</td>
+<td>-</td>
+<td>Sociologie Des Organisations </td><td>4</td><td>
+32</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Domini=
+que LENNE</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5166);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ISI05</td>
+<td>-</td>
+<td>Management De Projets</td><td>1</td><td>
+12</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Domini=
+que LENNE</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5167);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ISI06</td>
+<td>-</td>
+<td>Droit Appliqu=E9 Aux Syst=E8mes D'Information</td><td>2</td><td>
+12</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Domini=
+que LENNE</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5168);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ISI07</td>
+<td>-</td>
+<td>Gouvernance Du Si</td><td>3</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Domini=
+que LENNE</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5170);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ISI09</td>
+<td>-</td>
+<td>Architecture Et Urbanisation Des Si</td><td>4</td><td>
+32</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Domini=
+que LENNE</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5171);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ISI10</td>
+<td>-</td>
+<td>S=E9curit=E9 Des Si</td><td>4</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Domini=
+que LENNE</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5172);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ISI11</td>
+<td>-</td>
+<td>Telecom Et R=E9seaux</td><td>2</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Domini=
+que LENNE</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5173);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ISI12</td>
+<td>-</td>
+<td>Externalisation </td><td>2</td><td>
+16</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Domini=
+que LENNE</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5174);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ISI13</td>
+<td>-</td>
+<td>Panorama Des Tendances Technologiques Et Impact Sur Les M=E9tiers</td><=
+td>4</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Domini=
+que LENNE</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5175);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ISI14</td>
+<td>-</td>
+<td>Mise En Oeuvre Des Nouvelles Technologies Et Impact Sur Les Si</td><td>=
+2</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Domini=
+que LENNE</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5176);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ISI15</td>
+<td>-</td>
+<td>Atelier Et S=E9minaire =C0 L'International</td><td>3</td><td>
+32</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Richar=
+d PEYNOT</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5177);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ISI16</td>
+<td>-</td>
+<td>Management D'=C9quipe Et Leadership </td><td>4</td><td>
+32</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Domini=
+que LENNE</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5425);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ISI42</td>
+<td>-</td>
+<td>Frameworks Et Cha=EEnes D'Int=E9gration</td><td>1</td><td>
+-</td><td>
+-</td><td>
+-</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Dominique=
+ LENNE</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5426);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ISI43</td>
+<td>-</td>
+<td>Applications Mobiles/S=E9curit=E9 Web</td><td>2</td><td>
+-</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Dominique=
+ LENNE</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5066);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ISS01</td>
+<td>-</td>
+<td>Bases Des Reseaux</td><td>3</td><td>
+15</td><td>
+3</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Jean-Marc=
+ BERENGUIER</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5067);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">ISS02</td>
+<td>-</td>
+<td>Metrologie Et Mesure Pour Les Services Et Systemes</td><td>6</td><td>
+30</td><td>
+30</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Pol-Manoe=
+l FELAN</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4346);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LA00</td>
+<td>48</td>
+<td>Allemand Initiation</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Nortrud Mathilde KIHM</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4252);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LA01</td>
+<td>32</td>
+<td>Allemand Niveau I</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Gisela LUZIN</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4276);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LA02</td>
+<td>64</td>
+<td>Allemand Niveau II</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Gisela LUZIN</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4277);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LA03</td>
+<td>80</td>
+<td>Allemand Niveau III</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Gabriele ORBACH-LIN</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(5207);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LA11</td>
+<td>64</td>
+<td>Anglais Niveau I</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Val=E9rie BOUCHARDON</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4266);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LA20</td>
+<td>48</td>
+<td>Espagnol Initiation</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Juan HERNANDEZ</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4344);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LA21</td>
+<td>64</td>
+<td>Espagnol Niveau I</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Juan HERNANDEZ</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4267);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LA22</td>
+<td>80</td>
+<td>Espagnol Niveau II</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Raul GOMEZ</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4345);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LA23</td>
+<td>160</td>
+<td>Espagnol Niveau III</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Maria Fatima SANCHEZ PANIAGUA</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4306);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LA91</td>
+<td>16</td>
+<td>Francais Langue =C9trang=E8re Niveau I</td><td>4</td><td>
+-</td><td>
+64</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Anna WIACEK-LE VERGER</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4307);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LA92</td>
+<td>96</td>
+<td>Francais Langue =C9trang=E8re Niveau II</td><td>4</td><td>
+-</td><td>
+64</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Anna WIACEK-LE VERGER</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4194);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LA93</td>
+<td>112</td>
+<td>Francais Langue =C9trang=E8re Niveau III</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Carole LEFRANCOIS-YASUDA</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4268);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LA94</td>
+<td>32</td>
+<td>Francais Langue =C9trang=E8re Niveau IV</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Carole LEFRANCOIS-YASUDA</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4157);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LB14</td>
+<td>80</td>
+<td>Interculturalit=E9 Appliqu=E9e Aux Pays Anglophones</td><td>4</td><td>
+16</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Cindy MOREAU</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4275);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LB24</td>
+<td>16</td>
+<td>Le Monde Hispanique (Niveau IV): L'Espagne</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Non</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Maria Fatima SANCHEZ PANIAGUA</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4839);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LC14</td>
+<td>144</td>
+<td>Communication Scientifique Et Technique En Anglais</td><td>4</td><td>
+16</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Lynne FOREST</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(5237);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LC72</td>
+<td>32</td>
+<td>Anglais Master Niveau 2</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Mark KAY</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(3906);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LC73</td>
+<td>48</td>
+<td>Anglais Master Niveau 3</td><td>4</td><td>
+0</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Mark KAY</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4269);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LG30</td>
+<td>48</td>
+<td>Japonais Initiation</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Non</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Valerie ROY</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4270);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LG31</td>
+<td>16</td>
+<td>Japonais Niveau I</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Anna WIACEK-LE VERGER</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4271);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LG32</td>
+<td>16</td>
+<td>Japonais Niveau II</td><td>4</td><td>
+-</td><td>
+56</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Anna WIACEK-LE VERGER</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(3828);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LG40</td>
+<td>32</td>
+<td>Portugais Initiation</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Fatima FERNANDES</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4272);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LG50</td>
+<td>32</td>
+<td>Italien Initiation</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Xavier AUBERT</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4273);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LG51</td>
+<td>16</td>
+<td>Italien Niveau I</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Xavier AUBERT</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4274);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LG52</td>
+<td>16</td>
+<td>Italien Niveau II</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Xavier AUBERT</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4710);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LG53</td>
+<td>16</td>
+<td>Italien Niveau III</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Non</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Xavier AUBERT</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4350);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LG60</td>
+<td>96</td>
+<td>Chinois Initiation</td><td>4</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Li-Ying EMPINET</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(3927);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LO01</td>
+<td>144</td>
+<td>Bases De La Programmation</td><td>6</td><td>
+32</td><td>
+32</td><td>
+16</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Henry CL=
+AISSE</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5135);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">LO23</td>
+<td>48</td>
+<td>Conduite De Projet Informatique</td><td>6</td><td>
+32</td><td>
+48</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Benjamin =
+LUSSIER</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(4898);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">MB11</td>
+<td>120</td>
+<td>R=E9vision D'Analyse Et D'Alg=E8bre (Gb, Gi, Gsu)</td><td>6</td><td>
+-</td><td>
+64</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Faker =
+BEN BELGACEM</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(4995);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">MI01</td>
+<td>100</td>
+<td>Structure D'Un Calculateur</td><td>6</td><td>
+32</td><td>
+32</td><td>
+16</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Mohamed =
+SHAWKY</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5136);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">MQ03</td>
+<td>150</td>
+<td>M=E9canique Des Vibrations I</td><td>6</td><td>
+32</td><td>
+32</td><td>
+20</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Etien=
+ne ARNOULT</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(3935);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">MQ06</td>
+<td>24</td>
+<td>Mod=E9lisation Des Structures Par =C9l=E9ments Finis</td><td>6</td><td>
+32</td><td>
+32</td><td>
+12</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Frederic=
+ DRUESNE</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(3936);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">MQ13</td>
+<td>36</td>
+<td>Mat=E9riaux Composites</td><td>6</td><td>
+32</td><td>
+24</td><td>
+24</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Zoheir A=
+BOURA</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(3938);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">MQ16</td>
+<td>24</td>
+<td>Elements Finis Pour La Modelisation De Crash Et L'Analyse D'Impacts</td=
+><td>6</td><td>
+32</td><td>
+32</td><td>
+12</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Hocine K=
+EBIR</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(3939);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">MQ17</td>
+<td>88</td>
+<td>Introduction Aux Propri=E9t=E9s M=E9caniques Et =C0 L'Ing=E9nierie Des =
+Mat=E9riaux</td><td>6</td><td>
+32</td><td>
+32</td><td>
+20</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Phili=
+ppe REVEL</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(3941);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">MQ20</td>
+<td>72</td>
+<td>Introduction A La M=E9canique Des Solides Et Des Fluides</td><td>6</td>=
+<td>
+32</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Luhui =
+DING</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(3942);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">MS01</td>
+<td>72</td>
+<td>M=E9thodes D'Analyse Physico-Chimique</td><td>5</td><td>
+32</td><td>
+-</td><td>
+12</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Fran=E7o=
+is OUDET</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(4088);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">MT09</td>
+<td>60</td>
+<td>Analyse Num=E9rique</td><td>6</td><td>
+32</td><td>
+32</td><td>
+16</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Vince=
+nt MARTIN</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(3945);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">MT12</td>
+<td>24</td>
+<td>Techniques Mathematiques Pour L'Ingenieur</td><td>6</td><td>
+32</td><td>
+32</td><td>
+16</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Nikol=
+aos LIMNIOS</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(3594);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">NF04</td>
+<td>140</td>
+<td>Mod=E9lisation Num=E9rique Des Probl=E8mes De L'Ing=E9nieur</td><td>6</=
+td><td>
+32</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Emmanu=
+el LEFRANCOIS</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(3948);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">NF16</td>
+<td>168</td>
+<td>Algorithmique Et Structures De Donn=E9es</td><td>6</td><td>
+32</td><td>
+32</td><td>
+16</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Aziz =
+MOUKRIM</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(3595);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">NF22</td>
+<td>72</td>
+<td>Micro-Ordinateurs Et Applications</td><td>6</td><td>
+24</td><td>
+32</td><td>
+16</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Sofiane =
+BOUDAOUD</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4746);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">PH03</td>
+<td>24</td>
+<td>Penser La Technique Aujourd'Hui</td><td>4</td><td>
+32</td><td>
+16</td><td>
+-</td><td>Non</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Jean-Baptiste GUIGNARD</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5410);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">PR</td>
+<td>72</td>
+<td>R=E9alisation De Projet</td><td>5</td><td>
+-</td><td>
+-</td><td>
+-</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Bruno RAM=
+OND</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5109);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">PTV50</td>
+<td>-</td>
+<td>Methodologies Pour La Recherche </td><td>6</td><td>
+16</td><td>
+8</td><td>
+60</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Andr=E9 =
+PAUSS</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5111);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">PTV51</td>
+<td>-</td>
+<td>Technologies Des Poudres Et Milieux Pulverulents</td><td>3</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Khashayar=
+ SALEH</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5113);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">PTV52</td>
+<td>-</td>
+<td>Conception Et Conduite De Bioreacteurs</td><td>3</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Andr=
+=E9 PAUSS</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5115);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">PTV53</td>
+<td>-</td>
+<td>Technologies Emergentes Pour La Transformation Des Ressources Renouvela=
+bles</td><td>3</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Eug=E8=
+ne VOROBIEV</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5118);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">PTV54</td>
+<td>-</td>
+<td>Procedes De Transformation Thermochimique Des Agroressources En Biocarb=
+urants</td><td>3</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Ammar =
+BENSAKHRIA</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5120);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">PTV55</td>
+<td>-</td>
+<td>Procedes D'Extraction, Separation Et Purification Des Biomolecules</td>=
+<td>3</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Eug=E8=
+ne VOROBIEV</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5122);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">PTV56</td>
+<td>-</td>
+<td>Valorisation Des Coproduits Et Minimisation Des Effluents</td><td>3</td=
+><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Philippe =
+SAJET</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5125);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">PTV57</td>
+<td>-</td>
+<td>Valorisation Energetique De La Biomasse</td><td>3</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Mourad HA=
+ZI</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5127);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">PTV58</td>
+<td>-</td>
+<td>Eco Bilan Et Analyse Du Cycle De Vie</td><td>3</td><td>
+24</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Olivier S=
+CHOEFS</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5072);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">QCO01</td>
+<td>-</td>
+<td>Innovation : Potentialite, Partenariat Et Marches Associes</td><td>4</t=
+d><td>
+18</td><td>
+15</td><td>
+3</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Nathalie =
+DARENE</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5073);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">QCO02</td>
+<td>-</td>
+<td>Creativite Et Innovation</td><td>4</td><td>
+12</td><td>
+8</td><td>
+4</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Pascal AL=
+BERTI</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5089);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">QPO01</td>
+<td>-</td>
+<td>Pilotage Du Progres Et De La Performance</td><td>4</td><td>
+26.5</td><td>
+0</td><td>
+22</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Gilbert =
+FARGES</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(5090);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">QPO04</td>
+<td>-</td>
+<td>Qualite Et Management Des Organisations</td><td>4</td><td>
+18</td><td>
+12</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Nicolas-Louis DUCLOS</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5091);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">QPO06</td>
+<td>-</td>
+<td>Management Des Systemes D'Information</td><td>4</td><td>
+0</td><td>
+0</td><td>
+0</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Gilbert F=
+ARGES</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5068);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">QPO07</td>
+<td>-</td>
+<td>Developpement De Son Projet Professionnel Et Autonomie</td><td>2</td><t=
+d>
+21</td><td>
+8</td><td>
+13</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Gilbert =
+FARGES</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5069);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">QPO08</td>
+<td>-</td>
+<td>Audit Et Evaluation Des Organisations : Partie Pratique</td><td>2</td><=
+td>
+9</td><td>
+8</td><td>
+3</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Jean-Pier=
+re CALISTE</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5092);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">QPO11</td>
+<td>-</td>
+<td>Ingenierie De Projet</td><td>4</td><td>
+0</td><td>
+0</td><td>
+0</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Gilbert F=
+ARGES</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5071);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">QPO12</td>
+<td>-</td>
+<td>Communication Professionnelle De Projet</td><td>4</td><td>
+18</td><td>
+9</td><td>
+17</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Gilbert =
+FARGES</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5093);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">QRO01</td>
+<td>-</td>
+<td>Normalisation, Metrologie, Essais Et Echanges Internationaux</td><td>4<=
+/td><td>
+0</td><td>
+0</td><td>
+0</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Jean-Pier=
+re CALISTE</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5094);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">QRO02</td>
+<td>-</td>
+<td>Assurer Et Manager La Confiance Face Au Risque</td><td>4</td><td>
+0</td><td>
+0</td><td>
+0</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Jean ESCA=
+NDE</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5095);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">QRO03</td>
+<td>-</td>
+<td>Aide A La Decision En Environnement Complexe : De La Metrologie A La Lo=
+gique Floue</td><td>4</td><td>
+0</td><td>
+0</td><td>
+0</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Jean-Pier=
+re CALISTE</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5399);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">RO05</td>
+<td>24</td>
+<td>Mod=E9lisation De Ph=E9nom=E8nes Al=E9atoires</td><td>6</td><td>
+32</td><td>
+32</td><td>
+8</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Sergio=
+ ALVAREZ-ANDRADE</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(3596);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">RV01</td>
+<td>36</td>
+<td>R=E9alit=E9 Virtuelle</td><td>6</td><td>
+32</td><td>
+32</td><td>
+-</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Indira TH=
+OUVENIN</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(3876);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SC11</td>
+<td>24</td>
+<td>Th=E9orie Des Sciences Cognitives : Computation Et =C9naction</td><td>4=
+</td><td>
+16</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Olivier GAPENNE</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(3881);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SC12</td>
+<td>48</td>
+<td>Technologie, Cognition, Perception</td><td>4</td><td>
+16</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Charles LENAY</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(3887);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SC24</td>
+<td>24</td>
+<td>Apprentissage Et Perception</td><td>4</td><td>
+16</td><td>
+32</td><td>
+-</td><td>Non</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Gunnar DECLERCK</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5049);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SCI03</td>
+<td>-</td>
+<td>Analyse De Donnees Experimentales</td><td>6</td><td>
+30</td><td>
+30</td><td>
+15</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Thierry =
+DENOEUX</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5050);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SCI04</td>
+<td>-</td>
+<td>Bases De Modelisation Stochastique</td><td>3</td><td>
+-</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Nikola=
+os LIMNIOS</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5051);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SCI05</td>
+<td>-</td>
+<td>Outils De Calculs Scientifiques</td><td>3</td><td>
+15</td><td>
+15</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>St=E9phan=
+e MOTTELET</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5052);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SCI06</td>
+<td>-</td>
+<td>Methodologie De Synthese De Commande</td><td>3</td><td>
+15</td><td>
+15</td><td>
+8</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Philip=
+pe BONNIFAIT</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5053);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SCI07</td>
+<td>-</td>
+<td>Prevision De La Surete De Fonctionnement</td><td>3</td><td>
+15</td><td>
+15</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Walter=
+ SCHON</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5284);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SCI20</td>
+<td>-</td>
+<td>Analyse Avanc=E9e De Donn=E9es</td><td>3</td><td>
+20</td><td>
+10</td><td>
+-</td><td>Non</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Sofian=
+e BOUDAOUD</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5286);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SCI21</td>
+<td>-</td>
+<td>Conception S=FBre Des Syst=E8mes</td><td>3</td><td>
+16</td><td>
+16</td><td>
+-</td><td>Non</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Walter=
+ SCHON</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5289);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SCI22</td>
+<td>-</td>
+<td>Mod=E9lisation Et Propagation Des Incertitudes</td><td>3</td><td>
+15</td><td>
+15</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Thierr=
+y DENOEUX</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5306);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SCI23</td>
+<td>-</td>
+<td>Optimisation</td><td>3</td><td>
+20</td><td>
+12</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Pierre=
+ VILLON</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5346);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SCI24</td>
+<td>-</td>
+<td>Seminaires</td><td>2</td><td>
+-</td><td>
+-</td><td>
+-</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Philippe =
+BONNIFAIT</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5294);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SCI25</td>
+<td>-</td>
+<td>Atelier Projet</td><td>6</td><td>
+-</td><td>
+48</td><td>
+-</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Laurent P=
+ETIT</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5304);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SCI31</td>
+<td>-</td>
+<td>Methodes Avancees De Commande Des Systemes Dynamiques</td><td>3</td><td=
+>
+14</td><td>
+14</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Ali CH=
+ARARA</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5344);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SCI32</td>
+<td>-</td>
+<td>De La Microstructure Aux Propri=E9t=E9s Des Materiaux</td><td>3</td><td=
+>
+16</td><td>
+16</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Fahmi =
+BEDOUI</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(3959);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SI01</td>
+<td>24</td>
+<td>Science Et Debat Public</td><td>4</td><td>
+32</td><td>
+16</td><td>
+-</td><td>Non</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Virginie JULLIARD</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4259);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SI11</td>
+<td>65</td>
+<td>Expression Orale- Parole Publique</td><td>4</td><td>
+-</td><td>
+45</td><td>
+-</td><td>Non</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Emmanuel ANDRE OSTROVSKI</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4258);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SI22</td>
+<td>24</td>
+<td>Signes Et Contenus Numeriques</td><td>4</td><td>
+32</td><td>
+16</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Virginie JULLIARD</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(3604);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SI28</td>
+<td>36</td>
+<td>=C9criture Interactive Et Multim=E9dia</td><td>4</td><td>
+16</td><td>
+48</td><td>
+-</td><td>Non</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Serge BOUCHARDON</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(5097);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SIC02</td>
+<td>-</td>
+<td>Economie Des Intangibles</td><td>4</td><td>
+18</td><td>
+18</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Yann MOULIER BOUTANG</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(5128);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SIC03</td>
+<td>-</td>
+<td>Mod=E9lisation Et Exploration Du Complexe</td><td>2</td><td>
+18</td><td>
+18</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Yann MOULIER BOUTANG</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(4923);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SM04</td>
+<td>-</td>
+<td>Physiologie</td><td>0</td><td>
+-</td><td>
+-</td><td>
+-</td><td>Non</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Chanta=
+l PEROT</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5336);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SMA01</td>
+<td>-</td>
+<td>Mod=E9lisation Num=E9rique Avanc=E9e Des Structures</td><td>3</td><td>
+16</td><td>
+16</td><td>
+-</td><td>Non</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Delphi=
+ne BRANCHERIE</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5338);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SMA02</td>
+<td>-</td>
+<td>Identification De Mod=E8les En M=E9canique</td><td>3</td><td>
+16</td><td>
+14</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Pierre=
+ FEISSEL</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5340);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SMA03</td>
+<td>-</td>
+<td>Capteur Et Actionneurs Compacts Innovants</td><td>3</td><td>
+16</td><td>
+16</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Fr=E9d=
+=E9ric LAMARQUE</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5342);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SMA04</td>
+<td>-</td>
+<td>Mod=E9lisation Et Simulation Syst=E8mes</td><td>3</td><td>
+16</td><td>
+16</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Benoit=
+ EYNARD</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5302);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SMA05</td>
+<td>-</td>
+<td>Robustesse Pour La Conception De Systemes Mecaniques Et Mecatroniques</=
+td><td>3</td><td>
+-</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Ahmed =
+Nassim BOUDAOUD</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5300);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SMA06</td>
+<td>-</td>
+<td>Optimisation Mluti-Disciplinaire</td><td>3</td><td>
+-</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Piotr =
+BREITKOPF</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5296);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SMA07</td>
+<td>-</td>
+<td>Materiaux Actifs</td><td>3</td><td>
+-</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Nicola=
+s BUIRON</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5290);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SMA08</td>
+<td>-</td>
+<td>Systemes Embarques : Entrainements Electriques Et Actionneurs</td><td>3=
+</td><td>
+22</td><td>
+10</td><td>
+-</td><td>Non</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Christ=
+ophe FORGEZ</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(3873);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SO05</td>
+<td>48</td>
+<td>Sociologie, Organisations Et Dynamiques Des Collectifs</td><td>4</td><t=
+d>
+16</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Michael VICENTE</td></tr>
+<tr class=3D"TSH" onclick=3D"consulte_uv(4426);" onmouseover=3D"this.style.=
+cursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.cur=
+sor=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SO06</td>
+<td>24</td>
+<td>Organisation Des Syst=E8mes De Sant=E9</td><td>4</td><td>
+16</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Technologie et Sciences de l'Homme">TSH</td>=
+  		<td>Isabelle CLAUDE</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(3961);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SR01</td>
+<td>140</td>
+<td>Maitrise Des Syst=E8mes Informatiques</td><td>6</td><td>
+32</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Yacine CH=
+ALLAL</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(3609);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SR04</td>
+<td>90</td>
+<td>R=E9seaux Informatiques</td><td>6</td><td>
+32</td><td>
+32</td><td>
+17</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Abdel=
+madjid BOUABDALLAH</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(3962);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SY02</td>
+<td>312</td>
+<td>M=E9thodes Statistiques Pour L'Ing=E9nieur</td><td>6</td><td>
+32</td><td>
+32</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>G=E9ra=
+rd GOVAERT</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(4990);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SY03</td>
+<td>96</td>
+<td>Introduction Aux Systemes D'Entrainements Electriques</td><td>6</td><td=
+>
+32</td><td>
+32</td><td>
+16</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Didier L=
+EMOINE</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(4295);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">SY08</td>
+<td>48</td>
+<td>Mod=E9lisation Des Syst=E8mes A =C9v=E8nements Discrets</td><td>6</td><=
+td>
+32</td><td>
+32</td><td>
+16</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Boris=
+lav VIDOLOV</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(3612);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TF01</td>
+<td>120</td>
+<td>M=E9canique Des Fluides Incompressibles</td><td>6</td><td>
+32</td><td>
+32</td><td>
+18</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Yuri =
+MOLODTSOF</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5322);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TIS01</td>
+<td>-</td>
+<td>Fondements Des R=E9seaux D'Interconnexion</td><td>3</td><td>
+23</td><td>
+5</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Abdelm=
+adjid BOUABDALLAH</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5324);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TIS02</td>
+<td>-</td>
+<td>Avanc=E9es En Apprentissage Statistique</td><td>3</td><td>
+-</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Nicola=
+s USUNIER</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5326);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TIS03</td>
+<td>-</td>
+<td>Mod=E9lisation Et Optimisation Des Syst=E8mes Discrets</td><td>3</td><t=
+d>
+18</td><td>
+12</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Jacque=
+s CARLIER</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5328);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TIS04</td>
+<td>-</td>
+<td>Estimation Pour La Navigation Robotique</td><td>3</td><td>
+20</td><td>
+12</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Philip=
+pe BONNIFAIT</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5330);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TIS05</td>
+<td>-</td>
+<td>Commande De Robots Autonomes En Coop=E9ration</td><td>3</td><td>
+24</td><td>
+8</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Isabel=
+le FANTONI-COICHOT</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5332);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TIS06</td>
+<td>-</td>
+<td>Syst=E8mes Interactifs Intelligents</td><td>3</td><td>
+-</td><td>
+-</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Domini=
+que LENNE</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5334);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TIS07</td>
+<td>-</td>
+<td>Algorithmes Et Protocoles Pour L'Interconnexion Des Syst=E8mes</td><td>=
+3</td><td>
+22</td><td>
+10</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Enrico=
+ NATALIZIO</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(4812);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TN15</td>
+<td>24</td>
+<td>Cr=E9ation De Produit, D'Activit=E9, D'Entreprise</td><td>6</td><td>
+12</td><td>
+-</td><td>
+-</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Joseph OR=
+LINSKI</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(4278);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TN20</td>
+<td>162</td>
+<td>Cao :  Mod=E9lisation G=E9om=E9trique</td><td>6</td><td>
+24</td><td>
+64</td><td>
+-</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Matthieu =
+BRICOGNE-CUIGNI=C8RES</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5046);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TTS01</td>
+<td>-</td>
+<td>Acquisition De Signaux Et D'Images Medicales</td><td>5</td><td>
+32</td><td>
+-</td><td>
+16</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Cathe=
+rine MARQUE</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5083);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TTS10</td>
+<td>-</td>
+<td>Imagerie Medicale Clinique</td><td>6</td><td>
+96</td><td>
+-</td><td>
+6</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Alain DON=
+ADEY</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5084);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TTS11</td>
+<td>-</td>
+<td>Traitement Et Soins 1 : Blocs Operatoires, Anesthesie, Reanimation</td>=
+<td>6</td><td>
+18</td><td>
+-</td><td>
+6</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Alain DON=
+ADEY</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5085);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TTS12</td>
+<td>-</td>
+<td>Traitement Et Soins 2 : Hemodialyse, Radiotherapie</td><td>3</td><td>
+20</td><td>
+-</td><td>
+4</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Alain =
+DONADEY</td></tr>
+<tr class=3D"CS" onclick=3D"consulte_uv(5086);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TTS13</td>
+<td>-</td>
+<td>Laboratoire D'Analyses Cliniques</td><td>5</td><td>
+16</td><td>
+16</td><td>
+-</td><td>Oui</td><td title=3D"Scientifiques (CS-ST)">CS</td>  		<td>Alain =
+DONADEY</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5087);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TTS14</td>
+<td>-</td>
+<td>Technologies Pour L'Autonomie : Personnes Agees Et Personnes Handicapee=
+s</td><td>3</td><td>
+12</td><td>
+8</td><td>
+-</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Vincent Z=
+ALC</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5088);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TTS15</td>
+<td>-</td>
+<td>Management Des Organisations Biomedicales</td><td>5</td><td>
+21</td><td>
+22</td><td>
+10</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Gilbert =
+FARGES</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5080);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TTS16</td>
+<td>-</td>
+<td>Cycle De Vie D'Un Dispositif Medical</td><td>3</td><td>
+16</td><td>
+16</td><td>
+-</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Claire IM=
+BAUD</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5081);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TTS17</td>
+<td>-</td>
+<td>Organisation Du Systeme De Sante</td><td>3</td><td>
+16</td><td>
+16</td><td>
+16</td><td>Oui</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Isabelle=
+ CLAUDE</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5280);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">TX</td>
+<td>72</td>
+<td>=C9tude Exp=E9rimentale</td><td>5</td><td>
+-</td><td>
+-</td><td>
+-</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Claude-Ol=
+ivier SARDE</td></tr>
+<tr class=3D"TM" onclick=3D"consulte_uv(5065);" onmouseover=3D"this.style.c=
+ursor=3D'pointer';this.style.color=3D'blue';" onmouseout=3D"this.style.curs=
+or=3D'auto';this.style.color=3D'black';">
+<td style=3D"font-weight:bold">UXD02</td>
+<td>-</td>
+<td>Scenarisation D'Experience Utilisateur</td><td>6</td><td>
+16</td><td>
+48</td><td>
+-</td><td>Non</td><td title=3D"Techniques (TM-ST)">TM</td>  		<td>Anne GUEN=
+AND-WACQUIEZ</td></tr>
+</tbody><tfoot><tr><th colspan=3D"15" style=3D"border:none">
+Codes en <span class=3D"resa">rouge</span> : Enseignements r=E9serv=E9s en =
+priorit=E9 aux apprentis<br>  	Lignes en <span class=3D"non_dipl">italique<=
+/span> : Enseignements non dipl=F4mants pour la formation choisie
+</th></tr></tfoot></table>
+
+</div>
+      </form>   =20
+<!----- show footer template =3D 39256420846 ----->
+
+</body></html>
+------=_NextPart_000_E98D_66CB4400.D42F66F4
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://demeter.utc.fr/pls/portal30/docs/PAGE/PORTLETREPOSITORY/OTHER_PROVIDERS/PORTAIL_SIGAM/CSS/commun.css
+
+body { margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif=
+; font-size: 12px; color: rgb(0, 0, 0); }
+
+p { color: rgb(12, 40, 56); font-weight: bold; }
+
+h1 { border-top-left-radius: 2em; border-top-right-radius: 2em; border-bott=
+om-right-radius: 2em; border-bottom-left-radius: 2em; box-shadow: rgb(51, 5=
+1, 51) 2px 3px 4px; color: rgb(255, 255, 255); margin-left: 1px; font-weigh=
+t: bold; padding: 5px; margin-top: 10px; text-align: center; font-size: 16p=
+x; text-shadow: rgb(51, 51, 51) 0.25em 0.25em 0.25em; width: 99%; backgroun=
+d: linear-gradient(rgb(60, 134, 134) 0%, rgb(68, 150, 150) 12%, rgb(74, 166=
+, 166) 25%, rgb(58, 128, 128) 39%, rgb(43, 95, 95) 50%, rgb(19, 43, 43) 51%=
+, rgb(29, 63, 63) 60%, rgb(42, 94, 94) 76%, rgb(34, 76, 76) 91%, rgb(29, 65=
+, 65) 100%); }
+
+h2 { border-top-left-radius: 2em; border-top-right-radius: 2em; border-bott=
+om-right-radius: 2em; border-bottom-left-radius: 2em; box-shadow: rgb(51, 5=
+1, 51) 2px 3px 4px; color: rgb(255, 255, 255); margin-left: 1px; font-weigh=
+t: bold; padding: 5px; margin-top: 10px; text-align: center; font-size: 14p=
+x; text-shadow: rgb(51, 51, 51) 0.25em 0.25em 0.25em; width: 99%; backgroun=
+d: linear-gradient(rgb(182, 92, 155) 0%, rgb(187, 103, 162) 12%, rgb(192, 1=
+16, 169) 25%, rgb(180, 88, 152) 39%, rgb(160, 72, 134) 50%, rgb(120, 54, 10=
+0) 51%, rgb(135, 61, 113) 60%, rgb(159, 71, 132) 76%, rgb(145, 65, 121) 91%=
+, rgb(137, 61, 114) 100%); }
+
+h3 { border-top-left-radius: 2em; border-top-right-radius: 2em; border-bott=
+om-right-radius: 2em; border-bottom-left-radius: 2em; box-shadow: rgb(51, 5=
+1, 51) 2px 3px 4px; color: rgb(255, 255, 255); margin-left: 1px; font-weigh=
+t: bold; padding: 3px; margin-top: 10px; text-align: center; font-size: 12p=
+x; text-shadow: rgb(51, 51, 51) 0.25em 0.25em 0.25em; width: 99%; backgroun=
+d: linear-gradient(rgb(108, 120, 120) 0%, rgb(118, 130, 130) 12%, rgb(128, =
+140, 140) 25%, rgb(104, 115, 116) 39%, rgb(84, 92, 92) 50%, rgb(51, 57, 57)=
+ 51%, rgb(64, 70, 70) 60%, rgb(84, 92, 92) 76%, rgb(72, 80, 80) 91%, rgb(65=
+, 72, 73) 100%); }
+
+h4 { border-top-left-radius: 2em; border-top-right-radius: 2em; border-bott=
+om-right-radius: 2em; border-bottom-left-radius: 2em; box-shadow: rgb(51, 5=
+1, 51) 2px 3px 4px; color: rgb(255, 255, 255); margin-left: 1px; font-weigh=
+t: bold; padding: 3px; margin-top: 10px; text-align: center; font-size: 11p=
+x; text-shadow: rgb(51, 51, 51) 0.25em 0.25em 0.25em; width: 99%; backgroun=
+d: linear-gradient(rgb(137, 177, 148) 0%, rgb(89, 177, 108) 50%, rgb(74, 16=
+8, 95) 51%, rgb(105, 197, 126) 100%); }
+
+#menu { width: 100%; height: 59px; background: url(https://demeter.utc.fr/p=
+ls/portal30/docs/PAGE/PORTLETREPOSITORY/OTHER_PROVIDERS/PORTAIL_SIGAM/IMAGE=
+S/MENU_BG.JPG) repeat-x; }
+
+#menu ul { list-style: none; width: 1000px; margin-left: 10px; position: re=
+lative; }
+
+#menu li { list-style: none; display: block; float: left; height: 59px; lin=
+e-height: 59px; }
+
+#menu li a { display: block; float: left; color: rgb(167, 167, 167); font-s=
+ize: 11px; font-weight: bold; line-height: 59px; text-decoration: none; pad=
+ding: 0px 20px; }
+
+#menu li a:hover { color: rgb(255, 255, 255); background: url(https://demet=
+er.utc.fr/pls/portal30/docs/PAGE/PORTLETREPOSITORY/OTHER_PROVIDERS/PORTAIL_=
+SIGAM/IMAGES/MENU_H.JPG) 50% 100% no-repeat; }
+
+#menu li a.current { display: block; float: left; color: rgb(255, 255, 255)=
+; font-size: 11px; font-weight: bold; line-height: 59px; text-decoration: n=
+one; padding: 0px 20px; background: url(https://demeter.utc.fr/pls/portal30=
+/docs/PAGE/PORTLETREPOSITORY/OTHER_PROVIDERS/PORTAIL_SIGAM/IMAGES/MENU_H.JP=
+G) 50% 100% no-repeat; }
+
+#menu li a:hover.current { color: rgb(255, 255, 255); }
+
+#container { position: relative; height: 40px; color: rgb(224, 224, 224); w=
+idth: 100%; margin: 0px; padding: 0px; font-family: Helvetica, Arial, Verda=
+na, sans-serif; background: rgb(20, 61, 85); }
+
+#nav { position: relative; height: 33px; font-size: 12px; font-weight: bold=
+; margin: 0px; padding: 0px 0px 0px 20px; background: url(https://demeter.u=
+tc.fr/pls/portal30/docs/PAGE/PORTLETREPOSITORY/OTHER_PROVIDERS/PORTAIL_SIGA=
+M/IMAGES/BG.GIF) 0% 100% repeat-x rgb(255, 255, 255); }
+
+#nav ul { margin: 0px; padding: 0px; list-style-type: none; width: auto; fl=
+oat: left; }
+
+#nav ul li { display: block; float: left; margin: 0px 1px; }
+
+#nav ul li a { display: block; float: left; color: rgb(234, 243, 248); text=
+-decoration: none; padding: 0px 0px 0px 20px; height: 33px; }
+
+#nav ul li a span { padding: 12px 20px 0px 0px; height: 21px; float: left; =
+}
+
+#nav ul li a:hover { color: rgb(255, 255, 255); background: url(https://dem=
+eter.utc.fr/pls/portal30/docs/PAGE/PORTLETREPOSITORY/OTHER_PROVIDERS/PORTAI=
+L_SIGAM/IMAGES/BG-OVER.GIF) 0% 100% repeat-x transparent; }
+
+#nav ul li a:hover span { display: block; width: auto; cursor: pointer; }
+
+#nav ul li a.current, #nav ul li a.current:hover { color: rgb(255, 255, 255=
+); line-height: 275%; background: url(https://demeter.utc.fr/pls/portal30/d=
+ocs/PAGE/PORTLETREPOSITORY/OTHER_PROVIDERS/PORTAIL_SIGAM/IMAGES/LEFT-ON.PNG=
+) 0% 0% no-repeat rgb(29, 104, 147); }
+
+#nav ul li a.current span { display: block; padding: 0px 20px 0px 0px; widt=
+h: auto; height: 33px; background: url(https://demeter.utc.fr/pls/portal30/=
+docs/PAGE/PORTLETREPOSITORY/OTHER_PROVIDERS/PORTAIL_SIGAM/IMAGES/RIGHT-ON.P=
+NG) 100% 0% no-repeat rgb(29, 104, 147); }
+
+iframe { border: none; }
+
+table { empty-cells: show; border-collapse: separate; font-size: 12px; text=
+-align: center; }
+
+input, select, textarea { }
+
+.lecture_seule { color: black; border: none; font-family: Verdana, Helvetic=
+a, 'Arial sans-serif'; font-size: 12px; box-shadow: none; background-color:=
+ transparent; }
+
+.chiffre { text-align: right; }
+
+strong { color: red; display: block; font-size: 14px; }
+
+pre { font-family: Verdana, Helvetica, 'Arial sans-serif'; font-size: 12px;=
+ }
+
+caption { border: 1px solid rgb(50, 50, 205); margin-bottom: 6px; font-weig=
+ht: bold; }
+
+label { position: absolute; font-weight: bold; vertical-align: top; margin-=
+left: 5px; font-size: 11px; }
+
+.marge5 { margin-left: 5px; }
+
+.marge10 { margin-left: 10px; }
+
+.marge20 { margin-left: 20px; }
+
+.marge25 { margin-left: 25px; }
+
+.marge30 { margin-left: 30px; }
+
+.marge40 { margin-left: 40px; }
+
+.marge45 { margin-left: 45px; }
+
+.marge50 { margin-left: 50px; }
+
+.marge60 { margin-left: 60px; }
+
+.marge70 { margin-left: 70px; }
+
+.marge75 { margin-left: 75px; }
+
+.marge80 { margin-left: 80px; }
+
+.marge90 { margin-left: 90px; }
+
+.marge100 { margin-left: 100px; }
+
+.marge120 { margin-left: 120px; }
+
+.marge130 { margin-left: 130px; }
+
+.marge140 { margin-left: 140px; }
+
+.marge150 { margin-left: 150px; }
+
+.marge160 { margin-left: 160px; }
+
+.marge170 { margin-left: 170px; }
+
+.marge180 { margin-left: 180px; }
+
+.marge200 { margin-left: 200px; }
+
+.marge210 { margin-left: 210px; }
+
+.marge220 { margin-left: 220px; }
+
+.marge230 { margin-left: 230px; }
+
+.marge240 { margin-left: 240px; }
+
+.marge250 { margin-left: 250px; }
+
+.marge280 { margin-left: 280px; }
+
+.marge300 { margin-left: 300px; }
+
+.marge350 { margin-left: 350px; }
+
+.marge400 { margin-left: 400px; }
+
+.marge450 { margin-left: 450px; }
+
+.marge500 { margin-left: 500px; }
+
+table.liste { border-bottom-style: solid; border-bottom-color: rgb(81, 135,=
+ 183); border-bottom-width: 2px; margin: auto; width: auto; }
+
+table.liste th, table.liste tfoot { font-weight: bold; color: rgb(255, 255,=
+ 255); font-size: 1em; text-align: center; font-family: Geneva, Arial, Verd=
+ana, sans-serif; margin-top: 10px; padding: 5px; text-shadow: rgb(51, 51, 5=
+1) 0.2em 0.2em 0.2em; background: linear-gradient(rgb(72, 138, 204) 0%, rgb=
+(62, 126, 190) 44%, rgb(59, 110, 161) 100%) repeat-x rgb(55, 134, 179); }
+
+table.liste thead, table.liste tfoot th { }
+
+th { padding: 5px; }
+
+td.center { text-align: center; }
+
+table.liste tbody { height: 95%; overflow-x: hidden; overflow-y: auto; }
+
+table.liste td { padding: 8px; }
+
+table.liste td.scroll { width: 12px; background-color: transparent; }
+
+.tableContainer { position: relative; padding-top: 20px; width: 100%; margi=
+n: 0px auto; }
+
+.innerframe { overflow: auto; width: auto; height: 500px; }
+
+.tableContainer table { height: 0px; }
+
+.tableContainer thead tr { position: absolute; top: 0px; left: auto; }
+
+.tableContainer thead tr.l2 { position: absolute; top: 20px; left: auto; }
+
+.tableContainer tfoot tr { position: absolute; top: 520px; left: auto; }
+
+.tableContainer tfoot tr.l2 { position: absolute; top: 540px; left: auto; }
+
+.tableContainer table td.scroll { display: none; }
+
+table.no_scroll { height: auto; }
+
+table.no_scroll tbody { height: auto; }
+
+.pair { font-weight: bold; background-color: rgb(255, 255, 255); }
+
+.impair { font-weight: bold; background-color: rgb(221, 221, 221); }
+
+.survol { font-weight: bold; cursor: pointer; background: linear-gradient(r=
+gb(246, 221, 218) 0%, rgb(242, 156, 152) 50%, rgb(247, 225, 223) 100%) repe=
+at-x; }
+
+.cat1 { background-color: rgb(221, 221, 221); }
+
+.cat2 { background-color: rgb(173, 216, 230); }
+
+.cat3 { background-color: rgb(208, 255, 208); }
+
+.cat4 { background-color: rgb(255, 221, 128); }
+
+.cat5 { background-color: rgb(255, 255, 136); }
+
+.cat6 { background-color: rgb(255, 170, 170); }
+
+.cat7 { background-color: rgb(255, 170, 255); }
+
+.cat8 { background-color: rgb(170, 255, 255); }
+
+.cat9 { background-color: rgb(136, 255, 136); }
+
+.note1 { background-color: rgb(255, 48, 48); }
+
+.note1_txt { color: rgb(255, 48, 48); }
+
+.note2 { background-color: rgb(255, 165, 0); }
+
+.note2_txt { color: rgb(255, 165, 0); }
+
+.note3 { background-color: rgb(144, 238, 144); }
+
+.note3_txt { color: rgb(0, 204, 0); }
+
+.note4 { background-color: rgb(48, 221, 48); }
+
+.note4_txt { color: rgb(0, 136, 0); }
+
+.valide { background-color: rgb(154, 205, 50); }
+
+.txt_valide { color: rgb(48, 170, 48); }
+
+.invalide { color: rgb(255, 255, 255); background-color: rgb(255, 51, 0); }
+
+.txt_invalide { color: rgb(255, 51, 0); }
+
+.actif { background-color: rgb(147, 219, 112); }
+
+.txt_actif { font-weight: bold; }
+
+.inactif { background-color: rgb(216, 216, 216); }
+
+.txt_inactif { color: rgb(136, 136, 136); }
+
+.aide { cursor: help; }
+
+img { vertical-align: middle; border: none; margin: 2px; }
+
+a.image { text-decoration: none; }
+
+a:hover { display: inline; }
+
+a:visited img { vertical-align: middle; border: none; margin: 2px; }
+
+a:active img { vertical-align: middle; border: none; margin: 2px; }
+
+a:hover img { vertical-align: middle; border: 2px solid rgb(0, 0, 255); mar=
+gin: 0px; }
+
+input.btn_annuler, .btn_valider, .btn_inactif { font-size: 10px; color: rgb=
+(255, 255, 255); font-weight: bold; border: 1px solid rgb(102, 102, 102); b=
+order-top-left-radius: 2em; border-top-right-radius: 2em; border-bottom-rig=
+ht-radius: 2em; border-bottom-left-radius: 2em; box-shadow: rgb(102, 102, 1=
+02) 2px 3px 4px; cursor: pointer; padding: 1px 7px; background-repeat: repe=
+at-x; }
+
+input.btn_annuler_big, .btn_valider_big, .btn_inactif_big, .btn_rouge_big {=
+ font-size: 32px; color: rgb(51, 0, 51); font-weight: bold; }
+
+input.btn_annuler { background: linear-gradient(rgb(208, 84, 84) 0%, rgb(21=
+1, 97, 97) 12%, rgb(215, 109, 109) 25%, rgb(207, 79, 79) 39%, rgb(198, 54, =
+54) 50%, rgb(155, 43, 43) 51%, rgb(173, 47, 47) 60%, rgb(198, 54, 54) 76%, =
+rgb(184, 50, 50) 91%, rgb(174, 48, 48) 100%); }
+
+input.btn_valider { background: linear-gradient(rgb(75, 163, 85) 0%, rgb(83=
+, 175, 93) 12%, rgb(96, 182, 106) 25%, rgb(73, 157, 82) 39%, rgb(60, 130, 6=
+8) 50%, rgb(39, 83, 44) 51%, rgb(47, 101, 53) 60%, rgb(59, 129, 67) 76%, rg=
+b(52, 112, 59) 91%, rgb(48, 104, 55) 100%); }
+
+input.btn_inactif { color: rgb(96, 96, 96); background-color: rgb(216, 216,=
+ 216); }
+
+input.btn_rouge { background: linear-gradient(rgb(208, 84, 84) 0%, rgb(211,=
+ 97, 97) 12%, rgb(215, 109, 109) 25%, rgb(207, 79, 79) 39%, rgb(198, 54, 54=
+) 50%, rgb(155, 43, 43) 51%, rgb(173, 47, 47) 60%, rgb(198, 54, 54) 76%, rg=
+b(184, 50, 50) 91%, rgb(174, 48, 48) 100%); }
+
+input.rose { background: linear-gradient(rgb(230, 190, 230) 0%, rgb(222, 13=
+8, 197) 50%, rgb(220, 116, 185) 51%, rgb(219, 107, 186) 100%); }
+
+input.violet { background: linear-gradient(rgb(163, 75, 131) 0%, rgb(175, 8=
+3, 141) 12%, rgb(182, 96, 150) 25%, rgb(157, 73, 126) 39%, rgb(130, 60, 104=
+) 50%, rgb(83, 39, 67) 51%, rgb(101, 47, 81) 60%, rgb(129, 59, 103) 76%, rg=
+b(112, 52, 90) 91%, rgb(104, 48, 83) 100%); }
+
+input.orange { background: linear-gradient(rgb(226, 119, 12) 0%, rgb(243, 1=
+29, 15) 12%, rgb(244, 139, 34) 25%, rgb(219, 115, 11) 39%, rgb(181, 95, 9) =
+50%, rgb(116, 61, 6) 51%, rgb(141, 74, 7) 60%, rgb(179, 94, 9) 76%, rgb(156=
+, 82, 8) 91%, rgb(145, 76, 7) 100%); }
+
+input.bleu { background: linear-gradient(rgb(75, 163, 163) 0%, rgb(83, 175,=
+ 175) 12%, rgb(96, 182, 182) 25%, rgb(73, 157, 157) 39%, rgb(60, 130, 130) =
+50%, rgb(39, 83, 83) 51%, rgb(47, 101, 101) 60%, rgb(59, 129, 129) 76%, rgb=
+(52, 112, 112) 91%, rgb(48, 104, 104) 100%); }
+
+input.jaune { color: rgb(0, 0, 0); background: linear-gradient(rgb(248, 244=
+, 156) 0%, rgb(243, 230, 43) 50%, rgb(237, 222, 17) 51%, rgb(248, 235, 60) =
+100%); }
+
+.link_valider { font-size: 10px; color: rgb(255, 255, 255); font-weight: bo=
+ld; border: 1px solid rgb(102, 102, 102); border-top-left-radius: 2em; bord=
+er-top-right-radius: 2em; border-bottom-right-radius: 2em; border-bottom-le=
+ft-radius: 2em; box-shadow: rgb(102, 102, 102) 2px 3px 4px; cursor: pointer=
+; padding: 1px 7px; text-decoration: none; background: linear-gradient(rgb(=
+75, 163, 85) 0%, rgb(83, 175, 93) 12%, rgb(96, 182, 106) 25%, rgb(73, 157, =
+82) 39%, rgb(60, 130, 68) 50%, rgb(39, 83, 44) 51%, rgb(47, 101, 53) 60%, r=
+gb(59, 129, 67) 76%, rgb(52, 112, 59) 91%, rgb(48, 104, 55) 100%) repeat-x;=
+ }
+
+div.groupe { padding: 15px 5px 5px; margin: 0px 6px 12px 12px; border-top-l=
+eft-radius: 3em; border-top-right-radius: 0.4em; border-bottom-right-radius=
+: 1.5em; border-bottom-left-radius: 0.4em; box-shadow: rgb(153, 153, 153) 0=
+.45em 0.45em 0.65em; text-align: center; border-width: 5px 1px 2px; border-=
+style: solid; border-color: rgb(77, 112, 128) rgb(255, 255, 255) rgb(255, 2=
+55, 255) rgb(245, 249, 253); overflow: hidden; background: linear-gradient(=
+135deg, rgb(245, 249, 253) 0%, rgb(226, 239, 250) 24%, rgb(198, 227, 252) 5=
+0%, rgb(219, 235, 249) 79%, rgb(229, 241, 251) 100%) repeat-x; }
+
+div.center { text-align: center; }
+
+div.groupe p { text-align: left; }
+
+div.groupe span.legende { border-top-left-radius: 2em; border-top-right-rad=
+ius: 2em; border-bottom-right-radius: 2em; border-bottom-left-radius: 2em; =
+box-shadow: rgb(51, 51, 51) 2px 3px 4px; color: rgb(255, 255, 255); margin-=
+left: 1px; font-weight: bold; padding: 3px; margin-top: 10px; text-align: c=
+enter; font-size: 12px; text-shadow: rgb(51, 51, 51) 0.25em 0.25em 0.25em; =
+width: 99%; background: linear-gradient(rgb(108, 120, 120) 0%, rgb(118, 130=
+, 130) 12%, rgb(128, 140, 140) 25%, rgb(104, 115, 116) 39%, rgb(84, 92, 92)=
+ 50%, rgb(51, 57, 57) 51%, rgb(64, 70, 70) 60%, rgb(84, 92, 92) 76%, rgb(72=
+, 80, 80) 91%, rgb(65, 72, 73) 100%); }
+
+div.ligne2 { padding-top: 27px; }
+
+div.ligne2 span.legende { margin-top: -36px; }
+
+div.wait { margin: 150px auto auto; padding-bottom: 40px; width: 400px; tex=
+t-align: center; font-size: 16px; font-weight: bold; color: blue; display: =
+none; background-image: url(https://demeter.utc.fr/pls/portal30/docs/PAGE/P=
+ORTLETREPOSITORY/OTHER_PROVIDERS/PORTAIL_SIGAM/IMAGES/LOADING.GIF); backgro=
+und-position: 50% 100%; background-repeat: no-repeat; }
+
+.left { float: left; }
+
+.right { float: right; }
+
+.under { clear: both; }
+
+.full { clear: both; width: 100%; }
+
+.pop_hidden { position: absolute; display: none; z-index: 10; }
+
+.pop_visible { position: absolute; display: inline; z-index: 10; width: 200=
+px; border: 3px outset rgb(204, 204, 204); padding: 0px 0px 12px 12px; bord=
+er-top-left-radius: 2em; border-top-right-radius: 0.4em; border-bottom-righ=
+t-radius: 2em; border-bottom-left-radius: 0.4em; box-shadow: rgb(170, 170, =
+170) 2px 3px 4px; background: linear-gradient(135deg, rgb(255, 247, 247) 0%=
+, rgb(255, 241, 241) 45%, rgb(255, 233, 233) 100%) repeat-x; }
+
+.menu_niv1 { border-top-left-radius: 2em; border-top-right-radius: 0.5em; b=
+order-bottom-right-radius: 2em; border-bottom-left-radius: 0.5em; box-shado=
+w: rgb(51, 51, 51) 2px 3px 4px; color: rgb(255, 255, 255); width: 800px; ma=
+rgin-left: 20px; font-size: 12px; font-weight: bold; padding: 5px 5px 5px 1=
+0px; cursor: pointer; margin-top: 10px; background-image: url(https://demet=
+er.utc.fr/pls/portal30/docs/PAGE/PORTLETREPOSITORY/OTHER_PROVIDERS/PORTAIL_=
+SIGAM/IMAGES/BARRE.PNG); background-color: rgb(55, 134, 179); background-re=
+peat: repeat-x; }
+
+.menu_niv2 { border-top-left-radius: 2em; border-top-right-radius: 0.5em; b=
+order-bottom-right-radius: 2em; border-bottom-left-radius: 0.5em; box-shado=
+w: rgb(51, 51, 51) 2px 3px 4px; color: rgb(255, 255, 255); width: 750px; fo=
+nt-size: 11px; font-weight: bold; padding: 2px 2px 2px 10px; margin-top: 10=
+px; margin-bottom: 5px; cursor: pointer; background-image: url(https://deme=
+ter.utc.fr/pls/portal30/docs/PAGE/PORTLETREPOSITORY/OTHER_PROVIDERS/PORTAIL=
+_SIGAM/IMAGES/BARRE.PNG); background-color: rgb(102, 102, 102); background-=
+repeat: repeat-x; }
+
+.onglets { margin-right: 10px; margin-bottom: 5px; }
+
+.onglets ul { text-decoration: none; font-weight: bold; margin-right: 20px;=
+ }
+
+.onglets li a { text-decoration: none; color: rgb(255, 255, 255); font-weig=
+ht: bold; text-shadow: rgb(51, 51, 51) 0.2em 0.2em 0.2em; }
+
+.onglets li a:hover { color: rgb(255, 255, 255); }
+
+.onglets li { border: 1px solid rgb(77, 112, 128); border-top-left-radius: =
+0.8em; border-top-right-radius: 0.8em; border-bottom-right-radius: 0px; bor=
+der-bottom-left-radius: 0px; padding: 5px 6px; display: inline; cursor: poi=
+nter; margin-right: 2px; background-image: url(https://demeter.utc.fr/pls/p=
+ortal30/docs/PAGE/PORTLETREPOSITORY/OTHER_PROVIDERS/PORTAIL_SIGAM/IMAGES/BT=
+N.PNG); background-color: rgb(77, 112, 128); background-repeat: repeat-x; }
+
+.onglets li:hover { color: rgb(255, 255, 255); background-color: rgb(164, 1=
+48, 225); }
+
+.onglets li.current { border-bottom-width: 1px; border-bottom-style: solid;=
+ border-bottom-color: rgb(125, 160, 176); background-color: rgb(57, 145, 24=
+4); }
+------=_NextPart_000_E98D_66CB4400.D42F66F4
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://demeter.utc.fr/pls/portal30/docs/PAGE/PORTLETREPOSITORY/OTHER_PROVIDERS/PORTAIL_SIGAM/CSS/consult_offre_uvs.css
+
+table.legende { width: 100%; margin-bottom: 6px; }
+
+table.legende input { margin-right: 5px; }
+
+.CS { background-color: rgb(221, 221, 221); }
+
+.TM { background-color: rgb(173, 216, 230); }
+
+.ME { background-color: rgb(208, 255, 208); }
+
+.CT { background-color: rgb(255, 221, 128); }
+
+.EC { background-color: rgb(255, 255, 136); }
+
+.neg { font-weight: bold; white-space: nowrap; color: white; background-col=
+or: rgb(255, 51, 0); }
+
+.zero { font-weight: bold; white-space: nowrap; background-color: rgb(255, =
+255, 255); }
+
+.pos { font-weight: bold; white-space: nowrap; color: white; background-col=
+or: rgb(154, 205, 50); }
+
+input.nb_uvs { color: white; border: none; font-weight: bold; font-size: 16=
+px; font-family: Verdana, Helvetica, 'Arial sans-serif'; background-color: =
+transparent; }
+
+div.left, div.right { width: 45%; }
+
+table.profil_filiere { border-collapse: collapse; }
+
+table.profil_filiere th { border: 1px solid black; }
+
+table.profil_filiere td { border: 1px solid black; }
+
+ul { margin: 0px 12px 0px 18px; padding-left: 0px; }
+
+li { margin-top: 2px; margin-bottom: 2px; }
+
+h1 select { font-family: Verdana, Helvetica, 'Arial sans-serif'; font-weigh=
+t: bold; font-size: 16px; }
+
+table.liste { empty-cells: hide; }
+
+table.liste tbody { height: 90%; font-size: 11px; }
+
+.tableContainer { padding-top: 50px; }
+
+.innerframe { height: 490px; }
+
+.tableContainer tfoot tr { top: 540px; }
+------=_NextPart_000_E98D_66CB4400.D42F66F4
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://demeter.utc.fr/pls/portal30/docs/PAGE/PORTLETREPOSITORY/OTHER_PROVIDERS/PORTAIL_SIGAM/IMAGES/DRAPEAU_UK.GIF
+
+R0lGODlhHgATAPcAAAQCDJR8lCgEZGw6XKAQFNy6tKR+tKAkKAcCOVc/ZCweRNyfoWxalKQWLIhk
+ZAkDT9S+3OR+hNwIFMciJPBeaMicvMyf0YRifB8VN+jc3K+NjBQQTMQmPPRqXPHG0sSqxHxuhMI8
+OMSDocwWFL8XEUQKNEwCBBkMNOSqpOijuuS4xDggUBIGXMQvMpdmf8Q6TDQWLJR+qKQOHKQiPIxS
+dPfM4hQDH/SblPzk4NhwlAQKTNQJHMSlt8yOnKSKrLkJDsQWLMaUlOx2ZOSozCwWT8E1PNEaJBsN
+RKgrL8xIRKl6keTCvBACRIxtlNwiMZhqjPjK+OSepOwKHMIQESwibEw2RBUFTtSq1BQWUKBvgrw6
+RPTA0kEvTx8PKXBMWBYDNUw+hGwiPJ8eL4BijBQURPjZ8vjQysw2NJxqgWBOhNEQIdSjxOyQnLSC
+jKhuuKwmNHxCbEcnN5xqbMR+jLwiNKSKnBQPVPyrutAeHMQXHCEMPLxGXKmBpfrK7Pzj8eSmrBQS
+FDwCLLyWtEQ0aNhihNFvhOjA7IwuPMw+VOiAqGg0WIBudDQCLLiKtGRETNxmdBwiHOyKlBcRZLyu
+3Jx1lwwCFPi4vFwGFPy61MmdrPywrHRWfOyqxNAQDPyy1LExP1RCdNgqQAwCLKRujOR8kNhMWMye
+xPymxKgaPIRedMym3MSSrOySrDwqTOgYJM89RPm5r/y4zMERHtikuK6DnEgqROxufIRinIRmgjQa
+PJR2hKxCVOh2mLqSpmRSXHRWiNx2dEQuXLiMnNgeLKSGtPSGgL8qJ8QuP4RacBwKJKh6nOzS/GxK
+ZFQ6ZNzG9EweRGgCBLEmJOy85Nedufza5PymuqllfM42Pvq+uPigqrQaLPRqbMSmzMRCPPfS5Pyi
+nPQSJNyy0Pze7PCWpKiGqNyCjBkCBFxGZJRufMSKnPyqoLQqPPzq5BcKUbaKprRqdMQeJPzq9Pim
+qPSyxKF2jHxSVNwaLCgUROQ6VHxCTCQGFJSCvJgUNMgmLHxghNAYHCH5BAAAAAAALAAAAAAeABMA
+Bwj/AMOIkBbsixU7OhB8yTWLECpUidwIePBAEhYEJ7iIi7fEizlr1io0CbZhwxEiomxY4IVKTEQB
+LA5aIZKAmzgPwhyZ89YDGT1Bm058OXLixJpC/D6xMrDBSruZt6RBoYVGiZI49GrUWOXCHbkEevRg
+MJUjaTlyZBAQ+aUKijRl9Nwha1VJzxhuZUzx2fur1Ql3vMQgAaYLQ6sAhqCscaHsghcYXVohuHeP
+Uo0+jZ40auJv2iMZLYoFWcRD3BZdaLLUi6PPRrJKDEA18+euRhlOIqZt8WBLhjEh2MywwxYkyIIg
+9Rw4WHShy5AhKVJUq5Zt+rg78ij8INFBnTpNN258/1N3Q16UBZYymdNSpEgILddayDd2psUwCT8m
+GIs2IYQxYxNEE986WhxySSedjIDHFD/8kAceJEToCjgSyLKDGlNMQAIe//wjARBA0CEGNJ3gYYQs
+sjjRjyxTjEBCJxJIAY49OzgBhCzbkZCHEcPIog0S0ITCwTUvHPPGJ6+c8UoIZ7hyoROh4NPPNd10
+k0QIpZSCyB67mODJKSlwEssW82iSDTawaEIBPC1sM102lpgBCywoLPBHCvNkEgccigyQCi29ZNKL
+HxksYcYjBERTzBbTCNNGATiYoYEjVcRxzjmVMBKIItZkgY4w3nhThy+ZkPLGAREogUsdugTAgwc1
+4JKSgFB6fFECDUqAoEQ43kDgTy4n9EKKGAdEwoceXDzBByV8hNPHFWOsIMoJ6aCDTgXLOBPDIDpY
+oYcFhZwaiTJ6HATGPjGMIsKY7oAAgBxthFPGJGnowMRTVoCLxAFsUGLQAyxQkQYf1syxwBIZQBIE
+DvFQQsYXJrHwABP6HjBOI18wIYkkTHzxzDzv5KNBBoAEBAA7
+------=_NextPart_000_E98D_66CB4400.D42F66F4--

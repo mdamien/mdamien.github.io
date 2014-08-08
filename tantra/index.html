@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Tantra</title>
+        <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css"
+        type="text/css">
+        <script src="static/angular.js"></script>
+        <link rel="stylesheet" href="static/style.css" type="text/css">
+        <script src="scrape/data/uvs.js"></script>
+    </head>
+    
+    <body ng-app="tantra">
+        <div ng-controller="UVController as UVCtrl">
+            <div class='filters well'>
+                <input type="search" ng-model="filter.q" placeholder="filter ..." />| CS:
+                <input type="checkbox" ng-model="filter.CS" ng-init='filter.CS = true'>| TM:
+                <input type="checkbox" ng-model="filter.TM" ng-init='filter.TM = true'>| TSH:
+                <input type="checkbox" ng-model="filter.TSH" ng-init='filter.TSH = true'>| Other:
+                <input type="checkbox" ng-model="filter.OTHER" ng-init='filter.OTHER = true'>
+            </div>
+            <div class='uv_infos'>
+                <h1>Choices</h1>
+                <table class='table uv_choices table-stripped table-bordered'>
+                    <tr ng-repeat='column in choices track by $index'>
+                        <td ng-repeat='uv in column track by $index'>{{ uv.name }}
+                            <a class='btn btn-warning btn-sm pull-right' ng-click='UVCtrl.remove_choice($parent.$index, $index)'>
+                    <span class="glyphicon glyphicon-remove"></span></a>
+                        </td>
+                        <td>
+                            <a class='btn btn-primary btn-sm' ng-click='UVCtrl.add_choice(current_uv, $index)'><span class="glyphicon glyphicon-plus"></span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class='btn btn-primary btn-sm' ng-click='UVCtrl.add_line_and_choice(current_uv)'><span class="glyphicon glyphicon-plus"></span></a>
+                        </td>
+                    </tr>
+                </table>
+                <h3>{{ current_uv.title }}</h3>
+                <h4>{{ current_uv.name }}</h4>
+                {{ current_uv.type }}</br>Credits: {{ current_uv.credits}}</br>
+                Rating: {{ current_uv.uvweb_rating }}/10</br>
+                Hours: {{current_uv.hours}} L + {{current_uv.hours_tp}} TP + {{current_uv.hours_td}} TD</br>
+                Resp: {{current_uv.resp}}</br>
+                <strong ng-if='current_uv.have_final'>Have</strong>
+                <strong ng-if='!current_uv.have_final'>No</strong> final
+                <div class='schedule-tables' ng-repeat='(day, times) in current_uv.schedule'>
+                    <h4>{{ day }}</h4>
+                    <table class='table-bordered table table-stripped'>
+                        <thead>
+                            <tr>
+                                <th ng-repeat='h in [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]' colspan="4">
+                                    {{ h }}
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody ng-bind-html='times | times_to_table'></tbody>
+                    </table>
+                </div>
+                    {{ current_uv.categories|json }}
+            </div>
+            <div class='uv_list'>
+                <div class='uv {{uv.type}}' ng-class="{restricted: uv.restricted}" ng-click="UVCtrl.set_uv(uv)"
+                ng-show="(filter.CS && uv.type == 'CS') 
+                || (filter.TSH && uv.type == 'TSH')
+                || (filter.TM && uv.type == 'TM')
+                || (filter.OTHER && uv.type === undefined)" ng-repeat="uv in uvs | filter:filter.q">{{ uv.name }}</div>
+            </div>
+        </div>
+        <script>
+            angular.module('tantra', []).controller('UVController', ['$scope', function($scope) {
+                $scope.uvs = __UVS__;
+                $scope.current_uv = __UVS__[21];
+                $scope.choices = [
+                    [__UVS__[10], __UVS__[20]],
+                    [__UVS__[5], __UVS__[100]],
+                    [__UVS__[12], __UVS__[23]],
+                    [__UVS__[2]], ]
+                $scope.choices = []
+                this.set_uv = function(uv) {
+                    $scope.current_uv = uv;
+                }
+                this.remove_choice = function(i, j) {
+                    $scope.choices[i].splice(j, 1)
+                    this.clean_choices();
+                }
+
+                this.add_choice = function(uv, i) {
+                    $scope.choices[i].push(uv)
+                }
+
+                this.add_line_and_choice = function(uv) {
+                    $scope.choices.push([uv]);
+                }
+
+                this.clean_choices = function() {
+                    for (var i = $scope.choices.length - 1; i >= 0; i--) {
+                        console.log(i, $scope.choices[i], $scope.choices[i].length)
+                        if ($scope.choices[i].length === 0) {
+                            $scope.choices.splice(i, 1);
+                        }
+                    }
+                }
+            }]).filter('times_to_table', ['$sce', function($sce) {
+                return function(times) {
+                    console.log('START SHIT')
+                    var r = '<tr>';
+                    var m_curr = 8*60;
+                    var span_sum = 0;
+                    for(var i=0; i <= times.length; i++){
+                        var last_filler = false;
+                        var time = {}
+                        if(i == times.length){
+                           last_filler = true; 
+                           time.h_start = time.h_end = 20;
+                           time.m_start = time.m_end = 0;
+                        }
+                        else{
+                            time = times[i];
+                        }
+                        console.log(time)
+                        var m_goal = time.h_start*60+time.m_start;
+                        var span = Math.floor((m_goal-m_curr)/15)
+                        console.log(m_curr, m_goal, span)
+                        span_sum += span;
+                        r += '<td class="empty" colspan="'+span+'"></td>';
+                        m_curr = m_goal;
+                        m_goal = time.h_end*60+time.m_end;
+                        span = Math.floor((m_goal-m_curr)/15)
+                        console.log(m_curr, m_goal, span)
+                        span_sum += span;
+                        if(span !== 0){
+                            r += '<td class="filled" colspan="'+span+'"'
+                                + ' title="'+time.formatted+'"'
+                                +'>';
+                            r += '</td>';
+                        }
+                        m_curr = m_goal;
+                    }
+                    r += '</tr>';
+                    console.log('sump', span_sum)
+                    return $sce.trustAsHtml(r);
+                };
+
+            }]);
+        </script>
+    </body>
+
+</html>

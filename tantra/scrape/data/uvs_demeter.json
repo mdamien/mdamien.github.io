@@ -1,0 +1,7978 @@
+{
+  "RR02": {
+    "hours_tp": 0,
+    "resp": "Khalil SHAKOURZADEH BOLOURI",
+    "title": "Calculs Des R\u00e9acteurs Industriels",
+    "categories": [
+      "branche_gp",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "RR02",
+    "places": 24
+  },
+  "MAT01": {
+    "hours_tp": 0,
+    "resp": "Salima BOUVIER",
+    "title": "Choix Des Materiaux Et Procedes (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 3,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "MAT01",
+    "places": 72
+  },
+  "GE29": {
+    "hours_tp": 0,
+    "resp": "Az-Eddine BENNANI",
+    "title": "Gestion Et Management International De L'Entreprise",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "GE29",
+    "places": 24
+  },
+  "SMA05": {
+    "hours_tp": 0,
+    "resp": "Ahmed Nassim BOUDAOUD",
+    "title": "Robustesse Pour La Conception De Systemes Mecaniques Et Mecatroniques",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "SMA05",
+    "places": null
+  },
+  "SO04": {
+    "hours_tp": 0,
+    "resp": "Christine DESCAMPS",
+    "title": "Initiation Au Droit",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "SO04",
+    "places": 72
+  },
+  "TN03": {
+    "hours_tp": 48,
+    "resp": "J\u00e9r\u00f4me BLANC",
+    "title": "Fabrication M\u00e9canique",
+    "categories": [
+      "tc",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 24,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "TN03",
+    "places": 90
+  },
+  "QPO12": {
+    "hours_tp": 17,
+    "resp": "Gilbert FARGES",
+    "title": "Communication Professionnelle De Projet",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 18,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 9,
+    "name": "QPO12",
+    "places": null
+  },
+  "UE12": {
+    "hours_tp": 0,
+    "resp": "J\u00e9r\u00f4me BLANC",
+    "title": "Connaissance De L'Entreprise",
+    "categories": [
+      "pro",
+      "pro_pmc",
+      "pro_msp"
+    ],
+    "type": "TSH",
+    "hours": 20,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "UE12",
+    "places": null
+  },
+  "UB01": {
+    "hours_tp": 0,
+    "resp": "Gilles MOREL",
+    "title": "Composantes Des Syst\u00e8mes Techniques Urbains",
+    "categories": [
+      "tc",
+      "branche",
+      "branche_gsu"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 5,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "UB01",
+    "places": 48
+  },
+  "AR04": {
+    "hours_tp": 0,
+    "resp": "Frederic SEITZ",
+    "title": "Art, Ville, Architecture",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 32,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "AR04",
+    "places": 48
+  },
+  "SCI07": {
+    "hours_tp": 0,
+    "resp": "Walter SCHON",
+    "title": "Prevision De La Surete De Fonctionnement",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 15,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 15,
+    "name": "SCI07",
+    "places": null
+  },
+  "PS93": {
+    "hours_tp": 9,
+    "resp": "Fr\u00e9d\u00e9ric LAMARQUE",
+    "title": "Optique Geometrique",
+    "categories": [
+      "tsh",
+      "tc",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 16,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 16,
+    "name": "PS93",
+    "places": 144
+  },
+  "NF02": {
+    "hours_tp": 14,
+    "resp": "Catherine MARQUE",
+    "title": "Du Circuit Int\u00e9gr\u00e9 Au Microprocesseur",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gsm",
+      "branche",
+      "branche_gb"
+    ],
+    "type": "TM",
+    "hours": 24,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "NF02",
+    "places": 48
+  },
+  "ICX05": {
+    "hours_tp": 0,
+    "resp": "Laurence MEREDITH-SMITH",
+    "title": "Atelier D'Ecritures D'Articles",
+    "categories": [
+      "master",
+      "master_ic"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "ICX05",
+    "places": null
+  },
+  "GE22": {
+    "hours_tp": 0,
+    "resp": "Luc MEZZA",
+    "title": "\u00c9conomie Internationale",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "GE22",
+    "places": 144
+  },
+  "IC05": {
+    "hours_tp": 0,
+    "resp": "Franck GHITALLA",
+    "title": "Technologies Pour La Documentation Et L'Indexation Dans L'Hyperm\u00e9dia",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 32,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "IC05",
+    "places": 24
+  },
+  "CM04": {
+    "hours_tp": 0,
+    "resp": "Aissa OULD DRIS",
+    "title": "Proc\u00e9d\u00e9s Industriels",
+    "categories": [
+      "tc",
+      "branche_gp",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "CM04",
+    "places": 96
+  },
+  "EG01": {
+    "hours_tp": 0,
+    "resp": "Claude LEMARCHAND",
+    "title": "Ergonomie",
+    "categories": [
+      "branche_gm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "EG01",
+    "places": 12
+  },
+  "FPP03": {
+    "hours_tp": 0,
+    "resp": "Ahmed Nassim BOUDAOUD",
+    "title": "Ing\u00e9nierie Robuste Et Maitrise Statistique Des Proc\u00e9d\u00e9s (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 3,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "FPP03",
+    "places": 72
+  },
+  "SMA04": {
+    "hours_tp": 0,
+    "resp": "Benoit EYNARD",
+    "title": "Mod\u00e9lisation Et Simulation Syst\u00e8mes",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 16,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 16,
+    "name": "SMA04",
+    "places": null
+  },
+  "CM11": {
+    "hours_tp": 24,
+    "resp": "Andr\u00e9 PAUSS",
+    "title": "Chimie G\u00e9n\u00e9rale",
+    "categories": [
+      "tc",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "CM11",
+    "places": 264
+  },
+  "TF01": {
+    "hours_tp": 18,
+    "resp": "Yuri MOLODTSOF",
+    "title": "M\u00e9canique Des Fluides Incompressibles",
+    "categories": [
+      "branche_gm",
+      "master",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "TF01",
+    "places": 120
+  },
+  "LG63": {
+    "hours_tp": 0,
+    "resp": "Li-Ying EMPINET",
+    "title": "Chinois Niveau III",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "LG63",
+    "places": 16
+  },
+  "SL": {
+    "hours_tp": 8,
+    "resp": "Lynne FOREST",
+    "title": "Suivi Linguistique",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "SL",
+    "places": 0
+  },
+  "LG50": {
+    "hours_tp": 0,
+    "resp": "Xavier AUBERT",
+    "title": "Italien Initiation",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LG50",
+    "places": 32
+  },
+  "LA94": {
+    "hours_tp": 0,
+    "resp": "Carole LEFRANCOIS-YASUDA",
+    "title": "Francais Langue \u00c9trang\u00e8re Niveau IV",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LA94",
+    "places": 32
+  },
+  "SI22": {
+    "hours_tp": 0,
+    "resp": "Virginie JULLIARD",
+    "title": "Signes Et Contenus Numeriques",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 32,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 16,
+    "name": "SI22",
+    "places": 24
+  },
+  "LNG02": {
+    "hours_tp": 0,
+    "resp": "Lilia OMAROUAYACHE",
+    "title": "Anglais Niveau III A (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "LNG02",
+    "places": null
+  },
+  "BMI07": {
+    "hours_tp": 0,
+    "resp": "Anne-Virginie SALSAC",
+    "title": "Mod\u00e9lisation Multiphysique Du Syst\u00e8me Vasculaire",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 20,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 12,
+    "name": "BMI07",
+    "places": null
+  },
+  "UE23": {
+    "hours_tp": 0,
+    "resp": "J\u00e9r\u00f4me BLANC",
+    "title": "Gestion De Maintenance",
+    "categories": [
+      "pro",
+      "pro_pmc",
+      "pro_msp"
+    ],
+    "type": "TSH",
+    "hours": 20,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 20,
+    "name": "UE23",
+    "places": null
+  },
+  "GPF50": {
+    "hours_tp": 0,
+    "resp": "Isabelle PEZRON",
+    "title": "Physicochimie Des Interfaces Et Des Systemes Disperses",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 3,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "GPF50",
+    "places": null
+  },
+  "BL01": {
+    "hours_tp": 24,
+    "resp": "Murielle DUFRESNE",
+    "title": "Sciences Biologiques Pour L'Ing\u00e9nieur",
+    "categories": [
+      "tsh",
+      "tc",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 30,
+    "name": "BL01",
+    "places": 72
+  },
+  "LG61": {
+    "hours_tp": 0,
+    "resp": "Yue-Hui DOREMUS",
+    "title": "Chinois Niveau I",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LG61",
+    "places": 32
+  },
+  "PS90": {
+    "hours_tp": 0,
+    "resp": "Olivier SCHOEFS",
+    "title": "Introduction A La Mesure",
+    "categories": [
+      "tsh",
+      "tc",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 16,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "PS90",
+    "places": 390
+  },
+  "BMI02": {
+    "hours_tp": 0,
+    "resp": "Christophe EGLES",
+    "title": "Ing\u00e9nierie Des Syst\u00e8mes Biologiques Et Bioartificiels",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 14,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 14,
+    "name": "BMI02",
+    "places": null
+  },
+  "RV01": {
+    "hours_tp": 0,
+    "resp": "Indira THOUVENIN",
+    "title": "R\u00e9alit\u00e9 Virtuelle",
+    "categories": [
+      "master",
+      "branche_gsm",
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "RV01",
+    "places": 36
+  },
+  "BL16": {
+    "hours_tp": 16,
+    "resp": "Nelly COCHET",
+    "title": "G\u00e9nie M\u00e9tabolique, Cultures Cellulaires Et Bioreacteurs",
+    "categories": [
+      "branche_gp",
+      "branche",
+      "branche_gb"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "BL16",
+    "places": 42
+  },
+  "UE44": {
+    "hours_tp": 12,
+    "resp": "J\u00e9r\u00f4me BLANC",
+    "title": "Electrotechnique",
+    "categories": [
+      "pro",
+      "pro_pmc",
+      "pro_msp"
+    ],
+    "type": "TM",
+    "hours": 16,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 2,
+    "name": "UE44",
+    "places": null
+  },
+  "ISI10": {
+    "hours_tp": 0,
+    "resp": "Dominique LENNE",
+    "title": "S\u00e9curit\u00e9 Des Si",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "ISI10",
+    "places": null
+  },
+  "GE38": {
+    "hours_tp": 0,
+    "resp": "Pascal ALBERTI",
+    "title": "Management Et Outils D'Aide \u00c0 La Cr\u00e9ativit\u00e9 Industrielle Et \u00c0 L'Innovation",
+    "categories": [
+      "branche_gm",
+      "master",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TM",
+    "hours": 16,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "GE38",
+    "places": 24
+  },
+  "QPO11": {
+    "hours_tp": 0,
+    "resp": "Gilbert FARGES",
+    "title": "Ingenierie De Projet",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "QPO11",
+    "places": null
+  },
+  "MQ07": {
+    "hours_tp": 20,
+    "resp": "J\u00e9r\u00f4me FAVERGEON",
+    "title": "D\u00e9gradation Et Protection Des Mat\u00e9riaux Dans Leur Environnement",
+    "categories": [
+      "branche_gm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 24,
+    "name": "MQ07",
+    "places": 24
+  },
+  "MQ20": {
+    "hours_tp": 0,
+    "resp": "Luhui DING",
+    "title": "Introduction A La M\u00e9canique Des Solides Et Des Fluides",
+    "categories": [
+      "master",
+      "tc",
+      "branche",
+      "branche_gb",
+      "branche_gsu"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "MQ20",
+    "places": 72
+  },
+  "API01": {
+    "hours_tp": 0,
+    "resp": "Enrico NATALIZIO",
+    "title": "Architecture J2ee Et Les Web Services (Apprentissage)",
+    "categories": [
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "API01",
+    "places": null
+  },
+  "NF16": {
+    "hours_tp": 16,
+    "resp": "Aziz MOUKRIM",
+    "title": "Algorithmique Et Structures De Donn\u00e9es",
+    "categories": [
+      "master",
+      "tsh",
+      "tc",
+      "branche",
+      "branche_gb",
+      "branche_gi"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "NF16",
+    "places": 168
+  },
+  "TIS03": {
+    "hours_tp": 0,
+    "resp": "Jacques CARLIER",
+    "title": "Mod\u00e9lisation Et Optimisation Des Syst\u00e8mes Discrets",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 18,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 12,
+    "name": "TIS03",
+    "places": null
+  },
+  "PS95": {
+    "hours_tp": 0,
+    "resp": "Patrick LANCELEUR",
+    "title": "Ondes Et Electromagnetisme 1",
+    "categories": [
+      "tc",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 16,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 16,
+    "name": "PS95",
+    "places": 72
+  },
+  "LG62": {
+    "hours_tp": 0,
+    "resp": "Li-Ying EMPINET",
+    "title": "Chinois Niveau II",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LG62",
+    "places": 30
+  },
+  "BIO04": {
+    "hours_tp": 0,
+    "resp": "Daniel THOMAS",
+    "title": "Biologie Structurale",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "CS",
+    "hours": 30,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "BIO04",
+    "places": null
+  },
+  "BIO03": {
+    "hours_tp": 0,
+    "resp": "Sandrine MORANDAT",
+    "title": "De La Fonction A La Physiologie",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "CS",
+    "hours": 30,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "BIO03",
+    "places": null
+  },
+  "MT23": {
+    "hours_tp": 0,
+    "resp": "Abdellatif EL BADIA",
+    "title": "Alg\u00e8bre Lin\u00e9aire Et Applications",
+    "categories": [
+      "tc",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "MT23",
+    "places": 264
+  },
+  "GPL02": {
+    "hours_tp": 0,
+    "resp": "Pierre VILLON",
+    "title": "Recherche Operationnelle En Productique (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 5,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "GPL02",
+    "places": 72
+  },
+  "TTS16": {
+    "hours_tp": 0,
+    "resp": "Claire IMBAUD",
+    "title": "Cycle De Vie D'Un Dispositif Medical",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 16,
+    "credits": 3,
+    "have_final": false,
+    "hours_td": 16,
+    "name": "TTS16",
+    "places": null
+  },
+  "MQ13": {
+    "hours_tp": 24,
+    "resp": "Zoheir ABOURA",
+    "title": "Mat\u00e9riaux Composites",
+    "categories": [
+      "branche_gm",
+      "master",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 24,
+    "name": "MQ13",
+    "places": 36
+  },
+  "TN08": {
+    "hours_tp": 32,
+    "resp": "Emmanuel CORBASSON",
+    "title": "Dessin De Communication",
+    "categories": [
+      "branche_gm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 5,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "TN08",
+    "places": 24
+  },
+  "API14": {
+    "hours_tp": 0,
+    "resp": "Walter SCHON",
+    "title": "Surete De Fonctionnement Des Systemes Informatiques (Apprentissage)",
+    "categories": [
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "API14",
+    "places": null
+  },
+  "IC03": {
+    "hours_tp": 0,
+    "resp": "Raffaele CIAVARELLA",
+    "title": "Le Num\u00e9rique : Des Formats Aux Chaines De Production",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 32,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "IC03",
+    "places": 28
+  },
+  "CM06": {
+    "hours_tp": 0,
+    "resp": "Khashayar SALEH",
+    "title": "Calcul D'Une Op\u00e9ration Industrielle",
+    "categories": [
+      "branche_gp",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 6,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "CM06",
+    "places": 48
+  },
+  "MB11": {
+    "hours_tp": 0,
+    "resp": "Faker BEN BELGACEM",
+    "title": "R\u00e9vision D'Analyse Et D'Alg\u00e8bre (Gb, Gi, Gsu)",
+    "categories": [
+      "master",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 64,
+    "name": "MB11",
+    "places": 120
+  },
+  "PTV54": {
+    "hours_tp": 0,
+    "resp": "Ammar BENSAKHRIA",
+    "title": "Procedes De Transformation Thermochimique Des Agroressources En Biocarburants",
+    "categories": [
+      "master",
+      "branche",
+      "master_tvrn"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "PTV54",
+    "places": null
+  },
+  "LB24": {
+    "hours_tp": 0,
+    "resp": "Maria Fatima SANCHEZ PANIAGUA",
+    "title": "Le Monde Hispanique (Niveau IV): L'Espagne",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 48,
+    "name": "LB24",
+    "places": 16
+  },
+  "EN21": {
+    "hours_tp": 24,
+    "resp": "Christophe FORGEZ",
+    "title": "Bases De L'\u00c9lectronique Analogique",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gsm",
+      "branche",
+      "branche_gb"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 24,
+    "name": "EN21",
+    "places": 96
+  },
+  "HE01": {
+    "hours_tp": 0,
+    "resp": "Pierre STEINER",
+    "title": "\u00c9pist\u00e9mologie Et Histoire Des Sciences",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "HE01",
+    "places": 48
+  },
+  "UE42": {
+    "hours_tp": 12,
+    "resp": "J\u00e9r\u00f4me BLANC",
+    "title": "Hydraulique",
+    "categories": [
+      "pro",
+      "pro_pmc",
+      "pro_msp"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 20,
+    "name": "UE42",
+    "places": null
+  },
+  "LA93": {
+    "hours_tp": 0,
+    "resp": "Carole LEFRANCOIS-YASUDA",
+    "title": "Francais Langue \u00c9trang\u00e8re Niveau III",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LA93",
+    "places": 112
+  },
+  "LG32": {
+    "hours_tp": 0,
+    "resp": "Anna WIACEK-LE VERGER",
+    "title": "Japonais Niveau II",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 56,
+    "name": "LG32",
+    "places": 16
+  },
+  "PS13": {
+    "hours_tp": 0,
+    "resp": "Mohamed Ali HAMDI",
+    "title": "Probl\u00e8mes Vibroacoustiques : Analyse Et Mod\u00e9lisation",
+    "categories": [
+      "branche_gm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "PS13",
+    "places": 24
+  },
+  "PS04": {
+    "hours_tp": 24,
+    "resp": "Aissa OULD DRIS",
+    "title": "Thermodynamique",
+    "categories": [
+      "tc",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "PS04",
+    "places": 72
+  },
+  "SC11": {
+    "hours_tp": 0,
+    "resp": "Olivier GAPENNE",
+    "title": "Th\u00e9orie Des Sciences Cognitives : Computation Et \u00c9naction",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "SC11",
+    "places": 24
+  },
+  "TN22": {
+    "hours_tp": 0,
+    "resp": "Kamel KHELLIL",
+    "title": "\u00c9l\u00e9ments De Bureau D'\u00c9tudes",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 24,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 64,
+    "name": "TN22",
+    "places": 72
+  },
+  "API04": {
+    "hours_tp": 0,
+    "resp": "St\u00e9phane CROZAT",
+    "title": "Data Warehouse Et Outils Decisionnels (Apprentissage)",
+    "categories": [
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "API04",
+    "places": null
+  },
+  "GE26": {
+    "hours_tp": 0,
+    "resp": "Laurence DELTOMBE",
+    "title": "Management Strat\u00e9gique Des Ressources Humaines",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "GE26",
+    "places": 24
+  },
+  "BIO05": {
+    "hours_tp": 0,
+    "resp": "Daniel THOMAS",
+    "title": "Analyse Du Cycle De Vie II",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "CS",
+    "hours": 15,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "BIO05",
+    "places": null
+  },
+  "GE20": {
+    "hours_tp": 0,
+    "resp": "Frederic HUET",
+    "title": "\u00c9conomie Industrielle",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "GE20",
+    "places": 48
+  },
+  "ISI11": {
+    "hours_tp": 0,
+    "resp": "Dominique LENNE",
+    "title": "Telecom Et R\u00e9seaux",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "ISI11",
+    "places": null
+  },
+  "LNG04": {
+    "hours_tp": 0,
+    "resp": "Lilia OMAROUAYACHE",
+    "title": "Anglais Niveau IV (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 2,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "LNG04",
+    "places": null
+  },
+  "BA04": {
+    "hours_tp": 0,
+    "resp": "Fabrice LOCMENT",
+    "title": "Conversion Et Gestion Des Energies Renouvelables",
+    "categories": [
+      "master",
+      "branche_gp",
+      "branche",
+      "branche_gsu"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "BA04",
+    "places": 48
+  },
+  "SA11": {
+    "hours_tp": 0,
+    "resp": "Emmanuel ANDRE OSTROVSKI",
+    "title": "Pratiques Th\u00e9atrales",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 45,
+    "name": "SA11",
+    "places": 12
+  },
+  "LB04": {
+    "hours_tp": 0,
+    "resp": "Helga SCHENZER",
+    "title": "Interculturalit\u00e9 Franco-Allemande",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LB04",
+    "places": 16
+  },
+  "LG30": {
+    "hours_tp": 0,
+    "resp": "Valerie ROY",
+    "title": "Japonais Initiation",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 48,
+    "name": "LG30",
+    "places": 48
+  },
+  "RO05": {
+    "hours_tp": 8,
+    "resp": "Sergio ALVAREZ-ANDRADE",
+    "title": "Mod\u00e9lisation De Ph\u00e9nom\u00e8nes Al\u00e9atoires",
+    "categories": [
+      "master",
+      "branche",
+      "branche_gi"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "RO05",
+    "places": 24
+  },
+  "SY10": {
+    "hours_tp": 30,
+    "resp": "Zyed ZALILA",
+    "title": "Logique Floue : Concepts Et Applications",
+    "categories": [
+      "branche_gm",
+      "branche_gp",
+      "branche",
+      "branche_gsu"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "SY10",
+    "places": 40
+  },
+  "AP": {
+    "hours_tp": 180,
+    "resp": "Philippe DEHAN",
+    "title": "Atelier Projet",
+    "categories": [
+      "branche",
+      "branche_gsu"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 6,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "AP",
+    "places": 40
+  },
+  "SC21": {
+    "hours_tp": 0,
+    "resp": "Jean-Baptiste GUIGNARD",
+    "title": "Linguistique Et Philosophie Du Langage",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 32,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 16,
+    "name": "SC21",
+    "places": 24
+  },
+  "LA15": {
+    "hours_tp": 15,
+    "resp": "Marleen VERLHAC",
+    "title": "Anglais Professionnel - Niveau V",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LA15",
+    "places": 32
+  },
+  "UR02": {
+    "hours_tp": 0,
+    "resp": "Philippe DEHAN",
+    "title": "Th\u00e9ories Et Pratiques De L'Urbanisme Contemporain",
+    "categories": [
+      "tc",
+      "branche",
+      "branche_gsu"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "UR02",
+    "places": 72
+  },
+  "TR91": {
+    "hours_tp": 0,
+    "resp": "Fran\u00e7oise QUILLAC",
+    "title": "Techniques De Recherche D'Information Pour L'Ingenieur",
+    "categories": [
+      "tc"
+    ],
+    "type": "TM",
+    "hours": 7,
+    "credits": 2,
+    "have_final": false,
+    "hours_td": 14,
+    "name": "TR91",
+    "places": 24
+  },
+  "UE11": {
+    "hours_tp": 0,
+    "resp": "J\u00e9r\u00f4me BLANC",
+    "title": "Communication",
+    "categories": [
+      "pro",
+      "pro_pmc",
+      "pro_msp"
+    ],
+    "type": "TSH",
+    "hours": 12,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 8,
+    "name": "UE11",
+    "places": null
+  },
+  "SM04": {
+    "hours_tp": 0,
+    "resp": "Chantal PEROT",
+    "title": "Physiologie",
+    "categories": [
+      "master_stqs",
+      "master"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 0,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "SM04",
+    "places": null
+  },
+  "PS12": {
+    "hours_tp": 0,
+    "resp": "Nicolas DAUCHEZ",
+    "title": "Acoustique Architecturale Et Urbaine",
+    "categories": [
+      "branche_gm",
+      "branche",
+      "branche_gsu"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "PS12",
+    "places": 24
+  },
+  "BL20": {
+    "hours_tp": 24,
+    "resp": "S\u00e9verine PADIOLLEAU-LEFEVRE",
+    "title": "M\u00e9tabolisme Et Physiologie Cellulaire",
+    "categories": [
+      "master",
+      "tc",
+      "branche",
+      "branche_gb"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "BL20",
+    "places": 72
+  },
+  "MQ17": {
+    "hours_tp": 20,
+    "resp": "Philippe REVEL",
+    "title": "Introduction Aux Propri\u00e9t\u00e9s M\u00e9caniques Et \u00c0 L'Ing\u00e9nierie Des Mat\u00e9riaux",
+    "categories": [
+      "branche_gm",
+      "master",
+      "tc",
+      "branche_gsm",
+      "branche",
+      "branche_gb"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "MQ17",
+    "places": 88
+  },
+  "LO23": {
+    "hours_tp": 0,
+    "resp": "Benjamin LUSSIER",
+    "title": "Conduite De Projet Informatique",
+    "categories": [
+      "master",
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LO23",
+    "places": 48
+  },
+  "API05": {
+    "hours_tp": 0,
+    "resp": "Borislav VIDOLOV",
+    "title": "Modelisation Et Simulation Des Flux (Apprentissage)",
+    "categories": [
+      "branche",
+      "branche_gi"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "API05",
+    "places": null
+  },
+  "TH02": {
+    "hours_tp": 0,
+    "resp": "Ammar BENSAKHRIA",
+    "title": "Production Et Transfert De Chaleur",
+    "categories": [
+      "branche_gp",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "TH02",
+    "places": 24
+  },
+  "SR06": {
+    "hours_tp": 0,
+    "resp": "Enrico NATALIZIO",
+    "title": "S\u00e9curit\u00e9 Syst\u00e8mes Et R\u00e9seaux",
+    "categories": [
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 48,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "SR06",
+    "places": 48
+  },
+  "MC06": {
+    "hours_tp": 16,
+    "resp": "Christophe FORGEZ",
+    "title": "Mod\u00e9lisation, Dimensionnement, R\u00e9glages D'Axes \u00c9lectrom\u00e9caniques",
+    "categories": [
+      "branche_gm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "MC06",
+    "places": 24
+  },
+  "MT33": {
+    "hours_tp": 0,
+    "resp": "Vincent ROBIN",
+    "title": "Alg\u00e8bre 1 : Ensembles Et Groupes",
+    "categories": [
+      "tsh"
+    ],
+    "type": "CS",
+    "hours": 64,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "MT33",
+    "places": 72
+  },
+  "BA06": {
+    "hours_tp": 0,
+    "resp": "Jean-Louis BATOZ",
+    "title": "Syst\u00e8mes Constructifs Du Batiment",
+    "categories": [
+      "branche",
+      "branche_gsu"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 5,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "BA06",
+    "places": 24
+  },
+  "TIS01": {
+    "hours_tp": 0,
+    "resp": "Abdelmadjid BOUABDALLAH",
+    "title": "Fondements Des R\u00e9seaux D'Interconnexion",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 23,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 5,
+    "name": "TIS01",
+    "places": null
+  },
+  "SI24": {
+    "hours_tp": 0,
+    "resp": "Isabelle CAILLEAU",
+    "title": "\u00c9tudes Des \u00c9critures Num\u00e9riques Ordinaires",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "SI24",
+    "places": 24
+  },
+  "AS02": {
+    "hours_tp": 0,
+    "resp": "Isabelle CAILLEAU",
+    "title": "Accompagnement Pour L'Analyse Des Situations De L'Ingenieur",
+    "categories": [
+      "branche_gm",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "AS02",
+    "places": 0
+  },
+  "PTV58": {
+    "hours_tp": 0,
+    "resp": "Olivier SCHOEFS",
+    "title": "Eco Bilan Et Analyse Du Cycle De Vie",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "TM",
+    "hours": 24,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "PTV58",
+    "places": null
+  },
+  "NA17": {
+    "hours_tp": 0,
+    "resp": "St\u00e9phane CROZAT",
+    "title": "Conception De Bases De Donnees (Autonomie)",
+    "categories": [
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 6,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "NA17",
+    "places": null
+  },
+  "ASP06": {
+    "hours_tp": 0,
+    "resp": "Manuel MAJADA",
+    "title": "L'Ing\u00e9nieur En Situation De Management (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "ASP06",
+    "places": null
+  },
+  "LNG05": {
+    "hours_tp": 0,
+    "resp": "Marleen VERLHAC",
+    "title": "Anglais Professionnel (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 1,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "LNG05",
+    "places": null
+  },
+  "BMI04": {
+    "hours_tp": 0,
+    "resp": "Sofiane BOUDAOUD",
+    "title": "Modelisation Des Systemes Neuromusculaire Et Musculosquelettique En Interaction",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 30,
+    "credits": 3,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "BMI04",
+    "places": null
+  },
+  "PS10": {
+    "hours_tp": 0,
+    "resp": "Mohamed Ali HAMDI",
+    "title": "Analyse Modale En Acoustique Et Vibrations",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "PS10",
+    "places": 24
+  },
+  "ICX03": {
+    "hours_tp": 0,
+    "resp": "Olivier GAPENNE",
+    "title": "Atelier Projet / Experimentation",
+    "categories": [
+      "master",
+      "master_ic"
+    ],
+    "type": "TM",
+    "hours": 16,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "ICX03",
+    "places": null
+  },
+  "SMA03": {
+    "hours_tp": 0,
+    "resp": "Fr\u00e9d\u00e9ric LAMARQUE",
+    "title": "Capteur Et Actionneurs Compacts Innovants",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 16,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 16,
+    "name": "SMA03",
+    "places": null
+  },
+  "MT36": {
+    "hours_tp": 0,
+    "resp": "Vincent ROBIN",
+    "title": "Geometrie",
+    "categories": [
+      "tsh"
+    ],
+    "type": "CS",
+    "hours": 64,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "MT36",
+    "places": 72
+  },
+  "SMA02": {
+    "hours_tp": 0,
+    "resp": "Pierre FEISSEL",
+    "title": "Identification De Mod\u00e8les En M\u00e9canique",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 16,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 14,
+    "name": "SMA02",
+    "places": null
+  },
+  "TMI04": {
+    "hours_tp": 0,
+    "resp": "J\u00e9r\u00f4me BLANC",
+    "title": "Technologie De Fabrication (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 5,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "TMI04",
+    "places": 72
+  },
+  "PH10": {
+    "hours_tp": 0,
+    "resp": "Bernard STIEGLER",
+    "title": "Analyse Ph\u00e9nom\u00e9nologique Des Objets Audiovisuels",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "PH10",
+    "places": 24
+  },
+  "ISI15": {
+    "hours_tp": 0,
+    "resp": "Richard PEYNOT",
+    "title": "Atelier Et S\u00e9minaire \u00c0 L'International",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "ISI15",
+    "places": null
+  },
+  "LC73": {
+    "hours_tp": 0,
+    "resp": "Mark KAY",
+    "title": "Anglais Master Niveau 3",
+    "categories": [
+      "master_stqs",
+      "master",
+      "master_msci",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LC73",
+    "places": 48
+  },
+  "TF15": {
+    "hours_tp": 0,
+    "resp": "Eug\u00e8ne VOROBIEV",
+    "title": "Proc\u00e9d\u00e9s De S\u00e9paration",
+    "categories": [
+      "branche_gp",
+      "branche",
+      "branche_gb"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "TF15",
+    "places": 48
+  },
+  "SIC03": {
+    "hours_tp": 0,
+    "resp": "Yann MOULIER BOUTANG",
+    "title": "Mod\u00e9lisation Et Exploration Du Complexe",
+    "categories": [
+      "master_stqs",
+      "master",
+      "master_msci",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 18,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 18,
+    "name": "SIC03",
+    "places": null
+  },
+  "SC24": {
+    "hours_tp": 0,
+    "resp": "Gunnar DECLERCK",
+    "title": "Apprentissage Et Perception",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "SC24",
+    "places": 24
+  },
+  "ISI01": {
+    "hours_tp": 0,
+    "resp": "Dominique LENNE",
+    "title": "Veille Et Intelligence \u00c9conomique",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "ISI01",
+    "places": null
+  },
+  "AP51": {
+    "hours_tp": 10,
+    "resp": "Emmanuel DORE",
+    "title": "Atelier Projet Conception M\u00e9canique Int\u00e9gr\u00e9e",
+    "categories": [
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 8,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "AP51",
+    "places": 24
+  },
+  "UXD02": {
+    "hours_tp": 0,
+    "resp": "Anne GUENAND-WACQUIEZ",
+    "title": "Scenarisation D'Experience Utilisateur",
+    "categories": [
+      "master",
+      "master_ic"
+    ],
+    "type": "TM",
+    "hours": 16,
+    "credits": 6,
+    "have_final": false,
+    "hours_td": 48,
+    "name": "UXD02",
+    "places": null
+  },
+  "GPF51": {
+    "hours_tp": 0,
+    "resp": "Audrey DRELICH",
+    "title": "Systemes Emulsionnes En Formulation",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "GPF51",
+    "places": null
+  },
+  "MC02": {
+    "hours_tp": 16,
+    "resp": "Vincent LANFRANCHI",
+    "title": "Entrainements \u00c9lectriques \u00c0 Vitesse Variable",
+    "categories": [
+      "branche_gm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "MC02",
+    "places": 24
+  },
+  "SP02": {
+    "hours_tp": 0,
+    "resp": "Arnaud VANNICATTE",
+    "title": "Conduire Un Projet Sportif",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "SP02",
+    "places": 0
+  },
+  "LA24": {
+    "hours_tp": 0,
+    "resp": "Anna WIACEK-LE VERGER",
+    "title": "Le Monde Hispanique Contemporain : L'Am\u00e9rique Latine (Niveau IV)",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LA24",
+    "places": 48
+  },
+  "IA03": {
+    "hours_tp": 0,
+    "resp": "Marie-H\u00e9l\u00e8ne ABEL",
+    "title": "Techniques De Mod\u00e9lisation, Capitalisation Et Gestion Des Connaissances",
+    "categories": [
+      "master",
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "IA03",
+    "places": 48
+  },
+  "ISI07": {
+    "hours_tp": 0,
+    "resp": "Dominique LENNE",
+    "title": "Gouvernance Du Si",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "ISI07",
+    "places": null
+  },
+  "AP52": {
+    "hours_tp": 10,
+    "resp": "Ludovic CAUVIN",
+    "title": "Mod\u00e9lisation - Optimisation Des Produits Et Structures",
+    "categories": [
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 8,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "AP52",
+    "places": 24
+  },
+  "MS01": {
+    "hours_tp": 12,
+    "resp": "Fran\u00e7ois OUDET",
+    "title": "M\u00e9thodes D'Analyse Physico-Chimique",
+    "categories": [
+      "master",
+      "tc",
+      "branche",
+      "branche_gb"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 5,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "MS01",
+    "places": 72
+  },
+  "SCI21": {
+    "hours_tp": 0,
+    "resp": "Walter SCHON",
+    "title": "Conception S\u00fbre Des Syst\u00e8mes",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 16,
+    "credits": 3,
+    "have_final": false,
+    "hours_td": 16,
+    "name": "SCI21",
+    "places": null
+  },
+  "QPO07": {
+    "hours_tp": 13,
+    "resp": "Gilbert FARGES",
+    "title": "Developpement De Son Projet Professionnel Et Autonomie",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 21,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 8,
+    "name": "QPO07",
+    "places": null
+  },
+  "TX": {
+    "hours_tp": 0,
+    "resp": "Claude-Olivier SARDE",
+    "title": "\u00c9tude Exp\u00e9rimentale",
+    "categories": [
+      "branche_gm",
+      "master",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 5,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "TX",
+    "places": 72
+  },
+  "DI08": {
+    "hours_tp": 0,
+    "resp": "Emmanuel CORBASSON",
+    "title": "Design Industriel Et Cr\u00e9ation De Produits",
+    "categories": [
+      "branche_gm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "DI08",
+    "places": 20
+  },
+  "SY31": {
+    "hours_tp": 21,
+    "resp": "Vincent FREMONT",
+    "title": "Capteurs Pour Les Systemes Intelligents",
+    "categories": [
+      "tc",
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 24,
+    "name": "SY31",
+    "places": 24
+  },
+  "MT91": {
+    "hours_tp": 0,
+    "resp": "Frederique LE LOU\u00cbR",
+    "title": "Fonctions D'Une Variable Reelle 2",
+    "categories": [
+      "tc",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 24,
+    "name": "MT91",
+    "places": 384
+  },
+  "GPF52": {
+    "hours_tp": 0,
+    "resp": "Isabelle PEZRON",
+    "title": "Analyse Des Proprietes Optiques Et Structurales",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "GPF52",
+    "places": null
+  },
+  "SMA06": {
+    "hours_tp": 0,
+    "resp": "Piotr BREITKOPF",
+    "title": "Optimisation Mluti-Disciplinaire",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "SMA06",
+    "places": null
+  },
+  "EI03": {
+    "hours_tp": 0,
+    "resp": "Jacques PATEAU",
+    "title": "Communication Interculturelle En Entreprises, Organisations Transnationales",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 30,
+    "name": "EI03",
+    "places": 40
+  },
+  "LNG03": {
+    "hours_tp": 0,
+    "resp": "Lilia OMAROUAYACHE",
+    "title": "Anglais Niveau III B (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 2,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "LNG03",
+    "places": null
+  },
+  "BT03": {
+    "hours_tp": 24,
+    "resp": "Christophe EGLES",
+    "title": "G\u00e9nie Des Syst\u00e8mes Tissulaires Et Immunotechnologie",
+    "categories": [
+      "branche",
+      "branche_gb"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "BT03",
+    "places": 24
+  },
+  "TTS17": {
+    "hours_tp": 16,
+    "resp": "Isabelle CLAUDE",
+    "title": "Organisation Du Systeme De Sante",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 16,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 16,
+    "name": "TTS17",
+    "places": null
+  },
+  "BM04": {
+    "hours_tp": 28,
+    "resp": "Catherine MARQUE",
+    "title": "Acquisition Et Traitement De Donn\u00e9es Biom\u00e9dicales",
+    "categories": [
+      "branche",
+      "branche_gb"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "BM04",
+    "places": 20
+  },
+  "SMA08": {
+    "hours_tp": 0,
+    "resp": "Christophe FORGEZ",
+    "title": "Systemes Embarques : Entrainements Electriques Et Actionneurs",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 22,
+    "credits": 3,
+    "have_final": false,
+    "hours_td": 10,
+    "name": "SMA08",
+    "places": null
+  },
+  "API02": {
+    "hours_tp": 0,
+    "resp": "Abdelmadjid BOUABDALLAH",
+    "title": "Architecture Des R\u00e9seaux (Apprentissage)",
+    "categories": [
+      "branche",
+      "branche_gi"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 5,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "API02",
+    "places": null
+  },
+  "PTV52": {
+    "hours_tp": 0,
+    "resp": "Andr\u00e9 PAUSS",
+    "title": "Conception Et Conduite De Bioreacteurs",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "PTV52",
+    "places": null
+  },
+  "NF22": {
+    "hours_tp": 16,
+    "resp": "Sofiane BOUDAOUD",
+    "title": "Micro-Ordinateurs Et Applications",
+    "categories": [
+      "branche_gm",
+      "master",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb"
+    ],
+    "type": "TM",
+    "hours": 24,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "NF22",
+    "places": 72
+  },
+  "UE43": {
+    "hours_tp": 24,
+    "resp": "J\u00e9r\u00f4me BLANC",
+    "title": "Analyse Fonctionnelle",
+    "categories": [
+      "pro",
+      "pro_pmc",
+      "pro_msp"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 24,
+    "name": "UE43",
+    "places": null
+  },
+  "SO05": {
+    "hours_tp": 0,
+    "resp": "Michael VICENTE",
+    "title": "Sociologie, Organisations Et Dynamiques Des Collectifs",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "SO05",
+    "places": 48
+  },
+  "BIO01": {
+    "hours_tp": 0,
+    "resp": "Sandrine MORANDAT",
+    "title": "Du Gene A La Macromolecule",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "CS",
+    "hours": 30,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "BIO01",
+    "places": null
+  },
+  "AS01": {
+    "hours_tp": 0,
+    "resp": "Isabelle CAILLEAU",
+    "title": "Introduction A L'Analyse Des Situations De L'Ingenieur",
+    "categories": [
+      "branche_gm",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "AS01",
+    "places": 24
+  },
+  "ISI16": {
+    "hours_tp": 0,
+    "resp": "Dominique LENNE",
+    "title": "Management D'\u00c9quipe Et Leadership ",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "ISI16",
+    "places": null
+  },
+  "LA13": {
+    "hours_tp": 0,
+    "resp": "Val\u00e9rie BOUCHARDON",
+    "title": "Anglais Niveau III",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "LA13",
+    "places": 432
+  },
+  "ISI02": {
+    "hours_tp": 0,
+    "resp": "Dominique LENNE",
+    "title": "Gestion Globale De L'Entreprise",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "ISI02",
+    "places": null
+  },
+  "LA11": {
+    "hours_tp": 0,
+    "resp": "Val\u00e9rie BOUCHARDON",
+    "title": "Anglais Niveau I",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LA11",
+    "places": 64
+  },
+  "BL17": {
+    "hours_tp": 24,
+    "resp": "Claude-Olivier SARDE",
+    "title": "G\u00e9nie Des Prot\u00e9ines",
+    "categories": [
+      "branche",
+      "branche_gb"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "BL17",
+    "places": 24
+  },
+  "SY27": {
+    "hours_tp": 0,
+    "resp": "Philippe BONNIFAIT",
+    "title": "Machines Intelligentes",
+    "categories": [
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 64,
+    "name": "SY27",
+    "places": 24
+  },
+  "GE28": {
+    "hours_tp": 0,
+    "resp": "Yann MOULIER BOUTANG",
+    "title": "\u00c9conomie Et Droit De La Propri\u00e9t\u00e9 Intellectuelle (Industrielle Et Artistique) Dans Une \u00c9conomie Reposant Sur La Connaissance",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 32,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 16,
+    "name": "GE28",
+    "places": 72
+  },
+  "SCI24": {
+    "hours_tp": 0,
+    "resp": "Philippe BONNIFAIT",
+    "title": "Seminaires",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 2,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "SCI24",
+    "places": null
+  },
+  "TTS12": {
+    "hours_tp": 4,
+    "resp": "Alain DONADEY",
+    "title": "Traitement Et Soins 2 : Hemodialyse, Radiotherapie",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "CS",
+    "hours": 20,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "TTS12",
+    "places": null
+  },
+  "MEQ01": {
+    "hours_tp": 0,
+    "resp": "Matthieu BRICOGNE-CUIGNI\u00c8RES",
+    "title": "Modelisation Geometrique (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 5,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "MEQ01",
+    "places": 72
+  },
+  "PR": {
+    "hours_tp": 0,
+    "resp": "Bruno RAMOND",
+    "title": "R\u00e9alisation De Projet",
+    "categories": [
+      "branche_gm",
+      "master",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 5,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "PR",
+    "places": 72
+  },
+  "API15": {
+    "hours_tp": 0,
+    "resp": "Marie-H\u00e9l\u00e8ne ABEL",
+    "title": "Techniques De Modelisation, Capitalisation Et Gestion De Connaissances (Apprentissage)",
+    "categories": [
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "API15",
+    "places": null
+  },
+  "MEQ04": {
+    "hours_tp": 0,
+    "resp": "Emmanuel LEFRANCOIS",
+    "title": "Mecanique Des Fluides (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 3,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "MEQ04",
+    "places": 72
+  },
+  "TN01": {
+    "hours_tp": 0,
+    "resp": "Hocine KEBIR",
+    "title": "\u00c9l\u00e9ments De Dessin Technique",
+    "categories": [
+      "tsh",
+      "tc",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 16,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "TN01",
+    "places": 288
+  },
+  "ICX01": {
+    "hours_tp": 0,
+    "resp": "Anne GUENAND-WACQUIEZ",
+    "title": "Atelier D'Innovation Et Eco-Conception",
+    "categories": [
+      "master",
+      "master_ic"
+    ],
+    "type": "TM",
+    "hours": 16,
+    "credits": 6,
+    "have_final": false,
+    "hours_td": 48,
+    "name": "ICX01",
+    "places": null
+  },
+  "FQ05": {
+    "hours_tp": 0,
+    "resp": "Zohra CHERFI-BOULANGER",
+    "title": "Fiabilite Industrielle",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "FQ05",
+    "places": 48
+  },
+  "ICX06": {
+    "hours_tp": 10,
+    "resp": "Indira THOUVENIN",
+    "title": "Interaction Et Complexite",
+    "categories": [
+      "master",
+      "master_ic"
+    ],
+    "type": "TM",
+    "hours": 17,
+    "credits": 5,
+    "have_final": true,
+    "hours_td": 24,
+    "name": "ICX06",
+    "places": null
+  },
+  "SL0A": {
+    "hours_tp": 0,
+    "resp": "Marleen VERLHAC",
+    "title": "Projet Individualise (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 2,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "SL0A",
+    "places": null
+  },
+  "RO06": {
+    "hours_tp": 0,
+    "resp": "Aziz MOUKRIM",
+    "title": "Simulation Et Techniques D'Optimisation",
+    "categories": [
+      "branche_gsm",
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "RO06",
+    "places": 48
+  },
+  "LA20": {
+    "hours_tp": 0,
+    "resp": "Juan HERNANDEZ",
+    "title": "Espagnol Initiation",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LA20",
+    "places": 48
+  },
+  "NF04": {
+    "hours_tp": 0,
+    "resp": "Emmanuel LEFRANCOIS",
+    "title": "Mod\u00e9lisation Num\u00e9rique Des Probl\u00e8mes De L'Ing\u00e9nieur",
+    "categories": [
+      "branche_gm",
+      "master",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gsu"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "NF04",
+    "places": 140
+  },
+  "API11": {
+    "hours_tp": 0,
+    "resp": "Aziz MOUKRIM",
+    "title": "Conception Et Gestion De La Chaine Logistique (Apprentissage)",
+    "categories": [
+      "branche",
+      "branche_gi"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 5,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "API11",
+    "places": null
+  },
+  "DI07": {
+    "hours_tp": 32,
+    "resp": "Emmanuel CORBASSON",
+    "title": "Design Transport",
+    "categories": [
+      "branche_gm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "DI07",
+    "places": 20
+  },
+  "LG51": {
+    "hours_tp": 0,
+    "resp": "Xavier AUBERT",
+    "title": "Italien Niveau I",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LG51",
+    "places": 16
+  },
+  "AV01": {
+    "hours_tp": 0,
+    "resp": "Sylvestre MIGET",
+    "title": "Initiation \u00c0 L'Analyse Et \u00c0 La R\u00e9alisation Audiovisuelle",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 45,
+    "name": "AV01",
+    "places": 28
+  },
+  "TMI03": {
+    "hours_tp": 0,
+    "resp": "Claude LEMARCHAND",
+    "title": "Ergonomie Des Situations De Travail (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 5,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "TMI03",
+    "places": 72
+  },
+  "PTV51": {
+    "hours_tp": 0,
+    "resp": "Khashayar SALEH",
+    "title": "Technologies Des Poudres Et Milieux Pulverulents",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "TM",
+    "hours": 24,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "PTV51",
+    "places": null
+  },
+  "SY19": {
+    "hours_tp": 0,
+    "resp": "Thierry DENOEUX",
+    "title": "Decision Et Apprentissage Automatique",
+    "categories": [
+      "branche",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "SY19",
+    "places": 24
+  },
+  "PH01": {
+    "hours_tp": 0,
+    "resp": "Jean-Fran\u00e7ois GAUDEAUX",
+    "title": "Introduction \u00c0 La Philosophie",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 32,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "PH01",
+    "places": 24
+  },
+  "TN04": {
+    "hours_tp": 0,
+    "resp": "Pierre VILLON",
+    "title": "R\u00e9alisation",
+    "categories": [
+      "tsh",
+      "tc",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "TN04",
+    "places": 0
+  },
+  "ISI06": {
+    "hours_tp": 0,
+    "resp": "Dominique LENNE",
+    "title": "Droit Appliqu\u00e9 Aux Syst\u00e8mes D'Information",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "CS",
+    "hours": 12,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "ISI06",
+    "places": null
+  },
+  "GE25": {
+    "hours_tp": 0,
+    "resp": "Arnaud DUCASTELLE",
+    "title": "Gestion Et Organisation De La Production",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "GE25",
+    "places": 48
+  },
+  "SP22": {
+    "hours_tp": 0,
+    "resp": "Marc MONETTI",
+    "title": "S'Apprendre Pour Mieux G\u00e9rer",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 32,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "SP22",
+    "places": 32
+  },
+  "QRO02": {
+    "hours_tp": 0,
+    "resp": "Jean ESCANDE",
+    "title": "Assurer Et Manager La Confiance Face Au Risque",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "QRO02",
+    "places": null
+  },
+  "LA03": {
+    "hours_tp": 0,
+    "resp": "Gabriele ORBACH-LIN",
+    "title": "Allemand Niveau III",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LA03",
+    "places": 80
+  },
+  "SI01": {
+    "hours_tp": 0,
+    "resp": "Virginie JULLIARD",
+    "title": "Science Et Debat Public",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 32,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 16,
+    "name": "SI01",
+    "places": 24
+  },
+  "GPF54": {
+    "hours_tp": 0,
+    "resp": "Isabelle PEZRON",
+    "title": "Formulation, Applications Cosmetiques",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "TM",
+    "hours": 24,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "GPF54",
+    "places": null
+  },
+  "LA02": {
+    "hours_tp": 0,
+    "resp": "Gisela LUZIN",
+    "title": "Allemand Niveau II",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LA02",
+    "places": 64
+  },
+  "TMI08": {
+    "hours_tp": 0,
+    "resp": "Benoit EYNARD",
+    "title": "Conception Niveau 3 (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "TMI08",
+    "places": 72
+  },
+  "SMA07": {
+    "hours_tp": 0,
+    "resp": "Nicolas BUIRON",
+    "title": "Materiaux Actifs",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "SMA07",
+    "places": null
+  },
+  "CM07": {
+    "hours_tp": 45,
+    "resp": "Khashayar SALEH",
+    "title": "Travaux Pratiques De G\u00e9nie Chimique",
+    "categories": [
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 6,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "CM07",
+    "places": 40
+  },
+  "SIC02": {
+    "hours_tp": 0,
+    "resp": "Yann MOULIER BOUTANG",
+    "title": "Economie Des Intangibles",
+    "categories": [
+      "master_stqs",
+      "master",
+      "master_msci",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 18,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 18,
+    "name": "SIC02",
+    "places": null
+  },
+  "MQ03": {
+    "hours_tp": 20,
+    "resp": "Etienne ARNOULT",
+    "title": "M\u00e9canique Des Vibrations I",
+    "categories": [
+      "branche_gm",
+      "master",
+      "tc",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "MQ03",
+    "places": 150
+  },
+  "UE33": {
+    "hours_tp": 0,
+    "resp": "J\u00e9r\u00f4me BLANC",
+    "title": "Approche Fmds",
+    "categories": [
+      "pro",
+      "pro_pmc",
+      "pro_msp"
+    ],
+    "type": "TM",
+    "hours": 28,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 12,
+    "name": "UE33",
+    "places": null
+  },
+  "NP90": {
+    "hours_tp": 0,
+    "resp": "J\u00e9r\u00f4me DE MIRAS",
+    "title": "Nano-Projets",
+    "categories": [
+      "tc",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 2,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "NP90",
+    "places": null
+  },
+  "API13": {
+    "hours_tp": 0,
+    "resp": "Benjamin LUSSIER",
+    "title": "Methodes De Developpement Projet Informatique Et Maitrise De La Qualite (Apprentissage)",
+    "categories": [
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "API13",
+    "places": null
+  },
+  "SCI32": {
+    "hours_tp": 0,
+    "resp": "Fahmi BEDOUI",
+    "title": "De La Microstructure Aux Propri\u00e9t\u00e9s Des Materiaux",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 16,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 16,
+    "name": "SCI32",
+    "places": null
+  },
+  "MU03": {
+    "hours_tp": 7,
+    "resp": "Stephane KREGAR",
+    "title": "Pratique Collective Des Musiques Contemporaines",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "MU03",
+    "places": 12
+  },
+  "TTS11": {
+    "hours_tp": 6,
+    "resp": "Alain DONADEY",
+    "title": "Traitement Et Soins 1 : Blocs Operatoires, Anesthesie, Reanimation",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 18,
+    "credits": 6,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "TTS11",
+    "places": null
+  },
+  "SI07": {
+    "hours_tp": 0,
+    "resp": "Isabel GUGLIELMONE",
+    "title": "Medias Classiques Et Medias Numeriques",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "SI07",
+    "places": 48
+  },
+  "TIS04": {
+    "hours_tp": 0,
+    "resp": "Philippe BONNIFAIT",
+    "title": "Estimation Pour La Navigation Robotique",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 20,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 12,
+    "name": "TIS04",
+    "places": null
+  },
+  "HT01": {
+    "hours_tp": 0,
+    "resp": "Guillaume CARNINO",
+    "title": "Culture Et Histoire Des Techniques",
+    "categories": [
+      "master_stqs",
+      "master",
+      "tsh",
+      "master_msci",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 32,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 16,
+    "name": "HT01",
+    "places": 48
+  },
+  "GE23": {
+    "hours_tp": 0,
+    "resp": "Alain BERNARD",
+    "title": "Transferts De Technologies Et D\u00e9veloppements",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "GE23",
+    "places": 48
+  },
+  "ISI14": {
+    "hours_tp": 0,
+    "resp": "Dominique LENNE",
+    "title": "Mise En Oeuvre Des Nouvelles Technologies Et Impact Sur Les Si",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "ISI14",
+    "places": null
+  },
+  "SY08": {
+    "hours_tp": 16,
+    "resp": "Borislav VIDOLOV",
+    "title": "Mod\u00e9lisation Des Syst\u00e8mes A \u00c9v\u00e8nements Discrets",
+    "categories": [
+      "master",
+      "branche_gsm",
+      "branche",
+      "branche_gi"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "SY08",
+    "places": 48
+  },
+  "SCI31": {
+    "hours_tp": 0,
+    "resp": "Ali CHARARA",
+    "title": "Methodes Avancees De Commande Des Systemes Dynamiques",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 14,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 14,
+    "name": "SCI31",
+    "places": null
+  },
+  "BA05": {
+    "hours_tp": 0,
+    "resp": "Manuela SECHILARIU",
+    "title": "Automatismes, R\u00e9gulations Et Batiments Intelligents",
+    "categories": [
+      "branche",
+      "branche_gsu"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 5,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "BA05",
+    "places": 24
+  },
+  "QPO08": {
+    "hours_tp": 3,
+    "resp": "Jean-Pierre CALISTE",
+    "title": "Audit Et Evaluation Des Organisations : Partie Pratique",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 9,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 8,
+    "name": "QPO08",
+    "places": null
+  },
+  "IA01": {
+    "hours_tp": 12,
+    "resp": "Marie-H\u00e9l\u00e8ne ABEL",
+    "title": "Intelligence Artificielle : Repr\u00e9sentation",
+    "categories": [
+      "master",
+      "tc",
+      "branche",
+      "branche_gi"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "IA01",
+    "places": 96
+  },
+  "CM12": {
+    "hours_tp": 0,
+    "resp": "Jamal BELKOUCH",
+    "title": "Chimie Physique Min\u00e9rale",
+    "categories": [
+      "tc",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "CM12",
+    "places": 120
+  },
+  "ICX02": {
+    "hours_tp": 0,
+    "resp": "Pierre-Henri DEJEAN",
+    "title": "Analyse Des Situations",
+    "categories": [
+      "master",
+      "master_ic"
+    ],
+    "type": "TM",
+    "hours": 16,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "ICX02",
+    "places": null
+  },
+  "ISI42": {
+    "hours_tp": 0,
+    "resp": "Dominique LENNE",
+    "title": "Frameworks Et Cha\u00eenes D'Int\u00e9gration",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 1,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "ISI42",
+    "places": null
+  },
+  "FPP01": {
+    "hours_tp": 0,
+    "resp": "Fahed ABDALLAH",
+    "title": "Statistiques Generales Pour L'Ingenieur (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 3,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "FPP01",
+    "places": 72
+  },
+  "API03": {
+    "hours_tp": 0,
+    "resp": "Vincent FREMONT",
+    "title": "Capteurs Intelligents Communicants (Apprentissage)",
+    "categories": [
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "API03",
+    "places": null
+  },
+  "MEQ05": {
+    "hours_tp": 0,
+    "resp": "Etienne ARNOULT",
+    "title": "Mod\u00e9lisation Num\u00e9rique Niveau 2 (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 5,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "MEQ05",
+    "places": 72
+  },
+  "ISI12": {
+    "hours_tp": 0,
+    "resp": "Dominique LENNE",
+    "title": "Externalisation ",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "CS",
+    "hours": 16,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "ISI12",
+    "places": null
+  },
+  "DI05": {
+    "hours_tp": 0,
+    "resp": "Nicolas SALZMANN",
+    "title": "Methodologie Et Analyse De La Valeur",
+    "categories": [
+      "branche_gm",
+      "master",
+      "tsh",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "DI05",
+    "places": 96
+  },
+  "BM06": {
+    "hours_tp": 12,
+    "resp": "Jean-Fran\u00e7ois LERALLUT",
+    "title": "Traitement D'Images M\u00e9dicales",
+    "categories": [
+      "branche",
+      "branche_gb"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 14,
+    "name": "BM06",
+    "places": 24
+  },
+  "SI11": {
+    "hours_tp": 0,
+    "resp": "Emmanuel ANDRE OSTROVSKI",
+    "title": "Expression Orale- Parole Publique",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 45,
+    "name": "SI11",
+    "places": 65
+  },
+  "TH04": {
+    "hours_tp": 0,
+    "resp": "Mourad HAZI",
+    "title": "Froid Industriel",
+    "categories": [
+      "branche_gp",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "TH04",
+    "places": 40
+  },
+  "PTV56": {
+    "hours_tp": 0,
+    "resp": "Philippe SAJET",
+    "title": "Valorisation Des Coproduits Et Minimisation Des Effluents",
+    "categories": [
+      "master",
+      "branche",
+      "master_tvrn"
+    ],
+    "type": "TM",
+    "hours": 24,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "PTV56",
+    "places": null
+  },
+  "TTS13": {
+    "hours_tp": 0,
+    "resp": "Alain DONADEY",
+    "title": "Laboratoire D'Analyses Cliniques",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "CS",
+    "hours": 16,
+    "credits": 5,
+    "have_final": true,
+    "hours_td": 16,
+    "name": "TTS13",
+    "places": null
+  },
+  "LA21": {
+    "hours_tp": 0,
+    "resp": "Juan HERNANDEZ",
+    "title": "Espagnol Niveau I",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LA21",
+    "places": 64
+  },
+  "GE21": {
+    "hours_tp": 0,
+    "resp": "Pascal JOLLIVET-COURTOIS",
+    "title": "\u00c9conomie Et Gestion De L'Innovation Et Du Num\u00e9rique",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "GE21",
+    "places": 48
+  },
+  "SY03": {
+    "hours_tp": 16,
+    "resp": "Didier LEMOINE",
+    "title": "Introduction Aux Systemes D'Entrainements Electriques",
+    "categories": [
+      "branche_gm",
+      "master",
+      "tc",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "SY03",
+    "places": 96
+  },
+  "UR04": {
+    "hours_tp": 0,
+    "resp": "Bruno RAMOND",
+    "title": " Outils Pour Le Projet",
+    "categories": [
+      "tc",
+      "branche",
+      "branche_gsu"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 5,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "UR04",
+    "places": 24
+  },
+  "IC07": {
+    "hours_tp": 0,
+    "resp": "Raffaele CIAVARELLA",
+    "title": "Techniques Et Technologies Du Musical Et Du Sonore",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "IC07",
+    "places": 28
+  },
+  "HE03": {
+    "hours_tp": 0,
+    "resp": "Dominique FONTAINE",
+    "title": "Logique : Histoire Et Formalisme",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "HE03",
+    "places": 24
+  },
+  "AR03": {
+    "hours_tp": 0,
+    "resp": "Anne-Lise RENON",
+    "title": "Art Et Technologies Contemporaines",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "AR03",
+    "places": 32
+  },
+  "API12": {
+    "hours_tp": 0,
+    "resp": "Dominique LENNE",
+    "title": "Ingenierie Des Systemes Interactifs (Apprentissage)",
+    "categories": [
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "API12",
+    "places": null
+  },
+  "ISS02": {
+    "hours_tp": 0,
+    "resp": "Pol-Manoel FELAN",
+    "title": "Metrologie Et Mesure Pour Les Services Et Systemes",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 30,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 30,
+    "name": "ISS02",
+    "places": null
+  },
+  "PS91": {
+    "hours_tp": 0,
+    "resp": "Pierre FEISSEL",
+    "title": "Mecanique Physique",
+    "categories": [
+      "tsh",
+      "tc",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "PS91",
+    "places": 168
+  },
+  "LO01": {
+    "hours_tp": 16,
+    "resp": "Henry CLAISSE",
+    "title": "Bases De La Programmation",
+    "categories": [
+      "branche_gm",
+      "master",
+      "tc",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gsu"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "LO01",
+    "places": 144
+  },
+  "MU01": {
+    "hours_tp": 7,
+    "resp": "Philippe TENART",
+    "title": "Pratique Instrumentale D'Ensemble",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "MU01",
+    "places": 12
+  },
+  "PTV57": {
+    "hours_tp": 0,
+    "resp": "Mourad HAZI",
+    "title": "Valorisation Energetique De La Biomasse",
+    "categories": [
+      "master",
+      "branche",
+      "master_tvrn"
+    ],
+    "type": "TM",
+    "hours": 24,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "PTV57",
+    "places": null
+  },
+  "GE39": {
+    "hours_tp": 0,
+    "resp": "Nathalie DARENE",
+    "title": "Management Et Marketing De L'Innovation",
+    "categories": [
+      "branche_gm",
+      "master",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TM",
+    "hours": 16,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "GE39",
+    "places": 48
+  },
+  "LA04": {
+    "hours_tp": 0,
+    "resp": "Gabriele ORBACH-LIN",
+    "title": "Pratique De La Communication En Allemand",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LA04",
+    "places": 32
+  },
+  "EN90": {
+    "hours_tp": 12,
+    "resp": "Catherine MARQUE",
+    "title": "Electronique Num\u00e9rique",
+    "categories": [
+      "tc"
+    ],
+    "type": "TM",
+    "hours": 16,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 16,
+    "name": "EN90",
+    "places": 24
+  },
+  "UE31": {
+    "hours_tp": 24,
+    "resp": "J\u00e9r\u00f4me BLANC",
+    "title": "Outils De Surveillance Et D'Inspection",
+    "categories": [
+      "pro",
+      "pro_pmc",
+      "pro_msp"
+    ],
+    "type": "TM",
+    "hours": 26,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "UE31",
+    "places": null
+  },
+  "LC72": {
+    "hours_tp": 0,
+    "resp": "Mark KAY",
+    "title": "Anglais Master Niveau 2",
+    "categories": [
+      "master_stqs",
+      "master",
+      "master_msci",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LC72",
+    "places": 32
+  },
+  "TIS02": {
+    "hours_tp": 0,
+    "resp": "Nicolas USUNIER",
+    "title": "Avanc\u00e9es En Apprentissage Statistique",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "TIS02",
+    "places": null
+  },
+  "PH09": {
+    "hours_tp": 0,
+    "resp": "Gunnar DECLERCK",
+    "title": "\u00c9thiques : Approche Pluridisciplinaire",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 48,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "PH09",
+    "places": 24
+  },
+  "MT12": {
+    "hours_tp": 16,
+    "resp": "Nikolaos LIMNIOS",
+    "title": "Techniques Mathematiques Pour L'Ingenieur",
+    "categories": [
+      "branche_gm",
+      "master",
+      "tc",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "MT12",
+    "places": 24
+  },
+  "PS94": {
+    "hours_tp": 9,
+    "resp": "Nicolas PATIN",
+    "title": "Electricite",
+    "categories": [
+      "tsh",
+      "tc",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 16,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 16,
+    "name": "PS94",
+    "places": 120
+  },
+  "MQ16": {
+    "hours_tp": 12,
+    "resp": "Hocine KEBIR",
+    "title": "Elements Finis Pour La Modelisation De Crash Et L'Analyse D'Impacts",
+    "categories": [
+      "branche_gm",
+      "master",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "MQ16",
+    "places": 24
+  },
+  "SR04": {
+    "hours_tp": 17,
+    "resp": "Abdelmadjid BOUABDALLAH",
+    "title": "R\u00e9seaux Informatiques",
+    "categories": [
+      "master",
+      "branche",
+      "branche_gi"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "SR04",
+    "places": 90
+  },
+  "TN15": {
+    "hours_tp": 0,
+    "resp": "Joseph ORLINSKI",
+    "title": "Cr\u00e9ation De Produit, D'Activit\u00e9, D'Entreprise",
+    "categories": [
+      "master",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 12,
+    "credits": 6,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "TN15",
+    "places": 24
+  },
+  "BL10": {
+    "hours_tp": 24,
+    "resp": "Karsten HAUPT",
+    "title": "Structures Et Physicochimie Des Mol\u00e9cules Biologiques",
+    "categories": [
+      "tc",
+      "branche_gp",
+      "branche",
+      "branche_gb"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "BL10",
+    "places": 72
+  },
+  "NF93": {
+    "hours_tp": 0,
+    "resp": "Dominique FONTAINE",
+    "title": "Sciences De L'Informatique",
+    "categories": [
+      "tsh",
+      "tc",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "NF93",
+    "places": 96
+  },
+  "BIO14": {
+    "hours_tp": 0,
+    "resp": "Daniel THOMAS",
+    "title": "Genie Metabolique Industriel",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "TM",
+    "hours": 30,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "BIO14",
+    "places": null
+  },
+  "SR05": {
+    "hours_tp": 0,
+    "resp": "Bertrand DUCOURTHIAL",
+    "title": "Algorithmes Et Syst\u00e8mes R\u00e9partis",
+    "categories": [
+      "branche",
+      "branche_gi"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "SR05",
+    "places": 48
+  },
+  "MAT02": {
+    "hours_tp": 0,
+    "resp": "Kamel KHELLIL",
+    "title": "Mise En Forme Des Materiaux (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "MAT02",
+    "places": 72
+  },
+  "DI01": {
+    "hours_tp": 0,
+    "resp": "Anne MEULEAU",
+    "title": "Initiation Au Design Industriel",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 32,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 10,
+    "name": "DI01",
+    "places": 40
+  },
+  "SR01": {
+    "hours_tp": 0,
+    "resp": "Yacine CHALLAL",
+    "title": "Maitrise Des Syst\u00e8mes Informatiques",
+    "categories": [
+      "master",
+      "tsh",
+      "tc",
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "SR01",
+    "places": 140
+  },
+  "TMI09": {
+    "hours_tp": 0,
+    "resp": "Valerie MOREAU",
+    "title": "International Workshop (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "TMI09",
+    "places": 72
+  },
+  "SMA01": {
+    "hours_tp": 0,
+    "resp": "Delphine BRANCHERIE",
+    "title": "Mod\u00e9lisation Num\u00e9rique Avanc\u00e9e Des Structures",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 16,
+    "credits": 3,
+    "have_final": false,
+    "hours_td": 16,
+    "name": "SMA01",
+    "places": null
+  },
+  "GPL03": {
+    "hours_tp": 0,
+    "resp": "Julien LE DUIGOU",
+    "title": "Syst\u00e8me De Production Et Usine Num\u00e9rique (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "GPL03",
+    "places": 72
+  },
+  "QRO03": {
+    "hours_tp": 0,
+    "resp": "Jean-Pierre CALISTE",
+    "title": "Aide A La Decision En Environnement Complexe : De La Metrologie A La Logique Floue",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "QRO03",
+    "places": null
+  },
+  "GE40": {
+    "hours_tp": 0,
+    "resp": "Thierry GIDEL",
+    "title": "Management De Projets",
+    "categories": [
+      "branche_gm",
+      "master",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TM",
+    "hours": 16,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "GE40",
+    "places": 24
+  },
+  "LC14": {
+    "hours_tp": 0,
+    "resp": "Lynne FOREST",
+    "title": "Communication Scientifique Et Technique En Anglais",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "LC14",
+    "places": 144
+  },
+  "MQ05": {
+    "hours_tp": 32,
+    "resp": "Abdeljalil JOURANI",
+    "title": "Tribologie",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "MQ05",
+    "places": 40
+  },
+  "PTV55": {
+    "hours_tp": 0,
+    "resp": "Eug\u00e8ne VOROBIEV",
+    "title": "Procedes D'Extraction, Separation Et Purification Des Biomolecules",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "PTV55",
+    "places": null
+  },
+  "UE41": {
+    "hours_tp": 18,
+    "resp": "J\u00e9r\u00f4me BLANC",
+    "title": "Asservissement",
+    "categories": [
+      "pro",
+      "pro_pmc",
+      "pro_msp"
+    ],
+    "type": "TM",
+    "hours": 9,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 9,
+    "name": "UE41",
+    "places": null
+  },
+  "TMI07": {
+    "hours_tp": 0,
+    "resp": "Fr\u00e9d\u00e9ric LAMARQUE",
+    "title": "Capteurs Et Instrumentation (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "TMI07",
+    "places": 72
+  },
+  "GE15": {
+    "hours_tp": 0,
+    "resp": "Joseph ORLINSKI",
+    "title": "Initiation A La Cr\u00e9ation Et Gestion D'Entreprises Innovantes",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "GE15",
+    "places": 96
+  },
+  "TIS07": {
+    "hours_tp": 0,
+    "resp": "Enrico NATALIZIO",
+    "title": "Algorithmes Et Protocoles Pour L'Interconnexion Des Syst\u00e8mes",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 22,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 10,
+    "name": "TIS07",
+    "places": null
+  },
+  "CP01": {
+    "hours_tp": 0,
+    "resp": "Nathalie DARENE",
+    "title": "Yes, You Can!",
+    "categories": [
+      "master_stqs",
+      "master",
+      "master_msci",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 31,
+    "credits": 3,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "CP01",
+    "places": null
+  },
+  "TTS10": {
+    "hours_tp": 6,
+    "resp": "Alain DONADEY",
+    "title": "Imagerie Medicale Clinique",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 96,
+    "credits": 6,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "TTS10",
+    "places": null
+  },
+  "LG52": {
+    "hours_tp": 0,
+    "resp": "Xavier AUBERT",
+    "title": "Italien Niveau II",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LG52",
+    "places": 16
+  },
+  "TO0A": {
+    "hours_tp": 0,
+    "resp": "Marleen VERLHAC",
+    "title": "Module De Preparation Au Toeic (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 1,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "TO0A",
+    "places": null
+  },
+  "QCO02": {
+    "hours_tp": 4,
+    "resp": "Pascal ALBERTI",
+    "title": "Creativite Et Innovation",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 12,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 8,
+    "name": "QCO02",
+    "places": null
+  },
+  "SI14": {
+    "hours_tp": 0,
+    "resp": "Theresa LEWIS-GHEORGHE",
+    "title": "Parole Publique En Anglais",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 48,
+    "name": "SI14",
+    "places": 32
+  },
+  "MQ06": {
+    "hours_tp": 12,
+    "resp": "Frederic DRUESNE",
+    "title": "Mod\u00e9lisation Des Structures Par \u00c9l\u00e9ments Finis",
+    "categories": [
+      "branche_gm",
+      "master",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "MQ06",
+    "places": 24
+  },
+  "GPF53": {
+    "hours_tp": 0,
+    "resp": "Elisabeth VAN HECKE",
+    "title": "Technologies De Mise En Oeuvre Des Fluides Complexes",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "TM",
+    "hours": 24,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "GPF53",
+    "places": null
+  },
+  "LG40": {
+    "hours_tp": 0,
+    "resp": "Fatima FERNANDES",
+    "title": "Portugais Initiation",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LG40",
+    "places": 32
+  },
+  "SI06": {
+    "hours_tp": 0,
+    "resp": "Evelyne ROSS",
+    "title": "La Documentation Cross-Media Pour Les Entreprises Et Les Collectivites Locales",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "SI06",
+    "places": 28
+  },
+  "LA23": {
+    "hours_tp": 0,
+    "resp": "Maria Fatima SANCHEZ PANIAGUA",
+    "title": "Espagnol Niveau III",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LA23",
+    "places": 160
+  },
+  "EI04": {
+    "hours_tp": 0,
+    "resp": "V\u00e9ronique MISSERI",
+    "title": "Intelligence \u00c9conomique : Strat\u00e9gie D'Entreprise, D\u00e9marche Et Outils",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "EI04",
+    "places": 24
+  },
+  "TTS15": {
+    "hours_tp": 10,
+    "resp": "Gilbert FARGES",
+    "title": "Management Des Organisations Biomedicales",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 21,
+    "credits": 5,
+    "have_final": true,
+    "hours_td": 22,
+    "name": "TTS15",
+    "places": null
+  },
+  "BT07": {
+    "hours_tp": 30,
+    "resp": "Claire ROSSI",
+    "title": "Formulation, Innovation, Nutrition",
+    "categories": [
+      "branche",
+      "branche_gb"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 24,
+    "name": "BT07",
+    "places": 25
+  },
+  "TF11": {
+    "hours_tp": 0,
+    "resp": "G\u00e9rard ANTONINI",
+    "title": "Introduction Aux Ph\u00e9nom\u00e8nes De Transfert",
+    "categories": [
+      "tc",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "TF11",
+    "places": 72
+  },
+  "SSA03": {
+    "hours_tp": 0,
+    "resp": "Isabelle CAILLEAU",
+    "title": "Communication Professionnelle (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 3,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "SSA03",
+    "places": null
+  },
+  "C2I1": {
+    "hours_tp": 0,
+    "resp": "Philippe TRIGANO",
+    "title": "Certificat Informatique Et Internet Niveau 1",
+    "categories": [
+      "tsh",
+      "tc",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 2,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 20,
+    "name": "C2I1",
+    "places": 96
+  },
+  "BIO12": {
+    "hours_tp": 0,
+    "resp": "Brigitte THOMASSET",
+    "title": "Alternatives Vegetales",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "TM",
+    "hours": 30,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "BIO12",
+    "places": null
+  },
+  "BIO02": {
+    "hours_tp": 0,
+    "resp": "B\u00e9rang\u00e8re AVALLE-BIHAN",
+    "title": "Ingenierie Des Proteines Et Exploitation De La Diversite Moleculaire",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "CS",
+    "hours": 30,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "BIO02",
+    "places": null
+  },
+  "PTV50": {
+    "hours_tp": 60,
+    "resp": "Andr\u00e9 PAUSS",
+    "title": "Methodologies Pour La Recherche ",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "TM",
+    "hours": 16,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 8,
+    "name": "PTV50",
+    "places": null
+  },
+  "TN14": {
+    "hours_tp": 0,
+    "resp": "\u00c9ric NOPPE",
+    "title": "Commande Hydraulique De Puissance",
+    "categories": [
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 24,
+    "name": "TN14",
+    "places": 24
+  },
+  "MT09": {
+    "hours_tp": 16,
+    "resp": "Vincent MARTIN",
+    "title": "Analyse Num\u00e9rique",
+    "categories": [
+      "branche_gm",
+      "master",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "MT09",
+    "places": 60
+  },
+  "BA03": {
+    "hours_tp": 0,
+    "resp": "Jean-Louis BATOZ",
+    "title": "Mat\u00e9riaux De Construction",
+    "categories": [
+      "tc",
+      "branche",
+      "branche_gsu"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "BA03",
+    "places": 48
+  },
+  "SCI03": {
+    "hours_tp": 15,
+    "resp": "Thierry DENOEUX",
+    "title": "Analyse De Donnees Experimentales",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "TM",
+    "hours": 30,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 30,
+    "name": "SCI03",
+    "places": null
+  },
+  "PS96": {
+    "hours_tp": 0,
+    "resp": "Patrick LANCELEUR",
+    "title": "Ondes Et Electromagnetisme 2",
+    "categories": [
+      "tc",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 16,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 16,
+    "name": "PS96",
+    "places": 72
+  },
+  "BMI03": {
+    "hours_tp": 0,
+    "resp": "Eric LECLERC",
+    "title": "Syst\u00e8mes Microfuidiques Et Microsyst\u00e8mes Appliqu\u00e9es \u00c0 La Biologie Et \u00c0 La Sant\u00e9",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 16,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 16,
+    "name": "BMI03",
+    "places": null
+  },
+  "DI02": {
+    "hours_tp": 0,
+    "resp": "Christophe HARBONNIER",
+    "title": "Initiation Au Design Graphique",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 32,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "DI02",
+    "places": 28
+  },
+  "SCI04": {
+    "hours_tp": 0,
+    "resp": "Nikolaos LIMNIOS",
+    "title": "Bases De Modelisation Stochastique",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "SCI04",
+    "places": null
+  },
+  "BMI05": {
+    "hours_tp": 0,
+    "resp": "Marie-Christine HO BA THO",
+    "title": "Mod\u00e9lisation Des Syst\u00e8mes Ost\u00e9o-Articulaire Et Musculosquelettique En Interaction",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 20,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 12,
+    "name": "BMI05",
+    "places": null
+  },
+  "BM05": {
+    "hours_tp": 24,
+    "resp": "Didier GAMET",
+    "title": "Techniques D'Explorations Fonctionnelles",
+    "categories": [
+      "branche",
+      "branche_gb"
+    ],
+    "type": "TM",
+    "hours": 48,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "BM05",
+    "places": 24
+  },
+  "QRO01": {
+    "hours_tp": 0,
+    "resp": "Jean-Pierre CALISTE",
+    "title": "Normalisation, Metrologie, Essais Et Echanges Internationaux",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "QRO01",
+    "places": null
+  },
+  "PH02": {
+    "hours_tp": 0,
+    "resp": "Hugues CHOPLIN",
+    "title": "L'Ing\u00e9nieur, Le Philosophe Et Le Scientifique",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "PH02",
+    "places": 24
+  },
+  "ISI43": {
+    "hours_tp": 0,
+    "resp": "Dominique LENNE",
+    "title": "Applications Mobiles/S\u00e9curit\u00e9 Web",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "ISI43",
+    "places": null
+  },
+  "PS15": {
+    "hours_tp": 0,
+    "resp": "Richard CAPART",
+    "title": "Thermodynamique Physique",
+    "categories": [
+      "tc",
+      "branche_gp",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "PS15",
+    "places": 96
+  },
+  "GE12": {
+    "hours_tp": 0,
+    "resp": "Alain BERNARD",
+    "title": "G\u00e9ographie Et  \u00c9conomie Des Territoires",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "GE12",
+    "places": 48
+  },
+  "LG60": {
+    "hours_tp": 0,
+    "resp": "Li-Ying EMPINET",
+    "title": "Chinois Initiation",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LG60",
+    "places": 96
+  },
+  "LA00": {
+    "hours_tp": 0,
+    "resp": "Nortrud Mathilde KIHM",
+    "title": "Allemand Initiation",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LA00",
+    "places": 48
+  },
+  "BIO15": {
+    "hours_tp": 0,
+    "resp": "Sandrine MORANDAT",
+    "title": "Biophysique Moleculaire Et Metabolique",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "TM",
+    "hours": 30,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "BIO15",
+    "places": null
+  },
+  "TN23": {
+    "hours_tp": 32,
+    "resp": "J\u00e9r\u00f4me BLANC",
+    "title": "Techniques De Fabrication",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "TN23",
+    "places": 48
+  },
+  "GE13": {
+    "hours_tp": 0,
+    "resp": "Celine PIERDET",
+    "title": "Les Risques Entre Technique Et Societe",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "GE13",
+    "places": 24
+  },
+  "TN21": {
+    "hours_tp": 0,
+    "resp": "Julien LE DUIGOU",
+    "title": "Gestion Du Cycle De Vie Du Produit Et Ingenierie Collaborative",
+    "categories": [
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "TN21",
+    "places": 18
+  },
+  "UR03": {
+    "hours_tp": 0,
+    "resp": "Eduard ANTALUCA",
+    "title": "Cartographie S\u00e9miologie Graphique Et Cao/Dao",
+    "categories": [
+      "tsh",
+      "tc",
+      "branche",
+      "branche_gsu"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 5,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "UR03",
+    "places": 48
+  },
+  "SCI20": {
+    "hours_tp": 0,
+    "resp": "Sofiane BOUDAOUD",
+    "title": "Analyse Avanc\u00e9e De Donn\u00e9es",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 20,
+    "credits": 3,
+    "have_final": false,
+    "hours_td": 10,
+    "name": "SCI20",
+    "places": null
+  },
+  "SO06": {
+    "hours_tp": 0,
+    "resp": "Isabelle CLAUDE",
+    "title": "Organisation Des Syst\u00e8mes De Sant\u00e9",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "SO06",
+    "places": 24
+  },
+  "EI05": {
+    "hours_tp": 0,
+    "resp": "Martin MORGENEYER",
+    "title": "Science, Technologie Et Soci\u00e9t\u00e9 Dans L'Union Europ\u00e9enne",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "EI05",
+    "places": 24
+  },
+  "LA92": {
+    "hours_tp": 0,
+    "resp": "Anna WIACEK-LE VERGER",
+    "title": "Francais Langue \u00c9trang\u00e8re Niveau II",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 64,
+    "name": "LA92",
+    "places": 96
+  },
+  "QCO01": {
+    "hours_tp": 3,
+    "resp": "Nathalie DARENE",
+    "title": "Innovation : Potentialite, Partenariat Et Marches Associes",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 18,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 15,
+    "name": "QCO01",
+    "places": null
+  },
+  "LG31": {
+    "hours_tp": 0,
+    "resp": "Anna WIACEK-LE VERGER",
+    "title": "Japonais Niveau I",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LG31",
+    "places": 16
+  },
+  "LB14": {
+    "hours_tp": 0,
+    "resp": "Cindy MOREAU",
+    "title": "Interculturalit\u00e9 Appliqu\u00e9e Aux Pays Anglophones",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "LB14",
+    "places": 80
+  },
+  "ISI03": {
+    "hours_tp": 0,
+    "resp": "Dominique LENNE",
+    "title": "Sociologie Des Organisations ",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "ISI03",
+    "places": null
+  },
+  "ASP03": {
+    "hours_tp": 0,
+    "resp": "Helga SCHENZER",
+    "title": "Demarches Et Pratiques En Situation Professionnelle (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 3,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "ASP03",
+    "places": null
+  },
+  "TTS14": {
+    "hours_tp": 0,
+    "resp": "Vincent ZALC",
+    "title": "Technologies Pour L'Autonomie : Personnes Agees Et Personnes Handicapees",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 12,
+    "credits": 3,
+    "have_final": false,
+    "hours_td": 8,
+    "name": "TTS14",
+    "places": null
+  },
+  "AP53": {
+    "hours_tp": 10,
+    "resp": "Valerie MOREAU",
+    "title": "Production Int\u00e9gr\u00e9e Et Logistique",
+    "categories": [
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 8,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "AP53",
+    "places": 24
+  },
+  "LNG01": {
+    "hours_tp": 0,
+    "resp": "Marleen VERLHAC",
+    "title": "Anglais Niveau II (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 2,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "LNG01",
+    "places": null
+  },
+  "LG42": {
+    "hours_tp": 0,
+    "resp": "Fatima FERNANDES",
+    "title": "Portugais Niveau II",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LG42",
+    "places": 32
+  },
+  "CM05": {
+    "hours_tp": 0,
+    "resp": "Fran\u00e7ois GOMEZ",
+    "title": "Thermodynamique Chimique",
+    "categories": [
+      "tc",
+      "branche_gp",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "CM05",
+    "places": 96
+  },
+  "ICX04": {
+    "hours_tp": 0,
+    "resp": "Yann MOULIER BOUTANG",
+    "title": "Cycle De Conferences",
+    "categories": [
+      "master_stqs",
+      "master",
+      "master_msci",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "ICX04",
+    "places": null
+  },
+  "DPP01": {
+    "hours_tp": 0,
+    "resp": "Gilbert FARGES",
+    "title": "Developper Son Projet Professionnel",
+    "categories": [
+      "master_stqs",
+      "master",
+      "master_msci",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 18,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "DPP01",
+    "places": null
+  },
+  "TIS05": {
+    "hours_tp": 0,
+    "resp": "Isabelle FANTONI-COICHOT",
+    "title": "Commande De Robots Autonomes En Coop\u00e9ration",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 8,
+    "name": "TIS05",
+    "places": null
+  },
+  "PH11": {
+    "hours_tp": 0,
+    "resp": "Gunnar DECLERCK",
+    "title": "Philosopher Aujourd'Hui",
+    "categories": [
+      "tsh"
+    ],
+    "type": "TSH",
+    "hours": 48,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "PH11",
+    "places": null
+  },
+  "LA12": {
+    "hours_tp": 0,
+    "resp": "Lynne FOREST",
+    "title": "Anglais Niveau II",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "LA12",
+    "places": 224
+  },
+  "BC01": {
+    "hours_tp": 0,
+    "resp": "Frederic HUET",
+    "title": "Redaction Bibliographique De Fin D'Etudes",
+    "categories": [
+      "branche_gm",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "BC01",
+    "places": null
+  },
+  "LA91": {
+    "hours_tp": 0,
+    "resp": "Anna WIACEK-LE VERGER",
+    "title": "Francais Langue \u00c9trang\u00e8re Niveau I",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 64,
+    "name": "LA91",
+    "places": 16
+  },
+  "SI20": {
+    "hours_tp": 0,
+    "resp": "Jean-Baptiste GUIGNARD",
+    "title": "Rhetorique Et Arts Du Discours",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "SI20",
+    "places": 24
+  },
+  "SCI23": {
+    "hours_tp": 0,
+    "resp": "Pierre VILLON",
+    "title": "Optimisation",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 20,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 12,
+    "name": "SCI23",
+    "places": null
+  },
+  "MT22": {
+    "hours_tp": 0,
+    "resp": "St\u00e9phane MOTTELET",
+    "title": "Fonctions De Plusieurs Variables R\u00e9elles Et Applications",
+    "categories": [
+      "tsh",
+      "tc",
+      "branche",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "MT22",
+    "places": 120
+  },
+  "GE37": {
+    "hours_tp": 0,
+    "resp": "Manuel MAJADA",
+    "title": "Gestion De Projet",
+    "categories": [
+      "branche_gm",
+      "master",
+      "tc",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TM",
+    "hours": 16,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "GE37",
+    "places": 168
+  },
+  "MU02": {
+    "hours_tp": 7,
+    "resp": "Virginie JULLIARD",
+    "title": "Pratique Instrumentale De Haut Niveau",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 8,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "MU02",
+    "places": 24
+  },
+  "SP01": {
+    "hours_tp": 0,
+    "resp": "Arnaud VANNICATTE",
+    "title": "Un Corps Pour Comprendre Et Apprendre",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 32,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "SP01",
+    "places": 48
+  },
+  "LA22": {
+    "hours_tp": 0,
+    "resp": "Raul GOMEZ",
+    "title": "Espagnol Niveau II",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LA22",
+    "places": 80
+  },
+  "GE10": {
+    "hours_tp": 0,
+    "resp": "Yann MOULIER BOUTANG",
+    "title": "\u00c9conomie Politique",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "GE10",
+    "places": 120
+  },
+  "LA14": {
+    "hours_tp": 0,
+    "resp": "Herve PICTON",
+    "title": "Civilisation Du Monde Anglophone",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "LA14",
+    "places": 112
+  },
+  "SCI22": {
+    "hours_tp": 0,
+    "resp": "Thierry DENOEUX",
+    "title": "Mod\u00e9lisation Et Propagation Des Incertitudes",
+    "categories": [
+      "master"
+    ],
+    "type": "CS",
+    "hours": 15,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 15,
+    "name": "SCI22",
+    "places": null
+  },
+  "QPO04": {
+    "hours_tp": 0,
+    "resp": "Nicolas-Louis DUCLOS",
+    "title": "Qualite Et Management Des Organisations",
+    "categories": [
+      "master_stqs",
+      "master",
+      "master_msci",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 18,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 12,
+    "name": "QPO04",
+    "places": null
+  },
+  "LG41": {
+    "hours_tp": 0,
+    "resp": "Fatima FERNANDES",
+    "title": "Portugais Niveau I",
+    "categories": [
+      "branche_gm",
+      "tsh",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LG41",
+    "places": 16
+  },
+  "FQ01": {
+    "hours_tp": 0,
+    "resp": "Jean-Marc PICARD",
+    "title": "\u00c9conomie Globale Et Maitrise De La Qualit\u00e9",
+    "categories": [
+      "branche_gm",
+      "master",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TM",
+    "hours": 45,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 24,
+    "name": "FQ01",
+    "places": 280
+  },
+  "TN20": {
+    "hours_tp": 0,
+    "resp": "Matthieu BRICOGNE-CUIGNI\u00c8RES",
+    "title": "Cao :  Mod\u00e9lisation G\u00e9om\u00e9trique",
+    "categories": [
+      "branche_gm",
+      "master",
+      "tc",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 24,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 64,
+    "name": "TN20",
+    "places": 162
+  },
+  "EV02": {
+    "hours_tp": 0,
+    "resp": "Martin MORGENEYER",
+    "title": "Conception De Proc\u00e9d\u00e9s Propres",
+    "categories": [
+      "branche_gp",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 24,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 24,
+    "name": "EV02",
+    "places": 45
+  },
+  "NF92": {
+    "hours_tp": 16,
+    "resp": "Jean-Paul BOUFFLET",
+    "title": "Traitement Automatique De L'Information",
+    "categories": [
+      "tsh",
+      "tc",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "NF92",
+    "places": 88
+  },
+  "UE32": {
+    "hours_tp": 12,
+    "resp": "J\u00e9r\u00f4me BLANC",
+    "title": "Autodiagnostic, Telemaintenance",
+    "categories": [
+      "pro",
+      "pro_pmc",
+      "pro_msp"
+    ],
+    "type": "TM",
+    "hours": 16,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 12,
+    "name": "UE32",
+    "places": null
+  },
+  "HT04": {
+    "hours_tp": 0,
+    "resp": "Guillaume CARNINO",
+    "title": "Theories Technologiques Et Histoire Des Savoirs Techniques",
+    "categories": [
+      "tsh"
+    ],
+    "type": "TSH",
+    "hours": 32,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "HT04",
+    "places": null
+  },
+  "BIO16": {
+    "hours_tp": 0,
+    "resp": "Sandrine MORANDAT",
+    "title": "Capteurs Et Biocapteurs",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "TM",
+    "hours": 30,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "BIO16",
+    "places": null
+  },
+  "LNG14": {
+    "hours_tp": 0,
+    "resp": "Lilia OMAROUAYACHE",
+    "title": "American History And Civilization Through The Cinema (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 2,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "LNG14",
+    "places": null
+  },
+  "UB10": {
+    "hours_tp": 0,
+    "resp": "Benoit BECKERS",
+    "title": "Thermique Urbaine",
+    "categories": [
+      "tc",
+      "branche",
+      "branche_gsu"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "UB10",
+    "places": 48
+  },
+  "SI02": {
+    "hours_tp": 0,
+    "resp": "Morgan JEANNE",
+    "title": "Communication Professionnelle De L'Ing\u00e9nieur",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 32,
+    "name": "SI02",
+    "places": 48
+  },
+  "TMI02": {
+    "hours_tp": 0,
+    "resp": "Thomas BOULANGER",
+    "title": "Realisation De Prototypes (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "TMI02",
+    "places": 72
+  },
+  "SY01": {
+    "hours_tp": 0,
+    "resp": "Salim BOUZEBDA",
+    "title": "\u00c9l\u00e9ments De Probabilit\u00e9s",
+    "categories": [
+      "tc",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "SY01",
+    "places": 72
+  },
+  "MQ01": {
+    "hours_tp": 14,
+    "resp": "Fr\u00e9d\u00e9ric MARIN",
+    "title": "\u00c9l\u00e9ments De Resistance Des Mat\u00e9riaux",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gsu"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 24,
+    "name": "MQ01",
+    "places": 240
+  },
+  "BMI01": {
+    "hours_tp": 0,
+    "resp": "Sabine BENSAMOUN",
+    "title": "Propri\u00e9t\u00e9s M\u00e9caniques Des Syst\u00e8mes Biologiques",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 20,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 12,
+    "name": "BMI01",
+    "places": null
+  },
+  "MEQ02": {
+    "hours_tp": 0,
+    "resp": "Frederic DRUESNE",
+    "title": "Modelisation Numerique Niveau 1 (Apprentissage)",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 5,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "MEQ02",
+    "places": 72
+  },
+  "MP03": {
+    "hours_tp": 0,
+    "resp": "Pierre VILLON",
+    "title": "Supply Chain Management",
+    "categories": [
+      "branche_gsm",
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "MP03",
+    "places": 48
+  },
+  "TN02": {
+    "hours_tp": 0,
+    "resp": "Flore VALLET",
+    "title": "Introduction A La Conception M\u00e9canique",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 16,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "TN02",
+    "places": 72
+  },
+  "UE22": {
+    "hours_tp": 0,
+    "resp": "J\u00e9r\u00f4me BLANC",
+    "title": "Gestion De Projet De Maintenance",
+    "categories": [
+      "pro",
+      "pro_pmc",
+      "pro_msp"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 4,
+    "name": "UE22",
+    "places": null
+  },
+  "NF01": {
+    "hours_tp": 16,
+    "resp": "Philippe TRIGANO",
+    "title": "Algorithmique Et Programmation",
+    "categories": [
+      "tsh",
+      "tc",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 24,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "NF01",
+    "places": 168
+  },
+  "SC12": {
+    "hours_tp": 0,
+    "resp": "Charles LENAY",
+    "title": "Technologie, Cognition, Perception",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "SC12",
+    "places": 48
+  },
+  "LA01": {
+    "hours_tp": 0,
+    "resp": "Gisela LUZIN",
+    "title": "Allemand Niveau I",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 48,
+    "name": "LA01",
+    "places": 32
+  },
+  "GE36": {
+    "hours_tp": 0,
+    "resp": "Didier SERRANT",
+    "title": "Marketing",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "GE36",
+    "places": 72
+  },
+  "MT32": {
+    "hours_tp": 0,
+    "resp": "Mohammed El Djalil KATEB",
+    "title": "Analyse 1 : Calcul Diff\u00e9rentiel Et Int\u00e9gral",
+    "categories": [
+      "tsh"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "MT32",
+    "places": 72
+  },
+  "TN06": {
+    "hours_tp": 16,
+    "resp": "Jean-Luc DULONG",
+    "title": "Transmission Des Efforts En M\u00e9canique",
+    "categories": [
+      "tc",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "TN06",
+    "places": 72
+  },
+  "TTS01": {
+    "hours_tp": 16,
+    "resp": "Catherine MARQUE",
+    "title": "Acquisition De Signaux Et D'Images Medicales",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 5,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "TTS01",
+    "places": null
+  },
+  "SCI25": {
+    "hours_tp": 0,
+    "resp": "Laurent PETIT",
+    "title": "Atelier Projet",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 6,
+    "have_final": false,
+    "hours_td": 48,
+    "name": "SCI25",
+    "places": null
+  },
+  "NP94": {
+    "hours_tp": 0,
+    "resp": "Didier LEMOINE",
+    "title": "Preparation Scientifique A Un Sujet \"Challenge\" De Tn04",
+    "categories": [
+      "tsh",
+      "tc",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 2,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "NP94",
+    "places": 72
+  },
+  "TO01": {
+    "hours_tp": 0,
+    "resp": "Marleen VERLHAC",
+    "title": "Module De Preparation Au Toeic",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 1,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 16,
+    "name": "TO01",
+    "places": 132
+  },
+  "MQ12": {
+    "hours_tp": 0,
+    "resp": "Salima BOUVIER",
+    "title": "Choix Des Mat\u00e9riaux Et Des Proc\u00e9d\u00e9s",
+    "categories": [
+      "branche_gm",
+      "branche",
+      "branche_gb"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "MQ12",
+    "places": 48
+  },
+  "QPO06": {
+    "hours_tp": 0,
+    "resp": "Gilbert FARGES",
+    "title": "Management Des Systemes D'Information",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "QPO06",
+    "places": null
+  },
+  "SCI05": {
+    "hours_tp": 0,
+    "resp": "St\u00e9phane MOTTELET",
+    "title": "Outils De Calculs Scientifiques",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "TM",
+    "hours": 15,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 15,
+    "name": "SCI05",
+    "places": null
+  },
+  "MA11": {
+    "hours_tp": 0,
+    "resp": "Ahmad EL HAJJ",
+    "title": "R\u00e9vision D'Analyse Et D'Alg\u00e8bre (Gm, Gsm, Gp)",
+    "categories": [
+      "branche_gm",
+      "branche_gp",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 64,
+    "name": "MA11",
+    "places": 144
+  },
+  "PTV53": {
+    "hours_tp": 0,
+    "resp": "Eug\u00e8ne VOROBIEV",
+    "title": "Technologies Emergentes Pour La Transformation Des Ressources Renouvelables",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "PTV53",
+    "places": null
+  },
+  "UE34": {
+    "hours_tp": 0,
+    "resp": "J\u00e9r\u00f4me BLANC",
+    "title": "Outils Statistiques",
+    "categories": [
+      "pro",
+      "pro_pmc",
+      "pro_msp"
+    ],
+    "type": "CS",
+    "hours": 12,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 8,
+    "name": "UE34",
+    "places": null
+  },
+  "BIO13": {
+    "hours_tp": 0,
+    "resp": "Karsten HAUPT",
+    "title": "Interaction, Reconnaissance Supramoleculaire Et Biomimetisme",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "TM",
+    "hours": 30,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "BIO13",
+    "places": null
+  },
+  "TIS06": {
+    "hours_tp": 0,
+    "resp": "Dominique LENNE",
+    "title": "Syst\u00e8mes Interactifs Intelligents",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 0,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "TIS06",
+    "places": null
+  },
+  "CM13": {
+    "hours_tp": 24,
+    "resp": "Claire ROSSI",
+    "title": "Chimie Des Substances Organiques Et Biologiques",
+    "categories": [
+      "tc",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "CM13",
+    "places": 48
+  },
+  "TN12": {
+    "hours_tp": 0,
+    "resp": "Yannick TRELON",
+    "title": "Conception M\u00e9canique",
+    "categories": [
+      "branche_gm",
+      "branche_gsm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 24,
+    "credits": 6,
+    "have_final": false,
+    "hours_td": 64,
+    "name": "TN12",
+    "places": 54
+  },
+  "MS03": {
+    "hours_tp": 48,
+    "resp": "Jean-Michel VILLE",
+    "title": "Pratique Exp\u00e9rimentale En Acoustique Et Vibrations",
+    "categories": [
+      "branche_gm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 0,
+    "credits": 6,
+    "have_final": false,
+    "hours_td": 16,
+    "name": "MS03",
+    "places": 15
+  },
+  "BM07": {
+    "hours_tp": 24,
+    "resp": "Christophe EGLES",
+    "title": "Biocompatibilit\u00e9",
+    "categories": [
+      "branche",
+      "branche_gb"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "BM07",
+    "places": 24
+  },
+  "ISI05": {
+    "hours_tp": 0,
+    "resp": "Dominique LENNE",
+    "title": "Management De Projets",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "CS",
+    "hours": 12,
+    "credits": 1,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "ISI05",
+    "places": null
+  },
+  "SCI06": {
+    "hours_tp": 8,
+    "resp": "Philippe BONNIFAIT",
+    "title": "Methodologie De Synthese De Commande",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 15,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 15,
+    "name": "SCI06",
+    "places": null
+  },
+  "MT35": {
+    "hours_tp": 0,
+    "resp": "Veronique HEDOU",
+    "title": "Alg\u00e8bre Lin\u00e9aire",
+    "categories": [
+      "tsh"
+    ],
+    "type": "CS",
+    "hours": 48,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "MT35",
+    "places": null
+  },
+  "TS02": {
+    "hours_tp": 0,
+    "resp": "Christophe PROUST",
+    "title": "Maitriser Les Risques Technologiques Majeurs",
+    "categories": [
+      "branche_gp",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "TS02",
+    "places": 24
+  },
+  "BT09": {
+    "hours_tp": 16,
+    "resp": "Elisabeth MOUTON",
+    "title": "Industries Agro-Alimentaires - Qualites De L'Aliment",
+    "categories": [
+      "master",
+      "tc",
+      "branche",
+      "branche_gb"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "BT09",
+    "places": 40
+  },
+  "FQ03": {
+    "hours_tp": 0,
+    "resp": "Zohra CHERFI-BOULANGER",
+    "title": "Conception Robuste Et Plans D'Experiences",
+    "categories": [
+      "branche_gm",
+      "branche_gp",
+      "branche",
+      "branche_gb"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "FQ03",
+    "places": 48
+  },
+  "FQ04": {
+    "hours_tp": 0,
+    "resp": "Elisabeth MOUTON",
+    "title": "Qualit\u00e9 Et Exigences R\u00e9glementaires En G\u00e9nie Biologique",
+    "categories": [
+      "branche",
+      "branche_gb"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "FQ04",
+    "places": 45
+  },
+  "MI01": {
+    "hours_tp": 16,
+    "resp": "Mohamed SHAWKY",
+    "title": "Structure D'Un Calculateur",
+    "categories": [
+      "master",
+      "tc",
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "MI01",
+    "places": 100
+  },
+  "GE27": {
+    "hours_tp": 0,
+    "resp": "Christine DIVRY-GROFF",
+    "title": "Gestion Financi\u00e8re De L'Entreprise",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "GE27",
+    "places": 48
+  },
+  "SY16": {
+    "hours_tp": 0,
+    "resp": "Sol\u00e8ne MOREAU",
+    "title": "Les Applications Du Traitement Du Signal",
+    "categories": [
+      "branche_gm",
+      "branche",
+      "branche_gb"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "SY16",
+    "places": 24
+  },
+  "MC08": {
+    "hours_tp": 16,
+    "resp": "Guy FRIEDRICH",
+    "title": "Ing\u00e9nierie Robotique Et Actionneurs \u00c9lectriques",
+    "categories": [
+      "branche_gm",
+      "branche"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "MC08",
+    "places": 24
+  },
+  "BIO11": {
+    "hours_tp": 0,
+    "resp": "Yolande PERRIN",
+    "title": "Procedes De Transformation Vegetale",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "TM",
+    "hours": 30,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "BIO11",
+    "places": null
+  },
+  "ISI09": {
+    "hours_tp": 0,
+    "resp": "Dominique LENNE",
+    "title": "Architecture Et Urbanisation Des Si",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "ISI09",
+    "places": null
+  },
+  "ISI13": {
+    "hours_tp": 0,
+    "resp": "Dominique LENNE",
+    "title": "Panorama Des Tendances Technologiques Et Impact Sur Les M\u00e9tiers",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "ISI13",
+    "places": null
+  },
+  "UE24": {
+    "hours_tp": 0,
+    "resp": "J\u00e9r\u00f4me BLANC",
+    "title": "Gestion De Production",
+    "categories": [
+      "pro",
+      "pro_pmc",
+      "pro_msp"
+    ],
+    "type": "TSH",
+    "hours": 10,
+    "credits": 2,
+    "have_final": true,
+    "hours_td": 10,
+    "name": "UE24",
+    "places": null
+  },
+  "PH03": {
+    "hours_tp": 0,
+    "resp": "Jean-Baptiste GUIGNARD",
+    "title": "Penser La Technique Aujourd'Hui",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 32,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 16,
+    "name": "PH03",
+    "places": 24
+  },
+  "LG53": {
+    "hours_tp": 0,
+    "resp": "Xavier AUBERT",
+    "title": "Italien Niveau III",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "tsh",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 0,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 48,
+    "name": "LG53",
+    "places": 16
+  },
+  "MT31": {
+    "hours_tp": 0,
+    "resp": "Bruno BACHIMONT",
+    "title": "Introduction A La Logique Math\u00e9matique",
+    "categories": [
+      "tsh"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 0,
+    "name": "MT31",
+    "places": 72
+  },
+  "SI05": {
+    "hours_tp": 0,
+    "resp": "Virginie JULLIARD",
+    "title": "Theories De La Communication",
+    "categories": [
+      "branche_gm",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "TSH",
+    "hours": 32,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 16,
+    "name": "SI05",
+    "places": 24
+  },
+  "ISS01": {
+    "hours_tp": 0,
+    "resp": "Jean-Marc BERENGUIER",
+    "title": "Bases Des Reseaux",
+    "categories": [
+      "master",
+      "master_iss"
+    ],
+    "type": "TM",
+    "hours": 15,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 3,
+    "name": "ISS01",
+    "places": null
+  },
+  "GPF55": {
+    "hours_tp": 0,
+    "resp": "Isabelle PEZRON",
+    "title": "Filmication, Peintures Et Encres",
+    "categories": [
+      "master",
+      "master_tvrn"
+    ],
+    "type": "TM",
+    "hours": 24,
+    "credits": 3,
+    "have_final": false,
+    "hours_td": 0,
+    "name": "GPF55",
+    "places": null
+  },
+  "MT90": {
+    "hours_tp": 0,
+    "resp": "Veronique HEDOU",
+    "title": "Fonctions D'Une Variable Reelle 1",
+    "categories": [
+      "tsh",
+      "tc",
+      "branche"
+    ],
+    "type": "CS",
+    "hours": 24,
+    "credits": 4,
+    "have_final": true,
+    "hours_td": 24,
+    "name": "MT90",
+    "places": 384
+  },
+  "NF29": {
+    "hours_tp": 0,
+    "resp": "St\u00e9phane CROZAT",
+    "title": "Ing\u00e9nierie Documentaire Et Supports D'Information",
+    "categories": [
+      "branche",
+      "branche_gi"
+    ],
+    "type": "TM",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "NF29",
+    "places": 24
+  },
+  "SI28": {
+    "hours_tp": 0,
+    "resp": "Serge BOUCHARDON",
+    "title": "\u00c9criture Interactive Et Multim\u00e9dia",
+    "categories": [
+      "master_stqs",
+      "branche_gm",
+      "master",
+      "master_msci",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "master_tvrn",
+      "master_tvia",
+      "master_sims",
+      "branche_gi",
+      "branche_gsu",
+      "master_stic",
+      "master_iss",
+      "master_ic"
+    ],
+    "type": "TSH",
+    "hours": 16,
+    "credits": 4,
+    "have_final": false,
+    "hours_td": 48,
+    "name": "SI28",
+    "places": 36
+  },
+  "SY02": {
+    "hours_tp": 0,
+    "resp": "G\u00e9rard GOVAERT",
+    "title": "M\u00e9thodes Statistiques Pour L'Ing\u00e9nieur",
+    "categories": [
+      "branche_gm",
+      "master",
+      "tc",
+      "branche_gp",
+      "branche_gsm",
+      "branche",
+      "branche_gb",
+      "branche_gi",
+      "branche_gsu"
+    ],
+    "type": "CS",
+    "hours": 32,
+    "credits": 6,
+    "have_final": true,
+    "hours_td": 32,
+    "name": "SY02",
+    "places": 312
+  },
+  "BMI06": {
+    "hours_tp": 0,
+    "resp": "Karim EL KIRAT-CHATEL",
+    "title": "Nanotecnologies Et Nanobiom\u00e9canique Des Syst\u00e8mes Biologiques Complexes",
+    "categories": [
+      "master",
+      "master_msci"
+    ],
+    "type": "CS",
+    "hours": 16,
+    "credits": 3,
+    "have_final": true,
+    "hours_td": 16,
+    "name": "BMI06",
+    "places": null
+  }
+}
