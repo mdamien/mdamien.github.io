@@ -17,8 +17,15 @@ for uv in UVs:
 
     uv.update(uvs_demeter.get(uv['name'], {}))
 
+cats = set()
+for uv in UVs:
+    for cat in uv.get('categories',[]):
+        cats.add(cat)
+
 with open('data/uvs.json','w') as f:
     json.dump(UVs, f, indent=2)
 
 with open('data/uvs.js','w') as f:
     f.write('__UVS__ = '+json.dumps(UVs, indent=2))
+    f.write('\n\n')
+    f.write('__CATEGORIES__ ='+json.dumps(list(sorted(list(cats)))))

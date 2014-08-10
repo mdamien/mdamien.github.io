@@ -10,15 +10,15 @@ box-sizing: border-box;
 
 .uv_list, .filters{
    text-align:center;
-   padding: 20px;
+   padding-left:20px
 }
 .uv_list{
-margin-right: 400px;
+margin-right: 450px;
 }
-.uv_infos {
+.sidebar {
 float: right;
 margin: 20px;
-width: 400px;
+width: 410px;
 margin-top:0px;
 }
 
@@ -49,17 +49,51 @@ margin-top:0px;
 }
 
 .schedule-tables .filled{
-    background-color: rgb(221, 221, 221);;
+    background-color: rgb(221, 221, 221);
 }
-.schedule-tables table{
+
+td.filled.type_T {
+    background-color: rgb(197, 213, 255) !important;
+}
+
+td.filled.type_D {
+    background-color: rgb(76, 191, 255) !important;
+}
+
+td.filled.type_C {
+    background-color: rgb(30, 121, 206) !important;
+}
+
+
+.schedule-table{
     table-layout:fixed;
 }
 
+.schedule-table>thead>tr>th, .schedule-table>tbody>tr>th, .schedule-table>tfoot>tr>th, .schedule-table>thead>tr>td, .schedule-table>tbody>tr>td, .schedule-table>tfoot>tr>td {
+    padding: 0px;
+    font-size:11px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
 @media (max-width: 800px) {
     .uv_list{
     margin-right: 100px;
     }
-    .uv_infos {
+    .sidebar {
     width: 150px;
     }
+}
+
+.schedule-one .uv_mini{
+    display:none;
+}
+
+.uv_choices .btn-danger, .uv_choices .btn-warning{
+    padding: 2px 3px;
+    font-size:6px;
+}
+
+td.restricted {
+    background-color: rgb(255, 202, 202) !important;
 }
