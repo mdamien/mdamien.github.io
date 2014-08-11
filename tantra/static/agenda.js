@@ -1,10 +1,10 @@
 
-function schedule_to_table(schedule) {
+function times_to_table(times) {
     var all = ''; 
     var prev_day = '';
     var prev_uv = '';
-    schedule.forEach(function(day_schedule){
-        var day = day_schedule.day;
+    times.forEach(function(time){
+        var day = time.day;
         if(prev_day == day){
             day = '&nbsp;';
         }

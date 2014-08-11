@@ -7,7 +7,7 @@ uvs_schedules = json.load(open('data/uvs_schedules.json'))
 
 UVs = uvs_rentree
 for uv in UVs:
-    uv['schedule'] = uvs_schedules[uv['name']]
+    uv['times'] = uvs_schedules[uv['name']]
 
     rating = None
     for uvweb_uv in uvs_ratings_uvweb:

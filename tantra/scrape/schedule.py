@@ -1,7 +1,6 @@
 import json, requests
 
 def parse_line(line):
-    courses = []
     i = 0
     hour_end = 8
     min_end = 0
@@ -35,7 +34,7 @@ def parse_line(line):
 
         i = j+1
 
-        courses.append({
+        yield {
             'formatted':formatted,
             'h_start':hour_start,
             'm_start':min_start,
@@ -44,27 +43,25 @@ def parse_line(line):
             'type': course_type[0],
             'full_type':course_type,
             'room': room,
-        })
-
-    return courses
+        }
 
 def parse_file(uv, f):
     day = -1    
     days = 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'
-    schedule = []
     for line in f:
         if 'colspan="11"' in line:
             day += 1
         if uv in line:
-            courses = parse_line(line)
-            schedule.append({'day':days[day].lower(), uv: courses })
-    return schedule
+            for course in parse_line(line):
+                course['day_index'] = day
+                course['day'] = days[day].lower()
+                yield course
 
 schedules = open('scrapa/schedules.html').read().split('%---------------%')
 uvs = {}
 for schedule in schedules:
     uv, text = schedule.split('||')
-    uvs[uv] = parse_file(uv, text.splitlines())
+    uvs[uv] = list(parse_file(uv, text.splitlines()))
 
 with open('data/uvs_schedules.json','w') as f:
     json.dump(uvs, f, indent=2)
