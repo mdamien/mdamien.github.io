@@ -6,7 +6,7 @@ angular.module('tantra', []).controller('UVController', ['$scope', function($sco
 [__UVS__[5], __UVS__[100], __UVS__[30]],
 [__UVS__[12], __UVS__[23]],
 [__UVS__[2]], ]
-    //$scope.choices = []
+    $scope.choices = []
     $scope.categories = __CATEGORIES__
     this.set_uv = function(uv) {
         $scope.current_uv = uv;
@@ -14,6 +14,9 @@ angular.module('tantra', []).controller('UVController', ['$scope', function($sco
 this.remove_choice = function(i, j) {
     $scope.choices[i].splice(j, 1)
     this.clean_choices();
+}
+this.update_choice = function(i, j, uv) {
+    $scope.choices[i][j] = uv; 
 }
 
 this.add_choice = function(uv, i) {
@@ -31,12 +34,20 @@ this.clean_choices = function() {
         }
     }
 }
-}]).filter('times_to_table', ['$sce', function($sce) {
-    return function(schedule) {
-        all = schedule_to_table(schedule);
-        return $sce.trustAsHtml(all);
+}]).filter('add_spans', function() {
+    return function(times) {
+        times.forEach(function(time){
+            var start = time.h_start*60+time.m_start;
+            var end = time.h_end*60+time.m_end;
+            time.spans = [
+                Math.floor((start-8*60)/15),
+                Math.floor((end-start)/15),
+                Math.floor((20*60-end)/15),
+                ]
+        });
+        return times;
     };
-}]).filter('choices_to_timetable',['$sce', function($sce) {
+}).filter('merge_times',['$sce', function($sce) {
     return function(choices) {
         //remove duplicates
         var uvs = [];
@@ -49,18 +60,20 @@ this.clean_choices = function() {
         })
 
         //addup schedules
-        var schedules = [];
+        var times = [];
         uvs.forEach(function(uv){
-            schedules = schedules.concat(uv.schedule);
+            uv.times.forEach(function(time){
+                time.uv = uv.name;
+            })
+            times = times.concat(uv.times);
+            
         });
 
-        //sort days
-        schedules = schedules.sort(function(x,y){
-            DAYS = ['lundi','mardi','mercredi','jeudi','vendredi','samedi']
-            return DAYS.indexOf(x.day) - DAYS.indexOf(y.day)
-        }) 
+        times = times.sort(function(x,y){
+            return x.day_index - y.day_index;
+        });
 
-        all = schedule_to_table(schedules);
-        return $sce.trustAsHtml(all);
+        return times;
+
     }
 }]);

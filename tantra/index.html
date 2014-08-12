@@ -47,30 +47,39 @@
                         <td
                             ng-show='column.length < 3'
                             >
-                            <a class='btn btn-primary btn-sm' ng-click='UVCtrl.add_choice(current_uv, $index)'><span class="glyphicon glyphicon-plus"></span></a>
+                            <a class='btn btn-primary btn-sm' ng-click='UVCtrl.add_choice(current_uv, $index)'><span class="glyphicon glyphicon-plus"></span> {{ current_uv.name }}</a>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <a class='btn btn-primary btn-sm' ng-click='UVCtrl.add_line_and_choice(current_uv)'><span class="glyphicon glyphicon-plus"></span></a>
+                            <a class='btn btn-primary btn-sm' ng-click='UVCtrl.add_line_and_choice(current_uv)'><span class="glyphicon glyphicon-plus"></span> {{current_uv.name}}</a>
                         </td>
                     </tr>
                 </table>
-                <table class='schedule-table table-bordered table table-striped'>
+                <table class='schedule-table table-bordered table table-stripped'>
                     <thead>
                         <tr>
-                            <th style='width: 80px;'></th>
+                            <th style='width: 60px;'></th>
+                            <th style='width: 40px;'</th>
                             <th ng-repeat="h in [8, '', '', '', 9, '', '', '', 10, '', '', '', 11, '', '', '', 12, '', '', '', 13, '', '', '', 14, '', '', '', 15, '', '', '', 16, '', '', '', 17, '', '', '', 18, '', '', '', 19, '', '', ''] track by $index" colspan="1">
                                 {{ h }}
                             </th>
                         </tr>
                     </thead>
-                    <tbody ng-bind-html='choices | choices_to_timetable'></tbody>
+                    <tbody>
+                        <tr ng-repeat='time in choices | merge_times | add_spans'>
+                            <td>{{ time.day }}</td>
+                            <td>{{ time.uv }}</td>
+                            <td ng-show='time.spans[0] > 0' class='empty' colspan='{{time.spans[0]}}'></td>
+                            <td class='filled type_{{time.type}}' colspan='{{time.spans[1]}}' title='{{time.formatted}}'></td>
+                            <td ng-show='time.spans[2] > 0' class='empty' colspan='{{time.spans[2]}}'></td>
+                        </tr>
+                    </tbody>
                 </table>
                 <hr>
                 <h3>{{ current_uv.title }}</h3>
                 <h4>{{ current_uv.name }}</h4>
-                <strong ng-show="current_uv.restricted">Effectif limite</strong></br>
+                <strong ng-show="current_uv.restricted">Effectif limit&eacute;</strong></br>
                 {{ current_uv.type }}</br>Credits: {{ current_uv.credits}}</br>
                 Note UVWeb: <a ng-href="https://assos.utc.fr/uvweb/uv/{{current_uv.name}}"
                     ><strong>{{ current_uv.uvweb_rating }}</strong>/10</a></br>
@@ -81,13 +90,20 @@
                 <table class='schedule-table schedule-one table-bordered table table-stripped'>
                     <thead>
                         <tr>
-                            <th style='width: 80px;'></th>
+                            <th style='width: 60px;'></th>
                             <th ng-repeat="h in [8, '', '', '', 9, '', '', '', 10, '', '', '', 11, '', '', '', 12, '', '', '', 13, '', '', '', 14, '', '', '', 15, '', '', '', 16, '', '', '', 17, '', '', '', 18, '', '', '', 19, '', '', ''] track by $index" colspan="1">
                                 {{ h }}
                             </th>
                         </tr>
                     </thead>
-                    <tbody ng-bind-html='current_uv.times | times_to_table'></tbody>
+                    <tbody>
+                        <tr ng-repeat='time in current_uv.times | add_spans |  orderBy:current_uv.day_index'>
+                            <td>{{ time.day }}</td>
+                            <td ng-show='time.spans[0] > 0' class='empty' colspan='{{time.spans[0]}}'></td>
+                            <td class='filled type_{{time.type}}' colspan='{{time.spans[1]}}' title='{{time.formatted}}'></td>
+                            <td ng-show='time.spans[2] > 0' class='empty' colspan='{{time.spans[2]}}'></td>
+                        </tr>
+                    </tbody>
                 </table>
                 <span class="badge" style='margin-right:2px' ng-repeat='cat in current_uv.categories'>{{cat}}</span>
             </div>

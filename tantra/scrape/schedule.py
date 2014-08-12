@@ -48,6 +48,7 @@ def parse_line(line):
 def parse_file(uv, f):
     day = -1    
     days = 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'
+    line_index = 0
     for line in f:
         if 'colspan="11"' in line:
             day += 1
@@ -55,7 +56,9 @@ def parse_file(uv, f):
             for course in parse_line(line):
                 course['day_index'] = day
                 course['day'] = days[day].lower()
+                course['line_index'] = line_index
                 yield course
+            line_index += 1
 
 schedules = open('scrapa/schedules.html').read().split('%---------------%')
 uvs = {}
