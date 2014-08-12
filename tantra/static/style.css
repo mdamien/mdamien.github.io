@@ -65,6 +65,7 @@ td.filled.type_C {
 }
 
 
+
 .schedule-table{
     table-layout:fixed;
 }
@@ -93,7 +94,15 @@ td.filled.type_C {
     padding: 2px 3px;
     font-size:6px;
 }
+.uv_choices {
+    margin-bottom: 0px;
+}
 
 td.restricted {
     background-color: rgb(255, 202, 202) !important;
+}
+
+.incompatible {
+background-color: rgb(213, 213, 213) !important;
+color: rgb(143, 143, 143);
 }

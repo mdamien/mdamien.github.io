@@ -41,18 +41,25 @@ agenda.compute_necessaries = function(times) {
     return necs;
 }
 
+agenda.remove_all_impossible = function(necs, times) {
+    return times.filter(function(time){
+        return necs.indexOf(time.fingerprint) === -1;
+    })
+}
 
 agenda.valid_combination_exists = function(times, all_times, necs){
     if(!necs){
         necs = agenda.compute_necessaries(all_times);
     }
+    if(agenda.have_overlaps(times)){
+        return false;
+    }
     if(times.length == necs.length){
-        if(!agenda.have_overlaps(times)){
-            return [true, times];
-        }
+        return [true, times];
     }
     else if(times.length < necs.length){
         var current_necs = agenda.compute_necessaries(times);
+        all_times = agenda.remove_all_impossible(current_necs, all_times);
         for(var i=0; i<all_times.length; i++){
             var time = all_times[i];
             if(current_necs.indexOf(time.fingerprint) === -1){
@@ -79,6 +86,9 @@ agenda.basics = function(times){
 }
 
 agenda.bootstrap_combination_detection = function(times){
+    times.forEach(function(time){
+        agenda.add_full_mins(time);
+    })
     var basics = agenda.basics(times);
     return agenda.valid_combination_exists(basics, times)
 }
@@ -143,7 +153,6 @@ agenda.test = function(){
     assertEq('have_overlaps 2', false, agenda.have_overlaps([time,time3]))
     assertSetEq('necessaries', ['LB14-C', 'BL10-D', 'LO01-T'],
                 agenda.compute_necessaries([time, time2, time3]))
-    //assertEq('valid comb exists', false, agenda.valid_combination_exists([], [time, time2, time3]))
     assertEq('valid comb exists', true, agenda.valid_combination_exists([], [time2, time3])[0])
 }
 
@@ -153,7 +162,9 @@ agenda.profile = function(){
       agenda.uvs_valid_comb(['LA13', 'CM11', 'GE10', 'LA11'])
       console.timelineEnd();
       console.profileEnd();
+      console.log(c, 'combinations tested')
 }
 
-agenda.test()
+//agenda.test()
+//agenda.profile()
 

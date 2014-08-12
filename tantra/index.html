@@ -6,11 +6,11 @@
         <title>Tantra</title>
         <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css"
         type="text/css">
+        <script src="scrape/data/uvs.js"></script>
         <script src="static/angular.js"></script>
         <script src="static/agenda.js"></script>
         <script src="static/color.js"></script>
         <link rel="stylesheet" href="static/style.css" type="text/css">
-        <script src="scrape/data/uvs.js"></script>
     </head>
     
     <body ng-app="tantra">
@@ -28,6 +28,7 @@
                 </select>
             </div>
             <div class='sidebar'>
+                <h4>Choix</h4>
                 <table class='table uv_choices table-striped table-bordered'>
                     <tr ng-repeat='column in choices track by $index'>
                         <td 
@@ -56,6 +57,11 @@
                         </td>
                     </tr>
                 </table>
+                <div><strong>
+                <span ng-show="choices_compatibles">Choix compatibles</span>
+                <span ng-hide="choices_compatibles">Choix incompatibles</span>
+                </strong></div>
+                </br>
                 <table class='schedule-table table-bordered table table-stripped'>
                     <thead>
                         <tr>
@@ -108,7 +114,7 @@
                 <span class="badge" style='margin-right:2px' ng-repeat='cat in current_uv.categories'>{{cat}}</span>
             </div>
             <div class='uv_list'>
-                <div class='uv {{uv.type}}' ng-class="{restricted: uv.restricted}" ng-click="UVCtrl.set_uv(uv)"
+                <div class='uv {{uv.type}}' ng-class="{restricted: uv.restricted, incompatible: !uv.__compatible_with_choices}" ng-click="UVCtrl.set_uv(uv)"
                 ng-show="(!filter.categorie || uv.categories.indexOf(filter.categorie) !== -1) &&
                 (filter.CS && uv.type == 'CS') 
                 || (filter.TSH && uv.type == 'TSH')
