@@ -2,6 +2,7 @@ angular.module('tantra', []).controller('UVController', ['$scope', function($sco
     $scope.uvs = __UVS__;
     $scope.current_uv = __UVS__[21];
     $scope.choices = []
+    $scope.show_full_calendar = false;
     $scope.categories = __CATEGORIES__
     this.set_uv = function(uv) {
         $scope.current_uv = uv;

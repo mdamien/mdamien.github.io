@@ -8,6 +8,7 @@
         type="text/css">
         <script src="scrape/data/uvs.js"></script>
         <script src="static/angular.js"></script>
+        <script src="static/uibootstrap.js"></script>
         <script src="static/agenda.js"></script>
         <script src="static/color.js"></script>
         <link rel="stylesheet" href="static/style.css" type="text/css">
@@ -17,19 +18,25 @@
         <div ng-controller="UVController as UVCtrl">
             <div class='filters well'>
                 <strong>Filtres:</strong> 
-                <input type="search" ng-model="filter.q" />| CS:
-                <input type="checkbox" ng-model="filter.CS" ng-init='filter.CS = true'>| TM:
-                <input type="checkbox" ng-model="filter.TM" ng-init='filter.TM = true'>| TSH:
-                <input type="checkbox" ng-model="filter.TSH" ng-init='filter.TSH = true'>| Autre:
-                <input type="checkbox" ng-model="filter.OTHER" ng-init='filter.OTHER = true'>| Incompatibles:
-                <input type="checkbox" ng-model="filter.INCOMPAT" ng-init='filter.INCOMPAT = true'>|
+                <input type="search" ng-model="filter.q" />
+                <label class='CS'>CS <input type="checkbox" ng-model="filter.CS" ng-init='filter.CS = true'></label>
+                <label class='TM'>TM <input type="checkbox" ng-model="filter.TM" ng-init='filter.TM = true'></label>
+                <label class='TSH'>TSH <input type="checkbox" ng-model="filter.TSH" ng-init='filter.TSH = true'></label>
+                <label class='OTHER'>Autres <input type="checkbox" ng-model="filter.OTHER" ng-init='filter.OTHER = true'></label>
+                <label class='INCOMPATIBLES'>Incompatibles 
+                        <input type="checkbox" ng-model="filter.INCOMPAT" ng-init='filter.INCOMPAT = true'></label>
                 <select ng-model="filter.categorie">
                     <option value=''>Toute categorie</option>
                     <option ng-repeat='cat in categories'>{{cat}}</option>
                 </select>
             </div>
             <div class='sidebar'>
-                <h4>Choix</h4>
+                <h4>Choix
+                <span class='compat_choices' ng-show='choices.length > 0'>
+                    <span class='compat' ng-show="choices_compatibles">compatibles</span>
+                    <span class='incompat' ng-hide="choices_compatibles">incompatibles</span>
+                </span>
+                </h4>
                 <table class='table uv_choices table-striped table-bordered'>
                     <tr ng-repeat='column in choices track by $index'>
                         <td 
@@ -58,12 +65,12 @@
                         </td>
                     </tr>
                 </table>
-                <div ng-show='choices.length > 0'><strong>
-                <span ng-show="choices_compatibles">Choix compatibles</span>
-                <span ng-hide="choices_compatibles">Choix incompatibles</span>
-                </br>
-                </strong></div>
-                <table ng-show='choices.length > 0'class='schedule-table table-bordered table table-stripped'>
+                <br/>
+                <button ng-show='choices.length > 0' ng-click='show_full_calendar = !show_full_calendar' 
+                    class='btn btn-primary btn-sm'
+                    ><span ng-hide='show_full_calendar'>Montrer</span
+                    ><span ng-show='show_full_calendar'>Cacher</span> tout les horaires</button>
+                <table ng-show='choices.length > 0 && show_full_calendar' class='schedule-table table-bordered table table-stripped'>
                     <thead>
                         <tr>
                             <th style='width: 60px;'></th>
@@ -115,7 +122,7 @@
                 <span class="badge" style='margin-right:2px' ng-repeat='cat in current_uv.categories'>{{cat}}</span>
             </div>
             <div class='uv_list'>
-                <div class='uv {{uv.type}}' ng-class="{restricted: uv.restricted, incompatible: !uv.__compatible_with_choices}" ng-click="UVCtrl.set_uv(uv)"
+                <div class='uv {{uv.type}}' ng-class="{restricted: uv.restricted, disabled: !uv.__compatible_with_choices}" ng-click="UVCtrl.set_uv(uv)"
                 ng-show="(!filter.categorie || uv.categories.indexOf(filter.categorie) !== -1) &&
                 (uv.__compatible_with_choices || filter.INCOMPAT) && (
                 (filter.CS && uv.type == 'CS') 

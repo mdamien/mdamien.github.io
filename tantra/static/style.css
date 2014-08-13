@@ -4,13 +4,48 @@ padding: 5px;
 width: 80px;
 text-align: center;
 color: white;
-background: dimgray;
 box-sizing: border-box;
+transition: background-color 0.1s;
+}
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+
+.filters {
+border-radius: 0;
+border-top: 0;
+border-right: 0;
+border-left: 0;
+}
+
+.filters label{
+  padding: 2px 10px;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+}
+.compat_choices span {
+    background-color: #5cb85c;
+    color: rgb(250, 250, 250);
+    padding: 2px 10px;
+    margin-left:6px;
+    border-radius:4px;
+    font-size:15px
+}
+
+.compat_choices .incompat{
+    background-color:#d9534f;
+}
+
+.uv, label.OTHER{
+  background: dimgray;
 }
 
 .uv_list, .filters{
    text-align:center;
-   padding-left:20px
+   padding-left:20px;
+   padding-top: 5px;
+   padding-bottom: 0;
+   margin-bottom: 0;
 }
 .uv_list{
 margin-right: 450px;
@@ -23,27 +58,50 @@ margin-top:0px;
 }
 
 .uv.restricted {
-  border-bottom: 3px solid rgb(255, 71, 71);
-  padding-bottom: 2px;
+  font-weight:bold;
 }
 
-.uv.TSH {
-  background-color: rgb(241, 160, 57);
+.uv.TSH, .filters label.TSH {
+  background-color: #05C2BA;
 }
 
-.uv.CS {
-  background-color: rgb(26, 255, 72);
+.uv.TSH:nth-child(even){
+  background-color: #2FC7C1;
 }
 
-.uv.TM {
-  background-color: rgb(74, 110, 255);
+.uv.CS, .filters label.CS {
+  background-color: #46CC6F;
 }
+
+.uv.CS:nth-child(even){
+  background-color:#20C352;
+}
+
+.uv.TM, .filters label.TM {
+  background-color: #4C78BD;
+}
+
+.uv.TM:nth-child(even){
+  background-color:#2B5FB1;
+}
+
+.uv.disabled, .filters label.INCOMPATIBLES {
+    background-color: rgb(207, 207, 207) !important;
+}
+
+.uv.disabled {
+    text-decoration: line-through;
+    color: dimgray;
+    font-weight:normal;
+}
+
+
 
 .uv:hover{
    padding:5px;
    border:none;
    cursor:pointer;
-   background-color:white;
+   background-color:white !important;
    color:black;
    font-weight:bold;
 }
@@ -102,7 +160,3 @@ td.restricted {
     background-color: rgb(255, 202, 202) !important;
 }
 
-.incompatible {
-background-color: rgb(213, 213, 213) !important;
-color: rgb(143, 143, 143);
-}

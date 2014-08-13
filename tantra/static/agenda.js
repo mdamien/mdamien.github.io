@@ -222,7 +222,7 @@ agenda.test = function(){
     assertEq('valid comb exists uvs 1', false,  agenda.uvs_valid_comb(['BA05', 'BM05', 'AP52', 'CM06']))
     assertEq('valid comb exists uvs 2', false,  agenda.uvs_valid_comb(['BA05', 'BM05', 'AP52']))
     assertEq('valid comb exists uvs 3', true,  agenda.uvs_valid_comb(['BA05', 'BM05']))
-    assertEq('valid comb exists uvs (single)', true,  agenda.uvs_valid_comb(['AP53']))
+    assertEq('valid comb exists uvs (two basics)', true,  agenda.uvs_valid_comb(['AP53']))
 }
 
 agenda.profile = function(){
@@ -233,6 +233,6 @@ agenda.profile = function(){
       console.profileEnd();
 }
 
-agenda.test()
+//agenda.test()
 //agenda.profile()
 
