@@ -21,7 +21,8 @@
                 <input type="checkbox" ng-model="filter.CS" ng-init='filter.CS = true'>| TM:
                 <input type="checkbox" ng-model="filter.TM" ng-init='filter.TM = true'>| TSH:
                 <input type="checkbox" ng-model="filter.TSH" ng-init='filter.TSH = true'>| Autre:
-                <input type="checkbox" ng-model="filter.OTHER" ng-init='filter.OTHER = true'>|
+                <input type="checkbox" ng-model="filter.OTHER" ng-init='filter.OTHER = true'>| Incompatibles:
+                <input type="checkbox" ng-model="filter.INCOMPAT" ng-init='filter.INCOMPAT = true'>|
                 <select ng-model="filter.categorie">
                     <option value=''>Toute categorie</option>
                     <option ng-repeat='cat in categories'>{{cat}}</option>
@@ -57,12 +58,12 @@
                         </td>
                     </tr>
                 </table>
-                <div><strong>
+                <div ng-show='choices.length > 0'><strong>
                 <span ng-show="choices_compatibles">Choix compatibles</span>
                 <span ng-hide="choices_compatibles">Choix incompatibles</span>
-                </strong></div>
                 </br>
-                <table class='schedule-table table-bordered table table-stripped'>
+                </strong></div>
+                <table ng-show='choices.length > 0'class='schedule-table table-bordered table table-stripped'>
                     <thead>
                         <tr>
                             <th style='width: 60px;'></th>
@@ -116,10 +117,11 @@
             <div class='uv_list'>
                 <div class='uv {{uv.type}}' ng-class="{restricted: uv.restricted, incompatible: !uv.__compatible_with_choices}" ng-click="UVCtrl.set_uv(uv)"
                 ng-show="(!filter.categorie || uv.categories.indexOf(filter.categorie) !== -1) &&
+                (uv.__compatible_with_choices || filter.INCOMPAT) && (
                 (filter.CS && uv.type == 'CS') 
                 || (filter.TSH && uv.type == 'TSH')
                 || (filter.TM && uv.type == 'TM')
-                || (filter.OTHER && uv.type === undefined)" ng-repeat="uv in uvs | filter:filter.q">{{ uv.name }}</div>
+                || (filter.OTHER && uv.type === undefined))" ng-repeat="uv in uvs | filter:filter.q">{{ uv.name }}</div>
             </div>
         </div>
         <script src='static/app.js'></script>

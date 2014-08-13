@@ -1,10 +1,7 @@
 angular.module('tantra', []).controller('UVController', ['$scope', function($scope) {
     $scope.uvs = __UVS__;
     $scope.current_uv = __UVS__[21];
-    $scope.choices = [
-    [__UVS__[10], __UVS__[20]],
-[__UVS__[2]], ]
-    //$scope.choices = []
+    $scope.choices = []
     $scope.categories = __CATEGORIES__
     this.set_uv = function(uv) {
         $scope.current_uv = uv;

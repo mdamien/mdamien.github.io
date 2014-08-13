@@ -8,7 +8,7 @@ agenda.add_full_mins = function(time){
 
 agenda.time_overlap = function(a, b){
     if(a.day_index !== b.day_index){return false;}
-    return Math.max(a.start, b.start) <= Math.min(a.end, b.end)
+    return Math.max(a.start, b.start) < Math.min(a.end, b.end)
 }
 
 agenda.time_overlap_with_other = function(time, times){
@@ -54,6 +54,19 @@ agenda.valid_combination_exists = function(times, all_times, necs){
     if(agenda.have_overlaps(times)){
         return false;
     }
+    
+    //ugly hack: check duplicates fingerprints
+    for(var i=0; i<times.length; i++){
+      var fingerprints = [];
+      for(var i=0; i<times.length; i++){
+            var time = times[i];
+            if(fingerprints.indexOf(time.fingerprint) !== -1){
+               return false; 
+            }
+            fingerprints.push(time.fingerprint);
+      }
+    }
+    
     if(times.length == necs.length){
         return [true, times];
     }
@@ -106,21 +119,73 @@ agenda.uvs_valid_comb = function(names){
     })
     var result = agenda.bootstrap_combination_detection(times);
     if(result){
-        agenda.print_times(result[1]);
+        //agenda.print_times(result[1]);
+        return true;
     }else{
-        console.log('no valid comb found')
+        //console.log('no valid comb found')
+        return false;
     }
 }
+
 agenda.print_times = function(times){
         times.forEach(function(time){
             console.log(time.uv, time.day, time.formatted);
         })
 }
 
+agenda._combs = function(arr) {
+  if (arr.length == 1) {
+    return arr[0];
+  } else {
+    var result = [];
+    var allCasesOfRest = agenda._combs(arr.slice(1));
+    for (var i = 0; i < allCasesOfRest.length; i++) {
+      for (var j = 0; j < arr[0].length; j++) {
+        result.push(arr[0][j] + allCasesOfRest[i]);
+      }
+    }
+    return result;
+  }
+}
+
+agenda.all_choices_combinations = function(choices){
+   var arr = [];
+   choices.forEach(function(line){
+       var l = [];
+       line.forEach(function(uv){
+           l.push(uv.name+'-');
+       })
+       arr.push(l);
+   })
+   var result = agenda._combs(arr);
+   var result2 = [];
+   result.forEach(function(r){
+       var line = r.split('-');
+       result2.push(line.slice(0,line.length-1))
+   });
+   return result2;
+}
+
+agenda.test_choices = function(choices){
+    var combs = agenda.all_choices_combinations(choices);
+    var valids = [];
+    var invalids = [];
+    for(var i=0; i < combs.length; i++){
+        var comb = combs[i];
+        var is_valid = agenda.uvs_valid_comb(comb);
+        if(is_valid){
+            valids.push(comb);
+        }else{
+            invalids.push(comb);
+        }
+    }
+    return [valids, invalids];
+}
+
 agenda.test = function(){
     var assertEq = function(txt,a,b){
         if(a !== b){
-            console.log("TEST FAILED:",a,'!==',b,"("+txt+')');
+            console.log("TEST",['FAILED'],a,'!==',b,"("+txt+')');
         }else{
             console.log("TEST PASSED:",a,'===',b,"("+txt+')');
         }
@@ -131,7 +196,7 @@ agenda.test = function(){
             var j = b.indexOf(a[i]);
             if(j === -1 || indexes.indexOf(j) !== -1){
                 console.log(a[i],'not in', b)
-                console.log("TEST FAILED:",a,'!==',b,"("+txt+')');
+                console.log("TEST",['FAILED'],a,'!==',b,"("+txt+')');
                 return;
             }
             indexes.push(j);
@@ -154,6 +219,10 @@ agenda.test = function(){
     assertSetEq('necessaries', ['LB14-C', 'BL10-D', 'LO01-T'],
                 agenda.compute_necessaries([time, time2, time3]))
     assertEq('valid comb exists', true, agenda.valid_combination_exists([], [time2, time3])[0])
+    assertEq('valid comb exists uvs 1', false,  agenda.uvs_valid_comb(['BA05', 'BM05', 'AP52', 'CM06']))
+    assertEq('valid comb exists uvs 2', false,  agenda.uvs_valid_comb(['BA05', 'BM05', 'AP52']))
+    assertEq('valid comb exists uvs 3', true,  agenda.uvs_valid_comb(['BA05', 'BM05']))
+    assertEq('valid comb exists uvs (single)', true,  agenda.uvs_valid_comb(['AP53']))
 }
 
 agenda.profile = function(){
@@ -162,9 +231,8 @@ agenda.profile = function(){
       agenda.uvs_valid_comb(['LA13', 'CM11', 'GE10', 'LA11'])
       console.timelineEnd();
       console.profileEnd();
-      console.log(c, 'combinations tested')
 }
 
-//agenda.test()
+agenda.test()
 //agenda.profile()
 
