@@ -65,7 +65,7 @@ margin-top:0px;
   background-color: #05C2BA;
 }
 
-.uv.TSH:nth-child(even){
+.uv.TSH.even{
   background-color: #2FC7C1;
 }
 
@@ -73,7 +73,7 @@ margin-top:0px;
   background-color: #46CC6F;
 }
 
-.uv.CS:nth-child(even){
+.uv.CS.even{
   background-color:#20C352;
 }
 
@@ -81,7 +81,7 @@ margin-top:0px;
   background-color: #4C78BD;
 }
 
-.uv.TM:nth-child(even){
+.uv.TM.even{
   background-color:#2B5FB1;
 }
 

@@ -67,7 +67,7 @@
                 </table>
                 <br/>
                 <button ng-show='choices.length > 0' ng-click='show_full_calendar = !show_full_calendar' 
-                    class='btn btn-primary btn-sm'
+                    class='btn btn-default btn-sm'
                     ><span ng-hide='show_full_calendar'>Montrer</span
                     ><span ng-show='show_full_calendar'>Cacher</span> tout les horaires</button>
                 <table ng-show='choices.length > 0 && show_full_calendar' class='schedule-table table-bordered table table-stripped'>
@@ -122,7 +122,7 @@
                 <span class="badge" style='margin-right:2px' ng-repeat='cat in current_uv.categories'>{{cat}}</span>
             </div>
             <div class='uv_list'>
-                <div class='uv {{uv.type}}' ng-class="{restricted: uv.restricted, disabled: !uv.__compatible_with_choices}" ng-click="UVCtrl.set_uv(uv)"
+                <div class='uv {{uv.type}}' ng-class="{restricted: uv.restricted, even: $even, disabled: !uv.__compatible_with_choices}" ng-click="UVCtrl.set_uv(uv)"
                 ng-show="(!filter.categorie || uv.categories.indexOf(filter.categorie) !== -1) &&
                 (uv.__compatible_with_choices || filter.INCOMPAT) && (
                 (filter.CS && uv.type == 'CS') 

@@ -97,13 +97,6 @@ def test_overlap():
   print(have_overlaps(a))
 
 
-list(time.update({'uv':uv}) for uv in UVS for time in UVS[uv])
-test('LA13', 'GE10', 'NF16', 'MT22')
-#test_overlap()
-
-
-
-
-
-
-#times_fingerprint = set((time['uv'], time['type']) for time in times)
+if __name__ == '__main__':
+    list(time.update({'uv':uv}) for uv in UVS for time in UVS[uv])
+    test('LA13', 'GE10', 'NF16', 'MT22')
