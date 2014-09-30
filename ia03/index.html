@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="boot.css">
+<link rel="stylesheet" type="text/css" href="vizu.css">
+<script src="d3.js"></script>
+<script src="vizu.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <textarea>alias = {
+    sujet: "Ville numerique, Villes connectees",
+    num_dans_ville: "Le numerique dans la ville",
+    villes_num: "Les villes en numerique",
+    villes_co: "Villes connectees",
+};
+
+links = [
+    "num_dans_ville - concerne - sujet",
+    "villes_num - concerne - sujet",
+    "villes_co - concerne - sujet",
+    "publicite - concerne - num_dans_ville",
+    "transport - concerne - num_dans_ville",
+    "habitat - concerne - num_dans_ville",
+    "surveillance - concerne - num_dans_ville",
+    "open_data - concerne - villes_num",
+];</textarea>
+            <button onclick="build()" type="button" class="btn btn-primary">Build</button>
+        </div>
+        <div class="col-md-3">
+            <graph></graph>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
