@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IA03</title>
 <link rel="stylesheet" type="text/css" href="boot.css">
 <link rel="stylesheet" type="text/css" href="vizu.css">
 <script src="d3.js"></script>
@@ -11,14 +12,8 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-3">
-            <textarea>alias = {
-    sujet: "Ville numerique, Villes connectees",
-    num_dans_ville: "Le numerique dans la ville",
-    villes_num: "Les villes en numerique",
-    villes_co: "Villes connectees",
-};
-
+        <div class="col-md-4" style='text-align:right'>
+            <textarea class="form-control" rows='20' style='margin:10px'>
 links = [
     "num_dans_ville - concerne - sujet",
     "villes_num - concerne - sujet",
@@ -28,10 +23,20 @@ links = [
     "habitat - concerne - num_dans_ville",
     "surveillance - concerne - num_dans_ville",
     "open_data - concerne - villes_num",
-];</textarea>
-            <button onclick="build()" type="button" class="btn btn-primary">Build</button>
+];
+
+//noms long
+alias = {
+    sujet: "Ville numerique, Villes connectees",
+    num_dans_ville: "Le numerique dans la ville",
+    villes_num: "Les villes en numerique",
+    villes_co: "Villes connectees",
+};
+
+</textarea>
+            <button onclick="build()" type="button" class="btn btn-lg btn-primary">Build</button>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-8">
             <graph></graph>
         </div>
     </div>

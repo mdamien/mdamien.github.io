@@ -1,5 +1,4 @@
 
-
 function trans(x){
     if(x in alias){
         return alias[x];
@@ -25,7 +24,7 @@ function build_graph(){
     });
 
     var width = 850,
-        height = 700;
+        height = 400;
 
     var force = d3.layout.force()
         .nodes(d3.values(nodes))
