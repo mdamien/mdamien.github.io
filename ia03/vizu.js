@@ -1,19 +1,43 @@
 
-function trans(x){
-    if(x in alias){
-        return alias[x];
-    }
-    return x;
-}
+function parse_onto(){
+    var text = $('#editor').val()
+    var a = text.split('\n')
+    var list = a.filter(function(x){return x.length > 0 && x[0] != '#'})
 
-function split(x){
-    var s = x.split(' - ');
-    return {source:trans(s[0]), type:trans(s[1]), target:trans(s[2])}
+    alias = {}
+    var notes = {}
+
+    list.forEach(function(x){
+        var o = x.split(': ',2);
+        if(o.length > 1){
+            var p = o[0].split('NOTE ');
+            if(p.length > 1){
+                notes[p[1]] = o[1]
+            }else{
+                alias[o[0]] = o[1]
+            }
+        }
+    })
+
+    links = []
+
+    list.forEach(function(x){
+        var s = x.split(' - ',3);
+        if(s.length > 1){
+            trans = function(x){             
+                if(x in alias){            
+                    return alias[x];
+                }
+                return x;                  
+            } 
+            links.push({source:trans(s[0]), type:trans(s[1]), target:trans(s[2])})
+        }
+    })
 }
 
 function build_graph(){
+    parse_onto();
     document.getElementsByTagName('graph')[0].innerHTML = ""
-    links = links.map(split);
 
     var nodes = {};
 
@@ -30,7 +54,7 @@ function build_graph(){
         .nodes(d3.values(nodes))
         .links(links)
         .size([width, height])
-        .linkDistance(60)
+        .linkDistance(90)
         .charge(-400)
         .on("tick", tick)
         .start();
@@ -41,7 +65,7 @@ function build_graph(){
 
     // Per-type markers, as they don't inherit styles.
     svg.append("defs").selectAll("marker")
-        .data(["suit", "concerne", "resolved"])
+        .data([])
       .enter().append("marker")
         .attr("id", function(d) { return d; })
         .attr("viewBox", "0 -5 10 10")
@@ -93,8 +117,11 @@ function build_graph(){
 
 
 function build(){
-    setTimeout("eval("+"document.getElementsByTagName('textarea')[0].value);build_graph()", 0)
+    build_graph();
 }
 
 
-build()
+$.get('onto', function(data){ 
+    $('#editor').html(data)
+    build()
+})

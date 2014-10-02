@@ -6,37 +6,18 @@
 <title>IA03</title>
 <link rel="stylesheet" type="text/css" href="boot.css">
 <link rel="stylesheet" type="text/css" href="vizu.css">
+<script src="jq.js"></script>
 <script src="d3.js"></script>
 <script src="vizu.js"></script>
 </head>
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-4" style='text-align:right'>
-            <textarea class="form-control" rows='20' style='margin:10px'>
-links = [
-    "num_dans_ville - concerne - sujet",
-    "villes_num - concerne - sujet",
-    "villes_co - concerne - sujet",
-    "publicite - concerne - num_dans_ville",
-    "transport - concerne - num_dans_ville",
-    "habitat - concerne - num_dans_ville",
-    "surveillance - concerne - num_dans_ville",
-    "open_data - concerne - villes_num",
-];
-
-//noms long
-alias = {
-    sujet: "Ville numerique, Villes connectees",
-    num_dans_ville: "Le numerique dans la ville",
-    villes_num: "Les villes en numerique",
-    villes_co: "Villes connectees",
-};
-
-</textarea>
+        <div class="col-md-3" style='text-align:right'>
+            <textarea class="form-control" id='editor' rows='20' style='margin:10px'></textarea>
             <button onclick="build()" type="button" class="btn btn-lg btn-primary">Build</button>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-9">
             <graph></graph>
         </div>
     </div>
