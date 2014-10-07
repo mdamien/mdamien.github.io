@@ -10,7 +10,7 @@
 a = 10
 b = a*10 + a*0.4
 
-a = int(input('entrer un nombre'))
+a = int(input('entrer un nombre: '))
 print(a,'*10 = ',a*10)
 
 l = [1,20,3,10]
@@ -18,11 +18,11 @@ len(l) #taille de la liste
 l.append(10)
 
 if a > 20:
-    print("oula, t'es gourmant")
+    print("oula, t'es gourmand")
 elif a < 0:
     print("t'es un malin toi")
 else:
-    print("t'es pas tres gourmant")
+    print("t'es pas tres gourmand")
 
 if a in l:
     print(a,'est dans',l)
