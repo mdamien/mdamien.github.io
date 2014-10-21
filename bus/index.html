@@ -1,0 +1,54 @@
+<!doctype html>
+<html ng-app="bus">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Compi</title>
+    <link rel="stylesheet" href="pure.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js'></script>
+
+    <link rel="stylesheet" href="style.css"> 
+    <script src="data.js?1"></script>
+    <script src="script.js?1"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class='container' ng-controller='MyCtrl'>
+<form class='pure-form'>
+    <fieldset>
+        <legend>Horaires TIC</legend>
+        <input type="text" data-ng-model="current.stop" list="stops"
+            ng-change="compute()">
+    <fieldset>
+</form>
+<div class="pure-menu pure-menu-open pure-menu-horizontal">
+    <ul>
+        <li
+            ng-class='{"pure-menu-selected": current.line == line}'
+            ng-repeat="line in current.lines"
+            ><a href="#" ng-click="set_line(line)"
+                >{{ line.name }}</a></li>
+    </ul>
+<table class="pure-table">
+    <thead>
+        <tr>
+            <th
+                ng-repeat='dir in current.directions'
+                >{{ dir.name }}</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr ng-repeat='time in current.directions[0].times track by $index'>
+            <td>{{ time }}</td>
+            <td>{{ current.directions[1].times[$index] }}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+  <datalist id="stops">
+    <option  data-ng-repeat="stop in stops" value="{{ stop }}">
+  </datalist>
+</body>
+</html>
