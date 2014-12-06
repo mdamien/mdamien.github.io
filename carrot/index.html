@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Here we go!</title>
+    <style>canvas { border:1px solid #000000; width:100%} body {background: rgb(170, 220, 255) }</style>
+  </head>
+  <body>
+<canvas id="game" width="960" height="400">
+</canvas>
+<script>
+
+var cvs = document.getElementById("game");
+var ctx = cvs.getContext("2d");
+//cvs.webkitImageSmoothingEnabled  = false;
+window.scrollTo(0,1);
+var C = {
+  ground_y: function(){return cvs.height*3/4}, //b = -(dist_max)
+  carrot:{
+    h: 120,
+    x: 40,
+    collision_margin: function(){ return C.carrot.h/4 },
+  },
+  melon:{
+    h: 40,
+    collision_margin: function(){ return C.melon.h/2 },
+  },
+  prize: {
+    h:300,
+  },
+  speed: 0.26,
+  gravity: 270,
+  jump_speed: 200,
+}
+
+var state = {
+  x: 20,
+  paused: true,
+  end: false,
+  melons: [200],
+  jump: {
+    active: false,
+    y:0,
+  },
+  time: Date.now(),
+}
+
+
+//image loading
+var images_to_load = 3;
+var img_loading_counter = 0;
+
+function lauch_if_loaded(){
+  img_loading_counter += 1;
+  console.log("loading: "+img_loading_counter+"/"+images_to_load)
+  if(images_to_load <= img_loading_counter){
+    animate();
+  }
+}
+
+C.carrot.jumping_img = new Image();
+C.carrot.jumping_img.onload = function() {
+  lauch_if_loaded();
+}
+C.carrot.jumping_img.src = "carrot_jumping.svg";
+
+C.carrot.img = new Image();
+C.carrot.img.onload = function() {
+  C.carrot.w = C.carrot.img.width*C.carrot.h/C.carrot.img.height;
+  lauch_if_loaded();
+}
+C.carrot.img.src = "carrot.svg";
+
+C.melon.img = new Image();
+C.melon.img.onload = function() {
+  C.melon.w = C.melon.img.width*C.melon.h/C.melon.img.height;
+    lauch_if_loaded();
+}
+C.melon.img.src = "melon.svg";
+
+
+function jump_y(){
+  if(state.jump.active == false){
+    return 0
+  }
+  return 
+}
+
+function draw(){
+  //sky
+  ctx.fillStyle = "rgb(194, 229, 253)";
+  ctx.fillRect(0,0,cvs.width,cvs.height);
+  
+  
+  //sol
+  ctx.fillStyle = "#FFBF64";
+  ctx.fillRect(0,C.ground_y()-10,cvs.width,cvs.height);
+  ctx.fillStyle = "#E59F3D";
+  ctx.fillRect(0,C.ground_y()+10,cvs.width,cvs.height);
+  
+  //carrot
+  ctx.save();
+  ctx.translate(C.carrot.x,C.ground_y()-C.carrot.h-state.jump.y)
+  if(state.jump.active && key_pressed){
+    ctx.drawImage(C.carrot.jumping_img,0,0,C.carrot.w,C.carrot.h);
+  }else{
+    ctx.drawImage(C.carrot.img,0,0,C.carrot.w,C.carrot.h);
+  }
+  ctx.restore();
+  
+  //melons
+  state.melons.forEach(function(melon_x){
+      ctx.save();
+      ctx.fillStyle = "#FFD988";
+      ctx.translate(melon_x-state.x,C.ground_y()-C.melon.h);
+      if(melon_x+C.melon.w/2 < state.x+C.carrot.x+C.carrot.w/2){
+        ctx.scale(-1,1);
+        ctx.drawImage(C.melon.img,0,0,-C.melon.w,C.melon.h);
+      }else{
+        ctx.drawImage(C.melon.img,0,0,C.melon.w,C.melon.h);
+      }
+       ctx.restore();
+  })
+  
+  //score
+  ctx.font = 'italic 15pt Calibri';
+  var score = Math.floor(state.x/50);
+  ctx.textAlign = 'right';
+  ctx.fillStyle = "black";
+  ctx.fillText(score+"m", cvs.width-50, 40);
+  
+  if(state.paused){
+    var txt = "Let's go les amis!";
+    if(state.end){
+      txt = "Croquée par un melon aprés "+score+" métres!";
+    }
+    ctx.font = 'italic 35pt Calibri';
+    ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
+    ctx.fillRect(0,0,cvs.width,cvs.height);
+    ctx.fillStyle = "black";
+    ctx.textAlign = 'center';
+    ctx.fillText(txt, cvs.width/2, cvs.height/2);
+  }
+}
+
+function reduce_rect(rect, margin){
+  rect.x += margin;
+  rect.y += margin;
+  rect.w -= margin;
+  rect.h -= margin;
+  return rect
+}
+
+function animate(){
+  window.requestAnimationFrame(animate);
+  var time = Date.now();
+  var dt = time-state.time;
+  state.time = time;
+  if(state.paused == false){
+    state.x += C.speed*dt;
+    
+    //gen new ennemies
+    var max_it = 100;
+    var max = Math.max.apply(Math, state.melons)
+    while(max < state.x+cvs.width){
+      state.melons.push(max + Math.random()*400);
+      max_it -= 1
+      if(max_it < 0){
+        break;
+      }
+      max = Math.max.apply(Math, state.melons)
+    }
+    
+    //jump
+    if(state.jump.active){
+      var factor = key_pressed ? 0.5 : 1;
+      state.jump.vy -= C.gravity*factor*dt/500;
+      state.jump.y += state.jump.vy*dt/500;
+      if(state.jump.y < 0){
+        state.jump.active = false;
+        state.jump.y = 0;
+      }
+    }
+    
+    //collisions
+    var carrot_rect = reduce_rect(
+      {x:state.x+C.carrot.x,y:state.jump.y,w:C.carrot.w,h:C.carrot.w},
+      C.carrot.collision_margin());
+    state.melons.forEach(function(x){
+      var melon_rect = reduce_rect({x:x,y:0,w:C.melon.w,h:C.melon.h},
+      C.melon.collision_margin());
+      if (melon_rect.x < carrot_rect.x + carrot_rect.w &&
+          melon_rect.x + melon_rect.w > carrot_rect.x &&
+          melon_rect.y < carrot_rect.y + carrot_rect.h &&
+          melon_rect.h + melon_rect.y > carrot_rect.y){
+            state.paused = true;
+            state.end = true;
+            state.jump.active = false;
+          }
+    });
+  }
+  
+  draw();
+}
+
+var key_pressed = false;
+
+function touch_baby_touch(e){
+  if(key_pressed == false){
+    if(state.paused == false){
+      if(state.jump.y < 30 ){
+        state.jump.active = true;
+        state.jump.vy = C.jump_speed;
+        state.jump.y = 0;
+      }
+    }else{
+      if(state.end){
+        state.jump.y = 0;
+        state.x = 0;
+        state.melons = [200];
+      }
+      state.paused = false;
+    }
+  }
+  key_pressed = true;
+}
+
+function untouch(){
+  key_pressed = false;
+}
+
+window.addEventListener("keydown", touch_baby_touch, false )
+window.addEventListener("touchstart", touch_baby_touch, false )
+
+window.addEventListener("keyup", untouch, false )
+window.addEventListener("touchend", untouch, false )
+
+    </script>
+  </body>
+</html>
