@@ -35,6 +35,7 @@ var C = {
   gravity: 270,
   jump_speed: 200,
   initial_melons: [400],
+  score: function(x){return Math.floor(state.x/50);},
 }
 
 var state = {
@@ -50,6 +51,9 @@ var state = {
   time: Date.now(),
 }
 
+if(!('best_score' in sessionStorage)){
+  sessionStorage.setItem('best_score',0);
+}
 
 //image loading
 var images_to_load = 3;
@@ -130,11 +134,13 @@ function draw(){
   })
   
   //score
-  ctx.font = 'italic 15pt Calibri';
-  var score = Math.floor(state.x/50);
+  ctx.font = 'italic 20pt Calibri';
+  var score = C.score(state.x);
   ctx.textAlign = 'right';
   ctx.fillStyle = "black";
   ctx.fillText(score+"m", cvs.width-50, 40);
+  ctx.font = 'italic 10pt Calibri';
+  ctx.fillText("Record: "+Math.max(score,sessionStorage.getItem('best_score'))+"m", cvs.width-50, 60);
   
   if(state.paused){
     var txt = "Let's go les amis!";
@@ -190,6 +196,7 @@ function animate(){
       }
     }
     
+    
     //collisions
     var carrot_rect = reduce_rect(
       {x:state.x+C.carrot.x,y:state.jump.y,w:C.carrot.w,h:C.carrot.w},
@@ -223,6 +230,9 @@ function touch_baby_touch(e){
       }
     }else{
       if(state.end){
+        if(parseInt(sessionStorage.getItem('best_score')) < C.score(state.x)) {
+          sessionStorage.setItem('best_score',C.score(state.x));
+        }
         state.jump.y = 0;
         state.x = 0;
         state.melons = C.initial_melons;
