@@ -34,13 +34,15 @@ var C = {
   speed: 0.26,
   gravity: 270,
   jump_speed: 200,
+  initial_melons: [400],
 }
 
 var state = {
+  speed:C.speed,
   x: 20,
   paused: true,
   end: false,
-  melons: [200],
+  melons: C.initial_melons,
   jump: {
     active: false,
     y:0,
@@ -114,15 +116,17 @@ function draw(){
   //melons
   state.melons.forEach(function(melon_x){
       ctx.save();
-      ctx.fillStyle = "#FFD988";
       ctx.translate(melon_x-state.x,C.ground_y()-C.melon.h);
+       ctx.drawImage(C.melon.img,0,0,C.melon.w,C.melon.h);
+      /*
       if(melon_x+C.melon.w/2 < state.x+C.carrot.x+C.carrot.w/2){
         ctx.scale(-1,1);
         ctx.drawImage(C.melon.img,0,0,-C.melon.w,C.melon.h);
       }else{
         ctx.drawImage(C.melon.img,0,0,C.melon.w,C.melon.h);
       }
-       ctx.restore();
+      */
+      ctx.restore();
   })
   
   //score
@@ -159,8 +163,9 @@ function animate(){
   var time = Date.now();
   var dt = time-state.time;
   state.time = time;
+  state.speed += dt*0.000001
   if(state.paused == false){
-    state.x += C.speed*dt;
+    state.x += state.speed*dt;
     
     //gen new ennemies
     var max_it = 100;
@@ -220,7 +225,8 @@ function touch_baby_touch(e){
       if(state.end){
         state.jump.y = 0;
         state.x = 0;
-        state.melons = [200];
+        state.melons = C.initial_melons;
+        state.speed = C.speed;
       }
       state.paused = false;
     }
