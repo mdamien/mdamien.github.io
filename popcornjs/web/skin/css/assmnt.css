@@ -1,0 +1,632 @@
+/* R�gles des exercices */
+
+/*  == TOC ==
+	Header
+	Boutons
+	Scoring
+*/
+
+.divQuiz {
+	margin:1em;
+}
+.question, .score, .sol, .explain{
+	padding-left: 50px;
+	min-height: 50px;
+	margin: 0.6em 0 0.3em 0em;
+}
+
+.question h1, .score h1, .sol h1, .explain h1{
+	font-style: italic;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.question{
+	background: url(../img/quiz/question.png) top left no-repeat;
+}
+
+.score{
+	background: url(../img/quiz/reponse.png) top left no-repeat;
+}
+
+.sol{
+	background: url(../img/quiz/correction.png) top left no-repeat;
+}
+
+.explain{
+	background: url(../img/quiz/explications.png) top left no-repeat;
+}
+.scoreEval{
+	text-align: justify;
+	font-size: 1.2em;
+	margin: 0.2em 1em 0.7em 1em;
+}
+
+.answBest {
+	color: #00aa00;
+}
+.answGood {
+	color: #497749;
+}
+.answBad {
+	color: #c05707; 
+}
+
+.answWorst {
+	color: #a41e16; 
+}
+
+.infoScore{
+	font-size:14px;
+}
+
+.WFeedbackEntry{
+	font-weight:bold;
+	color:#676767;	
+	background: url(../img/quiz/explain.png) no-repeat left center;
+	padding-left:20px
+}
+
+.collapse .question {
+	margin-bottom: 0em;
+}
+.question  p.el_txt_p{
+	color: #4164AB;
+	text-indent: 0;
+	padding-top: 10px;
+	margin: 0px 1em;
+}
+.question p .el_txt_is_em {
+	border-bottom: 2px solid #CBDDF5;
+	color: #4164AB;
+}
+.question .el_txt_ili p {
+	font-size:1em;
+	padding: 0px;
+	font-weight: normal;
+}
+
+/* Eval buttons */
+.btnStartE,
+.btnRestartE,
+.btnScoreE,
+.btnValidateE,
+.btnCloseE,
+.btnHomeE,
+.btnGotoSolE {
+	height: 33px;
+	display: inline;
+	padding-right: 30px;
+	margin-right: 35px;
+	color: #4e6899;
+	margin: 0em 1.5em 0em 0em;
+	font-size: 18px;
+}
+a.btnStartE,
+a.btnValidateE,
+a.btnCloseE,
+a.btnHomeE {
+	background: url(../img/btn/enter.gif) no-repeat right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+a.btnStartE:hover,
+a.btnValidateE:hover,
+a.btnCloseE:hover,
+a.btnHomeE:hover,
+a.btnRestartE:hover,
+a.btnScoreE:hover,
+a.btnGotoSolE:hover {
+	-moz-opacity: 0.6;
+	filter: Alpha(opacity=60);
+	opacity: 0.6; 
+}
+a.btnRestartE {
+	background: url(../img/quiz/restartE.png) no-repeat right;
+}
+a.btnScoreE {
+	background: url(../img/quiz/scoreE.png) no-repeat right;
+}
+a.btnGotoSolE {
+	background: url(../img/quiz/solE.png) no-repeat right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.resultE,
+.closeE {
+	font-size: 18px;
+	color: #CA5858;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border:1px solid white
+}
+.closeE {
+	text-align: center;
+}
+.btnHomeEFrm {
+	margin: 20px 0px;
+	/*text-align: center;*/
+}
+
+table.tableEvalHome {
+	margin: 1em 0 1em 0;
+}
+table.tableEvalHome td {
+	vertical-align: middle;
+}
+
+table.tableEvalHome p {
+	font-weight: bolder;
+	color: #4164AB;
+}
+
+/* Eval transformers */
+h1.evalSol_ti {
+	text-align: center;
+	margin-top: 1em;
+}
+
+div.evalSol_co {
+	padding: 0px 1em;
+}
+div.evalSol .question,
+div.evalSol .score,
+div.evalSol .sol{
+	margin-bottom: 20px;
+}
+div.evalSol .choiceExplain {
+	margin-left: 0.3em;
+	padding-left: 18px;
+	color: black;
+	font-style: italic;
+	font-weight: lighter;
+	background: url(../img/quiz/feed_bk.png) left top no-repeat;
+	
+}
+/* EDIT */
+
+.tatInput {
+	background-color: #F2FBFA;
+	background: url(../img/quiz/edit.gif) no-repeat;
+	padding: 1px 2px 1px 18px;
+	white-space: pre;
+	border: 1px solid silver;
+	width: 150px;
+	font-weight: bold;
+}
+
+.tatSol {
+	margin: 0px 3px; 
+	border: 2px solid #FF8C00;
+	color: #FF8C00;
+	font-style: italic;
+	padding: 2px;
+	background: White;
+}
+
+.assmntResult_0 input,
+.assmntResult_0 select {
+	color: red;
+	border: 2px solid red;
+	text-decoration: line-through;
+	cursor: default;
+	background-color:white
+}
+
+.assmntResult_1 input,
+.assmntResult_1 select {
+	color: #00aa00;
+	border: 2px solid #00aa00;
+	cursor: default;
+	background-color:white
+}
+
+.gapAnswer,
+.exoSol{
+	margin-left: 0.2em;
+	margin-right: 0.5em;
+	font-style: italic;
+	font-weight: bold;
+	color: #CA0000;
+}
+
+.exoAsw {
+	margin-top: 0.5em;
+}
+.exoSol {
+	padding: 0 0 0 0.2em;
+}
+.el_open_exoSol {
+	color: #79ACF7;
+	font-style: normal;
+}
+.ere_cTxt_tl_gap span {
+	padding: 0em 0.3em 0em 0.3em;
+}
+
+.ere_cTxt_tl_gap span input {
+	padding-left: 0.1em;
+}
+
+.exoInput {
+	padding-left: 1em;
+	margin-left: 2em;
+}
+.el_open_exoInput {
+	width: 80%;
+	height: 100px;
+}
+.field_div {
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-top: 0.7em;
+	margin-bottom: 0.3em;
+}
+
+.field_child {
+	margin-left: 1.5em;
+}
+
+.field_child .field_div {
+	margin-bottom: 0.1em;
+	font-size: 1.1em;
+	font-style: italic;
+	display: list-item;
+	list-style: disc inside;
+}
+/* ====== MCQ ====== */
+
+.choiceList {
+	margin-left: 1.5em;
+	margin-top: 0.5em;
+}
+
+.collapse .choiceList {
+	margin-top: 0.5em;
+	margin-bottom: 0em;
+	margin-left: 0em;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.label {
+	padding: 0px;
+	margin-bottom: 0px;
+	height: auto;
+	font-size: 1em;
+}
+.label p {
+	padding: 0 0 0 0;
+	text-indent: 0;
+	margin: 0 0 0 0;
+	line-height: normal;
+}
+
+.choice {
+	display: inline;
+	padding: 0px;
+	height: auto;
+}
+
+.choiceList_in {
+	vertical-align: top;
+	height: auto;
+	margin: 0 13px 0 0;
+	padding: 1px 17px 0 0;
+	background-repeat: no-repeat;
+	background-position: right 5px;	
+}
+
+.choiceList_in input {
+	padding: 0;
+	margin-top: 4px;
+}
+
+.choiceList_la {
+	height: auto;
+	margin-top: 1em;
+}
+
+td.choiceList_la p {
+	padding: 0 0 0 0.3em;
+	margin: 0 0 1em 0;
+}
+
+tr.choiceList_ch {
+	margin-bottom: 0.5em;
+}
+
+/* MCQ stylage des solutions */
+.assmntSolCheck .choiceList_in {
+ 	background-image: url(../img/quiz/boxchk.gif);
+}
+
+.assmntSolUnche .choiceList_in {
+	background-image: url(../img/quiz/boxunchk.gif);
+}
+
+.assmntSolWrong td.choiceList_in {
+	background-image: url(../img/quiz/radiounchk.gif);
+}
+
+.assmntSolRight td.choiceList_in {
+	background-image: url(../img/quiz/radiochk.gif);
+}
+
+/* ====== MLQ ====== */
+
+.op_labelTxt_p {
+	text-align: left;
+}
+
+/* Glisser Deposer */
+.mtTable {
+	width:100%;
+	border-collapse: separate;
+	border-spacing:5px;
+}
+.mtTable td {
+	vertical-align: top;
+}
+
+.mtTdBasket {
+	width:30%;
+	padding: 0px;
+	margin: 0px;
+}
+.mtTdBasketSol {
+	display: none;
+}
+.mtTdArrow {
+	width: 20px;
+	background-image:url("../img/quiz/dragArrow.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.mtTdSol{
+	width:50%;
+}
+
+.mtTdDropCont {
+	padding: 0px;
+	margin: 0px;
+}
+.mtTdBasket .ddBasket {
+	min-height:250px;
+}
+.mtTdBasket .ddBasketCatch {
+	min-height:250px;
+}
+.mtTdHeading {
+	text-align: center;
+}
+.olTableSol {
+	width: 100%;
+}
+.olTdSolHead{
+	width: 9em;
+}
+.ddBasket{
+	margin-bottom: 5px;
+}
+.ddBasketCatch {
+	border: 1px solid #4463A1;
+}
+.ddBasketCont {
+	padding: 2px;
+}
+.ddBasketSol {
+	display: none;
+}
+
+.ddRepArea {
+	margin-bottom:5px;
+}
+.ddDropCatch {
+	border: 1px solid #4463A1;
+}
+.mtTdDropCont .ddDropCatch,
+.mtTdSol .ddDropCatch{
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.ddDropCont {
+	padding: 2px;
+}
+
+.mtLabel p, .mtLabelSol p {
+	text-indent: 0;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-size: 1.1em;
+}
+.ddLabel p, .ddLabelSol p {
+	text-indent: 0;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-size: 1.1em;
+}
+
+
+/*encadr� gris des �tiquettes */
+.ddLabel {
+	text-align: center;
+	border: 1px solid Gray;
+	background-color: White;
+	padding: 2px;
+	width: 10em;
+	cursor: move;
+	margin: 0.1em 0.1em 0.2em 0.1em;
+	display:inline-block;
+	zoom: 1; /* Hack inline-block pour ie6 & 7*/
+	*display:inline;
+	vertical-align: top;
+	
+}
+.ddLabelSol {
+	text-align: center;
+	border: 1px solid Gray;
+	background-color: White;
+	padding: 2px;
+	width: 10em;
+	cursor: default;
+	margin: 0.1em 0.1em 0.2em 0.1em;
+	display:inline-block;
+	zoom: 1; /* Hack inline-block pour ie6 & 7*/
+	*display:inline;
+	vertical-align: top;
+}
+
+.mtLabel {
+	display:inline-block;
+	zoom: 1; /* Hack inline-block pour ie6 & 7*/
+	*display:inline;
+	vertical-align: top;
+	padding: 2px;
+	margin: 2px;
+	border: 1px solid Gray;
+	background-color: white;
+	cursor: move;
+}
+.mtLabel span.myTT_a {
+	cursor: move;
+}
+.mtLabelSol {
+	display:inline-block;
+	zoom: 1; /* Hack inline-block pour ie6 & 7*/
+	*display:inline;
+	vertical-align: top;
+	padding: 2px;
+	margin: 2px;
+	border: 1px solid Gray;
+	background-color: white;
+	cursor: default;
+}
+.mtLabelSol span.myTT_a {
+	cursor: default;
+}
+
+/*encadr� rose des �tiquettes */
+.ddLabelDrag {
+	border: 1px solid #F08080;
+}
+
+.olLabelDrag p {
+	border: 1px solid #F08080;
+}
+
+/* DragOver classes: pour le panier de propositions et pour les r�ponses */
+.ddBasketDragOver,
+.ddCatchDragOver {
+	background-color: #e6f5ff;
+	border: 1px solid #80b0f0;
+}
+
+/* propositions et r�ponses */
+.ddBasketCont div.ddLabel,
+.ddDropCont div.ddLabel {
+}
+
+/* fin du panier */
+.ddBasketEnd,
+.ddCatchDragEnd {
+	clear: both;
+}
+
+/* titres des cat�gories et des �tiquettes  */
+.ddDropTi p, .ddLabel p, .ddLabelSol p {
+	margin: 0px;
+	text-align: center;
+}
+
+/* Si le panier de propositions est vide */
+.ddBasketIfEmpty {
+	clear: both;
+	font-style: italic;
+	font-size: 0.9em;
+	color: #686868;
+	text-align: center;
+	padding: 5px 0px;
+}
+
+/* En gris ... */
+.ddDropTi {
+	font-weight: bold;
+	background-color: #4463A1;
+	color: white;
+	text-align: center;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.ddDropContIfEmpty {
+	height: 27px;
+	background: url("../img/quiz/drop.gif") no-repeat center;
+}
+.mtTdSol .ddDropContIfEmpty,
+.olTableSol .ddDropContIfEmpty{
+	background: inherit;
+}
+.ddDropContIfEmpty span {
+	display: none;
+}
+
+/* encadré vert si la réponse est juste */
+.ddLabel_Right,
+.assmntResult_Right {
+	cursor: default;
+	padding: 1px;
+	border: 2px solid #00aa00;
+}
+.ddLabel_Right span.myTT_a,
+.assmntResult_Right span.myTT_a {
+	cursor: default;
+}
+
+/*encadré rouge si la réponse est fausse */
+.ddLabel_Wrong,
+.assmntResult_Wrong {
+	cursor: default;
+	padding: 1px;
+	border: 2px solid red;
+}
+.ddLabel_Wrong span.myTT_a,
+.assmntResult_Wrong span.myTT_a {
+	cursor: default;
+}
+.subQuiz{
+	padding:20px 0;
+}
+.subQuiz_ti{
+	border-bottom:1px solid;
+}
+
+/* === SMALL & TOUCH screens ================================================ */
+div.tplFra_touch .choiceList_in{
+	height:40px;
+}
+div.tplFra_touch .choiceList_la{
+	vertical-align: top;
+}
+
+div.tplFra_touch .op_labelTxt_p  {
+	text-align:center;
+}
+
+div.tplFra_touch .ddLabel {
+	min-height:2.5em;
+}
+
+div.tplFra_touch .mtLabel {
+	min-width:4em;
+	min-height:2.5em;
+}
+
+

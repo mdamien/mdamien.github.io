@@ -1,0 +1,17 @@
+div#tplTools{
+	display:none;
+}
+
+div#tplSld{
+	bottom: auto;
+	height: 93%;
+}
+
+div#tplSldFra{
+	left:280px;
+	width: auto
+}
+
+div#tplToc{
+	width:270px;	
+}

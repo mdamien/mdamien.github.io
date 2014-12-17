@@ -1,0 +1,301 @@
+html{
+	height: 100%;
+	overflow:hidden;
+}
+/* ============= Accessibility menu ============= */
+ul#accessibility {
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position:absolute;
+	right:50px;
+	width:auto;
+	z-index:90;
+	font-size:7pt;
+	top:3px;
+	opacity: 0.2;
+	filter:Alpha(opacity=20); 
+	color:white;
+}
+ul#accessibility:hover{
+	opacity: 0.7;
+}
+ul#accessibility li{
+	float: left;
+	margin-left:10px;
+}
+ul#accessibility a{
+	color:white;
+	text-decoration: none;
+}
+ul#accessibility a:hover{
+	text-decoration: none;
+}
+noscript{
+	font-size: 0.8em;
+	font-style: italic;
+}
+#tplFra {
+/*	position: absolute; compat IE7 */
+	background-color: black;
+	height:100%;
+	width:100%;
+	min-width:700px;
+	min-height:360px;
+}
+#tplTop {
+	position: absolute;
+	width:100%;
+	height:50px;
+	top:0px;
+	left:0px;
+	color: white;
+	text-align: center;
+	font-size:16px;
+}
+#titleRoot{
+	position: absolute;
+	height:23px;
+	width:100%;
+	bottom: 0px;
+	right: 50px;
+	font-size: 18px;
+	text-align: right;
+	padding: 5px 10px 5px 0;
+	background: url(../img/struct/topBkg.png) repeat-y top right;
+	color:white;
+	font-weight:bold;
+}
+#tplLft {
+	position: absolute;
+	width:50px;
+	top:50px;
+	left:0px;
+	color: white;
+	overflow: hidden;
+	text-align: center;
+}
+#tplCo {
+	position: absolute;
+	background-color: white;
+	top:4.2em;
+	left:50px;
+	right:50px;
+	bottom:50px;
+	overflow: auto;
+}
+
+div.logoHomeDefault{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-image:url(../img/struct/fondHomeTop.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+div.logoHome{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+#mainTd{
+	padding: 0px;
+	
+}
+#main_ti{
+	font-weight: bold;
+	color: #6b82ae;
+	font-family: arial;
+	font-size: 40px;
+	padding: 10px;
+}
+#main_co{
+	position: absolute;
+	width: 80%;
+	top: 30%;
+	left:10%;
+	background-color: white;
+	-moz-opacity:0.8;
+	filter:Alpha(opacity=80);
+	opacity:0.8; 
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+}
+#main_co p{
+	text-align: center;
+}
+#main_co span{
+	display: inline;
+}
+#tplRgt {
+	position: absolute;
+	width:50px;
+	right:0px;
+	bottom:50px;
+	overflow: hidden;
+	text-align: center;
+}
+#tplBtm {
+	position: absolute;
+	width:100%;
+	height:50px;
+	bottom:0px;
+	left:0px;
+	color: white;
+	text-align: right;
+}
+#tplBtmLeft{
+	position: absolute;
+	display: block;
+	left: 50px;
+	height:48px;
+	padding-right:26px;
+	background: url(../img/struct/bottomBkg.png) top right no-repeat;
+}
+#tplBtmIn {
+	position: absolute;
+	display: block;
+	right: 50px;
+	left: 150px;
+	padding-top:2px;
+	color: #808080;
+}
+#linkSp{
+	text-decoration: none;
+	margin: 0px;
+	color:white
+}
+#linkSp img {
+	border-width:0pt;
+	vertical-align: middle;
+}
+#main_nav{
+	font-size: 18px;
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	text-align: right;
+	padding:5px;
+	background-color: white;
+	-moz-opacity:0.8;
+	filter:Alpha(opacity=80);
+	opacity:0.8; 
+}
+#main_nav a{
+	display: block;
+	text-decoration: none;
+	
+}
+a:first-letter {
+	
+}
+
+#main_nav a:hover {
+	-moz-opacity:0.5;
+	/* DANGER : ne pas mettre "filter:Alpha(opacity...)" */
+	/* provoque un crash si associé a un élément hover pour IE6 et IE7 */
+	opacity:0.5;
+}
+
+#main_nav a.startBtn{
+	padding-right: 35px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	color: #4062a1;
+	line-height:26px;
+	background: url(../img/btn/enter.gif) no-repeat right;
+}
+#gotoLastLocation {
+	margin-top: 10px;
+}
+#gotoLastLocation a{
+	padding-right: 35px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	color: #4062a1;
+	line-height:26px;
+	background: url(../img/btn/allerPage.gif) no-repeat right;
+}
+#resetStorageData {
+	margin-top: 10px;
+}
+#resetStorageData a{
+	padding-right: 35px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	color: #4062a1;
+	line-height:26px;
+	background: url(../img/btn/effacer.gif) no-repeat right;
+}
+
+/* === SMALL & TOUCH screens ================================================ */
+/* ipad */
+@media only screen and (max-device-width: 1024px){
+	body{
+		-webkit-text-size-adjust:none;
+	}
+}
+div.tplFra_small #tplTop{
+	height:33px;
+}
+div.tplFra_small ul#accessibility{
+	display:none;
+}
+div.tplFra_small #titleRoot{
+	right:0;
+}
+div.tplFra_small #tplCo{
+	top:33px;
+	left:33px;
+	right:0;
+	bottom:21px;
+}
+div.tplFra_small #main_nav{
+	bottom:30px;
+	right:40px;
+}
+div.tplFra_small #tplLft{
+	top:33px;
+	width:33px;
+	left:0;
+	height:66px;
+	background: url(../img/struct/leftBkg.png) bottom right no-repeat;
+}
+div.tplFra_small #tplRgt{
+	left:0;
+	width:33px;
+	bottom:0;
+	height:125px
+}
+div.tplFra_small #tplBtm{
+	position:static;
+}
+div.tplFra_small #tplBtmLeft{
+	position:static;
+}
+div.tplFra_small span.homeBtnSel{
+	top:33px;
+	left:0;
+	height: 33px;	
+	float:none;
+	position:absolute;
+	overflow:hidden;
+}
+div.tplFra_small span#tplBtmIn{
+	bottom:0;
+	right:0;
+	height:18px;
+	left:33px;
+	background-color:white;
+	padding: 2px 3px 0 0;
+	border-top:1px solid #7C97CA;
+}
+

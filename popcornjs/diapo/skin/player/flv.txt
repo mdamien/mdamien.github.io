@@ -1,0 +1,3 @@
+bgcolor1=7C97CA
+bgcolor2=4D6CA3
+playercolor=7C97CA

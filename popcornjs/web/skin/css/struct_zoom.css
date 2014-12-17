@@ -1,0 +1,80 @@
+body{
+	margin: 0px 0px 0px 0px;
+}
+#tplFra {
+	background-color: black;
+	position: absolute;
+	height:100%;
+	width:100%;
+	min-width:700px;
+}
+#tplTop {
+	position: absolute;
+	width:100%;
+	height:20px;
+	top:0px;
+	left:0px;
+	color: white;
+}
+#tplLft {
+	position: absolute;
+	width:50px;
+	top:20px;
+	left:0px;
+	color: white;
+	overflow: hidden;
+	text-align: center;
+}
+#tplCo {
+	position: absolute;
+	background-color: white;
+	top:20px;
+	left:50px;
+	right:50px;
+	bottom:20px;
+	overflow: auto;
+}
+
+#main{
+	position: relative;
+}
+
+#main_ti{
+	font-weight: bold;
+	background-color: #4463A1;
+	color: white;
+	text-align: center;
+	font-family: Georgia, "DejaVu Serif Condensed", "DejaVu Serif","Palatino Linotype", "Lucida Bright", serif;
+	font-size: 3em;
+}
+
+#main_co{
+}
+
+#main_co p{
+	font-size: 1em;
+}
+#main_co span{
+	display: inline;
+}
+
+#tplBtm {
+	position: absolute;
+	width:100%;
+	height:20px;
+	bottom:0px;
+	left:0px;
+	color: white;
+	text-align: right;
+}
+#tplBtmIn {
+	display: block;
+	padding-top:2px;
+}
+#linkSp{
+	text-decoration: none;
+	margin: 0px 50px 0px 0px;
+}
+#linkSp img{
+	border-width:0pt;
+}

@@ -1,0 +1,3 @@
+- Styler les boutons de retour à la dernière page et de réinitialisation en mode scorm
+- penser à styler pour les interfaces réduites et tactiles
+(à compléter)

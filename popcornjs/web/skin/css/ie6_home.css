@@ -1,0 +1,34 @@
+body{
+	height:100%;
+	background-color: black;
+}
+#tplFra {
+	position: absolute;
+	text-align: left;
+	top:50%;
+	left:50%;
+	height:660px;
+	margin-top:-330px;
+	width:1020px;
+	margin-left:-510px
+}
+#tplCo {
+	width:920px;
+	height:560px;
+}
+#tplBtmIn {
+	width: 820px;
+}
+.ie_fix a {
+	text-decoration: none;
+}
+
+#main_nav a.startBtn{
+	/*
+	 * "Internet Explorer does not make the whole link clickable"
+	 * http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&postId=1643&productId=1&loc=en_US
+       	 */
+	height:0;
+}
+
+

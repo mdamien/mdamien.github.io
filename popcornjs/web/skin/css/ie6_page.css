@@ -1,0 +1,118 @@
+body{
+	height:100%;
+	background-color: black;
+}
+#tplFra {
+	position: absolute;
+	text-align: left;
+	top:50%;
+	left:50%;
+	height:660px;
+	margin-top:-330px;
+	width:1020px;
+	margin-left:-510px
+}
+#tplMnu {
+	height:560px;
+	overflow: auto;
+}
+
+
+.mnuFra{
+	height:362px;
+}
+ul.mnu{
+	height:337px;
+}
+
+#tplIco{
+	z-index: -1;
+}
+#tplCo {
+	height: 560px;
+}
+.tplMainMnu_open #tplCo{
+	left:250px;
+	width: 670px;
+}
+.tplMainMnu_closed #tplCo{
+	left: 15px;
+	width: 905px;
+}
+
+#tplCoMarginW {
+	
+}
+#tplBtmIn {
+	width: 820px;
+}
+.nextBtn, .prevBtn{
+	margin-left: -2px;
+}
+.mnuBlock{
+	height:338px;
+}
+div.mnuCls{
+	height:560px;
+}
+ul.mnu div.mnuLbl {
+    height: 20px;
+}
+
+
+.menuElt_entry, .toolsElt_entry{
+	display: block;
+	height: 25px;
+}
+.childElt_entry, .childElt_entry span{
+	height: 38px;
+}
+
+.basic_ti, .legal_ti, .complement_ti, .method_ti, .syntax_ti, .simulation_ti,
+.remind_ti, .def_ti, .example_ti, .remark_ti, .advice_ti, .warning_ti,
+.obj_ti, 
+.info_ti{
+	height: 31px;
+}
+
+.question{
+	padding-bottom:20px;
+}
+.divQuiz{
+	position: absolute;
+	width: 590px;
+	height: 520px;
+}
+
+
+
+.tabChildH, .tabChildM, .tabChildB{
+	width:550px;
+}
+div.op_practUcQ_hint_co{
+	background: url(../img/quiz/practHint.png) no-repeat 10px 10px;
+	padding-left: 45px;
+}
+div.op_practUcQ_sol_co{
+	background: url(../img/quiz/practSol2.png) no-repeat 10px 10px;
+	padding-left: 45px;
+}
+
+
+.childs_co_co {
+	margin-left:40px;
+	background:none;
+}
+ul.sw_child_navList li a span {
+	margin-bottom:10px;
+}
+
+.divQuiz {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+
+
+

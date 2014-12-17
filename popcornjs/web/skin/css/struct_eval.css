@@ -1,0 +1,169 @@
+html{
+	height: 100%;
+}
+body{
+
+}
+#evalPlayerCo{
+	padding: 0px 32px 0px 32px;
+}
+#evalPlayerBar {
+	position: fixed;
+	bottom:0px;
+	right:0px;
+	background: url(../img/quiz/fondEvalPrevSuiv.png) top right no-repeat #5c7ab8;
+	width:30px;
+	height:100px;
+	padding-right:2px;
+}
+
+#evalPlayerBar a{
+	color:white
+}
+
+#evalPlayerBarFra1 {
+}
+#evalPlayerBarFra2 {
+}
+#evalPlayerBarFra3{
+}
+#evalPlayerPrint {
+	position: fixed;
+	bottom:0px;
+	left:0px;
+	background: url(../img/quiz/fondEvalPrint.png) top left no-repeat;
+	width:30px;
+	height:30px;
+	padding-left:2px;
+}
+
+#evalPlayerPrint a{
+	color:black
+}
+
+.evalCounter{
+	position:absolute;
+	bottom:64px;
+	background: url(../img/quiz/fondEvalCounter.png) no-repeat #475F8F;
+	background-position: -1px;
+	width: 28px;
+	height: 28px;
+	margin: 3px 3px;
+	font-size:14px
+}
+.evalCounterSeen{
+	color: white;
+	font-weight: bold;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.evalCounterOver{
+	display: none;
+	color:white
+}
+.evalCounterTotal{
+	color: white;
+	font-weight: bold;
+	position:absolute;
+	bottom:0px;
+	right:0px;
+}
+
+.nextEval,
+.prevEval,
+.printEval{
+	width: 26px;
+	height: 27px;
+	text-decoration: none;
+	display: block;
+}
+.nextEval{
+	background: url(../img/quiz/evalNext.png) top right no-repeat;
+	position:absolute;
+	bottom:32px;
+	margin:5px;
+}
+
+.nextEval span{
+	color:black;
+}
+
+a.nextEval:hover{
+	background: url(../img/quiz/evalNextOver.png) top right no-repeat;
+}
+.prevEval{
+	background: url(../img/quiz/evalPrev.png) top right no-repeat;
+	position:absolute;
+	bottom:0px;
+	margin:5px;
+}
+
+.prevEval span{
+	color:black;
+}
+
+a.prevEval:hover{
+	background: url(../img/quiz/evalPrevOver.png) top right no-repeat;
+}
+.printEval{
+	background: url(../img/quiz/evalPrint.gif) top right no-repeat;
+	position:absolute;
+	bottom:0px
+}
+a.printEval:hover{
+	background: url(../img/quiz/evalPrintOver.gif) top right no-repeat;
+}
+.nextEval span, .prevEval span, .printEval span{
+	display: none;
+}
+
+/* === SMALL & TOUCH screens ================================================ */
+div.tplFra_touch{
+	position: absolute;
+	height:100%;
+	width:100%;
+}
+div.tplFra_touch #tplCo{
+	position: absolute;
+	height:100%;
+	left:40px;
+	right:0;
+}
+div.tplFra_touch #evalPlayerCo{
+	padding-top:1px;
+	padding-bottom:1px;
+	padding-left:5px;
+	padding-right:10px;
+}
+div.tplFra_touch #evalPlayerBar{
+	position: absolute;
+	height:130px;
+	left:0;
+	background: #5c7ab8;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-right-radius: 10px;
+}
+div.tplFra_touch .evalCounter{
+	bottom:94px;
+	margin:0;
+	left:2px;
+}
+div.tplFra_touch .prevEval{
+	bottom:30px;
+	margin:0;
+	left:2px;
+}
+div.tplFra_touch .nextEval{
+	bottom:62px;
+	margin:0;
+	left:2px;
+}
+div.tplFra_touch #evalPlayerPrint{
+	background: #5c7ab8;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-right-radius: 10px;
+}
+

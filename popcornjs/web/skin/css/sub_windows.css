@@ -1,0 +1,74 @@
+ 
+
+div.subWindow_over{
+	top:0px;
+	left:0px;
+	bottom:0px;
+	right:0px;
+	background-color:black;
+	-moz-opacity:0.6;
+	filter:Alpha(opacity=60);
+	opacity:0.6;
+}
+div.subWindow_win{
+	top:5%;
+	left:5%;
+	height:90%;
+	width:90%;
+}
+div.subWindow_ti{
+	position: absolute;
+	background-color: #60749c;
+	top:0px;
+	width:100%;
+	right:0px;
+	height:22px;
+	color: white;
+	font-size:17px;
+	font-weight: bold;
+}
+div.subWindow_ti span{
+	margin-left: 5px;
+}
+div.subWindow_co{
+	position: absolute;
+	top:22px;
+	left:0px;
+	bottom: 0px;
+	right: 0px;
+	border:3px solid #60749c
+}
+a.subWindow_x{
+	background: url(../img/txt/cross2.png) top left no-repeat;
+	text-decoration: none;
+	display: block;
+	width: 16px;
+	height: 19px;
+	float: right;
+	margin-right: 3px;
+	margin-top:2px;
+	color:white
+}
+
+a.subWindow_x span{
+	color:white
+}
+
+a.subWindow_x:hover{
+	-moz-opacity:0.6;
+	filter:Alpha(opacity=60);
+	opacity:0.6; 
+}
+
+a.subWindow_x span{
+	visibility: hidden;
+}
+iframe.subWindow_fra{
+	position: absolute;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	background-color: white;
+}
+

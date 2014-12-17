@@ -1,0 +1,179 @@
+/* Outline Menu CSS */
+.mnuFra {
+	bottom: 198px;
+	left: 0;
+	position: absolute;
+	top: 0px;
+	width: 233px;
+}
+.mnuSrlUpFra{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:12px;
+}
+.mnuSrlDwnFra{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:12px;
+}
+.mnuSrlUpBtn span,
+.mnuSrlDwnBtn span{
+	display: none;
+}
+.mnuSrlUpBtn{
+	position:absolute;
+	top:2px;
+	left:0;
+	width:100%;
+	height:8px;
+	background: url(../img/mnu/srlUp.png) no-repeat center center;
+}
+.mnuSrlDwnBtn{
+	position:absolute;
+	bottom:2px;
+	left:0;
+	width:100%;
+	height:8px;
+	background: url(../img/mnu/srlDwn.png) no-repeat center center;
+}
+.btnOff .mnuSrlUpBtn ,
+.btnOff .mnuSrlDwnBtn {
+	-moz-opacity:0.3;
+	filter:Alpha(opacity=30);
+	opacity:0.3;
+}
+ul.mnu {
+	position: absolute;
+	bottom: 13px;
+	left: 0;
+	top: 12px;
+	width: 226px;
+	margin:0;
+	padding: 0px 0px 0px 5px;
+	list-style-type:none;
+	list-style-image:none;
+}
+ul.mnu_static{
+	overflow:auto;
+}
+ul.mnu ul{
+	list-style: none;
+	margin: 2px 0 0;
+	padding: 0 0 0 18px;
+}
+ul.mnu div.mnuLbl{
+	position: relative;
+	padding-left: 27px;
+	min-height: 20px;
+}
+ul.mnu .mnu_i{
+	min-height: 20px;
+	color: black;
+	text-decoration: none;
+}
+ul.mnu div.mnu_sel_yes span.mnu_i{
+	display: block;
+	background-color: #5b6f94;
+	color: white;
+	padding-left: 5px;
+	margin-left: -5px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+ul.mnu .mnu_sch{
+	display: block;
+	padding: 2px 10px 2px 2px;
+}
+ul.mnu a.mnu_tgle_o,ul.mnu a.mnu_tgle_c{
+	background-position: left top;
+	background-repeat: no-repeat;
+	height: 18px;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 25px;
+}
+ul.mnu a.mnu_tgle_c{
+	background-image: url(../img/mnu/mnuCl.gif);
+}
+ul.mnu a.mnu_tgle_o{
+	background-image: url(../img/mnu/mnuOp.gif);
+}
+ul.mnu_static div.mnu_b{
+	background-image: url(../img/mnu/mnuOp.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+ul.mnu_static div.mnu_b_c{
+	background-image: url(../img/mnu/mnuCl.gif);
+}
+ul.mnu a.mnu_tgle_o span,ul.mnu a.mnu_tgle_c span{
+	display:none;
+}
+ul.mnu div.mnu_intro, ul.mnu div.mnu_obj {
+	/* si on ne met pas !important, IE6 ignore les images personnalisées */
+	background: url(../img/deco/introMnu.png) no-repeat center left !important;
+}
+ul.mnu div.mnu_conclu {
+	background: url(../img/deco/concluMnu.png) no-repeat center left !important;
+}
+ul.mnu div.mnu_expUc {
+	background: url(../img/deco/expUcMnu.png) no-repeat center left !important;
+}
+ul.mnu div.mnu_vidUc {
+	background: url(../img/deco/vidUcMnu.png) no-repeat center left !important;
+}
+ul.mnu div.mnu_practUc {
+	background: url(../img/deco/practUcMnu.png) no-repeat center left !important;
+}
+ul.mnu div.mnu_trainUc {
+	background: url(../img/deco/trainUcMnu.png) no-repeat center left !important;
+}
+ul.mnu div.mnu_coQuiz {
+	background: url(../img/deco/coQuizMnu.png) no-repeat center left !important;
+}
+ul.mnu div.mnu_assmntUa {
+	background: url(../img/deco/assmntUaMnu.png) no-repeat center left !important;
+}
+ul.mnu div.mnu_quest {
+	background: url(../img/deco/questMnu.png) no-repeat center left !important;
+}
+ul.mnu div.mnu_obj {
+	background: url(../img/deco/objPedMnu.png) no-repeat center left !important;
+}
+
+.mnuBlock{
+	background: url(../img/mnu/fondBasDroite.png) bottom right no-repeat;
+	position: absolute;
+	width:233px;
+	top:12px;
+	left:0px;
+	bottom:210px;
+}
+
+/* === SMALL & TOUCH screens ================================================ */
+div.tplFra_touch ul.mnu{
+	position:static;
+	top:auto;
+	bottom:auto;
+	left:auto;
+	right:auto;
+	font-size:11pt;
+}
+div.tplFra_touch ul.mnu li{
+	padding:1px 0;
+}
+div.tplFra_touch ul.mnu .mnu_sch{
+	min-height:25px;
+}
+div.tplFra_touch ul.mnu a.mnu_tgle_o,
+div.tplFra_touch ul.mnu a.mnu_tgle_c{
+	top:5px;
+}
+
+

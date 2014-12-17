@@ -1,0 +1,291 @@
+#tplLft a, #tplRgt a, #tplBtm a{
+	color:white;	
+}
+
+#tplLft a:hover, #tplRgt a:hover, #tplBtm a:hover{
+	color:lightgray;	
+}
+
+.playBtnSel,
+.toolsBtnSel,
+.noPrevBtn, .noNextBtn {
+	text-decoration: none;
+	height: 33px;
+	width: 48px;
+	display: block;
+}
+.homeBtnSel,
+.helpBtnSel {
+	text-decoration: none;
+	height: 48px;
+	width: 33px;
+	display: block;
+}
+.homeBtnSel {
+	float: left;
+}
+
+
+.homeBtnSel {
+}
+.playBtnSel {
+	cursor:pointer;
+}
+.toolsBtnSel {
+}
+.helpBtnSel {
+	background: url(../img/btn/helpSel.png) no-repeat;
+}
+.noPrevBtn, .noNextBtn{
+}
+.btnLbl{
+	display: none;
+	color:white
+}
+
+#tplCo .btnLbl{
+	color:black
+}
+
+.prevBtn,
+.nextBtn,
+.toolsBtn,
+.playBtn {
+	text-decoration: none;
+	height: 33px;
+	width: 48px;
+	display: block;
+}
+.prevBtn img,
+.nextBtn img,
+.toolsBtn img,
+.playBtn img{
+	height: 33px;
+	width: 48px;
+}
+
+.printBtn,
+.helpBtn,
+.homeBtn {
+	text-decoration: none;
+	height: 48px;
+	width: 33px;
+	display: block;
+}
+.printBtn img,
+.helpBtn img,
+.homeBtn img {
+	height: 48px;
+	width: 33px;
+}
+
+.printBtn,
+.helpBtn,
+.homeBtn {
+	float: left;
+}
+
+.prevBtn,
+.nextBtn,
+.helpBtn,
+.homeBtn,
+.printBtn,
+.toolsBtn,
+.playBtn{
+	color:white;
+}
+.prevBtn img,
+.nextBtn img,
+.helpBtn img,
+.homeBtn img,
+.printBtn img,
+.toolsBtn img,
+.playBtn img{
+	border:0px;
+}
+.prevBtn span,
+.nextBtn span,
+.helpBtn span,
+.homeBtn span,
+.printBtn span,
+.toolsBtn span,
+.playBtn span{
+/*	display: none;*/
+}
+.prevBtn,
+.nextBtn,
+.noPrevBtn,
+.noNextBtn {
+	position: absolute;
+	left:0px;
+}
+.prevBtn,
+.noPrevBtn{
+	bottom:0px;
+}
+.nextBtn,
+.noNextBtn{
+	bottom:33px;
+}
+.cc-button,
+#linkSp{
+	margin-left:3px;
+}
+/*****************/
+/*  Evaluation   */
+/*****************/
+.gotoEval{
+	text-align: center;
+	font-size: 18px;
+	margin-top: 1em;
+}
+a.btnEval{
+	background: url(../img/deco/assmntUaMnu.png) no-repeat left;
+	height: 33px;
+	display: inline;
+	padding-left: 25px;	
+	color: #4e6899;
+}
+a.btnEval:hover{
+	-moz-opacity:0.6;
+	filter:Alpha(opacity=60);
+	opacity:0.6; 
+}
+.btnEval span{
+}
+
+/*************************/
+/*  Widget Quit (scorm)  */
+/*************************/
+#quitBtn{
+	display:block;
+	width:38px;
+	height:32px;
+	position:absolute;
+	top:15px;
+	right:10px;
+	text-decoration: none;
+	text-align: left;
+}
+
+#quitBtn span {
+	display: none;
+}
+
+.quitBtn{
+	background: url(../img/btn/quitBtn.png);
+	position: absolute;
+	width: 48px;
+	margin-left:-2px;
+	margin-top:2px;
+	height: 50px;
+}
+.quitBtn:hover{
+	background: url(../img/btn/quitBtnOvr.png);
+}
+.multiSco .quitBtn {
+	background: url(../img/btn/scormQuit.png) left bottom no-repeat;
+	margin-left: 5px;
+    margin-top: -20px;
+    width: 30px;
+}
+.multiSco .quitBtn:hover {
+	background: url(../img/btn/scormQuitOvr.png) left bottom no-repeat;
+}
+
+.quitContent {
+    left: 200px;
+    position: absolute;
+    text-align: center;
+    width: 400px;
+}
+.quitContent_ti {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom : 2em;
+}
+.quitDetail{
+	font-style: italic;
+}
+
+/*****************/
+/*    SubWin     */
+/*****************/
+.printSubWinBtn{
+	text-decoration: none;
+	height: 26px;
+	width: 27px;
+	display: block;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+}
+.printSubWinBtn img{
+	height: 26px;
+	width: 27px;
+}
+
+.printSubWinBtn{
+	color:white;
+}
+.printSubWinBtn img{
+	border:0px;
+}
+
+/*****************/
+/* informations */
+/*****************/
+.infoBtn_a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(../img/blocks/info.png) no-repeat top right;
+	text-decoration: none;
+	height: 33px;
+	width: 33px;
+	display: block;
+	margin: 5px 5px 0px 0px;
+	cursor: pointer;
+}
+.infoBtn_a span {
+	visibility: hidden;
+}
+
+/* === SMALL & TOUCH screens ================================================ */
+
+div.tplFra_small a.homeBtn{
+	top:33px;
+	left:0;
+	height: 33px;	
+	float:none;
+	position:absolute;
+	overflow:hidden;
+}
+div.tplFra_small .nextBtn,
+div.tplFra_small .noNextBtn {
+	bottom: 66px;
+}
+div.tplFra_touch .nextBtn,
+div.tplFra_touch .noNextBtn {
+	bottom: 33px;
+}
+div.tplFra_small .prevBtn,
+div.tplFra_small .noPrevBtn {
+	bottom: 33px;
+}
+div.tplFra_touch .prevBtn,
+div.tplFra_touch .noPrevBtn {
+	bottom: 0px;
+}
+div.tplFra_small a.printBtn{
+	bottom:0px;
+	left:0;
+	height: 33px;	
+	float:none;
+	position:absolute;
+	overflow:hidden;
+}
+div.tplFra_touch a.printBtn{
+	display:none;
+}
+

@@ -1,0 +1,62 @@
+/* page marquée */
+/* - Menu */
+.viewBtn{
+	position: absolute;
+	top : 0px;
+	right : 0px;
+	width : 20px;
+	background: url(../img/markedPage/mnu/notSeen.png) top left no-repeat;
+	background-position: bottom 2px left 3px;
+}
+.seen > * > span.viewBtn {
+	background: url(../img/markedPage/mnu/seen.png) top left no-repeat;
+	background-position: bottom 2px left 3px;
+}
+.viewBtn > * {
+	display : block;
+	width : 20px;
+	min-height: 20px;
+}
+.viewBtn > * > span{
+	display : none;
+}
+.mnu_i{
+	/*background-color: rgba(221, 61, 61, 1);*/
+	/*
+	position: absolute;
+	top: 0px;
+	left: 30px;
+	right: 20px;
+	*/
+}
+
+/* - Btn du template */
+#markedPageBtn{
+	height: 50px;
+    position: absolute;
+    top: -17px;
+    width: 33px;
+}
+#markedPageBtn span {
+	visibility: hidden;
+}
+#markedPageBtn a{
+	height: 50px;
+    left: 0;
+    position: absolute;
+    width: 33px;
+}
+
+.markedPageBtn,
+.markedPageBtnOn{
+	background: url(../img/markedPage/btn/notSeen.png) bottom no-repeat;
+}
+.markedPageBtn:hover{
+	background: url(../img/markedPage/btn/notSeenOver.png) bottom no-repeat;
+}
+.markedPageBtnOn:hover{
+	background: url(../img/markedPage/btn/seenOver.png) bottom no-repeat;
+}
+.markedPageBtnOn{
+	background: url(../img/markedPage/btn/seen.png) bottom no-repeat;
+}

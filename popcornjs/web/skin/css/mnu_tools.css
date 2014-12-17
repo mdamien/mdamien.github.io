@@ -1,0 +1,81 @@
+/* Outline Tools CSS */
+
+#mnuScroll{
+	width: 233px;
+}
+
+ul.sw_tools_navList{
+	list-style: none;
+	margin: 20px 0px;
+	padding: 0px 0px 0px 5px;
+}
+ul.sw_tools_navList li{
+	margin: 0px 0px 2px 0px;
+	padding: 0px 0px 0px 0px;
+}
+ul.sw_tools_navList .mnu_sel_yes,
+ul.sw_tools_navList .mnu_sel_no{
+	text-decoration: none;
+	display: block;
+	min-height: 20px;
+	color: black;
+	padding-left: 27px;
+}
+ul.sw_tools_navList .mnu_sel_yes span,
+ul.sw_tools_navList .mnu_sel_no span{
+	display: block;
+	padding: 2px 0px;
+}
+ul.sw_tools_navList a:hover{
+	color: #a056b0;
+}
+ul.sw_tools_navList .mnu_sel_yes span{
+	display: block;
+	background-color: #a056b0;
+	color: white;
+	padding-left: 5px;
+	margin-left: -5px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+ul.sw_tools_navList .mnu_synth {
+	background: url(../img/deco/synthMnu.png) no-repeat center left;
+}
+ul.sw_tools_navList .mnu_bib {
+	background: url(../img/deco/bibMnu.png) no-repeat center left;
+}
+ul.sw_tools_navList .mnu_glos {
+	background: url(../img/deco/glosMnu.png) no-repeat center left;
+}
+ul.sw_tools_navList .mnu_refs {
+	background: url(../img/deco/refMnu.png) no-repeat center left;
+}
+ul.sw_tools_navList .mnu_acr {
+	background: url(../img/deco/acrMnu.png) no-repeat center left;
+}
+ul.sw_tools_navList .mnu_index {
+	background: url(../img/deco/indexMnu.png) no-repeat center left;
+}
+ul.sw_tools_navList .mnu_credits {
+	background: url(../img/deco/creditsMnu.png) no-repeat center left;
+}
+ul.sw_tools_navList span.mnu_cursor {
+	display: none;
+}
+
+/* === SMALL & TOUCH screens ================================================ */
+div.tplFra_touch ul.sw_tools_navList{
+	font-size:11pt;
+}
+div.tplFra_touch ul.sw_tools_navList li{
+	padding:1px 0;
+	min-height:25px;
+}
+/* TABLET - portrait */
+@media only screen and (orientation:portrait){
+	div.tplFra_small .tplMainMnu_open #mnuScroll {
+		display:none;
+	}
+}
+

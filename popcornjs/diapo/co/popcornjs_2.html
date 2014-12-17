@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <title>Introduction</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Damien MARI&Eacute; ">
+  <meta name="keywords" content="Popcorn.js, Javascript, HTML5, ">
+  <meta name="date" content>
+  <script type="text/JavaScript">
+/*0*/ var scServices = {};
+/*1*/ scServices["scLoad"] = {loadFromRoot:function(pUrl){window.location.href="../"+pUrl;}, getPathFromRoot:function(pPath){return "../"+pPath;}, getUrlFromRoot:function(pHref){if(!this.fRootOffset) this.fRootOffset = scCoLib.hrefBase().length-19; return pHref.substring(this.fRootOffset);},getRootUrl:function(){if(!this.fRootUrl) this.fRootUrl = scCoLib.hrefBase().substring(0,scCoLib.hrefBase().length-20); return this.fRootUrl;}};
+</script>
+  <script type="text/JavaScript" src="../lib-sm/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sma/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../wdgt/tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript">
+/* A - sort key */
+try{if (window.parent && window.parent.scHPS){
+   var scHPS = window.parent.scHPS;
+   var scSldMgr = new scHPS.SldMgr("ide:tplPge", window);
+   (function(pSldMgr){
+     pSldMgr.addBindableBlk("des:div.imgInFlow",{ratioHeightAlone:1,ratioHeight:.85,captionHeight:45},scHPS.SizeBlkImg);
+     pSldMgr.addBindableBlk("des:div.imgIllus",{ratioHeightAlone:.6,ratioHeight:.5,captionHeight:45},scHPS.SizeBlkImg);
+     pSldMgr.addBindableBlk("des:span.imgInline",{captionHeight:0},scHPS.SizeBlkImg);
+     pSldMgr.addBindableBlk("des:span.imgLabel",{ratioHeight:.5,captionHeight:0},scHPS.SizeBlkImg);
+     pSldMgr.addBindableBlk("des:div.objInFlow",null,scHPS.SizeBlkObj);
+     pSldMgr.addBindableBlk("des:div.vidInFlow",{onAction:function(pRes){try{this.fObj.SetVariable("player:jsPause", "")}catch(e){};try{this.fObj.pause()}catch(e){};}},scHPS.SizeBlkObj);
+     pSldMgr.addBindableBlk("des:span.objInline",{captionHeight:0},scHPS.SizeBlkObj);
+     pSldMgr.addBindableBlk("des:a.ssZmLnk",null,scHPS.FraZmBlk);
+     pSldMgr.addBindableBlk("des:a.htmlZmLnk",{setModeHtml:true},scHPS.FraZmBlk);
+     pSldMgr.addBindableBlk("des:div.imgGal",{autoStart:false},scHPS.AnimBlk);
+   })(scSldMgr);
+}}catch(e){}
+
+</script>
+  <meta name="generator" content="SCENARI 4.1.9 / Opale 3.5.011 - http://scenari-platform.org/opale">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="revision" content="2014-12-17 13:55">
+  <link rel="start" href="popcornjs.html" title="Popcorn.js&nbsp;: La trousse &agrave; outils de l'interactivit&eacute;">
+  <link type="text/css" rel="stylesheet" href="../skin/css/slideHtml.css" media="screen" title="modeHTML">
+  <link type="text/css" rel="alternate stylesheet" href="../skin/css/slideSS.css" media="screen" title="modeSS">
+  <!--[if IE]><link type="text/css" rel="stylesheet" href="../skin/css/ie.css"/><![endif]-->
+  <!--[if lt IE 7]><link type="text/css" rel="stylesheet" href="../skin/css/ie6.css"/><![endif]--></head>
+ <body>
+  <div id="tplPge"><div id="tplSld"><div class="slideBk slideBkIntro"><h1 class="slideBk_ti"><span>Introduction</span></h1><div class="slideBk_co "><div class="ssBkRoot"><div class="ssBk"><div class="ssBkCoParent"><div class="ssBkCo"><p>Popcorn.js est un framework HTML5 &eacute;crit en Javascript et con&ccedil;u par Mozilla Firefox.</p><p>Son principe est de faciliter les interactions entre des m&eacute;dias (vid&eacute;os, bandes son, ...) et la page web qui les contient.</p><p>La libraire &agrave; &eacute;t&eacute; cr&eacute;e &agrave; l'origine pour r&eacute;pondre &agrave; plusieurs probl&egrave;mes&nbsp;en plus de l'ajout de l'interaction:</p><ul class="txt_il "><li class="txt_ili "><p>Promouvoir la cr&eacute;ation vid&eacute;o avec les standards HTML5</p></li><li class="txt_ili "><p>Standardiser l&rsquo;acc&egrave;s &agrave; l'API video d'HTML5</p></li><li class="txt_ili "><p>Faciliter la manipulation de vid&eacute;os non-HTML5 (Youtube, Vimeo)</p></li></ul></div></div></div></div></div></div></div><hr class="hidden"><strong class="hidden">Navigation :</strong><div id="tplNav"><a id="btnRoot" class="outNav_i" target="_self" href="popcornjs.html?mode=html" title="Retourner &agrave; l'accueil"><span>Accueil</span></a><span class="hidden"> | </span><span class="sw_stack"><strong class="hidden">Position&nbsp;: </strong><span class=" sw_stack_navList"><span class=" tocSld tocIntro bkCnt_1"><span>Introduction</span></span></span></span><span class="hidden"> | </span><a id="btnPrv" href="popcornjs_1.html?mode=html" target="_self" class="outNav_i" title="Objectifs (page pr&eacute;c&eacute;dente)"><span>&lt; Pr&eacute;c&eacute;dent</span></a><span class="hidden"> | </span><a id="btnNxt" href="cours.html?mode=html" target="_self" class="outNav_i" title="Pr&eacute;sentation de Popcorn.js (page suivante)"><span>Suivant &gt;</span></a></div></div>
+  <script type="text/JavaScript" src="../skin/js/slide.js"></script>
+ </body>
+</html>

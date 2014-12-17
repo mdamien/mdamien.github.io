@@ -1,0 +1,60 @@
+/* General HTML CSS */
+html{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	font: 12px Tahoma, Arial, Sans-serif;
+}
+
+table{
+	padding: 0px;
+	margin: 0px;
+	border-collapse: collapse; 
+}
+
+h1, h2, h3, h4, h5, h6{
+	padding:0px;
+	margin:0px;
+	font-weight: bold;
+}
+h1{
+	font-size: 1.6em;
+	color: #4463A1;
+}
+h2{
+	font-size:1.5em;
+	color:#4463A1;
+}
+h3{
+	font-size: 1.4em;
+	color: #4463A1;
+}
+h4, h5, h6{
+	font-size: 1.3em;
+	color: #4463A1;
+}
+p{
+	text-align: justify;
+	font-size: 1.2em;
+	margin: 0.2em 1em 0.7em 1em;
+}
+
+.hidden{
+	position: absolute;
+	top:-5000px;
+	left:-5000px;
+	overflow: hidden;
+	width:1px;
+	height:1px;
+	color:black
+}
+
+#tplRgt .hidden, #tplLft .hidden, #tplBtm .hidden, #tplTop .hidden{
+	color:white
+}
+

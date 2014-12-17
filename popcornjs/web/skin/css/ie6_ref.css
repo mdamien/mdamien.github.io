@@ -1,0 +1,15 @@
+/* Hack pour permettre de transformer position:absolute en position:fixed */
+html, body {
+	height: 100%;
+	overflow: auto; 
+}
+.basic_ti, .legal_ti, .complement_ti, .method_ti, .syntax_ti, .simulation_ti,
+.remind_ti, .def_ti, .example_ti, .remark_ti, .advice_ti, .warning_ti,
+.obj_ti, 
+.info_ti{
+	height: 31px;
+}
+#tplPrint{
+	position:absolute;
+}
+

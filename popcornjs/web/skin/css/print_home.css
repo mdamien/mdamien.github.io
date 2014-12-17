@@ -1,0 +1,68 @@
+body{
+	font-size: 10pt;
+	font-family: Georgia, serif;
+	width: 18cm;
+}
+*{
+	position: static;
+	float: none;
+	width: auto;
+	height: auto;
+}
+
+
+
+
+/******************/
+/*    STRUCT      */
+/******************/
+#titleRoot{
+	display:none;
+}
+#tplLft span,
+#tplBtmLeft span{
+	display: none;
+}
+#tplRgt,
+#tplBtmIn{
+	margin: 1cm 0cm;
+}
+#tplBtmIn a{
+	text-decoration: none;
+}
+#tplBtmIn img{
+	border: none;
+}
+#tplBtmIn img{
+	margin-left: 3cm;
+}
+#tplRgt a,
+#tplRgt a:active,
+#tplRgt a:visited{
+	text-decoration:none;
+	color: inherit;
+}
+.nextBtn{
+	margin-right: 3cm;
+}
+#main_nav{
+	display:none;
+}
+
+
+/******************/
+/*      TEXT      */
+/******************/
+.op_sTxt_p{
+	font-size: 1em;
+}
+
+/******************/
+/*    GENERAL     */
+/******************/
+.main_ti{
+	font-size: 20pt;
+	margin-top: 2cm;
+	margin-bottom: 1cm;
+}
+

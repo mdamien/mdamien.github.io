@@ -1,0 +1,147 @@
+/* CrossRef CSS */
+
+.idxFra{
+	padding: 3px 3px;
+	margin: 10px;
+	margin-bottom: 20px;
+}
+
+.idxFra p{
+	text-indent: 0px;
+	margin: 0px;
+}
+.idxEntryTi{
+	font-weight: bold;
+	color: #A056B0;
+	margin: 10px 10px 0px 0px;
+	font-size: 1.3em;
+}
+.idxEntryCo{
+	font-size: 0.85em;
+}
+.idxEntryCallers{
+	margin-top: 5px;
+	padding-left: 25px;
+	background-image: url(../img/txt/referents.gif);
+	background-repeat: no-repeat;
+}
+.idxEntryCallers_open,.idxEntryCallers_closed{
+	text-decoration: none;
+	color: #686868;
+	font-weight: bold;
+}
+.idxEntryCallers_ti:hover{
+	text-decoration: underline;
+}
+
+.idxEntryCaller{
+	padding-left: 17px;
+	margin: 3px 0px;
+	background-image: url(../img/txt/referent.gif);
+	background-repeat: no-repeat;	
+	min-height:16px;
+}
+.idxEntryCaller a{
+	text-decoration: none;
+	color: #686868;
+	margin-top: 1em;
+}
+.idxEntryCaller a:hover{
+	text-decoration: underline;
+}
+a.idxEntryCallerLnk{
+	font-style: normal;
+}
+
+.idxFraImg{
+	border: 1px dashed silver;
+	margin: 10px 0px;
+	padding: 5px;
+	line-height: normal;
+}
+
+.idxEntryCoImg img{
+	height: 50px;
+}
+
+.refOutline{
+	border: 2px solid #60749c;
+	margin: 1em;
+	margin-bottom: 20px;
+	padding: 5px;
+	text-align: center;
+}
+
+.refOutlineEntry{
+	margin: 1em;
+	font-weight: bold;
+	color: #a056b0;
+}
+
+.refCateg{
+	margin: 1em 0em;
+	color: #a056b0;
+	font-size: 2em;
+}
+
+
+
+/* synth quest */
+.synth_ti{
+	font-weight: bold;
+	color: #A056B0;
+	margin: 10px 10px 0px 0px;
+	font-size: 1.3em;
+}
+.synth_co {
+	margin-left:20px;
+}
+
+/* credits */
+.credits_ti{
+	font-weight: bold;
+	color: #A056B0;
+	margin: 10px 10px 0px 0px;
+	font-size: 1.3em;
+}
+.credits_co{
+	margin-left: 20px;
+}
+.credits{
+	margin : 20px 0px;
+}
+.credits .legalInfo{
+	display: block;
+	margin-left: -20px;
+	font-size: 80%;
+	border-left: 1px solid #BBBBBB;
+	padding-left: 3px;
+	margin-bottom: 15px;
+}
+.resCredits{
+	margin-top: 5px;
+	padding-left: 16px;
+	background: url(../img/txt/puce2.gif) no-repeat top left;
+}
+.resCredits .legalInfo{
+	margin-left: 0px;
+	border-left: none;
+	padding-left: 0px;
+margin-bottom: 0px;
+}
+
+.resCreditsLnk{
+	text-decoration: none;
+	background: url(../img/txt/note.gif) no-repeat center right;
+	padding-right: 12px;
+	color: #686868;
+}
+a.resCreditsLnk:hover{
+	text-decoration: underline;
+}
+
+/* === SMALL & TOUCH screens ================================================ */
+div.tplFra_touch div.refOutline{
+	font-size:14pt;
+}
+

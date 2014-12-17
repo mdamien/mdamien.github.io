@@ -1,0 +1,83 @@
+/* quiz in assmntUa */
+
+.answBest,
+.answGood,
+.answBad {
+	display: block;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-align: left;
+
+}
+.answBest {
+	color: #00aa00;
+}
+.answGood {
+	color: #ff6600;
+}
+.answBad {
+	color: #60749c; 
+}
+
+.explain,
+.choiceExplain {
+	margin-left: 0.3em;
+	padding-left: 0.9em;
+	color: #79ACF7;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+.explain .op_txt_oli p,
+.choiceExplain .op_txt_oli p {
+	color: #79ACF7;
+}
+
+.btnQuiz {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 33px;
+	width: 29px;
+	height: 33px;
+	text-decoration: none;
+}
+.btnQuizCaption {
+	display: none;
+}
+.btnSol a {
+	background: url(../img/quiz/sol2.png) top right no-repeat;
+}
+.btnSol a:hover {
+	background: url(../img/quiz/sol2Over.png) top right no-repeat;
+}
+.btnSol a.toggleButtonOn{
+	background: url(../img/quiz/sol2On.png) top right no-repeat;
+}
+.btnSol a.toggleButtonOn:hover{
+	background: url(../img/quiz/sol2OnOver.png) top right no-repeat;
+}
+
+.SolQuestion {
+	background: url(../img/quiz/questionSolS.png) top left no-repeat;
+	position: relative;
+	padding-left: 70px;
+	margin-top: 1em;
+}
+.question {
+	background: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	min-height: 10px;
+	margin: 0 0 0 0;
+}
+.question p {
+	text-indent: 0%;
+	margin-left:0px;
+}
+
+.evalSolEx {
+	background-color: #EDF2F9;
+	border: 2px solid #4463A1;
+	padding: 5px 10px 5px 10px;
+}

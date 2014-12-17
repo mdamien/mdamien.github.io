@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <title>Popcorn.js&nbsp;: La trousse &agrave; outils de l'interactivit&eacute;</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Damien MARI&Eacute; ">
+  <meta name="keywords" content="Popcorn.js, Javascript, HTML5, ">
+  <meta name="date" content>
+  <script type="text/JavaScript">
+/*0*/ var scServices = {};
+/*1*/ scServices["scLoad"] = {loadFromRoot:function(pUrl){window.location.href="../"+pUrl;}, getPathFromRoot:function(pPath){return "../"+pPath;}, getUrlFromRoot:function(pHref){if(!this.fRootOffset) this.fRootOffset = scCoLib.hrefBase().length-17; return pHref.substring(this.fRootOffset);},getRootUrl:function(){if(!this.fRootUrl) this.fRootUrl = scCoLib.hrefBase().substring(0,scCoLib.hrefBase().length-18); return this.fRootUrl;}};
+</script>
+  <script type="text/JavaScript" src="../lib-sm/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../wdgt/tocMgr/tocMgr.js"></script>
+  <script type="text/JavaScript" src="../wdgt/scHPS/scHPS.js"></script>
+  <script type="text/JavaScript" src="../wdgt/scHPS/scHPS.locale.js"></script>
+  <script type="text/JavaScript" src="../wdgt/tocMgr/tocMgr.locale.js"></script>
+  <script type="text/JavaScript" src="../wdgt/progMgr/progMgr.js"></script>
+  <script type="text/JavaScript">
+/* A - sort key */
+var scPresMgr = new scHPS.PresMgr("ide:tplSldFra","ide:tplRootNav","ide:tplTocCo/des:a.toc_lnk");
+scPresMgr.initZoomPaths("ide:tplZoomFra","ide:tplZoomCo");
+scPresMgr.initToolsPath("ide:tplTools");
+if (scHPS.fNavie8) scPresMgr.enableEffects(false);
+
+
+</script>
+  <meta name="generator" content="SCENARI 4.1.9 / Opale 3.5.011 - http://scenari-platform.org/opale">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="revision" content="2014-12-17 13:55">
+  <link type="text/css" rel="stylesheet" href="../skin/css/rootHtml.css" media="screen" title="modeHTML">
+  <link type="text/css" rel="alternate stylesheet" href="../skin/css/rootSS.css" media="screen" title="modeSS">
+  <!--[if IE]><link type="text/css" rel="stylesheet" href="../skin/css/ie.css"/><![endif]-->
+  <!--[if lt IE 7]><link type="text/css" rel="stylesheet" href="../skin/css/ie6.css"/><![endif]--></head>
+ <body>
+  <div id="tplRootPge"><div id="tplSldFra" class="tplSldFraTocOff"><div id="tplHomeSlide" class="ssSlide"><div class="sldHome "><h1 class="sldHome_ti"><span>Popcorn.js&nbsp;: La trousse &agrave; outils de l'interactivit&eacute;</span></h1><div class="sldHome_co "><div class="ssBkRoot"><div class="ssBk"><div class="ssBkCoParent"><div class="ssBkCo"><div class="ssCutable presData "><div class="presVersion ">1.0</div></div><div class="ssCutable presAuth "><p>Damien MARI&Eacute;</p></div></div></div></div></div></div></div></div></div><hr class="hidden"><strong class="hidden">Navigation :</strong><div id="tplRootNav"><a id="btnNxt" href="popcornjs_1.html" target="_self" class="outNav_i" title="Objectifs (page suivante)"><span>Suivant &gt;</span></a></div><hr class="hidden"><strong class="hidden">Plan :</strong><div class="tplTocOff" id="tplToc"><div id="tplTocCo"><div id="tplTocScroll"><ul id="toc"><li><div class="toc_sel_no toc_i toc_l pres "><a href="popcornjs.html?mode=html" target="_self" class="toc_lnk" id="popcornjs.html"><span>Popcorn.js&nbsp;: La trousse &agrave; outils de l'interactivit&eacute;</span></a></div></li><li><div class="toc_sel_no toc_i toc_l tocSld tocObj "><a href="popcornjs_1.html?mode=html" target="_self" class="toc_lnk" id="popcornjs_1.html"><span>Objectifs</span></a></div></li><li><div class="toc_sel_no toc_i toc_l tocSld tocIntro "><a href="popcornjs_2.html?mode=html" target="_self" class="toc_lnk" id="popcornjs_2.html"><span>Introduction</span></a></div></li><li><div class="toc_sel_no toc_i toc_b tocPart tocUeDiv "><a href="cours.html?mode=html" target="_self" class="toc_lnk" id="cours.html"><span>Pr&eacute;sentation de Popcorn.js</span></a><a href="#" onclick="tocMgr.toggleItem(this); return false;" class="toc_tgle_o" style="display:none;"><img src alt></a></div><ul class="toc_sub toc_sub_o"><li><div class="toc_sel_no toc_i toc_l tocSld tocExpUc "><a href="cours_1.html?mode=html" target="_self" class="toc_lnk" id="cours_1.html"><span>Fonctionnalit&eacute;s</span></a></div></li><li><div class="toc_sel_no toc_i toc_l tocSld tocExpUc "><a href="cours_2.html?mode=html" target="_self" class="toc_lnk" id="cours_2.html"><span>D&eacute;monstration</span></a></div></li><li><div class="toc_sel_no toc_i toc_l tocSld tocExpUc "><a href="cours_3.html?mode=html" target="_self" class="toc_lnk" id="cours_3.html"><span>M&eacute;thodes de bases</span></a></div></li><li><div class="toc_sel_no toc_i toc_l tocSld tocExpUc "><a href="cours_4.html?mode=html" target="_self" class="toc_lnk" id="cours_4.html"><span>Plugins</span></a></div></li><li><div class="toc_sel_no toc_i toc_l tocSld tocExpUc "><a href="cours_5.html?mode=html" target="_self" class="toc_lnk" id="cours_5.html"><span>Players</span></a></div></li><li><div class="toc_sel_no toc_i toc_l tocSld tocExpUc "><a href="cours_6.html?mode=html" target="_self" class="toc_lnk" id="cours_6.html"><span>Compl&eacute;ments</span></a></div></li></ul></li><li><div class="toc_sel_no toc_i toc_l tocSld tocPractUc "><a href="exercices.html?mode=html" target="_self" class="toc_lnk" id="exercices.html"><span>Exercice&nbsp;: Mise en pratique</span></a></div></li></ul></div></div></div><div id="tplTools"><a id="btnModeSs" href="popcornjs.html" target="_self" title="Basculer en mode diaporama"><span>Mode diaporama</span></a></div></div>
+  <hr class="hidden">
+  <div id="tplFootBanner" class="tplFootBannerTocOff"><span class="legalInfo">
+								<span>Damien MARI&Eacute;</span>
+								<span class="hidden"> | </span><a rel="license" href="http://creativecommons.org/licenses/zero/1.0/deed.fr" target="_blank" class="cc-button" title="Creative Commons Z&eacute;ro (nouvelle fen&ecirc;tre)"><img alt="Creative Commons Z&eacute;ro" width="80" height="15" src="../skin/img/lic/zero.png"></a></span></div>
+  <div id="tplZoomFra"><div class="tplZoomOvr"></div><div id="tplZoomCo"></div></div>
+  <script type="text/JavaScript" src="../skin/js/root.js"></script>
+  <script type="text/javascript">progMgr.addBlockCount('popcornjs.html',1);progMgr.addBlockCount('popcornjs_1.html',1);progMgr.addBlockCount('popcornjs_2.html',1);progMgr.addBlockCount('cours.html',1);progMgr.addBlockCount('cours_1.html',2);progMgr.addBlockCount('cours_2.html',1);progMgr.addBlockCount('cours_3.html',2);progMgr.addBlockCount('cours_4.html',7);progMgr.addBlockCount('cours_5.html',2);progMgr.addBlockCount('cours_6.html',3);progMgr.addBlockCount('exercices.html',9);</script>
+  <script type="text/javascript">tocMgr.init();progMgr.init();</script>
+ </body>
+</html>

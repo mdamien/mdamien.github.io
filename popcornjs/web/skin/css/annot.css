@@ -1,0 +1,92 @@
+#titleRoot{
+	right: 106px;
+}
+#annotBtn{
+	background: url(../img/btn/emptyTop.png) bottom no-repeat;
+	position: absolute;
+	right: 50px;
+	display: block;
+	height: 50px;
+	text-decoration: none;
+	width: 33px;
+	text-align: left;
+}
+#annotBtn span {
+	display: none;
+}
+
+.annotBtn,
+.annotBtnOn{
+	background: url(../img/annot/btn/annot.png) bottom no-repeat;
+	position: absolute;
+	width: 33px;
+	height: 50px;
+}
+.annotBtn:hover,
+.annotBtnOn:hover{
+	background: url(../img/annot/btn/annotOver.png) bottom no-repeat;
+}
+a.annotBtnOn{
+	background: url(../img/annot/btn/annotSel.png) bottom no-repeat;
+}
+
+.multiSco #annotBtn{
+	background: none;
+}
+.multiSco .annotBtn,
+.multiSco .annotBtnOn{
+	background: url(../img/annot/btn/scormAnnot.png) bottom no-repeat;
+}
+.multiSco .annotBtn:hover,
+.multiSco .annotBtnOn:hover{
+	background: url(../img/annot/btn/scormAnnotOver.png) bottom no-repeat;
+}
+.multiSco a.annotBtnOn{
+	background: url(../img/annot/btn/scormAnnotSel.png) bottom no-repeat;
+}
+
+.annotAnchorOn{
+	border: 1px dotted gray;
+}
+
+.annotField{
+	color: #191970;
+	white-space: pre;
+	width: 100%;
+	border: 1px dotted gray;
+	height: 16px;
+}
+.annotFieldFrm{
+	padding:0px;	
+	display: block;
+	background: url(../img/annot/annot.gif) no-repeat;
+	padding-left: 25px;
+	position: relative;
+	margin: 5px;
+	background-position:5px;
+}
+.annotFilled{
+	background-color: #FFF8DC;
+}
+
+/* === SMALL & TOUCH screens ================================================ */
+div.tplFra_small #titleRoot{
+	right: 33px;
+}
+div.tplFra_small .annotBtn,
+div.tplFra_small .annotBtnOn{
+	height: 33px;
+}
+div.tplFra_small #annotBtn{
+	background: url(../img/btn/emptyTop.png) bottom no-repeat;
+	right: 0px;
+	height: 33px;
+}
+/* No annot on touch screens yet */
+div.tplFra_touch #titleRoot{
+	right: 0px;
+}
+div.tplFra_touch #annotBtn{
+	display:none;
+}
+
