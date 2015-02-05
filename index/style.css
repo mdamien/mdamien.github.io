@@ -77,11 +77,8 @@ margin: 0px;
 }
 
 .project .why{
-  display: none;
-}
-
-.project:hover .why{
-  display: inherit;
+  color: rgb(110, 110, 110);
+  font-size: 1.2rem;
 }
 
 .project.small .project-box {
@@ -97,5 +94,14 @@ margin: 0px;
 }
 
 .when {
-  float: right
+  float: right;
+  color: #999;
+}
+
+.project .when {
+  display: none;
+}
+
+.project:hover .when {
+  display: inherit;
 }
