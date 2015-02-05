@@ -1,95 +1,268 @@
 <!DOCTYPE html>
-<html><head>
-    <meta charset="UTF-8"/>
-    <title>Damien MARIÉ - Software Engineering</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./index_files/alexp-bootstrap.css" rel="stylesheet" type="text/css" media="screen">
-  <style type="text/css"></style></head>
-  <body style="">
-    <div class="container-fluid body">
-      <div class="row-fluid">
-        <div id="sidebar" class="span3">
-            
-            
-  <div id="sidewrap">
-    <a href="/"><img src="./index_files/logo.png" alt="Damien MARIE"></a>
-    <h3 style="margin:0">Damien MARIÉ</h3>
-    <p class="info">
-      Hacker & Activist<br>
-      <a class="btn" href="https://github.com/MDamien">GitHub</a>
-      <a class="btn" href="http://blog.dam.io">Blog</a>
-      &nbsp;<a class="btn" href="https://twitter.com/dam_io">Twitter</a>
-      <br>
-    </p><br>
-    <p class="sub">
-      You can email me at
-      <a class="btn btn-primary" href="mailto:damien@dam.io">damien@dam.io</a>
+<html ng-app="LOLApp" ng-controller="LOLController"><head>
+<meta charset="UTF-8"/>
+<title>dam.io</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="./index/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<link href="./index/style.css" rel="stylesheet" type="text/css" media="screen">
+<script src="index/angular.js"></script>
+<style type="text/css"></style></head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <a href="/"><img src="./index/logo.jpg" alt="Damien MARIE"></a>
+        <div class="info-internal">
+          <h3 style="margin:0">Damien MARIÉ</h3>
+          <p class="links">
+            <a class="btn btn-default" href="https://github.com/MDamien">GitHub</a>
+            <a class="btn btn-default" href="http://blog.dam.io">Blog</a>
+            <a class="btn btn-default" href="https://twitter.com/dam_io">Twitter</a>
+            <a class="btn btn-primary" href="mailto:damien@dam.io">damien@dam.io</a>
+            <br>
+          </p>
+        </div>
+    </div>
+<div class="projects row">
+<div class="project" ng-class="p.class" ng-repeat="p in projects | orderBy:'time_hint':true">
+<div class="project-box">
+    <span class="when">{{ p.when }}</span>
+  <div class="img">
+    <img ng-src="{{p.img}}" ng-alt="{{p.name}}"/>
+  </div>
+  <div class="infos">
+    <a ng-href="{{ p.link }}"><h4 class="title">{{ p.name }}</h4></a>
+    <a ng-if="p.source" ng-href="{{ p.source }}">source</a>
+    <p class="what">{{ p.what }}</p>
+    <p class="why">
+     {{ p.why }}
     </p>
+    <div class="techs">
+      <span ng-repeat="tech in p.tech.split(',')">{{ tech }}</span>
+    </div>
   </div>
 </div>
-      <div class="content span9">
-          
-          
-  <div class="content" style="text-align:center">
-    <a href="/"><img src="./index_files/logo.png" alt="Damien MARIE"></a>
-    <h3 style="margin:0">Damien MARIÉ</h3>
-    <p class="info">
-      Hacker & Activist<br>
-      <a class="btn" href="https://github.com/MDamien">GitHub</a>
-      <a class="btn" href="http://blog.dam.io">Blog</a>
-      &nbsp;<a class="btn" href="https://twitter.com/dam_io">Twitter</a>
-      <br>
-    </p><br>
-    <p class="sub">
-      You can email me at
-      <a class="btn btn-primary" href="mailto:damien@dam.io">damien@dam.io</a>
-    </p>
-  </div> 
-        
-<h3>Things</h3>
+</div>
 
-<ul>
-<li><a href="http://map.dam.io">map.dam.io</a> : Search photos for a precise location via instagram, flickr, panoramio and foursquare </li>
-<li><a href="http://kioto.io">kioto.io</a> : Discussions boxes (<a href="http://github.com/MDamien/boxes">source</a>)</li>
-<li><a href="https://twitter.com/DickinsonIsBack">@DickinsonIsBack</a> : Automated poetry on trending twitter topics (<a href="https://github.com/MDamien/twitter-poetry">source</a>)</li>
-<li><a href="http://github.com/MDamien/publicdb">Public DB</a> : Create datasets and exploit them via an API</li>
-<li><a href="http://dj.dam.io">Django News</a> : An Hacker News clone in Django (<a href="http://github.com/MDamien/djangonews">source</a>)</li>
-<li><a href="http://dam.io/summerjob/">Summer Job CV</a>: An interactive presentation I made to find a summer job</li>
-<li><a href="http://dam.io/mt10">MT10</a> : A mathematics heavy page I made to learn more about fundamental mathematics applications</li>
-<li><a href="http://canary.dam.io">El Canary</a>: A mystery to r/solve (<a href="http://github.com/MDamien/bouyaka">source</a>)</li>
-<li><a href="https://github.com/MDamien/foursquare-data-merge">Data merging for Foursquare</a> : Fuzzy analysis of addresses from Sears to find errors in Foursquare data</li>
-<li><a href="https://github.com/MDamien/NotesManager">Notes Manager</a> : A Qt/C++ software made for a course</li>
-<li><a href="https://github.com/MDamien/challenges">Challenges</a> : Some code from the coding challenges I've done</li>
-<li><a href="https://github.com/MDamien/brainfuck-python">A brainfuck interpreter in Python</a></li>
-<li><a href="http://inf.demos.dam.io/">Infinite</a>: A infinite depth website to troll google, search for "site:inf.demos.dam.io" to see the result</li>
-<li><a href="http://dam.io/pony">Pony Synth</a>: A make & share music small webapp</li>
-<li><a href="http://utc.io">utc.io</a>: File-sharing for students to help each others (<a href="http://github.com/MDamien/kickass">source</a>)</li>
-<li><a href="https://github.com/MDamien/PonySynth">Synth too</a>: A small exercise in Google App Engine deployement, Flask best practices and python sound synthesis</li>
-<li><a href="https://play.google.com/store/apps/developer?id=Cuju">Android apps</a>: Made a lot of them, some are here</li>
-<li><a href="http://legoit.dam.io">Lego It</a> : A content viewer to see the awesome things made by <a href="http://reddit.com/u/icanlegothat">/u/icanlegothat</a> (<a href="http://github.com/MDamien/legoit">source</a>)</li>
-<li>I also love to build things: <a href="https://dl.dropboxusercontent.com/u/110710535/2013-09-06%2015.06.18.jpg">A 3D printer I made</a> for example</li>
-<li>About me: Studying at the UTC in Compiègne. Worked at Pointvirgule.net in France, JCDecaux in NYC and as a freelancer. Founded my own Fab Lab in France, <a href="http://assos.utc.fr/fablab"/>FabLab UTC</a></li>
-</ul>
+<script>
 
-<p>I also love ponies (Rainbow Dash is my favorite), Spongebob, The Simpsons, YCombinator, carott, Chipotle,...and you, what are you thinking when you take a shower?</p>
+var PROJECTS = [
+{
+  name:"French Health Actors Transparency Dataset extraction",
+  link:"https://github.com/MDamien/transparence-sante",
+  img:"http://i.imgur.com/TpVeeoC.png",
+  when:"2/15",
+  tech:"python",
+  what:"Scrapping of the dataset of gifts from companies to doctors in France",
+  why:"The data was behind a awful interface and you couldn't analyse properly because of that",
+},{
+    name:'map.dam.io',
+    class: "big",
+    link: "http://map.dam.io",
+    img: "http://i.imgur.com/99SOLeN.png",
+    what: "Search photos posted online taken near a precise location",
+    when: "7/14 - 8/14",
+    tech: 'python,flask',
+    why: "The Internet is full of publicly avalaible geolocated photos. So I just used a few APIs (Instagram, Flickr, Panoramio and Foursquare) to build a prototype of image search engine by location.\nNow I use it to look into company offices (like Google Zurich), to find pictures of a specific thing (like a graffiti or a building) or to get the mood of a place (when I search an appartment for example)",
+},{
+    name:'kioto.io',
+    link: "https://kioto.io/",
+    img: "http://i.imgur.com/xRaMn5y.png",
+    source: "http://github.com/MDamien/boxes",
+    what: "Discussions boxes",
+    when: "5/14 - 6/14",
+    tech: "python,django",
+    why: "This is my most precious project but the one I understand the least. The goal is to discuss with a specific group (employees of a company, citizen of a city, students of a university) freely (so anonymously) and equally (everyone have one voice).\nSo, let's say you're an employee at Dropbox and you want to vote about a company decision freely. Like about firing somebody.\nYou create a box. You filter the access to people with an email @dropbox.com. Then everyone can discuss and vote with an anonynous but unique account."
+},{
+    name:'vote.kioto.io',
+    class: "small",
+    link: "http://vote.kioto.io",
+    what: "Prototype of a fully trsustable but simple voting system",
+    when: "4/14",
+    tech: "python,django",
+    why: "This is a prototype of an improvement to the current ballot voting system.It's simple: For each ballot, you just add a random personal string. Then, when the list of (vote, personnal_string) are just made public. Then everyone can see his own vote and can count himself the votes."
+},{
+    name:"@DickinsonIsBack",
+    link: "https://twitter.com/DickinsonIsBack",
+    img: "http://i.imgur.com/nXpsl01.png",
+    source: "https://github.com/MDamien/twitter-poetry",
+    what: "Automated poetry about trending twitter topics",
+    when: "4/14",
+    tech: "ntlk,scipy,python",
+    why: "The result: Emily Dickinson tweeting poetry about trending twitter topics"+
+    "The process: First, we extract all trending topics on twitter. Then we choose a random hot topic and extract 100 tweets about it. We extract the most representative words of this topic with TF/IDF. Then,based on the poesy of Emily Dickinson, we generate new, original, poesy (with a 3-grams and a random seed position). And then tweet it.\n"+
+"This was made for an AngelHack in Brooklyn with a friend who is specialistof natural language processing."
+},{
+    name:"Public DB",
+    link: "http://db.dam.io",
+    img: "http://i.imgur.com/4C2blYi.png",
+    source: "http://github.com/MDamien/publicdb",
+    what: "Create datasets and exploit them via an API",
+    when: "3/14",
+    tech: "python,django",
+    why: "You create a dataset (comments, articles, locations, ...) and it generates a fully-featured REST API for you. It's the idea.\nThis is a simple version of backend-as-a-service (before I discovered it already existed).\nMy first goal was to generate a client-side only admin to interact with any API. In the same vein as the wonderful Django admin."
+},{
+    name: "Django News",
+    class:"small",
+    link: "http://github.com/MDamien/djangonews",
+    when: "8/13",
+    what: "An HN clone in Django",
+    tech: "python,django",
+    why: "I created this HN clone to learn more about Django and because it was fun to understand the challenges facing HN"
+},{
+    name:"Summer Job CV",
+    class:"small",
+    when: "6/13",
+    link: "http://dam.io/fun/summerjob/",
+    source: "http://github.com/MDamien/mdamien.github.io/",
+    what: "An interactive resume I made to find a job for Summer 2013",
+    tech: "impress.js,js,css3",
+},{
+    name: "MT10",
+    class:"small",
+    when:"11/13",
+    link: "http://dam.io/fun/mt10",
+    source: "http://github.com/MDamien/mdamien.github.io/",
+    what: "A mathematics heavy page I made to learn more about fundamental mathematics and cryptology",
+    tech: "js",
+    why: "During a cryptology course (MT10), the professor was alluding during the courses to 'nice things to do'. So I did them. And so I learned a lot about the practical implementation of some of the most fundamental aspects of cryptology."
+},{
+    name:"El canary",
+    class:"small",
+    link: "http://canary.dam.io",
+    featured: false,
+    when: "8/13",
+    source: "http://github.com/MDamien/bouyaka",
+    what: "A mystery to r/solve",
+    tech: "python,django",
+    why: "Sometimes people say they are right based on a strange page them found on the Internet. So I created this to easy say 'Looks, it's written on the Internet' about anything. You just type 'c.dam.io/vodka_is_better_than_beer' and you get a nice page where this is written. But, to make this less evident I decided to also have an obfuscated version of the url. So, if you do 'c.dam.io/r/rot13_of_your_message'. It delivers the original message. Nice."
+},{
+    name:"Infinity",
+    link:"https://github.com/MDamien/infinity",
+    img:"http://i.imgur.com/Scfh2YV.png",
+    what: "A infinite depth website to troll google",
+    tech: "python,flask",
+    when: "8/13",
+    why: "After *El canary*, I had the idea of an infinite depth website were it just generate a page with new links to other pages. Google them indexed more than 200 000 pages. I published an article an HN. Got banned by Google."
+},{
+    name:"Data fusion for Foursquare",
+    when: "4/14",
+    link: "https://github.com/MDamien/foursquare-data-merge",
+    img: "http://i.imgur.com/Km0WQx0.png",
+    featured: false,
+    source: "https://github.com/MDamien/foursquare-data-merge",
+    what: "Merging data from the Sears API into the data on Foursquare",
+    tech: "python",
+    why: "During an hackathon at WeWork Soho for Sears, I had too much time and I discovered the Foursquare API wich is really nice. So I decided to just correct the data on foursquare via the data found on the Sears API.\nIf you look a the code, there is a custom fuzzy matcher and some scrappinginvolved. Was really fun."
+},{
+    name:"Notes Manager",
+    img:"http://i.imgur.com/WvNV5Uq.png",
+    source: "https://github.com/MDamien/NotesManager",
+    what: "A Qt/C++ software made for a course",
+    tech: "qt,c++",
+    when:"4/13",
+    why: "During a course (LO21), we had to programm a note-taking application with C++/Qt and some design patterns. So I just programmed this with a friend. It's there just to show that I also know how to program in C++. And also because I'm proud of this thing."
+},{
+    name:"Velodyne",
+    when: "10/13",
+    class:"small",
+    what: "Using a LIDAR for an automous vehicle",
+    tech: "c++",
+    why: "At my university, we can help the labs to build things. So I got to use the Velodyne (a 3D scanner they put on top of car like the Google Car). Scanning the world to detect the ground and to mesh the point cloud.",
+},{
+    name:"Pony Synth",
+    class:"small",
+    when: "2/14",
+    link: "http://dam.io/pony",
+    source: "http://github.com/MDamien/mdamien.github.io/",
+    what: "Make & share music with a JS-only synth and composer",
+    why: "For an interview, I had to program a web synth application with python hosted on Google Apps. I did it but I contemplated the idea to do it client-side only.\nSo I played with the Web Audio API and now you can compose and play songs."
+},{
+    name:"Bus Compiegne",
+    class:"small",
+    what: "Bus schedule of my city",
+    when: "5/13",
+    tech: "android",
+    why: "Next to my appartment in Compiegne, there was 3 different bus lines. And I never knew wich one to take because I was too lazy to look at the schedule of each lines.\nSo I just scrapped the schedule and made an Android app.\nNow I'm making a new one because this one is obsolete now since the schedule changed.",
+},{
+    name:"Hangman",
+    when: "3/13",
+    what: "Simple hangman game",
+    img: "http://i.imgur.com/bORRqpN.png",
+    tech: "android",
+    why: "I was just looking to publish my first app on the Google Play store. So I made a simple (but funny) one, a hangman. No ad, open-source and simple. I surprises me how often I use it."
+},{
+    name:"GIF my life",
+    what: "Make a timelapse of anything as a GIF", 
+    img: "http://i.imgur.com/G9P5rQV.png",
+    tech: "android",
+    when: "5/13",
+    why: "My brother was taking of picture of him every time he opened his laptop. And then he made a nice GIF of it. I decided to do the same but with my phone, taking a picture daily of myself and making a GIF of it with an app.",
+},{
+    name:"Lego it",
+    class:"small",
+    link: "http://legoit.dam.io",
+    source: "http://github.com/MDamien/legoit",
+    featured: false,
+    when: "3/14",
+    what: "A content viewer to see the awesome things made by <a href='http://reddit.com/u/icanlegothat'>/u/icanlegothat</a>",
+    tech: "python,django",
+    why: "I like what /u/icanlegothat did on reddit (illustrating reddit posts with legos) but it was hard to browse (especially to get the context wich is really important). So I made a website to automate it and let everyone browse his content easily."
+},{
+    name:"FabLab UTC",
+    class: "big",
+    when: "2/11-1/15",
+    link: "http://assos.utc.fr/fablab",
+    img: "http://i.imgur.com/Hs6X7db.jpg",
+    what: "An Hackerspace I created",
+    tech: "3dprinting,CNC,laser cutting",
+    why: "When I arrived at my university, there was no hackerspace. So I created one following the spirit from the MIT of the FabLab. Starting by building my own 3D printer, then printing things for other people. Now we have a really big space, nice funding and a lot of tools (Laser cutting, CNC, 3D printing, Oculus rift, Arduino).\nI managed to see my vision of what I wanted to see in a engineering school come to life: A place to build things and learn freely."
+},{
+  name:"Real platformer",
+  img:"http://i.imgur.com/7ZNYOKx.png",
+  link:"https://www.youtube.com/watch?v=9b1U7cK2Ab0",
+  what:"Transform any drawing or picture into a game",
+  when: "1/13",
+  why: "The idea was just to let my little sister draw a world and then let her play with it."
+}
+]
+
+time_hint = function(d){
+ var m = parseInt(d.split("/")[0])
+ var y = parseInt(d.split('/')[1])
+ return m+y*100;
+}
+
+PROJECTS.forEach(function(p){
+  if(p.when){
+    var dates = p.when.split('-');
+    if(dates.length == 1){
+      p.time_hint = time_hint(dates[0])
+    }else{
+      p.time_hint = time_hint(dates[1])
+    }
+  }else{
+    console.log("no time",p.name)
+  }
+})
 
 
-<br/><br/><br/>
-        </div>
-      </div>
-    </div>
+var app = angular.module('LOLApp', []);
+app.controller('LOLController', function ($scope) {
+    $scope.projects = PROJECTS;
+});
+</script>
+
+
+
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-30471322-4', 'dam.io');
   ga('send', 'pageview');
-
-</script>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-  <script src="./index_files/jquery.js"></script>
-  <script src="./index_files/bootstrap.min.js"></script>
-
+  </script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'
+  >
 </body></html>
