@@ -105,3 +105,19 @@ margin: 0px;
 .project:hover .when {
   display: inherit;
 }
+
+.job .project-box {
+    border-bottom-color: rgb(255, 177, 89);
+}
+
+.job .title {
+    color: rgb(255, 155, 43);
+}
+
+.job .project-box {
+    border-bottom-color: rgb(255, 177, 89);
+}
+
+.job .title {
+    color: rgb(255, 155, 43);
+}

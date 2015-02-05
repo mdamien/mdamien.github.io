@@ -37,9 +37,11 @@
     <p class="why">
      {{ p.why }}
     </p>
+<!--
     <div class="techs">
       <span ng-repeat="tech in p.tech.split(',')">{{ tech }}</span>
     </div>
+-->
   </div>
 </div>
 </div>
@@ -48,6 +50,23 @@
 
 var PROJECTS = [
 {
+  name:"Worked at JCDecaux NA",
+  link:"http://jcdecauxna.com",
+  class:"job",
+  when:"2/14-7/14",
+  img:"http://i.imgur.com/wWaXMzE.png",
+  what:"Software Engineer internship",
+  why:"Made an Android app for the US operations team and deployed it to 100+ operators. Maintained internal management software like sales reporting and operation scheduling",
+  tech:"android,php",
+},{
+name:"Worked at Pointvirgule.net",
+class:"job",
+img:"http://i.imgur.com/7i1RFzm.png",
+link:"http://pointvirgule.net",
+what:"Web dev at a Web Agency",
+why:"Worked two month, as a summer job, making small and large php websites",
+when:"7/13-8/13",
+},{
   name:"French Health Actors Transparency Dataset extraction",
   link:"https://github.com/MDamien/transparence-sante",
   img:"http://i.imgur.com/TpVeeoC.png",
@@ -57,7 +76,6 @@ var PROJECTS = [
   why:"The data was behind a awful interface and you couldn't properly analyse it. So I scrapped it.",
 },{
     name:'map.dam.io',
-    class: "big",
     link: "http://map.dam.io",
     img: "http://i.imgur.com/99SOLeN.png",
     what: "Search photos posted online taken near a precise location",
@@ -206,7 +224,6 @@ var PROJECTS = [
     why: "I like what /u/icanlegothat did on reddit (illustrating reddit posts with legos) but it was hard to browse (especially to get the context wich is really important). So I made a website to automate it and let everyone browse his content easily."
 },{
     name:"FabLab UTC",
-    class: "big",
     when: "2/11-1/15",
     link: "http://assos.utc.fr/fablab",
     img: "http://i.imgur.com/Hs6X7db.jpg",
