@@ -29,7 +29,7 @@
       <div class="project" ng-class="p.class" ng-repeat="p in projects | orderBy:'time_hint':true">
         <div class="project-box">
           <span class="when">{{ p.when }}</span>
-          <div class="img">
+          <div ng-if="p.img" class="img">
             <img ng-src="{{p.img}}" ng-alt="{{p.name}}"/>
           </div>
           <div class="infos">
@@ -174,6 +174,7 @@
   },{
     name:"Notes Manager",
     img:"http://i.imgur.com/WvNV5Uq.png",
+    link:"https://www.youtube.com/watch?v=X9TdTaRQUSg",
     source: "https://github.com/MDamien/NotesManager",
     what: "A Qt/C++ software made for a course",
     tech: "qt,c++",
@@ -182,6 +183,7 @@
   },{
     name:"Velodyne",
     when: "10/13",
+    link:"https://github.com/MDamien/velodyne/",
     class:"small",
     what: "Using a LIDAR for an automous vehicle",
     tech: "c++",
@@ -190,13 +192,14 @@
     name:"Pony Synth",
     class:"small",
     when: "2/14",
-    link: "http://dam.io/pony",
+    link: "http://dam.io/fun/pony",
     source: "http://github.com/MDamien/mdamien.github.io/",
     what: "Make & share music with a JS-only synth and composer",
     why: "For an interview, I had to program a web synth application with python hosted on Google Apps. I did it but I contemplated the idea to do it client-side only.\nSo I played with the Web Audio API and now you can compose and play songs."
   },{
     name:"Bus Compiegne",
     class:"small",
+    link:"https://github.com/MDamien/CompiBus",
     what: "Bus schedule of my city",
     when: "5/13",
     tech: "android",
@@ -221,6 +224,8 @@ when:"12/14",
   },{
     name:"GIF my life",
     what: "Make a timelapse of anything as a GIF", 
+    link:"https://play.google.com/store/apps/details?id=org.cuju.gifmylife&hl=fr_FR",
+    source:"https://github.com/MDamien/GifMyLife",
     img: "http://i.imgur.com/G9P5rQV.png",
     tech: "android",
     when: "5/13",
@@ -228,8 +233,7 @@ when:"12/14",
   },{
     name:"Lego it",
     class:"small",
-    link: "http://legoit.dam.io",
-    source: "http://github.com/MDamien/legoit",
+    link: "http://github.com/MDamien/legoit",
     when: "3/14",
     what: "A content viewer to see the awesome things made by /u/icanlegothat",
     tech: "python,django",
