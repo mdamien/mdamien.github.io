@@ -12,29 +12,36 @@ for(var i=0;i < 100;i++){
 Row = React.createClass({
 	render: function(){
 		var tds = _.values(this.props.data).map(function(key,i){
-			return <td key={i}>{key}</td>
-		})
-		return (<tr onClick={INDEX.select.bind(this,this.props.data)}>{tds}</tr>)
-	}
+			return (<td
+                onClick={this.handleClick.bind(null,key)}
+                key={i}>
+                {key}</td>)
+		}.bind(this))
+		return (<tr>{tds}
+                </tr>)
+	},
+    handleClick: function(col){
+        console.log('click',col);
+        this.props.onClick(col);
+    }
 })
 
 TableHead = React.createClass({
 	render: function(){
-        var _this = this;
 		var ths = _.keys(this.props.data).map(function(value,i){
             var sort = ""
-            if(_this.props.sort.column == i){
-                sort = _this.props.sort.order == 1 ? '/\\' : '\\/'
+            if(this.props.sort.column == i){
+                sort = this.props.sort.order == 1 ? '/\\' : '\\/'
             }
 			return (<th key={i}>
-                    <a onClick={_this.props.handleClick.bind(_this, i)}>
+                    <a onClick={this.props.onClick.bind(null, i)} >
                         {value}
                         {sort}
                     </a>
                 </th>)
-		})
+		}.bind(this))
 		return (<thead><tr>{ths}</tr></thead>)
-	}	
+	}
 })
 
 Table = React.createClass({
@@ -57,22 +64,35 @@ Table = React.createClass({
         this.setState({sortBy: sort})
     },
 	render: function(){
-		_this = this;
-        var sorted_data = _.sortBy(this.props.data,
-                x => this.state.sortBy.order*_.values(x)[this.state.sortBy.column])
+        var sorted_data = _.sortBy(this.props.data, function(x){
+            return this.state.sortBy.order*_.values(x)[this.state.sortBy.column]
+        }.bind(this))
+
 		var head = <TableHead
             data={sorted_data[0]}
             sort={this.state.sortBy}
-            handleClick={this.sortByCol}/>
+            onClick={this.sortByCol}/>
+
 		var trs = sorted_data.map(function(row, i){
-			if(_.values(row).join('').indexOf(_this.props.filterText) !== -1){
-				return <Row key={i} data={row} />
+			if(_.values(row).join('').indexOf(this.props.filterText) !== -1){
+				return (<Row
+                    key={i}
+                    data={row}
+                    onClick={
+                        this.handleClick.bind(null, i)
+                        /*function(col){
+                            this.handleClick.bind(null, col, i)
+                        }.bind(this)*/
+                    }/>)
 			}
-		})
+		}.bind(this))
 		var body = <tbody>{trs}</tbody>
 		return (<table className="table table-condensed table-hover table-striped">
-					<caption>{this.state.sortBy}</caption>{head}{body}</table>)
-	}
+                {head}{body}</table>)
+	},
+    handleClick: function(row, col){
+        this.props.onClick(row, col);
+    }
 })
 
 var SearchBar = React.createClass({
@@ -120,6 +140,7 @@ var FilterableTable = React.createClass({
                 <Table
                     data={this.props.data}
                     filterText={this.state.filterText}
+                    onClick={this.props.onClick}
                 />
             </div>
         );
@@ -128,7 +149,6 @@ var FilterableTable = React.createClass({
 
 var IndexPage = React.createClass({
     getInitialState: function(){
-        INDEX = this;
         return {
             selected: {
 
@@ -142,7 +162,7 @@ var IndexPage = React.createClass({
         return (
             <div>
               <div className="col-md-9" id="index-page">
-                <FilterableTable data={DATA} />
+                <FilterableTable data={this.props.data} onClick={this.handleClick} />
               </div>
               <div className="col-md-3 hidden-sm" id="panel-container">
                 <div className="panel panel-success affix-top" data-spy="affix" data-offset-top="80" id="internship-info">
@@ -156,8 +176,11 @@ var IndexPage = React.createClass({
             </div>
         </div>
             );
+    },
+    handleClick: function(row, col){
+        this.setState({selected:this.props.data[row]})
     }
 })
 
-React.render((<IndexPage />),
+React.render((<IndexPage data={DATA} />),
     document.getElementById('index-page'));
