@@ -19,33 +19,15 @@ Row = React.createClass({
 })
 
 TableHead = React.createClass({
-    getInitialState: function(){
-        return {
-            sort: {
-                column: 0,
-                order: 'asc',
-            },
-        }
-    },
-    handleClick: function(col){
-        sort = this.state.sort
-        if(sort.column == col){
-            sort.order = sort.order == 'asc' ? 'desc' : 'asc';
-        }else{
-            sort.column = col
-            sort.order = 'asc'
-        }
-        this.setState({sort: sort})
-    },
 	render: function(){
         var _this = this;
 		var ths = _.keys(this.props.data).map(function(value,i){
             var sort = ""
-            if(_this.state.sort.column == i){
-                sort = _this.state.sort.order == 'asc' ? '/\\' : '\\/'
+            if(_this.props.sort.column == i){
+                sort = _this.props.sort.order == 1 ? '/\\' : '\\/'
             }
 			return (<th key={i}>
-                    <a onClick={_this.handleClick.bind(_this, i)}>
+                    <a onClick={_this.props.handleClick.bind(_this, i)}>
                         {value}
                         {sort}
                     </a>
@@ -56,17 +38,40 @@ TableHead = React.createClass({
 })
 
 Table = React.createClass({
+    getInitialState: function(){
+        return {
+            sortBy: {
+                column: 0,
+                order: 1,
+            },
+        }
+    },
+    sortByCol: function(col){
+        sort = this.state.sortBy
+        if(sort.column == col){
+            sort.order = -sort.order;
+        }else{
+            sort.column = col
+            sort.order = 1;
+        }
+        this.setState({sortBy: sort})
+    },
 	render: function(){
 		_this = this;
-		var head = <TableHead data={this.props.data[0]} />
-		var trs = this.props.data.map(function(row, i){
+        var sorted_data = _.sortBy(this.props.data,
+                x => this.state.sortBy.order*_.values(x)[this.state.sortBy.column])
+		var head = <TableHead
+            data={sorted_data[0]}
+            sort={this.state.sortBy}
+            handleClick={this.sortByCol}/>
+		var trs = sorted_data.map(function(row, i){
 			if(_.values(row).join('').indexOf(_this.props.filterText) !== -1){
 				return <Row key={i} data={row} />
 			}
 		})
 		var body = <tbody>{trs}</tbody>
 		return (<table className="table table-condensed table-hover table-striped">
-					{head}{body}</table>)
+					<caption>{this.state.sortBy}</caption>{head}{body}</table>)
 	}
 })
 
