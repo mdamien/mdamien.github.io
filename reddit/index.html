@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="build/react.js"></script>
+    <script src="build/JSXTransformer.js"></script>
+    <script src="build/jq.js"></script>
+  </head>
+  <body>
+    <div id="content"></div>
+<script type="text/jsx">
+
+Post = React.createClass({
+  render:function(){
+    return (<li>post</li>);
+  }
+})
+
+Thread = React.createClass({
+  getInitialState: function() {
+    return {data: []};
+  },
+  componentDidMount: function() {
+    var _this = this;
+    var location = "http://www.reddit.com/r/django/comments/2vvtry/t/";
+
+    $.getJSON(location+'.json', function(data) {
+      _this.setState({ data: data});
+    });
+  },
+  render: function(){
+    if(this.state.data.length == 0){
+      return <strong>Loading...</strong>;
+    }
+    posts = this.state.data[1].data.children.map(function(item){
+      return <Post data={item} />;
+    });
+    return <strong>{this.state.data[0].data.children[0].data.title}</strong>
+     + posts;
+  }
+})
+
+React.render(
+  <Thread />,
+  document.getElementById('content')
+);
+</script>
+  </body>
+</html>
