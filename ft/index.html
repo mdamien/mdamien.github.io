@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html><head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <script src="build/react.js"></script>
-    <script src="build/JSXTransformer.js"></script>
-    <script src="build/jq.js"></script>
-    <script src="build/lodash.js"></script>
-    <link rel="stylesheet" href="build/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fusion Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='css/normalize.css' rel='stylesheet' type='text/css'>
+    <link href='css/skeleton.css' rel='stylesheet' type='text/css'>
+
+    <script src="libs/underscore-min.js"></script>
+    <script src="libs/react.js"></script>
+    <script src="libs/jsx.js"></script>
+    <script type="text/javascript" src="libs/griddle.js"></script>
+    <script type="text/javascript" src="libs/papaparse.min.js"></script>
+</head>
 <body>
-    <div class="container-fluid">
-      <div class="row" id="index-page">
-      </div>
-    </div>
+<div class="container">
+    <div id="content"></div>
     <script type="text/jsx" src="main.js"></script>
-  </body>
+</div>
+</body>
 </html>
