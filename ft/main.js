@@ -24,7 +24,12 @@ React.render(<strong>Loading..</strong>, document.getElementById('content'))
 
 Chart = React.createClass({
     componentDidMount: function(){
-        var data = this.props.data.map(x => [x.timestamp, x.price_usd])
+        var data = this.props.data.map(function(x){
+            return [
+                x[this.props.params.x.col],
+                x[this.props.params.y.col],
+            ];
+        }.bind(this))
         graph = new Dygraph(this.getDOMNode(), data, {
             showRoller: true,
             rollPeriod: 100,
@@ -38,11 +43,19 @@ Chart = React.createClass({
     },
 })
 
+ChartBuilder = React.createClass({
+    render: function(){
+        return (<div>
+            <pre>{JSON.stringify(this.props.params)}</pre>
+            <Chart data={this.props.data} params={this.props.params}/>
+            </div>);
+    }
+})
 
 var App = React.createClass({
     getInitialState:function(){
         return {
-            'current_tab':'teble',
+            'current_tab':'chert',
         }
     },
 
@@ -70,7 +83,7 @@ var App = React.createClass({
                 results={this.props.data}
                 resultsPerPage={10} />)
         }else{
-            content = <Chart data={this.props.data} />;
+            content = <ChartBuilder data={this.props.data} params={curr_tab} />;
         }
         return (<div><br/>{tabs}<hr/>
                 {content}
