@@ -1,7 +1,7 @@
 Papa.parse("data.csv", {
     download: true,
     header: true,
-    dynamic_typing: true,
+    dynamicTyping: true,
     complete: function(results) {
         var tabs = {
             'teble':{
@@ -22,33 +22,20 @@ Papa.parse("data.csv", {
 });
 React.render(<strong>Loading..</strong>, document.getElementById('content'))
 
-Pie = React.createClass({
-  render: function() {
-    var data = {
-      labels: ['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8', 'W9', 'W10'],
-      series: [
-        [1, 2, 4, 8, 6, -2, -1, -4, -6, -2]
-      ]
-    };
+Chart = React.createClass({
+    componentDidMount: function(){
+        var data = this.props.data.map(x => [x.timestamp, x.price_usd])
+        graph = new Dygraph(this.getDOMNode(), data, {
+            showRoller: true,
+            rollPeriod: 100,
+            ylabel: 'Price (USD)',
+            labels:['timestamp', 'price']
+        });
+    },
 
-    var options = {
-      high: 10,
-      low: -10,
-      axisX: {
-        labelInterpolationFnc: function(value, index) {
-          return index % 2 === 0 ? value : null;
-        }
-      }
-    };
-
-    var type = 'Bar'
-
-    return (
-      <div>
-        <ChartistGraph data={data} options={options} type={type} />
-      </div>
-    )
-  }
+    render: function(){
+        return <div></div>;
+    },
 })
 
 
@@ -70,7 +57,7 @@ var App = React.createClass({
         var tabs = []
         for(key in this.props.tabs){
             var className = this.state.current_tab == key ? "button-primary" : "";
-            tabs.push((<span><button
+            tabs.push((<span key={key}><button
                 className={className}
                 onClick={this.changeTab.bind(null, key)}>
                     {key}</button>&nbsp;</span>))
@@ -83,10 +70,9 @@ var App = React.createClass({
                 results={this.props.data}
                 resultsPerPage={10} />)
         }else{
-            content = <Pie />;
+            content = <Chart data={this.props.data} />;
         }
-        return (<div><br/>{tabs}
-                <h4>{this.state.current_tab}</h4>
+        return (<div><br/>{tabs}<hr/>
                 {content}
             </div>);
     }
