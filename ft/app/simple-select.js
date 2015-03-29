@@ -27,3 +27,13 @@ SimpleSelect = React.createClass({
             </div>);
     },
 })
+
+ColumnSelect = React.createClass({
+    render: function(){
+        var options = []
+        for(key in this.props.data[0]){
+            options.push({value:key, label:key})
+        }
+        return <SimpleSelect options={options} {...this.props} />
+    }
+})
