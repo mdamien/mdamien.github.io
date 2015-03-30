@@ -2,4 +2,4 @@
 - imitating css
 - asynchronous rendering / data processing
 - fast table rendering [caching of sorted/filtered datas]
-- SQL engine for fast search and filtering: Lovefield
+- SQL engine for fast search and filtering: Lovefield or another
