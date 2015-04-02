@@ -44,5 +44,6 @@ DB.load = function(data, next){
     sqlstr += 'INSERT INTO "table" VALUES ('+_.values(line).map(DB.escape).join(',')+');\n'
   })
   db.run(sqlstr);
+  DB.db = db;
   next(db)
 }

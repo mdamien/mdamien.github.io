@@ -3,6 +3,9 @@ Papa.parse("data.csv", {
     header: true,
     dynamicTyping: true,
     complete: function(results) {
+        DB.load(results.data, function(db){
+            console.log('loaded')
+        })
         var tabs = [
             {
                 name:'teble',

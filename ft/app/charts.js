@@ -1,4 +1,3 @@
-
 Chart = React.createClass({
     componentDidMount: function(){
         this.updateGraph();
