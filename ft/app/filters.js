@@ -11,24 +11,14 @@ var Filter = React.createClass({
         this.props.onFilterChange(params)
     },
 
-    handleColumnChange: function(col){
-        var params = this.props.params;
-        params.column = col;
-        this.props.onFilterChange(params)
-    },
-
     render: function(){
         return (<div className="three columns">
+            { this.state.params.column }
             <input type="text"
                 ref="input"
                 value={this.props.params.value}
                 onChange={this.handleInputChange} />
-            <ColumnSelect
-                label={"Column"}
-                value={this.props.params.column}
-                data={this.props.data}
-                onChange={this.handleColumnChange} />
-            </div>);
+                </div>)
     },
 })
 
@@ -48,7 +38,7 @@ var Filters = React.createClass({
     },
 
     applyFilter: function(filter, line){
-        if(filter.column){
+        if(filter.column == undefined || filter.column){
             var arr = _.values(line);
             for (var i = 0; i < arr.length; i++) {
                 if ((arr[i] || "").toString().toLowerCase().indexOf(filter.value.toLowerCase()) >= 0) {
@@ -61,9 +51,9 @@ var Filters = React.createClass({
         return false;
     },
 
-    addFilter: function(){
+    addFilter: function(column){
         var filters = this.state.filters
-        filters.push({'value':''})
+        filters.push({value:'', column:column})
         this.setState({filters:filters})
         return false;
     },
@@ -91,13 +81,21 @@ var Filters = React.createClass({
                 return true;
             }.bind(this))
         }
-        console.log(filtered_data)
+        var add_filters = []
+        for(key in this.props.data[0]){
+            var style={
+                margin:"5px"
+            }
+            add_filters.push(<a style={style} href='' key={key} onClick={this.addFilter.bind(null, key)} >{key}</a>);
+        }
+        var debug = <pre>{JSON.stringify(this.state.filters)}</pre>;
         return (<div>
             <div className="row">
                 {filters}
             </div>
-            <pre>{JSON.stringify(this.state.filters)}</pre>
-            <a href='' onClick={this.addFilter}>add filter</a>
+            <div>
+                Add filter: {add_filters}
+            </div>
             {this.renderChildren(filtered_data)}
         </div>);
     }

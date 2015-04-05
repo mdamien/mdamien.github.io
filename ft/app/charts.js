@@ -14,7 +14,7 @@ Chart = React.createClass({
         }.bind(this))
         var options = {
             showRoller: true,
-            rollPeriod: 100,
+            rollPeriod: 1,
             labels:[this.props.params.x.col, this.props.params.y.col]
         }
         if(this.props.params.scatter){
