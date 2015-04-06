@@ -21,12 +21,12 @@ Papa.parse("data.csv", {
                     {
                         column:'drug_name',
                         value:"mdma",
-                        type:FILTERS_TYPE.CONTAINS,
+                        type:"contains",
                     },
                     {
                         column:'price_usd',
                         value:"x < 1000",
-                        type:FILTERS_TYPE.FORMULA,
+                        type:"formula",
                     },
                 ],
             },{

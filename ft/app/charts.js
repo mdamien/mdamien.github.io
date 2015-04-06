@@ -6,18 +6,19 @@ Chart = React.createClass({
         this.updateGraph();
     },
     updateGraph: function(){
+        var params = this.props.params;
         var data = this.props.data.map(function(x){
             return [
-                x[this.props.params.x.col],
-                x[this.props.params.y.col],
+                x[params.x.col],
+                x[params.y.col],
             ];
         }.bind(this))
         var options = {
             showRoller: true,
             rollPeriod: 1,
-            labels:[this.props.params.x.col, this.props.params.y.col]
+            labels:[params.x.col, params.y.col]
         }
-        if(this.props.params.scatter){
+        if(params.scatter){
             options.strokeWidth = 0.0;
             options.drawPoints = true;
         }

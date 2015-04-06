@@ -26,11 +26,27 @@ var App = React.createClass({
                 onClick={this.changeTab.bind(null, i)}>
                     {tab.name}</a></li>)
         }.bind(this))
-        tabs.push((<li><a onClick={this.addNewTab.bind(null, {'type':'table', 'name':'lol'})}
-            href='#'>Add tab</a></li>
+
+        var tabs_choices_infos = [
+            {type:'table', name:'lol table'},
+            {type:'chart', name:'lol chart',x:{col:'timestamp'},y:{col:'vendor_id'},scatter:true},
+        ];
+
+        var tabs_choices = tabs_choices_infos.map(function(x){
+            return (<li><a onClick={this.addNewTab.bind(null, x)}
+                href='#'>{x.type}</a></li>);
+        }.bind(this))
+
+        tabs.push((<div className="btn-group">
+                    <button type="button" className="btn btn-default dropdown-toggle"
+                        data-toggle="dropdown" aria-expanded="false">
+                    Add tab <span className="caret"></span>
+                    </button>
+                    <ul className="dropdown-menu" role="menu">
+                        {tabs_choices}
+                    </ul>
+                  </div>
         ))
-
-
         var content = "";
         if(curr_tab.type == 'table'){
             content = (<Table params={curr_tab} />)

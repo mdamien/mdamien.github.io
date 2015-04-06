@@ -1,8 +1,3 @@
-var FILTERS_TYPE = {
-    CONTAINS: "contains",
-    FORMULA: "formula",
-}
-
 var Filter = React.createClass({
     getInitialState: function(){
         return {
@@ -32,8 +27,9 @@ var Filter = React.createClass({
 
 var Filters = React.createClass({
     getInitialState: function(){
+        var filters = this.props.filters ? this.props.filters : [];
         return {
-            filters: this.props.filters ? this.props.filters : [],
+            filters: filters,
         }
     },
 
@@ -55,10 +51,12 @@ var Filters = React.createClass({
             }
         }else{
             if(filter.type != undefined){
-                if(filter.type == FILTERS_TYPE.FORMULA){
+                if(filter.type == "formula"){
                     var x = line[filter.column];
-                    var ret =  eval(filter.value);
-                    //console.log(x, ret, filter.value);
+                    var ret = true;
+                    try{
+                        var ret =  eval(filter.value);
+                    }catch(e){}
                     return ret;
                 }
             }
@@ -69,7 +67,13 @@ var Filters = React.createClass({
 
     addFilter: function(column){
         var filters = this.state.filters
-        filters.push({value:'', column:column})
+        var type = "contains";
+        var value = "";
+        var coltype = typeof this.props.data[1000 % this.props.data.length][column];
+        if(coltype == "number"){
+            type = "formula";
+        }
+        filters.push({value:value, column:column, type:type})
         this.setState({filters:filters})
         return false;
     },
@@ -112,16 +116,21 @@ var Filters = React.createClass({
         }
         var add_filters = []
         for(key in this.props.data[0]){
-            var style={
-                margin:"5px",
-                display:"inline-block",
-            }
-            add_filters.push(<a style={style} href='' key={key} onClick={this.addFilter.bind(null, key)} >{key}</a>);
+            add_filters.push((<li><a href='#' key={key}
+                    onClick={this.addFilter.bind(null, key)} >{key}</a></li>));
         }
         var debug = <pre>{JSON.stringify(this.state.filters)}</pre>;
         return (<div className="row">
             <div className="col-sm-2">
-                Add filter: {add_filters}
+                <div className="btn-group">
+                    <button type="button" className="btn btn-default dropdown-toggle"
+                        data-toggle="dropdown" aria-expanded="false">
+                    Add filter <span className="caret"></span>
+                </button>
+                    <ul className="dropdown-menu" role="menu">
+                        {add_filters}
+                    </ul>
+                </div>
                 {filters}
             </div>
             <div className="col-sm-10">
