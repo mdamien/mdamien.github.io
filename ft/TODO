@@ -1,3 +1,6 @@
+- remove el: key=random_hash ? key=sequencial_int => Mixin!
+- filter
+    - autocomplete, multi-select, good removal, type detection
 
 - imitating css
 - asynchronous rendering / data processing

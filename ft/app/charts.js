@@ -57,7 +57,7 @@ ChartBuilder = React.createClass({
 
         return (<div>
             <div className="row">
-            <div className="three columns">
+            <div className="col-sm-2">
                 <ColumnSelect
                     label={"X axis"}
                     value={this.state.params.x.col}
@@ -75,7 +75,7 @@ ChartBuilder = React.createClass({
                     <span className="label-body">Scatter plot</span>
                 </label>
             </div>
-            <div className="nine columns">
+            <div className="col-sm-10">
                 <Chart data={this.props.data} params={this.state.params}/>
             </div>
         </div></div>);
