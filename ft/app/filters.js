@@ -42,6 +42,9 @@ var Filters = React.createClass({
     },
 
     applyFilter: function(filter, line){
+        if(filter.value.length == 0){
+            return true;
+        }
         if(filter.column == undefined || !filter.column){
             var arr = _.values(line);
             for (var i = 0; i < arr.length; i++) {
@@ -75,7 +78,6 @@ var Filters = React.createClass({
         }
         filters.push({value:value, column:column, type:type})
         this.setState({filters:filters})
-        return false;
     },
 
     removeFilter: function(i){
@@ -116,7 +118,7 @@ var Filters = React.createClass({
         }
         var add_filters = []
         for(key in this.props.data[0]){
-            add_filters.push((<li><a href='#' key={key}
+            add_filters.push((<li key={key} ><a href='#'
                     onClick={this.addFilter.bind(null, key)} >{key}</a></li>));
         }
         var debug = <pre>{JSON.stringify(this.state.filters)}</pre>;

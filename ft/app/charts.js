@@ -56,6 +56,11 @@ ChartBuilder = React.createClass({
         }
         var debug = <pre>{JSON.stringify(this.state.params)}</pre>;
 
+        var chart = <div className="center">please select an X and an Y axis</div>;
+        if(this.state.params.x.col && this.state.params.y.col){
+            chart = <Chart data={this.props.data} params={this.state.params}/>;
+        }
+
         return (<div>
             <div className="row">
             <div className="col-sm-2">
@@ -77,7 +82,7 @@ ChartBuilder = React.createClass({
                 </label>
             </div>
             <div className="col-sm-10">
-                <Chart data={this.props.data} params={this.state.params}/>
+                {chart}
             </div>
         </div></div>);
     }
