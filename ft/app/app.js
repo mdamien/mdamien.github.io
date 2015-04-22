@@ -135,7 +135,7 @@ var App = React.createClass({
                 {name:'map',type:'map'},
                 ]
             content = (<Tabs data={this.state.data}
-                    tabs={tabs} current_tab={tabs.length-1}/>);
+                    tabs={tabs} current_tab={0}/>);
             message = (<span>Imported <strong>{this.state.data_url}</strong
                 > with <strong>{this.state.data.length}</strong> lines
                 </span>);
