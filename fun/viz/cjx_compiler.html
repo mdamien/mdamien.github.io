@@ -1,0 +1,16 @@
+<html>
+<body>
+<script src="http://wzrd.in/standalone/coffee-react-transform"></script>
+<button onclick="convert()">convert</button>
+<div>
+<textarea id='orig' cols=40 rows=100></textarea>
+<textarea id='dest' cols=40 rows=100></textarea>
+</div>
+<script>
+function convert(argument) {
+    document.getElementById('dest').value = 
+        coffeeReactTransform(document.getElementById('orig').value);
+}
+  
+</script>
+</body>
