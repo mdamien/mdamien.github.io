@@ -1,7 +1,12 @@
 var Tabs = React.createClass({
     getInitialState:function(){
+        var current_tab = this.props.current_tab ? this.props.current_tab : -1
+        if(current_tab == -1 && this.props.tabs){
+            current_tab = 0
+        }
+        
         return {
-            'current_tab':this.props.current_tab ? this.props.current_tab : -1,
+            'current_tab':current_tab,
             'tabs':this.props.tabs ? this.props.tabs : [], 
         }
     },
@@ -16,28 +21,39 @@ var Tabs = React.createClass({
         tabs.push(tab);
         this.setState({'tabs':tabs,'current_tab':tabs.length-1})
     },
-
+    removeTab: function(tab){
+        var tabs = this.state.tabs;
+        tabs.splice(tab,1)
+        this.setState({'tabs':tabs,'current_tab':-1})
+    },
     render:function(){
         var tabs = [], curr_tab = false;
         if(this.state.current_tab != -1){
             curr_tab = this.state.tabs[this.state.current_tab]
-            tabs = this.state.tabs.map(function(tab, i){
-                var className = this.state.current_tab == i ? "active" : "";
-                return (<li key={i} className={className}><a
-                    href="#"
-                    onClick={this.changeTab.bind(null, i)}>
-                        {tab.name}</a></li>)
-            }.bind(this))
         }
+        var tabs = this.state.tabs.map(function(tab, i){
+            var className = curr_tab && this.state.current_tab == i ? "active" : "";
+            return (<li key={i} className={className}><a
+                href="#"
+                onClick={this.changeTab.bind(null, i)}>
+                    {tab.name}
+                    &nbsp;<button onClick={this.removeTab.bind(null, i)}>x</button>
+                </a>
+                </li>)
+        }.bind(this))
 
         var tabs_choices_infos = [
             {type:'table', name:'table'},
             {type:'chart', name:'chart',x:{},y:{},scatter:true},
+            {type:'map', name:'map'},
         ];
 
         var tabs_choices = tabs_choices_infos.map(function(x,i){
-            return (<li key={i}><a onClick={this.addNewTab.bind(null, x)}
-                href='#'>{x.type}</a></li>);
+            return (<li key={i}>
+                    <a
+                        onClick={this.addNewTab.bind(null, x)}
+                        href='#'>{x.type}</a>
+                    </li>);
         }.bind(this))
 
         tabs.push((<div key="-1" className="btn-group">
@@ -51,13 +67,17 @@ var Tabs = React.createClass({
                   </div>
         ))
 
-        var content = <div>no tab selected</div>;
+        var content = <div>no tab selected {curr_tab}</div>;
         var filters = [];
         if (curr_tab){
             if(curr_tab.type == 'table'){
                 content = (<Table params={curr_tab} />)
-            }else{
+            }else if(curr_tab.type == 'chart'){
                 content = <ChartBuilder params={curr_tab} />;
+            }else if(curr_tab.type == 'map'){
+                content = <MapBuilder params={curr_tab} />;
+            }else{
+                content = "unknow tab type"
             }
             filters = curr_tab.filters;
         }
@@ -110,7 +130,12 @@ var App = React.createClass({
             message = <strong>loading .csv</strong>;
         }
         else if(this.state.data.length > 0){
-            content = (<Tabs data={this.state.data} />);
+            var tabs = [
+                {name:'table',type:'table'},
+                {name:'map',type:'map'},
+                ]
+            content = (<Tabs data={this.state.data}
+                    tabs={tabs} current_tab={tabs.length-1}/>);
             message = (<span>Imported <strong>{this.state.data_url}</strong
                 > with <strong>{this.state.data.length}</strong> lines
                 </span>);
@@ -122,41 +147,3 @@ var App = React.createClass({
         </div>);
     },
 })
-
-var TABS = [
-    {
-        name:'teble',
-        type:'table',
-    },{
-        name:'chert',
-        type:'chart',
-        x:{
-            col:'timestamp',
-        },
-        y:{
-            col:'price_usd',
-        },
-        scatter: true,
-        filters:[
-            {
-                column:'drug_name',
-                value:"mdma",
-                type:"contains",
-            },
-            {
-                column:'price_usd',
-                value:"x < 1000",
-                type:"formula",
-            },
-        ],
-    },{
-        name:'a nother chert',
-        type:'chart',
-        x:{
-            col:'timestamp',
-        },
-        y:{
-            col:'product_rating',
-        },
-    }
-]

@@ -1,0 +1,61 @@
+timestamp,drug_name,price_usd,vendor_id,ships_from,ships_to,product_rating,vendor_rating
+1411852538599,amphetamine,145.2427628775,0,Germany,Worldwide,597,86
+1411852538602,amphetamine,59.4969446025,1,Undeclared,Worldwide,531,91
+1411852538602,amphetamine,32.85144843,1,Undeclared,Worldwide,420,91
+1411852538603,amphetamine,270.68018121750004,0,Germany,Worldwide,440,86
+1411852538604,amphetamine,26.407919295000003,2,Germany,Worldwide,420,91
+1411852538604,amphetamine,8.978740154999999,3,Netherlands,Worldwide,358,77
+1411852538606,amphetamine,23.6787598725,4,United Kingdom,Worldwide except Australia,352,96
+1411852538607,amphetamine,68.3955670125,5,Germany,Worldwide except Australia,277,94
+1411852538608,amphetamine,122.3342439,1,Undeclared,Worldwide,240,91
+1411852538608,amphetamine,56.7769074975,2,Germany,Worldwide,263,91
+1411852538609,amphetamine,600.777585915,0,Germany,Worldwide,204,86
+1411852538609,amphetamine,3.123005565,6,Undeclared,Worldwide,111,95
+1411852538610,amphetamine,224.4665207625,1,Undeclared,Worldwide,111,91
+1411852538610,amphetamine,326.18591360249997,5,Germany,Worldwide except Australia,107,94
+1411852538611,amphetamine,207.1650540675,5,Germany,Worldwide except Australia,108,94
+1411852538612,amphetamine,42.2525915475,3,Netherlands,Worldwide,77,77
+1411852538612,amphetamine,104.310924255,2,Germany,European Union,91,91
+1411852538613,amphetamine,1888.1579005199999,0,Germany,Germany,84,86
+1411852538614,amphetamine,2.0818715025000003,6,Undeclared,Worldwide,82,95
+1411852538614,amphetamine,3.123005565,6,Undeclared,Worldwide,82,95
+1411852538615,amphetamine,22.90256964,7,Germany,Worldwide except Australia,63,93
+1411852538615,amphetamine,157.6118321625,5,Germany,Worldwide except Australia,67,94
+1411852538616,amphetamine,990.292610715,0,Germany,Worldwide,60,86
+1411852538616,amphetamine,84.56626296,4,United Kingdom,Worldwide except Australia,66,96
+1411852538617,amphetamine,60.737976405,7,Germany,Worldwide except Australia,54,93
+1411852555057,amphetamine,84.56626296,8,United Kingdom,Worldwide,38,87
+1411852555057,amphetamine,38.5179940875,9,Sweden,Sweden,53,86
+1411852555058,amphetamine,135.33394296,10,United States,Worldwide,41,95
+1411852555059,amphetamine,1644.8272204124999,5,Germany,Worldwide except Australia,41,94
+1411852555059,amphetamine,17.8254050175,1,Undeclared,Worldwide,32,91
+1411852555060,amphetamine,36.436122585,11,Canada,Worldwide,40,92
+1411852555061,amphetamine,134.29280889749998,12,Germany,Worldwide,38,82
+1411852555061,amphetamine,135.306179385,13,Norway,Norway,39,95
+1411852555062,amphetamine,12.87753933,14,Undeclared,Worldwide,39,75
+1411852555062,amphetamine,88.4876696175,15,Undeclared,Worldwide,38,79
+1411852555062,amphetamine,26.025575205,16,Belgium,Worldwide,22,79
+1411852555063,amphetamine,1030.099231305,5,Germany,Worldwide except Australia,33,94
+1411852555063,amphetamine,257.081978805,13,Norway,Norway,30,95
+1411852555064,amphetamine,242.56004259,12,Germany,Worldwide,28,82
+1411852555064,amphetamine,52.8154419675,0,Netherlands,Worldwide,26,86
+1411852555065,amphetamine,47.887407405,17,Netherlands,Worldwide,13,86
+1411852555065,amphetamine,104.103094065,16,Belgium,Worldwide,17,79
+1411852555067,amphetamine,135.33394296,9,Sweden,Sweden,27,86
+1411852555067,amphetamine,13.375697189999999,18,Undeclared,Worldwide,21,86
+1411852555068,amphetamine,205.22874302250003,19,United States,United States,18,97
+1411852555068,amphetamine,47.3571231225,8,United Kingdom,Worldwide,17,87
+1411852555068,amphetamine,723.0432141225,13,Norway,Norway,17,95
+1411852555069,amphetamine,115.66900278749999,14,Undeclared,Worldwide,18,75
+1411852555069,amphetamine,15.221974927500002,13,Norway,Norway,14,95
+1411852555070,amphetamine,19.76925189,15,Undeclared,Worldwide,15,79
+1411852571803,amphetamine,27.0667092675,15,Undeclared,Worldwide,12,79
+1411852571804,amphetamine,231.06830227500004,2,Germany,European Union,14,91
+1411852571805,amphetamine,482.02880941499996,13,Norway,Norway,13,95
+1411852571805,amphetamine,441.0105070875,1,Undeclared,Worldwide,9,91
+1411852571806,amphetamine,10.4101507575,20,Undeclared,Worldwide,13,88
+1411852571806,amphetamine,83.2823959275,9,Sweden,Sweden,13,86
+1411852571807,amphetamine,33.009700807499996,0,Netherlands,Worldwide,12,86
+1411852571807,amphetamine,1.5615027825,6,Undeclared,Worldwide,14,95
+1411852571808,amphetamine,112.23306207,7,Germany,European Union,11,93
+1411852571808,amphetamine,104.103094065,17,Netherlands,Worldwide,7,86
