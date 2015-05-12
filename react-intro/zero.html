@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>React</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+  <div id="content">Let's react!</div>
+</div>
+<script src="react/build/react.min.js"></script>
+<script src="react/build/JSXTransformer.js"></script>
+<script type="text/jsx">
+  var Header = React.createClass({
+    render: function() {
+      return (<div className="page-header">
+          <h1>{this.props.title} <small>{this.props.subtitle}</small></h1>
+        </div>);
+    }
+  });
+  React.render(
+    <Header title="Human Talks" subtitle="React.js" />,
+    document.getElementById('content')
+  );
+</script>
+  </body>
+</html>

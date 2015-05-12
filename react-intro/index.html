@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>React</title>
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div id="content">Look at your console!</div>
+  </div>
+  <script src="react/build/react.min.js"></script>
+  <script src="react/build/JSXTransformer.js"></script>
+  <script src="data/uvs.js"></script>
+  <script type="text/jsx">
+    var Header = React.createClass({
+      render: function() {
+        return (<div className="page-header">
+          <h1>{this.props.title}&nbsp;
+            <small>{this.props.subtitle}</small>
+          </h1>
+        </div>);
+      }
+    });
+
+    var Icon = React.createClass({
+      render: function(){
+        var klass = "glyphicon glyphicon-"+this.props.name;
+        return (<span className={klass} aria-hidden="true"></span>)
+      }
+    });
+
+    var ListUVs = React.createClass({
+      render: function(){
+        var lines = this.props.list.map(function(uv){
+          return (<li key={uv.name} className="list-group-item"
+              style={{cursor:'pointer'}}
+              onClick={this.props.onSelected.bind(null,uv)}>
+                <span className="badge">{uv.type}</span>
+                <strong>{uv.name}</strong> {uv.title}
+              </li>);
+        }.bind(this))
+        return <ul clasName="list-group">
+          {lines}
+        </ul>
+      }
+    })
+
+    var TextInput = React.createClass({
+      handleChanged: function(evt){
+        var text = this.refs.input.getDOMNode().value;
+        this.props.onChange(text)
+      },
+      render: function(){
+        return (<span>
+          <input type="text" value={this.props.text} ref="input"
+            onChange={this.handleChanged}/>&nbsp;
+        </span>)
+      }
+    });
+
+    var TypesSelect = React.createClass({
+      handleRemoveType: function(t){
+        var types = this.props.types_selected;
+        types.splice(types.indexOf(t),1);
+        this.props.onChange(types)
+      },
+      handleAddType: function(t){
+        console.log(t)
+        var types = this.props.types_selected;
+        types.push(t)
+        this.props.onChange(types);
+      },
+      render: function(){
+        var types = [
+          ['TM','wrench'],
+          ['TSH','globe'],
+          ['CS','cog']
+        ];
+
+        var choices = types.map(function(el){
+          var name = el[0], icon = el[1];
+          var klass = "btn btn-primary";
+          var onClick = this.handleRemoveType.bind(null, name);
+          if(this.props.types_selected.indexOf(name) == -1){
+            klass = "btn btn-default";
+            onClick = this.handleAddType.bind(null, name);
+          }
+          return (<button type="button"
+            onClick={onClick}
+            className={klass}>
+            <Icon name={icon} /> {name}
+            </button>)
+        }.bind(this))
+
+        return <span className="btn-group">
+          {choices}
+        </span>
+      }
+    })
+
+    var RechercheUV = React.createClass({
+      getInitialState: function(){
+        return {
+          types_selected:['TM','TSH']
+        }
+      },
+      handleSelected: function(x){
+        this.setState({selected:x});
+      },
+      handleTypesChanged: function(x){
+        this.setState({selected:undefined});
+        this.setState({types:x})
+      },
+      handleTextChanged: function(x){
+        this.setState({selected:undefined});
+        this.setState({text:x})
+      },
+      render: function(){
+        var list = this.props.list.filter(function(uv){
+          if(this.state.text
+              && JSON.stringify(uv).toLowerCase()
+                .indexOf(this.state.text.toLowerCase()) == -1){
+            return false;
+          }
+          if(this.state.types_selected.indexOf(uv.type) == -1){
+            return false;
+          }
+          return true;
+        }.bind(this))
+        var selected = "";
+        if(this.state.selected){
+          var s = this.state.selected;
+          selected = (<div>
+            <h4>{s.title} <small>{s.type}</small></h4>
+            Note UVWeb:<strong> {s.uvweb_rating}</strong>
+            <hr/>
+            <pre>{JSON.stringify(s,null,2)}</pre>
+            </div>)
+        }
+        return (<div>
+          <div className="text-center">
+            <h3><Icon name="search"/> Recherchez
+             parmis {this.props.list.length} UVs! </h3>
+            <TextInput text={this.state.text}
+              onChange={this.handleTextChanged} />
+            <TypesSelect types_selected={this.state.types_selected}
+              onChange={this.handleTypesChanged} />
+            &nbsp;{list.length} résultats
+          </div>
+          <br/>
+          <div className="row">
+            <div className="col-md-6">
+              <ListUVs list={list} onSelected={this.handleSelected} />
+            </div>
+            <div className="col-md-6">
+              {selected}
+            </div>
+          </div>
+          </div>)
+      }
+    });
+
+    var App = React.createClass({
+      render: function() {
+        return (<div>
+          <Header title="Human Talks" subtitle="Compiègne" />
+          <RechercheUV list={__UVS__} />
+        </div>);
+      }
+    });
+
+    React.render(
+      <App />,
+      document.getElementById('content')
+      );
+  </script>
+</body>
+</html>

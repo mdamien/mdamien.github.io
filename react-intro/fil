@@ -1,0 +1,39 @@
+download React
+extract + launch server
+show things in the .zip
+
+(--------------------------------)
+
+STEPS:
+- show zero.html
+- play with it (add state) onClick => change title to random number
+- add icon class
+
+(--------------------------------)
+
+PUB
+-Just the UI
+-Virtual DOM
+-Data flow
+-Server-side rendering
+-Components
+-pas de répétition (bootstrap css classes!)
+
+(--------------------------------)
+
+- open uvs.html
+    - show things and code
+    - add things
+
+(--------------------------------)
+
+
+awesome react
+react.parts
+
+(--------------------------------)
+
+code sur dam.io/react-intro
+=> github.com/mdamien/mdamien.github.io
+
+@dam_io sur twitter
