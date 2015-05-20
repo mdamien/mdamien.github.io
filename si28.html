@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript & HTML5</title>
+    <style>
+    body{
+        font-family: arial;
+        margin:40px auto; max-width:650px;
+        line-height:1.6; font-size:18px;
+        color:#222; padding:0 10px
+    }
+    h1,h2,h3{line-height:1.2}
+    </style>
+</head>
+<body>
+<h1>Javascript</h1>
+<ul>
+    <li>Language de programmation intégré aux navigateurs</li>
+    <li>Permet de faire des pages web dynamiques</li>
+</ul>
+
+<h2>Exemples</h2>
+
+<h3>Message basique</h3>
+<button onclick="alerte()">Dire bonjour!</button>
+<script>
+function alerte() {
+    alert("Bienvenue cher participant d'SI28!")
+    var reponse = confirm("Enlever l'épée du rocher ?")
+    if(reponse){
+        alert("Vous avez réussi! Vous êtes roi d'angleterre!")
+    }else{
+        alert("Vous allez au bar pour oublier tout ce bordel!")
+    }
+}
+</script>
+
+<h3>Modification de l'HTML</h3>
+<input type="text" id="input" value="" placeholder="Discuter avec Bob...">
+<button onclick="envoyer_message()">Envoyer</button>
+<pre id="boite"></pre>
+<script>
+function element_aleatoire(tableau){
+    return tableau[Math.floor(Math.random()*tableau.length)]
+}
+
+function envoyer_message(){
+    var input = document.getElementById('input')
+    var boite = document.getElementById('boite')
+    var message = input.value
+    var messages_de_bob = [
+        "Je vous ai compris",
+        "J'avoue",
+        "42",
+        "Pic ?",
+        "Coucou, tu veux voir ma boite à crayons ?",
+        "C'est bien! Bien sur! Pov' ***!",
+        "C'est pas bien"
+    ]
+    var message_de_bob = element_aleatoire(messages_de_bob)
+    boite.innerHTML = "Gars de SI28: <strong>"+message+"</strong>\n" + boite.innerHTML
+    boite.innerHTML = "Bob: <strong>"+message_de_bob+"</strong>\n" + boite.innerHTML
+
+    input.value = "" //remettre le champs text a zero
+    return true; //ne pas charger une nouvelle pages
+}
+</script>
+
+<h3>Modification de la mise en forme</h3>
+<button id="bouton">Prendre du LSD</button>
+<br/>
+<button onclick="automatiserPriseLSD()">Automatiser piqures</button>
+<script>
+function couleur_aleatoire(){
+    var colors = ['red','blue','green','violet','rose','purple','yellow','grey'];
+    return element_aleatoire(colors);
+}
+
+var bouton = document.getElementById("bouton");
+
+function prendreLSD(){
+    var taille = Math.round(Math.random()*50)+20
+    var color = couleur_aleatoire()
+    var color2 = couleur_aleatoire()
+    var color3 = couleur_aleatoire()
+    bouton.style['font-size'] = taille+"px"
+    bouton.style['color'] = color
+    bouton.style['background-color'] = color2
+    bouton.style['border-color'] = color3
+}
+
+function automatiserPriseLSD(){
+    setInterval(prendreLSD,50)
+}
+
+bouton.onclick = prendreLSD
+</script>
+
+<h3>Interactions par survol</h3>
+<div class="carre-bleu"></div>
+<div class="carre-bleu"></div>
+<div class="carre-bleu"></div>
+<div class="carre-bleu"></div>
+<div class="carre-bleu"></div>
+<div class="carre-bleu"></div>
+<div class="carre-bleu"></div>
+<div class="carre-bleu"></div>
+<div class="carre-bleu"></div>
+<script>
+    //Récupére les éléments avec la class carre-bleu
+    var carresBleu = document.getElementsByClassName("carre-bleu");
+    for (var i = 0; i < carresBleu.length; i++) {
+        var carreBleu = carresBleu[i]
+        //"onmouseover" est déclenché quand la souris passe au dessus de l'élément
+        carreBleu.onmouseover = function() {
+            this.style['background-color'] = element_aleatoire(['blue','lightblue'])
+        };
+        carreBleu.onmouseout = function() {
+            this.style['background-color'] = element_aleatoire(['violet','purple'])
+        };
+    }
+</script>
+<style>
+.carre-bleu{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-color: lightgrey;
+}
+</style>
+
+
+<h1>A vous de jouer</h1>
+
+</body>
+</html>
+
