@@ -28,14 +28,17 @@ Rappels:
 - 
 - element.onclick = function(){ 
         /* code déchenché par la function
-- alert(x) pour afficher x
+- alert('x') pour afficher x
 }
-N'hésitez pas à vous inspirez de la page d'exemple
+N'hésitez pas à vous inspirer de la page d'explications
 -->
 
 <!-- Ajouter votre bouton HTML ici -->
 <script>
-//Ajouter votre code ici
+var bouton = document.getElementById('????') //Entrez l'identifiant de votre bouton
+bouton.onclick = function(){
+    //Code de l'alerte ici
+}
 </script>
 
 
@@ -57,13 +60,30 @@ function nombre_aleatoire(min,max){
     return Math.floor(Math.random()*((max+1)-min)+min)
 }
 
-var btn = document.getElementById('?????')
-var resultat = document.?????('????')
-btn.onclick = function(){
-    resultat.innerHTML = "Résultat du lancer: ["
-        + nombre_aleatoire(1,6) + "]"
-}
+var boutonLancer = document.getElementById('?????') //Entrez l'identifiant du bouton de lancer
+var resultat = //Récupérez le p ayant pour identifiant resultat-lancer
+
+//Liez maintenant boutonLancer à l'évènement onclick avec une fonction
+//Inspirez-vous du onclick de l'exemple précédent
+
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -96,9 +116,9 @@ function nombre_aleatoire(min,max){
     return Math.floor(Math.random()*((max+1)-min)+min)
 }
 
-var btn = document.getElementById('?????')
-var resultat = document.?????('????')
-btn.onclick = function(){
+var boutonLancer = document.getElementById('bouton-lancer')
+var resultat = document.getElementById('resultat-lancer')
+boutonLancer.onclick = function(){
     resultat.innerHTML = "Résultat du lancer: ["
         + nombre_aleatoire(1,6) + "]"
 }
