@@ -16,27 +16,27 @@
 <body>
 <h1>Javascript</h1>
 <ul>
-    <li>Language de programmation intégré aux navigateurs</li>
-    <li>Permet de faire des pages web dynamiques</li>
+    <li>Language de programmation intégré aux navigateurs.</li>
+    <li>Permet de faire des pages web dynamiques.</li>
 </ul>
 
 <h2>Exemples</h2>
 
 <h3>Message basique</h3>
-<button onclick="alerte()">Dire bonjour!</button>
+<button onclick="alerte()">Dire bonjour !</button>
 <script>
 function alerte() {
-    alert("Bienvenue cher participant d'SI28!")
+    alert("Bienvenue cher participant de SI28 !")
     var reponse = confirm("Enlever l'épée du rocher ?")
     if(reponse){
-        alert("Vous avez réussi! Vous êtes roi d'angleterre!")
+        alert("Vous avez réussi ! Vous êtes roi d'angleterre !")
     }else{
-        alert("Vous allez au bar pour oublier tout ce bordel!")
+        alert("Vous allez au bar pour oublier tout ce bordel !")
     }
 }
 </script>
 
-<h3>Modification de l'HTML</h3>
+<h3>Modification du HTML (Ajout de balises ici)</h3>
 <input type="text" id="input" value="" placeholder="Discuter avec Bob...">
 <button onclick="envoyer_message()">Envoyer</button>
 <pre id="boite"></pre>
@@ -50,17 +50,17 @@ function envoyer_message(){
     var boite = document.getElementById('boite')
     var message = input.value
     var messages_de_bob = [
-        "Je vous ai compris",
-        "J'avoue",
+        "Je vous ai compris.",
+        "J'avoue.",
         "42",
-        "Pic ?",
+        "Pikachu ?",
         "Coucou, tu veux voir ma boite à crayons ?",
-        "C'est bien! Bien sur! Pov' ***!",
-        "C'est pas bien"
+        "C'est bien ! Bien sur!... Enfin si on veut.",
+        "C'est pas bien."
     ]
     var message_de_bob = element_aleatoire(messages_de_bob)
-    boite.innerHTML = "Gars de SI28: <strong>"+message+"</strong>\n" + boite.innerHTML
-    boite.innerHTML = "Bob: <strong>"+message_de_bob+"</strong>\n" + boite.innerHTML
+    boite.innerHTML += "Gars de SI28: <strong>"+message+"</strong>\n"
+    boite.innerHTML += "Bob: <strong>"+message_de_bob+"</strong>\n"
 
     input.value = "" //remettre le champs text a zero
     return true; //ne pas charger une nouvelle pages
@@ -70,7 +70,7 @@ function envoyer_message(){
 <h3>Modification de la mise en forme</h3>
 <button id="bouton">Prendre du LSD</button>
 <br/>
-<button onclick="automatiserPriseLSD()">Automatiser piqures</button>
+<button onclick="automatiserPriseLSD()">Automatiser piqûres</button>
 <script>
 function couleur_aleatoire(){
     var colors = ['red','blue','green','violet','rose','purple','yellow','grey'];
@@ -130,9 +130,5 @@ bouton.onclick = prendreLSD
 }
 </style>
 
-
-<h1>A vous de jouer</h1>
-
 </body>
 </html>
-
