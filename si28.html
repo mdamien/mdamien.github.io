@@ -22,9 +22,16 @@
 
 <h2>Exemples</h2>
 
+<!-- Exemple d'alerte en JavaScript -->
 <h3>Message basique</h3>
+<!-- On crée un élément HTML button.
+    On lui ajoute un attribut onclick ayant pour valeur le nom de la fonction JavaScript à exécuter (alerte).
+    On ajoute "()" après le nom de la fonction pour que cela fonctionne (fonction sans paramètre).
+-->
 <button onclick="alerte()">Dire bonjour !</button>
+<!-- Le JavaScript est contenu entre les balises script. -->
 <script>
+/* Fonction alerte, utilisée par l'élément button plus haut lorsque l'évènement onclick est détecté */
 function alerte() {
     alert("Bienvenue cher participant de SI28 !")
     var reponse = confirm("Enlever l'épée du rocher ?")
@@ -36,6 +43,7 @@ function alerte() {
 }
 </script>
 
+<!-- Exemple d'ajout de HTML en JavaScript -->
 <h3>Modification du HTML (Ajout de balises ici)</h3>
 <input type="text" id="input" value="" placeholder="Discuter avec Bob...">
 <button onclick="envoyer_message()">Envoyer</button>
@@ -59,14 +67,15 @@ function envoyer_message(){
         "C'est pas bien."
     ]
     var message_de_bob = element_aleatoire(messages_de_bob)
-    boite.innerHTML += "Gars de SI28: <strong>"+message+"</strong>\n"
-    boite.innerHTML += "Bob: <strong>"+message_de_bob+"</strong>\n"
+    boite.innerHTML += "<strong>Gars de SI28</strong> : "+message+"\n"
+    boite.innerHTML += "<strong>Bob</strong> : "+message_de_bob+"\n"
 
     input.value = "" //remettre le champs text a zero
     return true; //ne pas charger une nouvelle pages
 }
 </script>
 
+<!-- Exemple de modification de CSS en JavaScript -->
 <h3>Modification de la mise en forme</h3>
 <button id="bouton">Prendre du LSD</button>
 <br/>
@@ -97,6 +106,7 @@ function automatiserPriseLSD(){
 bouton.onclick = prendreLSD
 </script>
 
+<!-- Exemple de détection de survol d'éléments en JavaScript -->
 <h3>Interactions par survol</h3>
 <div class="carre-bleu"></div>
 <div class="carre-bleu"></div>
@@ -108,14 +118,19 @@ bouton.onclick = prendreLSD
 <div class="carre-bleu"></div>
 <div class="carre-bleu"></div>
 <script>
-    //Récupére les éléments avec la class carre-bleu
+    // Récupère les éléments avec la class carre-bleu
     var carresBleu = document.getElementsByClassName("carre-bleu");
     for (var i = 0; i < carresBleu.length; i++) {
         var carreBleu = carresBleu[i]
-        //"onmouseover" est déclenché quand la souris passe au dessus de l'élément
+        /* "onmouseover" est déclenché quand la souris passe au dessus de l'élément
+            On lui lie ici une fonction qui choisit une couleur parmi bleu et bleu clair
+            */ 
         carreBleu.onmouseover = function() {
             this.style['background-color'] = element_aleatoire(['blue','lightblue'])
         };
+        /* "onmouseout" est déclenché quand la souris qui était au dessus d'un l'élément le quitte
+            On lui lie ici une fonction qui choisit une couleur parmi violet ou violet foncé.
+            */ 
         carreBleu.onmouseout = function() {
             this.style['background-color'] = element_aleatoire(['violet','purple'])
         };
