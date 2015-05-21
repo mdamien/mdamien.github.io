@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Bang! Bang!</title>
+    <title>Casino de grand-mére</title>
     <style>
     body{
         font-family: arial;
@@ -14,17 +14,13 @@
     </style>
 </head>
 <body>
-<h1>Bang! Bang! <small>Une roulette russe qui fait boum()</small></h1>
+<h1>Casino de grand-mére</h1>
 <p>
 <strong>Ouvrez cette page dans votre éditeur de texte pour commencer</strong>
 </p>
 
-<!--
-Les solutions pour chaque étapes sont données en bas de cette page HTML
--->
-
 <!---
-ETAPE 1: Ajouter un bouton qui affiche "Pan!"
+EXO 1: Ajouter un bouton qui affiche "Vous avez 400 jetons"
 =============================================
 Rappels:
 - Utilisez un "id=" puis document.getElementById("votre_id")
@@ -32,6 +28,7 @@ Rappels:
 - 
 - element.onclick = function(){ 
         /* code déchenché par la function
+- alert(x) pour afficher x
 }
 N'hésitez pas à vous inspirez de la page d'exemple
 -->
@@ -42,92 +39,31 @@ N'hésitez pas à vous inspirez de la page d'exemple
 </script>
 
 
+
+
+
+
 <!--
-ETAPE 2: Modifiez votre code pour que le message contienne un nombre
-aléatoire entre 1 et 6.
+EXO 2: Ajoutez un bouton qui lance un dé et qui affiche le resultat dans un <p>
 ==========
-Utilisez la fonction suivante pour vous aider:
+- Utilisez element.innerHTML = "Resultat a afficher" pour modifier le contenu HTMLs
+- Utilisez la fonction  `nombre_aleatoire` pour vous aider:
 -->
+<button id="bouton-lancer">Lancer un dé!</button>
+<p id="resultat-lancer"></p>
 <script>
-/*
-    Retourne un nombre entier aléatoire entre min et max inclus
-    Exemple d'utilisation:
-        var n = nombre_aleatoire(1,3)
-        alert(n) //affiche soit 1, 2 ou 3
-*/
+//Retourne un nombre entier aléatoire entre min et max inclus
 function nombre_aleatoire(min,max){
     return Math.floor(Math.random()*((max+1)-min)+min)
 }
-</script>
 
-
-<!--
-ETAPE 3: Si le nombre est egale à 6, affichez "BOUUUM"
-Utilisez la structure "if"
-Exemple:
-if(prof == "serge"){ //si
-    alert("C'est SI28 ?")
-}else{ //sinon
-    alert("C'est pas SI28!")
-}
--->
-
-<!--
-Améliorez en ajoutant des couleurs, des sons voir des images!
-
-Voila un exemple de ce que ca peut donner, décommentez le code pour essayer
--->
-<div id="jeu">
-    <button id="beretta">Tirer</button>
-    <p id="etat"></p>
-</div>
-<script>
-
-function clickote(clicks_restants, fonction_suivante){
-    etat.innerHTML += " Click!"
-    if(clicks_restants > 0){
-        setTimeout(function(){
-            clickote(clicks_restants-1, fonction_suivante)
-        },nombre_aleatoire(100,1000))
-    }else{
-        fonction_suivante()
-    }
-}
-
-var btn = document.getElementById('beretta')
-var etat = document.getElementById('etat')
+var btn = document.getElementById('?????')
+var resultat = document.?????('????')
 btn.onclick = function(){
-    etat.innerHTML = ""
-    var n = nombre_aleatoire(1,6)
-    clickote(n, function(){
-    var confettis = n == 6
-    if(confettis){
-        etat.innerHTML = "Confettis!"
-    }else{
-        etat.innerHTML = "Passe le fusil!"+n
-    }
-})
+    resultat.innerHTML = "Résultat du lancer: ["
+        + nombre_aleatoire(1,6) + "]"
 }
 </script>
-<style>
-#jeu {
-    text-align: center;
-}
-#beretta {
-    font-size: 70px;
-    color: #303;
-    background-color: #4e4;
-    border: 4px solid #090;
-    padding: 10px 30px;
-    border-radius: 30px;
-}
-</style>
-
-
-
-
-
-
 
 
 
@@ -140,33 +76,33 @@ SOLUTIONS
 
 ETAPE 1
 ************
-
-<button id="fusil">Appuyer sur la gachette</button>
+<button id="bouton-commencer">Commencer</button>
 <script>
-var bouton = document.getElementById('fusil')
+var bouton = document.getElementById('bouton-commencer')
 bouton.onclick = function(){
-    alert('Pan!')
+    alert('Vous avez 400 jetons! Vous avez les jetons!')
 }
 </script>
 
 
+
 ETAPE 2
 ************
-...
-    var nombre = nombre_aleatoire(1,6)
-    alert("Pan! "+nombre)
-..
-
-
-ETAPE 3
-*************
-...
-if(nombre == 6){
-    alert("Boouuum!")
-}else{
-    alert("Click! Passe le fusil!")
+<button id="bouton-lancer">Lancer un dé!</button>
+<p id="resultat-lancer"></p>
+<script>
+//Retourne un nombre entier aléatoire entre min et max inclus
+function nombre_aleatoire(min,max){
+    return Math.floor(Math.random()*((max+1)-min)+min)
 }
-...
+
+var btn = document.getElementById('?????')
+var resultat = document.?????('????')
+btn.onclick = function(){
+    resultat.innerHTML = "Résultat du lancer: ["
+        + nombre_aleatoire(1,6) + "]"
+}
+</script>
 -->
 
 
