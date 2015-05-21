@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>JavaScript & HTML5</title>
+    <title>Javascript</title>
     <style>
     body{
         font-family: arial;
@@ -14,10 +14,11 @@
     </style>
 </head>
 <body>
+
 <h1>Javascript</h1>
 <ul>
-    <li>Language de programmation intégré aux navigateurs.</li>
-    <li>Permet de faire des pages web dynamiques.</li>
+    <li>Language de programmation intégré aux navigateurs</li>
+    <li>Permet de faire des pages web dynamiques</li>
 </ul>
 
 <h2>Exemples</h2>
@@ -43,8 +44,8 @@ function alerte() {
 }
 </script>
 
-<!-- Exemple d'ajout de HTML en JavaScript -->
-<h3>Modification du HTML (Ajout de balises ici)</h3>
+<!-- Exemple de modification du contenus HTML en JavaScript -->
+<h3>Modification du HTML</h3>
 <input type="text" id="input" value="" placeholder="Discuter avec Bob...">
 <button onclick="envoyer_message()">Envoyer</button>
 <pre id="boite"></pre>
@@ -70,8 +71,8 @@ function envoyer_message(){
     boite.innerHTML += "<strong>Gars de SI28</strong> : "+message+"\n"
     boite.innerHTML += "<strong>Bob</strong> : "+message_de_bob+"\n"
 
-    input.value = "" //remettre le champs text a zero
-    return true; //ne pas charger une nouvelle pages
+    input.value = "" //remettre le champs texte a zéro
+    return true; //empéche le chargement d'une nouvelle page
 }
 </script>
 
@@ -117,6 +118,16 @@ bouton.onclick = prendreLSD
 <div class="carre-bleu"></div>
 <div class="carre-bleu"></div>
 <div class="carre-bleu"></div>
+<br/>
+<div class="carre-bleu"></div>
+<div class="carre-bleu"></div>
+<div class="carre-bleu"></div>
+<div class="carre-bleu"></div>
+<div class="carre-bleu"></div>
+<div class="carre-bleu"></div>
+<div class="carre-bleu"></div>
+<div class="carre-bleu"></div>
+<div class="carre-bleu"></div>
 <script>
     // Récupère les éléments avec la class carre-bleu
     var carresBleu = document.getElementsByClassName("carre-bleu");
@@ -146,7 +157,7 @@ bouton.onclick = prendreLSD
 </style>
 
 <h3>À vous de jouer !</h3>
-<a href="si28_exercices.html" title="Exercices">Passer aux exercices</a>
+<a href="exos.html">Passer aux exercices</a>
 
 </body>
 </html>
