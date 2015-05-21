@@ -39,17 +39,71 @@
 	<h3>Détection simple : nom de tags</h3>
 	<p>
 		On recherche directement si les éléments ont reçu un évènement :
-		<br/>&lt;button&gt;Bouton&lt;/button&gt;
-		<br/>&lt;p&gt;Paragraphe&lt;/p&gt;
+		<pre>&lt;button&gt;Bouton&lt;/button&gt;</pre>
+		<pre>&lt;p&gt;Paragraphe&lt;/p&gt;</pre>
 	</p>
 	<h3>Détection par identifiant</h3>
 	<p>
 		On cherche un identificant HTML particulier, identifié par un attribut <strong>id</strong> :
-		<br/>&lt;button id="bouton-1"&gt;Bouton 1&lt;/button&gt;
-		<br/>&lt;button id="bouton-2"&gt;Bouton 2&lt;/button&gt;
+		<pre>&lt;button id="bouton-1"&gt;Bouton 1&lt;/button&gt;</pre>
+		<pre>&lt;button id="bouton-2"&gt;Bouton 2&lt;/button&gt;</pre>
 	</p>
 
-	<h2>Exemple de code de la page précédente</h2>
+	<h3>Détection par classe</h3>
+	<p>
+		Les classes sont utilisées pour identifier des groupes d'éléments HTML. Tout comme en CSS, il est possible d'utiliser l'attribut <strong>class</strong> des éléments HTML pour les sélectionner :
+		<pre>&lt;button class="bouton-bleu"&gt;Bouton 1&lt;/button&gt;</pre>
+		<pre>&lt;button class="bouton-bleu"&gt;Bouton 2&lt;/button&gt;</pre>
+		<pre>&lt;button class="bouton-rouge"&gt;Bouton 3&lt;/button&gt;</pre>
+		<pre>&lt;button class="bouton-rouge"&gt;Bouton 4&lt;/button&gt;</pre>
+	</p>
+
+	<h2>Exemples en JavaScript</h2>
+	<p>Le code JavaScript se fait en 2 étapes pour chaque évènement :
+		<br/>1. Récupération de l'élément HTML dans une variable.
+		<br/>2. Liaison de cet élément à un/des évènements. Liaison de l'élément à une fonction pour chaque évènement.
+	</p>
+	<h3>Détection par identifiant</h3>
+	<p>
+		Pour obtenir un élément par son identifiant, on utilise <pre>document.getElementById('nom-identifiant');</pre>
+<pre>
+<code>
+&lt;script&gt;
+    <small>//1 : Lier bouton1 à l'élément HTML avec id="nom-identifiant"</small>
+    var bouton1 = document.getElementById('bouton-1');
+    <small>//2 : Liaison d'un évènement (onclick) à cet élément HTML</small>
+    	bouton1.onclick = function() {
+    		<small>//Code à exécuter après click sur bouton1</small>
+	}
+&lt;/script&gt;
+</code>
+</pre>
+
+	</p>
+	<h3>Détection par classe (plusieurs éléments retournés)</h3>
+	<p>
+		Pour obtenir les éléments ayant une certaine classe, on utilise <pre>document.getElementsByClassName('nom-classe');</pre>
+<pre>
+<code>
+&lt;script&gt;
+	<small>//1 : Récupération de TOUS les éléments ayant bouton-bleu comme classe.</small>
+	var boutonsBleus = document.getElementsByClassName("bouton-bleu");
+
+	<small>//2 : Liaison d'une fonction pour chaque bouton-bleu.</small>
+	<small>// Se déclenche au survol d'un bouton-bleu</small>
+    	for (var i = 0; i < boutonsBleus.length; i++) {
+    		var boutonBleu = boutonsBleus[i];
+
+    		boutonBleu.onmouseover = function() {
+    			<small>//Code à exécuter après survol sur bouton-bleu</small>
+    		}
+	}
+&lt;/script&gt;
+</code>
+</pre>
+
+	</p>
+
 	<h1>Exercice pratique</h1>
 	<p>
 		<small>
