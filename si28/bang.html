@@ -16,7 +16,7 @@
 <body>
 <h1>Bang! Bang! <small>Une roulette russe qui fait boum()</small></h1>
 <p>
-<strong>Ouvrez cette page dans votre editeur de texte pour commencer</strong>
+<strong>Ouvrez cette page dans votre éditeur de texte pour commencer</strong>
 </p>
 
 <!--
@@ -26,13 +26,102 @@ Les solutions pour chaque étapes sont données en bas de cette page HTML
 <!---
 ETAPE 1: Ajouter un bouton qui affiche "Pan!"
 =============================================
-N'hésitez pas à vous inspiez de la page d'exemple
+Rappels:
+- Utilisez un "id=" puis document.getElementById("votre_id")
+    pour récupérer votre bouton
+- 
+- element.onclick = function(){ 
+        /* code déchenché par la function
+}
+N'hésitez pas à vous inspirez de la page d'exemple
 -->
 
 <!-- Ajouter votre bouton HTML ici -->
 <script>
 //Ajouter votre code ici
 </script>
+
+
+<!--
+ETAPE 2: Modifiez votre code pour que le message contienne un nombre
+aléatoire entre 1 et 6.
+==========
+Utilisez la fonction suivante pour vous aider:
+-->
+<script>
+/*
+    Retourne un nombre entier aléatoire entre min et max inclus
+    Exemple d'utilisation:
+        var n = nombre_aleatoire(1,3)
+        alert(n) //affiche soit 1, 2 ou 3
+*/
+function nombre_aleatoire(min,max){
+    return Math.floor(Math.random()*((max+1)-min)+min)
+}
+</script>
+
+
+<!--
+ETAPE 3: Si le nombre est egale à 6, affichez "BOUUUM"
+Utilisez la structure "if"
+Exemple:
+if(prof == "serge"){ //si
+    alert("C'est SI28 ?")
+}else{ //sinon
+    alert("C'est pas SI28!")
+}
+-->
+
+<!--
+Améliorez en ajoutant des couleurs, des sons voir des images!
+
+Voila un exemple de ce que ca peut donner, décommentez le code pour essayer
+-->
+<div id="jeu">
+    <button id="beretta">Tirer</button>
+    <p id="etat"></p>
+</div>
+<script>
+
+function clickote(clicks_restants, fonction_suivante){
+    etat.innerHTML += " Click!"
+    if(clicks_restants > 0){
+        setTimeout(function(){
+            clickote(clicks_restants-1, fonction_suivante)
+        },nombre_aleatoire(100,1000))
+    }else{
+        fonction_suivante()
+    }
+}
+
+var btn = document.getElementById('beretta')
+var etat = document.getElementById('etat')
+btn.onclick = function(){
+    etat.innerHTML = ""
+    var n = nombre_aleatoire(1,6)
+    clickote(n, function(){
+    var confettis = n == 6
+    if(confettis){
+        etat.innerHTML = "Confettis!"
+    }else{
+        etat.innerHTML = "Passe le fusil!"+n
+    }
+})
+}
+</script>
+<style>
+#jeu {
+    text-align: center;
+}
+#beretta {
+    font-size: 70px;
+    color: #303;
+    background-color: #4e4;
+    border: 4px solid #090;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+</style>
 
 
 
@@ -50,6 +139,7 @@ SOLUTIONS
 ======
 
 ETAPE 1
+************
 
 <button id="fusil">Appuyer sur la gachette</button>
 <script>
@@ -60,7 +150,25 @@ bouton.onclick = function(){
 </script>
 
 
+ETAPE 2
+************
+...
+    var nombre = nombre_aleatoire(1,6)
+    alert("Pan! "+nombre)
+..
 
+
+ETAPE 3
+*************
+...
+if(nombre == 6){
+    alert("Boouuum!")
+}else{
+    alert("Click! Passe le fusil!")
+}
+...
 -->
+
+
 </body>
 </html>
