@@ -14,102 +14,130 @@
     </style>
 </head>
 <body>
-	<h1>Mini documentation</h1>
+<h1>Mini documentation</h1>
 
-	<h2>Évènements JavaScript</h2>
-	<p>JavaScript détecte des "évènements" pour déterminer s'il doit exécuter du code.
-		<br/>
-		Un évènement peut par exemple être un clic de souris, le survol d'un élèment ou l'appui sur une touche de clavier.
-		<br/>
-	</p>
-	<h3>Noms de quelques évènements utilisés par JavaScript</h3>
-	<p>
-		<strong>onclick</strong> : Clic sur un élément.
-		<br/><strong>onmouseover</strong> : Survol d'un élément.
-		<br/><strong>onmouseout</strong> : Fin du survol d'un élément.
-		<br/><strong>onkeydown</strong> : Appui sur une touche de clavier.
-		<br/><strong>onkeyup</strong> : Fin de l'appui sur une touche de clavier.
-	</p>
+<h2>Évènements JavaScript</h2>
+<p>JavaScript détecte des "évènements" pour déterminer s'il doit exécuter du code.
+	<br/>
+	Un évènement peut par exemple être un clic de souris, le survol d'un élèment ou l'appui sur une touche de clavier.
+	<br/>
+</p>
+<h3>Noms de quelques évènements utilisés par JavaScript</h3>
+<p>
+	<strong>onclick</strong> : Clic sur un élément.
+	<br/><strong>onmouseover</strong> : Survol d'un élément.
+	<br/><strong>onmouseout</strong> : Fin du survol d'un élément.
+	<br/><strong>onkeydown</strong> : Appui sur une touche de clavier.
+	<br/><strong>onkeyup</strong> : Fin de l'appui sur une touche de clavier.
+</p>
 
-	<h2>HTML : éléments qui seront utilisés par JavaScript</h2>
-	<p>
-		Pour savoir si il doit exécuter du code, JavaScript attend des évènements, mais dans un certain contexte.
-		<br/>On regarde le plus souvent quel élément HTML a reçu l'évènement (quel bouton a reçu un clic, quel champ de texte reçoit des entrées de clavier...).
-	</p>
-	<h3>Détection simple : nom de tags</h3>
-	<p>
-		On recherche directement si les éléments ont reçu un évènement :
-		<pre>&lt;button&gt;Bouton&lt;/button&gt;</pre>
-		<pre>&lt;p&gt;Paragraphe&lt;/p&gt;</pre>
-	</p>
-	<h3>Détection par identifiant</h3>
-	<p>
-		On cherche un identificant HTML particulier, identifié par un attribut <strong>id</strong> :
-		<pre>&lt;button id="bouton-1"&gt;Bouton 1&lt;/button&gt;</pre>
-		<pre>&lt;button id="bouton-2"&gt;Bouton 2&lt;/button&gt;</pre>
-	</p>
+<h2>HTML : éléments qui seront utilisés par JavaScript</h2>
+<p>
+	Pour savoir si il doit exécuter du code, JavaScript attend des évènements, mais dans un certain contexte.
+	<br/>On regarde le plus souvent quel élément HTML a reçu l'évènement (quel bouton a reçu un clic, quel champ de texte reçoit des entrées de clavier...).
+</p>
+<h3>Détection simple : nom de tags</h3>
+<p>
+	On recherche directement si les éléments ont reçu un évènement :
+	<pre>&lt;button&gt;Bouton&lt;/button&gt;</pre>
+	<pre>&lt;p&gt;Paragraphe&lt;/p&gt;</pre>
+</p>
+<h3>Détection par identifiant</h3>
+<p>
+	On cherche un identificant HTML particulier, identifié par un attribut <strong>id</strong> :
+	<pre>&lt;button id="bouton-1"&gt;Bouton 1&lt;/button&gt;</pre>
+	<pre>&lt;button id="bouton-2"&gt;Bouton 2&lt;/button&gt;</pre>
+</p>
 
-	<h3>Détection par classe</h3>
-	<p>
-		Les classes sont utilisées pour identifier des groupes d'éléments HTML. Tout comme en CSS, il est possible d'utiliser l'attribut <strong>class</strong> des éléments HTML pour les sélectionner :
-		<pre>&lt;button class="bouton-bleu"&gt;Bouton 1&lt;/button&gt;</pre>
-		<pre>&lt;button class="bouton-bleu"&gt;Bouton 2&lt;/button&gt;</pre>
-		<pre>&lt;button class="bouton-rouge"&gt;Bouton 3&lt;/button&gt;</pre>
-		<pre>&lt;button class="bouton-rouge"&gt;Bouton 4&lt;/button&gt;</pre>
-	</p>
+<h3>Détection par classe</h3>
+<p>
+	Les classes sont utilisées pour identifier des groupes d'éléments HTML. Tout comme en CSS, il est possible d'utiliser l'attribut <strong>class</strong> des éléments HTML pour les sélectionner :
+	<pre>&lt;button class="bouton-bleu"&gt;Bouton 1&lt;/button&gt;</pre>
+	<pre>&lt;button class="bouton-bleu"&gt;Bouton 2&lt;/button&gt;</pre>
+	<pre>&lt;button class="bouton-rouge"&gt;Bouton 3&lt;/button&gt;</pre>
+	<pre>&lt;button class="bouton-rouge"&gt;Bouton 4&lt;/button&gt;</pre>
+</p>
 
-	<h2>Exemples en JavaScript</h2>
-	<p>Le code JavaScript se fait en 2 étapes pour chaque évènement :
-		<br/>1. Récupération de l'élément HTML dans une variable.
-		<br/>2. Liaison de cet élément à un/des évènements. Liaison de l'élément à une fonction pour chaque évènement.
-	</p>
-	<h3>Détection par identifiant</h3>
-	<p>
-		Pour obtenir un élément par son identifiant, on utilise <pre>document.getElementById('nom-identifiant');</pre>
+<h2>Exemples en JavaScript</h2>
+<p>Le code JavaScript se fait en 2 étapes pour chaque évènement :
+	<br/>1. Récupération de l'élément HTML dans une variable.
+	<br/>2. Liaison de cet élément à un/des évènements. Liaison de l'élément à une fonction pour chaque évènement.
+</p>
+<h3>Détection par identifiant</h3>
+<p>
+	Pour obtenir un élément par son identifiant, on utilise <pre>document.getElementById('nom-identifiant');</pre>
 <pre>
 <code>
 &lt;script&gt;
-    <small>//1 : Lier bouton1 à l'élément HTML avec id="nom-identifiant"</small>
-    var bouton1 = document.getElementById('bouton-1');
-    <small>//2 : Liaison d'un évènement (onclick) à cet élément HTML</small>
-    	bouton1.onclick = function() {
-    		<small>//Code à exécuter après click sur bouton1</small>
-	}
+<small>//1 : Lier bouton1 à l'élément HTML avec id="nom-identifiant"</small>
+var bouton1 = document.getElementById('bouton-1');
+<small>//2 : Liaison d'un évènement (onclick) à cet élément HTML</small>
+bouton1.onclick = function() {
+	<small>//Code à exécuter après click sur bouton1</small>
+}
 &lt;/script&gt;
 </code>
 </pre>
 
-	</p>
-	<h3>Détection par classe (plusieurs éléments retournés)</h3>
-	<p>
-		Pour obtenir les éléments ayant une certaine classe, on utilise <pre>document.getElementsByClassName('nom-classe');</pre>
+</p>
+<h3>Détection par classe (plusieurs éléments retournés)</h3>
+<p>
+	Pour obtenir les éléments ayant une certaine classe, on utilise <pre>document.getElementsByClassName('nom-classe');</pre>
 <pre>
 <code>
 &lt;script&gt;
-	<small>//1 : Récupération de TOUS les éléments ayant bouton-bleu comme classe.</small>
-	var boutonsBleus = document.getElementsByClassName("bouton-bleu");
+<small>//1 : Récupération de TOUS les éléments ayant bouton-bleu comme classe.</small>
+var boutonsBleus = document.getElementsByClassName("bouton-bleu");
 
-	<small>//2 : Liaison d'une fonction pour chaque bouton-bleu.</small>
-	<small>// Se déclenche au survol d'un bouton-bleu</small>
-    	for (var i = 0; i < boutonsBleus.length; i++) {
-    		var boutonBleu = boutonsBleus[i];
+<small>//2 : Liaison d'une fonction pour chaque bouton-bleu.</small>
+<small>// Se déclenche au survol d'un bouton-bleu</small>
+for (var i = 0; i < boutonsBleus.length; i++) {
+	var boutonBleu = boutonsBleus[i];
 
-    		boutonBleu.onmouseover = function() {
-    			<small>//Code à exécuter après survol sur bouton-bleu</small>
-    		}
+	boutonBleu.onmouseover = function() {
+		<small>//Changer la couleur du bouton en vert dès qu'il est survolé.</small>
+		this.style['background-color'] = 'green';
 	}
+}
 &lt;/script&gt;
 </code>
 </pre>
+</p>
 
-	</p>
+<h3>Détection par tag</h3>
+<p>
+	<pre>document.getElementsByTagName('nom-tag');</pre>
+	Code équivalent à celui de <strong>document.getElementsByClassName</strong>.
+</p>
 
-	<h1>Exercice pratique</h1>
-	<p>
-		<small>
-			Si vous souhaitez essayer quelque chose qui n'est pas proposé dans cet exercice, demandez-nous !
-		<br/>L'objectif est de vous faire découvrir à quoi sert JavaScript et ce qu'il faut, alors posez vos questions :).
-		</small>
-	</p>
+<h2>Code à exécuter après évènement</h2>
+<p>
+	Comme dans nos exemples, vous pouvez faire beaucoup de choses avec JavaScript. Voici des exemples :
+<pre>
+<code>
+boutonBleu.onmouseover = function() {
+	<small>//Afficher une alerte.</small>
+	alert('Vous avez cliqué !');
+	<small>//Changer la couleur de l'élément qui a reçu l'action (this).</small>
+	this.style['background-color'] = 'green';
+	<small>//Changer la taille du texte</small>
+	this.style['font-size'] = '40px';
+}
+</code>
+</pre>
+	Plus de propriétés de style modifiables que vous pouvez utiliser <a href="http://www.w3schools.com/cssref/default.asp">ici</a>.
+</p>
+
+<!-- Exercices -->
+<h1>Exercice pratique</h1>
+<p>
+	<small>
+		Si vous souhaitez essayer quelque chose qui n'est pas proposé dans cet exercice, demandez-nous !
+	<br/>L'objectif est de vous faire découvrir à quoi sert JavaScript et ce qu'il faut, alors posez vos questions :).
+	</small>
+</p>
+
+<h1>Compléments</h1>
+<a href="complements_si28.html" title="Compléments SI28">Compléments</a>
 </body>
 </html>
