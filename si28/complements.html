@@ -14,27 +14,28 @@
     </style>
 </head>
 <body>
-	<h1>Modifications directes dans le navigateur</h1>
-	<p>
-		Il est possible d'exécuter du JavaScript dans un navigateur en entrant son propre code. Faisons un petit essai.
-		<br/>Allez sur un site internet contenant du texte, comme <a href="https://fr.wikipedia.org/wiki/Pokémon" title="Wikipedia">Wikipedia (Pokémon)</a>.
-		<br/>Clic droit dans le navigateur et sélectionnez une option "inspecter l'élément" ou similaire. Allez ensuite dans l'onglet console. Nous entrerons du code dans le champ de la console.
-	</p>
-	<h2>Modifier la couleur du texte des paragraphes</h2>
-	<p>
-		Il suffit de sélectionner tous les éléments p et de modifier leur attribut style :
+<h1>Modifications directes dans le navigateur</h1>
+<p>
+	Il est possible d'exécuter du JavaScript dans un navigateur en entrant son propre code. Faisons un petit essai.
+	<br/>Allez sur un site internet contenant du texte, comme <a href="https://fr.wikipedia.org/wiki/Pokémon" title="Wikipedia">Wikipedia (Pokémon)</a>.
+	<br/>Clic droit dans le navigateur et sélectionnez une option "inspecter l'élément" ou similaire. Allez ensuite dans l'onglet console. Nous entrerons du code dans le champ de la console.
+</p>
+<h2>Modifier la couleur du texte des paragraphes</h2>
+<p>
+	Il suffit de sélectionner tous les éléments p et de modifier leur attribut style :
 <pre>
 <code>
-&lt;script&gt;
 paragraphes = document.getElementsByTagName('p');
 for (i = 0; i < paragraphes.length; i++) {
 	p = paragraphes[i];
 	p.style['color'] = 'blue';
 }
-&lt;/script&gt;
 </code>
 </pre>
-	</p>
+</p>
+
+<h1>Désactiver JavaScript et aller sur plusieurs sites</h1>
+<p>Vous verrez alors tout ce qu'apporte JavaScript en ne l'ayant plus activé sur votre navigateur !</p>
 
 </body>
 </html>
