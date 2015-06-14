@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>IC01</title>
+ <link rel="stylesheet" href="http://bootswatch.com/lumen/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>IC01</h1>
+    <h4>Résumé du cours généré automatiquement via <a href="all.html">les annotations</a></h4>
+    <hr/>
+    {% for id,content in courses %}
+        <h2>Cours {{ id }}</h2>
+        <ul>
+        {% for sentence in content.sentences %}
+            <li>{{ sentence }}</li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+    <hr>
+  </div>
+</body>
+</html>

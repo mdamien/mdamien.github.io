@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>IC01 - All</title>
+ <link rel="stylesheet" href="http://bootswatch.com/lumen/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>IC01 - All</h1>
+    <hr>
+    <div class="text-center">
+        <img src="words.png" alt="wordcloud" height=400 >
+    </div>
+    <hr/>
+    {% for id,content in courses %}
+        <h2>Cours {{ id }}</h2>
+        <dl>
+        {% for annotation in content.annotations %}
+            <dt>{{ annotation.content.title }}</dt>
+            <dd>{{ annotation.content.description }}</dd>
+        {% endfor %}
+        </dl>
+    {% endfor %}
+    <hr>
+  </div>
+</body>
+</html>
