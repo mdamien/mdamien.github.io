@@ -1,0 +1,317 @@
+{
+  "edges": [
+    {
+      "id": "8",
+      "source": "n1",
+      "target": "Paris"
+    },
+    {
+      "id": "7",
+      "source": "n2",
+      "target": "n4"
+    },
+    {
+      "id": "28",
+      "source": "n4",
+      "target": "n1"
+    },
+    {
+      "id": "30",
+      "source": "n4",
+      "target": "n7"
+    },
+    {
+      "id": "26",
+      "source": "n5",
+      "target": "n1"
+    },
+    {
+      "id": "27",
+      "source": "n5",
+      "target": "n2"
+    },
+    {
+      "id": "0",
+      "source": "n6",
+      "target": "n5"
+    },
+    {
+      "id": "29",
+      "source": "n7",
+      "target": "n5"
+    },
+    {
+      "id": "1",
+      "source": "n7",
+      "target": "n8"
+    },
+    {
+      "id": "17",
+      "source": "n7",
+      "target": "Paris"
+    },
+    {
+      "id": "10",
+      "source": "n8",
+      "target": "n13"
+    },
+    {
+      "id": "18",
+      "source": "n8",
+      "target": "Paris"
+    },
+    {
+      "id": "15",
+      "source": "n9",
+      "target": "n8"
+    },
+    {
+      "id": "34",
+      "source": "n10",
+      "target": "n9"
+    },
+    {
+      "id": "31",
+      "source": "n10",
+      "target": "n11"
+    },
+    {
+      "id": "11",
+      "source": "n11",
+      "target": "n13"
+    },
+    {
+      "id": "13",
+      "source": "n11",
+      "target": "n14"
+    },
+    {
+      "id": "32",
+      "source": "n12",
+      "target": "n10"
+    },
+    {
+      "id": "12",
+      "source": "n12",
+      "target": "n11"
+    },
+    {
+      "id": "23",
+      "source": "n12",
+      "target": "n13"
+    },
+    {
+      "id": "33",
+      "source": "n13",
+      "target": "n10"
+    },
+    {
+      "id": "25",
+      "source": "n13",
+      "target": "n14"
+    },
+    {
+      "id": "14",
+      "source": "n14",
+      "target": "n9"
+    },
+    {
+      "id": "5",
+      "source": "n14",
+      "target": "n17"
+    },
+    {
+      "id": "19",
+      "source": "n14",
+      "target": "Paris"
+    },
+    {
+      "id": "6",
+      "source": "n15",
+      "target": "n8"
+    },
+    {
+      "id": "22",
+      "source": "n15",
+      "target": "n16"
+    },
+    {
+      "id": "20",
+      "source": "n15",
+      "target": "Paris"
+    },
+    {
+      "id": "4",
+      "source": "n16",
+      "target": "n15"
+    },
+    {
+      "id": "24",
+      "source": "n16",
+      "target": "Paris"
+    },
+    {
+      "id": "9",
+      "source": "n17",
+      "target": "n7"
+    },
+    {
+      "id": "21",
+      "source": "n17",
+      "target": "n17"
+    },
+    {
+      "id": "2",
+      "source": "Paris",
+      "target": "n4"
+    },
+    {
+      "id": "3",
+      "source": "Paris",
+      "target": "n17"
+    },
+    {
+      "id": "16",
+      "source": "Paris",
+      "target": "Paris"
+    }
+  ],
+  "nodes": [
+    {
+      "longitude": 2.48,
+      "color": "rgb(1,179,255)",
+      "latitude": 50.93,
+      "id": "n1",
+      "size": "5.5",
+      "label": "n1"
+    },
+    {
+      "longitude": 2.0,
+      "color": "rgb(1,179,255)",
+      "latitude": 50.88,
+      "id": "n2",
+      "size": "5.0",
+      "label": "n2"
+    },
+    {
+      "longitude": 0.19,
+      "color": "rgb(1,179,255)",
+      "latitude": 49.4,
+      "id": "n4",
+      "size": "6.0",
+      "label": "n4"
+    },
+    {
+      "longitude": -1.92,
+      "color": "rgb(1,179,255)",
+      "latitude": 48.49,
+      "id": "n5",
+      "size": "6.0",
+      "label": "n5"
+    },
+    {
+      "longitude": -4.38,
+      "color": "rgb(1,179,255)",
+      "latitude": 48.26,
+      "id": "n6",
+      "size": "4.5",
+      "label": "n6"
+    },
+    {
+      "longitude": -2.09,
+      "color": "rgb(1,179,255)",
+      "latitude": 47.15,
+      "id": "n7",
+      "size": "6.5",
+      "label": "n7"
+    },
+    {
+      "longitude": -1.04,
+      "color": "rgb(1,179,255)",
+      "latitude": 46.02,
+      "id": "n8",
+      "size": "6.5",
+      "label": "n8"
+    },
+    {
+      "longitude": -1.85,
+      "color": "rgb(1,179,255)",
+      "latitude": 43.22,
+      "id": "n9",
+      "size": "5.0",
+      "label": "n9"
+    },
+    {
+      "longitude": 3.18,
+      "color": "rgb(1,179,255)",
+      "latitude": 42.38,
+      "id": "n10",
+      "size": "4.0",
+      "label": "n10"
+    },
+    {
+      "longitude": 4.04,
+      "color": "rgb(1,179,255)",
+      "latitude": 43.47,
+      "id": "n11",
+      "size": "5.5",
+      "label": "n11"
+    },
+    {
+      "longitude": 6.59,
+      "color": "rgb(1,179,255)",
+      "latitude": 42.9,
+      "id": "n12",
+      "size": "5.0",
+      "label": "n12"
+    },
+    {
+      "longitude": 7.66,
+      "color": "rgb(1,179,255)",
+      "latitude": 43.62,
+      "id": "n13",
+      "size": "6.0",
+      "label": "n13"
+    },
+    {
+      "longitude": 6.19,
+      "color": "rgb(1,179,255)",
+      "latitude": 46.05,
+      "id": "n14",
+      "size": "6.5",
+      "label": "n14"
+    },
+    {
+      "longitude": 7.65,
+      "color": "rgb(1,179,255)",
+      "latitude": 47.43,
+      "id": "n15",
+      "size": "6.0",
+      "label": "n15"
+    },
+    {
+      "longitude": 8.32,
+      "color": "rgb(1,179,255)",
+      "latitude": 48.9,
+      "id": "n16",
+      "size": "5.5",
+      "label": "n16"
+    },
+    {
+      "longitude": 4.94,
+      "color": "rgb(1,179,255)",
+      "latitude": 49.83,
+      "id": "n17",
+      "size": "6.5",
+      "label": "n17"
+    },
+    {
+      "longitude": 2.46,
+      "color": "rgb(1,179,255)",
+      "latitude": 48.72,
+      "id": "Paris",
+      "size": "9.0",
+      "label": "Paris"
+    }
+  ]
+}
