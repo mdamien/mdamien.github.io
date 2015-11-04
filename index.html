@@ -33,7 +33,7 @@
             <img ng-src="{{p.img}}" ng-alt="{{p.name}}"/>
           </div>
           <div class="infos">
-            <a ng-href="{{ p.link }}"><h4 class="title">{{ p.name }}</h4></a>
+            <a ng-href="{{ p.link || p.source }}"><h4 class="title">{{ p.name }}</h4></a>
             <a ng-if="p.source" ng-href="{{ p.source }}">source</a>
             <p class="what">{{ p.what }}</p>
             <p class="why">
@@ -50,6 +50,27 @@
 
 <script>
   var PROJECTS = [{
+    name:"Banana Game",
+    source:"https://github.com/mdamien/banana-game",
+    what:"Press a banana, make it jump",
+    when: "10/15",
+    class:"small",
+    why:"made for SF Science Hackathon 2015"
+  },{
+    name:"Adventure car game",
+    source:"https://github.com/yandam/adventure",
+    what:"Press a banana, make it jump",
+    when: "7/15",
+    class:"small",
+    why:"made a game that you can play while driving without too much distraction for a Car Hackhaton"
+  },{
+    name:"Slack screen",
+    source:"https://github.com/mdamien/slack-screen",
+    what:"Use slack to show a message on a screen (or many screens). ex: /screen Anybody wants to play chess ?",
+    when: "7/15",
+    class:"small",
+    why:"wanted to be able to send message to the whole team without disrupting them, worked too well !"
+  },{
     name:"UX prize at Disrupt NY Hackathon 2014",
     link:"http://techcrunch.com/video/kioto/518219110/",
     what:"Made a note-taking app for webpages tied to evernote",
