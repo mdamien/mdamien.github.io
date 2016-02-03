@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="build/react.js"></script>
+    <script src="https://fb.me/react-0.14.7.js"></script>
+    <script src="https://fb.me/react-dom-0.14.7.js"></script>
     <script src="build/JSXTransformer.js"></script>
     <script src="build/jq.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-xWeRKjzyg6bep9D1AsHzUPEWHbWMzlRc84Z0aG+tyms= sha512-mGIRU0bcPaVjr7BceESkC37zD6sEccxE+RJyQABbbKNe83Y68+PyPM5nrE1zvbQZkSHDCJEtnAcodbhlq2/EkQ==" crossorigin="anonymous">
+    <style>
+body {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+}
+.post {
+  list-style: none;
+}
+.post-content {
+  border-left: 5px solid #eee;
+  padding-left: 12px;
+  border-bottom: 1px solid #eee;
+}
+.replies {
+  margin: 0;
+}
+    </style>
   </head>
   <body>
     <div id="content"></div>
 <script type="text/jsx">
 
+function htmlDecode(value){ 
+  return $('<div/>').html(value).text(); 
+};
+
 Post = React.createClass({
-  render:function(){
-    return (<li>post</li>);
+  render: function() {
+    var replies = this.props.data.replies;
+    replies = replies ? replies.data.children : [];
+    var posts = replies.map(function(item, i) {
+      return <Post data={item.data} key={i} />;
+    });
+    var content = htmlDecode(this.props.data.body_html);
+    return <li className='post'>
+      <div className='post-content' dangerouslySetInnerHTML={{__html:content}}/>
+      <ul className='replies'>
+        {posts}
+      </ul>
+    </li>;
   }
 })
 
@@ -31,15 +66,21 @@ Thread = React.createClass({
     if(this.state.data.length == 0){
       return <strong>Loading...</strong>;
     }
-    posts = this.state.data[1].data.children.map(function(item){
-      return <Post data={item} />;
+    posts = this.state.data[1].data.children.map(function(item, i){
+      return <Post data={item.data} key={i} />;
     });
-    return <strong>{this.state.data[0].data.children[0].data.title}</strong>
-     + posts;
+    var data = this.state.data[0].data.children[0].data;
+    var content = htmlDecode(data.selftext_html);
+    return <div>
+      <h2><a href={data.url}>{data.title}</a></h2>
+      <p dangerouslySetInnerHTML={{__html:content}}/>
+      <hr/>
+      {posts}
+    </div>;
   }
 })
 
-React.render(
+ReactDOM.render(
   <Thread />,
   document.getElementById('content')
 );
