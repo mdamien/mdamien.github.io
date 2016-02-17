@@ -1,83 +1,72 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://fb.me/react-0.14.7.js"></script>
     <script src="https://fb.me/react-dom-0.14.7.js"></script>
     <script src="build/JSXTransformer.js"></script>
+    <script src="build/moment.js"></script>
     <script src="build/jq.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-xWeRKjzyg6bep9D1AsHzUPEWHbWMzlRc84Z0aG+tyms= sha512-mGIRU0bcPaVjr7BceESkC37zD6sEccxE+RJyQABbbKNe83Y68+PyPM5nrE1zvbQZkSHDCJEtnAcodbhlq2/EkQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <style>
-body {
-    max-width: 700px;
-    margin: auto;
-    padding: 40px;
+#content {
+  padding:0;
+}
+.feed, .full-post {
+  padding-top: 40px;
 }
 .post {
   list-style: none;
-}
-.post-content {
-  border-left: 5px solid #eee;
-  padding-left: 12px;
-  border-bottom: 1px solid #eee;
-}
-.replies {
+  max-height: 130px;
+  clear: both;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
   margin: 0;
+}
+
+.internal-link {
+  cursor: pointer;
+}
+.internal-link:hover {
+  text-decoration: underline;
+}
+
+.feed .img-container, .full-post .img-container {
+  overflow: hidden;
+}
+.feed .img-container img {
+  width: 100%;
+  min-width: 100px;
+}
+
+.feed .img-container , .feed .description , .feed, .row {
+  padding: 0;
+  margin: 0;
+}
+.full-post {
+  padding: 10px;
+}
+
+.published-inline {
+  display: inline;
+}
+.published-block {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .published-inline {
+    display: none;
+  }
+  .published-block {
+    display: block;
+  }
 }
     </style>
   </head>
   <body>
-    <div id="content">react iz loading</div>
-<script type="text/jsx">
-
-function htmlDecode(value){
-  return $('<div/>').html(value).text(); 
-};
-
-Post = React.createClass({
-  render: function() {
-    var data = this.props.data;
-    return <li className='post'>
-      <div dangerouslySetInnerHTML={{__html:data.description}}/>
-    </li>;
-  }
-})
-
-Feed = React.createClass({
-  getInitialState: function() {
-    return {data: []};
-  },
-  componentDidMount: function() {
-    var _this = this;
-    var location = "https://api.flickr.com/services/feeds/photos_public.gne?tags=potato&tagmode=all&format=json&amp&jsoncallback=?";
-    $.ajax({
-        url: location,
-        jsonp: "callback",
-        dataType: "jsonp",
-        success: function( response ) {
-            _this.setState({ data: response});
-        }
-    });
-  },
-  render: function(){
-    var data = this.state.data;
-    if (this.state.data.length == 0){
-      return <strong>Loading...</strong>;
-    }
-    var posts = data.items.map(function(item, i){
-      return <Post data={item} key={i} />;
-    });
-    return <div>
-      <h2><a href={data.link}>{data.title}</a></h2>
-      <hr/>
-      {posts}
-    </div>;
-  }
-})
-
-ReactDOM.render(
-  <Feed />,
-  document.getElementById('content')
-);
-</script>
+    <div id="content" class="container-fluid">react iz loading</div>
+    <script src="useful.jsx" type="text/jsx"></script>
+    <script src="index.jsx" type="text/jsx"></script>
   </body>
 </html>
