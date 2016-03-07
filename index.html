@@ -25,7 +25,7 @@
         </p>
       </div>
     </div>
-    <h3>My projects</h3>
+    <h3>Some things I did</h3>
     <div class="projects row">
       <div class="project" ng-class="p.class" ng-repeat="p in projects | orderBy:'time_hint':true">
         <div class="project-box">
@@ -64,6 +64,22 @@
     when: "7/15",
     class:"small",
     why:"made a game that you can play while driving without too much distraction for a Car Hackhaton"
+  },{
+    name:"Scrap all the things",
+    source:"https://github.com/search?q=user%3Amdamien+scrapy",
+    what:"Made many scrapers for etsy, meetup, google websites, chrome extensions,...",
+    when: "1/16",
+    class:"small",
+    why:"" //it feels interresting
+  },{
+    name:"View images centered like in Firefox",
+    url:"https://chrome.google.com/webstore/detail/view-images-centered-like/damadkdlkdhpeeehnobhpeifjnmfkkjg",
+    source:"https://github.com/mdamien/chrome-extension-image-center",
+    img:"http://i.imgur.com/Nc3cSj7.png",
+    what:"Chrome extension to improve the default chrome image viewer by centering the image and adding a black background",
+    when: "2/16",
+    class:"big",
+    why:"I was chromecasting a lot of memes, the extension I was using was very bad, I made a new one"
   },{
     name:"Slack screen",
     source:"https://github.com/mdamien/slack-screen",
@@ -336,22 +352,10 @@ when:"12/14",
   }
 })
 
-
  var app = angular.module('LOLApp', []);
  app.controller('LOLController', function ($scope) {
   $scope.projects = PROJECTS;
 });
-</script>
-
-
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-30471322-4', 'dam.io');
-  ga('send', 'pageview');
 </script>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'
 >
