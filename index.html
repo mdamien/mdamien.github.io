@@ -26,7 +26,7 @@
       </div>
     </div>
     <h3>Some things I did</h3>
-    <div class="projects row">
+    <div class="projects row" ng-cloak>
       <div class="project" ng-class="p.class" ng-repeat="p in projects | orderBy:'time_hint':true">
         <div class="project-box">
           <span class="when">{{ p.when }}</span>
@@ -50,7 +50,25 @@
 </div>
 
 <script>
-  var PROJECTS = [{
+  var PROJECTS = [
+  {
+    name:"Work at Code Yellow in Eindhoven",
+    link:"http://codeyellow.nl",
+    class:"job",
+    when:"4/16",
+    img:"http://i.imgur.com/IcLCJTf.png",
+    what:"Software Engineer",
+    why:"Discovering the Netherlands and making varied software with these talented people",
+  },{
+    name:"Worked at Alation in Redwood City",
+    link:"http://alation.com",
+    class:"job",
+    when:"9/15-2/16",
+    img:"http://i.imgur.com/i93JxsL.png",
+    what:"Software Engineering internship",
+    why:"Had a lot of fun making the best (if you ask me) sql query tool in the world",
+    tech:"react,python,django,backbone",
+  },{
     name:"Banana Game",
     source:"https://github.com/mdamien/banana-game",
     what:"Press a banana, make it jump",
