@@ -1,380 +1,51 @@
-<!DOCTYPE html>
-<html ng-app="LOLApp" ng-controller="LOLController"><head>
-<meta charset="UTF-8"/>
-<title>dam.io</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="JdttzQ5Ot23mqkTNzwcdtxY5qHEV1v7XSzRDC8w5XeQ" />
-<link href="./index/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-<link href="./index/style.css" rel="stylesheet" type="text/css" media="screen">
-<script src="index/angular.js"></script>
-<style type="text/css"></style></head>
-<body>
-  <div class="container">
-    <div class="info">
-      <a href="/"><img src="./index/logo.jpg" alt="Damien MARIE"></a>
-      <div class="info-internal">
-        <h3 style="margin:0">Damien MARIÉ</h3>
-        <p class="links">
-          <a class="btn btn-default" href="https://github.com/MDamien">GitHub</a>
-          <a class="btn btn-default" href="http://blog.dam.io">Blog</a>
-          <a class="btn btn-default" href="https://twitter.com/dam_io">Twitter</a>
-          <a class="btn btn-warning" href="cv.pdf">CV</a>
-          <a class="btn btn-primary" href="mailto:damien@dam.io">damien@dam.io</a>
-          <br>
-        </p>
-      </div>
-    </div>
-    <h3>Some things I did</h3>
-    <div class="projects row" ng-cloak>
-      <div class="project" ng-class="p.class" ng-repeat="p in projects | orderBy:'time_hint':true">
-        <div class="project-box">
-          <span class="when">{{ p.when }}</span>
-          <div ng-if="p.img" class="img">
-            <img ng-src="{{p.img}}" ng-alt="{{p.name}}"/>
-          </div>
-          <div class="infos">
-            <a ng-href="{{ p.link || p.source }}"><h4 class="title">{{ p.name }}</h4></a>
-            <a ng-if="p.source" ng-href="{{ p.source }}">source</a>
-            <p class="what">{{ p.what }}</p>
-            <p class="why">
-             {{ p.why }}
-           </p>
-<!--
-    <div class="techs">
-      <span ng-repeat="tech in p.tech.split(',')">{{ tech }}</span>
-    </div>
-  -->
-</div>
-</div>
-</div>
+<body style="background:black;color:grey">
+<pre>
+><))> email
+damien@dam.io
 
-<script>
-  var PROJECTS = [
-  {
-    name:"Work at Code Yellow in Eindhoven",
-    link:"http://codeyellow.nl",
-    class:"job",
-    when:"4/16",
-    img:"http://i.imgur.com/IcLCJTf.png",
-    what:"Software Engineer",
-    why:"Discovering the Netherlands and making varied software with these talented people",
-  },{
-    name:"Worked at Alation in Redwood City",
-    link:"http://alation.com",
-    class:"job",
-    when:"9/15-2/16",
-    img:"http://i.imgur.com/i93JxsL.png",
-    what:"Software Engineering internship",
-    why:"Had a lot of fun making the best (if you ask me) sql query tool in the world",
-    tech:"react,python,django,backbone",
-  },{
-    name:"Banana Game",
-    source:"https://github.com/mdamien/banana-game",
-    what:"Press a banana, make it jump",
-    when: "10/15",
-    class:"small",
-    why:"made for SF Science Hackathon 2015"
-  },{
-    name:"Adventure car game",
-    source:"https://github.com/yandam/adventure",
-    what:"Press a banana, make it jump",
-    when: "7/15",
-    class:"small",
-    why:"made a game that you can play while driving without too much distraction for a Car Hackhaton"
-  },{
-    name:"Scrap all the things",
-    source:"https://github.com/search?q=user%3Amdamien+scrapy",
-    what:"Made many scrapers for etsy, meetup, google websites, chrome extensions,...",
-    when: "1/16",
-    class:"small",
-    why:"" //it feels interresting
-  },{
-    name:"View images centered like in Firefox",
-    url:"https://chrome.google.com/webstore/detail/view-images-centered-like/damadkdlkdhpeeehnobhpeifjnmfkkjg",
-    source:"https://github.com/mdamien/chrome-extension-image-center",
-    img:"http://i.imgur.com/Nc3cSj7.png",
-    what:"Chrome extension to improve the default chrome image viewer by centering the image and adding a black background",
-    when: "2/16",
-    class:"big",
-    why:"I was chromecasting a lot of memes, the extension I was using was very bad, I made a new one"
-  },{
-    name:"Slack screen",
-    source:"https://github.com/mdamien/slack-screen",
-    what:"Use slack to show a message on a screen (or many screens). ex: /screen Anybody wants to play chess ?",
-    when: "7/15",
-    class:"small",
-    why:"wanted to be able to send message to the whole team without disrupting them, worked too well !"
-  },{
-    name:"UX prize at Disrupt NY Hackathon 2014",
-    link:"http://techcrunch.com/video/kioto/518219110/",
-    what:"Made a note-taking app for webpages tied to evernote",
-    when: "4/14",
-    class:"small",
-    why: "Add notes in a webpage and tie it to an evernote note. If you're a site operator, you can include a js snippets so that any visitor can another your content (courses, articles,...) and everyone can see it"
-  },{
-    name:"Grammar parser",
-    link:"https://github.com/mdamien/grammar",
-    source:"https://github.com/mdamien/grammar",
-    what:"Parse grammars with LL(1) and LR(0) methods",
-    when: "4/15",
-    class:"small",
-    why: "Implemented some of Stanford CS143 Compiler course concepts"
-  },{
-    name:"Co-op VR driving game",
-    link:"https://www.youtube.com/watch?v=FxbjsmsSTUU",
-    source:"https://github.com/MDamien/rv01",
-    what:"Play on your drawings",
-    when: "11/14",
-    class:"small",
-    why: "On guy drive a boat, the other shoot! All this stuff with an oculus for each player"
-     + ", a driving wheel for the driver and a Razer Hydra for the shooter! Defend the castle and save the princess!"
-  },{
-    name:"dam.io/real",
-    img:"http://i.imgur.com/MZDI969.png",
-    link:"http://dam.io/real",
-    source:"https://github.com/MDamien/real",
-    what:"Play on your drawings",
-    when: "4/15",
-    why: "Draw something and then play on it. Press P for pigs!"
-  },{
-    name:"Worked at JCDecaux NA in NYC",
-    link:"http://jcdecauxna.com",
-    class:"job",
-    when:"2/14-7/14",
-    img:"http://i.imgur.com/wWaXMzE.png",
-    what:"Software Engineering internship",
-    why:"Made an Android app for the US operations team and deployed it to 100+ operators. Maintained internal management software like sales reporting and operation scheduling",
-    tech:"android,php",
-  },{
-    name:"Worked at Pointvirgule.net",
-    class:"job",
-    img:"http://i.imgur.com/7i1RFzm.png",
-    link:"http://pointvirgule.net",
-    what:"Web dev at a Web Agency",
-    why:"Worked two month, as a summer job, making small and large PHP websites",
-    when:"7/13-8/13",
-  },{
-    name:"French Health Actors Transparency Dataset",
-    link:"http://www.regardscitoyens.org/sunshine/",
-    img:"http://i.imgur.com/TpVeeoC.png",
-    when:"2/15",
-    tech:"python",
-    what:"Extraction of the dataset of gifts from companies to doctors in France",
-    why:"The government released the database of donations from companies to health actors (doctors, surgeons, hospitals,..). The data were behind a clunky interface and you couldn't properly analyse it. So I extracted it with a simple python script.",
-  },{
-    name:'map.dam.io',
-    link: "http://map.dam.io",
-    img: "http://i.imgur.com/99SOLeN.png",
-    what: "Search photos posted online taken near a precise location",
-    when: "7/14 - 8/14",
-    tech: 'python,flask',
-    why: "The Internet is full of publicly available geolocated photos. So I just used a few APIs (Instagram, Flickr, Panoramio and Foursquare) to build a prototype of image search engine by location.\nNow I use it to look into company offices (like Google Zurich), to find pictures of a specific thing (like a graffiti or a building) or to get the mood of a place (when I search an apartment for example)",
-  },{
-    name:'Anonymous discussions boxes',
-    link: "http://github.com/MDamien/boxes",
-    img: "http://i.imgur.com/xRaMn5y.png",
-    what: "Discuss and vote anonymously",
-    when: "5/14 - 6/14",
-    tech: "python,django",
-    why: "This is my most precious project but the one I understand the least. The goal is to discuss with a specific group (employees of a company, citizen of a city, students of a university) freely (so anonymously) and equally (everyone has one voice).\nSo, let's say you're an employee at Dropbox and you want to vote about a company decision freely. Like about firing somebody.\nYou create a box. You filter the access to people with an email @dropbox.com. Then everyone can discuss and vote with an anonynous but unique account."
-  },{
-    name:'dam.io/tantra',
-    class: "small",
-    link: "http://dam.io/tantra",
-    what: "Alternative course chooser interface",
-    when: "8/14",
-    tech: "python,angular.js",
-    why: "I made an interface to choose the semester courses with some cool features: Preview course agenda and rating, only view courses compatibles with the ones already chosen and filtering. Later, the school integrated some of these ideas in their system."
-  },{
-    name:'dam.io/ft',
-    class: "small",
-    link: "http://dam.io/ft",
-    what: "Explore a csv without even uploading it",
-    when: "3/15",
-    tech: "python,react",
-    why: "I like Google Fusion Tables but it's too limited and I can't install it behind a firewall. So I made my own."
-  },{
-    name:"@DickinsonIsBack",
-    link: "https://twitter.com/DickinsonIsBack",
-    img: "http://i.imgur.com/nXpsl01.png",
-    source: "https://github.com/MDamien/twitter-poetry",
-    what: "Automated poetry about trending twitter topics",
-    when: "4/14",
-    tech: "ntlk,scipy,python",
-    why: "The result: Emily Dickinson tweeting poetry about trending twitter topics. \n"+
-    "The process: First, we extract all trending topics on twitter. Then we choose a random hot topic and extract 100 tweets about it. We extract the most representative words of this topic with TF/IDF. Then,based on Emily Dickinson's poetry, we generate new, original, poesy (with a 3-grams and a random seed position). And then tweet it.\n"+
-    "This was made for an AngelHack in Brooklyn with a friend who is specialist of natural language analysis."
-  },{
-    name:"Public DB",
-    link: "http://github.com/MDamien/publicdb",
-    img: "http://i.imgur.com/4C2blYi.png",
-    what: "Create datasets and exploit them via an API",
-    when: "3/14",
-    tech: "python,django",
-    why: "You create a dataset (comments, articles, locations, ...) and it generates a fully-featured REST API for you. It's the idea.\nThis is a simple version of backend-as-a-service (before I discovered it already existed).\nMy first goal was to generate a client-side only admin to interact with any API. In the same vein as the wonderful Django admin."
-  },{
-    name: "Django News",
-    class:"small",
-    link: "http://github.com/MDamien/djangonews",
-    when: "8/13",
-    what: "An HN clone in Django",
-    tech: "python,django",
-    why: "I created this HN clone to learn more about Django and because it was fun to understand the challenges facing HN"
-  },{
-    name:"Summer Job CV",
-    class:"small",
-    when: "6/13",
-    link: "http://dam.io/fun/summerjob/",
-    source: "http://github.com/MDamien/mdamien.github.io/",
-    what: "An interactive resume I made to find a job for Summer 2013",
-    tech: "impress.js,js,css3",
-  },{
-    name: "MT10",
-    class:"small",
-    when:"11/13",
-    link: "http://dam.io/mt10",
-    source: "http://github.com/MDamien/mdamien.github.io/",
-    what: "A mathematics heavy page I made to learn more about fundamental mathematics and cryptology",
-    tech: "js",
-    why: "During a cryptology course (MT10), the professor was alluding during the courses to 'nice things to do'. So I did them. And so I learned a lot about the practical implementation of some of the most fundamental aspects of cryptology."
-  },{
-    name:"El canary",
-    class:"small",
-    link: "http://github.com/MDamien/bouyaka",
-    when: "8/13",
-    what: "A mystery to r/solve",
-    tech: "python,django",
-    why: "Sometimes people say they are right based on a strange page them found on the Internet. So I created this to easy say 'Looks, it's written on the Internet' about anything. You just type 'c.dam.io/vodka_is_better_than_beer' and you get a nice page where this is written. But, to make this less evident I decided to also have an obfuscated version of the url. So, if you do 'c.dam.io/r/rot13_of_your_message'. It delivers the original message. Nice."
-  },{
-    name:"Infinity",
-    link:"https://github.com/MDamien/infinity",
-    img:"http://i.imgur.com/Scfh2YV.png",
-    what: "A infinite depth website to troll google",
-    tech: "python,flask",
-    when: "8/13",
-    why: "After *El canary*, I had the idea of an infinite depth website were it just generate a page with new links to other pages. Google them indexed more than 200 000 pages. I published an article an HN. Got banned by Google."
-  },{
-    name:"Data fusion for Foursquare",
-    when: "4/14",
-    link: "https://github.com/MDamien/foursquare-data-merge",
-    img: "http://i.imgur.com/Km0WQx0.png",
-    source: "https://github.com/MDamien/foursquare-data-merge",
-    what: "Merging data from the Sears API into the data on Foursquare",
-    tech: "python",
-    why: "During an hackathon at WeWork Soho for Sears, I had too much time and I discovered the Foursquare API wich is really nice. So I decided to just correct the data on foursquare via the data found on the Sears API.\nIf you look a the code, there is a custom fuzzy matcher and some scrapping involved. Was really fun."
-  },{
-    name:"Notes Manager",
-    //img:"http://i.imgur.com/WvNV5Uq.png",
-    link:"https://www.youtube.com/watch?v=X9TdTaRQUSg",
-    source: "https://github.com/MDamien/NotesManager",
-    what: "A Qt/C++ software made for a course",
-    class:'small',
-    tech: "qt,c++",
-    when:"4/13",
-    why: "During a course (LO21), we had to programm a note-taking application with C++/Qt and some design patterns. So I just programmed this with a friend. It's there just to show that I also know how to program in C++. And also because I'm proud of this thing."
-  },{
-    name:"Velodyne",
-    when: "10/13",
-    link:"https://github.com/MDamien/velodyne/",
-    class:"small",
-    what: "Using a LIDAR for an automous vehicle",
-    tech: "c++",
-    why: "At my university, we can help the labs to build things. So I got to use the Velodyne (a 3D scanner they put on top of car like the Google Car). Scanning the world to detect the ground and to mesh the point cloud.",
-  },{
-    name:"Pony Synth",
-    class:"small",
-    when: "2/14",
-    link: "http://dam.io/fun/pony",
-    source: "http://github.com/MDamien/mdamien.github.io/",
-    what: "Make & share music with a JS-only synth and composer",
-    why: "For an interview, I had to program a web synth application with python hosted on Google Apps. I did it but I contemplated the idea to do it client-side only.\nSo I played with the Web Audio API and now you can compose and play songs."
-  },{
-    name:"Bus Compiegne",
-    class:"small",
-    link:"https://github.com/MDamien/CompiBus",
-    what: "Bus schedule of my city",
-    when: "5/13",
-    tech: "android",
-    why: "Next to my appartment in Compiegne, there was 3 different bus lines. And I never knew which one to take because I was too lazy to look at the schedule of each lines.\nSo I just scrapped the schedule and made an Android app.\nNow I'm making a new one because this one is obsolete now since the schedule changed.",
-  },{
-name:"Project Google Cardboard",
-img:"http://i.imgur.com/X5Fwviq.png",
-link:"https://www.google.com/get/cardboard/",
-what:"Made and sold 200 Google Cardboard VR mask to students of my school",
-when:"12/14"
-},{
-name:"Internship data exploration",
-img:"http://i.imgur.com/4kxmw98.png",
-what:"Extracted and analysed internships data from my schools",
-when:"12/14",
-},{
-    name:"Hangman",
-    when: "3/13",
-    what: "Simple hangman game",
-    img: "http://i.imgur.com/bORRqpN.png",
-    tech: "android",
-    why: "I was just looking to publish my first app on the Google Play store. So I made a simple (but funny) one, a hangman. No ad, open-source and simple. I surprises me how often I use it."
-  },{
-    name:"GIF my life",
-    what: "Make a timelapse of anything as a GIF", 
-    link:"https://play.google.com/store/apps/details?id=org.cuju.gifmylife&hl=fr_FR",
-    source:"https://github.com/MDamien/GifMyLife",
-    img: "http://i.imgur.com/G9P5rQV.png",
-    tech: "android",
-    when: "5/13",
-    why: "My brother was taking of picture of him every time he opened his laptop. And then he made a nice GIF of it. I decided to do the same but with my phone, taking a picture daily of myself and making a GIF of it with an app.",
-  },{
-    name:"Lego it",
-    class:"small",
-    link: "http://github.com/MDamien/legoit",
-    when: "3/14",
-    what: "A content viewer to see the awesome things made by /u/icanlegothat",
-    tech: "python,django",
-    why: "I like what /u/icanlegothat did on reddit (illustrating reddit posts with legos) but it was hard to browse (especially to get the context wich is really important). So I made a website to automate it and let everyone browse his content easily."
-  },{
-    name:"FabLab UTC",
-    when: "2/11-1/15",
-    link: "http://assos.utc.fr/fablab",
-    img: "http://i.imgur.com/Hs6X7db.jpg",
-    what: "A Hackerspace I created with 3D printers, laser cutters and other cool stuff",
-    tech: "3dprinting,CNC,laser cutting",
-    why: "When I arrived at my university, there was no hackerspace. So I created one following the spirit from the MIT of the FabLab. Starting by building my own 3D printer, then printing things for other people. Now we have a really big space, nice funding and a lot of tools (Laser cutting, CNC, 3D printing, Oculus rift, Arduino).\nI managed to see my vision of what I wanted to see in a engineering school come to life: A place to build things and learn freely."
-  },{
-    name:"Real platformer - first try",
-    //img:"http://i.imgur.com/7ZNYOKx.png",
-    link:"https://www.youtube.com/watch?v=9b1U7cK2Ab0",
-    what:"Transform any drawing or picture into a game",
-    when: "1/13",
-    class: "small",
-    why: "The idea was just to let my little sister draw a world and then let her play with it. Did it in Java with libgdx and then abandonned it, don't know why"
-  }
-  ]
+><))> github
+mdamien
 
-  time_hint = function(d){
-   var m = parseInt(d.split("/")[0])
-   var y = parseInt(d.split('/')[1])
-   return m+y*100;
- }
+><))> cv
+dam.io/cv.pdf
 
- PROJECTS.forEach(function(p){
-  if(p.when){
-    var dates = p.when.split('-');
-    if(dates.length == 1){
-      p.time_hint = time_hint(dates[0])
-    }else{
-      p.time_hint = time_hint(dates[1])
-    }
-  }else{
-    console.log("no time",p.name)
-  }
-})
+><))> twittos
+@dam_io
 
- var app = angular.module('LOLApp', []);
- app.controller('LOLController', function ($scope) {
-  $scope.projects = PROJECTS;
-});
-</script>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'
->
-</body></html>
+><))> cat /dev/random
+blog.dam.io
+
+
+
+
+
+
+
+
+                                                                              ,///////.           ./
+          __                    ___////,,,.._        ,//               __,---//////////,        .///
+         /o \/        __       /O            ``--.._///             ,-'  ) ) ) ) ) )''////_    /////
+<><      \__/\ __    /o \/     \__  \               ,'          _,-' ))`. ) ) ) ) ) ) ) ) )`-.//////
+ <><          /o \/  \__/\      __)  \           ___`.         / ()_)))))\ ) ) ) ) ) ) ) ) )////////
+   <><     __ \__/\_            \____/__,,,---''''  \\\        \____ )))))) ) ) ) ) ) ) ) ) \\\\\\\\
+ <><      /o \/  /o \/                               `\\        `````.)))/ ) ) ) ) ) ) ) ),-`\\\\\\\
+<><       \__/\  \__/\                                           ___,')),') ) ) ) )_),,--'    \\\\\\
+<><       __     __                  ___////,,,.._        ,//   (_______.\\)_),--'"            `\\\\
+>< <><   /o \/  /o \/     __        /O            ``--.._///             -\\\                    `\\\
+><  <><  \__/\  \__/\    /o \/      \__  \               ,'                \\\                     `\
+  <><                    \__/\       __)  \           ___`.
+<><                __                \____/__,,,---''''  \\\
+                  /o \/                                   `\\
+           __     \__/\    ___////,,,.._        ,//                                      ,///////.           ./
+          /o \/           /O            ``--.._///                                __,---//////////,        .///
+          \__/\           \__  \               ,'                              ,-'  ) ) ) ) ) )''////_    /////
+                           __)  \           ___`.                          _,-' ))`. ) ) ) ) ) ) ) ) )`-.//////
+                           \____/__,,,---''''  \\\                        / ()_)))))\ ) ) ) ) ) ) ) ) )////////
+                                                `\\                       \____ )))))) ) ) ) ) ) ) ) ) \\\\\\\\
+                                                                           `````.)))/ ) ) ) ) ) ) ) ),-`\\\\\\\
+                                                                            ___,')),') ) ) ) )_),,--'    \\\\\\
+                                                                           (_______.\\)_),--'"            `\\\\
+                                                                                    -\\\                    `\\\
+                                                                                      \\\                     `\
+
+><(*> rm -rf ~
