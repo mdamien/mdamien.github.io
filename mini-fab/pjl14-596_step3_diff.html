@@ -1,0 +1,3163 @@
+
+<style>
+body {
+    max-width: 700px;
+}
+
+pre {
+    font-family: ubuntu, sans-serif;
+    font-size: 20px;
+}
+</style>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #AAAAAA; }
+.body_background { background-color: #000000; }
+.body_foreground > .bold,.bold > .body_foreground, body.body_foreground > pre > .bold { color: #FFFFFF; font-weight: normal; }
+.inv_foreground { color: #000000; }
+.inv_background { background-color: #AAAAAA; }
+.ansi1 { font-weight: bold; }
+.ansi2 { font-weight: lighter; }
+.ansi3 { font-style: italic; }
+.ansi4 { text-decoration: underline; }
+.ansi5 { text-decoration: blink; }
+.ansi6 { text-decoration: blink; }
+.ansi8 { visibility: hidden; }
+.ansi9 { text-decoration: line-through; }
+.ansi30 { color: #000316; }
+.inv30 { background-color: #000316; }
+.ansi31 { color: #aa0000; }
+.inv31 { background-color: #aa0000; }
+.ansi32 { color: #00aa00; }
+.inv32 { background-color: #00aa00; }
+.ansi33 { color: #aa5500; }
+.inv33 { background-color: #aa5500; }
+.ansi34 { color: #0000aa; }
+.inv34 { background-color: #0000aa; }
+.ansi35 { color: #E850A8; }
+.inv35 { background-color: #E850A8; }
+.ansi36 { color: #00aaaa; }
+.inv36 { background-color: #00aaaa; }
+.ansi37 { color: #F5F1DE; }
+.inv37 { background-color: #F5F1DE; }
+.ansi40 { background-color: #000316; }
+.inv40 { color: #000316; }
+.ansi41 { background-color: #aa0000; }
+.inv41 { color: #aa0000; }
+.ansi42 { background-color: #00aa00; }
+.inv42 { color: #00aa00; }
+.ansi43 { background-color: #aa5500; }
+.inv43 { color: #aa5500; }
+.ansi44 { background-color: #0000aa; }
+.inv44 { color: #0000aa; }
+.ansi45 { background-color: #E850A8; }
+.inv45 { color: #E850A8; }
+.ansi46 { background-color: #00aaaa; }
+.inv46 { color: #00aaaa; }
+.ansi47 { background-color: #F5F1DE; }
+.inv47 { color: #F5F1DE; }
+.ansi38-0 { color: #000316; }
+.inv38-0 { background-color: #000316; }
+.ansi38-1 { color: #aa0000; }
+.inv38-1 { background-color: #aa0000; }
+.ansi38-2 { color: #00aa00; }
+.inv38-2 { background-color: #00aa00; }
+.ansi38-3 { color: #aa5500; }
+.inv38-3 { background-color: #aa5500; }
+.ansi38-4 { color: #0000aa; }
+.inv38-4 { background-color: #0000aa; }
+.ansi38-5 { color: #E850A8; }
+.inv38-5 { background-color: #E850A8; }
+.ansi38-6 { color: #00aaaa; }
+.inv38-6 { background-color: #00aaaa; }
+.ansi38-7 { color: #F5F1DE; }
+.inv38-7 { background-color: #F5F1DE; }
+.ansi38-8 { color: #7f7f7f; }
+.inv38-8 { background-color: #7f7f7f; }
+.ansi38-9 { color: #ff0000; }
+.inv38-9 { background-color: #ff0000; }
+.ansi38-10 { color: #00ff00; }
+.inv38-10 { background-color: #00ff00; }
+.ansi38-11 { color: #ffff00; }
+.inv38-11 { background-color: #ffff00; }
+.ansi38-12 { color: #5c5cff; }
+.inv38-12 { background-color: #5c5cff; }
+.ansi38-13 { color: #ff00ff; }
+.inv38-13 { background-color: #ff00ff; }
+.ansi38-14 { color: #00ffff; }
+.inv38-14 { background-color: #00ffff; }
+.ansi38-15 { color: #ffffff; }
+.inv38-15 { background-color: #ffffff; }
+.ansi48-0 { background-color: #000316; }
+.inv48-0 { color: #000316; }
+.ansi48-1 { background-color: #aa0000; }
+.inv48-1 { color: #aa0000; }
+.ansi48-2 { background-color: #00aa00; }
+.inv48-2 { color: #00aa00; }
+.ansi48-3 { background-color: #aa5500; }
+.inv48-3 { color: #aa5500; }
+.ansi48-4 { background-color: #0000aa; }
+.inv48-4 { color: #0000aa; }
+.ansi48-5 { background-color: #E850A8; }
+.inv48-5 { color: #E850A8; }
+.ansi48-6 { background-color: #00aaaa; }
+.inv48-6 { color: #00aaaa; }
+.ansi48-7 { background-color: #F5F1DE; }
+.inv48-7 { color: #F5F1DE; }
+.ansi48-8 { background-color: #7f7f7f; }
+.inv48-8 { color: #7f7f7f; }
+.ansi48-9 { background-color: #ff0000; }
+.inv48-9 { color: #ff0000; }
+.ansi48-10 { background-color: #00ff00; }
+.inv48-10 { color: #00ff00; }
+.ansi48-11 { background-color: #ffff00; }
+.inv48-11 { color: #ffff00; }
+.ansi48-12 { background-color: #5c5cff; }
+.inv48-12 { color: #5c5cff; }
+.ansi48-13 { background-color: #ff00ff; }
+.inv48-13 { color: #ff00ff; }
+.ansi48-14 { background-color: #00ffff; }
+.inv48-14 { color: #00ffff; }
+.ansi48-15 { background-color: #ffffff; }
+.inv48-15 { color: #ffffff; }
+.ansi38-16 { color: #000000; }
+.inv38-16 { background: #000000; }
+.ansi48-16 { background: #000000; }
+.inv48-16 { color: #000000; }
+.ansi38-17 { color: #00002a; }
+.inv38-17 { background: #00002a; }
+.ansi48-17 { background: #00002a; }
+.inv48-17 { color: #00002a; }
+.ansi38-18 { color: #000054; }
+.inv38-18 { background: #000054; }
+.ansi48-18 { background: #000054; }
+.inv48-18 { color: #000054; }
+.ansi38-19 { color: #00007e; }
+.inv38-19 { background: #00007e; }
+.ansi48-19 { background: #00007e; }
+.inv48-19 { color: #00007e; }
+.ansi38-20 { color: #0000a8; }
+.inv38-20 { background: #0000a8; }
+.ansi48-20 { background: #0000a8; }
+.inv48-20 { color: #0000a8; }
+.ansi38-21 { color: #0000d2; }
+.inv38-21 { background: #0000d2; }
+.ansi48-21 { background: #0000d2; }
+.inv48-21 { color: #0000d2; }
+.ansi38-52 { color: #2a0000; }
+.inv38-52 { background: #2a0000; }
+.ansi48-52 { background: #2a0000; }
+.inv48-52 { color: #2a0000; }
+.ansi38-53 { color: #2a002a; }
+.inv38-53 { background: #2a002a; }
+.ansi48-53 { background: #2a002a; }
+.inv48-53 { color: #2a002a; }
+.ansi38-54 { color: #2a0054; }
+.inv38-54 { background: #2a0054; }
+.ansi48-54 { background: #2a0054; }
+.inv48-54 { color: #2a0054; }
+.ansi38-55 { color: #2a007e; }
+.inv38-55 { background: #2a007e; }
+.ansi48-55 { background: #2a007e; }
+.inv48-55 { color: #2a007e; }
+.ansi38-56 { color: #2a00a8; }
+.inv38-56 { background: #2a00a8; }
+.ansi48-56 { background: #2a00a8; }
+.inv48-56 { color: #2a00a8; }
+.ansi38-57 { color: #2a00d2; }
+.inv38-57 { background: #2a00d2; }
+.ansi48-57 { background: #2a00d2; }
+.inv48-57 { color: #2a00d2; }
+.ansi38-88 { color: #540000; }
+.inv38-88 { background: #540000; }
+.ansi48-88 { background: #540000; }
+.inv48-88 { color: #540000; }
+.ansi38-89 { color: #54002a; }
+.inv38-89 { background: #54002a; }
+.ansi48-89 { background: #54002a; }
+.inv48-89 { color: #54002a; }
+.ansi38-90 { color: #540054; }
+.inv38-90 { background: #540054; }
+.ansi48-90 { background: #540054; }
+.inv48-90 { color: #540054; }
+.ansi38-91 { color: #54007e; }
+.inv38-91 { background: #54007e; }
+.ansi48-91 { background: #54007e; }
+.inv48-91 { color: #54007e; }
+.ansi38-92 { color: #5400a8; }
+.inv38-92 { background: #5400a8; }
+.ansi48-92 { background: #5400a8; }
+.inv48-92 { color: #5400a8; }
+.ansi38-93 { color: #5400d2; }
+.inv38-93 { background: #5400d2; }
+.ansi48-93 { background: #5400d2; }
+.inv48-93 { color: #5400d2; }
+.ansi38-124 { color: #7e0000; }
+.inv38-124 { background: #7e0000; }
+.ansi48-124 { background: #7e0000; }
+.inv48-124 { color: #7e0000; }
+.ansi38-125 { color: #7e002a; }
+.inv38-125 { background: #7e002a; }
+.ansi48-125 { background: #7e002a; }
+.inv48-125 { color: #7e002a; }
+.ansi38-126 { color: #7e0054; }
+.inv38-126 { background: #7e0054; }
+.ansi48-126 { background: #7e0054; }
+.inv48-126 { color: #7e0054; }
+.ansi38-127 { color: #7e007e; }
+.inv38-127 { background: #7e007e; }
+.ansi48-127 { background: #7e007e; }
+.inv48-127 { color: #7e007e; }
+.ansi38-128 { color: #7e00a8; }
+.inv38-128 { background: #7e00a8; }
+.ansi48-128 { background: #7e00a8; }
+.inv48-128 { color: #7e00a8; }
+.ansi38-129 { color: #7e00d2; }
+.inv38-129 { background: #7e00d2; }
+.ansi48-129 { background: #7e00d2; }
+.inv48-129 { color: #7e00d2; }
+.ansi38-160 { color: #a80000; }
+.inv38-160 { background: #a80000; }
+.ansi48-160 { background: #a80000; }
+.inv48-160 { color: #a80000; }
+.ansi38-161 { color: #a8002a; }
+.inv38-161 { background: #a8002a; }
+.ansi48-161 { background: #a8002a; }
+.inv48-161 { color: #a8002a; }
+.ansi38-162 { color: #a80054; }
+.inv38-162 { background: #a80054; }
+.ansi48-162 { background: #a80054; }
+.inv48-162 { color: #a80054; }
+.ansi38-163 { color: #a8007e; }
+.inv38-163 { background: #a8007e; }
+.ansi48-163 { background: #a8007e; }
+.inv48-163 { color: #a8007e; }
+.ansi38-164 { color: #a800a8; }
+.inv38-164 { background: #a800a8; }
+.ansi48-164 { background: #a800a8; }
+.inv48-164 { color: #a800a8; }
+.ansi38-165 { color: #a800d2; }
+.inv38-165 { background: #a800d2; }
+.ansi48-165 { background: #a800d2; }
+.inv48-165 { color: #a800d2; }
+.ansi38-196 { color: #d20000; }
+.inv38-196 { background: #d20000; }
+.ansi48-196 { background: #d20000; }
+.inv48-196 { color: #d20000; }
+.ansi38-197 { color: #d2002a; }
+.inv38-197 { background: #d2002a; }
+.ansi48-197 { background: #d2002a; }
+.inv48-197 { color: #d2002a; }
+.ansi38-198 { color: #d20054; }
+.inv38-198 { background: #d20054; }
+.ansi48-198 { background: #d20054; }
+.inv48-198 { color: #d20054; }
+.ansi38-199 { color: #d2007e; }
+.inv38-199 { background: #d2007e; }
+.ansi48-199 { background: #d2007e; }
+.inv48-199 { color: #d2007e; }
+.ansi38-200 { color: #d200a8; }
+.inv38-200 { background: #d200a8; }
+.ansi48-200 { background: #d200a8; }
+.inv48-200 { color: #d200a8; }
+.ansi38-201 { color: #d200d2; }
+.inv38-201 { background: #d200d2; }
+.ansi48-201 { background: #d200d2; }
+.inv48-201 { color: #d200d2; }
+.ansi38-22 { color: #002a00; }
+.inv38-22 { background: #002a00; }
+.ansi48-22 { background: #002a00; }
+.inv48-22 { color: #002a00; }
+.ansi38-23 { color: #002a2a; }
+.inv38-23 { background: #002a2a; }
+.ansi48-23 { background: #002a2a; }
+.inv48-23 { color: #002a2a; }
+.ansi38-24 { color: #002a54; }
+.inv38-24 { background: #002a54; }
+.ansi48-24 { background: #002a54; }
+.inv48-24 { color: #002a54; }
+.ansi38-25 { color: #002a7e; }
+.inv38-25 { background: #002a7e; }
+.ansi48-25 { background: #002a7e; }
+.inv48-25 { color: #002a7e; }
+.ansi38-26 { color: #002aa8; }
+.inv38-26 { background: #002aa8; }
+.ansi48-26 { background: #002aa8; }
+.inv48-26 { color: #002aa8; }
+.ansi38-27 { color: #002ad2; }
+.inv38-27 { background: #002ad2; }
+.ansi48-27 { background: #002ad2; }
+.inv48-27 { color: #002ad2; }
+.ansi38-58 { color: #2a2a00; }
+.inv38-58 { background: #2a2a00; }
+.ansi48-58 { background: #2a2a00; }
+.inv48-58 { color: #2a2a00; }
+.ansi38-59 { color: #2a2a2a; }
+.inv38-59 { background: #2a2a2a; }
+.ansi48-59 { background: #2a2a2a; }
+.inv48-59 { color: #2a2a2a; }
+.ansi38-60 { color: #2a2a54; }
+.inv38-60 { background: #2a2a54; }
+.ansi48-60 { background: #2a2a54; }
+.inv48-60 { color: #2a2a54; }
+.ansi38-61 { color: #2a2a7e; }
+.inv38-61 { background: #2a2a7e; }
+.ansi48-61 { background: #2a2a7e; }
+.inv48-61 { color: #2a2a7e; }
+.ansi38-62 { color: #2a2aa8; }
+.inv38-62 { background: #2a2aa8; }
+.ansi48-62 { background: #2a2aa8; }
+.inv48-62 { color: #2a2aa8; }
+.ansi38-63 { color: #2a2ad2; }
+.inv38-63 { background: #2a2ad2; }
+.ansi48-63 { background: #2a2ad2; }
+.inv48-63 { color: #2a2ad2; }
+.ansi38-94 { color: #542a00; }
+.inv38-94 { background: #542a00; }
+.ansi48-94 { background: #542a00; }
+.inv48-94 { color: #542a00; }
+.ansi38-95 { color: #542a2a; }
+.inv38-95 { background: #542a2a; }
+.ansi48-95 { background: #542a2a; }
+.inv48-95 { color: #542a2a; }
+.ansi38-96 { color: #542a54; }
+.inv38-96 { background: #542a54; }
+.ansi48-96 { background: #542a54; }
+.inv48-96 { color: #542a54; }
+.ansi38-97 { color: #542a7e; }
+.inv38-97 { background: #542a7e; }
+.ansi48-97 { background: #542a7e; }
+.inv48-97 { color: #542a7e; }
+.ansi38-98 { color: #542aa8; }
+.inv38-98 { background: #542aa8; }
+.ansi48-98 { background: #542aa8; }
+.inv48-98 { color: #542aa8; }
+.ansi38-99 { color: #542ad2; }
+.inv38-99 { background: #542ad2; }
+.ansi48-99 { background: #542ad2; }
+.inv48-99 { color: #542ad2; }
+.ansi38-130 { color: #7e2a00; }
+.inv38-130 { background: #7e2a00; }
+.ansi48-130 { background: #7e2a00; }
+.inv48-130 { color: #7e2a00; }
+.ansi38-131 { color: #7e2a2a; }
+.inv38-131 { background: #7e2a2a; }
+.ansi48-131 { background: #7e2a2a; }
+.inv48-131 { color: #7e2a2a; }
+.ansi38-132 { color: #7e2a54; }
+.inv38-132 { background: #7e2a54; }
+.ansi48-132 { background: #7e2a54; }
+.inv48-132 { color: #7e2a54; }
+.ansi38-133 { color: #7e2a7e; }
+.inv38-133 { background: #7e2a7e; }
+.ansi48-133 { background: #7e2a7e; }
+.inv48-133 { color: #7e2a7e; }
+.ansi38-134 { color: #7e2aa8; }
+.inv38-134 { background: #7e2aa8; }
+.ansi48-134 { background: #7e2aa8; }
+.inv48-134 { color: #7e2aa8; }
+.ansi38-135 { color: #7e2ad2; }
+.inv38-135 { background: #7e2ad2; }
+.ansi48-135 { background: #7e2ad2; }
+.inv48-135 { color: #7e2ad2; }
+.ansi38-166 { color: #a82a00; }
+.inv38-166 { background: #a82a00; }
+.ansi48-166 { background: #a82a00; }
+.inv48-166 { color: #a82a00; }
+.ansi38-167 { color: #a82a2a; }
+.inv38-167 { background: #a82a2a; }
+.ansi48-167 { background: #a82a2a; }
+.inv48-167 { color: #a82a2a; }
+.ansi38-168 { color: #a82a54; }
+.inv38-168 { background: #a82a54; }
+.ansi48-168 { background: #a82a54; }
+.inv48-168 { color: #a82a54; }
+.ansi38-169 { color: #a82a7e; }
+.inv38-169 { background: #a82a7e; }
+.ansi48-169 { background: #a82a7e; }
+.inv48-169 { color: #a82a7e; }
+.ansi38-170 { color: #a82aa8; }
+.inv38-170 { background: #a82aa8; }
+.ansi48-170 { background: #a82aa8; }
+.inv48-170 { color: #a82aa8; }
+.ansi38-171 { color: #a82ad2; }
+.inv38-171 { background: #a82ad2; }
+.ansi48-171 { background: #a82ad2; }
+.inv48-171 { color: #a82ad2; }
+.ansi38-202 { color: #d22a00; }
+.inv38-202 { background: #d22a00; }
+.ansi48-202 { background: #d22a00; }
+.inv48-202 { color: #d22a00; }
+.ansi38-203 { color: #d22a2a; }
+.inv38-203 { background: #d22a2a; }
+.ansi48-203 { background: #d22a2a; }
+.inv48-203 { color: #d22a2a; }
+.ansi38-204 { color: #d22a54; }
+.inv38-204 { background: #d22a54; }
+.ansi48-204 { background: #d22a54; }
+.inv48-204 { color: #d22a54; }
+.ansi38-205 { color: #d22a7e; }
+.inv38-205 { background: #d22a7e; }
+.ansi48-205 { background: #d22a7e; }
+.inv48-205 { color: #d22a7e; }
+.ansi38-206 { color: #d22aa8; }
+.inv38-206 { background: #d22aa8; }
+.ansi48-206 { background: #d22aa8; }
+.inv48-206 { color: #d22aa8; }
+.ansi38-207 { color: #d22ad2; }
+.inv38-207 { background: #d22ad2; }
+.ansi48-207 { background: #d22ad2; }
+.inv48-207 { color: #d22ad2; }
+.ansi38-28 { color: #005400; }
+.inv38-28 { background: #005400; }
+.ansi48-28 { background: #005400; }
+.inv48-28 { color: #005400; }
+.ansi38-29 { color: #00542a; }
+.inv38-29 { background: #00542a; }
+.ansi48-29 { background: #00542a; }
+.inv48-29 { color: #00542a; }
+.ansi38-30 { color: #005454; }
+.inv38-30 { background: #005454; }
+.ansi48-30 { background: #005454; }
+.inv48-30 { color: #005454; }
+.ansi38-31 { color: #00547e; }
+.inv38-31 { background: #00547e; }
+.ansi48-31 { background: #00547e; }
+.inv48-31 { color: #00547e; }
+.ansi38-32 { color: #0054a8; }
+.inv38-32 { background: #0054a8; }
+.ansi48-32 { background: #0054a8; }
+.inv48-32 { color: #0054a8; }
+.ansi38-33 { color: #0054d2; }
+.inv38-33 { background: #0054d2; }
+.ansi48-33 { background: #0054d2; }
+.inv48-33 { color: #0054d2; }
+.ansi38-64 { color: #2a5400; }
+.inv38-64 { background: #2a5400; }
+.ansi48-64 { background: #2a5400; }
+.inv48-64 { color: #2a5400; }
+.ansi38-65 { color: #2a542a; }
+.inv38-65 { background: #2a542a; }
+.ansi48-65 { background: #2a542a; }
+.inv48-65 { color: #2a542a; }
+.ansi38-66 { color: #2a5454; }
+.inv38-66 { background: #2a5454; }
+.ansi48-66 { background: #2a5454; }
+.inv48-66 { color: #2a5454; }
+.ansi38-67 { color: #2a547e; }
+.inv38-67 { background: #2a547e; }
+.ansi48-67 { background: #2a547e; }
+.inv48-67 { color: #2a547e; }
+.ansi38-68 { color: #2a54a8; }
+.inv38-68 { background: #2a54a8; }
+.ansi48-68 { background: #2a54a8; }
+.inv48-68 { color: #2a54a8; }
+.ansi38-69 { color: #2a54d2; }
+.inv38-69 { background: #2a54d2; }
+.ansi48-69 { background: #2a54d2; }
+.inv48-69 { color: #2a54d2; }
+.ansi38-100 { color: #545400; }
+.inv38-100 { background: #545400; }
+.ansi48-100 { background: #545400; }
+.inv48-100 { color: #545400; }
+.ansi38-101 { color: #54542a; }
+.inv38-101 { background: #54542a; }
+.ansi48-101 { background: #54542a; }
+.inv48-101 { color: #54542a; }
+.ansi38-102 { color: #545454; }
+.inv38-102 { background: #545454; }
+.ansi48-102 { background: #545454; }
+.inv48-102 { color: #545454; }
+.ansi38-103 { color: #54547e; }
+.inv38-103 { background: #54547e; }
+.ansi48-103 { background: #54547e; }
+.inv48-103 { color: #54547e; }
+.ansi38-104 { color: #5454a8; }
+.inv38-104 { background: #5454a8; }
+.ansi48-104 { background: #5454a8; }
+.inv48-104 { color: #5454a8; }
+.ansi38-105 { color: #5454d2; }
+.inv38-105 { background: #5454d2; }
+.ansi48-105 { background: #5454d2; }
+.inv48-105 { color: #5454d2; }
+.ansi38-136 { color: #7e5400; }
+.inv38-136 { background: #7e5400; }
+.ansi48-136 { background: #7e5400; }
+.inv48-136 { color: #7e5400; }
+.ansi38-137 { color: #7e542a; }
+.inv38-137 { background: #7e542a; }
+.ansi48-137 { background: #7e542a; }
+.inv48-137 { color: #7e542a; }
+.ansi38-138 { color: #7e5454; }
+.inv38-138 { background: #7e5454; }
+.ansi48-138 { background: #7e5454; }
+.inv48-138 { color: #7e5454; }
+.ansi38-139 { color: #7e547e; }
+.inv38-139 { background: #7e547e; }
+.ansi48-139 { background: #7e547e; }
+.inv48-139 { color: #7e547e; }
+.ansi38-140 { color: #7e54a8; }
+.inv38-140 { background: #7e54a8; }
+.ansi48-140 { background: #7e54a8; }
+.inv48-140 { color: #7e54a8; }
+.ansi38-141 { color: #7e54d2; }
+.inv38-141 { background: #7e54d2; }
+.ansi48-141 { background: #7e54d2; }
+.inv48-141 { color: #7e54d2; }
+.ansi38-172 { color: #a85400; }
+.inv38-172 { background: #a85400; }
+.ansi48-172 { background: #a85400; }
+.inv48-172 { color: #a85400; }
+.ansi38-173 { color: #a8542a; }
+.inv38-173 { background: #a8542a; }
+.ansi48-173 { background: #a8542a; }
+.inv48-173 { color: #a8542a; }
+.ansi38-174 { color: #a85454; }
+.inv38-174 { background: #a85454; }
+.ansi48-174 { background: #a85454; }
+.inv48-174 { color: #a85454; }
+.ansi38-175 { color: #a8547e; }
+.inv38-175 { background: #a8547e; }
+.ansi48-175 { background: #a8547e; }
+.inv48-175 { color: #a8547e; }
+.ansi38-176 { color: #a854a8; }
+.inv38-176 { background: #a854a8; }
+.ansi48-176 { background: #a854a8; }
+.inv48-176 { color: #a854a8; }
+.ansi38-177 { color: #a854d2; }
+.inv38-177 { background: #a854d2; }
+.ansi48-177 { background: #a854d2; }
+.inv48-177 { color: #a854d2; }
+.ansi38-208 { color: #d25400; }
+.inv38-208 { background: #d25400; }
+.ansi48-208 { background: #d25400; }
+.inv48-208 { color: #d25400; }
+.ansi38-209 { color: #d2542a; }
+.inv38-209 { background: #d2542a; }
+.ansi48-209 { background: #d2542a; }
+.inv48-209 { color: #d2542a; }
+.ansi38-210 { color: #d25454; }
+.inv38-210 { background: #d25454; }
+.ansi48-210 { background: #d25454; }
+.inv48-210 { color: #d25454; }
+.ansi38-211 { color: #d2547e; }
+.inv38-211 { background: #d2547e; }
+.ansi48-211 { background: #d2547e; }
+.inv48-211 { color: #d2547e; }
+.ansi38-212 { color: #d254a8; }
+.inv38-212 { background: #d254a8; }
+.ansi48-212 { background: #d254a8; }
+.inv48-212 { color: #d254a8; }
+.ansi38-213 { color: #d254d2; }
+.inv38-213 { background: #d254d2; }
+.ansi48-213 { background: #d254d2; }
+.inv48-213 { color: #d254d2; }
+.ansi38-34 { color: #007e00; }
+.inv38-34 { background: #007e00; }
+.ansi48-34 { background: #007e00; }
+.inv48-34 { color: #007e00; }
+.ansi38-35 { color: #007e2a; }
+.inv38-35 { background: #007e2a; }
+.ansi48-35 { background: #007e2a; }
+.inv48-35 { color: #007e2a; }
+.ansi38-36 { color: #007e54; }
+.inv38-36 { background: #007e54; }
+.ansi48-36 { background: #007e54; }
+.inv48-36 { color: #007e54; }
+.ansi38-37 { color: #007e7e; }
+.inv38-37 { background: #007e7e; }
+.ansi48-37 { background: #007e7e; }
+.inv48-37 { color: #007e7e; }
+.ansi38-38 { color: #007ea8; }
+.inv38-38 { background: #007ea8; }
+.ansi48-38 { background: #007ea8; }
+.inv48-38 { color: #007ea8; }
+.ansi38-39 { color: #007ed2; }
+.inv38-39 { background: #007ed2; }
+.ansi48-39 { background: #007ed2; }
+.inv48-39 { color: #007ed2; }
+.ansi38-70 { color: #2a7e00; }
+.inv38-70 { background: #2a7e00; }
+.ansi48-70 { background: #2a7e00; }
+.inv48-70 { color: #2a7e00; }
+.ansi38-71 { color: #2a7e2a; }
+.inv38-71 { background: #2a7e2a; }
+.ansi48-71 { background: #2a7e2a; }
+.inv48-71 { color: #2a7e2a; }
+.ansi38-72 { color: #2a7e54; }
+.inv38-72 { background: #2a7e54; }
+.ansi48-72 { background: #2a7e54; }
+.inv48-72 { color: #2a7e54; }
+.ansi38-73 { color: #2a7e7e; }
+.inv38-73 { background: #2a7e7e; }
+.ansi48-73 { background: #2a7e7e; }
+.inv48-73 { color: #2a7e7e; }
+.ansi38-74 { color: #2a7ea8; }
+.inv38-74 { background: #2a7ea8; }
+.ansi48-74 { background: #2a7ea8; }
+.inv48-74 { color: #2a7ea8; }
+.ansi38-75 { color: #2a7ed2; }
+.inv38-75 { background: #2a7ed2; }
+.ansi48-75 { background: #2a7ed2; }
+.inv48-75 { color: #2a7ed2; }
+.ansi38-106 { color: #547e00; }
+.inv38-106 { background: #547e00; }
+.ansi48-106 { background: #547e00; }
+.inv48-106 { color: #547e00; }
+.ansi38-107 { color: #547e2a; }
+.inv38-107 { background: #547e2a; }
+.ansi48-107 { background: #547e2a; }
+.inv48-107 { color: #547e2a; }
+.ansi38-108 { color: #547e54; }
+.inv38-108 { background: #547e54; }
+.ansi48-108 { background: #547e54; }
+.inv48-108 { color: #547e54; }
+.ansi38-109 { color: #547e7e; }
+.inv38-109 { background: #547e7e; }
+.ansi48-109 { background: #547e7e; }
+.inv48-109 { color: #547e7e; }
+.ansi38-110 { color: #547ea8; }
+.inv38-110 { background: #547ea8; }
+.ansi48-110 { background: #547ea8; }
+.inv48-110 { color: #547ea8; }
+.ansi38-111 { color: #547ed2; }
+.inv38-111 { background: #547ed2; }
+.ansi48-111 { background: #547ed2; }
+.inv48-111 { color: #547ed2; }
+.ansi38-142 { color: #7e7e00; }
+.inv38-142 { background: #7e7e00; }
+.ansi48-142 { background: #7e7e00; }
+.inv48-142 { color: #7e7e00; }
+.ansi38-143 { color: #7e7e2a; }
+.inv38-143 { background: #7e7e2a; }
+.ansi48-143 { background: #7e7e2a; }
+.inv48-143 { color: #7e7e2a; }
+.ansi38-144 { color: #7e7e54; }
+.inv38-144 { background: #7e7e54; }
+.ansi48-144 { background: #7e7e54; }
+.inv48-144 { color: #7e7e54; }
+.ansi38-145 { color: #7e7e7e; }
+.inv38-145 { background: #7e7e7e; }
+.ansi48-145 { background: #7e7e7e; }
+.inv48-145 { color: #7e7e7e; }
+.ansi38-146 { color: #7e7ea8; }
+.inv38-146 { background: #7e7ea8; }
+.ansi48-146 { background: #7e7ea8; }
+.inv48-146 { color: #7e7ea8; }
+.ansi38-147 { color: #7e7ed2; }
+.inv38-147 { background: #7e7ed2; }
+.ansi48-147 { background: #7e7ed2; }
+.inv48-147 { color: #7e7ed2; }
+.ansi38-178 { color: #a87e00; }
+.inv38-178 { background: #a87e00; }
+.ansi48-178 { background: #a87e00; }
+.inv48-178 { color: #a87e00; }
+.ansi38-179 { color: #a87e2a; }
+.inv38-179 { background: #a87e2a; }
+.ansi48-179 { background: #a87e2a; }
+.inv48-179 { color: #a87e2a; }
+.ansi38-180 { color: #a87e54; }
+.inv38-180 { background: #a87e54; }
+.ansi48-180 { background: #a87e54; }
+.inv48-180 { color: #a87e54; }
+.ansi38-181 { color: #a87e7e; }
+.inv38-181 { background: #a87e7e; }
+.ansi48-181 { background: #a87e7e; }
+.inv48-181 { color: #a87e7e; }
+.ansi38-182 { color: #a87ea8; }
+.inv38-182 { background: #a87ea8; }
+.ansi48-182 { background: #a87ea8; }
+.inv48-182 { color: #a87ea8; }
+.ansi38-183 { color: #a87ed2; }
+.inv38-183 { background: #a87ed2; }
+.ansi48-183 { background: #a87ed2; }
+.inv48-183 { color: #a87ed2; }
+.ansi38-214 { color: #d27e00; }
+.inv38-214 { background: #d27e00; }
+.ansi48-214 { background: #d27e00; }
+.inv48-214 { color: #d27e00; }
+.ansi38-215 { color: #d27e2a; }
+.inv38-215 { background: #d27e2a; }
+.ansi48-215 { background: #d27e2a; }
+.inv48-215 { color: #d27e2a; }
+.ansi38-216 { color: #d27e54; }
+.inv38-216 { background: #d27e54; }
+.ansi48-216 { background: #d27e54; }
+.inv48-216 { color: #d27e54; }
+.ansi38-217 { color: #d27e7e; }
+.inv38-217 { background: #d27e7e; }
+.ansi48-217 { background: #d27e7e; }
+.inv48-217 { color: #d27e7e; }
+.ansi38-218 { color: #d27ea8; }
+.inv38-218 { background: #d27ea8; }
+.ansi48-218 { background: #d27ea8; }
+.inv48-218 { color: #d27ea8; }
+.ansi38-219 { color: #d27ed2; }
+.inv38-219 { background: #d27ed2; }
+.ansi48-219 { background: #d27ed2; }
+.inv48-219 { color: #d27ed2; }
+.ansi38-40 { color: #00a800; }
+.inv38-40 { background: #00a800; }
+.ansi48-40 { background: #00a800; }
+.inv48-40 { color: #00a800; }
+.ansi38-41 { color: #00a82a; }
+.inv38-41 { background: #00a82a; }
+.ansi48-41 { background: #00a82a; }
+.inv48-41 { color: #00a82a; }
+.ansi38-42 { color: #00a854; }
+.inv38-42 { background: #00a854; }
+.ansi48-42 { background: #00a854; }
+.inv48-42 { color: #00a854; }
+.ansi38-43 { color: #00a87e; }
+.inv38-43 { background: #00a87e; }
+.ansi48-43 { background: #00a87e; }
+.inv48-43 { color: #00a87e; }
+.ansi38-44 { color: #00a8a8; }
+.inv38-44 { background: #00a8a8; }
+.ansi48-44 { background: #00a8a8; }
+.inv48-44 { color: #00a8a8; }
+.ansi38-45 { color: #00a8d2; }
+.inv38-45 { background: #00a8d2; }
+.ansi48-45 { background: #00a8d2; }
+.inv48-45 { color: #00a8d2; }
+.ansi38-76 { color: #2aa800; }
+.inv38-76 { background: #2aa800; }
+.ansi48-76 { background: #2aa800; }
+.inv48-76 { color: #2aa800; }
+.ansi38-77 { color: #2aa82a; }
+.inv38-77 { background: #2aa82a; }
+.ansi48-77 { background: #2aa82a; }
+.inv48-77 { color: #2aa82a; }
+.ansi38-78 { color: #2aa854; }
+.inv38-78 { background: #2aa854; }
+.ansi48-78 { background: #2aa854; }
+.inv48-78 { color: #2aa854; }
+.ansi38-79 { color: #2aa87e; }
+.inv38-79 { background: #2aa87e; }
+.ansi48-79 { background: #2aa87e; }
+.inv48-79 { color: #2aa87e; }
+.ansi38-80 { color: #2aa8a8; }
+.inv38-80 { background: #2aa8a8; }
+.ansi48-80 { background: #2aa8a8; }
+.inv48-80 { color: #2aa8a8; }
+.ansi38-81 { color: #2aa8d2; }
+.inv38-81 { background: #2aa8d2; }
+.ansi48-81 { background: #2aa8d2; }
+.inv48-81 { color: #2aa8d2; }
+.ansi38-112 { color: #54a800; }
+.inv38-112 { background: #54a800; }
+.ansi48-112 { background: #54a800; }
+.inv48-112 { color: #54a800; }
+.ansi38-113 { color: #54a82a; }
+.inv38-113 { background: #54a82a; }
+.ansi48-113 { background: #54a82a; }
+.inv48-113 { color: #54a82a; }
+.ansi38-114 { color: #54a854; }
+.inv38-114 { background: #54a854; }
+.ansi48-114 { background: #54a854; }
+.inv48-114 { color: #54a854; }
+.ansi38-115 { color: #54a87e; }
+.inv38-115 { background: #54a87e; }
+.ansi48-115 { background: #54a87e; }
+.inv48-115 { color: #54a87e; }
+.ansi38-116 { color: #54a8a8; }
+.inv38-116 { background: #54a8a8; }
+.ansi48-116 { background: #54a8a8; }
+.inv48-116 { color: #54a8a8; }
+.ansi38-117 { color: #54a8d2; }
+.inv38-117 { background: #54a8d2; }
+.ansi48-117 { background: #54a8d2; }
+.inv48-117 { color: #54a8d2; }
+.ansi38-148 { color: #7ea800; }
+.inv38-148 { background: #7ea800; }
+.ansi48-148 { background: #7ea800; }
+.inv48-148 { color: #7ea800; }
+.ansi38-149 { color: #7ea82a; }
+.inv38-149 { background: #7ea82a; }
+.ansi48-149 { background: #7ea82a; }
+.inv48-149 { color: #7ea82a; }
+.ansi38-150 { color: #7ea854; }
+.inv38-150 { background: #7ea854; }
+.ansi48-150 { background: #7ea854; }
+.inv48-150 { color: #7ea854; }
+.ansi38-151 { color: #7ea87e; }
+.inv38-151 { background: #7ea87e; }
+.ansi48-151 { background: #7ea87e; }
+.inv48-151 { color: #7ea87e; }
+.ansi38-152 { color: #7ea8a8; }
+.inv38-152 { background: #7ea8a8; }
+.ansi48-152 { background: #7ea8a8; }
+.inv48-152 { color: #7ea8a8; }
+.ansi38-153 { color: #7ea8d2; }
+.inv38-153 { background: #7ea8d2; }
+.ansi48-153 { background: #7ea8d2; }
+.inv48-153 { color: #7ea8d2; }
+.ansi38-184 { color: #a8a800; }
+.inv38-184 { background: #a8a800; }
+.ansi48-184 { background: #a8a800; }
+.inv48-184 { color: #a8a800; }
+.ansi38-185 { color: #a8a82a; }
+.inv38-185 { background: #a8a82a; }
+.ansi48-185 { background: #a8a82a; }
+.inv48-185 { color: #a8a82a; }
+.ansi38-186 { color: #a8a854; }
+.inv38-186 { background: #a8a854; }
+.ansi48-186 { background: #a8a854; }
+.inv48-186 { color: #a8a854; }
+.ansi38-187 { color: #a8a87e; }
+.inv38-187 { background: #a8a87e; }
+.ansi48-187 { background: #a8a87e; }
+.inv48-187 { color: #a8a87e; }
+.ansi38-188 { color: #a8a8a8; }
+.inv38-188 { background: #a8a8a8; }
+.ansi48-188 { background: #a8a8a8; }
+.inv48-188 { color: #a8a8a8; }
+.ansi38-189 { color: #a8a8d2; }
+.inv38-189 { background: #a8a8d2; }
+.ansi48-189 { background: #a8a8d2; }
+.inv48-189 { color: #a8a8d2; }
+.ansi38-220 { color: #d2a800; }
+.inv38-220 { background: #d2a800; }
+.ansi48-220 { background: #d2a800; }
+.inv48-220 { color: #d2a800; }
+.ansi38-221 { color: #d2a82a; }
+.inv38-221 { background: #d2a82a; }
+.ansi48-221 { background: #d2a82a; }
+.inv48-221 { color: #d2a82a; }
+.ansi38-222 { color: #d2a854; }
+.inv38-222 { background: #d2a854; }
+.ansi48-222 { background: #d2a854; }
+.inv48-222 { color: #d2a854; }
+.ansi38-223 { color: #d2a87e; }
+.inv38-223 { background: #d2a87e; }
+.ansi48-223 { background: #d2a87e; }
+.inv48-223 { color: #d2a87e; }
+.ansi38-224 { color: #d2a8a8; }
+.inv38-224 { background: #d2a8a8; }
+.ansi48-224 { background: #d2a8a8; }
+.inv48-224 { color: #d2a8a8; }
+.ansi38-225 { color: #d2a8d2; }
+.inv38-225 { background: #d2a8d2; }
+.ansi48-225 { background: #d2a8d2; }
+.inv48-225 { color: #d2a8d2; }
+.ansi38-46 { color: #00d200; }
+.inv38-46 { background: #00d200; }
+.ansi48-46 { background: #00d200; }
+.inv48-46 { color: #00d200; }
+.ansi38-47 { color: #00d22a; }
+.inv38-47 { background: #00d22a; }
+.ansi48-47 { background: #00d22a; }
+.inv48-47 { color: #00d22a; }
+.ansi38-48 { color: #00d254; }
+.inv38-48 { background: #00d254; }
+.ansi48-48 { background: #00d254; }
+.inv48-48 { color: #00d254; }
+.ansi38-49 { color: #00d27e; }
+.inv38-49 { background: #00d27e; }
+.ansi48-49 { background: #00d27e; }
+.inv48-49 { color: #00d27e; }
+.ansi38-50 { color: #00d2a8; }
+.inv38-50 { background: #00d2a8; }
+.ansi48-50 { background: #00d2a8; }
+.inv48-50 { color: #00d2a8; }
+.ansi38-51 { color: #00d2d2; }
+.inv38-51 { background: #00d2d2; }
+.ansi48-51 { background: #00d2d2; }
+.inv48-51 { color: #00d2d2; }
+.ansi38-82 { color: #2ad200; }
+.inv38-82 { background: #2ad200; }
+.ansi48-82 { background: #2ad200; }
+.inv48-82 { color: #2ad200; }
+.ansi38-83 { color: #2ad22a; }
+.inv38-83 { background: #2ad22a; }
+.ansi48-83 { background: #2ad22a; }
+.inv48-83 { color: #2ad22a; }
+.ansi38-84 { color: #2ad254; }
+.inv38-84 { background: #2ad254; }
+.ansi48-84 { background: #2ad254; }
+.inv48-84 { color: #2ad254; }
+.ansi38-85 { color: #2ad27e; }
+.inv38-85 { background: #2ad27e; }
+.ansi48-85 { background: #2ad27e; }
+.inv48-85 { color: #2ad27e; }
+.ansi38-86 { color: #2ad2a8; }
+.inv38-86 { background: #2ad2a8; }
+.ansi48-86 { background: #2ad2a8; }
+.inv48-86 { color: #2ad2a8; }
+.ansi38-87 { color: #2ad2d2; }
+.inv38-87 { background: #2ad2d2; }
+.ansi48-87 { background: #2ad2d2; }
+.inv48-87 { color: #2ad2d2; }
+.ansi38-118 { color: #54d200; }
+.inv38-118 { background: #54d200; }
+.ansi48-118 { background: #54d200; }
+.inv48-118 { color: #54d200; }
+.ansi38-119 { color: #54d22a; }
+.inv38-119 { background: #54d22a; }
+.ansi48-119 { background: #54d22a; }
+.inv48-119 { color: #54d22a; }
+.ansi38-120 { color: #54d254; }
+.inv38-120 { background: #54d254; }
+.ansi48-120 { background: #54d254; }
+.inv48-120 { color: #54d254; }
+.ansi38-121 { color: #54d27e; }
+.inv38-121 { background: #54d27e; }
+.ansi48-121 { background: #54d27e; }
+.inv48-121 { color: #54d27e; }
+.ansi38-122 { color: #54d2a8; }
+.inv38-122 { background: #54d2a8; }
+.ansi48-122 { background: #54d2a8; }
+.inv48-122 { color: #54d2a8; }
+.ansi38-123 { color: #54d2d2; }
+.inv38-123 { background: #54d2d2; }
+.ansi48-123 { background: #54d2d2; }
+.inv48-123 { color: #54d2d2; }
+.ansi38-154 { color: #7ed200; }
+.inv38-154 { background: #7ed200; }
+.ansi48-154 { background: #7ed200; }
+.inv48-154 { color: #7ed200; }
+.ansi38-155 { color: #7ed22a; }
+.inv38-155 { background: #7ed22a; }
+.ansi48-155 { background: #7ed22a; }
+.inv48-155 { color: #7ed22a; }
+.ansi38-156 { color: #7ed254; }
+.inv38-156 { background: #7ed254; }
+.ansi48-156 { background: #7ed254; }
+.inv48-156 { color: #7ed254; }
+.ansi38-157 { color: #7ed27e; }
+.inv38-157 { background: #7ed27e; }
+.ansi48-157 { background: #7ed27e; }
+.inv48-157 { color: #7ed27e; }
+.ansi38-158 { color: #7ed2a8; }
+.inv38-158 { background: #7ed2a8; }
+.ansi48-158 { background: #7ed2a8; }
+.inv48-158 { color: #7ed2a8; }
+.ansi38-159 { color: #7ed2d2; }
+.inv38-159 { background: #7ed2d2; }
+.ansi48-159 { background: #7ed2d2; }
+.inv48-159 { color: #7ed2d2; }
+.ansi38-190 { color: #a8d200; }
+.inv38-190 { background: #a8d200; }
+.ansi48-190 { background: #a8d200; }
+.inv48-190 { color: #a8d200; }
+.ansi38-191 { color: #a8d22a; }
+.inv38-191 { background: #a8d22a; }
+.ansi48-191 { background: #a8d22a; }
+.inv48-191 { color: #a8d22a; }
+.ansi38-192 { color: #a8d254; }
+.inv38-192 { background: #a8d254; }
+.ansi48-192 { background: #a8d254; }
+.inv48-192 { color: #a8d254; }
+.ansi38-193 { color: #a8d27e; }
+.inv38-193 { background: #a8d27e; }
+.ansi48-193 { background: #a8d27e; }
+.inv48-193 { color: #a8d27e; }
+.ansi38-194 { color: #a8d2a8; }
+.inv38-194 { background: #a8d2a8; }
+.ansi48-194 { background: #a8d2a8; }
+.inv48-194 { color: #a8d2a8; }
+.ansi38-195 { color: #a8d2d2; }
+.inv38-195 { background: #a8d2d2; }
+.ansi48-195 { background: #a8d2d2; }
+.inv48-195 { color: #a8d2d2; }
+.ansi38-226 { color: #d2d200; }
+.inv38-226 { background: #d2d200; }
+.ansi48-226 { background: #d2d200; }
+.inv48-226 { color: #d2d200; }
+.ansi38-227 { color: #d2d22a; }
+.inv38-227 { background: #d2d22a; }
+.ansi48-227 { background: #d2d22a; }
+.inv48-227 { color: #d2d22a; }
+.ansi38-228 { color: #d2d254; }
+.inv38-228 { background: #d2d254; }
+.ansi48-228 { background: #d2d254; }
+.inv48-228 { color: #d2d254; }
+.ansi38-229 { color: #d2d27e; }
+.inv38-229 { background: #d2d27e; }
+.ansi48-229 { background: #d2d27e; }
+.inv48-229 { color: #d2d27e; }
+.ansi38-230 { color: #d2d2a8; }
+.inv38-230 { background: #d2d2a8; }
+.ansi48-230 { background: #d2d2a8; }
+.inv48-230 { color: #d2d2a8; }
+.ansi38-231 { color: #d2d2d2; }
+.inv38-231 { background: #d2d2d2; }
+.ansi48-231 { background: #d2d2d2; }
+.inv48-231 { color: #d2d2d2; }
+.ansi38-232 { color: #080808; }
+.inv38-232 { background: #080808; }
+.ansi48-232 { background: #080808; }
+.inv48-232 { color: #080808; }
+.ansi38-233 { color: #121212; }
+.inv38-233 { background: #121212; }
+.ansi48-233 { background: #121212; }
+.inv48-233 { color: #121212; }
+.ansi38-234 { color: #1c1c1c; }
+.inv38-234 { background: #1c1c1c; }
+.ansi48-234 { background: #1c1c1c; }
+.inv48-234 { color: #1c1c1c; }
+.ansi38-235 { color: #262626; }
+.inv38-235 { background: #262626; }
+.ansi48-235 { background: #262626; }
+.inv48-235 { color: #262626; }
+.ansi38-236 { color: #303030; }
+.inv38-236 { background: #303030; }
+.ansi48-236 { background: #303030; }
+.inv48-236 { color: #303030; }
+.ansi38-237 { color: #3a3a3a; }
+.inv38-237 { background: #3a3a3a; }
+.ansi48-237 { background: #3a3a3a; }
+.inv48-237 { color: #3a3a3a; }
+.ansi38-238 { color: #444444; }
+.inv38-238 { background: #444444; }
+.ansi48-238 { background: #444444; }
+.inv48-238 { color: #444444; }
+.ansi38-239 { color: #4e4e4e; }
+.inv38-239 { background: #4e4e4e; }
+.ansi48-239 { background: #4e4e4e; }
+.inv48-239 { color: #4e4e4e; }
+.ansi38-240 { color: #585858; }
+.inv38-240 { background: #585858; }
+.ansi48-240 { background: #585858; }
+.inv48-240 { color: #585858; }
+.ansi38-241 { color: #626262; }
+.inv38-241 { background: #626262; }
+.ansi48-241 { background: #626262; }
+.inv48-241 { color: #626262; }
+.ansi38-242 { color: #6c6c6c; }
+.inv38-242 { background: #6c6c6c; }
+.ansi48-242 { background: #6c6c6c; }
+.inv48-242 { color: #6c6c6c; }
+.ansi38-243 { color: #767676; }
+.inv38-243 { background: #767676; }
+.ansi48-243 { background: #767676; }
+.inv48-243 { color: #767676; }
+.ansi38-244 { color: #808080; }
+.inv38-244 { background: #808080; }
+.ansi48-244 { background: #808080; }
+.inv48-244 { color: #808080; }
+.ansi38-245 { color: #8a8a8a; }
+.inv38-245 { background: #8a8a8a; }
+.ansi48-245 { background: #8a8a8a; }
+.inv48-245 { color: #8a8a8a; }
+.ansi38-246 { color: #949494; }
+.inv38-246 { background: #949494; }
+.ansi48-246 { background: #949494; }
+.inv48-246 { color: #949494; }
+.ansi38-247 { color: #9e9e9e; }
+.inv38-247 { background: #9e9e9e; }
+.ansi48-247 { background: #9e9e9e; }
+.inv48-247 { color: #9e9e9e; }
+.ansi38-248 { color: #a8a8a8; }
+.inv38-248 { background: #a8a8a8; }
+.ansi48-248 { background: #a8a8a8; }
+.inv48-248 { color: #a8a8a8; }
+.ansi38-249 { color: #b2b2b2; }
+.inv38-249 { background: #b2b2b2; }
+.ansi48-249 { background: #b2b2b2; }
+.inv48-249 { color: #b2b2b2; }
+.ansi38-250 { color: #bcbcbc; }
+.inv38-250 { background: #bcbcbc; }
+.ansi48-250 { background: #bcbcbc; }
+.inv48-250 { color: #bcbcbc; }
+.ansi38-251 { color: #c6c6c6; }
+.inv38-251 { background: #c6c6c6; }
+.ansi48-251 { background: #c6c6c6; }
+.inv48-251 { color: #c6c6c6; }
+.ansi38-252 { color: #d0d0d0; }
+.inv38-252 { background: #d0d0d0; }
+.ansi48-252 { background: #d0d0d0; }
+.inv48-252 { color: #d0d0d0; }
+.ansi38-253 { color: #dadada; }
+.inv38-253 { background: #dadada; }
+.ansi48-253 { background: #dadada; }
+.inv48-253 { color: #dadada; }
+.ansi38-254 { color: #e4e4e4; }
+.inv38-254 { background: #e4e4e4; }
+.ansi48-254 { background: #e4e4e4; }
+.inv48-254 { color: #e4e4e4; }
+.ansi38-255 { color: #eeeeee; }
+.inv38-255 { background: #eeeeee; }
+.ansi48-255 { background: #eeeeee; }
+.inv48-255 { color: #eeeeee; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content">
+
+liminaire
+――――
+
+Le solde structurel et le solde effectif de l'ensemble des administrations publiques résultant de l'exécution de l'année 2014 s'établissent comme suit :
+(En points de produit intérieur brut)
+Exécution 2014
+Soldes prévus par la loi de programmation des finances publiques pour les années 2014 à 2019
+Écarts aux soldes prévus <span class="ansi1 ansi31">par la</span> <span class="ansi1 ansi32">parla</span> loi de programmation des finances publiques pour les années 2014 à 2019
+Exécution 2014 : Métrique de la loi de programmation des finances publiques 2012-2017
+Soldes prévus dans la loi de finances initiale pour 2014
+Écarts aux soldes prévus dans la loi de finances initiale pour 2014
+Solde structurel.
+-2,1
+-2,4
+0,4
+-2,2*
+-1,7
+-0,5
+Solde conjoncturel.
+-1,9
+-1,9
+0,0
+-1,7*
+-1,8
+0,0
+Mesures ponctuelles et temporaires.
+0,0
+0,0
+0,0
+0,0*
+-0,1
++0,1
+Solde effectif (1 + 2 + 3)
+-4,0
+-4,4
+0,4
+-3,9*
+-3,6
+-0,3
+* Estimations
+
+1er
+――――
+
+I. - Le résultat budgétaire de l'État en 2014, hors opérations avec le Fonds monétaire international, est arrêté à la somme de -85 555 043 923,85 €.
+II. - Le montant définitif des recettes et des dépenses du budget de l'année 2014 est arrêté aux sommes mentionnées dans le tableau ci-après :
+(En euros)
+Dépenses
+Recettes
+Soldes
+Budget général
+Recettes
+Recettes fiscales brutes
+370 437 487 368,79
+À déduire : Remboursements et dégrèvements d'impôts
+96 130 801 141,37
+Recettes fiscales nettes (a)
+274 306 686 227,42
+Recettes non fiscales (b)
+13 949 337 032,86
+Montant net des recettes hors fonds de concours (c = a + b)
+288 256 023 260,28
+À déduire : Prélèvements sur recettes au profit des collectivités territoriales et de l'Union européenne (d)
+74 773 569 343,91
+Total net des recettes hors prélèvements sur recettes (e = c - d)
+213 482 453 916,37
+Fonds de concours (f)
+3 689 725 200,47
+Montant net des recettes, y compris fonds de concours (g = e + f)
+217 172 179 116,84
+Dépenses
+Dépenses brutes hors fonds de concours
+395 323 663 177,32
+À déduire : Remboursements et dégrèvements d'impôts
+96 130 801 141,37
+Montant net des dépenses (h)
+299 192 862 035,95
+Fonds de concours (i)
+3 689 725 200,47
+Montant net des dépenses, y compris fonds de concours (j = h + i)
+302 882 587 236,42
+Total du budget général, y compris fonds de concours
+302 882 587 236,42
+217 172 179 116,84
+-85 710 408 119,58
+Budgets annexes
+Contrôle et exploitation aériens
+2 151 342 413,62
+2 151 342 413,62
+Publications officielles et information administrative
+197 266 354,73
+197 266 354,73
+Montant des budgets annexes, hors fonds de concours
+2 348 608 768,35
+2 348 608 768,35
+Fonds de concours
+18 799 040,10
+18 799 040,10
+Total des budgets annexes, y compris fonds de concours
+2 367 407 808,45
+2 367 407 808,45
+Comptes spéciaux
+Comptes d'affectation spéciale
+67 466 460 409,89
+67 659 396 388,05
+192 935 978,16
+Comptes de concours financiers
+118 528 041 198,44
+118 233 424 729,22
+-294 616 469,22
+Comptes de commerce (solde)
+-186 067 146,52
+186 067 146,52
+Comptes d'opérations monétaires, hors opérations avec le Fonds monétaire international (solde)
+-70 977 540,27
+70 977 540,27
+Total des comptes spéciaux, hors opérations avec le Fonds monétaire international
+185 737 456 921,54
+185 892 821 117,27
+155 364 195,73
+Résultat budgétaire de l'État, hors opérations avec le Fonds monétaire international
+-85 555 043 923,85
+
+2
+――――
+
+Le montant définitif des ressources et des charges de trésorerie ayant concouru à la réalisation de l'équilibre financier de l'année 2014 est arrêté aux sommes présentées dans le tableau de financement ci-après :
+(En milliards d'euros)
+Exécution 2014
+Besoin de financement
+Amortissement de la dette à moyen et long termes
+103,8
+Dont amortissement de la dette à long terme
+41,8
+Dont amortissement de la dette à moyen terme
+62,0
+Dont suppléments d'indexation versés à l'échéance (titres indexés)
+Amortissement des autres dettes
+0,2
+Déficit à financer
+73,6
+Dont déficit budgétaire
+85,6
+Dont dotation budgétaire du deuxième programme d'investissements d'avenir
+-12,0
+Autres besoins de trésorerie
+1,5
+Total du besoin de financement
+179,1
+Ressources de financement
+Émissions de dette à moyen et long termes, nettes des rachats
+172,0
+Ressources affectées à la Caisse de la dette publique et consacrées au désendettement
+1,5
+Variation nette de l'encours des titres d'État à court terme
+1,4
+Variation des correspondants
+-1,3
+Variation des disponibilités du Trésor à la Banque de France et des placements de trésorerie de l'État
+-1,4
+Autres ressources nettes de trésorerie
+6,9
+Total des ressources de financement
+179,1
+
+3
+――――
+
+I. - Le compte de résultat de l'exercice 2014 est approuvé tel que présenté dans le tableau ci-après. Le résultat comptable de l'exercice 2014 s'établit à -77 259 749 802,40 € :
+Charges nettes
+(En millions d'euros)
+2014
+Charges de fonctionnement nettes
+Charges de personnel
+136 916
+Achats, variations de stocks et prestations externes
+20 795
+Dotations aux amortissements, aux provisions et aux dépréciations
+47 439
+Autres charges de fonctionnement
+10 331
+Total des charges de fonctionnement direct (I)
+215 481
+Subventions pour charges de service public
+27 719
+Dotations aux provisions
+0
+Total des charges de fonctionnement indirect (II)
+27 719
+Total des charges de fonctionnement (III = I + II)
+243 200
+Ventes de produits et prestations de service
+3 293
+Production stockée et immobilisée
+160
+Reprises sur provisions et sur dépréciations
+37 519
+Autres produits de fonctionnement
+27 078
+Total des produits de fonctionnement (IV)
+68 050
+Total des charges de fonctionnement nettes (V = III - IV)
+175 150
+Charges d'intervention nettes
+Transferts aux ménages
+35 419
+Transferts aux entreprises
+10 117
+Transferts aux collectivités territoriales
+72 935
+Transferts aux autres collectivités
+24 951
+Charges résultant de la mise en jeu de garanties
+11
+Dotations aux provisions et aux dépréciations
+35 820
+Total des charges d'intervention (VI)
+179 252
+Contributions reçues de tiers
+2 025
+Reprises sur provisions et sur dépréciations
+29 165
+Total des produits d'intervention (VII)
+31 189
+Total des charges d'intervention nettes (VIII = VI - VII)
+148 063
+Charges financières nettes
+Intérêts
+41 990
+Pertes de change liées aux opérations financières
+245
+Dotations aux amortissements, aux provisions et aux dépréciations
+3 788
+Autres charges financières
+4 923
+Total des charges financières (IX)
+50 946
+Produits des immobilisations financières
+8 365
+Gains de change liés aux opérations financières
+254
+Reprises sur provisions et sur dépréciations
+7 645
+Autres intérêts et produits assimilés
+3 160
+Total des produits financiers (X)
+19 424
+Total des charges financières nettes (XI = IX - X)
+31 521
+Total des charges nettes (XII = V + VIII + XI)
+354 735
+Produits régaliens nets
+(En millions d'euros)
+2014
+Impôt sur le revenu
+69 956
+Impôt sur les sociétés
+33 640
+Taxe intérieure de consommation sur les produits énergétiques
+12 552
+Taxe sur la valeur ajoutée
+139 335
+Enregistrement, timbre, autres contributions et taxes indirectes
+16 950
+Autres produits de nature fiscale et assimilés
+17 706
+Total des produits fiscaux nets (XIII)
+290 139
+Amendes, prélèvements divers et autres pénalités
+7 680
+Total des autres produits régaliens nets (XIV)
+7 680
+Ressources propres de l'Union européenne basée sur le revenu national brut
+-15 977
+Ressources propres de l'Union européenne basée sur la taxe sur la valeur ajoutée
+-4 368
+Total des ressources propres du budget de l'Union européenne basées sur le revenu national brut et la taxe sur la valeur ajoutée (XV)
+-20 344
+Total des produits régaliens nets (XVI = XIII + XIV- XV)
+277 475
+Solde des opérations de l'exercice
+(En millions d'euros)
+2014
+Charges de fonctionnement nettes (V)
+175 150
+Charges d'intervention nettes (VIII)
+148 063
+Charges financières nettes (XI)
+31 521
+Charges nettes (XII)
+354 735
+Produits fiscaux nets (XIII)
+290 139
+Autres produits régaliens nets (XIV)
+7 680
+Ressources propres de l'Union européenne basées sur le revenu national brut et la taxe sur la valeur ajoutée (XV)
+-20 344
+Produits régaliens nets (XVI)
+277 475
+Solde des opérations de l'exercice (XVI - XII)
+-77 260
+II. - Le résultat comptable de l'exercice 2014 est affecté au bilan, à la ligne "Report des exercices antérieurs".
+III. - Le bilan, après affectation du résultat comptable, s'établit comme suit :
+(En millions d'euros)
+31 décembre 2014
+Brut
+Amortissements,
+Net
+dépréciations
+Actif immobilisé
+Immobilisations incorporelles
+43 406
+16 753
+26 653
+Immobilisations corporelles
+537 250
+62 749
+474 501
+Immobilisations financières
+358 084
+25 075
+333 008
+Total actif immobilisé
+938 740
+104 577
+834 163
+Actif circulant (hors trésorerie)
+Stocks
+40 557
+6 529
+34 028
+Créances
+116 205
+28 733
+87 472
+Redevables
+92 351
+27 843
+64 508
+Clients
+4 929
+790
+4 139
+Autres créances
+18 926
+101
+18 825
+Charges constatées d'avance
+26
+26
+Total actif circulant (hors trésorerie)
+156 788
+35 262
+121 526
+Trésorerie
+Fonds bancaires et fonds en caisse
+-7
+-7
+Valeurs escomptées, en cours d'encaissement et de décaissement
+-2 007
+-2 007
+Autres composantes de trésorerie
+16 471
+16 471
+Équivalents de trésorerie
+8 264
+8 264
+Total trésorerie
+22 721
+22 721
+Comptes de régularisation
+10 740
+10 740
+Total actif (I)
+1 128 990
+139 839
+989 150
+Dettes financières
+Titres négociables
+1 546 160
+Titres non négociables
+Dettes financières et autres emprunts
+4 804
+Total dettes financières
+1 550 964
+Dettes non financières (hors trésorerie)
+Dettes de fonctionnement
+8 724
+Dettes d'intervention
+8 404
+Produits constatés d'avance
+12 981
+Autres dettes non financières
+106 681
+Total dettes non financières
+136 790
+Provisions pour risques et charges
+Provisions pour risques
+19 412
+Provisions pour charges
+115 094
+Total provisions pour risques et charges
+134 506
+Autres passifs (hors trésorerie)
+34 038
+Trésorerie
+Correspondants du Trésor et personnes habilitées
+94 045
+Autres
+50
+Total trésorerie
+94 096
+Comptes de régularisation
+56 811
+Total passif (hors situation nette) (II)
+2 007 206
+Report des exercices antérieurs
+-1 391 522
+Écarts de réévaluation et d'intégration
+373 466
+Solde des opérations de l'exercice
+Situation nette (III = I - II)
+-1 018 055
+IV. - L'annexe du compte général de l'État de l'exercice 2014 est approuvée.
+
+4
+――――
+
+I. - Le montant des autorisations d'engagement consommées sur le budget général au titre de l'année 2014 est arrêté par mission et programme aux sommes mentionnées dans le tableau ci-après. Les autorisations d'engagement ouvertes sont modifiées comme indiqué dans ce même tableau.
+(En euros)
+Désignation des <span class="ansi1 ansi31">missions et</span> <span class="ansi1 ansi32">missionset</span> des programmes
+Autorisations d'engagement consommées
+Ajustements de la loi de règlement
+Ouvertures d'autorisations d'engagement complémentaires
+Annulations d'autorisations d'<span class="ansi1 ansi31">engagement non consommées et</span><span class="ansi1 ansi32">engagementnon consomméeset</span> non reportées
+Action extérieure de l'État
+2 765 099 373,22
+8 760 316,40
+- Action de la France en Europe et dans le monde
+1 718 935 678,61
+7 058 136,86
+- Diplomatie culturelle et d'influence
+691 190 716,84
+745 580,40
+- Français à l'étranger et affaires consulaires
+354 972 977,77
+956 599,14
+Administration générale et territoriale de l'État
+2 880 537 106,63
+116 559 537,17
+- Administration territoriale
+1 755 126 198,35
+45 358 168,83
+- Vie politique, cultuelle et associative
+279 947 250,63
+205 219,97
+- Conduite et pilotage des politiques de l'intérieur
+845 463 657,65
+70 996 148,37
+Agriculture, alimentation, forêt et affaires rurales
+3 491 937 183,32
+6 988 377,82
+- Économie et développement durable de l'agriculture et des territoires
+1 908 372 305,56
+748 119,84
+- Forêt
+306 137 791,97
+1 740 438,61
+- Sécurité et qualité sanitaires de l'alimentation
+515 937 768,46
+2 022 097,81
+- Conduite et pilotage des politiques de l'agriculture
+761 489 317,33
+2 477 721,56
+Aide publique au développement
+3 720 677 167,67
+23 197 232,73
+- Aide économique et financière au développement
+2 001 991 310,95
+17 434 117,05
+- Solidarité à l'égard des pays en développement
+1 718 685 856,72
+5 763 115,68
+Anciens combattants, mémoire et liens avec la Nation
+2 924 374 862,66
+0,96
+556 347,67
+- Liens entre la Nation et son armée
+111 816 513,81
+552 216,73
+- Reconnaissance et réparation en faveur du monde combattant
+2 716 221 265,15
+4 130,68
+- Indemnisation des victimes des persécutions antisémites et des actes de barbarie pendant la Seconde Guerre mondiale
+96 337 083,70
+0,96
+0,26
+Conseil et contrôle de l'État
+612 508 704,56
+10 516 529,87
+- Conseil d'État et autres juridictions administratives
+366 962 915,17
+6 982 284,40
+- Conseil économique, social et environnemental
+40 088 056,00
+2 614 998,13
+- Cour des comptes et autres juridictions financières
+205 129 413,01
+855 893,72
+- Haut Conseil des finances publiques
+328 320,38
+63 353,62
+Culture
+2 502 821 159,14
+23 693 193,91
+- Patrimoines
+715 586 820,62
+17 274 953,88
+- Création
+733 068 386,90
+2 528 566,50
+- Transmission des savoirs et démocratisation de la culture
+1 054 165 951,62
+3 889 673,53
+Défense
+42 049 697 890,69
+3 513 406 156,31
+- Environnement et prospective de la politique de défense
+1 903 055 736,28
+24 677 159,41
+- Préparation et emploi des forces
+23 536 335 039,73
+552 929 696,92
+- Soutien de la politique de la défense
+3 081 119 519,08
+278 376 499,87
+- Équipement des forces
+11 529 187 595,60
+2 657 422 800,11
+- Excellence technologique des industries de défense
+2 000 000 000,00
+Direction de l'action du Gouvernement
+1 161 101 267,33
+105 162 562,23
+- Coordination du travail gouvernemental
+467 018 471,13
+11 233 337,10
+- Protection des droits et libertés
+57 736 986,96
+27 910 512,80
+- Moyens mutualisés des administrations déconcentrées
+510 345 809,24
+66 018 712,33
+- Transition numérique de l'État et modernisation de l'action publique
+126 000 000,00
+Écologie, développement et mobilité durables
+11 316 198 341,16
+125 318 597,53
+- Infrastructures et services de transports
+4 562 401 214,87
+686 677,58
+- Sécurité et affaires maritimes, pêche et aquaculture
+188 977 308,46
+3 082 065,48
+- Météorologie
+199 233 173,00
+- Paysages, eau et biodiversité
+230 874 674,29
+13 392 090,13
+- Information géographique et cartographique
+94 886 586,60
+0,40
+- Prévention des risques
+241 951 238,41
+89 757 211,38
+- Énergie, climat et après-mines
+540 682 457,23
+3 293 171,19
+- Conduite et pilotage des politiques de l'écologie, du développement et de la mobilité durables
+3 683 191 688,30
+15 107 381,37
+- Innovation pour la transition écologique et énergétique
+830 000 000,00
+- Projets industriels pour la transition écologique et énergétique
+470 000 000,00
+- Ville et territoires durables
+274 000 000,00
+Économie
+3 646 062 300,14
+16 202 686,89
+- Développement des entreprises et du tourisme
+881 364 802,70
+8 544 477,21
+- Statistiques et études économiques
+457 329 846,05
+6 495 753,15
+- Stratégie économique et fiscale
+470 367 651,39
+1 162 456,53
+- Projets industriels
+420 000 000,00
+- Innovation
+852 000 000,00
+- Économie numérique
+565 000 000,00
+Égalité des territoires, logement et ville
+7 567 467 842,86
+212 880 319,36
+- Prévention de l'exclusion et insertion des personnes vulnérables
+1 470 336 499,76
+465 280,54
+- Aide à l'accès au logement
+5 192 617 471,00
+20 496,00
+- Urbanisme, territoires et amélioration de l'habitat
+469 641 824,59
+210 768 597,33
+- Politique de la ville
+434 872 047,51
+1 625 945,49
+- Conduite et pilotage des politiques de l'égalité des territoires, du logement et de la ville
+Engagements financiers de l'État
+43 833 682 876,18
+193 705 750,82
+- Charge de la dette et trésorerie de l'État (crédits évaluatifs)
+43 158 881 832,17
+95 118 167,83
+- Appels en garantie de l'État (crédits évaluatifs)
+120 392 257,37
+67 907 742,63
+- Épargne
+385 403 210,00
+30 679 840,00
+- Majoration de rentes
+169 005 576,64
+0,36
+- Dotation en capital du Mécanisme européen de stabilité
+- Augmentation de capital de la Banque européenne d'investissement
+Enseignement scolaire
+65 277 412 488,02
+38 221 213,37
+- Enseignement scolaire public du premier degré
+19 383 041 401,78
+415 619,21
+- Enseignement scolaire public du second degré
+30 510 640 815,43
+116 452,24
+- Vie de l'élève
+4 511 224 764,58
+5 732 672,04
+- Enseignement privé du premier et du second degrés
+7 112 683 455,53
+553 343,47
+- Soutien de la politique de l'éducation nationale
+2 269 133 310,53
+31 388 965,58
+- Internats de la réussite
+138 000 000,00
+- Enseignement technique agricole
+1 352 688 740,17
+14 160,83
+Gestion des finances publiques et des ressources humaines
+11 215 240 958,23
+153 076 227,08
+- Gestion fiscale et financière de l'État et du secteur public local
+8 287 727 367,32
+121 189 459,73
+- Stratégie des finances publiques et modernisation de l'État
+176 933 160,97
+1 128 945,62
+- Conduite et pilotage des politiques économique et financière
+836 329 762,03
+16 238 997,87
+- Facilitation et sécurisation des échanges
+1 601 346 854,03
+4 504 344,93
+- Entretien des bâtiments de l'État
+145 337 907,72
+5 787 514,50
+- Fonction publique
+167 565 906,16
+4 226 964,43
+Immigration, asile et intégration
+711 745 077,80
+2 199 798,73
+- Immigration et asile
+660 722 956,62
+2 036 465,85
+- Intégration et accès à la nationalité française
+51 022 121,18
+163 332,88
+Justice
+7 385 156 565,46
+235 847 501,21
+- Justice judiciaire
+2 992 627 217,39
+52 760 572,56
+- Administration pénitentiaire
+2 940 127 092,55
+150 563 342,97
+- Protection judiciaire de la jeunesse
+758 660 785,81
+1 251 059,56
+- Accès au droit et à la justice
+381 698 234,08
+64 018,92
+- Conduite et pilotage de la politique de la justice
+308 826 047,24
+29 876 825,59
+- Conseil supérieur de la magistrature
+3 217 188,39
+1 331 681,61
+Médias, livre et industries culturelles
+839 712 516,08
+0,16
+2 697 102,08
+- Presse
+252 033 561,91
+2 696 744,09
+- Livre et industries culturelles
+304 447 145,01
+357,99
+- Contribution à l'audiovisuel et à la diversité radiophonique
+132 593 982,16
+0,16
+- Action audiovisuelle extérieure
+150 637 827,00
+Outre-mer
+2 049 895 238,92
+46 499 245,96
+- Emploi outre-mer
+1 383 290 244,83
+2 222 108,72
+- Conditions de vie outre-mer
+666 604 994,09
+44 277 137,24
+Politique des territoires
+241 165 639,32
+31 601 816,34
+- Impulsion et coordination de la politique d'aménagement du territoire
+209 469 636,53
+25 110 449,13
+- Interventions territoriales de l'État
+31 696 002,79
+6 491 367,21
+Pouvoirs publics
+989 987 362,00
+- Présidence de la République
+101 660 000,00
+- Assemblée nationale
+517 890 000,00
+- Sénat
+323 584 600,00
+- La chaîne parlementaire
+35 210 162,00
+- Indemnités des représentants français au Parlement européen
+- Conseil constitutionnel
+10 776 000,00
+- Haute Cour
+- Cour de justice de la République
+866 600,00
+Provisions
+229 978 747,00
+- Provision relative aux rémunérations publiques
+- Dépenses accidentelles et imprévisibles
+229 978 747,00
+Recherche et enseignement supérieur
+30 691 956 896,96
+25 906 115,08
+- Formations supérieures et recherche universitaire
+12 664 355 374,70
+4 573 672,77
+- Vie étudiante
+2 463 433 242,31
+28 619,43
+- Recherches scientifiques et technologiques pluridisciplinaires
+4 961 059 718,78
+1 496 191,47
+- Recherche dans le domaine de la gestion des milieux et des ressources
+1 261 077 911,00
+- Recherche spatiale
+1 355 662 246,00
+- Écosystèmes d'excellence
+3 986 500 000,00
+- Recherche dans les domaines de l'énergie, du développement et de la mobilité durables
+1 589 131 285,73
+5 133 568,81
+- Recherche dans le domaine de l'aéronautique
+1 008 500 000,00
+- Recherche et enseignement supérieur en matière économique et industrielle
+916 016 442,75
+14 642 243,86
+- Recherche duale (civile et militaire)
+61 074 745,00
+- Recherche culturelle et culture scientifique
+109 285 860,62
+31 817,81
+- Enseignement supérieur et recherche agricoles
+315 860 070,07
+0,93
+Régimes sociaux et de retraite
+6 506 267 583,69
+0,31
+- Régimes sociaux et de retraite des transports terrestres
+4 129 304 050,69
+0,31
+- Régimes de retraite et de sécurité sociale des marins
+820 211 301,00
+- Régime de retraite des mines, de la SEITA et divers
+1 556 752 232,00
+Relations avec les collectivités territoriales
+2 775 851 720,20
+68 905 176,58
+- Concours financiers aux communes et groupements de communes
+814 906 281,60
+49 397 249,40
+- Concours financiers aux départements
+481 085 845,45
+1 502 327,55
+- Concours financiers aux régions
+983 459 660,00
+49 861,00
+- Concours spécifiques et administration
+496 399 933,15
+17 955 738,63
+Remboursements et dégrèvements
+96 126 987 779,04
+127 612 220,96
+- Remboursements et dégrèvements d'impôts d'État (crédits évaluatifs)
+84 625 283 880,69
+32 316 119,31
+- Remboursements et dégrèvements d'impôts locaux (crédits évaluatifs)
+11 501 703 898,35
+95 296 101,65
+Santé
+1 390 672 185,29
+783 724,71
+- Prévention, sécurité sanitaire et offre de soins
+630 769 246,56
+686 663,44
+- Protection maladie
+759 902 938,73
+97 061,27
+Sécurités
+17 977 531 000,83
+27 239 960,87
+- Police nationale
+9 430 105 038,51
+15 459 014,73
+- Gendarmerie nationale
+8 013 467 992,74
+5 260 108,17
+- Sécurité et éducation routières
+124 544 176,69
+1 289 961,11
+- Sécurité civile
+409 413 792,89
+5 230 876,86
+Solidarité, insertion et égalité des chances
+14 381 077 397,00
+0,21
+11 855 856,61
+- Lutte contre la pauvreté : revenu de solidarité active et expérimentations sociales
+1 021 808 204,12
+76 926,88
+- Actions en faveur des familles vulnérables
+248 357 931,21
+0,21
+- Handicap et dépendance
+11 529 037 715,13
+2 346 793,87
+- Égalité entre les femmes et les hommes
+22 864 073,35
+465 430,63
+- Conduite et soutien des politiques sanitaires, sociales, du sport, de la jeunesse et de la vie associative
+1 559 009 473,19
+8 966 705,23
+Sport, jeunesse et vie associative
+531 055 102,59
+1 577 391,02
+- Sport
+236 280 303,28
+931 495,33
+- Jeunesse et vie associative
+210 774 799,31
+645 895,69
+- Projets innovants en faveur de la jeunesse
+84 000 000,00
+Travail et emploi
+11 648 655 298,74
+45 075 861,55
+- Accès et retour à l'emploi
+7 981 242 440,45
+23 781 008,81
+- Accompagnement des mutations économiques et développement de l'emploi
+2 743 913 939,07
+11 868 298,43
+- Amélioration de la qualité de l'emploi et des relations du travail
+60 980 096,57
+1 520 310,60
+- Conception, gestion et évaluation des politiques de l'emploi et du travail
+736 518 822,65
+7 906 243,71
+- Formation et mutations économiques
+126 000 000,00
+Total
+399 212 536 885,73
+1,33
+5 406 025 568,17
+II. - Le montant des dépenses relatives au budget général au titre de l'année 2014 est arrêté par mission et programme aux sommes mentionnées dans le tableau ci-après. Les crédits de paiement ouverts sont modifiés comme indiqué dans ce même tableau.
+(En euros)
+Désignation des <span class="ansi1 ansi31">missions et</span> <span class="ansi1 ansi32">missionset</span> des programmes
+Dépenses
+Ajustements de la loi de règlement
+<span class="ansi1 ansi31">Ouvertures de</span> <span class="ansi1 ansi32">Ouverturesde</span> crédits complémentaires
+<span class="ansi1 ansi31">Annulations de crédits non consommés et</span> <span class="ansi1 ansi32">Annulationsde créditsnon consomméset</span> non reportés
+Action extérieure de l'État
+2 782 356 638,78
+1 371 930,10
+- Action de la France en Europe et dans le monde
+1 735 238 864,60
+19 361,02
+- Diplomatie culturelle et d'influence
+691 694 853,47
+214 429,77
+- Français à l'étranger et affaires consulaires
+355 422 920,71
+1 138 139,31
+Administration générale et territoriale de l'État
+2 713 443 567,61
+10 324 800,72
+- Administration territoriale
+1 746 478 941,64
+9 148 622,59
+- Vie politique, cultuelle et associative
+278 528 466,84
+1 171 182,16
+- Conduite et pilotage des politiques de l'intérieur
+688 436 159,13
+4 995,97
+Agriculture, alimentation, forêt et affaires rurales
+3 616 297 518,63
+0,28
+514 734,32
+- Économie et développement durable de l'agriculture et des territoires
+2 073 298 085,51
+123 058,96
+- Forêt
+297 886 419,19
+0,67
+- Sécurité et qualité sanitaires de l'alimentation
+512 032 833,17
+0,28
+0,38
+- Conduite et pilotage des politiques de l'agriculture
+733 080 180,76
+391 674,31
+Aide publique au développement
+2 752 821 622,76
+86 578,64
+- Aide économique et financière au développement
+1 033 530 795,46
+0,54
+- Solidarité à l'égard des pays en développement
+1 719 290 827,30
+86 578,10
+Anciens combattants, mémoire et liens avec la Nation
+2 945 871 207,33
+1,12
+1,16
+- Liens entre la Nation et son armée
+116 109 369,31
+0,39
+0,62
+- Reconnaissance et réparation en faveur du monde combattant
+2 733 274 621,55
+0,28
+- Indemnisation des victimes des persécutions antisémites et des actes de barbarie pendant la Seconde Guerre mondiale
+96 487 216,47
+0,73
+0,26
+Conseil et contrôle de l'État
+616 684 866,87
+502 635,34
+- Conseil d'État et autres juridictions administratives
+369 768 733,25
+45 997,55
+- Conseil économique, social et environnemental
+40 088 056,00
+159 998,13
+- Cour des comptes et autres juridictions financières
+206 495 681,09
+239 362,19
+- Haut Conseil des finances publiques
+332 396,53
+57 277,47
+Culture
+2 554 819 335,24
+0,10
+3 946 384,10
+- Patrimoines
+727 181 459,22
+0,64
+- Création
+765 772 337,85
+0,10
+- Transmission des savoirs et démocratisation de la culture
+1 061 865 538,17
+3 946 383,46
+Défense
+39 871 001 329,82
+1,11
+1 448,58
+- Environnement et prospective de la politique de défense
+1 867 834 165,97
+0,59
+0,99
+- Préparation et emploi des forces
+23 404 037 673,65
+1 438,79
+- Soutien de la politique de la défense
+2 926 921 441,45
+0,52
+0,08
+- Équipement des forces
+9 672 208 048,75
+8,72
+- Excellence technologique des industries de défense
+2 000 000 000,00
+Direction de l'action du Gouvernement
+1 226 988 655,97
+0,33
+2 312 272,20
+- Coordination du travail gouvernemental
+480 118 965,61
+0,33
+36 669,61
+- Protection des droits et libertés
+87 233 955,91
+1 177 512,09
+- Moyens mutualisés des administrations déconcentrées
+533 635 734,45
+1 098 090,50
+- Transition numérique de l'État et modernisation de l'action publique
+126 000 000,00
+Écologie, développement et mobilité durables
+11 591 261 335,11
+12 458 481,08
+- Infrastructures et services de transports
+5 071 803 565,64
+528 168,13
+- Sécurité et affaires maritimes, pêche et aquaculture
+185 582 820,92
+1 656 358,31
+- Météorologie
+199 233 173,00
+- Paysages, eau et biodiversité
+242 530 096,41
+0,42
+- Information géographique et cartographique
+94 939 914,59
+0,41
+- Prévention des risques
+226 401 347,45
+0,49
+- Énergie, climat et après-mines
+546 573 875,09
+5 801 175,91
+- Conduite et pilotage des politiques de l'écologie, du développement et de la mobilité durables
+3 450 196 542,01
+4 472 777,41
+- Innovation pour la transition écologique et énergétique
+830 000 000,00
+- Projets industriels pour la transition écologique et énergétique
+470 000 000,00
+- Ville et territoires durables
+274 000 000,00
+Économie
+3 798 226 599,63
+630 977,15
+- Développement des entreprises et du tourisme
+1 031 917 056,72
+501 786,19
+- Statistiques et études économiques
+459 292 600,24
+0,98
+- Stratégie économique et fiscale
+470 016 942,67
+129 189,98
+- Projets industriels
+420 000 000,00
+- Innovation
+852 000 000,00
+- Économie numérique
+565 000 000,00
+Égalité des territoires, logement et ville
+7 614 942 247,59
+928 362,20
+- Prévention de l'exclusion et insertion des personnes vulnérables
+1 469 242 067,48
+818 934,82
+- Aide à l'accès au logement
+5 192 617 471,00
+20 496,00
+- Urbanisme, territoires et amélioration de l'habitat
+514 024 929,22
+88 931,27
+- Politique de la ville
+439 057 779,89
+0,11
+- Conduite et pilotage des politiques de l'égalité des territoires, du logement et de la ville
+Engagements financiers de l'État
+47 095 426 876,18
+193 838 750,82
+- Charge de la dette et trésorerie de l'État (crédits évaluatifs)
+43 158 881 832,17
+95 118 167,83
+- Appels en garantie de l'État (crédits évaluatifs)
+120 392 257,37
+67 907 742,63
+- Épargne
+385 403 210,00
+30 812 840,00
+- Majoration de rentes
+169 005 576,64
+0,36
+- Dotation en capital du Mécanisme européen de stabilité
+3 261 744 000,00
+- Augmentation de capital de la Banque européenne d'investissement
+Enseignement scolaire
+65 111 414 735,84
+1,65
+2 942 851,57
+- Enseignement scolaire public du premier degré
+19 382 979 088,70
+4 755,29
+- Enseignement scolaire public du second degré
+30 510 763 886,87
+7 932,80
+- Vie de l'élève
+4 449 438 326,59
+0,11
+1 822,14
+- Enseignement privé du premier et du second degrés
+7 112 720 831,49
+3 685,51
+- Soutien de la politique de l'éducation nationale
+2 163 966 351,50
+0,75
+2 924 655,73
+- Internats de la réussite
+138 000 000,00
+- Enseignement technique agricole
+1 353 546 250,69
+0,79
+0,10
+Gestion des finances publiques et des ressources humaines
+11 263 203 181,59
+0,64
+6 633,84
+- Gestion fiscale et financière de l'État et du secteur public local
+8 276 386 249,76
+1 237,69
+- Stratégie des finances publiques et modernisation de l'État
+178 483 616,09
+0,56
+0,47
+- Conduite et pilotage des politiques économique et financière
+878 054 696,52
+3 593,08
+- Facilitation et sécurisation des échanges
+1 576 685 352,45
+0,06
+1 801,91
+- Entretien des bâtiments de l'État
+157 065 166,47
+0,02
+- Fonction publique
+196 528 100,30
+0,69
+Immigration, asile et intégration
+727 176 600,89
+174 323,69
+- Immigration et asile
+675 662 084,08
+0,44
+- Intégration et accès à la nationalité française
+51 514 516,81
+174 323,25
+Justice
+7 661 181 489,17
+0,70
+1 114 212,36
+- Justice judiciaire
+3 053 584 077,49
+239 782,36
+- Administration pénitentiaire
+3 171 286 079,81
+0,02
+32 841,71
+- Protection judiciaire de la jeunesse
+757 894 977,69
+41 488,41
+- Accès au droit et à la justice
+381 565 625,68
+0,68
+- Conduite et pilotage de la politique de la justice
+293 364 819,25
+5 885,13
+- Conseil supérieur de la magistrature
+3 485 909,25
+794 214,75
+Médias, livre et industries culturelles
+788 896 356,91
+0,15
+1,24
+- Presse
+254 881 011,23
+0,77
+- Livre et industries culturelles
+250 783 536,53
+0,47
+- Contribution à l'audiovisuel et à la diversité radiophonique
+132 593 982,15
+0,15
+- Action audiovisuelle extérieure
+150 637 827,00
+Outre-mer
+2 038 145 624,50
+127 601,05
+- Emploi outre-mer
+1 370 698 893,41
+99 386,99
+- Conditions de vie outre-mer
+667 446 731,09
+28 214,06
+Politique des territoires
+306 039 732,68
+3 263 550,98
+- Impulsion et coordination de la politique d'aménagement du territoire
+251 269 611,38
+0,28
+- Interventions territoriales de l'État
+54 770 121,30
+3 263 550,70
+Pouvoirs publics
+989 987 362,00
+- Présidence de la République
+101 660 000,00
+- Assemblée nationale
+517 890 000,00
+- Sénat
+323 584 600,00
+- La chaîne parlementaire
+35 210 162,00
+- Indemnités des représentants français au Parlement européen
+- Conseil constitutionnel
+10 776 000,00
+- Haute Cour
+- Cour de justice de la République
+866 600,00
+Provisions
+2 000 000,00
+- Provision relative aux rémunérations publiques
+- Dépenses accidentelles et imprévisibles
+2 000 000,00
+Recherche et enseignement supérieur
+30 554 240 343,54
+399 537,23
+- Formations supérieures et recherche universitaire
+12 743 463 174,95
+185 717,94
+- Vie étudiante
+2 450 989 844,07
+0,17
+- Recherches scientifiques et technologiques pluridisciplinaires
+4 719 915 999,21
+0,04
+- Recherche dans le domaine de la gestion des milieux et des ressources
+1 261 077 911,00
+- Recherche spatiale
+1 345 861 796,00
+- Ecosystèmes d'excellence
+3 986 500 000,00
+- Recherche dans les domaines de l'énergie, du développement et de la mobilité durables
+1 608 234 314,86
+0,67
+- Recherche dans le domaine de l'aéronautique
+1 008 500 000,00
+- Recherche et enseignement supérieur en matière économique et industrielle
+942 146 464,85
+213 817,15
+- Recherche duale (civile et militaire)
+61 074 745,00
+- Recherche culturelle et culture scientifique
+110 556 023,54
+0,32
+- Enseignement supérieur et recherche agricoles
+315 920 070,06
+0,94
+Régimes sociaux et de retraite
+6 506 267 583,69
+16 691,31
+- Régimes sociaux et de retraite des transports terrestres
+4 129 304 050,69
+16 691,31
+- Régimes de retraite et de sécurité sociale des marins
+820 211 301,00
+- Régime de retraite des mines, de la SEITA et divers
+1 556 752 232,00
+Relations avec les collectivités territoriales
+2 737 977 334,05
+5 080 450,49
+- Concours financiers aux communes et groupements de communes
+759 183 452,95
+1 667 669,05
+- Concours financiers aux départements
+478 075 274,44
+1 911 388,56
+- Concours financiers aux régions
+983 459 660,00
+49 861,00
+- Concours spécifiques et administration
+517 258 946,66
+1 451 531,88
+Remboursements et dégrèvements
+96 130 801 141,37
+123 798 858,63
+- Remboursements et dégrèvements d'impôts d'État (crédits évaluatifs)
+84 629 097 098,73
+28 502 901,27
+- Remboursements et dégrèvements d'impôts locaux (crédits évaluatifs)
+11 501 704 042,64
+95 295 957,36
+Santé
+1 389 876 278,88
+1 685 004,12
+- Prévention, sécurité sanitaire et offre de soins
+629 973 340,15
+1 587 942,85
+- Protection maladie
+759 902 938,73
+97 061,27
+Sécurités
+18 096 493 575,37
+0,79
+2 284 598,27
+- Police nationale
+9 467 277 656,93
+31 287,94
+- Gendarmerie nationale
+8 076 528 058,22
+0,40
+3 793,63
+- Sécurité et éducation routières
+125 618 790,79
+0,39
+0,15
+- Sécurité civile
+427 069 069,43
+2 249 516,55
+Solidarité, insertion et égalité des chances
+14 322 645 281,35
+1 324 234,13
+- Lutte contre la pauvreté : revenu de solidarité active et expérimentations sociales
+1 009 589 559,07
+155 783,93
+- Actions en faveur des familles vulnérables
+247 885 025,56
+364 191,44
+- Handicap et dépendance
+11 530 317 976,47
+9 999,53
+- Égalité entre les femmes et les hommes
+22 967 615,69
+485 204,29
+- Conduite et soutien des politiques sanitaires, sociales, du sport, de la jeunesse et de la vie associative
+1 511 885 104,56
+309 054,94
+Sport, jeunesse et vie associative
+534 928 750,09
+0,23
+687 693,85
+- Sport
+241 607 729,94
+0,23
+- Jeunesse et vie associative
+209 321 020,15
+687 693,85
+- Projets innovants en faveur de la jeunesse
+84 000 000,00
+Travail et emploi
+10 673 971 204,35
+18 211 186,66
+- Accès et retour à l'emploi
+7 193 793 190,47
+0,79
+- Accompagnement des mutations économiques et développement de l'emploi
+2 552 508 797,04
+16 076 568,46
+- Amélioration de la qualité de l'emploi et des relations du travail
+60 286 415,10
+1 456 414,90
+- Conception, gestion et évaluation des politiques de l'emploi et du travail
+741 382 801,74
+678 202,51
+- Formation et mutations économiques
+126 000 000,00
+Total
+399 013 388 377,79
+7,10
+390 034 785,83
+
+5
+――――
+
+I. - Le montant des autorisations d'engagement consommées sur les budgets annexes au titre de l'année 2014 est arrêté par mission et programme aux sommes mentionnées dans le tableau ci-après. Les autorisations d'engagement ouvertes sont modifiées comme indiqué dans ce même tableau.
+<span class="ansi1 ansi31">&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;(En euros) &lt;tr&gt;&lt;td&gt;Désignation des budgets annexes&lt;/td&gt;&lt;td&gt;Autorisations d'engagement consommées&lt;/td&gt;&lt;td&gt;Ajustements de la loi de règlement&lt;tr&gt;&lt;td&gt;Ouvertures d'autorisations d'engagement complémentaires&lt;/td&gt;&lt;td&gt;Annulations d'autorisations d'engagement non engagées et non reportées &lt;tr&gt;&lt;td&gt;Contrôle et exploitation aériens&lt;/td&gt;&lt;td&gt;2 150 541 194,38&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;37 339 181,51&lt;tr&gt;&lt;td&gt;- Soutien aux prestations de l'aviation civile&lt;/td&gt;&lt;td&gt;1 536 486 610,69&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;21 630 692,94&lt;tr&gt;&lt;td&gt;- Navigation aérienne&lt;/td&gt;&lt;td&gt;563 156 894,62&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;12 242 213,83&lt;tr&gt;&lt;td&gt;- Transports aériens, surveillance et certification&lt;/td&gt;&lt;td&gt;50 897 689,07&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;3 466 274,74&lt;tr&gt;&lt;td&gt;Publications officielles et information administrative&lt;/td&gt;&lt;td&gt;190 196 010,35&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;26 161 784,65&lt;tr&gt;&lt;td&gt;- Édition et diffusion&lt;/td&gt;&lt;td&gt;105 018 995,10&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;8 531 869,90&lt;tr&gt;&lt;td&gt;- Pilotage et activités de développement des publications&lt;/td&gt;&lt;td&gt;85 177 015,25&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;17 629 914,75&lt;tr&gt;&lt;td&gt;Total&lt;/td&gt;&lt;td&gt;2 340 737 204,73&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;63 500 966,16</span>
+(En euros)
+<span class="ansi1 ansi31">Désignation des</span> <span class="ansi1 ansi32">Désignationdes</span> budgets annexes
+Autorisations d'engagement consommées
+Ajustements de la loi de règlement
+Ouvertures d'autorisations d'engagement complémentaires
+Annulations d'autorisations d'engagement non <span class="ansi1 ansi31">engagées et</span> <span class="ansi1 ansi32">engagéeset</span> non reportées
+Contrôle et exploitation aériens
+2 150 541 194,38
+37 339 181,51
+- Soutien aux prestations de l'aviation civile
+1 536 486 610,69
+21 630 692,94
+- Navigation aérienne
+563 156 894,62
+12 242 213,83
+- Transports aériens, surveillance et certification
+50 897 689,07
+3 466 274,74
+Publications officielles et information administrative
+190 196 010,35
+26 161 784,65
+- Édition et diffusion
+105 018 995,10
+8 531 869,90
+- Pilotage et activités de développement des publications
+85 177 015,25
+17 629 914,75
+Total
+2 340 737 204,73
+63 500 966,16
+II. - Les résultats relatifs aux budgets annexes au titre de l'année 2014 sont arrêtés par mission et programme aux sommes mentionnées dans le tableau ci-après. Les crédits ouverts sont modifiés comme indiqué dans ce même tableau.
+(En euros)
+Désignation des budgets annexes
+Opérations de l'année
+Ajustements de la loi de règlement
+Dépenses
+Recettes
+Ouvertures de crédits complémentaires
+Annulations des crédits non consommés et non reportés
+Contrôle et exploitation aériens
+2 170 141 453,72
+2 170 141 453,72
+44 601 985,36
+48 091 832,92
+- Soutien aux prestations de l'aviation civile
+1 535 769 322,76
+21 528 805,37
+- Navigation aérienne
+543 693 691,63
+19 273 063,92
+- Transports aériens, surveillance et certification
+46 076 453,97
+7 289 963,63
+Augmentation du fonds de roulement
+44 601 985,36
+44 601 985,36
+Publications officielles et information administrative
+197 266 354,73
+197 266 354,73
+20 167 068,05
+25 842 069,62
+- Édition et diffusion
+91 028 440,03
+11 342 900,27
+- Pilotage et activités de développement des publications
+86 070 846,65
+14 499 169,35
+Augmentation du fonds de roulement
+20 167 068,05
+20 167 068,05
+Total
+2 367 407 808,45
+2 367 407 808,45
+64 769 053,41
+73 933 902,54
+
+6
+――――
+
+I. - Le montant des autorisations d'engagement consommées sur les comptes spéciaux dont les opérations se poursuivent en 2015 est arrêté, au 31 décembre 2014, par mission et programme aux sommes mentionnées dans le tableau ci-après. Les autorisations d'engagement ouvertes sont modifiées comme indiqué dans ce même tableau.
+(En euros)
+Désignation des comptes spéciaux
+Autorisations d'engagement consommées
+Ajustements de la loi de règlement
+Ouvertures d'autorisations d'engagement complémentaires
+Annulations d'autorisations d'<span class="ansi1 ansi31">engagement non</span><span class="ansi1 ansi32">engagementnon</span> consommées et non reportées
+Comptes d'affectation spéciale
+Aides à l'acquisition de véhicules propres
+193 669 596,88
+71 047 023,12
+- Contribution au financement de l'attribution d'aides à l'acquisition de véhicules propres
+192 769 298,88
+71 047 023,12
+- Contribution au financement de l'attribution d'aides au retrait de véhicules polluants
+900 298,00
+Contrôle de la circulation et du stationnement routiers
+1 343 424 533,73
+94 163 304,04
+- Radars
+205 711 517,96
+5 480 380,72
+- Fichier national du permis de conduire
+19 890 299,64
+207 797,45
+- Contrôle et modernisation de la politique de la circulation et du stationnement routiers
+31 559 321,00
+- Contribution à l'équipement des collectivités territoriales pour l'amélioration des transports en commun, de la sécurité et de la circulation routières
+671 510 874,13
+46 164 407,87
+- Désendettement de l'État
+414 752 521,00
+42 310 718,00
+Développement agricole et rural
+132 016 680,12
+8 375 298,88
+- Développement et transfert en agriculture
+62 879 096,48
+3 834 168,52
+- Recherche appliquée et innovation en agriculture
+69 137 583,64
+4 541 130,36
+Financement des aides aux collectivités pour l'électrification rurale
+308 714 696,71
+730 739,29
+- Électrification rurale
+308 378 096,71
+166 669,29
+- Opérations de maîtrise de la demande d'électricité, de production d'électricité par des énergies renouvelables ou de production de proximité dans les zones non interconnectées, déclarations d'utilité publique et intempéries
+336 600,00
+564 070,00
+Financement national du développement et de la modernisation de l'apprentissage
+783 901 531,86
+188 970 540,14
+- Péréquation entre régions et compensation au titre du transfert du versement de l'indemnité compensatrice forfaitaire
+430 000 003,00
+60 773 987,00
+- Contractualisation pour le développement et la modernisation de l'apprentissage
+343 868 054,22
+97 493 602,78
+- Incitations financières en direction des entreprises respectant les quotas en alternance
+10 033 474,64
+30 702 950,36
+Gestion du patrimoine immobilier de l'État
+619 168 852,82
+15 738 398,41
+- Contribution au désendettement de l'État
+76 553 449,38
+4 053 995,62
+- Contribution aux dépenses immobilières
+542 615 403,44
+11 684 402,79
+Gestion et valorisation des ressources tirées de l'utilisation du spectre hertzien, des systèmes et des infrastructures de télécommunications de l'État
+16 818 990,02
+4 034 933,98
+- Désendettement de l'État
+- Optimisation de l'usage du spectre hertzien et interception et traitement des émissions électromagnétiques (ministère de la défense)
+16 818 990,02
+4 034 933,98
+- Optimisation de l'usage du spectre hertzien et des infrastructures du réseau physique de télécommunications du ministère de l'intérieur
+Participation de la France au désendettement de la Grèce
+399 000 000,00
+- Versement de la France à la Grèce au titre de la restitution à cet État des revenus perçus sur les titres grecs
+399 000 000,00
+- Rétrocessions de trop-perçus à la Banque de France
+Participations financières de l'État
+7 285 677 234,80
+3 144 058 678,20
+- Opérations en capital intéressant les participations financières de l'État
+5 785 677 234,80
+3 144 058 678,20
+- Désendettement de l'État et d'établissements publics de l'État
+1 500 000 000,00
+Pensions
+56 279 027 426,21
+0,71
+1,50
+- Pensions civiles et militaires de retraite et allocations temporaires d'invalidité
+52 146 616 983,29
+0,71
+- Ouvriers des établissements industriels de l'État
+1 908 639 510,04
+0,29
+0,25
+- Pensions militaires d'invalidité et des victimes de guerre et autres pensions
+2 223 770 932,88
+0,42
+0,54
+Services nationaux de transport conventionnés de voyageurs
+84 748 268,67
+221 451 191,33
+- Exploitation des services nationaux de transport conventionnés
+84 748 268,67
+103 451 191,33
+- Matériel roulant des services nationaux de transport conventionnés
+118 000 000,00
+Total des comptes d'affectation spéciale
+67 446 167 811,82
+0,71
+3 748 570 108,89
+Comptes de concours financiers
+Accords monétaires internationaux
+- Relations avec l'Union monétaire ouest-africaine
+- Relations avec l'Union monétaire d'Afrique centrale
+- Relations avec l'Union des Comores
+Avances à divers services de l'État ou organismes gérant des services publics
+7 022 467 090,37
+519 221 335,63
+- Avances à l'Agence de services et de paiement, au titre du préfinancement des aides communautaires de la politique agricole commune
+6 755 278 664,37
+444 721 335,63
+- Avances à des organismes distincts de l'État et gérant des services publics
+59 500 000,00
+- Avances à des services de l'État
+267 188 426,00
+- Avances à l'Office national d'indemnisation des accidents médicaux, des affections iatrogènes et des infections nosocomiales (ONIAM) au titre de l'indemnisation des victimes du Benfluorex
+15 000 000,00
+Avances à l'audiovisuel public
+3 551 099 588,00
+- France Télévisions
+2 431 968 898,00
+- ARTE France
+265 940 903,00
+- Radio France
+612 993 466,00
+- Contribution au financement de l'action audiovisuelle extérieure
+169 245 345,00
+- Institut national de l'audiovisuel
+70 950 976,00
+Avances aux collectivités territoriales
+93 648 827 464,10
+3 889 584 906,90
+- Avances aux collectivités et établissements publics, et à la Nouvelle-Calédonie
+6 000 000,00
+- Avances sur le montant des impositions revenant aux régions, départements, communes, établissements et divers organismes
+93 648 827 464,10
+3 883 584 906,90
+Avances aux organismes de sécurité sociale
+12 631 687 893,29
+60 312 106,71
+- Avance à l'Agence centrale des organismes de sécurité sociale (ACOSS) de la fraction de TVA prévue au 3° de l'article L. 241-2 du code de la sécurité sociale
+11 903 954 377,92
+58 445 622,08
+- Avance à l'Agence centrale des organismes de sécurité sociale (ACOSS) de la fraction de TVA affectée aux organismes de sécurité sociale en compensation des exonérations de cotisations sur les heures supplémentaires
+515 189 161,53
+1 610 838,47
+- Avance à l'Agence centrale des organismes de sécurité sociale (ACOSS) de la fraction de TVA affectée aux organismes de sécurité sociale en compensation de l'exonération de cotisations sociales sur les services à la personne
+212 544 353,84
+255 646,16
+Prêts à des États étrangers
+-4 701 083 989,11
+284 437 838,11
+- Prêts à des États étrangers, de la Réserve pays émergents, en vue de faciliter la réalisation de projets d'infrastructure
+263 368 715,01
+96 631 284,99
+- Prêts à des États étrangers pour consolidation de dettes envers la France
+187 800 000,00
+- Prêts à l'Agence française de développement en vue de favoriser le développement économique et social dans des États étrangers
+446 993 447,00
+6 553,00
+- Prêts aux États membres de l'Union européenne dont la monnaie est l'euro
+-5 411 446 151,12
+0,12
+Prêts et avances à des particuliers ou à des organismes privés
+1 015 460 786,00
+363 281 361,00
+- Prêts et avances pour le logement des agents de l'État
+360 786,00
+133 694,00
+- Prêts pour le développement économique et social
+114 500 000,00
+263 147 667,00
+- Prêts à la filière automobile
+-99 400 000,00
+100 000 000,00
+- Prêts aux petites et moyennes entreprises
+1 000 000 000,00
+Total des comptes de concours financiers
+113 168 458 832,65
+5 116 837 548,35
+Total général
+180 614 626 644,47
+0,71
+8 865 407 657,24
+II. - Les résultats des comptes spéciaux dont les opérations se poursuivent en 2015 sont arrêtés, au 31 décembre 2014, par mission et programme aux sommes mentionnées dans les tableaux ci-après. Les crédits de paiement ouverts et les découverts autorisés sont modifiés comme indiqué dans ces mêmes tableaux.
+(En euros)
+Désignation des comptes spéciaux
+Opérations de l'année
+Ajustements de la loi de règlement
+Dépenses
+Recettes
+<span class="ansi1 ansi31">Ouvertures de</span> <span class="ansi1 ansi32">Ouverturesde</span> crédits complémentaires
+Annulations de crédits non consommés et non reportés
+Comptes d'affectation spéciale
+Aides à l'acquisition de véhicules propres
+193 669 596,88
+334 746 398,76
+71 047 023,12
+- Contribution au financement de l'attribution d'aides à l'acquisition de véhicules propres
+192 769 298,88
+71 047 023,12
+- Contribution au financement de l'attribution d'aides au retrait de véhicules polluants
+900 298,00
+Contrôle de la circulation et du stationnement routiers
+1 332 870 081,58
+1 315 966 683,18
+0,87
+98 301 072,29
+- Radars
+197 791 399,58
+9 825 946,42
+- Fichier national du permis de conduire
+17 987 115,87
+0,87
+- Contrôle et modernisation de la politique de la circulation et du stationnement routiers
+31 559 321,00
+- Contribution à l'équipement des collectivités territoriales pour l'amélioration des transports en commun, de la sécurité et de la circulation routières
+670 779 724,13
+46 164 407,87
+- Désendettement de l'État
+414 752 521,00
+42 310 718,00
+Développement agricole et rural
+132 398 466,11
+117 182 954,65
+8 375 299,89
+- Développement et transfert en agriculture
+62 307 043,05
+3 834 168,95
+- Recherche appliquée et innovation en agriculture
+70 091 423,06
+4 541 130,94
+Financement des aides aux collectivités pour l'électrification rurale
+250 886 221,50
+376 435 930,29
+0,18
+564 069,68
+- Électrification rurale
+249 148 219,18
+0,18
+- Opérations de maîtrise de la demande d'électricité, de production d'électricité par des énergies renouvelables ou de production de proximité dans les zones non interconnectées, déclarations d'utilité publique et intempéries
+1 738 002,32
+564 069,68
+Financement national du développement et de la modernisation de l'apprentissage
+785 387 142,07
+678 294 060,87
+187 484 929,93
+- Péréquation entre régions et compensation au titre du transfert du versement de l'indemnité compensatrice forfaitaire
+430 000 003,00
+60 773 987,00
+- Contractualisation pour le développement et la modernisation de l'apprentissage
+344 868 054,22
+93 265 202,78
+- Incitations financières en direction des entreprises respectant les quotas en alternance
+10 519 084,85
+33 445 740,15
+Gestion du patrimoine immobilier de l'État
+575 852 284,39
+532 515 568,42
+4 053 996,36
+- Contribution au désendettement de l'État
+76 553 449,38
+4 053 995,62
+- Contribution aux dépenses immobilières
+499 298 835,01
+0,74
+Gestion et valorisation des ressources tirées de l'utilisation du spectre hertzien, des systèmes et des infrastructures de télécommunications de l'État
+15 919 477,00
+15 795 166,00
+- Désendettement de l'État
+- Optimisation de l'usage du spectre hertzien et interception et traitement des émissions électromagnétiques (ministère de la défense)
+15 919 477,00
+- Optimisation de l'usage du spectre hertzien et des infrastructures du réseau physique de télécommunications du ministère de l'intérieur
+Participation de la France au désendettement de la Grèce
+500 800 000,00
+399 000 000,00
+- Versement de la France à la Grèce au titre de la restitution à cet État des revenus perçus sur les titres grecs
+500 800 000,00
+- Rétrocessions de trop-perçus à la Banque de France
+Participations financières de l'État
+7 285 677 234,80
+6 867 685 322,02
+3 144 058 678,20
+- Opérations en capital intéressant les participations financières de l'État
+5 785 677 234,80
+3 144 058 678,20
+- Désendettement de l'État et d'établissements publics de l'État
+1 500 000 000,00
+Pensions
+56 279 012 612,68
+56 912 716 466,86
+1,04
+14 815,36
+- Pensions civiles et militaires de retraite et allocations temporaires d'invalidité
+52 146 616 983,29
+1 947,71
+- Ouvriers des établissements industriels de l'État
+1 908 639 510,04
+1,04
+- Pensions militaires d'invalidité et des victimes de guerre et autres pensions
+2 223 756 119,35
+12 867,65
+Services nationaux de transport conventionnés de voyageurs
+113 987 292,88
+109 057 837,00
+199 943 783,12
+- Exploitation des services nationaux de transport conventionnés
+113 987 292,88
+81 943 783,12
+- Matériel roulant des services nationaux de transport conventionnés
+118 000 000,00
+Total des comptes d'affectation spéciale
+67 466 460 409,89
+67 659 396 388,05
+2,09
+3 713 843 667,95
+Comptes de concours financiers
+Accords monétaires internationaux
+- Relations avec l'Union monétaire ouest-africaine
+- Relations avec l'Union monétaire d'Afrique centrale
+- Relations avec l'Union des Comores
+Avances à divers services de l'État ou organismes gérant des services publics
+7 022 467 090,37
+7 006 563 627,43
+519 221 335,63
+- Avances à l'Agence de services et de paiement, au titre du préfinancement des aides communautaires de la politique agricole commune
+6 755 278 664,37
+444 721 335,63
+- Avances à des organismes distincts de l'État et gérant des services publics
+59 500 000,00
+- Avances à des services de l'État
+267 188 426,00
+- Avances à l'Office national d'indemnisation des accidents médicaux, des affections iatrogènes et des infections nosocomiales (ONIAM) au titre de l'indemnisation des victimes du Benfluorex
+15 000 000,00
+Avances à l'audiovisuel public
+3 551 099 588,00
+3 551 768 233,95
+- France Télévisions
+2 431 968 898,00
+- ARTE France
+265 940 903,00
+- Radio France
+612 993 466,00
+- Contribution au financement de l'action audiovisuelle extérieure
+169 245 345,00
+- Institut national de l'audiovisuel
+70 950 976,00
+Avances aux collectivités territoriales
+93 649 390 563,10
+94 487 255 512,20
+3 889 021 807,90
+- Avances aux collectivités et établissements publics, et à la Nouvelle-Calédonie
+6 000 000,00
+- Avances sur le montant des impositions revenant aux régions, départements, communes, établissements et divers organismes
+93 649 390 563,10
+3 883 021 807,90
+Avances aux organismes de sécurité sociale
+12 631 687 893,29
+12 592 166 512,91
+60 312 106,71
+- Avance à l'Agence centrale des organismes de sécurité sociale (ACOSS) de la fraction de TVA prévue au 3° de l'article L. 241-2 du code de la sécurité sociale
+11 903 954 377,92
+58 445 622,08
+- Avance à l'Agence centrale des organismes de sécurité sociale (ACOSS) de la fraction de TVA affectée aux organismes de sécurité sociale en compensation des exonérations de cotisations sur les heures supplémentaires
+515 189 161,53
+1 610 838,47
+- Avance à l'Agence centrale des organismes de sécurité sociale (ACOSS) de la fraction de TVA affectée aux organismes de sécurité sociale en compensation de l'exonération de cotisations sociales sur les services à la personne
+212 544 353,84
+255 646,16
+Prêts à des États étrangers
+556 284 917,68
+580 346 797,85
+421 515 082,32
+- Prêts à des États étrangers, de la Réserve pays émergents, en vue de faciliter la réalisation de projets d'infrastructure
+229 284 917,68
+190 715 082,32
+- Prêts à des États étrangers pour consolidation de dettes envers la France
+187 800 000,00
+- Prêts à l'Agence française de développement en vue de favoriser le développement économique et social dans des États étrangers
+327 000 000,00
+43 000 000,00
+- Prêts aux États membres de l'Union européenne dont la monnaie est l'euro
+Prêts et avances à des particuliers ou à des organismes privés
+1 117 111 146,00
+15 324 044,88
+270 834 583,00
+- Prêts et avances pour le logement des agents de l'État
+361 146,00
+133 334,00
+- Prêts pour le développement économique et social
+114 500 000,00
+270 701 249,00
+- Prêts à la filière automobile
+2 250 000,00
+- Prêts aux petites et moyennes entreprises
+1 000 000 000,00
+Total des comptes de concours financiers
+118 528 041 198,44
+118 233 424 729,22
+5 160 904 915,56
+(En euros)
+Désignation des comptes spéciaux
+Opérations de l'année
+Ajustements de la loi de règlement
+Dépenses
+Recettes
+<span class="ansi1 ansi31">Majorations du</span> <span class="ansi1 ansi32">Majorationsdu</span> découvert
+Comptes de commerce
+- Approvisionnement des armées en produits pétroliers, autres fluides et produits complémentaires
+692 398 876,48
+724 812 070,78
+- Cantine et travail des détenus dans le cadre pénitentiaire
+159 893 828,90
+159 144 275,39
+- Couverture des risques financiers de l'État
+2 079 199 144,66
+2 079 199 144,66
+- Exploitations industrielles des ateliers aéronautiques de l'État
+643 896 485,91
+633 958 602,12
+- Gestion de la dette et de la trésorerie de l'État
+45 501 546 344,82
+45 635 151 959,62
+- Lancement de certains matériels aéronautiques et de certains matériels d'armement complexes
+2 525 939,00
+8 177 764,06
+- Liquidation d'établissements publics de l'État et liquidations diverses
+1 929,00
+- Opérations commerciales des domaines
+40 338 434,60
+66 876 754,71
+- Régie industrielle des établissements pénitentiaires
+21 218 271,17
+20 826 604,14
+- Renouvellement des concessions hydrauliques
+1 060 774,42
+Total des comptes de commerce
+49 142 080 028,96
+49 328 147 175,48
+Comptes d'opérations monétaires
+- Émission des monnaies métalliques
+167 839 853,53
+234 527 160,01
+- Opérations avec le Fonds monétaire international
+3 090 333 004,70
+2 200 321 190,96
+9 360 159 085,66
+- Pertes et bénéfices de change
+15 015 814,16
+19 306 047,95
+Total des comptes d'opérations monétaires
+3 273 188 672,39
+2 454 154 398,92
+9 360 159 085,66
+III. - Les soldes des comptes spéciaux dont les opérations se poursuivent en 2015 sont arrêtés, à la date du 31 décembre 2014, aux sommes ci-après :
+(En euros)
+Désignation des comptes spéciaux
+Soldes au 31 décembre 2014
+Débiteurs
+Créditeurs
+Comptes d'affectation spéciale
+6 274 071 813,09
+Aide à l'acquisition de véhicules propres
+142 893 422,33
+Contrôle de la circulation et du stationnement routiers
+755 525 014,46
+Développement agricole et rural
+50 457 137,03
+Financement des aides aux collectivités pour l'électrification rurale
+278 236 071,68
+Financement national du développement et de la modernisation de l'apprentissage
+8 546 665,93
+Gestion du patrimoine immobilier de l'État
+695 118 987,17
+Gestion et valorisation des ressources tirées de l'utilisation du spectre hertzien, des systèmes et des infrastructures de télécommunications de l'État
+4 308,89
+Participation de la France au désendettement de la Grèce
+304 800 000,00
+Participations financières de l'État
+2 368 926 170,41
+Pensions
+1 620 709 814,50
+Services nationaux de transport conventionnés de voyageurs
+48 854 220,69
+Comptes de concours financiers
+28 827 084 315,01
+3 687 470,90
+Accords monétaires internationaux
+Avances à divers services de l'État ou organismes gérant des services publics
+2 256 386 334,10
+Avances à l'audiovisuel public
+3 687 470,90
+Avances aux collectivités territoriales
+1 756 735 797,93
+Prêts à des États étrangers
+22 403 034 425,05
+Prêts et avances à des particuliers ou à des organismes privés
+2 410 927 757,93
+Comptes de commerce
+16 665 442,91
+3 990 333 435,65
+Approvisionnement des armées en produits pétroliers, autres fluides et produits complémentaires
+3 085 791,81
+Cantine et travail des détenus dans le cadre pénitentiaire
+13 690 571,90
+Couverture des risques financiers de l'État
+0,02
+Exploitations industrielles des ateliers aéronautiques de l'État
+47 928 233,20
+Gestion de la dette et de la trésorerie de l'État
+3 608 462 210,82
+Lancement de certains matériels aéronautiques et de certains matériels d'armement complexes
+108 074 130,75
+Liquidation d'établissements publics de l'État et liquidations diverses
+17 460 873,94
+Opérations commerciales des domaines
+184 217 323,26
+Régie industrielle des établissements pénitentiaires
+21 104 871,87
+Renouvellement des concessions hydroélectriques
+2 974 870,99
+Comptes d'opérations monétaires
+9 360 159 085,66
+2 805 655 384,03
+Émission des monnaies métalliques
+2 801 365 150,24
+Opérations avec le Fonds monétaire international
+9 360 159 085,66
+Pertes et bénéfices de change
+4 290 233,79
+Total général
+38 203 908 843,58
+13 073 748 103,67
+IV. - Les soldes arrêtés au III sont reportés à la gestion 2015 à l'exception :
+- d'un solde débiteur global de 1 055 208 902,43 € concernant les comptes de concours financiers suivants : "Prêts à des États étrangers" (1 054 988 401,52 €) et "Prêts et avances à des particuliers ou à des organismes privés" (220 500,91 €) ;
+- d'un solde créditeur de 4 290 233,79 € afférent au compte d'opérations monétaires "Pertes et bénéfices de change".
+
+7
+――――
+
+Le solde débiteur du compte spécial "Avances aux organismes de sécurité sociale", clos au 31 décembre 2014, est arrêté au montant de 34 081 292,84 €.
+
+8
+――――
+
+I. - Le XIII de l'article 60 de la loi de finances pour 1963 (n° 63-156 du 23 février 1963) est ainsi rédigé :
+"XIII. - Le présent article est applicable, dans sa version en vigueur au 1er juillet 2012, aux comptables publics et assimilés et aux régisseurs en Nouvelle-Calédonie, dans les Terres australes et antarctiques françaises, dans les îles Wallis et Futuna et, en Polynésie française, aux comptables publics et assimilés et aux régisseurs des services et des établissements publics de l'État ainsi que des communes, de leurs groupements et de leurs établissements publics."
+II. - Les déficits ayant fait l'objet d'un premier acte de mise en jeu de la responsabilité d'un comptable public ou d'un régisseur avant l'entrée en vigueur du présent article demeurent régis par les dispositions antérieures.
+
+
+</pre>
+</body>
+
+</html>

@@ -1,0 +1,1776 @@
+
+<style>
+body {
+    max-width: 700px;
+}
+
+pre {
+    font-family: ubuntu, sans-serif;
+    font-size: 20px;
+}
+</style>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #AAAAAA; }
+.body_background { background-color: #000000; }
+.body_foreground > .bold,.bold > .body_foreground, body.body_foreground > pre > .bold { color: #FFFFFF; font-weight: normal; }
+.inv_foreground { color: #000000; }
+.inv_background { background-color: #AAAAAA; }
+.ansi1 { font-weight: bold; }
+.ansi2 { font-weight: lighter; }
+.ansi3 { font-style: italic; }
+.ansi4 { text-decoration: underline; }
+.ansi5 { text-decoration: blink; }
+.ansi6 { text-decoration: blink; }
+.ansi8 { visibility: hidden; }
+.ansi9 { text-decoration: line-through; }
+.ansi30 { color: #000316; }
+.inv30 { background-color: #000316; }
+.ansi31 { color: #aa0000; }
+.inv31 { background-color: #aa0000; }
+.ansi32 { color: #00aa00; }
+.inv32 { background-color: #00aa00; }
+.ansi33 { color: #aa5500; }
+.inv33 { background-color: #aa5500; }
+.ansi34 { color: #0000aa; }
+.inv34 { background-color: #0000aa; }
+.ansi35 { color: #E850A8; }
+.inv35 { background-color: #E850A8; }
+.ansi36 { color: #00aaaa; }
+.inv36 { background-color: #00aaaa; }
+.ansi37 { color: #F5F1DE; }
+.inv37 { background-color: #F5F1DE; }
+.ansi40 { background-color: #000316; }
+.inv40 { color: #000316; }
+.ansi41 { background-color: #aa0000; }
+.inv41 { color: #aa0000; }
+.ansi42 { background-color: #00aa00; }
+.inv42 { color: #00aa00; }
+.ansi43 { background-color: #aa5500; }
+.inv43 { color: #aa5500; }
+.ansi44 { background-color: #0000aa; }
+.inv44 { color: #0000aa; }
+.ansi45 { background-color: #E850A8; }
+.inv45 { color: #E850A8; }
+.ansi46 { background-color: #00aaaa; }
+.inv46 { color: #00aaaa; }
+.ansi47 { background-color: #F5F1DE; }
+.inv47 { color: #F5F1DE; }
+.ansi38-0 { color: #000316; }
+.inv38-0 { background-color: #000316; }
+.ansi38-1 { color: #aa0000; }
+.inv38-1 { background-color: #aa0000; }
+.ansi38-2 { color: #00aa00; }
+.inv38-2 { background-color: #00aa00; }
+.ansi38-3 { color: #aa5500; }
+.inv38-3 { background-color: #aa5500; }
+.ansi38-4 { color: #0000aa; }
+.inv38-4 { background-color: #0000aa; }
+.ansi38-5 { color: #E850A8; }
+.inv38-5 { background-color: #E850A8; }
+.ansi38-6 { color: #00aaaa; }
+.inv38-6 { background-color: #00aaaa; }
+.ansi38-7 { color: #F5F1DE; }
+.inv38-7 { background-color: #F5F1DE; }
+.ansi38-8 { color: #7f7f7f; }
+.inv38-8 { background-color: #7f7f7f; }
+.ansi38-9 { color: #ff0000; }
+.inv38-9 { background-color: #ff0000; }
+.ansi38-10 { color: #00ff00; }
+.inv38-10 { background-color: #00ff00; }
+.ansi38-11 { color: #ffff00; }
+.inv38-11 { background-color: #ffff00; }
+.ansi38-12 { color: #5c5cff; }
+.inv38-12 { background-color: #5c5cff; }
+.ansi38-13 { color: #ff00ff; }
+.inv38-13 { background-color: #ff00ff; }
+.ansi38-14 { color: #00ffff; }
+.inv38-14 { background-color: #00ffff; }
+.ansi38-15 { color: #ffffff; }
+.inv38-15 { background-color: #ffffff; }
+.ansi48-0 { background-color: #000316; }
+.inv48-0 { color: #000316; }
+.ansi48-1 { background-color: #aa0000; }
+.inv48-1 { color: #aa0000; }
+.ansi48-2 { background-color: #00aa00; }
+.inv48-2 { color: #00aa00; }
+.ansi48-3 { background-color: #aa5500; }
+.inv48-3 { color: #aa5500; }
+.ansi48-4 { background-color: #0000aa; }
+.inv48-4 { color: #0000aa; }
+.ansi48-5 { background-color: #E850A8; }
+.inv48-5 { color: #E850A8; }
+.ansi48-6 { background-color: #00aaaa; }
+.inv48-6 { color: #00aaaa; }
+.ansi48-7 { background-color: #F5F1DE; }
+.inv48-7 { color: #F5F1DE; }
+.ansi48-8 { background-color: #7f7f7f; }
+.inv48-8 { color: #7f7f7f; }
+.ansi48-9 { background-color: #ff0000; }
+.inv48-9 { color: #ff0000; }
+.ansi48-10 { background-color: #00ff00; }
+.inv48-10 { color: #00ff00; }
+.ansi48-11 { background-color: #ffff00; }
+.inv48-11 { color: #ffff00; }
+.ansi48-12 { background-color: #5c5cff; }
+.inv48-12 { color: #5c5cff; }
+.ansi48-13 { background-color: #ff00ff; }
+.inv48-13 { color: #ff00ff; }
+.ansi48-14 { background-color: #00ffff; }
+.inv48-14 { color: #00ffff; }
+.ansi48-15 { background-color: #ffffff; }
+.inv48-15 { color: #ffffff; }
+.ansi38-16 { color: #000000; }
+.inv38-16 { background: #000000; }
+.ansi48-16 { background: #000000; }
+.inv48-16 { color: #000000; }
+.ansi38-17 { color: #00002a; }
+.inv38-17 { background: #00002a; }
+.ansi48-17 { background: #00002a; }
+.inv48-17 { color: #00002a; }
+.ansi38-18 { color: #000054; }
+.inv38-18 { background: #000054; }
+.ansi48-18 { background: #000054; }
+.inv48-18 { color: #000054; }
+.ansi38-19 { color: #00007e; }
+.inv38-19 { background: #00007e; }
+.ansi48-19 { background: #00007e; }
+.inv48-19 { color: #00007e; }
+.ansi38-20 { color: #0000a8; }
+.inv38-20 { background: #0000a8; }
+.ansi48-20 { background: #0000a8; }
+.inv48-20 { color: #0000a8; }
+.ansi38-21 { color: #0000d2; }
+.inv38-21 { background: #0000d2; }
+.ansi48-21 { background: #0000d2; }
+.inv48-21 { color: #0000d2; }
+.ansi38-52 { color: #2a0000; }
+.inv38-52 { background: #2a0000; }
+.ansi48-52 { background: #2a0000; }
+.inv48-52 { color: #2a0000; }
+.ansi38-53 { color: #2a002a; }
+.inv38-53 { background: #2a002a; }
+.ansi48-53 { background: #2a002a; }
+.inv48-53 { color: #2a002a; }
+.ansi38-54 { color: #2a0054; }
+.inv38-54 { background: #2a0054; }
+.ansi48-54 { background: #2a0054; }
+.inv48-54 { color: #2a0054; }
+.ansi38-55 { color: #2a007e; }
+.inv38-55 { background: #2a007e; }
+.ansi48-55 { background: #2a007e; }
+.inv48-55 { color: #2a007e; }
+.ansi38-56 { color: #2a00a8; }
+.inv38-56 { background: #2a00a8; }
+.ansi48-56 { background: #2a00a8; }
+.inv48-56 { color: #2a00a8; }
+.ansi38-57 { color: #2a00d2; }
+.inv38-57 { background: #2a00d2; }
+.ansi48-57 { background: #2a00d2; }
+.inv48-57 { color: #2a00d2; }
+.ansi38-88 { color: #540000; }
+.inv38-88 { background: #540000; }
+.ansi48-88 { background: #540000; }
+.inv48-88 { color: #540000; }
+.ansi38-89 { color: #54002a; }
+.inv38-89 { background: #54002a; }
+.ansi48-89 { background: #54002a; }
+.inv48-89 { color: #54002a; }
+.ansi38-90 { color: #540054; }
+.inv38-90 { background: #540054; }
+.ansi48-90 { background: #540054; }
+.inv48-90 { color: #540054; }
+.ansi38-91 { color: #54007e; }
+.inv38-91 { background: #54007e; }
+.ansi48-91 { background: #54007e; }
+.inv48-91 { color: #54007e; }
+.ansi38-92 { color: #5400a8; }
+.inv38-92 { background: #5400a8; }
+.ansi48-92 { background: #5400a8; }
+.inv48-92 { color: #5400a8; }
+.ansi38-93 { color: #5400d2; }
+.inv38-93 { background: #5400d2; }
+.ansi48-93 { background: #5400d2; }
+.inv48-93 { color: #5400d2; }
+.ansi38-124 { color: #7e0000; }
+.inv38-124 { background: #7e0000; }
+.ansi48-124 { background: #7e0000; }
+.inv48-124 { color: #7e0000; }
+.ansi38-125 { color: #7e002a; }
+.inv38-125 { background: #7e002a; }
+.ansi48-125 { background: #7e002a; }
+.inv48-125 { color: #7e002a; }
+.ansi38-126 { color: #7e0054; }
+.inv38-126 { background: #7e0054; }
+.ansi48-126 { background: #7e0054; }
+.inv48-126 { color: #7e0054; }
+.ansi38-127 { color: #7e007e; }
+.inv38-127 { background: #7e007e; }
+.ansi48-127 { background: #7e007e; }
+.inv48-127 { color: #7e007e; }
+.ansi38-128 { color: #7e00a8; }
+.inv38-128 { background: #7e00a8; }
+.ansi48-128 { background: #7e00a8; }
+.inv48-128 { color: #7e00a8; }
+.ansi38-129 { color: #7e00d2; }
+.inv38-129 { background: #7e00d2; }
+.ansi48-129 { background: #7e00d2; }
+.inv48-129 { color: #7e00d2; }
+.ansi38-160 { color: #a80000; }
+.inv38-160 { background: #a80000; }
+.ansi48-160 { background: #a80000; }
+.inv48-160 { color: #a80000; }
+.ansi38-161 { color: #a8002a; }
+.inv38-161 { background: #a8002a; }
+.ansi48-161 { background: #a8002a; }
+.inv48-161 { color: #a8002a; }
+.ansi38-162 { color: #a80054; }
+.inv38-162 { background: #a80054; }
+.ansi48-162 { background: #a80054; }
+.inv48-162 { color: #a80054; }
+.ansi38-163 { color: #a8007e; }
+.inv38-163 { background: #a8007e; }
+.ansi48-163 { background: #a8007e; }
+.inv48-163 { color: #a8007e; }
+.ansi38-164 { color: #a800a8; }
+.inv38-164 { background: #a800a8; }
+.ansi48-164 { background: #a800a8; }
+.inv48-164 { color: #a800a8; }
+.ansi38-165 { color: #a800d2; }
+.inv38-165 { background: #a800d2; }
+.ansi48-165 { background: #a800d2; }
+.inv48-165 { color: #a800d2; }
+.ansi38-196 { color: #d20000; }
+.inv38-196 { background: #d20000; }
+.ansi48-196 { background: #d20000; }
+.inv48-196 { color: #d20000; }
+.ansi38-197 { color: #d2002a; }
+.inv38-197 { background: #d2002a; }
+.ansi48-197 { background: #d2002a; }
+.inv48-197 { color: #d2002a; }
+.ansi38-198 { color: #d20054; }
+.inv38-198 { background: #d20054; }
+.ansi48-198 { background: #d20054; }
+.inv48-198 { color: #d20054; }
+.ansi38-199 { color: #d2007e; }
+.inv38-199 { background: #d2007e; }
+.ansi48-199 { background: #d2007e; }
+.inv48-199 { color: #d2007e; }
+.ansi38-200 { color: #d200a8; }
+.inv38-200 { background: #d200a8; }
+.ansi48-200 { background: #d200a8; }
+.inv48-200 { color: #d200a8; }
+.ansi38-201 { color: #d200d2; }
+.inv38-201 { background: #d200d2; }
+.ansi48-201 { background: #d200d2; }
+.inv48-201 { color: #d200d2; }
+.ansi38-22 { color: #002a00; }
+.inv38-22 { background: #002a00; }
+.ansi48-22 { background: #002a00; }
+.inv48-22 { color: #002a00; }
+.ansi38-23 { color: #002a2a; }
+.inv38-23 { background: #002a2a; }
+.ansi48-23 { background: #002a2a; }
+.inv48-23 { color: #002a2a; }
+.ansi38-24 { color: #002a54; }
+.inv38-24 { background: #002a54; }
+.ansi48-24 { background: #002a54; }
+.inv48-24 { color: #002a54; }
+.ansi38-25 { color: #002a7e; }
+.inv38-25 { background: #002a7e; }
+.ansi48-25 { background: #002a7e; }
+.inv48-25 { color: #002a7e; }
+.ansi38-26 { color: #002aa8; }
+.inv38-26 { background: #002aa8; }
+.ansi48-26 { background: #002aa8; }
+.inv48-26 { color: #002aa8; }
+.ansi38-27 { color: #002ad2; }
+.inv38-27 { background: #002ad2; }
+.ansi48-27 { background: #002ad2; }
+.inv48-27 { color: #002ad2; }
+.ansi38-58 { color: #2a2a00; }
+.inv38-58 { background: #2a2a00; }
+.ansi48-58 { background: #2a2a00; }
+.inv48-58 { color: #2a2a00; }
+.ansi38-59 { color: #2a2a2a; }
+.inv38-59 { background: #2a2a2a; }
+.ansi48-59 { background: #2a2a2a; }
+.inv48-59 { color: #2a2a2a; }
+.ansi38-60 { color: #2a2a54; }
+.inv38-60 { background: #2a2a54; }
+.ansi48-60 { background: #2a2a54; }
+.inv48-60 { color: #2a2a54; }
+.ansi38-61 { color: #2a2a7e; }
+.inv38-61 { background: #2a2a7e; }
+.ansi48-61 { background: #2a2a7e; }
+.inv48-61 { color: #2a2a7e; }
+.ansi38-62 { color: #2a2aa8; }
+.inv38-62 { background: #2a2aa8; }
+.ansi48-62 { background: #2a2aa8; }
+.inv48-62 { color: #2a2aa8; }
+.ansi38-63 { color: #2a2ad2; }
+.inv38-63 { background: #2a2ad2; }
+.ansi48-63 { background: #2a2ad2; }
+.inv48-63 { color: #2a2ad2; }
+.ansi38-94 { color: #542a00; }
+.inv38-94 { background: #542a00; }
+.ansi48-94 { background: #542a00; }
+.inv48-94 { color: #542a00; }
+.ansi38-95 { color: #542a2a; }
+.inv38-95 { background: #542a2a; }
+.ansi48-95 { background: #542a2a; }
+.inv48-95 { color: #542a2a; }
+.ansi38-96 { color: #542a54; }
+.inv38-96 { background: #542a54; }
+.ansi48-96 { background: #542a54; }
+.inv48-96 { color: #542a54; }
+.ansi38-97 { color: #542a7e; }
+.inv38-97 { background: #542a7e; }
+.ansi48-97 { background: #542a7e; }
+.inv48-97 { color: #542a7e; }
+.ansi38-98 { color: #542aa8; }
+.inv38-98 { background: #542aa8; }
+.ansi48-98 { background: #542aa8; }
+.inv48-98 { color: #542aa8; }
+.ansi38-99 { color: #542ad2; }
+.inv38-99 { background: #542ad2; }
+.ansi48-99 { background: #542ad2; }
+.inv48-99 { color: #542ad2; }
+.ansi38-130 { color: #7e2a00; }
+.inv38-130 { background: #7e2a00; }
+.ansi48-130 { background: #7e2a00; }
+.inv48-130 { color: #7e2a00; }
+.ansi38-131 { color: #7e2a2a; }
+.inv38-131 { background: #7e2a2a; }
+.ansi48-131 { background: #7e2a2a; }
+.inv48-131 { color: #7e2a2a; }
+.ansi38-132 { color: #7e2a54; }
+.inv38-132 { background: #7e2a54; }
+.ansi48-132 { background: #7e2a54; }
+.inv48-132 { color: #7e2a54; }
+.ansi38-133 { color: #7e2a7e; }
+.inv38-133 { background: #7e2a7e; }
+.ansi48-133 { background: #7e2a7e; }
+.inv48-133 { color: #7e2a7e; }
+.ansi38-134 { color: #7e2aa8; }
+.inv38-134 { background: #7e2aa8; }
+.ansi48-134 { background: #7e2aa8; }
+.inv48-134 { color: #7e2aa8; }
+.ansi38-135 { color: #7e2ad2; }
+.inv38-135 { background: #7e2ad2; }
+.ansi48-135 { background: #7e2ad2; }
+.inv48-135 { color: #7e2ad2; }
+.ansi38-166 { color: #a82a00; }
+.inv38-166 { background: #a82a00; }
+.ansi48-166 { background: #a82a00; }
+.inv48-166 { color: #a82a00; }
+.ansi38-167 { color: #a82a2a; }
+.inv38-167 { background: #a82a2a; }
+.ansi48-167 { background: #a82a2a; }
+.inv48-167 { color: #a82a2a; }
+.ansi38-168 { color: #a82a54; }
+.inv38-168 { background: #a82a54; }
+.ansi48-168 { background: #a82a54; }
+.inv48-168 { color: #a82a54; }
+.ansi38-169 { color: #a82a7e; }
+.inv38-169 { background: #a82a7e; }
+.ansi48-169 { background: #a82a7e; }
+.inv48-169 { color: #a82a7e; }
+.ansi38-170 { color: #a82aa8; }
+.inv38-170 { background: #a82aa8; }
+.ansi48-170 { background: #a82aa8; }
+.inv48-170 { color: #a82aa8; }
+.ansi38-171 { color: #a82ad2; }
+.inv38-171 { background: #a82ad2; }
+.ansi48-171 { background: #a82ad2; }
+.inv48-171 { color: #a82ad2; }
+.ansi38-202 { color: #d22a00; }
+.inv38-202 { background: #d22a00; }
+.ansi48-202 { background: #d22a00; }
+.inv48-202 { color: #d22a00; }
+.ansi38-203 { color: #d22a2a; }
+.inv38-203 { background: #d22a2a; }
+.ansi48-203 { background: #d22a2a; }
+.inv48-203 { color: #d22a2a; }
+.ansi38-204 { color: #d22a54; }
+.inv38-204 { background: #d22a54; }
+.ansi48-204 { background: #d22a54; }
+.inv48-204 { color: #d22a54; }
+.ansi38-205 { color: #d22a7e; }
+.inv38-205 { background: #d22a7e; }
+.ansi48-205 { background: #d22a7e; }
+.inv48-205 { color: #d22a7e; }
+.ansi38-206 { color: #d22aa8; }
+.inv38-206 { background: #d22aa8; }
+.ansi48-206 { background: #d22aa8; }
+.inv48-206 { color: #d22aa8; }
+.ansi38-207 { color: #d22ad2; }
+.inv38-207 { background: #d22ad2; }
+.ansi48-207 { background: #d22ad2; }
+.inv48-207 { color: #d22ad2; }
+.ansi38-28 { color: #005400; }
+.inv38-28 { background: #005400; }
+.ansi48-28 { background: #005400; }
+.inv48-28 { color: #005400; }
+.ansi38-29 { color: #00542a; }
+.inv38-29 { background: #00542a; }
+.ansi48-29 { background: #00542a; }
+.inv48-29 { color: #00542a; }
+.ansi38-30 { color: #005454; }
+.inv38-30 { background: #005454; }
+.ansi48-30 { background: #005454; }
+.inv48-30 { color: #005454; }
+.ansi38-31 { color: #00547e; }
+.inv38-31 { background: #00547e; }
+.ansi48-31 { background: #00547e; }
+.inv48-31 { color: #00547e; }
+.ansi38-32 { color: #0054a8; }
+.inv38-32 { background: #0054a8; }
+.ansi48-32 { background: #0054a8; }
+.inv48-32 { color: #0054a8; }
+.ansi38-33 { color: #0054d2; }
+.inv38-33 { background: #0054d2; }
+.ansi48-33 { background: #0054d2; }
+.inv48-33 { color: #0054d2; }
+.ansi38-64 { color: #2a5400; }
+.inv38-64 { background: #2a5400; }
+.ansi48-64 { background: #2a5400; }
+.inv48-64 { color: #2a5400; }
+.ansi38-65 { color: #2a542a; }
+.inv38-65 { background: #2a542a; }
+.ansi48-65 { background: #2a542a; }
+.inv48-65 { color: #2a542a; }
+.ansi38-66 { color: #2a5454; }
+.inv38-66 { background: #2a5454; }
+.ansi48-66 { background: #2a5454; }
+.inv48-66 { color: #2a5454; }
+.ansi38-67 { color: #2a547e; }
+.inv38-67 { background: #2a547e; }
+.ansi48-67 { background: #2a547e; }
+.inv48-67 { color: #2a547e; }
+.ansi38-68 { color: #2a54a8; }
+.inv38-68 { background: #2a54a8; }
+.ansi48-68 { background: #2a54a8; }
+.inv48-68 { color: #2a54a8; }
+.ansi38-69 { color: #2a54d2; }
+.inv38-69 { background: #2a54d2; }
+.ansi48-69 { background: #2a54d2; }
+.inv48-69 { color: #2a54d2; }
+.ansi38-100 { color: #545400; }
+.inv38-100 { background: #545400; }
+.ansi48-100 { background: #545400; }
+.inv48-100 { color: #545400; }
+.ansi38-101 { color: #54542a; }
+.inv38-101 { background: #54542a; }
+.ansi48-101 { background: #54542a; }
+.inv48-101 { color: #54542a; }
+.ansi38-102 { color: #545454; }
+.inv38-102 { background: #545454; }
+.ansi48-102 { background: #545454; }
+.inv48-102 { color: #545454; }
+.ansi38-103 { color: #54547e; }
+.inv38-103 { background: #54547e; }
+.ansi48-103 { background: #54547e; }
+.inv48-103 { color: #54547e; }
+.ansi38-104 { color: #5454a8; }
+.inv38-104 { background: #5454a8; }
+.ansi48-104 { background: #5454a8; }
+.inv48-104 { color: #5454a8; }
+.ansi38-105 { color: #5454d2; }
+.inv38-105 { background: #5454d2; }
+.ansi48-105 { background: #5454d2; }
+.inv48-105 { color: #5454d2; }
+.ansi38-136 { color: #7e5400; }
+.inv38-136 { background: #7e5400; }
+.ansi48-136 { background: #7e5400; }
+.inv48-136 { color: #7e5400; }
+.ansi38-137 { color: #7e542a; }
+.inv38-137 { background: #7e542a; }
+.ansi48-137 { background: #7e542a; }
+.inv48-137 { color: #7e542a; }
+.ansi38-138 { color: #7e5454; }
+.inv38-138 { background: #7e5454; }
+.ansi48-138 { background: #7e5454; }
+.inv48-138 { color: #7e5454; }
+.ansi38-139 { color: #7e547e; }
+.inv38-139 { background: #7e547e; }
+.ansi48-139 { background: #7e547e; }
+.inv48-139 { color: #7e547e; }
+.ansi38-140 { color: #7e54a8; }
+.inv38-140 { background: #7e54a8; }
+.ansi48-140 { background: #7e54a8; }
+.inv48-140 { color: #7e54a8; }
+.ansi38-141 { color: #7e54d2; }
+.inv38-141 { background: #7e54d2; }
+.ansi48-141 { background: #7e54d2; }
+.inv48-141 { color: #7e54d2; }
+.ansi38-172 { color: #a85400; }
+.inv38-172 { background: #a85400; }
+.ansi48-172 { background: #a85400; }
+.inv48-172 { color: #a85400; }
+.ansi38-173 { color: #a8542a; }
+.inv38-173 { background: #a8542a; }
+.ansi48-173 { background: #a8542a; }
+.inv48-173 { color: #a8542a; }
+.ansi38-174 { color: #a85454; }
+.inv38-174 { background: #a85454; }
+.ansi48-174 { background: #a85454; }
+.inv48-174 { color: #a85454; }
+.ansi38-175 { color: #a8547e; }
+.inv38-175 { background: #a8547e; }
+.ansi48-175 { background: #a8547e; }
+.inv48-175 { color: #a8547e; }
+.ansi38-176 { color: #a854a8; }
+.inv38-176 { background: #a854a8; }
+.ansi48-176 { background: #a854a8; }
+.inv48-176 { color: #a854a8; }
+.ansi38-177 { color: #a854d2; }
+.inv38-177 { background: #a854d2; }
+.ansi48-177 { background: #a854d2; }
+.inv48-177 { color: #a854d2; }
+.ansi38-208 { color: #d25400; }
+.inv38-208 { background: #d25400; }
+.ansi48-208 { background: #d25400; }
+.inv48-208 { color: #d25400; }
+.ansi38-209 { color: #d2542a; }
+.inv38-209 { background: #d2542a; }
+.ansi48-209 { background: #d2542a; }
+.inv48-209 { color: #d2542a; }
+.ansi38-210 { color: #d25454; }
+.inv38-210 { background: #d25454; }
+.ansi48-210 { background: #d25454; }
+.inv48-210 { color: #d25454; }
+.ansi38-211 { color: #d2547e; }
+.inv38-211 { background: #d2547e; }
+.ansi48-211 { background: #d2547e; }
+.inv48-211 { color: #d2547e; }
+.ansi38-212 { color: #d254a8; }
+.inv38-212 { background: #d254a8; }
+.ansi48-212 { background: #d254a8; }
+.inv48-212 { color: #d254a8; }
+.ansi38-213 { color: #d254d2; }
+.inv38-213 { background: #d254d2; }
+.ansi48-213 { background: #d254d2; }
+.inv48-213 { color: #d254d2; }
+.ansi38-34 { color: #007e00; }
+.inv38-34 { background: #007e00; }
+.ansi48-34 { background: #007e00; }
+.inv48-34 { color: #007e00; }
+.ansi38-35 { color: #007e2a; }
+.inv38-35 { background: #007e2a; }
+.ansi48-35 { background: #007e2a; }
+.inv48-35 { color: #007e2a; }
+.ansi38-36 { color: #007e54; }
+.inv38-36 { background: #007e54; }
+.ansi48-36 { background: #007e54; }
+.inv48-36 { color: #007e54; }
+.ansi38-37 { color: #007e7e; }
+.inv38-37 { background: #007e7e; }
+.ansi48-37 { background: #007e7e; }
+.inv48-37 { color: #007e7e; }
+.ansi38-38 { color: #007ea8; }
+.inv38-38 { background: #007ea8; }
+.ansi48-38 { background: #007ea8; }
+.inv48-38 { color: #007ea8; }
+.ansi38-39 { color: #007ed2; }
+.inv38-39 { background: #007ed2; }
+.ansi48-39 { background: #007ed2; }
+.inv48-39 { color: #007ed2; }
+.ansi38-70 { color: #2a7e00; }
+.inv38-70 { background: #2a7e00; }
+.ansi48-70 { background: #2a7e00; }
+.inv48-70 { color: #2a7e00; }
+.ansi38-71 { color: #2a7e2a; }
+.inv38-71 { background: #2a7e2a; }
+.ansi48-71 { background: #2a7e2a; }
+.inv48-71 { color: #2a7e2a; }
+.ansi38-72 { color: #2a7e54; }
+.inv38-72 { background: #2a7e54; }
+.ansi48-72 { background: #2a7e54; }
+.inv48-72 { color: #2a7e54; }
+.ansi38-73 { color: #2a7e7e; }
+.inv38-73 { background: #2a7e7e; }
+.ansi48-73 { background: #2a7e7e; }
+.inv48-73 { color: #2a7e7e; }
+.ansi38-74 { color: #2a7ea8; }
+.inv38-74 { background: #2a7ea8; }
+.ansi48-74 { background: #2a7ea8; }
+.inv48-74 { color: #2a7ea8; }
+.ansi38-75 { color: #2a7ed2; }
+.inv38-75 { background: #2a7ed2; }
+.ansi48-75 { background: #2a7ed2; }
+.inv48-75 { color: #2a7ed2; }
+.ansi38-106 { color: #547e00; }
+.inv38-106 { background: #547e00; }
+.ansi48-106 { background: #547e00; }
+.inv48-106 { color: #547e00; }
+.ansi38-107 { color: #547e2a; }
+.inv38-107 { background: #547e2a; }
+.ansi48-107 { background: #547e2a; }
+.inv48-107 { color: #547e2a; }
+.ansi38-108 { color: #547e54; }
+.inv38-108 { background: #547e54; }
+.ansi48-108 { background: #547e54; }
+.inv48-108 { color: #547e54; }
+.ansi38-109 { color: #547e7e; }
+.inv38-109 { background: #547e7e; }
+.ansi48-109 { background: #547e7e; }
+.inv48-109 { color: #547e7e; }
+.ansi38-110 { color: #547ea8; }
+.inv38-110 { background: #547ea8; }
+.ansi48-110 { background: #547ea8; }
+.inv48-110 { color: #547ea8; }
+.ansi38-111 { color: #547ed2; }
+.inv38-111 { background: #547ed2; }
+.ansi48-111 { background: #547ed2; }
+.inv48-111 { color: #547ed2; }
+.ansi38-142 { color: #7e7e00; }
+.inv38-142 { background: #7e7e00; }
+.ansi48-142 { background: #7e7e00; }
+.inv48-142 { color: #7e7e00; }
+.ansi38-143 { color: #7e7e2a; }
+.inv38-143 { background: #7e7e2a; }
+.ansi48-143 { background: #7e7e2a; }
+.inv48-143 { color: #7e7e2a; }
+.ansi38-144 { color: #7e7e54; }
+.inv38-144 { background: #7e7e54; }
+.ansi48-144 { background: #7e7e54; }
+.inv48-144 { color: #7e7e54; }
+.ansi38-145 { color: #7e7e7e; }
+.inv38-145 { background: #7e7e7e; }
+.ansi48-145 { background: #7e7e7e; }
+.inv48-145 { color: #7e7e7e; }
+.ansi38-146 { color: #7e7ea8; }
+.inv38-146 { background: #7e7ea8; }
+.ansi48-146 { background: #7e7ea8; }
+.inv48-146 { color: #7e7ea8; }
+.ansi38-147 { color: #7e7ed2; }
+.inv38-147 { background: #7e7ed2; }
+.ansi48-147 { background: #7e7ed2; }
+.inv48-147 { color: #7e7ed2; }
+.ansi38-178 { color: #a87e00; }
+.inv38-178 { background: #a87e00; }
+.ansi48-178 { background: #a87e00; }
+.inv48-178 { color: #a87e00; }
+.ansi38-179 { color: #a87e2a; }
+.inv38-179 { background: #a87e2a; }
+.ansi48-179 { background: #a87e2a; }
+.inv48-179 { color: #a87e2a; }
+.ansi38-180 { color: #a87e54; }
+.inv38-180 { background: #a87e54; }
+.ansi48-180 { background: #a87e54; }
+.inv48-180 { color: #a87e54; }
+.ansi38-181 { color: #a87e7e; }
+.inv38-181 { background: #a87e7e; }
+.ansi48-181 { background: #a87e7e; }
+.inv48-181 { color: #a87e7e; }
+.ansi38-182 { color: #a87ea8; }
+.inv38-182 { background: #a87ea8; }
+.ansi48-182 { background: #a87ea8; }
+.inv48-182 { color: #a87ea8; }
+.ansi38-183 { color: #a87ed2; }
+.inv38-183 { background: #a87ed2; }
+.ansi48-183 { background: #a87ed2; }
+.inv48-183 { color: #a87ed2; }
+.ansi38-214 { color: #d27e00; }
+.inv38-214 { background: #d27e00; }
+.ansi48-214 { background: #d27e00; }
+.inv48-214 { color: #d27e00; }
+.ansi38-215 { color: #d27e2a; }
+.inv38-215 { background: #d27e2a; }
+.ansi48-215 { background: #d27e2a; }
+.inv48-215 { color: #d27e2a; }
+.ansi38-216 { color: #d27e54; }
+.inv38-216 { background: #d27e54; }
+.ansi48-216 { background: #d27e54; }
+.inv48-216 { color: #d27e54; }
+.ansi38-217 { color: #d27e7e; }
+.inv38-217 { background: #d27e7e; }
+.ansi48-217 { background: #d27e7e; }
+.inv48-217 { color: #d27e7e; }
+.ansi38-218 { color: #d27ea8; }
+.inv38-218 { background: #d27ea8; }
+.ansi48-218 { background: #d27ea8; }
+.inv48-218 { color: #d27ea8; }
+.ansi38-219 { color: #d27ed2; }
+.inv38-219 { background: #d27ed2; }
+.ansi48-219 { background: #d27ed2; }
+.inv48-219 { color: #d27ed2; }
+.ansi38-40 { color: #00a800; }
+.inv38-40 { background: #00a800; }
+.ansi48-40 { background: #00a800; }
+.inv48-40 { color: #00a800; }
+.ansi38-41 { color: #00a82a; }
+.inv38-41 { background: #00a82a; }
+.ansi48-41 { background: #00a82a; }
+.inv48-41 { color: #00a82a; }
+.ansi38-42 { color: #00a854; }
+.inv38-42 { background: #00a854; }
+.ansi48-42 { background: #00a854; }
+.inv48-42 { color: #00a854; }
+.ansi38-43 { color: #00a87e; }
+.inv38-43 { background: #00a87e; }
+.ansi48-43 { background: #00a87e; }
+.inv48-43 { color: #00a87e; }
+.ansi38-44 { color: #00a8a8; }
+.inv38-44 { background: #00a8a8; }
+.ansi48-44 { background: #00a8a8; }
+.inv48-44 { color: #00a8a8; }
+.ansi38-45 { color: #00a8d2; }
+.inv38-45 { background: #00a8d2; }
+.ansi48-45 { background: #00a8d2; }
+.inv48-45 { color: #00a8d2; }
+.ansi38-76 { color: #2aa800; }
+.inv38-76 { background: #2aa800; }
+.ansi48-76 { background: #2aa800; }
+.inv48-76 { color: #2aa800; }
+.ansi38-77 { color: #2aa82a; }
+.inv38-77 { background: #2aa82a; }
+.ansi48-77 { background: #2aa82a; }
+.inv48-77 { color: #2aa82a; }
+.ansi38-78 { color: #2aa854; }
+.inv38-78 { background: #2aa854; }
+.ansi48-78 { background: #2aa854; }
+.inv48-78 { color: #2aa854; }
+.ansi38-79 { color: #2aa87e; }
+.inv38-79 { background: #2aa87e; }
+.ansi48-79 { background: #2aa87e; }
+.inv48-79 { color: #2aa87e; }
+.ansi38-80 { color: #2aa8a8; }
+.inv38-80 { background: #2aa8a8; }
+.ansi48-80 { background: #2aa8a8; }
+.inv48-80 { color: #2aa8a8; }
+.ansi38-81 { color: #2aa8d2; }
+.inv38-81 { background: #2aa8d2; }
+.ansi48-81 { background: #2aa8d2; }
+.inv48-81 { color: #2aa8d2; }
+.ansi38-112 { color: #54a800; }
+.inv38-112 { background: #54a800; }
+.ansi48-112 { background: #54a800; }
+.inv48-112 { color: #54a800; }
+.ansi38-113 { color: #54a82a; }
+.inv38-113 { background: #54a82a; }
+.ansi48-113 { background: #54a82a; }
+.inv48-113 { color: #54a82a; }
+.ansi38-114 { color: #54a854; }
+.inv38-114 { background: #54a854; }
+.ansi48-114 { background: #54a854; }
+.inv48-114 { color: #54a854; }
+.ansi38-115 { color: #54a87e; }
+.inv38-115 { background: #54a87e; }
+.ansi48-115 { background: #54a87e; }
+.inv48-115 { color: #54a87e; }
+.ansi38-116 { color: #54a8a8; }
+.inv38-116 { background: #54a8a8; }
+.ansi48-116 { background: #54a8a8; }
+.inv48-116 { color: #54a8a8; }
+.ansi38-117 { color: #54a8d2; }
+.inv38-117 { background: #54a8d2; }
+.ansi48-117 { background: #54a8d2; }
+.inv48-117 { color: #54a8d2; }
+.ansi38-148 { color: #7ea800; }
+.inv38-148 { background: #7ea800; }
+.ansi48-148 { background: #7ea800; }
+.inv48-148 { color: #7ea800; }
+.ansi38-149 { color: #7ea82a; }
+.inv38-149 { background: #7ea82a; }
+.ansi48-149 { background: #7ea82a; }
+.inv48-149 { color: #7ea82a; }
+.ansi38-150 { color: #7ea854; }
+.inv38-150 { background: #7ea854; }
+.ansi48-150 { background: #7ea854; }
+.inv48-150 { color: #7ea854; }
+.ansi38-151 { color: #7ea87e; }
+.inv38-151 { background: #7ea87e; }
+.ansi48-151 { background: #7ea87e; }
+.inv48-151 { color: #7ea87e; }
+.ansi38-152 { color: #7ea8a8; }
+.inv38-152 { background: #7ea8a8; }
+.ansi48-152 { background: #7ea8a8; }
+.inv48-152 { color: #7ea8a8; }
+.ansi38-153 { color: #7ea8d2; }
+.inv38-153 { background: #7ea8d2; }
+.ansi48-153 { background: #7ea8d2; }
+.inv48-153 { color: #7ea8d2; }
+.ansi38-184 { color: #a8a800; }
+.inv38-184 { background: #a8a800; }
+.ansi48-184 { background: #a8a800; }
+.inv48-184 { color: #a8a800; }
+.ansi38-185 { color: #a8a82a; }
+.inv38-185 { background: #a8a82a; }
+.ansi48-185 { background: #a8a82a; }
+.inv48-185 { color: #a8a82a; }
+.ansi38-186 { color: #a8a854; }
+.inv38-186 { background: #a8a854; }
+.ansi48-186 { background: #a8a854; }
+.inv48-186 { color: #a8a854; }
+.ansi38-187 { color: #a8a87e; }
+.inv38-187 { background: #a8a87e; }
+.ansi48-187 { background: #a8a87e; }
+.inv48-187 { color: #a8a87e; }
+.ansi38-188 { color: #a8a8a8; }
+.inv38-188 { background: #a8a8a8; }
+.ansi48-188 { background: #a8a8a8; }
+.inv48-188 { color: #a8a8a8; }
+.ansi38-189 { color: #a8a8d2; }
+.inv38-189 { background: #a8a8d2; }
+.ansi48-189 { background: #a8a8d2; }
+.inv48-189 { color: #a8a8d2; }
+.ansi38-220 { color: #d2a800; }
+.inv38-220 { background: #d2a800; }
+.ansi48-220 { background: #d2a800; }
+.inv48-220 { color: #d2a800; }
+.ansi38-221 { color: #d2a82a; }
+.inv38-221 { background: #d2a82a; }
+.ansi48-221 { background: #d2a82a; }
+.inv48-221 { color: #d2a82a; }
+.ansi38-222 { color: #d2a854; }
+.inv38-222 { background: #d2a854; }
+.ansi48-222 { background: #d2a854; }
+.inv48-222 { color: #d2a854; }
+.ansi38-223 { color: #d2a87e; }
+.inv38-223 { background: #d2a87e; }
+.ansi48-223 { background: #d2a87e; }
+.inv48-223 { color: #d2a87e; }
+.ansi38-224 { color: #d2a8a8; }
+.inv38-224 { background: #d2a8a8; }
+.ansi48-224 { background: #d2a8a8; }
+.inv48-224 { color: #d2a8a8; }
+.ansi38-225 { color: #d2a8d2; }
+.inv38-225 { background: #d2a8d2; }
+.ansi48-225 { background: #d2a8d2; }
+.inv48-225 { color: #d2a8d2; }
+.ansi38-46 { color: #00d200; }
+.inv38-46 { background: #00d200; }
+.ansi48-46 { background: #00d200; }
+.inv48-46 { color: #00d200; }
+.ansi38-47 { color: #00d22a; }
+.inv38-47 { background: #00d22a; }
+.ansi48-47 { background: #00d22a; }
+.inv48-47 { color: #00d22a; }
+.ansi38-48 { color: #00d254; }
+.inv38-48 { background: #00d254; }
+.ansi48-48 { background: #00d254; }
+.inv48-48 { color: #00d254; }
+.ansi38-49 { color: #00d27e; }
+.inv38-49 { background: #00d27e; }
+.ansi48-49 { background: #00d27e; }
+.inv48-49 { color: #00d27e; }
+.ansi38-50 { color: #00d2a8; }
+.inv38-50 { background: #00d2a8; }
+.ansi48-50 { background: #00d2a8; }
+.inv48-50 { color: #00d2a8; }
+.ansi38-51 { color: #00d2d2; }
+.inv38-51 { background: #00d2d2; }
+.ansi48-51 { background: #00d2d2; }
+.inv48-51 { color: #00d2d2; }
+.ansi38-82 { color: #2ad200; }
+.inv38-82 { background: #2ad200; }
+.ansi48-82 { background: #2ad200; }
+.inv48-82 { color: #2ad200; }
+.ansi38-83 { color: #2ad22a; }
+.inv38-83 { background: #2ad22a; }
+.ansi48-83 { background: #2ad22a; }
+.inv48-83 { color: #2ad22a; }
+.ansi38-84 { color: #2ad254; }
+.inv38-84 { background: #2ad254; }
+.ansi48-84 { background: #2ad254; }
+.inv48-84 { color: #2ad254; }
+.ansi38-85 { color: #2ad27e; }
+.inv38-85 { background: #2ad27e; }
+.ansi48-85 { background: #2ad27e; }
+.inv48-85 { color: #2ad27e; }
+.ansi38-86 { color: #2ad2a8; }
+.inv38-86 { background: #2ad2a8; }
+.ansi48-86 { background: #2ad2a8; }
+.inv48-86 { color: #2ad2a8; }
+.ansi38-87 { color: #2ad2d2; }
+.inv38-87 { background: #2ad2d2; }
+.ansi48-87 { background: #2ad2d2; }
+.inv48-87 { color: #2ad2d2; }
+.ansi38-118 { color: #54d200; }
+.inv38-118 { background: #54d200; }
+.ansi48-118 { background: #54d200; }
+.inv48-118 { color: #54d200; }
+.ansi38-119 { color: #54d22a; }
+.inv38-119 { background: #54d22a; }
+.ansi48-119 { background: #54d22a; }
+.inv48-119 { color: #54d22a; }
+.ansi38-120 { color: #54d254; }
+.inv38-120 { background: #54d254; }
+.ansi48-120 { background: #54d254; }
+.inv48-120 { color: #54d254; }
+.ansi38-121 { color: #54d27e; }
+.inv38-121 { background: #54d27e; }
+.ansi48-121 { background: #54d27e; }
+.inv48-121 { color: #54d27e; }
+.ansi38-122 { color: #54d2a8; }
+.inv38-122 { background: #54d2a8; }
+.ansi48-122 { background: #54d2a8; }
+.inv48-122 { color: #54d2a8; }
+.ansi38-123 { color: #54d2d2; }
+.inv38-123 { background: #54d2d2; }
+.ansi48-123 { background: #54d2d2; }
+.inv48-123 { color: #54d2d2; }
+.ansi38-154 { color: #7ed200; }
+.inv38-154 { background: #7ed200; }
+.ansi48-154 { background: #7ed200; }
+.inv48-154 { color: #7ed200; }
+.ansi38-155 { color: #7ed22a; }
+.inv38-155 { background: #7ed22a; }
+.ansi48-155 { background: #7ed22a; }
+.inv48-155 { color: #7ed22a; }
+.ansi38-156 { color: #7ed254; }
+.inv38-156 { background: #7ed254; }
+.ansi48-156 { background: #7ed254; }
+.inv48-156 { color: #7ed254; }
+.ansi38-157 { color: #7ed27e; }
+.inv38-157 { background: #7ed27e; }
+.ansi48-157 { background: #7ed27e; }
+.inv48-157 { color: #7ed27e; }
+.ansi38-158 { color: #7ed2a8; }
+.inv38-158 { background: #7ed2a8; }
+.ansi48-158 { background: #7ed2a8; }
+.inv48-158 { color: #7ed2a8; }
+.ansi38-159 { color: #7ed2d2; }
+.inv38-159 { background: #7ed2d2; }
+.ansi48-159 { background: #7ed2d2; }
+.inv48-159 { color: #7ed2d2; }
+.ansi38-190 { color: #a8d200; }
+.inv38-190 { background: #a8d200; }
+.ansi48-190 { background: #a8d200; }
+.inv48-190 { color: #a8d200; }
+.ansi38-191 { color: #a8d22a; }
+.inv38-191 { background: #a8d22a; }
+.ansi48-191 { background: #a8d22a; }
+.inv48-191 { color: #a8d22a; }
+.ansi38-192 { color: #a8d254; }
+.inv38-192 { background: #a8d254; }
+.ansi48-192 { background: #a8d254; }
+.inv48-192 { color: #a8d254; }
+.ansi38-193 { color: #a8d27e; }
+.inv38-193 { background: #a8d27e; }
+.ansi48-193 { background: #a8d27e; }
+.inv48-193 { color: #a8d27e; }
+.ansi38-194 { color: #a8d2a8; }
+.inv38-194 { background: #a8d2a8; }
+.ansi48-194 { background: #a8d2a8; }
+.inv48-194 { color: #a8d2a8; }
+.ansi38-195 { color: #a8d2d2; }
+.inv38-195 { background: #a8d2d2; }
+.ansi48-195 { background: #a8d2d2; }
+.inv48-195 { color: #a8d2d2; }
+.ansi38-226 { color: #d2d200; }
+.inv38-226 { background: #d2d200; }
+.ansi48-226 { background: #d2d200; }
+.inv48-226 { color: #d2d200; }
+.ansi38-227 { color: #d2d22a; }
+.inv38-227 { background: #d2d22a; }
+.ansi48-227 { background: #d2d22a; }
+.inv48-227 { color: #d2d22a; }
+.ansi38-228 { color: #d2d254; }
+.inv38-228 { background: #d2d254; }
+.ansi48-228 { background: #d2d254; }
+.inv48-228 { color: #d2d254; }
+.ansi38-229 { color: #d2d27e; }
+.inv38-229 { background: #d2d27e; }
+.ansi48-229 { background: #d2d27e; }
+.inv48-229 { color: #d2d27e; }
+.ansi38-230 { color: #d2d2a8; }
+.inv38-230 { background: #d2d2a8; }
+.ansi48-230 { background: #d2d2a8; }
+.inv48-230 { color: #d2d2a8; }
+.ansi38-231 { color: #d2d2d2; }
+.inv38-231 { background: #d2d2d2; }
+.ansi48-231 { background: #d2d2d2; }
+.inv48-231 { color: #d2d2d2; }
+.ansi38-232 { color: #080808; }
+.inv38-232 { background: #080808; }
+.ansi48-232 { background: #080808; }
+.inv48-232 { color: #080808; }
+.ansi38-233 { color: #121212; }
+.inv38-233 { background: #121212; }
+.ansi48-233 { background: #121212; }
+.inv48-233 { color: #121212; }
+.ansi38-234 { color: #1c1c1c; }
+.inv38-234 { background: #1c1c1c; }
+.ansi48-234 { background: #1c1c1c; }
+.inv48-234 { color: #1c1c1c; }
+.ansi38-235 { color: #262626; }
+.inv38-235 { background: #262626; }
+.ansi48-235 { background: #262626; }
+.inv48-235 { color: #262626; }
+.ansi38-236 { color: #303030; }
+.inv38-236 { background: #303030; }
+.ansi48-236 { background: #303030; }
+.inv48-236 { color: #303030; }
+.ansi38-237 { color: #3a3a3a; }
+.inv38-237 { background: #3a3a3a; }
+.ansi48-237 { background: #3a3a3a; }
+.inv48-237 { color: #3a3a3a; }
+.ansi38-238 { color: #444444; }
+.inv38-238 { background: #444444; }
+.ansi48-238 { background: #444444; }
+.inv48-238 { color: #444444; }
+.ansi38-239 { color: #4e4e4e; }
+.inv38-239 { background: #4e4e4e; }
+.ansi48-239 { background: #4e4e4e; }
+.inv48-239 { color: #4e4e4e; }
+.ansi38-240 { color: #585858; }
+.inv38-240 { background: #585858; }
+.ansi48-240 { background: #585858; }
+.inv48-240 { color: #585858; }
+.ansi38-241 { color: #626262; }
+.inv38-241 { background: #626262; }
+.ansi48-241 { background: #626262; }
+.inv48-241 { color: #626262; }
+.ansi38-242 { color: #6c6c6c; }
+.inv38-242 { background: #6c6c6c; }
+.ansi48-242 { background: #6c6c6c; }
+.inv48-242 { color: #6c6c6c; }
+.ansi38-243 { color: #767676; }
+.inv38-243 { background: #767676; }
+.ansi48-243 { background: #767676; }
+.inv48-243 { color: #767676; }
+.ansi38-244 { color: #808080; }
+.inv38-244 { background: #808080; }
+.ansi48-244 { background: #808080; }
+.inv48-244 { color: #808080; }
+.ansi38-245 { color: #8a8a8a; }
+.inv38-245 { background: #8a8a8a; }
+.ansi48-245 { background: #8a8a8a; }
+.inv48-245 { color: #8a8a8a; }
+.ansi38-246 { color: #949494; }
+.inv38-246 { background: #949494; }
+.ansi48-246 { background: #949494; }
+.inv48-246 { color: #949494; }
+.ansi38-247 { color: #9e9e9e; }
+.inv38-247 { background: #9e9e9e; }
+.ansi48-247 { background: #9e9e9e; }
+.inv48-247 { color: #9e9e9e; }
+.ansi38-248 { color: #a8a8a8; }
+.inv38-248 { background: #a8a8a8; }
+.ansi48-248 { background: #a8a8a8; }
+.inv48-248 { color: #a8a8a8; }
+.ansi38-249 { color: #b2b2b2; }
+.inv38-249 { background: #b2b2b2; }
+.ansi48-249 { background: #b2b2b2; }
+.inv48-249 { color: #b2b2b2; }
+.ansi38-250 { color: #bcbcbc; }
+.inv38-250 { background: #bcbcbc; }
+.ansi48-250 { background: #bcbcbc; }
+.inv48-250 { color: #bcbcbc; }
+.ansi38-251 { color: #c6c6c6; }
+.inv38-251 { background: #c6c6c6; }
+.ansi48-251 { background: #c6c6c6; }
+.inv48-251 { color: #c6c6c6; }
+.ansi38-252 { color: #d0d0d0; }
+.inv38-252 { background: #d0d0d0; }
+.ansi48-252 { background: #d0d0d0; }
+.inv48-252 { color: #d0d0d0; }
+.ansi38-253 { color: #dadada; }
+.inv38-253 { background: #dadada; }
+.ansi48-253 { background: #dadada; }
+.inv48-253 { color: #dadada; }
+.ansi38-254 { color: #e4e4e4; }
+.inv38-254 { background: #e4e4e4; }
+.ansi48-254 { background: #e4e4e4; }
+.inv48-254 { color: #e4e4e4; }
+.ansi38-255 { color: #eeeeee; }
+.inv38-255 { background: #eeeeee; }
+.ansi48-255 { background: #eeeeee; }
+.inv48-255 { color: #eeeeee; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content">
+
+Dispositions diverses
+――――
+
+
+Dispositions diverses
+――――
+
+
+1er
+――――
+
+Au début du titre III du livre Ier du code pénal, il est ajouté un article 130-1 ainsi rédigé :
+"Art. 130-1. - Afin d'assurer la protection effective de la société, de prévenir la commission de nouvelles infractions et de restaurer l'équilibre social, dans le respect des droits reconnus à la victime, la peine a pour fonctions :
+"1° De sanctionner le condamné ;
+"2° De favoriser son amendement, son insertion ou sa réinsertion."
+
+2
+――――
+
+L'article 132-1 du même code est complété par deux alinéas ainsi rédigés :
+"Toute peine prononcée par la juridiction doit être individualisée.
+"Dans les limites fixées par la loi, la juridiction détermine la nature, le quantum et le régime des peines prononcées en fonction des circonstances de l'infraction et de la personnalité de son auteur ainsi que de sa situation <span class="ansi1 ansi32">matérielle, familiale et sociale</span>, de manière à assurer les fonctions énoncées à l'article 130-1."
+
+3
+――――
+
+I. - Le code pénal est ainsi modifié :
+1° Le second alinéa de l'article 132-19 est remplacé par deux alinéas ainsi rédigés :
+"En matière correctionnelle, une peine d'emprisonnement sans sursis ne peut être prononcée qu'en dernier recours si la gravité de l'infraction et la personnalité de son auteur rendent cette peine nécessaire et si toute autre sanction est manifestement inadéquate ; dans ce cas, la peine d'emprisonnement doit, si la personnalité et la situation du condamné le permettent, et sauf impossibilité matérielle, faire l'objet d'une des mesures d'aménagement prévues aux sous-sections 1 et 2 de la section 2 du présent chapitre.
+"Lorsque le tribunal correctionnel prononce une peine d'emprisonnement sans sursis ou ne faisant pas l'objet d'une des mesures d'aménagement prévues aux mêmes sous-sections 1 et 2, il doit spécialement motiver sa décision, au regard des faits de l'espèce et de la personnalité de leur auteur ainsi que de sa situation matérielle, familiale et sociale." ;
+2° (Supprimé)
+3° L'article 132-20 est complété par un alinéa ainsi rédigé :
+"Le montant de l'amende est déterminé en tenant compte des ressources et des charges de l'auteur de l'infraction." ;
+4° L'article 132-24 est ainsi rédigé :
+"Art. 132-24. - Les peines peuvent être personnalisées selon les modalités prévues à la présente section."
+II. - Le code de procédure pénale est ainsi modifié :
+1° Après le mot : "articles", la fin de la première phrase du premier alinéa de l'article 362 est ainsi rédigée : "130-1, 132-1 et 132-18 du code pénal." ;
+2° Au premier alinéa de l'article 495-8, les mots : "dispositions de l'article 132-24" sont remplacés par les références : "articles 130-1 et 132-1".
+
+3 bis
+――――
+
+I. - L'article 709-1 du code de procédure pénale est ainsi rétabli :
+"Art. 709-1. - Dans chaque tribunal de grande instance et dans chaque cour d'appel, il est institué un bureau de l'exécution des peines, dont la composition, les missions et les modalités de fonctionnement sont précisées par décret.
+"Ce bureau est notamment chargé de remettre à tout condamné qui est présent à l'issue de l'audience du tribunal correctionnel un relevé de condamnation pénale, mentionnant les peines qui ont été prononcées."
+II. - Le présent article entre en vigueur un an après la promulgation de la présente loi.
+
+Dispositions diverses
+――――
+
+
+Dispositions diverses
+――――
+
+
+4
+――――
+
+I. - La sous-section 6 de la section 2 du chapitre II du titre III du livre Ier du code pénal est complétée par un paragraphe 5 ainsi rétabli :
+"Paragraphe 5
+"De l'ajournement aux fins d'investigations sur la personnalité ou la situation matérielle, familiale et sociale
+"Art. 132-70-1. - La juridiction peut ajourner le prononcé de la peine à l'égard d'une personne physique lorsqu'il apparaît nécessaire d'ordonner à son égard des investigations complémentaires sur sa personnalité ou sa situation matérielle, familiale et sociale<span class="ansi1 ansi32">, confiées, suivant le cas, aux services pénitentiaires d'insertion et de probation ou à des personnes morales habilitées</span>.
+"Dans ce cas, elle fixe dans sa décision la date à laquelle il sera statué sur la peine.
+"La décision sur la peine intervient au plus tard dans un délai de quatre mois après la décision d'ajournement, sous réserve des délais plus courts prévus au troisième alinéa de l'article 397-3 du code de procédure pénale quand la personne est placée en détention provisoire. <span class="ansi1 ansi32">Ce délai peut être prolongé pour une nouvelle durée maximale de quatre mois.</span>
+"Art. 132-70-2<span class="ansi1 ansi32">.</span> - Lorsque la juridiction ajourne le prononcé de la peine, elle peut octroyer immédiatement à la victime des dommages et intérêts soit à titre provisionnel, soit à titre définitif."
+II. - Après l'article 397-3 du code de procédure pénale, il est inséré un article 397-3-1 ainsi rédigé :
+"Art. 397-3-1. - Quand il prononce l'ajournement de la peine aux fins d'investigations sur la personnalité en application de l'article 132-70-1 du code pénal, le tribunal peut également placer ou maintenir la personne déclarée coupable sous contrôle judiciaire, <span class="ansi1 ansi31">conformément au</span> <span class="ansi1 ansi32">en application du</span> premier alinéa de l'article 397-3 du présent code, sous assignation à résidence avec surveillance électronique, <span class="ansi1 ansi31">conformément au</span> <span class="ansi1 ansi32">en application du</span> premier alinéa de l'article 142-12, ou, dans les cas prévus aux articles 395 et suivants, en détention provisoire, en application du deuxième alinéa de l'article 397-3. La détention provisoire ne peut être décidée que pour l'un des motifs <span class="ansi1 ansi31">mentionnés aux 5°</span> <span class="ansi1 ansi32">suivants : empêcher une pression sur les témoins ou les victimes ainsi que sur la famille, empêcher une concertation frauduleuse entre la personne condamnée</span> et <span class="ansi1 ansi31">6°</span> <span class="ansi1 ansi32">ses coauteurs ou complices, prévenir le renouvellement</span> de l'<span class="ansi1 ansi31">article 144</span><span class="ansi1 ansi32">infraction</span>. Lorsque la personne a été placée ou maintenue en détention, les deux derniers alinéas <span class="ansi1 ansi31">de l'</span> <span class="ansi1 ansi32">du même</span> article 397-3 sont applicables."
+
+4 bis
+――――
+
+La sous-section 6 de la section 2 du chapitre II du titre III du livre Ier du code pénal est complétée par un paragraphe 6 ainsi rédigé :
+"Paragraphe 6
+"De l'ajournement aux fins de consignation d'une somme d'argent
+"Art. 132-70-3. - La juridiction peut ajourner le prononcé de la peine à l'égard d'une personne en la soumettant à l'obligation de consigner une somme d'argent en vue de garantir le paiement d'une éventuelle peine d'amende. Elle détermine le montant de cette consignation et le délai dans lequel celle-ci doit être déposée au greffe, qui ne saurait être supérieur à un an. Elle peut prévoir que cette consignation est effectuée en plusieurs versements, selon un échéancier qu'elle détermine.
+"Elle fixe dans sa décision la date à laquelle il sera statué sur la peine.
+"La décision sur la peine intervient au plus tard dans un délai d'un an après la décision d'ajournement."
+
+Dispositions diverses
+――――
+
+
+5
+――――
+
+I. - Le code pénal est ainsi modifié :
+1° Les articles 132-18-1, 132-19-1 et 132-19-2 sont abrogés ;
+1° bis À la fin de l'article 132-20-1, les mots : "commises en état de récidive légale" sont supprimés ;
+2° (Supprimé)
+II. - Le code de procédure pénale est ainsi modifié :
+1° (Supprimé)
+2° À la seconde phrase du premier alinéa de l'article 706-25, le mot : "seizième" est remplacé par le mot : "dernier".
+III. - L'ordonnance n° 45-174 du 2 février 1945 relative à l'enfance délinquante est ainsi modifiée :
+1° Les quatorzième et avant-dernier alinéas de l'article 20 sont supprimés ;
+2° L'article 20-2 est ainsi modifié :
+a) La dernière phrase du premier alinéa est supprimée ;
+b) Les deuxième à septième alinéas sont remplacés par un alinéa ainsi rédigé :
+"Toutefois, si le mineur est âgé de plus de seize ans, le tribunal pour enfants et la cour d'assises des mineurs peuvent, à titre exceptionnel<span class="ansi1 ansi31">,</span> et compte tenu des circonstances de l'espèce et de la personnalité du mineur ainsi que de sa situation, décider qu'il n'y a pas lieu de faire application du premier alinéa. Cette décision ne peut être prise par le tribunal pour enfants que par une disposition spécialement motivée." ;
+c) Au début du huitième alinéa, les mots : "Pour l'application des articles 132-8 à 132-11, 132-18-1 et 132-19-1 du code pénal et des deux alinéas précédents," sont supprimés ;
+3° À l'article 20-3, les références : "des deuxième à cinquième alinéas" sont remplacées par la référence : "du deuxième alinéa" ;
+4° Les douzième et avant-dernier alinéas de l'article 48 sont supprimés.
+
+6
+――――
+
+I. - Le code pénal est ainsi modifié :
+1° Après le mot : "présent,", la fin du second alinéa de l'article 132-29 est ainsi rédigée : "<span class="ansi1 ansi31">qu'</span><span class="ansi1 ansi32">que,</span> en cas de condamnation pour une nouvelle infraction qui serait commise dans les délais prévus aux articles 132-35 et 132-37, le sursis pourra être révoqué par la juridiction." ;
+2° À la fin de l'article 132-35, les mots : "sans sursis qui emporte révocation" sont remplacés par les mots : "ayant ordonné la révocation du sursis dans les conditions définies à l'article 132-36<span class="ansi1 ansi31">.</span>" ;
+3° L'article 132-36 est ainsi rédigé :
+"Art. 132-36. - La juridiction peut, par décision spéciale, révoquer totalement ou partiellement<span class="ansi1 ansi32">,</span> pour une durée ou un montant qu'elle détermine<span class="ansi1 ansi32">,</span> le sursis antérieurement accordé, quelle que soit la peine qu'il accompagne, lorsqu'elle prononce une nouvelle condamnation à une peine de réclusion ou à une peine d'emprisonnement sans sursis.
+"La juridiction peut, par décision spéciale, révoquer totalement ou partiellement<span class="ansi1 ansi32">,</span> pour une durée ou un montant qu'elle détermine<span class="ansi1 ansi32">,</span> le sursis antérieurement accordé qui accompagne une peine quelconque autre que la réclusion ou l'emprisonnement, lorsqu'elle prononce une nouvelle condamnation d'une personne physique ou morale à une peine autre que la réclusion ou l'emprisonnement sans sursis." ;
+4° À l'article 132-37, les mots : "sans sursis emportant révocation" sont remplacés par les mots : "ayant ordonné la révocation du sursis" ;
+5° L'article 132-38 est ainsi modifié :
+a) Au premier alinéa, après le mot : "simple", sont insérés les mots : "ordonnée par la juridiction" ;
+b) Le second alinéa est supprimé ;
+6° À l'article 132-39, le mot : "encourue" est remplacé par les mots : "prononcée dans les conditions prévues à l'article 132-36" ;
+7° L'article 132-50 est ainsi rédigé :
+"Art. 132-50. - Si la juridiction ordonne l'exécution de la totalité de l'emprisonnement et si le sursis avec mise à l'épreuve a été accordé après une première condamnation déjà prononcée sous le même bénéfice, elle peut, par décision spéciale, ordonner que la première peine sera également exécutée."
+II. - L'article 735 du code de procédure pénale est abrogé.
+
+6 bis
+――――
+
+<span class="ansi1 ansi32">I. -</span> Le code pénal est ainsi modifié :
+1° <span class="ansi1 ansi31">Le dernier alinéa de l'article 132-41 est supprimé ;</span> <span class="ansi1 ansi32">(Supprimé)</span>
+2° L'article 132-44 est ainsi modifié :
+a) Le 5° est ainsi rédigé :
+"5° Obtenir l'autorisation préalable du juge de l'application des peines pour tout changement d'emploi ou de résidence, lorsque ce changement est de nature à mettre obstacle à l'exécution de ses obligations ;"
+b) Il est ajouté un 6° ainsi rédigé :
+"6° Informer préalablement le juge de l'application des peines de tout déplacement à l'étranger." ;
+3° L'article 132-45 est ainsi modifié :
+a) Après le 7°, il est inséré un 7° bis ainsi rédigé :
+"7° bis Sous réserve de son accord, s'inscrire et se présenter aux épreuves du permis de conduire, le cas échéant après avoir suivi des leçons de conduite ;"
+b) <span class="ansi1 ansi31">Il est ajouté un 20°</span> <span class="ansi1 ansi32">Sont ajoutés deux alinéas</span> ainsi <span class="ansi1 ansi31">rédigé</span> <span class="ansi1 ansi32">rédigés</span> :
+"20° Obtenir l'autorisation préalable du juge de l'application des peines pour tout déplacement à l'étranger.
+"<span class="ansi1 ansi32">Les obligations prévues aux 1°, 3° et 18° du présent article ne peuvent être prononcées que si la juridiction décide que, en application du second alinéa de l'article 132-42, le sursis ne s'appliquera à l'exécution de l'emprisonnement que pour une partie de celui-ci."</span> ;
+4° Au premier alinéa de l'article 132-52, les mots : "de la totalité" sont remplacés par les mots : "totale ou partielle".
+<span class="ansi1 ansi32">II. - Le dernier alinéa du b du 3° du I entre en vigueur le 1er janvier 2017.</span>
+
+6 ter
+――――
+
+Le 10° de l'article 132-45 du code pénal est complété par les mots : ", et ne pas prendre part à des jeux d'argent et de hasard".
+
+6 quater
+――――
+
+Le premier alinéa de l'article 132-49 du code pénal est supprimé.
+
+7
+――――
+
+I. - Le code pénal est ainsi modifié :
+1° Les articles 132-25 et 132-26-1 sont ainsi modifiés :
+a) Le début du premier alinéa est ainsi rédigé : "Lorsque la juridiction de jugement prononce une peine égale ou inférieure à un an d'emprisonnement, elle peut... (le reste sans changement)." ;
+<span class="ansi1 ansi32">a bis) À la fin du 4°, les mots : "les risques de récidive" sont remplacés par les mots : "la commission de nouvelles infractions" ;</span>
+b) Après la première occurrence des mots : "égale à", la fin de l'avant-dernier alinéa est ainsi rédigée : "un an." ;
+2° (Supprimé)
+3° À l'article 132-27, les mots : "de deux ans, ou, si la personne est en état de récidive légale, égale ou inférieure à un an au plus" sont remplacés par les mots : "égale ou inférieure à un an".
+II. - Le code de procédure pénale est ainsi modifié :
+1° Le premier alinéa de l'article 474 est ainsi modifié :
+a) À la première phrase, les mots : "deux ans" sont remplacés, deux fois, par les mots : "un an" ;
+b) La dernière phrase est ainsi rédigée :
+"Le présent alinéa est applicable au condamné exécutant une peine sous le régime de la semi-liberté, du placement à l'extérieur ou du placement sous surveillance électronique." ;
+2° Le premier alinéa de l'article 723-15 est ainsi modifié :
+a) À la première phrase, après le mot : "incarcérées", sont insérés les mots : "ou exécutant leur peine sous le régime de la semi-liberté, du placement à l'extérieur ou du placement sous surveillance électronique" et les mots : "deux ans" sont remplacés, trois fois, par les mots : "un an" ;
+b) La seconde phrase est ainsi rédigée :
+"En cas de cumul de condamnations, lorsque le total des peines d'emprisonnement prononcées ou restant à subir est supérieur à un an mais inférieur à deux ans, le juge de l'application des peines peut, par une décision spécialement motivée, ordonner l'une de ces mesures à l'égard du condamné qui justifie de l'existence d'efforts sérieux de réadaptation sociale résultant de son implication durable dans tout projet caractérisé d'insertion ou de réinsertion de nature à prévenir <span class="ansi1 ansi31">les risques</span> <span class="ansi1 ansi32">la commission</span> de <span class="ansi1 ansi31">récidive</span> <span class="ansi1 ansi32">nouvelles infractions</span>."
+
+7 bis
+――――
+
+I. - Le code de procédure pénale est ainsi modifié :
+1° L'article 721 est ainsi modifié :
+a) Les deuxième et quatrième alinéas sont supprimés ;
+b) À l'avant-dernier alinéa, les mots : "ou du deuxième" sont supprimés et le mot : "troisième" est remplacé par le mot : "deuxième" ;
+2° Le deuxième alinéa de l'article 721-1 est ainsi modifié :
+a) Après le mot : "excéder", la fin de la première phrase est ainsi rédigée : "trois mois par année d'incarcération ou sept jours par mois lorsque la durée d'incarcération restant à subir est inférieure à une année." ;
+b) La deuxième phrase est supprimée ;
+c) À la dernière phrase, les mots : "ou, si elle est en état de récidive légale, un mois par an ou deux jours par mois" sont supprimés.
+II. - Le présent article entre en vigueur six mois après la promulgation de la présente loi.
+
+7 ter
+――――
+
+Le code de procédure pénale est ainsi modifié :
+1° La seconde phrase du premier alinéa des articles 723-1 et 723-7 est supprimée ;
+2° <span class="ansi1 ansi31">La deuxième phrase du</span> <span class="ansi1 ansi32">Le</span> huitième alinéa de l'article 729 est <span class="ansi1 ansi32">ainsi modifié :
+</span><span class="ansi1 ansi32">a) La deuxième phrase est</span> supprimée ;
+<span class="ansi1 ansi32">b) À la dernière phrase, les mots : "les cas prévus" sont remplacés par les mots : "le cas prévu" ;</span>
+3° Après le mot : "mineur", la fin du second alinéa de l'article 729-3 est supprimée.
+
+7 quater
+――――
+
+Après l'article 723-17 du code de procédure pénale, il est inséré un article 723-17-1 ainsi rédigé :
+"Art. 723-17-1. - Lorsqu'une condamnation mentionnée à l'article 723-15 n'a pas été mise à exécution dans le délai de trois ans à compter de la date à laquelle elle est devenue définitive, le condamné est convoqué devant le juge de l'application des peines, préalablement à la mise à exécution de la condamnation, afin de déterminer les modalités d'exécution de sa peine les mieux adaptées <span class="ansi1 ansi32">aux circonstances,</span> à sa personnalité et à sa situation matérielle, familiale et sociale. Cette convocation suspend la possibilité pour le parquet de mettre la peine à exécution<span class="ansi1 ansi32">,</span> sous réserve des dispositions de l'article 723-16."
+
+Dispositions diverses
+――――
+
+
+<span class="ansi1 ansi32">7 quinquies
+</span><span class="ansi1 ansi32">――――
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">Le sous-titre II du titre préliminaire du livre Ier du code de procédure pénale est ainsi rétabli :
+</span><span class="ansi1 ansi32">"Sous-titre ii
+</span><span class="ansi1 ansi32">"De la justice restaurative
+</span><span class="ansi1 ansi32">"Art. 10-1. - À l'occasion de toute procédure pénale et à tous les stades de la procédure, y compris lors de l'exécution de la peine, les victimes et l'auteur d'une infraction, sous réserve que les faits aient été reconnus, peuvent se voir proposer une mesure de justice restaurative.
+</span><span class="ansi1 ansi32">"Constitue une mesure de justice restaurative toute mesure permettant à une victime ainsi qu'à l'auteur d'une infraction de participer activement à la résolution des difficultés résultant de l'infraction, et notamment à la réparation des préjudices de toute nature résultant de sa commission. Cette mesure ne peut intervenir qu'après que la victime et l'auteur de l'infraction ont reçu une information complète à son sujet et ont consenti expressément à y participer. Elle est mise en oeuvre par un tiers indépendant formé à cet effet, sous le contrôle de l'autorité judiciaire ou, à la demande de celle-ci, de l'administration pénitentiaire."
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">Dispositions diverses
+</span><span class="ansi1 ansi32">――――</span>
+
+
+8
+――――
+
+I. - Le code pénal est ainsi modifié :
+1° Les 2° à 8° de l'article 131-3 deviennent, respectivement, des 3° à 9° et il est rétabli un 2° ainsi rédigé :
+"2° La contrainte pénale ;"
+2° Après l'article 131-4, il est inséré un article 131-4-1 ainsi rédigé :
+"Art. 131-4-1. <span class="ansi1 ansi32">-</span> Lorsque la personnalité et la situation matérielle, familiale et sociale de l'auteur d'un délit <span class="ansi1 ansi32">puni d'une peine d'emprisonnement</span> et les faits de l'espèce justifient un accompagnement socio-éducatif individualisé et soutenu, la juridiction peut prononcer la peine de contrainte pénale.
+"La contrainte pénale emporte pour le condamné l'obligation de se soumettre, sous le contrôle du juge de l'application des peines, pendant une durée comprise entre six mois et cinq ans et qui est fixée par la juridiction, à des mesures de contrôle et d'assistance ainsi qu'à des obligations et interdictions particulières destinées à prévenir la récidive en favorisant son insertion ou sa réinsertion au sein de la société.
+"Dès le prononcé de la décision de condamnation, la personne condamnée est astreinte, pour toute la durée d'exécution de sa peine, aux mesures de contrôle prévues à l'article 132-44.
+"Les obligations et interdictions particulières auxquelles peut être astreint le condamné sont :
+"1° Les obligations et interdictions prévues à l'article 132-45 en matière de sursis avec mise à l'épreuve ;
+"2° L'obligation d'effectuer un travail d'intérêt<span class="ansi1 ansi32">,</span> général<span class="ansi1 ansi32">,</span> dans les conditions prévues à l'article 131-8 ;
+"3° L'injonction de soins, dans les conditions prévues aux articles L. 3711-1 à L. 3711-5 du code de la santé publique, si la personne a été condamnée pour un délit pour lequel le suivi socio-judiciaire est encouru et qu'une expertise médicale a conclu qu'elle était susceptible de faire l'objet d'un traitement ;
+"4° <span class="ansi1 ansi31">Exercer une activité professionnelle ou suivre un enseignement ou une formation professionnelle ;
+</span><span class="ansi1 ansi31">"5° Se soumettre à des mesures d'examen médical, de traitement ou de soins, même sous le régime de l'hospitalisation. Ces mesures peuvent consister en l'injonction thérapeutique prévue aux articles L. 3413-1</span> à <span class="ansi1 ansi31">L. 3413-4 du code de la santé publique, lorsqu'il apparaît que le condamné fait usage de stupéfiants ou fait une consommation habituelle et excessive de boissons alcooliques. Une copie de la décision ordonnant ces mesures est adressée par le juge de l'application des peines au médecin ou au psychologue qui doit suivre la personne condamnée. Les rapports des expertises réalisées pendant la procédure sont adressés au médecin ou au psychologue, à leur demande ou à l'initiative du juge de l'application des peines. Celui-ci peut également leur adresser toute autre pièce utile du dossier ;
+</span><span class="ansi1 ansi31">"</span>6° <span class="ansi1 ansi31">Accomplir un stage de citoyenneté.</span> <span class="ansi1 ansi32">(nouveaux) (Supprimé)</span>
+"Le condamné peut, en outre, bénéficier des mesures d'aide prévues à l'article 132-46.
+"La juridiction qui prononce la contrainte pénale peut imposer, à titre provisoire, à la personne condamnée les obligations et interdictions prévues aux 2°, 4° à 14°, 17°, 19° et 20° de l'article 132-45. Elle peut également prononcer une injonction de soins<span class="ansi1 ansi31">,</span> si la personne a été condamnée pour un délit pour lequel le suivi socio-judiciaire est encouru et <span class="ansi1 ansi31">qu'</span> <span class="ansi1 ansi32">si</span> une expertise médicale a conclu qu'elle était susceptible de faire l'objet d'un traitement. La juridiction peut également prononcer, le cas échéant, tout ou partie des obligations et interdictions auxquelles était astreinte la personne dans le cadre de son contrôle judiciaire.
+"Après évaluation de la personnalité et de la situation matérielle, familiale et sociale du condamné par le service pénitentiaire d'insertion et de probation, le juge de l'application des peines fixe, parmi celles mentionnées aux 1° à <span class="ansi1 ansi31">6</span> <span class="ansi1 ansi32">3</span>° du présent article, les obligations et interdictions auxquelles est astreint le condamné, ainsi que les mesures d'aide dont il bénéficie, dans des conditions et selon des modalités précisées par le code de procédure pénale. Ces obligations et interdictions peuvent être modifiées au cours de l'exécution de la contrainte pénale au regard de l'évolution du condamné.
+"Après le prononcé de la décision, le président de la juridiction notifie à la personne condamnée, lorsqu'elle est présente, les obligations et interdictions qui lui incombent ainsi que les conséquences qui résulteraient de leur violation.
+"La condamnation à la contrainte pénale est exécutoire par provision." ;
+3° Au premier alinéa de l'article 131-9, après les mots : "ni avec", sont insérés les mots : "la peine de contrainte pénale ou" ;
+4° <span class="ansi1 ansi31">Le second alinéa de l'article 131-36-2 est complété par les références : "et aux 4°, 5°</span> et <span class="ansi1 ansi31">6° de l'article 131-4-1" ;</span>
+5° <span class="ansi1 ansi31">Les 1°, 3° et 18° de l'article 132-45 sont abrogés.</span> <span class="ansi1 ansi32">(nouveaux) (Supprimé)</span>
+II. - <span class="ansi1 ansi31">Le code de procédure pénale est ainsi modifié :
+</span><span class="ansi1 ansi31">1° À la dernière phrase du premier alinéa de l'article 720</span> <span class="ansi1 ansi32">(Supprimé)
+</span><span class="ansi1 ansi32">III.</span> -<span class="ansi1 ansi31">1</span> <span class="ansi1 ansi32">Pour les faits commis avant le 1er janvier 2017</span>, <span class="ansi1 ansi31">au cinquième alinéa</span> <span class="ansi1 ansi32">la peine</span> de <span class="ansi1 ansi31">l'article 720-1-1 et</span> <span class="ansi1 ansi32">contrainte pénale prévue</span> à l'article <span class="ansi1 ansi31">723-4, après la référence : "132-45", sont insérées les références : "et les 4°, 5° et 6° de l'article 131-4-1" ;
+</span><span class="ansi1 ansi31">2° Au premier alinéa de l'article 723-10, après la référence : "132-46", sont insérées les références : "et les 4°, 5° et 6° de l'article</span> 131-4-1<span class="ansi1 ansi31">" ;
+</span><span class="ansi1 ansi31">3° Au deuxième alinéa de l'article 723-10, à la première phrase</span> du <span class="ansi1 ansi31">deuxième alinéa de l</span> <span class="ansi1 ansi32">code pénal n</span>'<span class="ansi1 ansi31">article 723-20 et au premier alinéa de l</span><span class="ansi1 ansi32">est applicable qu</span>'<span class="ansi1 ansi31">article 723-25, après la référence : "132-45", sont insérées les références : "et</span> aux <span class="ansi1 ansi31">4°, 5° et 6° de l</span> <span class="ansi1 ansi32">délits punis d</span>'<span class="ansi1 ansi31">article 131-4-1"</span><span class="ansi1 ansi32">une peine d'emprisonnement n'excédant pas cinq ans</span>.
+
+8 bis
+――――
+
+La section 2 du chapitre II du titre III du livre Ier du code pénal est complétée par une sous-section 7 ainsi rédigée :
+"Sous-section 7
+"De la contrainte pénale
+"Art 132-70-4. - Lorsqu'une condamnation pour un délit de droit commun comportant une peine d'emprisonnement ferme d'un an au plus a été prononcée, le juge de l'application des peines peut, lorsque cette condamnation n'est plus susceptible de faire l'objet d'une voie de recours par le condamné, ordonner que le condamné effectuera une contrainte pénale <span class="ansi1 ansi31">conformément aux</span> <span class="ansi1 ansi32">en application des</span> articles 131-3 et 131-4-1.
+"Le présent article est applicable aux peines d'emprisonnement ayant fait l'objet d'un sursis partiel, assorti ou non d'une mise à l'épreuve, lorsque la partie ferme de la peine est inférieure ou égale à un an. Dans ce cas, la partie de la peine avec sursis demeure applicable.
+"Le présent article est également applicable aux peines d'emprisonnement inférieures ou égales à un an résultant de la révocation d'un sursis, assorti ou non d'une mise à l'épreuve."
+
+9
+――――
+
+Le code de procédure pénale est ainsi modifié :
+1° À la première phrase du dernier alinéa de l'article 474, après le mot : "condamnée", sont insérés les mots : "à une contrainte pénale," ;
+2° Après le titre Ier du livre V, il est inséré un titre Ier bis ainsi rédigé :
+"Titre Ier bis
+"De la contrainte pénale
+"Art. 713-42. - Le service pénitentiaire d'insertion et de probation évalue la personnalité et la situation matérielle, familiale et sociale de la personne condamnée à la contrainte pénale.
+"À l'issue de cette évaluation, le service adresse au juge de l'application des peines un rapport comportant des propositions relatives au contenu et aux modalités de mise en oeuvre des mesures de contrôle et d'assistance, des obligations et des interdictions mentionnées à l'article 131-4-1 du code pénal.
+"Art. 713-43. - Au vu du rapport établi par le service pénitentiaire d'insertion et de probation et après avoir entendu le condamné, le juge de l'application des peines <span class="ansi1 ansi31">fixe par ordonnance</span> <span class="ansi1 ansi32">décide</span>, selon les modalités prévues à l'article 712-<span class="ansi1 ansi31">8</span><span class="ansi1 ansi32">6 du présent code</span>, les obligations et interdictions particulières auxquelles il est astreint parmi celles mentionnées aux 1° à 3° de l'article 131-4-1 du code pénal, ainsi que les mesures d'aide dont il bénéficie. S'il envisage d'astreindre le condamné à l'obligation d'effectuer un travail d'intérêt général prévue au 2° de ce même article, il statue après que le condamné a été informé de son droit de refuser l'accomplissement d'un travail d'intérêt général et après avoir reçu sa réponse. Il lui notifie <span class="ansi1 ansi31">cette ordonnance</span> <span class="ansi1 ansi32">ce jugement</span> et lui donne connaissance des dispositions des articles 713-44, 713-47 et 713-48 du présent code.
+"Art. 713-44. - La situation matérielle, familiale et sociale de la personne est réévaluée à chaque fois que nécessaire au cours de l'exécution de la peine, et au moins une fois par an, par le service pénitentiaire d'insertion et de probation et le juge de l'application des peines.
+"Au vu de chaque nouvelle évaluation, le juge de l'application des peines peut, <span class="ansi1 ansi31">par ordonnance,</span> selon les modalités prévues à l'article 712-<span class="ansi1 ansi31">8</span><span class="ansi1 ansi32">6</span> :
+"1° Modifier ou compléter les obligations et interdictions auxquelles la personne condamnée est astreinte ;
+"2° Supprimer certaines d'entre elles.
+"Art. 713-45. - Si le condamné a satisfait aux mesures, obligations et interdictions qui lui étaient imposées pendant au moins un an, que son reclassement paraît acquis et qu'aucun suivi ne paraît plus nécessaire, le juge de l'application des peines peut, par ordonnance rendue selon les modalités prévues à l'article 712-8, sur réquisitions conformes du procureur de la République, décider de mettre fin de façon anticipée à la peine de contrainte pénale.
+"En l'absence d'accord du ministère public, le juge de l'application des peines peut saisir à cette fin, par requête motivée, le président du tribunal ou un juge par lui désigné, qui statue à la suite d'un débat contradictoire public en application de l'article 712-6. En cas de refus opposé à cette première demande, une autre demande ne peut être présentée qu'une année après cette décision de refus. Il en est de même, éventuellement, des demandes ultérieures.
+"Art. 713-46. - Le délai d'exécution de la contrainte pénale peut être suspendu par le juge de l'application des peines en cas d'incarcération du condamné, sauf lorsqu'il est fait application des trois derniers alinéas de l'article 713-47 ou de l'article 713-48.
+"Art. 713-47. - En cas d'inobservation par la personne condamnée des mesures de contrôle et d'assistance, des obligations ou des interdictions mentionnées à l'article 131-4-1 du code pénal qui lui sont imposées, le juge de l'application des peines peut, d'office ou sur réquisitions du procureur de la République, selon les modalités prévues à l'article 712-8 <span class="ansi1 ansi32">du présent code</span>, modifier ou compléter les obligations ou interdictions auxquelles le condamné est astreint. Le juge de l'application des peines peut également procéder à un rappel aux mesures, obligations et interdictions auxquelles est astreinte la personne condamnée.
+"Si la solution prévue au premier alinéa du présent article est insuffisante pour assurer l'effectivité de la peine, le juge, d'office ou sur réquisitions du procureur de la République, saisit, par requête motivée, le président du tribunal de grande instance ou un juge par lui désigné afin que soit mis à exécution contre le condamné un emprisonnement d'une durée qui ne peut excéder ni la moitié de la durée de la peine de contrainte pénale prononcée par le tribunal, ni le maximum de la peine d'emprisonnement encourue. Le président du tribunal ou le juge par lui désigné, qui statue à la suite d'un débat contradictoire public en application de l'article 712-6, fixe dans cette limite la durée de l'emprisonnement à exécuter. La durée de cet emprisonnement est fixée en fonction des circonstances et de la gravité du délit pour lequel la contrainte pénale a été prononcée, de la commission ou de l'absence de commission d'une nouvelle infraction depuis ce délit et de la gravité de l'inobservation des mesures, obligations et interdictions. Lorsque les conditions prévues à l'article 723-15 sont remplies, le président du tribunal ou le juge par lui désigné peut décider que cet emprisonnement s'exécutera sous le régime de la semi-liberté, du placement à l'extérieur ou de la surveillance électronique.
+"Lorsqu'il fait application du deuxième alinéa du présent article, le juge de l'application des peines peut, s'il l'estime nécessaire, ordonner l'incarcération provisoire du condamné en application des deux premiers alinéas de l'article 712-19. À défaut de tenue du débat contradictoire devant le président ou le juge par lui désigné dans un délai de quinze jours suivant l'incarcération du condamné, celui-ci est remis en liberté s'il n'est pas détenu pour une autre cause.
+"Au cours de l'exécution de la contrainte pénale, le juge de l'application des peines peut faire application à plusieurs reprises du deuxième alinéa du présent article, dès lors que la durée totale des emprisonnements ordonnés ne dépasse pas la moitié de la durée de la peine prononcée par le tribunal ou le maximum de la peine d'emprisonnement encourue. Si l'emprisonnement ordonné est égal à la moitié de la durée de la contrainte pénale ou à ce maximum ou, compte tenu le cas échéant des précédents emprisonnements ordonnés, atteint cette durée, la décision du président ou du juge par lui désigné met fin à la contrainte pénale.
+"Art. 713-48. - Si le condamné commet, pendant la durée d'exécution de la contrainte pénale, un crime ou un délit de droit commun suivi d'une condamnation à une peine privative de liberté sans sursis, la juridiction de jugement peut, après avis du juge de l'application des peines, ordonner la mise à exécution de tout ou partie de l'emprisonnement prévu au deuxième alinéa de l'article 713-47.
+"Art. 713-49. - Un décret précise les modalités d'application du présent titre. Il précise notamment le délai dans lequel l'évaluation prévue à l'article 713-42 doit être réalisée et le délai dans lequel, au vu de cette évaluation, le juge de l'application des peines doit prendre l'ordonnance prévue à l'article 713-43."
+
+10
+――――
+
+Au début de l'article 20-4 de l'ordonnance n° 45-174 du 2 février 1945 relative à l'enfance délinquante, sont ajoutés les mots : "La contrainte pénale,".
+
+Dispositions diverses
+――――
+
+
+Dispositions diverses
+――――
+
+
+11
+――――
+
+I. - <span class="ansi1 ansi31">Le chapitre Ier du titre Ier du livre V</span> <span class="ansi1 ansi32">L'article 707</span> du code de procédure pénale est ainsi modifié :
+1° Au début du premier alinéa <span class="ansi1 ansi31">de l'article 707</span>, est ajoutée la mention : "I. -" ;
+2° Les deuxième et troisième alinéas <span class="ansi1 ansi31">du même article 707</span> sont remplacés par des II à V ainsi rédigés :
+"II. - (Supprimé)
+"III. - Le régime d'exécution des peines privatives et restrictives de liberté vise à préparer l'insertion ou la réinsertion de la personne condamnée afin de lui permettre d'agir en personne responsable, respectueuse des règles et des intérêts de la société et d'éviter la commission de nouvelles infractions.
+"Ce régime est adapté au fur et à mesure de l'exécution de la peine<span class="ansi1 ansi32">,</span> en fonction de l'évolution de la personnalité et de la situation matérielle, familiale et sociale de la personne condamnée, qui font l'objet d'évaluations régulières.
+"IV. - Toute personne condamnée incarcérée en exécution d'une peine privative de liberté bénéficie, chaque fois que cela est possible, d'un retour progressif à la liberté, dans le cadre d'une mesure de semi-liberté, de placement à l'extérieur, de placement sous surveillance électronique, de libération conditionnelle ou d'une libération sous contrainte, afin d'éviter une remise en liberté sans aucune forme de suivi judiciaire.
+"V. - Au cours de l'exécution de la peine, la victime a le droit :
+"1° De saisir l'autorité judiciaire de toutes atteintes à ses intérêts ;
+"2° D'obtenir la réparation de son préjudice, par l'indemnisation de celui-ci ou par tout autre moyen adapté<span class="ansi1 ansi32">, y compris, s'il y a lieu, en se voyant proposer une mesure de justice restaurative</span> ;
+"3° D'être informée<span class="ansi1 ansi32">,</span> si elle le souhaite<span class="ansi1 ansi32">,</span> de la fin de l'exécution d'une peine privative de liberté, dans les cas et conditions prévues au présent code ;
+"4° À <span class="ansi1 ansi31">ce que soit</span> <span class="ansi1 ansi32">la</span> prise en compte, s'il y a lieu, <span class="ansi1 ansi32">de</span> la nécessité de garantir sa tranquillité et sa sûreté.
+"L'autorité judiciaire est tenue de garantir l'intégralité de ces droits tout au long de l'exécution de la peine, quelles qu'en soient les modalités." ;
+3° Le dernier alinéa est supprimé.
+I bis. - Après l'article 707-4 du même code, il est inséré un article 707-5 ainsi rédigé :
+"Art. 707-5. - En cas de délivrance d'un mandat de dépôt ou d'arrêt, les peines privatives de liberté peuvent être immédiatement aménagées, dans les conditions prévues au présent code, sans attendre que la condamnation soit exécutoire en application de l'article 707, sous réserve du droit d'appel suspensif du ministère public prévu à l'article 712-14."
+<span class="ansi1 ansi32">I ter. - Après l'article 708 du même code, il est inséré un article 708-1 ainsi rédigé :
+</span><span class="ansi1 ansi32">"Art. 708-1. - Le procureur de la République ou le juge de l'application des peines prennent toutes les dispositions utiles afin qu'aucune femme enceinte ne puisse être placée ou maintenue en détention au delà de la douzième semaine de grossesse. Cette disposition ne concerne pas les crimes. Elle ne concerne pas non plus les délits commis contre les mineurs. Durant cette période, la peine est suspendue."
+</span><span class="ansi1 ansi32">I quater. - L'article 720-1 du même code est complété par un alinéa ainsi rédigé :
+</span><span class="ansi1 ansi32">"Le seuil de deux ans prévu au premier alinéa est porté à quatre ans lorsque la suspension s'applique à une femme enceinte de plus de douze semaines."
+</span><span class="ansi1 ansi32">I quinquies. - Le premier alinéa de l'article 729-3 du même code est complété par les mots : "ou lorsqu'il s'agit d'une femme enceinte de plus de douze semaines".</span>
+II. - Le titre préliminaire de la loi n° 2009-1436 du 24 novembre 2009 pénitentiaire est abrogé.
+
+11 bis <span class="ansi1 ansi32">A
+</span><span class="ansi1 ansi32">――――
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">Après le titre XIV bis du livre IV du code de procédure pénale, il est inséré un titre XIV quater ainsi rédigé :
+</span><span class="ansi1 ansi32">"Titre XIV quater
+</span><span class="ansi1 ansi32">"Du bureau d'aide aux victimes
+</span><span class="ansi1 ansi32">"Art. 706-15-4. - Dans chaque tribunal de grande instance, il est institué un bureau d'aide aux victimes, dont la composition, les missions et les modalités de fonctionnement sont précisées par décret."
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">11 bis</span>
+――――
+
+Après le titre XIV bis du livre IV du code de procédure pénale, il est inséré un titre XIV ter ainsi rédigé :
+"Titre <span class="ansi1 ansi31">xiv</span> <span class="ansi1 ansi32">XIV</span> ter
+<span class="ansi1 ansi32">"</span>Du versement volontaire de fonds en réparation du préjudice causé par l'infraction et de l'affectation des sommes non réclamées destinées à l'indemnisation des parties civiles
+"Art. 706-15-3. - I. - Lorsque la victime d'une infraction ne s'est pas constituée partie civile, l'auteur de l'infraction ou la personne civilement responsable peut verser volontairement une somme d'argent, en réparation du préjudice causé par l'infraction, auprès du fonds de garantie des victimes des actes de terrorisme et d'autres infractions. Celui-ci s'efforce de trouver la victime de l'infraction et lui propose d'être indemnisée du préjudice qu'elle <span class="ansi1 ansi31">avait</span> <span class="ansi1 ansi32">a</span> subi. En cas d'impossibilité pour le fonds de garantie de trouver la victime ou si celle-ci ne souhaite pas être indemnisée, la destination de la somme d'argent versée est fixée par un décret.
+"Le premier alinéa est également applicable dans le cas où l'auteur de l'infraction ou la personne civilement responsable a été condamné au paiement de dommages-intérêts mais se trouve dans l'impossibilité de connaître l'adresse de la victime.
+"II. - Lorsque, à la libération d'une personne détenue, la part de ses valeurs pécuniaires affectée à l'indemnisation des parties civiles en application du premier alinéa de l'article 728-1 n'a pas été réclamée, ces valeurs sont, sous réserve des droits des créanciers d'aliments, versées au fonds de garantie des victimes des actes de terrorisme et d'autres infractions. Les deux dernières phrases du premier alinéa du I du présent article sont applicables."
+
+<span class="ansi1 ansi32">11 ter
+</span><span class="ansi1 ansi32">――――
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">Le premier alinéa de l'article 710 du code de procédure pénale est complété par une phrase ainsi rédigée :
+</span><span class="ansi1 ansi32">"Pour l'examen de ces demandes, elle tient compte du comportement de la personne condamnée depuis la condamnation, de sa personnalité ainsi que de sa situation."</span>
+
+Dispositions diverses
+――――
+
+
+12
+――――
+
+La loi n° 2009-1436 du 24 novembre 2009 précitée est ainsi modifiée :
+1° Après l'article 2, il est inséré un article 2-1 ainsi rédigé :
+"Art. 2-1. - Le service public pénitentiaire est assuré par l'administration pénitentiaire sous l'autorité du garde des sceaux, ministre de la justice, avec le concours des autres services de l'État, des collectivités territoriales, des associations et d'autres personnes publiques ou privées.
+"Chacune de ces autorités et de ces personnes veille, en ce qui la concerne, à ce que les personnes condamnées accèdent <span class="ansi1 ansi31">à l'ensemble des</span> <span class="ansi1 ansi32">aux</span> droits et dispositifs de droit commun de nature à faciliter leur insertion ou leur réinsertion.
+"Des conventions entre l'administration pénitentiaire et les autres services de l'État, les collectivités territoriales, les associations et d'autres personnes publiques ou privées définissent les conditions et modalités d'accès des personnes condamnées aux droits et dispositifs mentionnés <span class="ansi1 ansi31">aux</span> <span class="ansi1 ansi32">au</span> deuxième alinéa en détention.
+"Sont associés à ces conventions des objectifs précis, définis en fonction de la finalité d'intérêt général mentionnée au <span class="ansi1 ansi32">même</span> deuxième alinéa, ainsi que des résultats attendus, et faisant l'objet d'une évaluation régulière." <span class="ansi1 ansi32">;</span>
+2° Le premier alinéa de l'article 3 est supprimé <span class="ansi1 ansi32">;
+</span><span class="ansi1 ansi32">3° Au deuxième alinéa de l'article 11, la référence : "du second alinéa" est supprimée ;
+</span><span class="ansi1 ansi32">4° Au quatrième alinéa de l'article 99, la référence : "3" est remplacée par la référence : "2-1"</span>.
+
+<span class="ansi1 ansi32">12 bis
+</span><span class="ansi1 ansi32">――――
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">L'article 30 de la même loi est complété par un alinéa ainsi rédigé :
+</span><span class="ansi1 ansi32">"Pour faciliter leurs démarches de préparation à la sortie, les personnes détenues peuvent également élire leur domicile auprès du centre communal ou intercommunal d'action sociale le plus proche du lieu où elles recherchent une activité professionnelle."</span>
+
+Dispositions diverses
+――――
+
+
+13
+――――
+
+Le premier alinéa de l'article 712-1 du code de procédure pénale est complété par deux phrases ainsi rédigées :
+"Ces juridictions sont avisées, par les services d'insertion et de probation, des modalités de prise en charge des personnes condamnées, définies et mises en oeuvre par ces services. Elles peuvent faire procéder aux modifications qu'elles jugent nécessaires au renforcement du contrôle de l'exécution de la peine."
+
+14
+――――
+
+Le second alinéa de l'article 13 de la de la loi n° 2009-1436 du 24 novembre 2009 précitée est complété par une phrase ainsi rédigée :
+"Ils procèdent à l'évaluation régulière de la situation des personnes condamnées et définissent, au vu de ces évaluations, le contenu et les modalités de leur prise en charge."
+
+Dispositions diverses
+――――
+
+
+15
+――――
+
+I. - Le code de procédure pénale est ainsi modifié :
+1° L'article 141-4 est ainsi modifié :
+a) À la première phrase du premier alinéa, la référence : "9°" est remplacée par les références : "1°, 2°, 3°, 8°, 9°, 14°" ;
+b) Il est ajouté un alinéa ainsi rédigé :
+"Le présent article est également applicable aux personnes placées sous assignation à résidence avec surveillance électronique." ;
+2° Après le même article 141-4, il est inséré un article 141-5 ainsi rédigé :
+"Art. 141-5. - Les services de police et les unités de gendarmerie peuvent, selon les modalités prévues aux articles 56 à 58 et pendant les heures prévues à l'article 59, et après avoir recueilli l'accord du juge d'instruction ou sur instruction de ce magistrat, procéder à une perquisition chez une personne qui, placée sous contrôle judiciaire ou sous assignation à résidence avec surveillance électronique, est soumise à l'interdiction de détenir une arme, lorsqu'il existe des indices graves ou concordants que des armes se trouvent actuellement à son domicile.
+"Si des armes sont découvertes, elles sont saisies et placées sous scellés." ;
+3° L'article 230-19 est ainsi modifié :
+a) Au 2°, la référence : "et 14°" est remplacée par les références : ", 14° et 17°" ;
+b) Au 8°, les mots : "dans le cadre d'un sursis avec mise à l'épreuve" sont remplacés par les mots : "dans le cadre d'une contrainte pénale, d'un sursis avec mise à l'épreuve, d'une libération conditionnelle, d'un aménagement de peine, d'une surveillance judiciaire ou d'une surveillance de sûreté" et, après la référence : "14°", <span class="ansi1 ansi31">est ajoutée la référence</span> <span class="ansi1 ansi32">sont insérées les références</span> : "<span class="ansi1 ansi31">et</span><span class="ansi1 ansi32">,</span> 19<span class="ansi1 ansi32">° et 20</span>°" ;
+c) Au 9°, la référence : "et 4°" est remplacée par les références : ", 4° et 11°" ;
+4° Après l'article 709 <span class="ansi1 ansi31">du même code</span>, sont insérés des articles 709-1-1 et 709-1-2 ainsi rédigés :
+"Art. 709-1-1. - Les services de police et les unités de gendarmerie peuvent, d'office ou sur instruction du procureur de la République ou du juge de l'application des peines, appréhender toute personne condamnée pour laquelle il a été fait application du deuxième alinéa des articles 131-9 ou 131-11 du code pénal ou placée sous le contrôle du juge de l'application des peines et à l'encontre de laquelle il existe une ou plusieurs raisons plausibles de soupçonner qu'elle n'a pas respecté les obligations qui lui incombent en application de sa condamnation. La personne peut alors, sur décision d'un officier de police judiciaire, être retenue vingt-quatre heures au plus dans un local de police ou de gendarmerie<span class="ansi1 ansi32">,</span> afin que soit vérifiée sa situation et qu'elle soit entendue sur la violation de ses obligations.
+"Dès le début de la mesure de retenue, l'officier de police judiciaire informe le procureur de la République ou le juge de l'application des peines.
+"La personne retenue est immédiatement informée par l'officier de police judiciaire ou, sous le contrôle de celui-ci, par un agent de police judiciaire<span class="ansi1 ansi32">, dans une langue qu'elle comprend,</span> de la nature des obligations qu'elle est soupçonnée avoir violées et du fait qu'elle peut exercer les droits <span class="ansi1 ansi31">prévus aux articles</span> <span class="ansi1 ansi32">suivants :
+</span><span class="ansi1 ansi32">"1° Faire prévenir un proche et son employeur ainsi que, si elle est de nationalité étrangère, les autorités consulaires de l'État dont elle est ressortissante, en application de l'article</span> 63-2 <span class="ansi1 ansi32">;
+</span><span class="ansi1 ansi32">"2° Être examinée par un médecin, en application de l'article 63-3 ;
+</span><span class="ansi1 ansi32">"3° Être assistée par un avocat, en application des articles 63-3-1</span> à 63-4 <span class="ansi1 ansi31">du présent code</span><span class="ansi1 ansi32">-3 ;
+</span><span class="ansi1 ansi32">"4° Lors des auditions, après avoir décliné son identité, faire des déclarations, répondre aux questions qui lui sont posées ou se taire</span>.
+<span class="ansi1 ansi32">"</span>Elle <span class="ansi1 ansi32">est également informée de la durée maximale de la mesure.
+</span><span class="ansi1 ansi32">"La personne retenue</span> ne peut faire l'objet d'investigations corporelles internes au cours de sa retenue par le service de police ou par l'unité de gendarmerie.
+"Si la personne est placée sous le contrôle du juge de l'application des peines, les pouvoirs conférés au procureur de la République par les articles 63-2 et 63-3 sont exercés par ce juge ou, en cas d'empêchement de ce juge, par le procureur de la République.
+"L'article 64 est applicable à la présente mesure de retenue.
+"À l'issue de la mesure de retenue, le procureur de la République ou le juge de l'application des peines peut ordonner que la personne soit conduite devant le juge de l'application des peines dans les conditions prévues aux articles 803-2 et 803-3, le cas échéant pour ordonner son incarcération provisoire.
+"Le procureur de la République ou le juge de l'application des peines peut également demander à un officier ou un agent de police judiciaire d'aviser la personne qu'elle est convoquée devant lui à une date ultérieure, puis de mettre fin à la rétention de la personne.
+"Art. 709-1-2. - Les services de police et les unités de gendarmerie peuvent, selon les modalités prévues aux articles 56 à 58 et pendant les heures prévues à l'article 59, et après avoir recueilli l'accord du procureur de la République ou du juge de l'application des peines ou sur instruction de l'un de ces magistrats, procéder à une perquisition chez une personne condamnée qui, en raison de sa condamnation, est soumise à l'interdiction de détenir une arme, lorsqu'il existe des indices graves ou concordants que des armes se trouvent actuellement à son domicile.
+"Si des armes sont découvertes, elles sont saisies et placées sous scellés." ;
+5° (Supprimé)
+5° bis L'article 709-2 <span class="ansi1 ansi31">du même code</span> est ainsi rédigé :
+"Art. 709-2. - Lorsqu'il existe une ou plusieurs raisons plausibles de soupçonner qu'une personne condamnée sortant de détention n'a pas respecté l'interdiction qui lui est faite, en application de sa condamnation, d'entrer en relation avec certaines personnes, dont la victime, ou certaines catégories de personnes, notamment des mineurs, de fréquenter certains condamnés, notamment les auteurs ou complices de l'infraction, ou de paraître en un lieu, une catégorie de lieux ou une zone spécialement désignés, les services de police et les unités de gendarmerie peuvent, sur instruction du juge de l'application des peines ou, s'il a été fait application du deuxième alinéa de l'article 131-9 ou du second alinéa de l'article 131-11 du code pénal, du juge de l'application des peines, saisi à cette fin par le procureur de la République, procéder, sur l'ensemble du territoire national, à :
+"1° L'interception, l'enregistrement et la transcription de correspondances émises par la voie des télécommunications<span class="ansi1 ansi32">,</span> selon les modalités prévues à la sous-section 2 de la section 3 du chapitre Ier du titre III du livre Ier ;
+"2° La localisation en temps réel d'une personne, à l'insu de celle-ci, d'un véhicule ou de tout autre objet, sans le consentement de son propriétaire ou de son possesseur, selon les modalités prévues au chapitre V du titre IV du livre Ier." ;
+5° ter Après le même article 709-2, il est inséré un article 709-3 ainsi rédigé :
+"Art. 709-3. - Le procureur de la République établit un rapport annuel sur l'état et les délais de l'exécution des peines<span class="ansi1 ansi32">,</span> qui comprend, notamment, un rapport établi par le directeur départemental des finances publiques relatif au recouvrement des amendes dans le ressort du tribunal. Le directeur départemental des finances publiques communique son rapport au procureur de la République au plus tard le premier jour ouvrable du mois de mars. Le rapport du procureur de la République est rendu public avant le dernier jour ouvrable du mois de juin<span class="ansi1 ansi32">,</span> selon des modalités fixées par un arrêté du ministre de la justice." ;
+6° L'article 712-16-3 est abrogé ;
+7° Au dernier alinéa de l'article 63-6 et à la seconde phrase du dernier alinéa de l'article 706-53-19 <span class="ansi1 ansi31">du même code</span>, la référence : "712-16-3" est remplacée par la référence : "709-1-1" ;
+8° La première phrase de l'article 803-2 est ainsi modifiée :
+a) Après <span class="ansi1 ansi31">le mot</span> <span class="ansi1 ansi32">les mots</span> : "<span class="ansi1 ansi32">garde à</span> vue", sont insérés les mots : "ou de sa retenue" ;
+b) Après le mot : "République", sont insérés les mots : "ou du juge de l'application des peines" ;
+9° Au premier alinéa de l'article 803-3, après <span class="ansi1 ansi31">le mot</span> <span class="ansi1 ansi32">les mots</span> : "<span class="ansi1 ansi32">garde à</span> vue", sont insérés les mots : "ou la retenue".
+II. - Au premier alinéa de l'article 64-1 de la loi n° 91-647 du 10 juillet 1991 relative à l'aide juridique, après les mots : "garde à vue", sont insérés les mots : ", de la retenue ou de la rétention".
+
+15 bis
+――――
+
+<span class="ansi1 ansi32">I. -</span> L'article 41-1 du code de procédure pénale est ainsi modifié :
+1° Le premier alinéa est ainsi modifié :
+a) Au début, est ajoutée la mention : "I. -" ;
+b) Après le mot : "judiciaire", sont insérés les mots : "ou, sous la responsabilité de ce dernier, d'un agent de police judiciaire" ;
+2° Il est ajouté un II ainsi rédigé :
+"II. - Le procureur de la République peut, dans le cadre d'une convention conclue entre le ministère public près le tribunal de grande instance, le directeur départemental de la sécurité publique et le commandant du groupement de gendarmerie du département, confier à l'officier de police judiciaire, au délégué ou au médiateur du procureur de la République, pour des faits de faible gravité compte tenu du contexte propre au ressort, l'initiative de la mise en oeuvre des mesures prévues au présent article.
+"L'officier de police judiciaire, le délégué et le médiateur du procureur de la République informent, au moins une fois par an, le procureur de la République des conditions de mise en oeuvre, dans le ressort, de la convention conclue en application du présent <span class="ansi1 ansi31">alinéa</span> <span class="ansi1 ansi32">II</span>.
+"Les modalités d'application du présent II sont fixées par décret en Conseil d'État."
+<span class="ansi1 ansi32">II. - L'article 7-1 de l'ordonnance n° 45-174 du 2 février 1945 relative à l'enfance délinquante est ainsi modifié :
+</span><span class="ansi1 ansi32">1° À la première phrase du premier alinéa, après le mot : "application", est insérée la référence : "du I" ;
+</span><span class="ansi1 ansi32">2° À la première phrase du second alinéa, après la référence : "5°", est insérée la référence : "du I".
+</span><span class="ansi1 ansi32">III. - Au premier alinéa de l'article 64-2 de la loi n° 91-647 du 10 juillet 1991 précitée et au premier alinéa de l'article 23-3 de l'ordonnance n° 92-1147 du 12 octobre 1992 relative à l'aide juridictionnelle en matière pénale en Nouvelle-Calédonie et dans les îles Wallis et Futuna, après la référence : "5°", est insérée la référence : "du I".</span>
+
+15 ter
+――――
+
+Après l'article 41-1 du code de procédure pénale, il est inséré un article 41-1-1 ainsi rédigé :
+"Art. 41-1-1. - I. - L'officier de police judiciaire peut, tant que l'action publique n'a pas été mise en mouvement, transiger avec les personnes physiques et les personnes morales sur la poursuite :
+"1° Des contraventions prévues par le code pénal, à l'exception des contraventions des quatre premières classes pour lesquelles l'action publique est éteinte par le paiement d'une amende forfaitaire en application de l'article 529 du présent code ;
+"2° Des délits prévus par le code pénal et punis d'une peine d'amende ;
+"3° Des délits prévus par le même code et punis d'un an d'emprisonnement au plus, à l'exception du délit d'outrage prévu <span class="ansi1 ansi31">et réprimé</span> au deuxième alinéa de l'article 433-5 dudit code ;
+"4° Du délit prévu à l'article 311-3 du même code, lorsque la valeur de la chose volée est inférieure à un seuil fixé par décret ;
+"5° Du délit prévu à l'article L. 3421-1 du code de la santé publique.
+"La transaction proposée par l'officier de police judiciaire et acceptée par l'auteur de l'infraction est homologuée par le procureur de la République.
+"II. - La proposition de transaction est déterminée en fonction des circonstances et de la gravité de l'infraction, de la personnalité et de la situation matérielle, familiale et sociale de son auteur ainsi que de ses ressources et de ses charges. Elle fixe :
+"1° L'amende transactionnelle due par l'auteur de l'infraction et dont le montant ne peut excéder le tiers du montant de l'amende encourue ;
+"2° Le cas échéant, les obligations qui sont imposées à l'auteur de l'infraction afin de faire cesser celle-ci, d'éviter son renouvellement ou de réparer le dommage ;
+"3° Les délais impartis pour le paiement et, s'il y a lieu, l'exécution des obligations.
+"III. - L'acte par lequel le procureur de la République donne son accord à la proposition de transaction est interruptif de la prescription de l'action publique.
+"L'action publique est éteinte lorsque l'auteur de l'infraction a exécuté dans les délais impartis l'intégralité des obligations résultant pour lui de l'acceptation de la transaction.
+"En cas de non-exécution de l'intégralité des obligations dans les délais impartis, le procureur de la République, sauf élément nouveau, met en oeuvre une composition pénale ou engage des poursuites.
+"IV. - Les modalités d'application du présent article sont fixées par décret en Conseil d'État."
+
+15 quater
+――――
+
+Le chapitre II du titre III du livre Ier du code de la sécurité intérieure est ainsi modifié :
+1° L'article L. 132-5 est ainsi rédigé :
+"Art. L. 132-5. - Le conseil local de sécurité et de prévention de la délinquance peut constituer un groupe de travail sur l'exécution des peines, au sein duquel toute information, y compris individuelle, peut être échangée en vue de prévenir la récidive.
+"Il peut également constituer un ou plusieurs autres groupes de travail et d'échange d'informations à vocation territoriale ou thématique.
+"Les faits à caractère confidentiel et les informations individuelles échangés dans le cadre des groupes de travail mentionnés aux deux premiers alinéas ne peuvent être communiqués à des tiers.
+"L'échange d'informations est réalisé selon les modalités prévues par un règlement intérieur établi par le conseil local de sécurité et de prévention de la délinquance sur la proposition des membres des groupes de travail." ;
+2° La section 2 est ainsi modifiée :
+a) À l'intitulé, après le mot : "État", sont insérés les mots : "et du procureur de la République" ;
+b) Il est ajouté un article L. 132-10-1 ainsi rédigé :
+"Art. L. 132-10-1. - I. - Le conseil départemental de <span class="ansi1 ansi32">sécurité et de</span> prévention de la délinquance concourt à l'élaboration et à la mise en oeuvre, dans le département, des grandes orientations de la politique d'exécution des peines et de prévention de la récidive.
+"Dans le cadre de ses attributions, le conseil départemental de <span class="ansi1 ansi32">sécurité et de</span> prévention de la délinquance :
+"1° Élabore un plan stratégique départemental d'exécution des peines et de prévention de la récidive ;
+"2° Fait toutes propositions utiles aux institutions et organismes publics et privés du département intéressés par l'exécution des peines et la prévention de la récidive ;
+"3° Suscite et encourage les initiatives prises dans le département en vue de favoriser l'exécution des peines et de prévenir la récidive.
+"II. - Au sein de chaque conseil départemental de <span class="ansi1 ansi32">sécurité et de</span> prévention de la délinquance et, le cas échéant, de chaque zone de sécurité prioritaire, l'état-major de sécurité et la cellule de coordination opérationnelle du partenariat sont chargés d'animer et de coordonner, sur leur territoire, les actions conduites par l'administration pénitentiaire, les autres services de l'État, les collectivités territoriales, les associations et les autres personnes publiques ou privées, en vue de favoriser l'exécution des peines et prévenir la récidive.
+"Dans le cadre de leurs attributions, l'état-major de sécurité et la cellule de coordination opérationnelle du partenariat :
+"1° Sont informés par le procureur de la République, au moins une fois par an, de la politique pénale mise en oeuvre sur leur territoire ;
+"2° Examinent et donnent leur avis sur les conditions de mise en oeuvre soit à la demande du procureur de la République, soit à l'initiative des officiers de police judiciaire, des délégués et des médiateurs de la République, des mesures alternatives aux poursuites prévues à l'article 41-1 du code de procédure pénale, pour des faits de faible gravité compte tenu du contexte propre au ressort ;
+"3° Désignent les personnes condamnées sortant de détention dont la personnalité, la situation matérielle, familiale et sociale et les circonstances de la commission des faits justifient, en milieu ouvert, un contrôle soutenu par les services de police et <span class="ansi1 ansi32">les</span> unités de gendarmerie du respect des obligations et interdictions qui leur incombent en application de leur condamnation ;
+"4° Peuvent se voir transmettre à cette fin, dans des conditions fixées par décret en Conseil d'État pris après avis de la Commission nationale de l'informatique et des libertés, l'extrait de jugement ou d'arrêt et le bulletin n° 1 du casier judiciaire des personnes qu'ils désignent en application du 3°, ainsi que la copie des rapports des expertises les concernant réalisées pendant l'enquête ou l'instruction ou ordonnées en cours d'exécution de la peine ;
+"5° Échangent en leur sein toute autre information, y compris individuelle, qu'ils jugent nécessaire au respect, par les personnes désignées en application du même 3°, des obligations et interdictions auxquelles elles sont soumises ainsi qu'à la prévention de la commission par ces mêmes personnes de nouvelles infractions ;
+"6° Informent régulièrement les juridictions de l'application des peines ainsi que les services pénitentiaires d'insertion et de probation des conditions de mise en oeuvre, dans le ressort, du suivi des personnes désignées en application dudit 3° et peuvent se voir transmettre par ces mêmes juridictions et services toute information que ceux-ci jugent utile au bon déroulement du suivi de ces personnes.
+"III. - Le conseil départemental de <span class="ansi1 ansi32">sécurité et de</span> prévention de la délinquance peut également constituer un ou plusieurs autres groupes de travail et d'échange d'informations à vocation territoriale ou thématique.
+"IV. - Les faits à caractère confidentiel et les informations individuelles échangés dans le cadre des groupes de travail, en application des II et III, ne peuvent être communiqués à des tiers.
+"L'échange d'informations est réalisé selon les modalités prévues par un règlement intérieur établi par le conseil départemental de <span class="ansi1 ansi32">sécurité et de</span> prévention de la délinquance sur la proposition des membres des groupes de travail.
+"V. - Les modalités d'application du présent article sont fixées par décret en Conseil d'État." ;
+3° L'article L. 132-12-1 est ainsi modifié :
+a) La deuxième phrase du premier alinéa est supprimée ;
+b) Le second alinéa est remplacé par quatre alinéas ainsi rédigés :
+"Le conseil métropolitain de sécurité et de prévention de la délinquance peut constituer un groupe de travail sur l'exécution des peines, au sein duquel toute information, y compris individuelle, peut être échangée en vue de prévenir la récidive.
+"Il peut également constituer un ou plusieurs autres groupes de travail et d'échange d'informations à vocation territoriale ou thématique.
+"Les faits à caractère confidentiel et les informations individuelles échangés dans le cadre des groupes de travail mentionnés aux deuxième et troisième alinéas ne peuvent être communiqués à des tiers.
+"Les modalités de fonctionnement du conseil métropolitain de sécurité et de prévention de la délinquance sont déterminées par le règlement intérieur établi par le conseil de la métropole. Sur la proposition des membres des groupes de travail, ce règlement intérieur définit également les modalités d'échange d'informations réalisé en application des deuxième et troisième alinéas." ;
+4° Le second alinéa de l'article L. 132-13 est remplacé par quatre alinéas ainsi rédigés :
+"Le conseil intercommunal de sécurité et de prévention de la délinquance peut constituer un groupe de travail sur l'exécution des peines, au sein duquel toute information, y compris individuelle, peut être échangée en vue de favoriser la prévention de la récidive.
+"Il peut également constituer un ou plusieurs autres groupes de travail et d'échange d'informations à vocation territoriale ou thématique.
+"Les faits à caractère confidentiel et les informations individuelles échangés dans le cadre des groupes de travail mentionnés aux deuxième et troisième alinéas ne peuvent être communiqués à des tiers.
+"L'échange d'informations est réalisé selon les modalités prévues par un règlement intérieur établi par le conseil intercommunal de sécurité et de prévention de la délinquance sur la proposition des membres des groupes de travail."
+
+15 quinquies
+――――
+
+Le chapitre II du titre III du livre Ier du code de la sécurité intérieure est complété par une section 6 ainsi rédigée :
+"Section 6
+"Du rôle des députés et des sénateurs
+"Art. L. 132-16. - Les députés et les sénateurs sont régulièrement informés par le président du conseil local de sécurité et de prévention de la délinquance ou, le cas échéant, du conseil intercommunal ou métropolitain de sécurité et de prévention de la délinquance, constitué dans la circonscription électorale dans laquelle ils ont été élus, de la tenue et de l'objet des réunions de ces instances.
+"Ils peuvent d'initiative assister aux réunions de ces instances et être consultés par elles sur toute question concernant la prévention de la délinquance."
+
+15 sexies
+――――
+
+À la fin du quatrième alinéa de l'article 5 de la loi n° 2007-297 du 5 mars 2007 relative à la prévention de la délinquance, les mots : "des travaux d'intérêt général destinés aux personnes condamnées" sont remplacés par les mots : "soit des travaux d'intérêt général destinés aux personnes condamnées, soit des actions d'insertion ou de réinsertion ou des actions de prévention de la récidive destinées aux personnes placées sous main de justice".
+
+Dispositions diverses
+――――
+
+
+16
+――――
+
+I. - Après la section 1 du chapitre II du titre II du livre V du code de procédure pénale, est insérée une section 1 bis ainsi rédigée :
+"Section 1 bis
+"De la libération sous contrainte
+"Art. 720. - Lorsque la durée de la peine accomplie est au moins égale au double de la durée de la peine restant à subir, la situation de la personne condamnée exécutant une ou plusieurs peines privatives de liberté d'une durée totale inférieure ou égale à cinq ans est examinée par le juge de l'application des peines.
+"À l'issue de cet examen en commission de l'application des peines, le juge de l'application des peines décide, par ordonnance motivée, soit de prononcer une mesure de libération sous contrainte, dans le respect des exigences prévues à l'article 707, soit, s'il estime qu'une telle mesure n'est pas possible <span class="ansi1 ansi32">ou si la personne condamnée a fait préalablement connaître expressément son refus</span>, de ne pas la prononcer. Il peut ordonner la comparution de la personne condamnée devant la commission de l'application des peines afin d'entendre ses observations et, le cas échéant, celles de son avocat. Ce dernier peut également transmettre des observations écrites au juge de l'application des peines.
+"La libération sous contrainte entraîne l'exécution du reliquat de peine sous le régime, selon la décision prise par le juge de l'application des peines, de la semi-liberté, du placement à l'extérieur, du placement sous surveillance électronique ou de la libération conditionnelle. Les conséquences de l'inobservation de ces mesures sont celles prévues au présent code.
+"S'il n'est pas procédé à l'examen de la situation de la personne condamnée dans les conditions prévues au premier alinéa du présent article, le président de la chambre de l'application des peines de la cour d'appel peut, d'office ou sur saisine de la personne condamnée ou du procureur de la République, prononcer une mesure de libération sous contrainte."
+II. - L'article 712-11 du même code est ainsi modifié :
+1° À la fin du 1°, la référence : "et 712-8" est remplacée par les références : ", 712-8, 713-43 et 713-44, au premier alinéa de l'article 713-47 et à l'article 720" ;
+2° À la fin du 2°, la référence : "et 712-7" est remplacée par les références : ", 712-7 et 713-45 et au deuxième alinéa de l'article 713-47".
+III. - À l'article 712-12 du même code, les références : "aux articles 712-5 et 712-8" sont remplacées par la référence : "au 1° de l'article 712-11".
+
+16 bis
+――――
+
+Le dernier alinéa de l'article 712-5 du code de procédure pénale est complété par une phrase ainsi rédigée :
+"Le service pénitentiaire d'insertion et de probation y est représenté."
+
+16 ter
+――――
+
+L'article 723-4 du code de procédure pénale est complété par une phrase ainsi rédigée :
+"Le condamné peut également bénéficier des mesures d'aide prévues à l'article 132-46 du même code."
+
+17
+――――
+
+Après l'article 730-2 du code de procédure pénale, il est inséré un article 730-3 ainsi rédigé :
+"Art. 730-3. - Lorsque la durée de la peine accomplie est au moins égale au double de la durée de la peine restant à subir, la situation de la personne condamnée exécutant une ou plusieurs peines privatives de liberté d'une durée totale de plus de cinq ans est examinée par le juge ou le tribunal de l'application des peines à l'occasion d'un débat contradictoire tenu selon les modalités prévues aux articles 712-6 ou 712-7, afin qu'il soit statué sur l'octroi d'une libération conditionnelle. Si la personne a été condamnée à la réclusion criminelle à perpétuité, ce débat <span class="ansi1 ansi31">intervient à l</span> <span class="ansi1 ansi32">ne peut intervenir avant le terme du temps d</span>'<span class="ansi1 ansi31">issue</span><span class="ansi1 ansi32">épreuve ni avant celui</span> de la <span class="ansi1 ansi31">dix-huitième année</span> <span class="ansi1 ansi32">période</span> de <span class="ansi1 ansi31">détention</span> <span class="ansi1 ansi32">sûreté</span>.
+"Le juge ou le tribunal de l'application des peines n'est pas tenu d'examiner la situation de la personne qui a fait préalablement savoir qu'elle refusait toute mesure de libération conditionnelle. Un décret fixe les conditions d'application du présent alinéa.
+"S'il n'est pas procédé au débat contradictoire dans les conditions prévues au premier alinéa du présent article, la chambre de l'application des peines de la cour d'appel peut, d'office ou sur saisine de la personne condamnée ou du procureur de la République, tenir ce débat."
+
+17 bis
+――――
+
+L'article 721-2 du code de procédure pénale est ainsi rédigé :
+"Art. 721-2. - I. - Lorsqu'une personne condamnée exécutant une ou plusieurs peines privatives de liberté n'a pu bénéficier d'une mesure de libération sous contrainte ou d'une libération conditionnelle dans les conditions prévues aux articles 720 et 730-3, le juge de l'application des peines peut, aux seules fins de favoriser l'insertion ou la réinsertion de la personne condamnée et de prévenir la commission de nouvelles infractions, ordonner que le condamné ayant bénéficié d'une ou plusieurs des réductions de peines prévues aux articles 721 et 721-1 soit soumis, après sa libération et pendant une durée qui ne peut excéder le total des réductions de peines dont il a bénéficié, à une ou plusieurs :
+"1° Des mesures de contrôle prévues à l'article 132-44 du code pénal ;
+"2° Des obligations et interdictions prévues à l'article 132-45 du même code.
+"La personne condamnée peut également bénéficier, pendant cette durée, des mesures d'aide prévues à l'article 132-46 dudit code.
+"Cette décision est prise, selon les modalités prévues à l'article 712-6 du présent code, préalablement à la libération du condamné, le cas échéant en même temps que lui est accordée la dernière réduction de peine.
+"En cas d'inobservation par la personne condamnée des mesures de contrôle, obligations et interdictions qui lui ont été imposées, le juge de l'application des peines peut, selon les modalités prévues au même article 712-6, retirer tout ou partie de la durée des réductions de peines dont elle a bénéficié et ordonner sa réincarcération. L'article 712-17 est applicable.
+"Le présent I n'est pas applicable aux condamnés mentionnés à l'article 723-29.
+"II. - Dans tous les cas, le juge de l'application des peines peut, selon les modalités prévues à l'article 712-6, ordonner que le condamné ayant bénéficié d'une ou plusieurs des réductions de peines prévues aux articles 721 et 721-1 soit soumis après sa libération à l'interdiction de recevoir la partie civile ou la victime, de la rencontrer ou d'entrer en relation avec elle de quelque façon que ce soit, pendant une durée qui ne peut excéder le total des réductions de peines dont il a bénéficié. Cette décision est prise préalablement à la libération du condamné, le cas échéant en même temps que lui est accordée la dernière réduction de peine.
+"L'interdiction mentionnée au premier alinéa du présent II peut être accompagnée de l'obligation d'indemniser la partie civile.
+"En cas d'inobservation par la personne condamnée des obligations et interdictions qui lui ont été imposées, le juge de l'application des peines peut, selon les modalités prévues à l'article 712-6, retirer tout ou partie de la durée des réductions de peines dont elle a bénéficié et ordonner sa réincarcération. L'article 712-17 est applicable."
+
+17 ter
+――――
+
+Au troisième alinéa de l'article 730 du code de procédure pénale, après les mots : "présent article", sont insérés les mots : "et sans préjudice des articles 720 et 730-3".
+
+18
+――――
+
+Le code de procédure pénale est ainsi modifié :
+1° Le second alinéa de l'article 712-4 est supprimé ;
+2° Le chapitre II du titre II du livre V est ainsi modifié :
+a) L'article 723-14 est abrogé ;
+b) Le paragraphe 2 de la section 7 est abrogé ;
+c) La section 8 est abrogée ;
+3° L'article 934-2 est abrogé ;
+4° À l'article 934-1, les références : "des articles 723-15, 723-24 et 723-27" sont remplacées par la référence : "de l'article 723-15".
+
+18 bis
+――――
+
+Après le mot : "comparution", la fin de la seconde phrase de l'avant-dernier alinéa de l'article 712-17 du code de procédure pénale est ainsi rédigée : ", selon les cas, devant le juge de l'application des peines, qui doit intervenir dans un délai maximal de huit jours, ou devant le tribunal de l'application des peines, qui doit intervenir dans un délai maximal d'un mois."
+
+18 ter
+――――
+
+À la fin de la première phrase du premier alinéa de l'article 712-21 du code de procédure pénale, les mots : "condamnée pour une infraction pour laquelle le suivi socio-judiciaire est encouru" sont remplacés par les mots : "qui a été condamnée à un suivi socio-judiciaire".
+
+Dispositions diverses
+――――
+
+
+18 quater
+――――
+
+I. - Le chapitre Ier du titre II du livre Ier du code pénal est complété par un article 121-8 ainsi rédigé :
+"Art. 121-8. - Les amendes pénales recouvrées<span class="ansi1 ansi32">, à l'exception de celles mentionnées au premier alinéa de l'article 529 du code de procédure pénale,</span> font l'objet d'une majoration de 10 %, mise à la charge de l'auteur de l'infraction."
+II. - Le paragraphe 1 de la section 1 du chapitre VI du titre XII du code des douanes est complété par un article 409-1 ainsi rédigé :
+"Art. 409-1. - Les amendes douanières recouvrées font l'objet d'une majoration de 10 %, mise à la charge de l'auteur de l'infraction."
+III. - Le code monétaire et financier est ainsi modifié :
+1° Le I de l'article L. 612-42 est ainsi rédigé :
+"I. - Les sanctions pécuniaires prononcées en application des articles L. 612-39 à L. 612-41 font l'objet d'une majoration de 10 %, mise à la charge de la personne sanctionnée.
+"Les montants des sanctions et astreintes prévues à ces mêmes articles sont recouvrés par le Trésor public et versés au budget de l'État." ;
+2° Avant le dernier alinéa du III de l'article L. 621-15, il est inséré un alinéa ainsi rédigé :
+"Les sanctions pécuniaires prononcées en application du présent III font l'objet d'une majoration de 10 %, mise à la charge de la personne sanctionnée."
+IV. - Après l'article L. 464-5 du code de commerce, il est inséré un article L. 464-5-1 ainsi rédigé :
+"Art. L. 464-5-1. - Les sanctions pécuniaires prononcées en application des articles L. 464-2 à L. 464-5 font l'objet d'une majoration de 10 %, mise à la charge de l'organisme ou de l'entreprise sanctionné."
+V. - Au second alinéa du I de l'article 44 de la loi n° 2010-476 du 12 mai 2010 relative à l'ouverture à la concurrence et à la régulation du secteur des jeux d'argent et de hasard en ligne, après le mot : "pécuniaires", sont insérés les mots : "prononcées en application de l'article 43 font l'objet d'une majoration de 10 %, mise à la charge des organismes sanctionnés. Elles".
+VI. - Le présent article entre en vigueur au 1er janvier 2015.
+
+Dispositions diverses
+――――
+
+
+18 quinquies
+――――
+
+Après l'article 147 du code de procédure pénale, il est inséré un article 147-1 ainsi rédigé :
+"Art. 147-1. - En toute matière et à tous les stades de la procédure, sauf s'il existe un risque grave de renouvellement de l'infraction, la mise en liberté d'une personne placée en détention provisoire peut être ordonnée, d'office ou à la demande de l'intéressé, lorsqu'une expertise médicale établit que cette personne est atteinte d'une pathologie engageant le pronostic vital ou que son état de santé est incompatible avec le maintien en détention, hors les cas des personnes détenues admises en soins psychiatriques sans leur consentement.
+"En cas d'urgence, lorsque le pronostic vital de la personne est engagé, sa mise en liberté peut être ordonnée au vu d'un certificat médical établi par le médecin responsable de la structure sanitaire dans laquelle cette personne est prise en charge ou par le remplaçant de ce médecin.
+"La décision de mise en liberté peut être assortie d'un placement sous contrôle judiciaire ou d'une assignation à résidence avec surveillance électronique.
+"L'évolution de l'état de santé de la personne peut constituer un élément nouveau permettant qu'elle fasse l'objet d'une nouvelle décision de placement en détention provisoire, selon les modalités prévues au présent code, dès lors que les conditions de cette mesure prévues à l'article 144 sont réunies."
+
+<span class="ansi1 ansi32">18 sexies
+</span><span class="ansi1 ansi32">――――
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">À la première phrase du deuxième alinéa de l'article 720-1-1 du code de procédure pénale, les mots : "deux expertises médicales distinctes établissent de manière concordante" sont remplacés par les mots : "une expertise médicale établit".</span>
+
+Dispositions diverses
+――――
+
+
+19 A
+――――
+
+Après le 5° de l'article 131-6 du code pénal, il est inséré un 5° bis ainsi rédigé :
+"5° bis L'interdiction, pendant une durée de cinq ans au plus, de conduire un véhicule qui ne soit pas équipé, par un professionnel agréé ou par construction, d'un dispositif homologué d'anti-démarrage par éthylotest électronique. Lorsque cette interdiction est prononcée en même temps que la peine d'annulation ou de suspension du permis de conduire, elle s'applique, pour la durée fixée par la juridiction, à l'issue de l'exécution de cette peine ;".
+
+19
+――――
+
+Lorsqu'un sursis simple a été révoqué de plein droit par une condamnation prononcée antérieurement à l'entrée en vigueur de la présente loi, l'article 735 du code de procédure pénale demeure applicable tant que la peine résultant de la révocation n'a pas été totalement ramenée à exécution.
+Toutefois, lorsqu'une juridiction de l'application des peines est saisie de l'octroi d'une des mesures prévues aux articles 712-6 et 712-7 du même code, elle est compétente pour statuer sur la demande de dispense de révocation du sursis simple. Elle statue alors dans les conditions prévues au même article 712-6.
+
+20
+――――
+
+I. - Les articles 7 à 10 de la présente loi entrent en vigueur, pour les infractions commises à compter de cette date, le premier jour du sixième mois suivant sa promulgation.
+II. - Les articles 16 à 18 de la présente loi entrent en vigueur le premier jour du troisième mois suivant sa promulgation.
+Les dispositions des articles 16 et 17 sont mises en oeuvre dans un délai d'un an pour les condamnés ayant, au moment de leur entrée en vigueur, déjà accompli au moins le double de la durée de la peine restant à subir.
+
+21
+――――
+
+La présente loi est applicable sur l'ensemble du territoire de la République, à l'exception du II de l'article 15, qui n'est pas applicable en Nouvelle-Calédonie et dans les îles Wallis et Futuna.
+
+<span class="ansi1 ansi32">22
+</span><span class="ansi1 ansi32">――――
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">Dans les deux ans suivant la promulgation de la présente loi, le Gouvernement présente au Parlement un rapport sur son évaluation, en particulier sur la mise en oeuvre de la contrainte pénale.</span>
+
+
+</pre>
+</body>
+
+</html>

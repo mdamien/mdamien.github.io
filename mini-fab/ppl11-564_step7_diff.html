@@ -1,0 +1,1353 @@
+
+<style>
+body {
+    max-width: 700px;
+}
+
+pre {
+    font-family: ubuntu, sans-serif;
+    font-size: 20px;
+}
+</style>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #AAAAAA; }
+.body_background { background-color: #000000; }
+.body_foreground > .bold,.bold > .body_foreground, body.body_foreground > pre > .bold { color: #FFFFFF; font-weight: normal; }
+.inv_foreground { color: #000000; }
+.inv_background { background-color: #AAAAAA; }
+.ansi1 { font-weight: bold; }
+.ansi2 { font-weight: lighter; }
+.ansi3 { font-style: italic; }
+.ansi4 { text-decoration: underline; }
+.ansi5 { text-decoration: blink; }
+.ansi6 { text-decoration: blink; }
+.ansi8 { visibility: hidden; }
+.ansi9 { text-decoration: line-through; }
+.ansi30 { color: #000316; }
+.inv30 { background-color: #000316; }
+.ansi31 { color: #aa0000; }
+.inv31 { background-color: #aa0000; }
+.ansi32 { color: #00aa00; }
+.inv32 { background-color: #00aa00; }
+.ansi33 { color: #aa5500; }
+.inv33 { background-color: #aa5500; }
+.ansi34 { color: #0000aa; }
+.inv34 { background-color: #0000aa; }
+.ansi35 { color: #E850A8; }
+.inv35 { background-color: #E850A8; }
+.ansi36 { color: #00aaaa; }
+.inv36 { background-color: #00aaaa; }
+.ansi37 { color: #F5F1DE; }
+.inv37 { background-color: #F5F1DE; }
+.ansi40 { background-color: #000316; }
+.inv40 { color: #000316; }
+.ansi41 { background-color: #aa0000; }
+.inv41 { color: #aa0000; }
+.ansi42 { background-color: #00aa00; }
+.inv42 { color: #00aa00; }
+.ansi43 { background-color: #aa5500; }
+.inv43 { color: #aa5500; }
+.ansi44 { background-color: #0000aa; }
+.inv44 { color: #0000aa; }
+.ansi45 { background-color: #E850A8; }
+.inv45 { color: #E850A8; }
+.ansi46 { background-color: #00aaaa; }
+.inv46 { color: #00aaaa; }
+.ansi47 { background-color: #F5F1DE; }
+.inv47 { color: #F5F1DE; }
+.ansi38-0 { color: #000316; }
+.inv38-0 { background-color: #000316; }
+.ansi38-1 { color: #aa0000; }
+.inv38-1 { background-color: #aa0000; }
+.ansi38-2 { color: #00aa00; }
+.inv38-2 { background-color: #00aa00; }
+.ansi38-3 { color: #aa5500; }
+.inv38-3 { background-color: #aa5500; }
+.ansi38-4 { color: #0000aa; }
+.inv38-4 { background-color: #0000aa; }
+.ansi38-5 { color: #E850A8; }
+.inv38-5 { background-color: #E850A8; }
+.ansi38-6 { color: #00aaaa; }
+.inv38-6 { background-color: #00aaaa; }
+.ansi38-7 { color: #F5F1DE; }
+.inv38-7 { background-color: #F5F1DE; }
+.ansi38-8 { color: #7f7f7f; }
+.inv38-8 { background-color: #7f7f7f; }
+.ansi38-9 { color: #ff0000; }
+.inv38-9 { background-color: #ff0000; }
+.ansi38-10 { color: #00ff00; }
+.inv38-10 { background-color: #00ff00; }
+.ansi38-11 { color: #ffff00; }
+.inv38-11 { background-color: #ffff00; }
+.ansi38-12 { color: #5c5cff; }
+.inv38-12 { background-color: #5c5cff; }
+.ansi38-13 { color: #ff00ff; }
+.inv38-13 { background-color: #ff00ff; }
+.ansi38-14 { color: #00ffff; }
+.inv38-14 { background-color: #00ffff; }
+.ansi38-15 { color: #ffffff; }
+.inv38-15 { background-color: #ffffff; }
+.ansi48-0 { background-color: #000316; }
+.inv48-0 { color: #000316; }
+.ansi48-1 { background-color: #aa0000; }
+.inv48-1 { color: #aa0000; }
+.ansi48-2 { background-color: #00aa00; }
+.inv48-2 { color: #00aa00; }
+.ansi48-3 { background-color: #aa5500; }
+.inv48-3 { color: #aa5500; }
+.ansi48-4 { background-color: #0000aa; }
+.inv48-4 { color: #0000aa; }
+.ansi48-5 { background-color: #E850A8; }
+.inv48-5 { color: #E850A8; }
+.ansi48-6 { background-color: #00aaaa; }
+.inv48-6 { color: #00aaaa; }
+.ansi48-7 { background-color: #F5F1DE; }
+.inv48-7 { color: #F5F1DE; }
+.ansi48-8 { background-color: #7f7f7f; }
+.inv48-8 { color: #7f7f7f; }
+.ansi48-9 { background-color: #ff0000; }
+.inv48-9 { color: #ff0000; }
+.ansi48-10 { background-color: #00ff00; }
+.inv48-10 { color: #00ff00; }
+.ansi48-11 { background-color: #ffff00; }
+.inv48-11 { color: #ffff00; }
+.ansi48-12 { background-color: #5c5cff; }
+.inv48-12 { color: #5c5cff; }
+.ansi48-13 { background-color: #ff00ff; }
+.inv48-13 { color: #ff00ff; }
+.ansi48-14 { background-color: #00ffff; }
+.inv48-14 { color: #00ffff; }
+.ansi48-15 { background-color: #ffffff; }
+.inv48-15 { color: #ffffff; }
+.ansi38-16 { color: #000000; }
+.inv38-16 { background: #000000; }
+.ansi48-16 { background: #000000; }
+.inv48-16 { color: #000000; }
+.ansi38-17 { color: #00002a; }
+.inv38-17 { background: #00002a; }
+.ansi48-17 { background: #00002a; }
+.inv48-17 { color: #00002a; }
+.ansi38-18 { color: #000054; }
+.inv38-18 { background: #000054; }
+.ansi48-18 { background: #000054; }
+.inv48-18 { color: #000054; }
+.ansi38-19 { color: #00007e; }
+.inv38-19 { background: #00007e; }
+.ansi48-19 { background: #00007e; }
+.inv48-19 { color: #00007e; }
+.ansi38-20 { color: #0000a8; }
+.inv38-20 { background: #0000a8; }
+.ansi48-20 { background: #0000a8; }
+.inv48-20 { color: #0000a8; }
+.ansi38-21 { color: #0000d2; }
+.inv38-21 { background: #0000d2; }
+.ansi48-21 { background: #0000d2; }
+.inv48-21 { color: #0000d2; }
+.ansi38-52 { color: #2a0000; }
+.inv38-52 { background: #2a0000; }
+.ansi48-52 { background: #2a0000; }
+.inv48-52 { color: #2a0000; }
+.ansi38-53 { color: #2a002a; }
+.inv38-53 { background: #2a002a; }
+.ansi48-53 { background: #2a002a; }
+.inv48-53 { color: #2a002a; }
+.ansi38-54 { color: #2a0054; }
+.inv38-54 { background: #2a0054; }
+.ansi48-54 { background: #2a0054; }
+.inv48-54 { color: #2a0054; }
+.ansi38-55 { color: #2a007e; }
+.inv38-55 { background: #2a007e; }
+.ansi48-55 { background: #2a007e; }
+.inv48-55 { color: #2a007e; }
+.ansi38-56 { color: #2a00a8; }
+.inv38-56 { background: #2a00a8; }
+.ansi48-56 { background: #2a00a8; }
+.inv48-56 { color: #2a00a8; }
+.ansi38-57 { color: #2a00d2; }
+.inv38-57 { background: #2a00d2; }
+.ansi48-57 { background: #2a00d2; }
+.inv48-57 { color: #2a00d2; }
+.ansi38-88 { color: #540000; }
+.inv38-88 { background: #540000; }
+.ansi48-88 { background: #540000; }
+.inv48-88 { color: #540000; }
+.ansi38-89 { color: #54002a; }
+.inv38-89 { background: #54002a; }
+.ansi48-89 { background: #54002a; }
+.inv48-89 { color: #54002a; }
+.ansi38-90 { color: #540054; }
+.inv38-90 { background: #540054; }
+.ansi48-90 { background: #540054; }
+.inv48-90 { color: #540054; }
+.ansi38-91 { color: #54007e; }
+.inv38-91 { background: #54007e; }
+.ansi48-91 { background: #54007e; }
+.inv48-91 { color: #54007e; }
+.ansi38-92 { color: #5400a8; }
+.inv38-92 { background: #5400a8; }
+.ansi48-92 { background: #5400a8; }
+.inv48-92 { color: #5400a8; }
+.ansi38-93 { color: #5400d2; }
+.inv38-93 { background: #5400d2; }
+.ansi48-93 { background: #5400d2; }
+.inv48-93 { color: #5400d2; }
+.ansi38-124 { color: #7e0000; }
+.inv38-124 { background: #7e0000; }
+.ansi48-124 { background: #7e0000; }
+.inv48-124 { color: #7e0000; }
+.ansi38-125 { color: #7e002a; }
+.inv38-125 { background: #7e002a; }
+.ansi48-125 { background: #7e002a; }
+.inv48-125 { color: #7e002a; }
+.ansi38-126 { color: #7e0054; }
+.inv38-126 { background: #7e0054; }
+.ansi48-126 { background: #7e0054; }
+.inv48-126 { color: #7e0054; }
+.ansi38-127 { color: #7e007e; }
+.inv38-127 { background: #7e007e; }
+.ansi48-127 { background: #7e007e; }
+.inv48-127 { color: #7e007e; }
+.ansi38-128 { color: #7e00a8; }
+.inv38-128 { background: #7e00a8; }
+.ansi48-128 { background: #7e00a8; }
+.inv48-128 { color: #7e00a8; }
+.ansi38-129 { color: #7e00d2; }
+.inv38-129 { background: #7e00d2; }
+.ansi48-129 { background: #7e00d2; }
+.inv48-129 { color: #7e00d2; }
+.ansi38-160 { color: #a80000; }
+.inv38-160 { background: #a80000; }
+.ansi48-160 { background: #a80000; }
+.inv48-160 { color: #a80000; }
+.ansi38-161 { color: #a8002a; }
+.inv38-161 { background: #a8002a; }
+.ansi48-161 { background: #a8002a; }
+.inv48-161 { color: #a8002a; }
+.ansi38-162 { color: #a80054; }
+.inv38-162 { background: #a80054; }
+.ansi48-162 { background: #a80054; }
+.inv48-162 { color: #a80054; }
+.ansi38-163 { color: #a8007e; }
+.inv38-163 { background: #a8007e; }
+.ansi48-163 { background: #a8007e; }
+.inv48-163 { color: #a8007e; }
+.ansi38-164 { color: #a800a8; }
+.inv38-164 { background: #a800a8; }
+.ansi48-164 { background: #a800a8; }
+.inv48-164 { color: #a800a8; }
+.ansi38-165 { color: #a800d2; }
+.inv38-165 { background: #a800d2; }
+.ansi48-165 { background: #a800d2; }
+.inv48-165 { color: #a800d2; }
+.ansi38-196 { color: #d20000; }
+.inv38-196 { background: #d20000; }
+.ansi48-196 { background: #d20000; }
+.inv48-196 { color: #d20000; }
+.ansi38-197 { color: #d2002a; }
+.inv38-197 { background: #d2002a; }
+.ansi48-197 { background: #d2002a; }
+.inv48-197 { color: #d2002a; }
+.ansi38-198 { color: #d20054; }
+.inv38-198 { background: #d20054; }
+.ansi48-198 { background: #d20054; }
+.inv48-198 { color: #d20054; }
+.ansi38-199 { color: #d2007e; }
+.inv38-199 { background: #d2007e; }
+.ansi48-199 { background: #d2007e; }
+.inv48-199 { color: #d2007e; }
+.ansi38-200 { color: #d200a8; }
+.inv38-200 { background: #d200a8; }
+.ansi48-200 { background: #d200a8; }
+.inv48-200 { color: #d200a8; }
+.ansi38-201 { color: #d200d2; }
+.inv38-201 { background: #d200d2; }
+.ansi48-201 { background: #d200d2; }
+.inv48-201 { color: #d200d2; }
+.ansi38-22 { color: #002a00; }
+.inv38-22 { background: #002a00; }
+.ansi48-22 { background: #002a00; }
+.inv48-22 { color: #002a00; }
+.ansi38-23 { color: #002a2a; }
+.inv38-23 { background: #002a2a; }
+.ansi48-23 { background: #002a2a; }
+.inv48-23 { color: #002a2a; }
+.ansi38-24 { color: #002a54; }
+.inv38-24 { background: #002a54; }
+.ansi48-24 { background: #002a54; }
+.inv48-24 { color: #002a54; }
+.ansi38-25 { color: #002a7e; }
+.inv38-25 { background: #002a7e; }
+.ansi48-25 { background: #002a7e; }
+.inv48-25 { color: #002a7e; }
+.ansi38-26 { color: #002aa8; }
+.inv38-26 { background: #002aa8; }
+.ansi48-26 { background: #002aa8; }
+.inv48-26 { color: #002aa8; }
+.ansi38-27 { color: #002ad2; }
+.inv38-27 { background: #002ad2; }
+.ansi48-27 { background: #002ad2; }
+.inv48-27 { color: #002ad2; }
+.ansi38-58 { color: #2a2a00; }
+.inv38-58 { background: #2a2a00; }
+.ansi48-58 { background: #2a2a00; }
+.inv48-58 { color: #2a2a00; }
+.ansi38-59 { color: #2a2a2a; }
+.inv38-59 { background: #2a2a2a; }
+.ansi48-59 { background: #2a2a2a; }
+.inv48-59 { color: #2a2a2a; }
+.ansi38-60 { color: #2a2a54; }
+.inv38-60 { background: #2a2a54; }
+.ansi48-60 { background: #2a2a54; }
+.inv48-60 { color: #2a2a54; }
+.ansi38-61 { color: #2a2a7e; }
+.inv38-61 { background: #2a2a7e; }
+.ansi48-61 { background: #2a2a7e; }
+.inv48-61 { color: #2a2a7e; }
+.ansi38-62 { color: #2a2aa8; }
+.inv38-62 { background: #2a2aa8; }
+.ansi48-62 { background: #2a2aa8; }
+.inv48-62 { color: #2a2aa8; }
+.ansi38-63 { color: #2a2ad2; }
+.inv38-63 { background: #2a2ad2; }
+.ansi48-63 { background: #2a2ad2; }
+.inv48-63 { color: #2a2ad2; }
+.ansi38-94 { color: #542a00; }
+.inv38-94 { background: #542a00; }
+.ansi48-94 { background: #542a00; }
+.inv48-94 { color: #542a00; }
+.ansi38-95 { color: #542a2a; }
+.inv38-95 { background: #542a2a; }
+.ansi48-95 { background: #542a2a; }
+.inv48-95 { color: #542a2a; }
+.ansi38-96 { color: #542a54; }
+.inv38-96 { background: #542a54; }
+.ansi48-96 { background: #542a54; }
+.inv48-96 { color: #542a54; }
+.ansi38-97 { color: #542a7e; }
+.inv38-97 { background: #542a7e; }
+.ansi48-97 { background: #542a7e; }
+.inv48-97 { color: #542a7e; }
+.ansi38-98 { color: #542aa8; }
+.inv38-98 { background: #542aa8; }
+.ansi48-98 { background: #542aa8; }
+.inv48-98 { color: #542aa8; }
+.ansi38-99 { color: #542ad2; }
+.inv38-99 { background: #542ad2; }
+.ansi48-99 { background: #542ad2; }
+.inv48-99 { color: #542ad2; }
+.ansi38-130 { color: #7e2a00; }
+.inv38-130 { background: #7e2a00; }
+.ansi48-130 { background: #7e2a00; }
+.inv48-130 { color: #7e2a00; }
+.ansi38-131 { color: #7e2a2a; }
+.inv38-131 { background: #7e2a2a; }
+.ansi48-131 { background: #7e2a2a; }
+.inv48-131 { color: #7e2a2a; }
+.ansi38-132 { color: #7e2a54; }
+.inv38-132 { background: #7e2a54; }
+.ansi48-132 { background: #7e2a54; }
+.inv48-132 { color: #7e2a54; }
+.ansi38-133 { color: #7e2a7e; }
+.inv38-133 { background: #7e2a7e; }
+.ansi48-133 { background: #7e2a7e; }
+.inv48-133 { color: #7e2a7e; }
+.ansi38-134 { color: #7e2aa8; }
+.inv38-134 { background: #7e2aa8; }
+.ansi48-134 { background: #7e2aa8; }
+.inv48-134 { color: #7e2aa8; }
+.ansi38-135 { color: #7e2ad2; }
+.inv38-135 { background: #7e2ad2; }
+.ansi48-135 { background: #7e2ad2; }
+.inv48-135 { color: #7e2ad2; }
+.ansi38-166 { color: #a82a00; }
+.inv38-166 { background: #a82a00; }
+.ansi48-166 { background: #a82a00; }
+.inv48-166 { color: #a82a00; }
+.ansi38-167 { color: #a82a2a; }
+.inv38-167 { background: #a82a2a; }
+.ansi48-167 { background: #a82a2a; }
+.inv48-167 { color: #a82a2a; }
+.ansi38-168 { color: #a82a54; }
+.inv38-168 { background: #a82a54; }
+.ansi48-168 { background: #a82a54; }
+.inv48-168 { color: #a82a54; }
+.ansi38-169 { color: #a82a7e; }
+.inv38-169 { background: #a82a7e; }
+.ansi48-169 { background: #a82a7e; }
+.inv48-169 { color: #a82a7e; }
+.ansi38-170 { color: #a82aa8; }
+.inv38-170 { background: #a82aa8; }
+.ansi48-170 { background: #a82aa8; }
+.inv48-170 { color: #a82aa8; }
+.ansi38-171 { color: #a82ad2; }
+.inv38-171 { background: #a82ad2; }
+.ansi48-171 { background: #a82ad2; }
+.inv48-171 { color: #a82ad2; }
+.ansi38-202 { color: #d22a00; }
+.inv38-202 { background: #d22a00; }
+.ansi48-202 { background: #d22a00; }
+.inv48-202 { color: #d22a00; }
+.ansi38-203 { color: #d22a2a; }
+.inv38-203 { background: #d22a2a; }
+.ansi48-203 { background: #d22a2a; }
+.inv48-203 { color: #d22a2a; }
+.ansi38-204 { color: #d22a54; }
+.inv38-204 { background: #d22a54; }
+.ansi48-204 { background: #d22a54; }
+.inv48-204 { color: #d22a54; }
+.ansi38-205 { color: #d22a7e; }
+.inv38-205 { background: #d22a7e; }
+.ansi48-205 { background: #d22a7e; }
+.inv48-205 { color: #d22a7e; }
+.ansi38-206 { color: #d22aa8; }
+.inv38-206 { background: #d22aa8; }
+.ansi48-206 { background: #d22aa8; }
+.inv48-206 { color: #d22aa8; }
+.ansi38-207 { color: #d22ad2; }
+.inv38-207 { background: #d22ad2; }
+.ansi48-207 { background: #d22ad2; }
+.inv48-207 { color: #d22ad2; }
+.ansi38-28 { color: #005400; }
+.inv38-28 { background: #005400; }
+.ansi48-28 { background: #005400; }
+.inv48-28 { color: #005400; }
+.ansi38-29 { color: #00542a; }
+.inv38-29 { background: #00542a; }
+.ansi48-29 { background: #00542a; }
+.inv48-29 { color: #00542a; }
+.ansi38-30 { color: #005454; }
+.inv38-30 { background: #005454; }
+.ansi48-30 { background: #005454; }
+.inv48-30 { color: #005454; }
+.ansi38-31 { color: #00547e; }
+.inv38-31 { background: #00547e; }
+.ansi48-31 { background: #00547e; }
+.inv48-31 { color: #00547e; }
+.ansi38-32 { color: #0054a8; }
+.inv38-32 { background: #0054a8; }
+.ansi48-32 { background: #0054a8; }
+.inv48-32 { color: #0054a8; }
+.ansi38-33 { color: #0054d2; }
+.inv38-33 { background: #0054d2; }
+.ansi48-33 { background: #0054d2; }
+.inv48-33 { color: #0054d2; }
+.ansi38-64 { color: #2a5400; }
+.inv38-64 { background: #2a5400; }
+.ansi48-64 { background: #2a5400; }
+.inv48-64 { color: #2a5400; }
+.ansi38-65 { color: #2a542a; }
+.inv38-65 { background: #2a542a; }
+.ansi48-65 { background: #2a542a; }
+.inv48-65 { color: #2a542a; }
+.ansi38-66 { color: #2a5454; }
+.inv38-66 { background: #2a5454; }
+.ansi48-66 { background: #2a5454; }
+.inv48-66 { color: #2a5454; }
+.ansi38-67 { color: #2a547e; }
+.inv38-67 { background: #2a547e; }
+.ansi48-67 { background: #2a547e; }
+.inv48-67 { color: #2a547e; }
+.ansi38-68 { color: #2a54a8; }
+.inv38-68 { background: #2a54a8; }
+.ansi48-68 { background: #2a54a8; }
+.inv48-68 { color: #2a54a8; }
+.ansi38-69 { color: #2a54d2; }
+.inv38-69 { background: #2a54d2; }
+.ansi48-69 { background: #2a54d2; }
+.inv48-69 { color: #2a54d2; }
+.ansi38-100 { color: #545400; }
+.inv38-100 { background: #545400; }
+.ansi48-100 { background: #545400; }
+.inv48-100 { color: #545400; }
+.ansi38-101 { color: #54542a; }
+.inv38-101 { background: #54542a; }
+.ansi48-101 { background: #54542a; }
+.inv48-101 { color: #54542a; }
+.ansi38-102 { color: #545454; }
+.inv38-102 { background: #545454; }
+.ansi48-102 { background: #545454; }
+.inv48-102 { color: #545454; }
+.ansi38-103 { color: #54547e; }
+.inv38-103 { background: #54547e; }
+.ansi48-103 { background: #54547e; }
+.inv48-103 { color: #54547e; }
+.ansi38-104 { color: #5454a8; }
+.inv38-104 { background: #5454a8; }
+.ansi48-104 { background: #5454a8; }
+.inv48-104 { color: #5454a8; }
+.ansi38-105 { color: #5454d2; }
+.inv38-105 { background: #5454d2; }
+.ansi48-105 { background: #5454d2; }
+.inv48-105 { color: #5454d2; }
+.ansi38-136 { color: #7e5400; }
+.inv38-136 { background: #7e5400; }
+.ansi48-136 { background: #7e5400; }
+.inv48-136 { color: #7e5400; }
+.ansi38-137 { color: #7e542a; }
+.inv38-137 { background: #7e542a; }
+.ansi48-137 { background: #7e542a; }
+.inv48-137 { color: #7e542a; }
+.ansi38-138 { color: #7e5454; }
+.inv38-138 { background: #7e5454; }
+.ansi48-138 { background: #7e5454; }
+.inv48-138 { color: #7e5454; }
+.ansi38-139 { color: #7e547e; }
+.inv38-139 { background: #7e547e; }
+.ansi48-139 { background: #7e547e; }
+.inv48-139 { color: #7e547e; }
+.ansi38-140 { color: #7e54a8; }
+.inv38-140 { background: #7e54a8; }
+.ansi48-140 { background: #7e54a8; }
+.inv48-140 { color: #7e54a8; }
+.ansi38-141 { color: #7e54d2; }
+.inv38-141 { background: #7e54d2; }
+.ansi48-141 { background: #7e54d2; }
+.inv48-141 { color: #7e54d2; }
+.ansi38-172 { color: #a85400; }
+.inv38-172 { background: #a85400; }
+.ansi48-172 { background: #a85400; }
+.inv48-172 { color: #a85400; }
+.ansi38-173 { color: #a8542a; }
+.inv38-173 { background: #a8542a; }
+.ansi48-173 { background: #a8542a; }
+.inv48-173 { color: #a8542a; }
+.ansi38-174 { color: #a85454; }
+.inv38-174 { background: #a85454; }
+.ansi48-174 { background: #a85454; }
+.inv48-174 { color: #a85454; }
+.ansi38-175 { color: #a8547e; }
+.inv38-175 { background: #a8547e; }
+.ansi48-175 { background: #a8547e; }
+.inv48-175 { color: #a8547e; }
+.ansi38-176 { color: #a854a8; }
+.inv38-176 { background: #a854a8; }
+.ansi48-176 { background: #a854a8; }
+.inv48-176 { color: #a854a8; }
+.ansi38-177 { color: #a854d2; }
+.inv38-177 { background: #a854d2; }
+.ansi48-177 { background: #a854d2; }
+.inv48-177 { color: #a854d2; }
+.ansi38-208 { color: #d25400; }
+.inv38-208 { background: #d25400; }
+.ansi48-208 { background: #d25400; }
+.inv48-208 { color: #d25400; }
+.ansi38-209 { color: #d2542a; }
+.inv38-209 { background: #d2542a; }
+.ansi48-209 { background: #d2542a; }
+.inv48-209 { color: #d2542a; }
+.ansi38-210 { color: #d25454; }
+.inv38-210 { background: #d25454; }
+.ansi48-210 { background: #d25454; }
+.inv48-210 { color: #d25454; }
+.ansi38-211 { color: #d2547e; }
+.inv38-211 { background: #d2547e; }
+.ansi48-211 { background: #d2547e; }
+.inv48-211 { color: #d2547e; }
+.ansi38-212 { color: #d254a8; }
+.inv38-212 { background: #d254a8; }
+.ansi48-212 { background: #d254a8; }
+.inv48-212 { color: #d254a8; }
+.ansi38-213 { color: #d254d2; }
+.inv38-213 { background: #d254d2; }
+.ansi48-213 { background: #d254d2; }
+.inv48-213 { color: #d254d2; }
+.ansi38-34 { color: #007e00; }
+.inv38-34 { background: #007e00; }
+.ansi48-34 { background: #007e00; }
+.inv48-34 { color: #007e00; }
+.ansi38-35 { color: #007e2a; }
+.inv38-35 { background: #007e2a; }
+.ansi48-35 { background: #007e2a; }
+.inv48-35 { color: #007e2a; }
+.ansi38-36 { color: #007e54; }
+.inv38-36 { background: #007e54; }
+.ansi48-36 { background: #007e54; }
+.inv48-36 { color: #007e54; }
+.ansi38-37 { color: #007e7e; }
+.inv38-37 { background: #007e7e; }
+.ansi48-37 { background: #007e7e; }
+.inv48-37 { color: #007e7e; }
+.ansi38-38 { color: #007ea8; }
+.inv38-38 { background: #007ea8; }
+.ansi48-38 { background: #007ea8; }
+.inv48-38 { color: #007ea8; }
+.ansi38-39 { color: #007ed2; }
+.inv38-39 { background: #007ed2; }
+.ansi48-39 { background: #007ed2; }
+.inv48-39 { color: #007ed2; }
+.ansi38-70 { color: #2a7e00; }
+.inv38-70 { background: #2a7e00; }
+.ansi48-70 { background: #2a7e00; }
+.inv48-70 { color: #2a7e00; }
+.ansi38-71 { color: #2a7e2a; }
+.inv38-71 { background: #2a7e2a; }
+.ansi48-71 { background: #2a7e2a; }
+.inv48-71 { color: #2a7e2a; }
+.ansi38-72 { color: #2a7e54; }
+.inv38-72 { background: #2a7e54; }
+.ansi48-72 { background: #2a7e54; }
+.inv48-72 { color: #2a7e54; }
+.ansi38-73 { color: #2a7e7e; }
+.inv38-73 { background: #2a7e7e; }
+.ansi48-73 { background: #2a7e7e; }
+.inv48-73 { color: #2a7e7e; }
+.ansi38-74 { color: #2a7ea8; }
+.inv38-74 { background: #2a7ea8; }
+.ansi48-74 { background: #2a7ea8; }
+.inv48-74 { color: #2a7ea8; }
+.ansi38-75 { color: #2a7ed2; }
+.inv38-75 { background: #2a7ed2; }
+.ansi48-75 { background: #2a7ed2; }
+.inv48-75 { color: #2a7ed2; }
+.ansi38-106 { color: #547e00; }
+.inv38-106 { background: #547e00; }
+.ansi48-106 { background: #547e00; }
+.inv48-106 { color: #547e00; }
+.ansi38-107 { color: #547e2a; }
+.inv38-107 { background: #547e2a; }
+.ansi48-107 { background: #547e2a; }
+.inv48-107 { color: #547e2a; }
+.ansi38-108 { color: #547e54; }
+.inv38-108 { background: #547e54; }
+.ansi48-108 { background: #547e54; }
+.inv48-108 { color: #547e54; }
+.ansi38-109 { color: #547e7e; }
+.inv38-109 { background: #547e7e; }
+.ansi48-109 { background: #547e7e; }
+.inv48-109 { color: #547e7e; }
+.ansi38-110 { color: #547ea8; }
+.inv38-110 { background: #547ea8; }
+.ansi48-110 { background: #547ea8; }
+.inv48-110 { color: #547ea8; }
+.ansi38-111 { color: #547ed2; }
+.inv38-111 { background: #547ed2; }
+.ansi48-111 { background: #547ed2; }
+.inv48-111 { color: #547ed2; }
+.ansi38-142 { color: #7e7e00; }
+.inv38-142 { background: #7e7e00; }
+.ansi48-142 { background: #7e7e00; }
+.inv48-142 { color: #7e7e00; }
+.ansi38-143 { color: #7e7e2a; }
+.inv38-143 { background: #7e7e2a; }
+.ansi48-143 { background: #7e7e2a; }
+.inv48-143 { color: #7e7e2a; }
+.ansi38-144 { color: #7e7e54; }
+.inv38-144 { background: #7e7e54; }
+.ansi48-144 { background: #7e7e54; }
+.inv48-144 { color: #7e7e54; }
+.ansi38-145 { color: #7e7e7e; }
+.inv38-145 { background: #7e7e7e; }
+.ansi48-145 { background: #7e7e7e; }
+.inv48-145 { color: #7e7e7e; }
+.ansi38-146 { color: #7e7ea8; }
+.inv38-146 { background: #7e7ea8; }
+.ansi48-146 { background: #7e7ea8; }
+.inv48-146 { color: #7e7ea8; }
+.ansi38-147 { color: #7e7ed2; }
+.inv38-147 { background: #7e7ed2; }
+.ansi48-147 { background: #7e7ed2; }
+.inv48-147 { color: #7e7ed2; }
+.ansi38-178 { color: #a87e00; }
+.inv38-178 { background: #a87e00; }
+.ansi48-178 { background: #a87e00; }
+.inv48-178 { color: #a87e00; }
+.ansi38-179 { color: #a87e2a; }
+.inv38-179 { background: #a87e2a; }
+.ansi48-179 { background: #a87e2a; }
+.inv48-179 { color: #a87e2a; }
+.ansi38-180 { color: #a87e54; }
+.inv38-180 { background: #a87e54; }
+.ansi48-180 { background: #a87e54; }
+.inv48-180 { color: #a87e54; }
+.ansi38-181 { color: #a87e7e; }
+.inv38-181 { background: #a87e7e; }
+.ansi48-181 { background: #a87e7e; }
+.inv48-181 { color: #a87e7e; }
+.ansi38-182 { color: #a87ea8; }
+.inv38-182 { background: #a87ea8; }
+.ansi48-182 { background: #a87ea8; }
+.inv48-182 { color: #a87ea8; }
+.ansi38-183 { color: #a87ed2; }
+.inv38-183 { background: #a87ed2; }
+.ansi48-183 { background: #a87ed2; }
+.inv48-183 { color: #a87ed2; }
+.ansi38-214 { color: #d27e00; }
+.inv38-214 { background: #d27e00; }
+.ansi48-214 { background: #d27e00; }
+.inv48-214 { color: #d27e00; }
+.ansi38-215 { color: #d27e2a; }
+.inv38-215 { background: #d27e2a; }
+.ansi48-215 { background: #d27e2a; }
+.inv48-215 { color: #d27e2a; }
+.ansi38-216 { color: #d27e54; }
+.inv38-216 { background: #d27e54; }
+.ansi48-216 { background: #d27e54; }
+.inv48-216 { color: #d27e54; }
+.ansi38-217 { color: #d27e7e; }
+.inv38-217 { background: #d27e7e; }
+.ansi48-217 { background: #d27e7e; }
+.inv48-217 { color: #d27e7e; }
+.ansi38-218 { color: #d27ea8; }
+.inv38-218 { background: #d27ea8; }
+.ansi48-218 { background: #d27ea8; }
+.inv48-218 { color: #d27ea8; }
+.ansi38-219 { color: #d27ed2; }
+.inv38-219 { background: #d27ed2; }
+.ansi48-219 { background: #d27ed2; }
+.inv48-219 { color: #d27ed2; }
+.ansi38-40 { color: #00a800; }
+.inv38-40 { background: #00a800; }
+.ansi48-40 { background: #00a800; }
+.inv48-40 { color: #00a800; }
+.ansi38-41 { color: #00a82a; }
+.inv38-41 { background: #00a82a; }
+.ansi48-41 { background: #00a82a; }
+.inv48-41 { color: #00a82a; }
+.ansi38-42 { color: #00a854; }
+.inv38-42 { background: #00a854; }
+.ansi48-42 { background: #00a854; }
+.inv48-42 { color: #00a854; }
+.ansi38-43 { color: #00a87e; }
+.inv38-43 { background: #00a87e; }
+.ansi48-43 { background: #00a87e; }
+.inv48-43 { color: #00a87e; }
+.ansi38-44 { color: #00a8a8; }
+.inv38-44 { background: #00a8a8; }
+.ansi48-44 { background: #00a8a8; }
+.inv48-44 { color: #00a8a8; }
+.ansi38-45 { color: #00a8d2; }
+.inv38-45 { background: #00a8d2; }
+.ansi48-45 { background: #00a8d2; }
+.inv48-45 { color: #00a8d2; }
+.ansi38-76 { color: #2aa800; }
+.inv38-76 { background: #2aa800; }
+.ansi48-76 { background: #2aa800; }
+.inv48-76 { color: #2aa800; }
+.ansi38-77 { color: #2aa82a; }
+.inv38-77 { background: #2aa82a; }
+.ansi48-77 { background: #2aa82a; }
+.inv48-77 { color: #2aa82a; }
+.ansi38-78 { color: #2aa854; }
+.inv38-78 { background: #2aa854; }
+.ansi48-78 { background: #2aa854; }
+.inv48-78 { color: #2aa854; }
+.ansi38-79 { color: #2aa87e; }
+.inv38-79 { background: #2aa87e; }
+.ansi48-79 { background: #2aa87e; }
+.inv48-79 { color: #2aa87e; }
+.ansi38-80 { color: #2aa8a8; }
+.inv38-80 { background: #2aa8a8; }
+.ansi48-80 { background: #2aa8a8; }
+.inv48-80 { color: #2aa8a8; }
+.ansi38-81 { color: #2aa8d2; }
+.inv38-81 { background: #2aa8d2; }
+.ansi48-81 { background: #2aa8d2; }
+.inv48-81 { color: #2aa8d2; }
+.ansi38-112 { color: #54a800; }
+.inv38-112 { background: #54a800; }
+.ansi48-112 { background: #54a800; }
+.inv48-112 { color: #54a800; }
+.ansi38-113 { color: #54a82a; }
+.inv38-113 { background: #54a82a; }
+.ansi48-113 { background: #54a82a; }
+.inv48-113 { color: #54a82a; }
+.ansi38-114 { color: #54a854; }
+.inv38-114 { background: #54a854; }
+.ansi48-114 { background: #54a854; }
+.inv48-114 { color: #54a854; }
+.ansi38-115 { color: #54a87e; }
+.inv38-115 { background: #54a87e; }
+.ansi48-115 { background: #54a87e; }
+.inv48-115 { color: #54a87e; }
+.ansi38-116 { color: #54a8a8; }
+.inv38-116 { background: #54a8a8; }
+.ansi48-116 { background: #54a8a8; }
+.inv48-116 { color: #54a8a8; }
+.ansi38-117 { color: #54a8d2; }
+.inv38-117 { background: #54a8d2; }
+.ansi48-117 { background: #54a8d2; }
+.inv48-117 { color: #54a8d2; }
+.ansi38-148 { color: #7ea800; }
+.inv38-148 { background: #7ea800; }
+.ansi48-148 { background: #7ea800; }
+.inv48-148 { color: #7ea800; }
+.ansi38-149 { color: #7ea82a; }
+.inv38-149 { background: #7ea82a; }
+.ansi48-149 { background: #7ea82a; }
+.inv48-149 { color: #7ea82a; }
+.ansi38-150 { color: #7ea854; }
+.inv38-150 { background: #7ea854; }
+.ansi48-150 { background: #7ea854; }
+.inv48-150 { color: #7ea854; }
+.ansi38-151 { color: #7ea87e; }
+.inv38-151 { background: #7ea87e; }
+.ansi48-151 { background: #7ea87e; }
+.inv48-151 { color: #7ea87e; }
+.ansi38-152 { color: #7ea8a8; }
+.inv38-152 { background: #7ea8a8; }
+.ansi48-152 { background: #7ea8a8; }
+.inv48-152 { color: #7ea8a8; }
+.ansi38-153 { color: #7ea8d2; }
+.inv38-153 { background: #7ea8d2; }
+.ansi48-153 { background: #7ea8d2; }
+.inv48-153 { color: #7ea8d2; }
+.ansi38-184 { color: #a8a800; }
+.inv38-184 { background: #a8a800; }
+.ansi48-184 { background: #a8a800; }
+.inv48-184 { color: #a8a800; }
+.ansi38-185 { color: #a8a82a; }
+.inv38-185 { background: #a8a82a; }
+.ansi48-185 { background: #a8a82a; }
+.inv48-185 { color: #a8a82a; }
+.ansi38-186 { color: #a8a854; }
+.inv38-186 { background: #a8a854; }
+.ansi48-186 { background: #a8a854; }
+.inv48-186 { color: #a8a854; }
+.ansi38-187 { color: #a8a87e; }
+.inv38-187 { background: #a8a87e; }
+.ansi48-187 { background: #a8a87e; }
+.inv48-187 { color: #a8a87e; }
+.ansi38-188 { color: #a8a8a8; }
+.inv38-188 { background: #a8a8a8; }
+.ansi48-188 { background: #a8a8a8; }
+.inv48-188 { color: #a8a8a8; }
+.ansi38-189 { color: #a8a8d2; }
+.inv38-189 { background: #a8a8d2; }
+.ansi48-189 { background: #a8a8d2; }
+.inv48-189 { color: #a8a8d2; }
+.ansi38-220 { color: #d2a800; }
+.inv38-220 { background: #d2a800; }
+.ansi48-220 { background: #d2a800; }
+.inv48-220 { color: #d2a800; }
+.ansi38-221 { color: #d2a82a; }
+.inv38-221 { background: #d2a82a; }
+.ansi48-221 { background: #d2a82a; }
+.inv48-221 { color: #d2a82a; }
+.ansi38-222 { color: #d2a854; }
+.inv38-222 { background: #d2a854; }
+.ansi48-222 { background: #d2a854; }
+.inv48-222 { color: #d2a854; }
+.ansi38-223 { color: #d2a87e; }
+.inv38-223 { background: #d2a87e; }
+.ansi48-223 { background: #d2a87e; }
+.inv48-223 { color: #d2a87e; }
+.ansi38-224 { color: #d2a8a8; }
+.inv38-224 { background: #d2a8a8; }
+.ansi48-224 { background: #d2a8a8; }
+.inv48-224 { color: #d2a8a8; }
+.ansi38-225 { color: #d2a8d2; }
+.inv38-225 { background: #d2a8d2; }
+.ansi48-225 { background: #d2a8d2; }
+.inv48-225 { color: #d2a8d2; }
+.ansi38-46 { color: #00d200; }
+.inv38-46 { background: #00d200; }
+.ansi48-46 { background: #00d200; }
+.inv48-46 { color: #00d200; }
+.ansi38-47 { color: #00d22a; }
+.inv38-47 { background: #00d22a; }
+.ansi48-47 { background: #00d22a; }
+.inv48-47 { color: #00d22a; }
+.ansi38-48 { color: #00d254; }
+.inv38-48 { background: #00d254; }
+.ansi48-48 { background: #00d254; }
+.inv48-48 { color: #00d254; }
+.ansi38-49 { color: #00d27e; }
+.inv38-49 { background: #00d27e; }
+.ansi48-49 { background: #00d27e; }
+.inv48-49 { color: #00d27e; }
+.ansi38-50 { color: #00d2a8; }
+.inv38-50 { background: #00d2a8; }
+.ansi48-50 { background: #00d2a8; }
+.inv48-50 { color: #00d2a8; }
+.ansi38-51 { color: #00d2d2; }
+.inv38-51 { background: #00d2d2; }
+.ansi48-51 { background: #00d2d2; }
+.inv48-51 { color: #00d2d2; }
+.ansi38-82 { color: #2ad200; }
+.inv38-82 { background: #2ad200; }
+.ansi48-82 { background: #2ad200; }
+.inv48-82 { color: #2ad200; }
+.ansi38-83 { color: #2ad22a; }
+.inv38-83 { background: #2ad22a; }
+.ansi48-83 { background: #2ad22a; }
+.inv48-83 { color: #2ad22a; }
+.ansi38-84 { color: #2ad254; }
+.inv38-84 { background: #2ad254; }
+.ansi48-84 { background: #2ad254; }
+.inv48-84 { color: #2ad254; }
+.ansi38-85 { color: #2ad27e; }
+.inv38-85 { background: #2ad27e; }
+.ansi48-85 { background: #2ad27e; }
+.inv48-85 { color: #2ad27e; }
+.ansi38-86 { color: #2ad2a8; }
+.inv38-86 { background: #2ad2a8; }
+.ansi48-86 { background: #2ad2a8; }
+.inv48-86 { color: #2ad2a8; }
+.ansi38-87 { color: #2ad2d2; }
+.inv38-87 { background: #2ad2d2; }
+.ansi48-87 { background: #2ad2d2; }
+.inv48-87 { color: #2ad2d2; }
+.ansi38-118 { color: #54d200; }
+.inv38-118 { background: #54d200; }
+.ansi48-118 { background: #54d200; }
+.inv48-118 { color: #54d200; }
+.ansi38-119 { color: #54d22a; }
+.inv38-119 { background: #54d22a; }
+.ansi48-119 { background: #54d22a; }
+.inv48-119 { color: #54d22a; }
+.ansi38-120 { color: #54d254; }
+.inv38-120 { background: #54d254; }
+.ansi48-120 { background: #54d254; }
+.inv48-120 { color: #54d254; }
+.ansi38-121 { color: #54d27e; }
+.inv38-121 { background: #54d27e; }
+.ansi48-121 { background: #54d27e; }
+.inv48-121 { color: #54d27e; }
+.ansi38-122 { color: #54d2a8; }
+.inv38-122 { background: #54d2a8; }
+.ansi48-122 { background: #54d2a8; }
+.inv48-122 { color: #54d2a8; }
+.ansi38-123 { color: #54d2d2; }
+.inv38-123 { background: #54d2d2; }
+.ansi48-123 { background: #54d2d2; }
+.inv48-123 { color: #54d2d2; }
+.ansi38-154 { color: #7ed200; }
+.inv38-154 { background: #7ed200; }
+.ansi48-154 { background: #7ed200; }
+.inv48-154 { color: #7ed200; }
+.ansi38-155 { color: #7ed22a; }
+.inv38-155 { background: #7ed22a; }
+.ansi48-155 { background: #7ed22a; }
+.inv48-155 { color: #7ed22a; }
+.ansi38-156 { color: #7ed254; }
+.inv38-156 { background: #7ed254; }
+.ansi48-156 { background: #7ed254; }
+.inv48-156 { color: #7ed254; }
+.ansi38-157 { color: #7ed27e; }
+.inv38-157 { background: #7ed27e; }
+.ansi48-157 { background: #7ed27e; }
+.inv48-157 { color: #7ed27e; }
+.ansi38-158 { color: #7ed2a8; }
+.inv38-158 { background: #7ed2a8; }
+.ansi48-158 { background: #7ed2a8; }
+.inv48-158 { color: #7ed2a8; }
+.ansi38-159 { color: #7ed2d2; }
+.inv38-159 { background: #7ed2d2; }
+.ansi48-159 { background: #7ed2d2; }
+.inv48-159 { color: #7ed2d2; }
+.ansi38-190 { color: #a8d200; }
+.inv38-190 { background: #a8d200; }
+.ansi48-190 { background: #a8d200; }
+.inv48-190 { color: #a8d200; }
+.ansi38-191 { color: #a8d22a; }
+.inv38-191 { background: #a8d22a; }
+.ansi48-191 { background: #a8d22a; }
+.inv48-191 { color: #a8d22a; }
+.ansi38-192 { color: #a8d254; }
+.inv38-192 { background: #a8d254; }
+.ansi48-192 { background: #a8d254; }
+.inv48-192 { color: #a8d254; }
+.ansi38-193 { color: #a8d27e; }
+.inv38-193 { background: #a8d27e; }
+.ansi48-193 { background: #a8d27e; }
+.inv48-193 { color: #a8d27e; }
+.ansi38-194 { color: #a8d2a8; }
+.inv38-194 { background: #a8d2a8; }
+.ansi48-194 { background: #a8d2a8; }
+.inv48-194 { color: #a8d2a8; }
+.ansi38-195 { color: #a8d2d2; }
+.inv38-195 { background: #a8d2d2; }
+.ansi48-195 { background: #a8d2d2; }
+.inv48-195 { color: #a8d2d2; }
+.ansi38-226 { color: #d2d200; }
+.inv38-226 { background: #d2d200; }
+.ansi48-226 { background: #d2d200; }
+.inv48-226 { color: #d2d200; }
+.ansi38-227 { color: #d2d22a; }
+.inv38-227 { background: #d2d22a; }
+.ansi48-227 { background: #d2d22a; }
+.inv48-227 { color: #d2d22a; }
+.ansi38-228 { color: #d2d254; }
+.inv38-228 { background: #d2d254; }
+.ansi48-228 { background: #d2d254; }
+.inv48-228 { color: #d2d254; }
+.ansi38-229 { color: #d2d27e; }
+.inv38-229 { background: #d2d27e; }
+.ansi48-229 { background: #d2d27e; }
+.inv48-229 { color: #d2d27e; }
+.ansi38-230 { color: #d2d2a8; }
+.inv38-230 { background: #d2d2a8; }
+.ansi48-230 { background: #d2d2a8; }
+.inv48-230 { color: #d2d2a8; }
+.ansi38-231 { color: #d2d2d2; }
+.inv38-231 { background: #d2d2d2; }
+.ansi48-231 { background: #d2d2d2; }
+.inv48-231 { color: #d2d2d2; }
+.ansi38-232 { color: #080808; }
+.inv38-232 { background: #080808; }
+.ansi48-232 { background: #080808; }
+.inv48-232 { color: #080808; }
+.ansi38-233 { color: #121212; }
+.inv38-233 { background: #121212; }
+.ansi48-233 { background: #121212; }
+.inv48-233 { color: #121212; }
+.ansi38-234 { color: #1c1c1c; }
+.inv38-234 { background: #1c1c1c; }
+.ansi48-234 { background: #1c1c1c; }
+.inv48-234 { color: #1c1c1c; }
+.ansi38-235 { color: #262626; }
+.inv38-235 { background: #262626; }
+.ansi48-235 { background: #262626; }
+.inv48-235 { color: #262626; }
+.ansi38-236 { color: #303030; }
+.inv38-236 { background: #303030; }
+.ansi48-236 { background: #303030; }
+.inv48-236 { color: #303030; }
+.ansi38-237 { color: #3a3a3a; }
+.inv38-237 { background: #3a3a3a; }
+.ansi48-237 { background: #3a3a3a; }
+.inv48-237 { color: #3a3a3a; }
+.ansi38-238 { color: #444444; }
+.inv38-238 { background: #444444; }
+.ansi48-238 { background: #444444; }
+.inv48-238 { color: #444444; }
+.ansi38-239 { color: #4e4e4e; }
+.inv38-239 { background: #4e4e4e; }
+.ansi48-239 { background: #4e4e4e; }
+.inv48-239 { color: #4e4e4e; }
+.ansi38-240 { color: #585858; }
+.inv38-240 { background: #585858; }
+.ansi48-240 { background: #585858; }
+.inv48-240 { color: #585858; }
+.ansi38-241 { color: #626262; }
+.inv38-241 { background: #626262; }
+.ansi48-241 { background: #626262; }
+.inv48-241 { color: #626262; }
+.ansi38-242 { color: #6c6c6c; }
+.inv38-242 { background: #6c6c6c; }
+.ansi48-242 { background: #6c6c6c; }
+.inv48-242 { color: #6c6c6c; }
+.ansi38-243 { color: #767676; }
+.inv38-243 { background: #767676; }
+.ansi48-243 { background: #767676; }
+.inv48-243 { color: #767676; }
+.ansi38-244 { color: #808080; }
+.inv38-244 { background: #808080; }
+.ansi48-244 { background: #808080; }
+.inv48-244 { color: #808080; }
+.ansi38-245 { color: #8a8a8a; }
+.inv38-245 { background: #8a8a8a; }
+.ansi48-245 { background: #8a8a8a; }
+.inv48-245 { color: #8a8a8a; }
+.ansi38-246 { color: #949494; }
+.inv38-246 { background: #949494; }
+.ansi48-246 { background: #949494; }
+.inv48-246 { color: #949494; }
+.ansi38-247 { color: #9e9e9e; }
+.inv38-247 { background: #9e9e9e; }
+.ansi48-247 { background: #9e9e9e; }
+.inv48-247 { color: #9e9e9e; }
+.ansi38-248 { color: #a8a8a8; }
+.inv38-248 { background: #a8a8a8; }
+.ansi48-248 { background: #a8a8a8; }
+.inv48-248 { color: #a8a8a8; }
+.ansi38-249 { color: #b2b2b2; }
+.inv38-249 { background: #b2b2b2; }
+.ansi48-249 { background: #b2b2b2; }
+.inv48-249 { color: #b2b2b2; }
+.ansi38-250 { color: #bcbcbc; }
+.inv38-250 { background: #bcbcbc; }
+.ansi48-250 { background: #bcbcbc; }
+.inv48-250 { color: #bcbcbc; }
+.ansi38-251 { color: #c6c6c6; }
+.inv38-251 { background: #c6c6c6; }
+.ansi48-251 { background: #c6c6c6; }
+.inv48-251 { color: #c6c6c6; }
+.ansi38-252 { color: #d0d0d0; }
+.inv38-252 { background: #d0d0d0; }
+.ansi48-252 { background: #d0d0d0; }
+.inv48-252 { color: #d0d0d0; }
+.ansi38-253 { color: #dadada; }
+.inv38-253 { background: #dadada; }
+.ansi48-253 { background: #dadada; }
+.inv48-253 { color: #dadada; }
+.ansi38-254 { color: #e4e4e4; }
+.inv38-254 { background: #e4e4e4; }
+.ansi48-254 { background: #e4e4e4; }
+.inv48-254 { color: #e4e4e4; }
+.ansi38-255 { color: #eeeeee; }
+.inv38-255 { background: #eeeeee; }
+.ansi48-255 { background: #eeeeee; }
+.inv48-255 { color: #eeeeee; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content">
+
+1er bis
+――――
+
+I. - Le second alinéa de l'article L. 2411-1 du code général des collectivités territoriales est remplacé par deux alinéas ainsi rédigés :
+"La section de commune est une personne morale de droit public.
+"Sont membres de la section de commune les habitants ayant leur domicile réel et fixe sur son territoire."
+I bis. - L'article L. 2411-1 du code général des collectivités territoriales est complété par un II ainsi rédigé :
+"II. - Aucune section de commune ne peut être constituée à compter de la promulgation de la loi n° du visant à moderniser le régime des sections de commune."
+II. - Le même code est ainsi modifié :
+1° (Supprimé)
+2° Au 5° de l'article L. 2411-4, le mot : "électeurs" est remplacé par le mot : "membres" ;
+2° bis Au dernier alinéa du même article L. 2411-4, les mots : "trois mois suivant sa convocation" sont remplacés par les mots : "deux mois suivant sa saisine" ;
+3° L'article L. 2411-11 est ainsi modifié :
+a) Au premier alinéa, le mot : "électeurs" est remplacé par le mot : "membres" ;
+a bis) Le deuxième alinéa est complété par les mots : "et notifie l'arrêté de transfert à la commission syndicale lorsqu'elle est constituée, ainsi qu'au maire de la commune à fin d'affichage en mairie pendant une durée de deux mois" ;
+b) Au troisième alinéa, les mots : "ayants droit" sont remplacés par les mots : "membres de la section" et les mots : "notamment des avantages reçus durant les années" sont remplacés par les mots : "des avantages effectivement recueillis en nature pendant les dix dernières années".
+III. - À la fin du dernier alinéa de l'article 1401 du code général des impôts, les mots : "ces habitants" sont remplacés par les mots : "la section de commune".
+
+1er ter
+――――
+
+L'article L. 2411-2 du code général des collectivités territoriales est ainsi rédigé :
+"Art. L. 2411-2. - La gestion des biens et droits de la section est assurée par le conseil municipal et par le maire.
+"Lorsqu'elle est constituée en application de l'article L. 2411-3, la commission syndicale et son président exercent les fonctions de gestion prévues au I de l'article L. 2411-6, aux articles L. 2411-8 et L. 2411-10, au II de l'article L. 2411-14, ainsi qu'aux articles L. 2411-18 et L. 2412-1 et sont consultés dans les cas prévus au II de l'article L. 2411-6 et aux articles L. 2411-7, L. 2411-11, L. 2411-12-2, L. 2411-15 et L. 2411-18."
+
+1er quater
+――――
+
+L'article L. 2411-3 du code général des collectivités territoriales est ainsi modifié :
+1° A Au premier alinéa, après le mot : "comprend", sont insérés les mots : "le maire de la commune ainsi que" ;
+1° À la première phrase du deuxième alinéa, les mots : "personnes éligibles au conseil municipal de la commune de rattachement" sont remplacés par les mots : "membres de la section", les mots : "les mêmes règles que les conseillers municipaux des communes de moins de 2 500 habitants" sont remplacés par les mots : "les règles prévues aux chapitres Ier et II du titre IV du code électoral" et la référence : "du premier alinéa" est supprimée ;
+2° Le quatrième alinéa est ainsi rédigé :
+"Sont électeurs, lorsqu'ils sont inscrits sur les listes électorales de la commune, les membres de la section." ;
+3° L'avant-dernier alinéa est supprimé.
+
+2
+――――
+
+I. - Le premier alinéa de l'article L. 2411-5 du code général des collectivités territoriales est remplacé par quatre alinéas ainsi rédigés :
+"La commission syndicale n'est pas constituée et ses prérogatives sont exercées par le conseil municipal, sous réserve de l'article L. 2411-16, lorsque :
+"1° Le nombre des électeurs appelés à désigner ses membres est inférieur à vingt ;
+"2° La moitié au moins des électeurs n'a pas répondu à deux convocations successives du représentant de l'État dans le département faites à un intervalle de deux mois ;
+"3° Les revenus ou produits annuels des biens de la section sont inférieurs à 2 000 € de revenu cadastral, à l'exclusion de tout revenu réel. Ce montant peut être révisé par décret."
+I bis. - Après la référence : "L. 2113-23,", la fin du second alinéa du même article L. 2411-5 est ainsi rédigée : "dans leur rédaction antérieure à la loi n° 2010-1563 du 16 décembre 2010 de réforme des collectivités territoriales, ou le conseil de la commune déléguée prévu à l'article L. 2113-12 constituent avec le maire de la commune, la commission syndicale."
+II. - L'article L. 2411-8 du même code est ainsi modifié :
+1° À la fin du quatrième alinéa, le mot : "électeur" est remplacé par les mots : "membre, dès lors qu'il ne dispose pas d'un intérêt à agir en son nom propre" ;
+2° L'avant-dernier alinéa est supprimé ;
+3° Sont ajoutés deux alinéas ainsi rédigés :
+"Si la commission syndicale n'est pas constituée, le maire peut être habilité par le conseil municipal à représenter la section en justice, sauf si les intérêts de la commune se trouvent en opposition avec ceux de la section. Dans ce dernier cas, une commission syndicale spéciale est désignée par le représentant de l'État dans le département uniquement pour exercer l'action en justice contre la commune. Cette commission est dissoute lorsque le jugement est définitif. Les conditions de désignation de cette commission et ses modalités de fonctionnement sont fixées par décret en Conseil d'État.
+"Dans le cas où le maire de la commune est personnellement intéressé à l'affaire, le représentant de l'État dans le département peut autoriser un autre membre du conseil municipal à exercer l'action en justice."
+
+2 bis
+――――
+
+L'article L. 2411-6 du code général des collectivités territoriales est ainsi modifié :
+1° A Au début du premier alinéa, est ajoutée la mention : "I. -" ;
+1° Le 2° est complété par les mots : "autres que la vente prévue au 1° du II" ;
+2° Le 6° est ainsi rédigé :
+"6° Partage de biens en indivision ;"
+3° Les deux derniers alinéas sont remplacés par un II ainsi rédigé :
+"II. - Le conseil municipal est compétent pour délibérer sur les objets suivants :
+"1° Vente de biens de la section ayant pour objectif la réalisation d'un investissement nécessaire à l'exécution d'un service public, à l'implantation d'un lotissement ou à l'exécution d'une opération d'intérêt public ;
+"2° Location de biens de la section consentie pour une durée inférieure à neuf ans ;
+"3° Adhésion de la section à une association syndicale ou à une autre structure de regroupement foncier ou de gestion forestière.
+"Lorsque la commission syndicale est constituée, elle est consultée sur le projet de délibération du conseil municipal et dispose d'un délai de deux mois pour rendre un avis. À défaut de délibération de la commission dans ce délai, l'avis est réputé favorable.
+"Les actes nécessaires à l'exécution de ces délibérations sont pris par le maire."
+
+2 ter A
+――――
+
+L'article L. 2411-7 du code général des collectivités territoriales est ainsi modifié :
+1° Après le mot : "nature", la fin du premier alinéa est ainsi rédigée : "déterminées par le conseil municipal." ;
+2° Au dernier alinéa, les mots : "trois mois à compter de la date où elle a été saisie par le maire" sont remplacés par les mots : "deux mois à compter de sa saisine".
+
+2 ter
+――――
+
+Après les mots : "une section,", la fin de l'article L. 2411-9 du code général des collectivités territoriales est ainsi rédigée : "les conseillers tenus à l'abstention sont remplacés par un nombre égal de citoyens tirés au sort par le représentant de l'État dans le département parmi les personnes inscrites sur les listes électorales de la commune, à l'exception des membres de la section."
+
+2 quater
+――――
+
+L'article L. 2411-10 du code général des collectivités territoriales est ainsi modifié :
+1° Le premier alinéa est complété par les mots : ", à l'exclusion de tout revenu en espèces" ;
+2° Au cinquième alinéa, les mots : "ayants droit" sont remplacés par les mots : "membres de la section" et les mots : "la chasse notamment, dans le respect de la multifonctionnalité de l'espace rural" sont remplacés par les mots : "ou la chasse" ;
+3° L'avant-dernier alinéa est supprimé ;
+4° À la première phrase du dernier alinéa, les mots : "des membres" sont supprimés.
+
+2 quinquies
+――――
+
+L'article L. 2411-12 du code général des collectivités territoriales est ainsi modifié :
+1° A Au premier alinéa, la référence : "premier alinéa" est remplacée par la référence : "2°" ;
+1° Au même premier alinéa, après le mot : "biens", il est inséré le mot : ", droits" ;
+1° bis Le deuxième alinéa est complété par les mots : "et notifie l'arrêté de transfert au maire de la commune à fin d'affichage en mairie pendant une durée de deux mois" ;
+2° Le dernier alinéa est ainsi rédigé :
+"Les membres de la section peuvent prétendre à une indemnité dans les conditions prévues à l'article L. 2411-11."
+
+3
+――――
+
+L'article L. 2411-12-1 du code général des collectivités territoriales est ainsi modifié :
+1° A Au premier alinéa, le mot : "trois" est supprimé ;
+1° Au deuxième alinéa, le mot : "cinq" est remplacé par le mot : "trois" ;
+2° Au dernier alinéa, les mots : "d'un tiers" sont remplacés par les mots : "de la moitié" ;
+3° Sont ajoutés deux alinéas ainsi rédigés :
+"- lorsqu'il n'existe plus de membres de la section de commune.
+"Dans le délai de deux mois à compter de l'arrêté de transfert, le représentant de l'État dans le département porte à la connaissance du public le transfert des biens de la section et notifie l'arrêté de transfert à la commission syndicale lorsqu'elle est constituée, ainsi qu'au maire de la commune à fin d'affichage en mairie pendant une durée de deux mois."
+
+4
+――――
+
+Après l'article L. 2411-12-1 du code général des collectivités territoriales, il est inséré un article L. 2411-12-2 ainsi rédigé :
+"Art. L. 2411-12-2. - Le transfert à la commune de tout ou partie des biens, droits et obligations d'une section peut être prononcé par le représentant de l'État dans le département, à la demande du conseil municipal afin de mettre en oeuvre un objectif d'intérêt général.
+"Lorsqu'elle est constituée, la commission syndicale est consultée sur la délibération du conseil municipal et dispose d'un délai de deux mois à compter de sa saisine pour rendre un avis au conseil municipal. Lorsque la commission syndicale n'a pas été constituée, la délibération du conseil municipal est publiée dans un journal habilité à recevoir des annonces légales diffusé dans le département et affichée en mairie pendant une durée de deux mois durant laquelle les membres de la section peuvent présenter leurs observations.
+"Lorsque le transfert porte sur des biens à vocation agricole ou pastorale, la chambre d'agriculture est informée de la demande et peut émettre un avis au conseil municipal sur l'utilisation prévue par la commune des biens à transférer.
+"Dans le délai de deux mois à compter de l'arrêté de transfert, le représentant de l'État dans le département porte ce transfert à la connaissance du public et notifie l'arrêté de transfert à la commission syndicale lorsqu'elle est constituée, ainsi qu'au maire de la commune à fin d'affichage en mairie pendant une durée de deux mois.
+"Les membres de la section peuvent prétendre à une indemnité dans les conditions prévues à l'article L. 2411-11."
+
+4 bis
+――――
+
+Après l'article L. 2411-12-1 du code général des collectivités territoriales, il est inséré un article L. 2411-12-3 ainsi rédigé :
+"Art. L. 2411-12-3. - Lorsque la commune souhaite aliéner un bien transféré d'une section de commune en application des articles L. 2411-11 à L. 2411-12-2 dans un délai de cinq ans à compter de la date de publication de l'arrêté de transfert, la délibération du conseil municipal présentant les caractéristiques du bien à aliéner est affichée en mairie pendant une durée de deux mois."
+
+4 ter
+――――
+
+L'article L. 2411-14 du code général des collectivités territoriales est ainsi rédigé :
+"Art. L. 2411-14. - I. - Les biens de la section ne peuvent donner lieu à partage entre ses membres.
+"II. - Lorsque plusieurs sections de commune disposent d'un bien indivis ou lorsqu'une commune dispose d'un bien indivis avec une ou plusieurs sections, un indivisaire peut demander qu'il soit mis fin à l'indivision en ce qui le concerne, par notification de sa décision aux autres sections ou communes intéressées.
+"Une commission commune, présidée par un délégué nommé par le représentant de l'État dans le département et composée d'un délégué de chaque section ou commune concernée élabore, dans un délai d'un an, un projet de définition du lot ou de la compensation à attribuer à la section ou à la commune. Les frais d'expertise sont à la charge de la section ou de la commune demanderesse.
+"La section ou la commune reçoit, par priorité, un lot situé sur son territoire. Elle peut réclamer, moyennant une compensation en argent ou en nature, l'attribution d'un lot dont la valeur excède la part qui lui revient lorsque, pour sa bonne gestion, ce bien ne doit pas être morcelé ou lorsqu'il est nécessaire à la politique d'équipement ou d'urbanisation de la commune.
+"Si une section ou une commune décide de mettre fin à l'indivision, aucun acte modifiant la valeur du bien et de ce qui y est attaché ne peut intervenir durant le délai qui s'écoule entre la demande de fin de l'indivision et l'attribution du lot constitué.
+"En l'absence de notification d'un projet dans le délai d'un an prévu au deuxième alinéa du présent II ou en cas de désaccord persistant après l'expiration d'un délai d'un an à compter de la date où la section ou la commune a été informée du projet établi par la commission commune, le juge de l'expropriation, saisi par l'une des sections ou des communes intéressées, se prononce sur l'attribution du lot ou sur la valeur de la compensation."
+
+4 quater
+――――
+
+I. - L'article L. 2411-15 du code général des collectivités territoriales est ainsi modifié :
+1° Le premier alinéa est supprimé ;
+2° Au début du deuxième alinéa, sont ajoutés les mots : "Lorsque la commission syndicale est constituée et sous réserve des dispositions du II de l'article L. 2411-6," ;
+3° Les trois derniers alinéas sont remplacés par un alinéa ainsi rédigé :
+"En l'absence d'accord ou de vote du conseil municipal ou de la commission syndicale dans un délai de six mois à compter de la transmission de la proposition, le représentant de l'État dans le département statue, par arrêté motivé, sur le changement d'usage ou la vente."
+II. - L'article L. 2411-16 du même code est ainsi modifié :
+1° Le premier alinéa est ainsi modifié :
+a) Au début, les mots : "Dans le cas où, en application du deuxième alinéa de l'article L. 2411-3 et de l'article L. 2411-5" sont remplacés par le mot : "Lorsque" ;
+a bis) À la fin, les mots : "représentant de l'État dans le département" sont remplacés par le mot : "maire" ;
+b) Sont ajoutés les mots : "dans les six mois de la transmission de la délibération du conseil municipal" ;
+2° Les trois derniers alinéas sont remplacés par un alinéa ainsi rédigé :
+"En l'absence d'accord de la majorité des électeurs de la section, le représentant de l'État dans le département statue, par arrêté motivé, sur le changement d'usage ou la vente." ;
+3° (Supprimé)
+
+4 quinquies
+――――
+
+L'article L. 2411-17 du code général des collectivités territoriales est ainsi modifié :
+1° Avant le premier alinéa, il est inséré un I ainsi rédigé :
+"I. - Le produit de la vente de biens de la section ne peut être employé que dans l'intérêt de la section." ;
+1° bis Au début du premier alinéa, est ajoutée la mention : "II. -" ;
+2° Le deuxième alinéa est ainsi rédigé :
+"Les membres de la section peuvent prétendre à une indemnité dans les conditions prévues à l'article L. 2411-11."
+
+4 sexies
+――――
+
+L'article L. 2412-1 du code général des collectivités territoriales est ainsi modifié :
+1° A Au début du premier alinéa, est ajoutée la mention "I. -" ;
+1° Le deuxième alinéa est ainsi rédigé :
+"Le projet de budget est élaboré par la commission syndicale et soumis pour adoption au conseil municipal. Le conseil municipal peut adopter des modifications au projet présenté ; avant leur adoption définitive, celles-ci sont soumises pour avis à la commission syndicale. À défaut de délibération de la commission syndicale dans un délai d'un mois, l'avis est réputé favorable." ;
+2° Au troisième alinéa, les mots : ", en application du deuxième alinéa de l'article L. 2411-3 et de l'article L. 2411-5," sont supprimés ;
+2° bis Après le quatrième alinéa, il est inséré un II ainsi rédigé :
+"II. - Les revenus en espèces des biens de la section et, le cas échéant, le produit de la vente de ceux-ci figurent dans le budget annexe ou l'état spécial annexé relatif à la section." ;
+2° ter A Au cinquième alinéa, la référence : "L. 143-1" est remplacée par la référence : "L. 212-1" ;
+2° ter Au début du sixième alinéa, est ajoutée la mention : "III. -" ;
+3° Le dernier alinéa est ainsi modifié :
+a) Au début, est ajoutée la mention : "IV. -" ;
+b) Les mots : "en Conseil d'État" sont supprimés.
+
+4 septies
+――――
+
+I. - L'article L. 2411-17-1 du code général des collectivités territoriales est abrogé.
+II. - Le chapitre II du titre Ier du livre IV de la deuxième partie du même code est complété par un article L. 2412-2 ainsi rédigé :
+"Art. L. 2412-2. - Par dérogation au dernier alinéa de l'article L. 2411-10, lorsque les besoins de la section sont satisfaits, le conseil municipal peut, par délibération motivée, financer la réalisation de travaux d'investissement ou d'opérations d'entretien relevant de la compétence de la commune au bénéfice non exclusif de la section de commune par une contribution du budget de la section."
+
+4 octies
+――――
+
+I. - À l'article L. 2411-19 du code général des collectivités territoriales, les mots : "en Conseil d'État" sont supprimés.
+II. - (Supprimé)
+
+4 nonies
+――――
+
+I. - (Supprimé)
+II. - Le code général des collectivités territoriales est ainsi modifié :
+1° L'article L. 2112-7 est ainsi rédigé :
+"Art. L. 2112-7. - Les biens meubles et immeubles appartenant à la commune situés, à la date de publication de l'arrêté ou du décret prévu à l'article L. 2112-5, sur la portion de territoire faisant l'objet d'un rattachement à une autre commune ou ceux appartenant à une commune réunie à une autre commune deviennent la propriété de cette autre commune.
+"S'ils se trouvent sur une portion de territoire érigée en commune distincte, ils deviennent la propriété de cette nouvelle commune." ;
+2° Les articles L. 2112-8 et L. 2112-9 sont abrogés ;
+2° bis À la fin du premier alinéa de l'article L. 2112-10, les mots : "mentionnées aux articles L. 2112-7 et L. 2112-8" sont remplacés par les mots : "prévues à l'article L. 2112-7" ;
+3° L'article L. 2242-2 est ainsi rédigé :
+"Art. L. 2242-2. - Lorsqu'un don ou un legs est fait à un hameau ou à un quartier qui ne constitue pas une section de commune, le conseil municipal statue sur l'acceptation de cette libéralité.
+"En cas d'acceptation, la commune gère le bien dans l'intérêt du hameau ou du quartier concerné."
+III et IV. - (Supprimé)
+
+4 decies
+――――
+
+L'article L. 2411-10 du code général des collectivités territoriales est ainsi modifié :
+1° Le deuxième alinéa est remplacé par cinq alinéas ainsi rédigés :
+"Les terres à vocation agricole ou pastorale propriétés de la section sont attribuées par bail rural ou par convention pluriannuelle d'exploitation agricole ou de pâturage conclue dans les conditions prévues à l'article L. 481-1 du code rural et de la pêche maritime ou par convention de mise à disposition d'une société d'aménagement foncier et d'établissement rural :
+"1° Au profit des exploitants agricoles ayant leur domicile réel et fixe, un bâtiment d'exploitation et le siège de leur exploitation sur le territoire de la section et exploitant des biens agricoles sur celui-ci, et au profit d'exploitants agricoles ayant un bâtiment d'exploitation hébergeant, pendant la période hivernale, leurs animaux sur le territoire de la section et exploitant des biens agricoles sur ledit territoire ;
+"2° À défaut, au profit des exploitants agricoles utilisant des biens agricoles sur le territoire de la section et ayant un domicile réel et fixe sur le territoire de la commune ;
+"3° À titre subsidiaire, au profit des exploitants agricoles utilisant des biens agricoles sur le territoire de la section ;
+"4° Lorsque cela est possible, au profit de l'installation d'exploitations nouvelles." ;
+2° Après le deuxième alinéa, il est inséré un alinéa ainsi rédigé :
+"Si l'exploitation est mise en valeur sous forme de société civile à objet agricole, les biens de section sont attribués soit à chacun des associés exploitants, dès lors qu'ils remplissent les conditions définies par l'autorité compétente, soit à la société elle-même." ;
+3° À la fin du troisième alinéa, les mots : "l'autorité municipale" sont remplacés par les mots : "le conseil municipal" ;
+4° Le quatrième alinéa est ainsi rédigé :
+"Le fait de ne plus remplir les conditions retenues par l'autorité compétente au moment de l'attribution entraîne la résiliation du bail rural ou de la convention pluriannuelle d'exploitation agricole ou de pâturage, notifiée par lettre recommandée avec demande d'avis de réception, avec application d'un préavis minimal de six mois."
+
+4 undecies
+――――
+
+Après le 3° du II de l'article L. 411-31 du code rural et de la pêche maritime, il est inséré un 4° ainsi rédigé :
+"4° Le non-respect par l'exploitant des conditions définies par l'autorité compétente pour l'attribution des biens de section en application de l'article L. 2411-10 du code général des collectivités territoriales."
+
+6
+――――
+
+I. - À l'article L. 2544-3 du code général des collectivités territoriales, les mots : "et, sous réserve des droits acquis," sont supprimés.
+II. - L'article L. 2544-4 du même code est ainsi modifié :
+1° À la fin du 2°, les mots : ", dont les produits étaient jusqu'alors partagés entre les habitants" sont supprimés ;
+2° Les 3° et 4° sont abrogés.
+III. - L'article L. 2544-5 du même code est ainsi modifié :
+1° Au deuxième alinéa, les mots : "un tiers des électeurs et propriétaires" sont remplacés par les mots : "la moitié des électeurs" ;
+2° Le dernier alinéa est supprimé.
+IV. - À la fin du deuxième alinéa de l'article L. 2544-6 du même code, les mots : "nomme ses membres parmi les électeurs de la section ou, à défaut, parmi les plus imposés habitant la section" sont remplacés par les mots : "tire au sort ses membres parmi les électeurs de la section".
+V. - L'article L. 2544-8 du même code est ainsi modifié :
+1° Au deuxième alinéa, les mots : "aux trois quarts de l'effectif légal du conseil" sont remplacés par les mots : "à moins du tiers de ses membres" et les mots : "ou de propriétaires fonciers de la commune, éligibles au conseil municipal" sont remplacés par les mots : "tirés au sort par le représentant de l'État dans le département parmi les personnes inscrites sur les listes électorales de la commune" ;
+2° Le dernier alinéa est supprimé.
+VI. - L'article L. 2544-9 du même code est abrogé.
+
+7
+――――
+
+I. - La présente loi est applicable en Polynésie française, à l'exception de l'article 6.
+II. - L'article L. 2573-58 du code général des collectivités territoriales est ainsi modifié :
+1° Au 1°, la référence : "l'article L. 2412-1" est remplacée par les références : "les articles L. 2412-1 et L. 2412-2" ;
+2° Le V est abrogé.
+III. - Le second alinéa de l'article L. 151-1 du code des communes de la Nouvelle-Calédonie est remplacé par un alinéa et un II ainsi rédigés :
+"La section de commune est une personne morale de droit public.
+"II. - Aucune section de commune ne peut être constituée à compter de la promulgation de la loi n° du visant à moderniser le régime des sections de commune."
+
+
+</pre>
+</body>
+
+</html>

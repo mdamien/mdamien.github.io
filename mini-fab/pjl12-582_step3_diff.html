@@ -1,0 +1,1738 @@
+
+<style>
+body {
+    max-width: 700px;
+}
+
+pre {
+    font-family: ubuntu, sans-serif;
+    font-size: 20px;
+}
+</style>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #AAAAAA; }
+.body_background { background-color: #000000; }
+.body_foreground > .bold,.bold > .body_foreground, body.body_foreground > pre > .bold { color: #FFFFFF; font-weight: normal; }
+.inv_foreground { color: #000000; }
+.inv_background { background-color: #AAAAAA; }
+.ansi1 { font-weight: bold; }
+.ansi2 { font-weight: lighter; }
+.ansi3 { font-style: italic; }
+.ansi4 { text-decoration: underline; }
+.ansi5 { text-decoration: blink; }
+.ansi6 { text-decoration: blink; }
+.ansi8 { visibility: hidden; }
+.ansi9 { text-decoration: line-through; }
+.ansi30 { color: #000316; }
+.inv30 { background-color: #000316; }
+.ansi31 { color: #aa0000; }
+.inv31 { background-color: #aa0000; }
+.ansi32 { color: #00aa00; }
+.inv32 { background-color: #00aa00; }
+.ansi33 { color: #aa5500; }
+.inv33 { background-color: #aa5500; }
+.ansi34 { color: #0000aa; }
+.inv34 { background-color: #0000aa; }
+.ansi35 { color: #E850A8; }
+.inv35 { background-color: #E850A8; }
+.ansi36 { color: #00aaaa; }
+.inv36 { background-color: #00aaaa; }
+.ansi37 { color: #F5F1DE; }
+.inv37 { background-color: #F5F1DE; }
+.ansi40 { background-color: #000316; }
+.inv40 { color: #000316; }
+.ansi41 { background-color: #aa0000; }
+.inv41 { color: #aa0000; }
+.ansi42 { background-color: #00aa00; }
+.inv42 { color: #00aa00; }
+.ansi43 { background-color: #aa5500; }
+.inv43 { color: #aa5500; }
+.ansi44 { background-color: #0000aa; }
+.inv44 { color: #0000aa; }
+.ansi45 { background-color: #E850A8; }
+.inv45 { color: #E850A8; }
+.ansi46 { background-color: #00aaaa; }
+.inv46 { color: #00aaaa; }
+.ansi47 { background-color: #F5F1DE; }
+.inv47 { color: #F5F1DE; }
+.ansi38-0 { color: #000316; }
+.inv38-0 { background-color: #000316; }
+.ansi38-1 { color: #aa0000; }
+.inv38-1 { background-color: #aa0000; }
+.ansi38-2 { color: #00aa00; }
+.inv38-2 { background-color: #00aa00; }
+.ansi38-3 { color: #aa5500; }
+.inv38-3 { background-color: #aa5500; }
+.ansi38-4 { color: #0000aa; }
+.inv38-4 { background-color: #0000aa; }
+.ansi38-5 { color: #E850A8; }
+.inv38-5 { background-color: #E850A8; }
+.ansi38-6 { color: #00aaaa; }
+.inv38-6 { background-color: #00aaaa; }
+.ansi38-7 { color: #F5F1DE; }
+.inv38-7 { background-color: #F5F1DE; }
+.ansi38-8 { color: #7f7f7f; }
+.inv38-8 { background-color: #7f7f7f; }
+.ansi38-9 { color: #ff0000; }
+.inv38-9 { background-color: #ff0000; }
+.ansi38-10 { color: #00ff00; }
+.inv38-10 { background-color: #00ff00; }
+.ansi38-11 { color: #ffff00; }
+.inv38-11 { background-color: #ffff00; }
+.ansi38-12 { color: #5c5cff; }
+.inv38-12 { background-color: #5c5cff; }
+.ansi38-13 { color: #ff00ff; }
+.inv38-13 { background-color: #ff00ff; }
+.ansi38-14 { color: #00ffff; }
+.inv38-14 { background-color: #00ffff; }
+.ansi38-15 { color: #ffffff; }
+.inv38-15 { background-color: #ffffff; }
+.ansi48-0 { background-color: #000316; }
+.inv48-0 { color: #000316; }
+.ansi48-1 { background-color: #aa0000; }
+.inv48-1 { color: #aa0000; }
+.ansi48-2 { background-color: #00aa00; }
+.inv48-2 { color: #00aa00; }
+.ansi48-3 { background-color: #aa5500; }
+.inv48-3 { color: #aa5500; }
+.ansi48-4 { background-color: #0000aa; }
+.inv48-4 { color: #0000aa; }
+.ansi48-5 { background-color: #E850A8; }
+.inv48-5 { color: #E850A8; }
+.ansi48-6 { background-color: #00aaaa; }
+.inv48-6 { color: #00aaaa; }
+.ansi48-7 { background-color: #F5F1DE; }
+.inv48-7 { color: #F5F1DE; }
+.ansi48-8 { background-color: #7f7f7f; }
+.inv48-8 { color: #7f7f7f; }
+.ansi48-9 { background-color: #ff0000; }
+.inv48-9 { color: #ff0000; }
+.ansi48-10 { background-color: #00ff00; }
+.inv48-10 { color: #00ff00; }
+.ansi48-11 { background-color: #ffff00; }
+.inv48-11 { color: #ffff00; }
+.ansi48-12 { background-color: #5c5cff; }
+.inv48-12 { color: #5c5cff; }
+.ansi48-13 { background-color: #ff00ff; }
+.inv48-13 { color: #ff00ff; }
+.ansi48-14 { background-color: #00ffff; }
+.inv48-14 { color: #00ffff; }
+.ansi48-15 { background-color: #ffffff; }
+.inv48-15 { color: #ffffff; }
+.ansi38-16 { color: #000000; }
+.inv38-16 { background: #000000; }
+.ansi48-16 { background: #000000; }
+.inv48-16 { color: #000000; }
+.ansi38-17 { color: #00002a; }
+.inv38-17 { background: #00002a; }
+.ansi48-17 { background: #00002a; }
+.inv48-17 { color: #00002a; }
+.ansi38-18 { color: #000054; }
+.inv38-18 { background: #000054; }
+.ansi48-18 { background: #000054; }
+.inv48-18 { color: #000054; }
+.ansi38-19 { color: #00007e; }
+.inv38-19 { background: #00007e; }
+.ansi48-19 { background: #00007e; }
+.inv48-19 { color: #00007e; }
+.ansi38-20 { color: #0000a8; }
+.inv38-20 { background: #0000a8; }
+.ansi48-20 { background: #0000a8; }
+.inv48-20 { color: #0000a8; }
+.ansi38-21 { color: #0000d2; }
+.inv38-21 { background: #0000d2; }
+.ansi48-21 { background: #0000d2; }
+.inv48-21 { color: #0000d2; }
+.ansi38-52 { color: #2a0000; }
+.inv38-52 { background: #2a0000; }
+.ansi48-52 { background: #2a0000; }
+.inv48-52 { color: #2a0000; }
+.ansi38-53 { color: #2a002a; }
+.inv38-53 { background: #2a002a; }
+.ansi48-53 { background: #2a002a; }
+.inv48-53 { color: #2a002a; }
+.ansi38-54 { color: #2a0054; }
+.inv38-54 { background: #2a0054; }
+.ansi48-54 { background: #2a0054; }
+.inv48-54 { color: #2a0054; }
+.ansi38-55 { color: #2a007e; }
+.inv38-55 { background: #2a007e; }
+.ansi48-55 { background: #2a007e; }
+.inv48-55 { color: #2a007e; }
+.ansi38-56 { color: #2a00a8; }
+.inv38-56 { background: #2a00a8; }
+.ansi48-56 { background: #2a00a8; }
+.inv48-56 { color: #2a00a8; }
+.ansi38-57 { color: #2a00d2; }
+.inv38-57 { background: #2a00d2; }
+.ansi48-57 { background: #2a00d2; }
+.inv48-57 { color: #2a00d2; }
+.ansi38-88 { color: #540000; }
+.inv38-88 { background: #540000; }
+.ansi48-88 { background: #540000; }
+.inv48-88 { color: #540000; }
+.ansi38-89 { color: #54002a; }
+.inv38-89 { background: #54002a; }
+.ansi48-89 { background: #54002a; }
+.inv48-89 { color: #54002a; }
+.ansi38-90 { color: #540054; }
+.inv38-90 { background: #540054; }
+.ansi48-90 { background: #540054; }
+.inv48-90 { color: #540054; }
+.ansi38-91 { color: #54007e; }
+.inv38-91 { background: #54007e; }
+.ansi48-91 { background: #54007e; }
+.inv48-91 { color: #54007e; }
+.ansi38-92 { color: #5400a8; }
+.inv38-92 { background: #5400a8; }
+.ansi48-92 { background: #5400a8; }
+.inv48-92 { color: #5400a8; }
+.ansi38-93 { color: #5400d2; }
+.inv38-93 { background: #5400d2; }
+.ansi48-93 { background: #5400d2; }
+.inv48-93 { color: #5400d2; }
+.ansi38-124 { color: #7e0000; }
+.inv38-124 { background: #7e0000; }
+.ansi48-124 { background: #7e0000; }
+.inv48-124 { color: #7e0000; }
+.ansi38-125 { color: #7e002a; }
+.inv38-125 { background: #7e002a; }
+.ansi48-125 { background: #7e002a; }
+.inv48-125 { color: #7e002a; }
+.ansi38-126 { color: #7e0054; }
+.inv38-126 { background: #7e0054; }
+.ansi48-126 { background: #7e0054; }
+.inv48-126 { color: #7e0054; }
+.ansi38-127 { color: #7e007e; }
+.inv38-127 { background: #7e007e; }
+.ansi48-127 { background: #7e007e; }
+.inv48-127 { color: #7e007e; }
+.ansi38-128 { color: #7e00a8; }
+.inv38-128 { background: #7e00a8; }
+.ansi48-128 { background: #7e00a8; }
+.inv48-128 { color: #7e00a8; }
+.ansi38-129 { color: #7e00d2; }
+.inv38-129 { background: #7e00d2; }
+.ansi48-129 { background: #7e00d2; }
+.inv48-129 { color: #7e00d2; }
+.ansi38-160 { color: #a80000; }
+.inv38-160 { background: #a80000; }
+.ansi48-160 { background: #a80000; }
+.inv48-160 { color: #a80000; }
+.ansi38-161 { color: #a8002a; }
+.inv38-161 { background: #a8002a; }
+.ansi48-161 { background: #a8002a; }
+.inv48-161 { color: #a8002a; }
+.ansi38-162 { color: #a80054; }
+.inv38-162 { background: #a80054; }
+.ansi48-162 { background: #a80054; }
+.inv48-162 { color: #a80054; }
+.ansi38-163 { color: #a8007e; }
+.inv38-163 { background: #a8007e; }
+.ansi48-163 { background: #a8007e; }
+.inv48-163 { color: #a8007e; }
+.ansi38-164 { color: #a800a8; }
+.inv38-164 { background: #a800a8; }
+.ansi48-164 { background: #a800a8; }
+.inv48-164 { color: #a800a8; }
+.ansi38-165 { color: #a800d2; }
+.inv38-165 { background: #a800d2; }
+.ansi48-165 { background: #a800d2; }
+.inv48-165 { color: #a800d2; }
+.ansi38-196 { color: #d20000; }
+.inv38-196 { background: #d20000; }
+.ansi48-196 { background: #d20000; }
+.inv48-196 { color: #d20000; }
+.ansi38-197 { color: #d2002a; }
+.inv38-197 { background: #d2002a; }
+.ansi48-197 { background: #d2002a; }
+.inv48-197 { color: #d2002a; }
+.ansi38-198 { color: #d20054; }
+.inv38-198 { background: #d20054; }
+.ansi48-198 { background: #d20054; }
+.inv48-198 { color: #d20054; }
+.ansi38-199 { color: #d2007e; }
+.inv38-199 { background: #d2007e; }
+.ansi48-199 { background: #d2007e; }
+.inv48-199 { color: #d2007e; }
+.ansi38-200 { color: #d200a8; }
+.inv38-200 { background: #d200a8; }
+.ansi48-200 { background: #d200a8; }
+.inv48-200 { color: #d200a8; }
+.ansi38-201 { color: #d200d2; }
+.inv38-201 { background: #d200d2; }
+.ansi48-201 { background: #d200d2; }
+.inv48-201 { color: #d200d2; }
+.ansi38-22 { color: #002a00; }
+.inv38-22 { background: #002a00; }
+.ansi48-22 { background: #002a00; }
+.inv48-22 { color: #002a00; }
+.ansi38-23 { color: #002a2a; }
+.inv38-23 { background: #002a2a; }
+.ansi48-23 { background: #002a2a; }
+.inv48-23 { color: #002a2a; }
+.ansi38-24 { color: #002a54; }
+.inv38-24 { background: #002a54; }
+.ansi48-24 { background: #002a54; }
+.inv48-24 { color: #002a54; }
+.ansi38-25 { color: #002a7e; }
+.inv38-25 { background: #002a7e; }
+.ansi48-25 { background: #002a7e; }
+.inv48-25 { color: #002a7e; }
+.ansi38-26 { color: #002aa8; }
+.inv38-26 { background: #002aa8; }
+.ansi48-26 { background: #002aa8; }
+.inv48-26 { color: #002aa8; }
+.ansi38-27 { color: #002ad2; }
+.inv38-27 { background: #002ad2; }
+.ansi48-27 { background: #002ad2; }
+.inv48-27 { color: #002ad2; }
+.ansi38-58 { color: #2a2a00; }
+.inv38-58 { background: #2a2a00; }
+.ansi48-58 { background: #2a2a00; }
+.inv48-58 { color: #2a2a00; }
+.ansi38-59 { color: #2a2a2a; }
+.inv38-59 { background: #2a2a2a; }
+.ansi48-59 { background: #2a2a2a; }
+.inv48-59 { color: #2a2a2a; }
+.ansi38-60 { color: #2a2a54; }
+.inv38-60 { background: #2a2a54; }
+.ansi48-60 { background: #2a2a54; }
+.inv48-60 { color: #2a2a54; }
+.ansi38-61 { color: #2a2a7e; }
+.inv38-61 { background: #2a2a7e; }
+.ansi48-61 { background: #2a2a7e; }
+.inv48-61 { color: #2a2a7e; }
+.ansi38-62 { color: #2a2aa8; }
+.inv38-62 { background: #2a2aa8; }
+.ansi48-62 { background: #2a2aa8; }
+.inv48-62 { color: #2a2aa8; }
+.ansi38-63 { color: #2a2ad2; }
+.inv38-63 { background: #2a2ad2; }
+.ansi48-63 { background: #2a2ad2; }
+.inv48-63 { color: #2a2ad2; }
+.ansi38-94 { color: #542a00; }
+.inv38-94 { background: #542a00; }
+.ansi48-94 { background: #542a00; }
+.inv48-94 { color: #542a00; }
+.ansi38-95 { color: #542a2a; }
+.inv38-95 { background: #542a2a; }
+.ansi48-95 { background: #542a2a; }
+.inv48-95 { color: #542a2a; }
+.ansi38-96 { color: #542a54; }
+.inv38-96 { background: #542a54; }
+.ansi48-96 { background: #542a54; }
+.inv48-96 { color: #542a54; }
+.ansi38-97 { color: #542a7e; }
+.inv38-97 { background: #542a7e; }
+.ansi48-97 { background: #542a7e; }
+.inv48-97 { color: #542a7e; }
+.ansi38-98 { color: #542aa8; }
+.inv38-98 { background: #542aa8; }
+.ansi48-98 { background: #542aa8; }
+.inv48-98 { color: #542aa8; }
+.ansi38-99 { color: #542ad2; }
+.inv38-99 { background: #542ad2; }
+.ansi48-99 { background: #542ad2; }
+.inv48-99 { color: #542ad2; }
+.ansi38-130 { color: #7e2a00; }
+.inv38-130 { background: #7e2a00; }
+.ansi48-130 { background: #7e2a00; }
+.inv48-130 { color: #7e2a00; }
+.ansi38-131 { color: #7e2a2a; }
+.inv38-131 { background: #7e2a2a; }
+.ansi48-131 { background: #7e2a2a; }
+.inv48-131 { color: #7e2a2a; }
+.ansi38-132 { color: #7e2a54; }
+.inv38-132 { background: #7e2a54; }
+.ansi48-132 { background: #7e2a54; }
+.inv48-132 { color: #7e2a54; }
+.ansi38-133 { color: #7e2a7e; }
+.inv38-133 { background: #7e2a7e; }
+.ansi48-133 { background: #7e2a7e; }
+.inv48-133 { color: #7e2a7e; }
+.ansi38-134 { color: #7e2aa8; }
+.inv38-134 { background: #7e2aa8; }
+.ansi48-134 { background: #7e2aa8; }
+.inv48-134 { color: #7e2aa8; }
+.ansi38-135 { color: #7e2ad2; }
+.inv38-135 { background: #7e2ad2; }
+.ansi48-135 { background: #7e2ad2; }
+.inv48-135 { color: #7e2ad2; }
+.ansi38-166 { color: #a82a00; }
+.inv38-166 { background: #a82a00; }
+.ansi48-166 { background: #a82a00; }
+.inv48-166 { color: #a82a00; }
+.ansi38-167 { color: #a82a2a; }
+.inv38-167 { background: #a82a2a; }
+.ansi48-167 { background: #a82a2a; }
+.inv48-167 { color: #a82a2a; }
+.ansi38-168 { color: #a82a54; }
+.inv38-168 { background: #a82a54; }
+.ansi48-168 { background: #a82a54; }
+.inv48-168 { color: #a82a54; }
+.ansi38-169 { color: #a82a7e; }
+.inv38-169 { background: #a82a7e; }
+.ansi48-169 { background: #a82a7e; }
+.inv48-169 { color: #a82a7e; }
+.ansi38-170 { color: #a82aa8; }
+.inv38-170 { background: #a82aa8; }
+.ansi48-170 { background: #a82aa8; }
+.inv48-170 { color: #a82aa8; }
+.ansi38-171 { color: #a82ad2; }
+.inv38-171 { background: #a82ad2; }
+.ansi48-171 { background: #a82ad2; }
+.inv48-171 { color: #a82ad2; }
+.ansi38-202 { color: #d22a00; }
+.inv38-202 { background: #d22a00; }
+.ansi48-202 { background: #d22a00; }
+.inv48-202 { color: #d22a00; }
+.ansi38-203 { color: #d22a2a; }
+.inv38-203 { background: #d22a2a; }
+.ansi48-203 { background: #d22a2a; }
+.inv48-203 { color: #d22a2a; }
+.ansi38-204 { color: #d22a54; }
+.inv38-204 { background: #d22a54; }
+.ansi48-204 { background: #d22a54; }
+.inv48-204 { color: #d22a54; }
+.ansi38-205 { color: #d22a7e; }
+.inv38-205 { background: #d22a7e; }
+.ansi48-205 { background: #d22a7e; }
+.inv48-205 { color: #d22a7e; }
+.ansi38-206 { color: #d22aa8; }
+.inv38-206 { background: #d22aa8; }
+.ansi48-206 { background: #d22aa8; }
+.inv48-206 { color: #d22aa8; }
+.ansi38-207 { color: #d22ad2; }
+.inv38-207 { background: #d22ad2; }
+.ansi48-207 { background: #d22ad2; }
+.inv48-207 { color: #d22ad2; }
+.ansi38-28 { color: #005400; }
+.inv38-28 { background: #005400; }
+.ansi48-28 { background: #005400; }
+.inv48-28 { color: #005400; }
+.ansi38-29 { color: #00542a; }
+.inv38-29 { background: #00542a; }
+.ansi48-29 { background: #00542a; }
+.inv48-29 { color: #00542a; }
+.ansi38-30 { color: #005454; }
+.inv38-30 { background: #005454; }
+.ansi48-30 { background: #005454; }
+.inv48-30 { color: #005454; }
+.ansi38-31 { color: #00547e; }
+.inv38-31 { background: #00547e; }
+.ansi48-31 { background: #00547e; }
+.inv48-31 { color: #00547e; }
+.ansi38-32 { color: #0054a8; }
+.inv38-32 { background: #0054a8; }
+.ansi48-32 { background: #0054a8; }
+.inv48-32 { color: #0054a8; }
+.ansi38-33 { color: #0054d2; }
+.inv38-33 { background: #0054d2; }
+.ansi48-33 { background: #0054d2; }
+.inv48-33 { color: #0054d2; }
+.ansi38-64 { color: #2a5400; }
+.inv38-64 { background: #2a5400; }
+.ansi48-64 { background: #2a5400; }
+.inv48-64 { color: #2a5400; }
+.ansi38-65 { color: #2a542a; }
+.inv38-65 { background: #2a542a; }
+.ansi48-65 { background: #2a542a; }
+.inv48-65 { color: #2a542a; }
+.ansi38-66 { color: #2a5454; }
+.inv38-66 { background: #2a5454; }
+.ansi48-66 { background: #2a5454; }
+.inv48-66 { color: #2a5454; }
+.ansi38-67 { color: #2a547e; }
+.inv38-67 { background: #2a547e; }
+.ansi48-67 { background: #2a547e; }
+.inv48-67 { color: #2a547e; }
+.ansi38-68 { color: #2a54a8; }
+.inv38-68 { background: #2a54a8; }
+.ansi48-68 { background: #2a54a8; }
+.inv48-68 { color: #2a54a8; }
+.ansi38-69 { color: #2a54d2; }
+.inv38-69 { background: #2a54d2; }
+.ansi48-69 { background: #2a54d2; }
+.inv48-69 { color: #2a54d2; }
+.ansi38-100 { color: #545400; }
+.inv38-100 { background: #545400; }
+.ansi48-100 { background: #545400; }
+.inv48-100 { color: #545400; }
+.ansi38-101 { color: #54542a; }
+.inv38-101 { background: #54542a; }
+.ansi48-101 { background: #54542a; }
+.inv48-101 { color: #54542a; }
+.ansi38-102 { color: #545454; }
+.inv38-102 { background: #545454; }
+.ansi48-102 { background: #545454; }
+.inv48-102 { color: #545454; }
+.ansi38-103 { color: #54547e; }
+.inv38-103 { background: #54547e; }
+.ansi48-103 { background: #54547e; }
+.inv48-103 { color: #54547e; }
+.ansi38-104 { color: #5454a8; }
+.inv38-104 { background: #5454a8; }
+.ansi48-104 { background: #5454a8; }
+.inv48-104 { color: #5454a8; }
+.ansi38-105 { color: #5454d2; }
+.inv38-105 { background: #5454d2; }
+.ansi48-105 { background: #5454d2; }
+.inv48-105 { color: #5454d2; }
+.ansi38-136 { color: #7e5400; }
+.inv38-136 { background: #7e5400; }
+.ansi48-136 { background: #7e5400; }
+.inv48-136 { color: #7e5400; }
+.ansi38-137 { color: #7e542a; }
+.inv38-137 { background: #7e542a; }
+.ansi48-137 { background: #7e542a; }
+.inv48-137 { color: #7e542a; }
+.ansi38-138 { color: #7e5454; }
+.inv38-138 { background: #7e5454; }
+.ansi48-138 { background: #7e5454; }
+.inv48-138 { color: #7e5454; }
+.ansi38-139 { color: #7e547e; }
+.inv38-139 { background: #7e547e; }
+.ansi48-139 { background: #7e547e; }
+.inv48-139 { color: #7e547e; }
+.ansi38-140 { color: #7e54a8; }
+.inv38-140 { background: #7e54a8; }
+.ansi48-140 { background: #7e54a8; }
+.inv48-140 { color: #7e54a8; }
+.ansi38-141 { color: #7e54d2; }
+.inv38-141 { background: #7e54d2; }
+.ansi48-141 { background: #7e54d2; }
+.inv48-141 { color: #7e54d2; }
+.ansi38-172 { color: #a85400; }
+.inv38-172 { background: #a85400; }
+.ansi48-172 { background: #a85400; }
+.inv48-172 { color: #a85400; }
+.ansi38-173 { color: #a8542a; }
+.inv38-173 { background: #a8542a; }
+.ansi48-173 { background: #a8542a; }
+.inv48-173 { color: #a8542a; }
+.ansi38-174 { color: #a85454; }
+.inv38-174 { background: #a85454; }
+.ansi48-174 { background: #a85454; }
+.inv48-174 { color: #a85454; }
+.ansi38-175 { color: #a8547e; }
+.inv38-175 { background: #a8547e; }
+.ansi48-175 { background: #a8547e; }
+.inv48-175 { color: #a8547e; }
+.ansi38-176 { color: #a854a8; }
+.inv38-176 { background: #a854a8; }
+.ansi48-176 { background: #a854a8; }
+.inv48-176 { color: #a854a8; }
+.ansi38-177 { color: #a854d2; }
+.inv38-177 { background: #a854d2; }
+.ansi48-177 { background: #a854d2; }
+.inv48-177 { color: #a854d2; }
+.ansi38-208 { color: #d25400; }
+.inv38-208 { background: #d25400; }
+.ansi48-208 { background: #d25400; }
+.inv48-208 { color: #d25400; }
+.ansi38-209 { color: #d2542a; }
+.inv38-209 { background: #d2542a; }
+.ansi48-209 { background: #d2542a; }
+.inv48-209 { color: #d2542a; }
+.ansi38-210 { color: #d25454; }
+.inv38-210 { background: #d25454; }
+.ansi48-210 { background: #d25454; }
+.inv48-210 { color: #d25454; }
+.ansi38-211 { color: #d2547e; }
+.inv38-211 { background: #d2547e; }
+.ansi48-211 { background: #d2547e; }
+.inv48-211 { color: #d2547e; }
+.ansi38-212 { color: #d254a8; }
+.inv38-212 { background: #d254a8; }
+.ansi48-212 { background: #d254a8; }
+.inv48-212 { color: #d254a8; }
+.ansi38-213 { color: #d254d2; }
+.inv38-213 { background: #d254d2; }
+.ansi48-213 { background: #d254d2; }
+.inv48-213 { color: #d254d2; }
+.ansi38-34 { color: #007e00; }
+.inv38-34 { background: #007e00; }
+.ansi48-34 { background: #007e00; }
+.inv48-34 { color: #007e00; }
+.ansi38-35 { color: #007e2a; }
+.inv38-35 { background: #007e2a; }
+.ansi48-35 { background: #007e2a; }
+.inv48-35 { color: #007e2a; }
+.ansi38-36 { color: #007e54; }
+.inv38-36 { background: #007e54; }
+.ansi48-36 { background: #007e54; }
+.inv48-36 { color: #007e54; }
+.ansi38-37 { color: #007e7e; }
+.inv38-37 { background: #007e7e; }
+.ansi48-37 { background: #007e7e; }
+.inv48-37 { color: #007e7e; }
+.ansi38-38 { color: #007ea8; }
+.inv38-38 { background: #007ea8; }
+.ansi48-38 { background: #007ea8; }
+.inv48-38 { color: #007ea8; }
+.ansi38-39 { color: #007ed2; }
+.inv38-39 { background: #007ed2; }
+.ansi48-39 { background: #007ed2; }
+.inv48-39 { color: #007ed2; }
+.ansi38-70 { color: #2a7e00; }
+.inv38-70 { background: #2a7e00; }
+.ansi48-70 { background: #2a7e00; }
+.inv48-70 { color: #2a7e00; }
+.ansi38-71 { color: #2a7e2a; }
+.inv38-71 { background: #2a7e2a; }
+.ansi48-71 { background: #2a7e2a; }
+.inv48-71 { color: #2a7e2a; }
+.ansi38-72 { color: #2a7e54; }
+.inv38-72 { background: #2a7e54; }
+.ansi48-72 { background: #2a7e54; }
+.inv48-72 { color: #2a7e54; }
+.ansi38-73 { color: #2a7e7e; }
+.inv38-73 { background: #2a7e7e; }
+.ansi48-73 { background: #2a7e7e; }
+.inv48-73 { color: #2a7e7e; }
+.ansi38-74 { color: #2a7ea8; }
+.inv38-74 { background: #2a7ea8; }
+.ansi48-74 { background: #2a7ea8; }
+.inv48-74 { color: #2a7ea8; }
+.ansi38-75 { color: #2a7ed2; }
+.inv38-75 { background: #2a7ed2; }
+.ansi48-75 { background: #2a7ed2; }
+.inv48-75 { color: #2a7ed2; }
+.ansi38-106 { color: #547e00; }
+.inv38-106 { background: #547e00; }
+.ansi48-106 { background: #547e00; }
+.inv48-106 { color: #547e00; }
+.ansi38-107 { color: #547e2a; }
+.inv38-107 { background: #547e2a; }
+.ansi48-107 { background: #547e2a; }
+.inv48-107 { color: #547e2a; }
+.ansi38-108 { color: #547e54; }
+.inv38-108 { background: #547e54; }
+.ansi48-108 { background: #547e54; }
+.inv48-108 { color: #547e54; }
+.ansi38-109 { color: #547e7e; }
+.inv38-109 { background: #547e7e; }
+.ansi48-109 { background: #547e7e; }
+.inv48-109 { color: #547e7e; }
+.ansi38-110 { color: #547ea8; }
+.inv38-110 { background: #547ea8; }
+.ansi48-110 { background: #547ea8; }
+.inv48-110 { color: #547ea8; }
+.ansi38-111 { color: #547ed2; }
+.inv38-111 { background: #547ed2; }
+.ansi48-111 { background: #547ed2; }
+.inv48-111 { color: #547ed2; }
+.ansi38-142 { color: #7e7e00; }
+.inv38-142 { background: #7e7e00; }
+.ansi48-142 { background: #7e7e00; }
+.inv48-142 { color: #7e7e00; }
+.ansi38-143 { color: #7e7e2a; }
+.inv38-143 { background: #7e7e2a; }
+.ansi48-143 { background: #7e7e2a; }
+.inv48-143 { color: #7e7e2a; }
+.ansi38-144 { color: #7e7e54; }
+.inv38-144 { background: #7e7e54; }
+.ansi48-144 { background: #7e7e54; }
+.inv48-144 { color: #7e7e54; }
+.ansi38-145 { color: #7e7e7e; }
+.inv38-145 { background: #7e7e7e; }
+.ansi48-145 { background: #7e7e7e; }
+.inv48-145 { color: #7e7e7e; }
+.ansi38-146 { color: #7e7ea8; }
+.inv38-146 { background: #7e7ea8; }
+.ansi48-146 { background: #7e7ea8; }
+.inv48-146 { color: #7e7ea8; }
+.ansi38-147 { color: #7e7ed2; }
+.inv38-147 { background: #7e7ed2; }
+.ansi48-147 { background: #7e7ed2; }
+.inv48-147 { color: #7e7ed2; }
+.ansi38-178 { color: #a87e00; }
+.inv38-178 { background: #a87e00; }
+.ansi48-178 { background: #a87e00; }
+.inv48-178 { color: #a87e00; }
+.ansi38-179 { color: #a87e2a; }
+.inv38-179 { background: #a87e2a; }
+.ansi48-179 { background: #a87e2a; }
+.inv48-179 { color: #a87e2a; }
+.ansi38-180 { color: #a87e54; }
+.inv38-180 { background: #a87e54; }
+.ansi48-180 { background: #a87e54; }
+.inv48-180 { color: #a87e54; }
+.ansi38-181 { color: #a87e7e; }
+.inv38-181 { background: #a87e7e; }
+.ansi48-181 { background: #a87e7e; }
+.inv48-181 { color: #a87e7e; }
+.ansi38-182 { color: #a87ea8; }
+.inv38-182 { background: #a87ea8; }
+.ansi48-182 { background: #a87ea8; }
+.inv48-182 { color: #a87ea8; }
+.ansi38-183 { color: #a87ed2; }
+.inv38-183 { background: #a87ed2; }
+.ansi48-183 { background: #a87ed2; }
+.inv48-183 { color: #a87ed2; }
+.ansi38-214 { color: #d27e00; }
+.inv38-214 { background: #d27e00; }
+.ansi48-214 { background: #d27e00; }
+.inv48-214 { color: #d27e00; }
+.ansi38-215 { color: #d27e2a; }
+.inv38-215 { background: #d27e2a; }
+.ansi48-215 { background: #d27e2a; }
+.inv48-215 { color: #d27e2a; }
+.ansi38-216 { color: #d27e54; }
+.inv38-216 { background: #d27e54; }
+.ansi48-216 { background: #d27e54; }
+.inv48-216 { color: #d27e54; }
+.ansi38-217 { color: #d27e7e; }
+.inv38-217 { background: #d27e7e; }
+.ansi48-217 { background: #d27e7e; }
+.inv48-217 { color: #d27e7e; }
+.ansi38-218 { color: #d27ea8; }
+.inv38-218 { background: #d27ea8; }
+.ansi48-218 { background: #d27ea8; }
+.inv48-218 { color: #d27ea8; }
+.ansi38-219 { color: #d27ed2; }
+.inv38-219 { background: #d27ed2; }
+.ansi48-219 { background: #d27ed2; }
+.inv48-219 { color: #d27ed2; }
+.ansi38-40 { color: #00a800; }
+.inv38-40 { background: #00a800; }
+.ansi48-40 { background: #00a800; }
+.inv48-40 { color: #00a800; }
+.ansi38-41 { color: #00a82a; }
+.inv38-41 { background: #00a82a; }
+.ansi48-41 { background: #00a82a; }
+.inv48-41 { color: #00a82a; }
+.ansi38-42 { color: #00a854; }
+.inv38-42 { background: #00a854; }
+.ansi48-42 { background: #00a854; }
+.inv48-42 { color: #00a854; }
+.ansi38-43 { color: #00a87e; }
+.inv38-43 { background: #00a87e; }
+.ansi48-43 { background: #00a87e; }
+.inv48-43 { color: #00a87e; }
+.ansi38-44 { color: #00a8a8; }
+.inv38-44 { background: #00a8a8; }
+.ansi48-44 { background: #00a8a8; }
+.inv48-44 { color: #00a8a8; }
+.ansi38-45 { color: #00a8d2; }
+.inv38-45 { background: #00a8d2; }
+.ansi48-45 { background: #00a8d2; }
+.inv48-45 { color: #00a8d2; }
+.ansi38-76 { color: #2aa800; }
+.inv38-76 { background: #2aa800; }
+.ansi48-76 { background: #2aa800; }
+.inv48-76 { color: #2aa800; }
+.ansi38-77 { color: #2aa82a; }
+.inv38-77 { background: #2aa82a; }
+.ansi48-77 { background: #2aa82a; }
+.inv48-77 { color: #2aa82a; }
+.ansi38-78 { color: #2aa854; }
+.inv38-78 { background: #2aa854; }
+.ansi48-78 { background: #2aa854; }
+.inv48-78 { color: #2aa854; }
+.ansi38-79 { color: #2aa87e; }
+.inv38-79 { background: #2aa87e; }
+.ansi48-79 { background: #2aa87e; }
+.inv48-79 { color: #2aa87e; }
+.ansi38-80 { color: #2aa8a8; }
+.inv38-80 { background: #2aa8a8; }
+.ansi48-80 { background: #2aa8a8; }
+.inv48-80 { color: #2aa8a8; }
+.ansi38-81 { color: #2aa8d2; }
+.inv38-81 { background: #2aa8d2; }
+.ansi48-81 { background: #2aa8d2; }
+.inv48-81 { color: #2aa8d2; }
+.ansi38-112 { color: #54a800; }
+.inv38-112 { background: #54a800; }
+.ansi48-112 { background: #54a800; }
+.inv48-112 { color: #54a800; }
+.ansi38-113 { color: #54a82a; }
+.inv38-113 { background: #54a82a; }
+.ansi48-113 { background: #54a82a; }
+.inv48-113 { color: #54a82a; }
+.ansi38-114 { color: #54a854; }
+.inv38-114 { background: #54a854; }
+.ansi48-114 { background: #54a854; }
+.inv48-114 { color: #54a854; }
+.ansi38-115 { color: #54a87e; }
+.inv38-115 { background: #54a87e; }
+.ansi48-115 { background: #54a87e; }
+.inv48-115 { color: #54a87e; }
+.ansi38-116 { color: #54a8a8; }
+.inv38-116 { background: #54a8a8; }
+.ansi48-116 { background: #54a8a8; }
+.inv48-116 { color: #54a8a8; }
+.ansi38-117 { color: #54a8d2; }
+.inv38-117 { background: #54a8d2; }
+.ansi48-117 { background: #54a8d2; }
+.inv48-117 { color: #54a8d2; }
+.ansi38-148 { color: #7ea800; }
+.inv38-148 { background: #7ea800; }
+.ansi48-148 { background: #7ea800; }
+.inv48-148 { color: #7ea800; }
+.ansi38-149 { color: #7ea82a; }
+.inv38-149 { background: #7ea82a; }
+.ansi48-149 { background: #7ea82a; }
+.inv48-149 { color: #7ea82a; }
+.ansi38-150 { color: #7ea854; }
+.inv38-150 { background: #7ea854; }
+.ansi48-150 { background: #7ea854; }
+.inv48-150 { color: #7ea854; }
+.ansi38-151 { color: #7ea87e; }
+.inv38-151 { background: #7ea87e; }
+.ansi48-151 { background: #7ea87e; }
+.inv48-151 { color: #7ea87e; }
+.ansi38-152 { color: #7ea8a8; }
+.inv38-152 { background: #7ea8a8; }
+.ansi48-152 { background: #7ea8a8; }
+.inv48-152 { color: #7ea8a8; }
+.ansi38-153 { color: #7ea8d2; }
+.inv38-153 { background: #7ea8d2; }
+.ansi48-153 { background: #7ea8d2; }
+.inv48-153 { color: #7ea8d2; }
+.ansi38-184 { color: #a8a800; }
+.inv38-184 { background: #a8a800; }
+.ansi48-184 { background: #a8a800; }
+.inv48-184 { color: #a8a800; }
+.ansi38-185 { color: #a8a82a; }
+.inv38-185 { background: #a8a82a; }
+.ansi48-185 { background: #a8a82a; }
+.inv48-185 { color: #a8a82a; }
+.ansi38-186 { color: #a8a854; }
+.inv38-186 { background: #a8a854; }
+.ansi48-186 { background: #a8a854; }
+.inv48-186 { color: #a8a854; }
+.ansi38-187 { color: #a8a87e; }
+.inv38-187 { background: #a8a87e; }
+.ansi48-187 { background: #a8a87e; }
+.inv48-187 { color: #a8a87e; }
+.ansi38-188 { color: #a8a8a8; }
+.inv38-188 { background: #a8a8a8; }
+.ansi48-188 { background: #a8a8a8; }
+.inv48-188 { color: #a8a8a8; }
+.ansi38-189 { color: #a8a8d2; }
+.inv38-189 { background: #a8a8d2; }
+.ansi48-189 { background: #a8a8d2; }
+.inv48-189 { color: #a8a8d2; }
+.ansi38-220 { color: #d2a800; }
+.inv38-220 { background: #d2a800; }
+.ansi48-220 { background: #d2a800; }
+.inv48-220 { color: #d2a800; }
+.ansi38-221 { color: #d2a82a; }
+.inv38-221 { background: #d2a82a; }
+.ansi48-221 { background: #d2a82a; }
+.inv48-221 { color: #d2a82a; }
+.ansi38-222 { color: #d2a854; }
+.inv38-222 { background: #d2a854; }
+.ansi48-222 { background: #d2a854; }
+.inv48-222 { color: #d2a854; }
+.ansi38-223 { color: #d2a87e; }
+.inv38-223 { background: #d2a87e; }
+.ansi48-223 { background: #d2a87e; }
+.inv48-223 { color: #d2a87e; }
+.ansi38-224 { color: #d2a8a8; }
+.inv38-224 { background: #d2a8a8; }
+.ansi48-224 { background: #d2a8a8; }
+.inv48-224 { color: #d2a8a8; }
+.ansi38-225 { color: #d2a8d2; }
+.inv38-225 { background: #d2a8d2; }
+.ansi48-225 { background: #d2a8d2; }
+.inv48-225 { color: #d2a8d2; }
+.ansi38-46 { color: #00d200; }
+.inv38-46 { background: #00d200; }
+.ansi48-46 { background: #00d200; }
+.inv48-46 { color: #00d200; }
+.ansi38-47 { color: #00d22a; }
+.inv38-47 { background: #00d22a; }
+.ansi48-47 { background: #00d22a; }
+.inv48-47 { color: #00d22a; }
+.ansi38-48 { color: #00d254; }
+.inv38-48 { background: #00d254; }
+.ansi48-48 { background: #00d254; }
+.inv48-48 { color: #00d254; }
+.ansi38-49 { color: #00d27e; }
+.inv38-49 { background: #00d27e; }
+.ansi48-49 { background: #00d27e; }
+.inv48-49 { color: #00d27e; }
+.ansi38-50 { color: #00d2a8; }
+.inv38-50 { background: #00d2a8; }
+.ansi48-50 { background: #00d2a8; }
+.inv48-50 { color: #00d2a8; }
+.ansi38-51 { color: #00d2d2; }
+.inv38-51 { background: #00d2d2; }
+.ansi48-51 { background: #00d2d2; }
+.inv48-51 { color: #00d2d2; }
+.ansi38-82 { color: #2ad200; }
+.inv38-82 { background: #2ad200; }
+.ansi48-82 { background: #2ad200; }
+.inv48-82 { color: #2ad200; }
+.ansi38-83 { color: #2ad22a; }
+.inv38-83 { background: #2ad22a; }
+.ansi48-83 { background: #2ad22a; }
+.inv48-83 { color: #2ad22a; }
+.ansi38-84 { color: #2ad254; }
+.inv38-84 { background: #2ad254; }
+.ansi48-84 { background: #2ad254; }
+.inv48-84 { color: #2ad254; }
+.ansi38-85 { color: #2ad27e; }
+.inv38-85 { background: #2ad27e; }
+.ansi48-85 { background: #2ad27e; }
+.inv48-85 { color: #2ad27e; }
+.ansi38-86 { color: #2ad2a8; }
+.inv38-86 { background: #2ad2a8; }
+.ansi48-86 { background: #2ad2a8; }
+.inv48-86 { color: #2ad2a8; }
+.ansi38-87 { color: #2ad2d2; }
+.inv38-87 { background: #2ad2d2; }
+.ansi48-87 { background: #2ad2d2; }
+.inv48-87 { color: #2ad2d2; }
+.ansi38-118 { color: #54d200; }
+.inv38-118 { background: #54d200; }
+.ansi48-118 { background: #54d200; }
+.inv48-118 { color: #54d200; }
+.ansi38-119 { color: #54d22a; }
+.inv38-119 { background: #54d22a; }
+.ansi48-119 { background: #54d22a; }
+.inv48-119 { color: #54d22a; }
+.ansi38-120 { color: #54d254; }
+.inv38-120 { background: #54d254; }
+.ansi48-120 { background: #54d254; }
+.inv48-120 { color: #54d254; }
+.ansi38-121 { color: #54d27e; }
+.inv38-121 { background: #54d27e; }
+.ansi48-121 { background: #54d27e; }
+.inv48-121 { color: #54d27e; }
+.ansi38-122 { color: #54d2a8; }
+.inv38-122 { background: #54d2a8; }
+.ansi48-122 { background: #54d2a8; }
+.inv48-122 { color: #54d2a8; }
+.ansi38-123 { color: #54d2d2; }
+.inv38-123 { background: #54d2d2; }
+.ansi48-123 { background: #54d2d2; }
+.inv48-123 { color: #54d2d2; }
+.ansi38-154 { color: #7ed200; }
+.inv38-154 { background: #7ed200; }
+.ansi48-154 { background: #7ed200; }
+.inv48-154 { color: #7ed200; }
+.ansi38-155 { color: #7ed22a; }
+.inv38-155 { background: #7ed22a; }
+.ansi48-155 { background: #7ed22a; }
+.inv48-155 { color: #7ed22a; }
+.ansi38-156 { color: #7ed254; }
+.inv38-156 { background: #7ed254; }
+.ansi48-156 { background: #7ed254; }
+.inv48-156 { color: #7ed254; }
+.ansi38-157 { color: #7ed27e; }
+.inv38-157 { background: #7ed27e; }
+.ansi48-157 { background: #7ed27e; }
+.inv48-157 { color: #7ed27e; }
+.ansi38-158 { color: #7ed2a8; }
+.inv38-158 { background: #7ed2a8; }
+.ansi48-158 { background: #7ed2a8; }
+.inv48-158 { color: #7ed2a8; }
+.ansi38-159 { color: #7ed2d2; }
+.inv38-159 { background: #7ed2d2; }
+.ansi48-159 { background: #7ed2d2; }
+.inv48-159 { color: #7ed2d2; }
+.ansi38-190 { color: #a8d200; }
+.inv38-190 { background: #a8d200; }
+.ansi48-190 { background: #a8d200; }
+.inv48-190 { color: #a8d200; }
+.ansi38-191 { color: #a8d22a; }
+.inv38-191 { background: #a8d22a; }
+.ansi48-191 { background: #a8d22a; }
+.inv48-191 { color: #a8d22a; }
+.ansi38-192 { color: #a8d254; }
+.inv38-192 { background: #a8d254; }
+.ansi48-192 { background: #a8d254; }
+.inv48-192 { color: #a8d254; }
+.ansi38-193 { color: #a8d27e; }
+.inv38-193 { background: #a8d27e; }
+.ansi48-193 { background: #a8d27e; }
+.inv48-193 { color: #a8d27e; }
+.ansi38-194 { color: #a8d2a8; }
+.inv38-194 { background: #a8d2a8; }
+.ansi48-194 { background: #a8d2a8; }
+.inv48-194 { color: #a8d2a8; }
+.ansi38-195 { color: #a8d2d2; }
+.inv38-195 { background: #a8d2d2; }
+.ansi48-195 { background: #a8d2d2; }
+.inv48-195 { color: #a8d2d2; }
+.ansi38-226 { color: #d2d200; }
+.inv38-226 { background: #d2d200; }
+.ansi48-226 { background: #d2d200; }
+.inv48-226 { color: #d2d200; }
+.ansi38-227 { color: #d2d22a; }
+.inv38-227 { background: #d2d22a; }
+.ansi48-227 { background: #d2d22a; }
+.inv48-227 { color: #d2d22a; }
+.ansi38-228 { color: #d2d254; }
+.inv38-228 { background: #d2d254; }
+.ansi48-228 { background: #d2d254; }
+.inv48-228 { color: #d2d254; }
+.ansi38-229 { color: #d2d27e; }
+.inv38-229 { background: #d2d27e; }
+.ansi48-229 { background: #d2d27e; }
+.inv48-229 { color: #d2d27e; }
+.ansi38-230 { color: #d2d2a8; }
+.inv38-230 { background: #d2d2a8; }
+.ansi48-230 { background: #d2d2a8; }
+.inv48-230 { color: #d2d2a8; }
+.ansi38-231 { color: #d2d2d2; }
+.inv38-231 { background: #d2d2d2; }
+.ansi48-231 { background: #d2d2d2; }
+.inv48-231 { color: #d2d2d2; }
+.ansi38-232 { color: #080808; }
+.inv38-232 { background: #080808; }
+.ansi48-232 { background: #080808; }
+.inv48-232 { color: #080808; }
+.ansi38-233 { color: #121212; }
+.inv38-233 { background: #121212; }
+.ansi48-233 { background: #121212; }
+.inv48-233 { color: #121212; }
+.ansi38-234 { color: #1c1c1c; }
+.inv38-234 { background: #1c1c1c; }
+.ansi48-234 { background: #1c1c1c; }
+.inv48-234 { color: #1c1c1c; }
+.ansi38-235 { color: #262626; }
+.inv38-235 { background: #262626; }
+.ansi48-235 { background: #262626; }
+.inv48-235 { color: #262626; }
+.ansi38-236 { color: #303030; }
+.inv38-236 { background: #303030; }
+.ansi48-236 { background: #303030; }
+.inv48-236 { color: #303030; }
+.ansi38-237 { color: #3a3a3a; }
+.inv38-237 { background: #3a3a3a; }
+.ansi48-237 { background: #3a3a3a; }
+.inv48-237 { color: #3a3a3a; }
+.ansi38-238 { color: #444444; }
+.inv38-238 { background: #444444; }
+.ansi48-238 { background: #444444; }
+.inv48-238 { color: #444444; }
+.ansi38-239 { color: #4e4e4e; }
+.inv38-239 { background: #4e4e4e; }
+.ansi48-239 { background: #4e4e4e; }
+.inv48-239 { color: #4e4e4e; }
+.ansi38-240 { color: #585858; }
+.inv38-240 { background: #585858; }
+.ansi48-240 { background: #585858; }
+.inv48-240 { color: #585858; }
+.ansi38-241 { color: #626262; }
+.inv38-241 { background: #626262; }
+.ansi48-241 { background: #626262; }
+.inv48-241 { color: #626262; }
+.ansi38-242 { color: #6c6c6c; }
+.inv38-242 { background: #6c6c6c; }
+.ansi48-242 { background: #6c6c6c; }
+.inv48-242 { color: #6c6c6c; }
+.ansi38-243 { color: #767676; }
+.inv38-243 { background: #767676; }
+.ansi48-243 { background: #767676; }
+.inv48-243 { color: #767676; }
+.ansi38-244 { color: #808080; }
+.inv38-244 { background: #808080; }
+.ansi48-244 { background: #808080; }
+.inv48-244 { color: #808080; }
+.ansi38-245 { color: #8a8a8a; }
+.inv38-245 { background: #8a8a8a; }
+.ansi48-245 { background: #8a8a8a; }
+.inv48-245 { color: #8a8a8a; }
+.ansi38-246 { color: #949494; }
+.inv38-246 { background: #949494; }
+.ansi48-246 { background: #949494; }
+.inv48-246 { color: #949494; }
+.ansi38-247 { color: #9e9e9e; }
+.inv38-247 { background: #9e9e9e; }
+.ansi48-247 { background: #9e9e9e; }
+.inv48-247 { color: #9e9e9e; }
+.ansi38-248 { color: #a8a8a8; }
+.inv38-248 { background: #a8a8a8; }
+.ansi48-248 { background: #a8a8a8; }
+.inv48-248 { color: #a8a8a8; }
+.ansi38-249 { color: #b2b2b2; }
+.inv38-249 { background: #b2b2b2; }
+.ansi48-249 { background: #b2b2b2; }
+.inv48-249 { color: #b2b2b2; }
+.ansi38-250 { color: #bcbcbc; }
+.inv38-250 { background: #bcbcbc; }
+.ansi48-250 { background: #bcbcbc; }
+.inv48-250 { color: #bcbcbc; }
+.ansi38-251 { color: #c6c6c6; }
+.inv38-251 { background: #c6c6c6; }
+.ansi48-251 { background: #c6c6c6; }
+.inv48-251 { color: #c6c6c6; }
+.ansi38-252 { color: #d0d0d0; }
+.inv38-252 { background: #d0d0d0; }
+.ansi48-252 { background: #d0d0d0; }
+.inv48-252 { color: #d0d0d0; }
+.ansi38-253 { color: #dadada; }
+.inv38-253 { background: #dadada; }
+.ansi48-253 { background: #dadada; }
+.inv48-253 { color: #dadada; }
+.ansi38-254 { color: #e4e4e4; }
+.inv38-254 { background: #e4e4e4; }
+.ansi48-254 { background: #e4e4e4; }
+.inv48-254 { color: #e4e4e4; }
+.ansi38-255 { color: #eeeeee; }
+.inv38-255 { background: #eeeeee; }
+.ansi48-255 { background: #eeeeee; }
+.inv48-255 { color: #eeeeee; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content">
+
+Dispositions diverses et transitoires
+――――
+
+
+1er
+――――
+
+Le code pénal est ainsi modifié :
+1° L'article 225-4-1 est ainsi rédigé :
+"Art. 225-4-1. - I. - La traite des êtres humains est le fait de recruter une personne, de la transporter, de la transférer, de l'héberger ou de l'accueillir à des fins d'exploitation dans l'une des circonstances suivantes :
+"1° Soit avec l'emploi de menace, de contrainte, de violence ou de manoeuvre dolosive visant la victime, sa famille ou une personne en relation habituelle avec la victime ;
+"2° Soit par un ascendant légitime, naturel ou adoptif de cette personne ou par une personne qui a autorité sur elle ou abuse de l'autorité que lui confèrent ses fonctions ;
+"2° bis Soit par abus d'une situation de vulnérabilité due à son âge, à une maladie, à une infirmité, à une déficience physique ou psychique ou à un état de grossesse, apparente ou connue de son auteur ;
+"3° Soit en échange ou par l'octroi d'une rémunération ou de tout autre avantage ou d'une promesse de rémunération ou d'avantage.
+"L'exploitation mentionnée au premier alinéa est le fait de mettre la victime à sa disposition ou à la disposition d'un tiers, même non identifié, afin soit de permettre la commission contre la victime des infractions de proxénétisme, d'agression ou d'atteintes sexuelles, de soumission à du travail ou des services forcés ou à de l'esclavage, de prélèvement de l'un de ses organes, d'exploitation de la mendicité, de conditions de travail ou d'hébergement contraires à sa dignité, soit de contraindre la victime à commettre tout crime ou délit.
+"La traite des êtres humains est punie de sept ans d'emprisonnement et de 150 000 € d'amende.
+"II. - La traite des êtres humains à l'égard d'un mineur est constituée même si elle n'est commise dans aucune des circonstances prévues aux 1° à 3° du I.
+"Elle est punie de dix ans d'emprisonnement et de 1 500 000 € d'amende.
+"III. - (Supprimé)
+2° L'article 225-4-2 est ainsi rédigé :
+"Art. 225-4-2. - I. - L'infraction prévue au I de l'article 225-4-1 du présent code est punie de dix ans d'emprisonnement et de 1 500 000 € d'amende lorsqu'elle est commise dans deux des circonstances mentionnées aux 1° à 3° du même article 225-4-1 ou avec l'une des circonstances supplémentaires suivantes :
+"1° À l'égard de plusieurs personnes ;
+"2° À l'égard d'une personne qui se trouvait hors du territoire de la République ou lors de son arrivée sur le territoire de la République ;
+"3° Lorsque la personne a été mise en contact avec l'auteur des faits grâce à l'utilisation, pour la diffusion de messages à destination d'un public non déterminé, d'un réseau de communication électronique ;
+"4° Dans des circonstances qui exposent directement la personne à l'égard de laquelle l'infraction est commise à un risque immédiat de mort ou de blessures de nature à entraîner une mutilation ou une infirmité permanente ;
+"5° Avec l'emploi de violences qui ont causé à la victime une incapacité totale de travail de plus de huit jours ;
+"6° Par une personne appelée à participer, par ses fonctions, à la lutte contre la traite ou au maintien de l'ordre public ;
+"7° Lorsque l'infraction a placé la victime dans une situation matérielle ou psychologique grave.
+"II. - L'infraction prévue au II de l'article 225-4-1 est punie de quinze ans de réclusion criminelle et de 1 500 000 € d'amende lorsqu'elle a été commise dans l'une des circonstances mentionnées aux 1° à 3° du même article 225-4-1 ou dans l'une des circonstances mentionnées aux 1° à 7° du I du présent article." ;
+3° L'article 225-4-8 est ainsi rétabli :
+"Art. 225-4-8. - Lorsque les infractions prévues aux articles 225-4-1 et 225-4-2 sont commises hors du territoire de la République par un Français, la loi française est applicable par dérogation au deuxième alinéa de l'article 113-6 et la seconde phrase de l'article 113-8 n'est pas applicable." ;
+4° La section 3 du chapitre V du titre II du livre II est ainsi modifiée :
+a) L'intitulé est complété par les mots : "et du travail forcé" ;
+b) Après l'article 225-14, il est inséré un article 225-14-1 ainsi rédigé :
+"Art. 225-14-1. - Le fait, par la violence ou la menace, de contraindre une personne à effectuer un travail sans rétribution ou en échange d'une rétribution manifestement sans rapport avec l'importance du travail accompli est puni de cinq ans d'emprisonnement et de 150 000 € d'amende." ;
+c) Au premier alinéa de l'article 225-15, la référence : "et 225-14" est remplacée par la référence : "à 225-14-1" ;
+5° À la fin du 5° de l'article 225-19, les mots : "l'infraction prévue à l'article 225-14" sont remplacés par les mots : "les infractions prévues aux articles 225-13 à 225-14-1".
+
+2
+――――
+
+Le code de procédure pénale est ainsi modifié :
+1° A Après l'article 2-21, il est inséré un article 2-22 ainsi rédigé :
+"Art. 2-22. - Toute association régulièrement déclarée depuis au moins cinq ans à la date des faits, dont l'objet statutaire comporte la lutte contre la traite des êtres humains, peut exercer les droits reconnus à la partie civile, en ce qui concerne les infractions de traite des êtres humains réprimées par les articles 225-4-1 à 225-4-9 du code pénal. Toutefois, l'association n'est recevable dans son action que si elle justifie avoir reçu l'accord de la victime. Si celle-ci est un mineur ou un majeur protégé, l'accord doit être donné par son représentant légal." ;
+1° Au premier alinéa de l'article 706-47, après le mot : "sexuelles", sont insérés les mots : ", de traite des êtres humains à l'égard d'un mineur" et, après la référence : "222-31,", sont insérées les références : "225-4-1 à 225-4-4," ;
+2° Au début de l'article 706-53, il est ajouté un alinéa ainsi rédigé :
+"À tous les stades de la procédure, le mineur victime d'un crime ou d'un délit peut, à sa demande, être accompagné par son représentant légal et, le cas échéant, par la personne majeure de son choix, sauf s'il a été fait application de l'article 706-50 ou sauf décision contraire motivée prise par l'autorité judiciaire compétente."
+
+Dispositions diverses et transitoires
+――――
+
+
+2 bis
+――――
+
+I. - La section 1 du chapitre IV du titre II du livre II du code pénal devient la section 1 bis.
+II. - La section 1 du même chapitre IV est ainsi rétablie :
+"Section 1
+"De l'esclavage et de la servitude
+"Art. 224-1 A. - L'esclavage est le fait d'exercer sur une personne l'un des attributs du droit de propriété ou de maintenir une personne dans un état de sujétion continuelle en la contraignant à une prestation de travail ou à une relation sexuelle ou à la mendicité ou à toute prestation non rémunérée. Il est puni de quinze ans de réclusion criminelle.
+"Art. 224-1 B. - La servitude est le fait de contraindre une personne à prêter ses services, en lui imposant des conditions de logement et en dirigeant sa vie de manière à lui faire perdre toute liberté. Elle est punie d'une peine de quinze ans de réclusion criminelle.
+"Art. 224-1 C. - Les crimes d'esclavage et de servitude définis aux articles 224-1 A et 224-1 B sont punis de vingt ans de réclusion criminelle lorsqu'ils sont commis :
+"1° À l'égard d'un mineur ;
+"2° À l'égard d'une personne dont la particulière vulnérabilité, due à son âge, à une maladie, à une infirmité, à une déficience physique ou psychique ou à un état de grossesse est apparente ou connue de l'auteur ;
+"3° À l'égard de plusieurs personnes ;
+"4° À l'égard d'une personne qui se trouvait hors du territoire de la République ou lors de son arrivée sur le territoire de la République ;
+"5° Avec l'emploi de menaces, de contraintes, de violences ou de manoeuvres dolosives visant l'intéressé, sa famille ou une personne étant en relation habituelle avec lui ;
+"6° Par un ascendant légitime, naturel ou adoptif ou par une personne qui a autorité sur la victime ou abuse de l'autorité que lui confèrent ses fonctions ;
+"7° Par une personne appelée à participer, par ses fonctions, à la lutte contre l'esclavage ou au maintien de l'ordre public."
+III. - Au 4° du I de l'article 224-9 du même code, la référence : "à la section 1" est remplacée par les références : "aux sections 1 et 1 bis".
+IV. - À l'article 224-10 du même code, la référence : "la section 1" est remplacée par les références : "les sections 1 et 1 bis".
+
+Dispositions diverses et transitoires
+――――
+
+
+3
+――――
+
+Le III de l'article préliminaire du code de procédure pénale est ainsi modifié :
+1° Après le deuxième alinéa, il est inséré un alinéa ainsi rédigé :
+"Si cette personne ne comprend pas la langue française, elle a droit, dans une langue qu'elle comprend et jusqu'au terme de la procédure, à l'assistance d'un interprète et à la traduction des pièces essentielles à l'exercice de sa défense et à la garantie du caractère équitable du procès qui doivent, à ce titre, lui être remises ou notifiées en application du présent code." ;
+2° À la première phrase du troisième alinéa, les mots : "cette personne" sont remplacés par les mots : "la personne suspectée ou poursuivie".
+
+Dispositions diverses et transitoires
+――――
+
+
+4
+――――
+
+Le titre II du livre II du code pénal est ainsi modifié :
+1° La section 3 du chapitre II est complétée par un article 222-22-2 ainsi rédigé :
+"Art. 222-22-2. - Constitue également une agression sexuelle le fait de contraindre une personne par la violence, la menace ou la surprise à subir une atteinte sexuelle de la part d'un tiers.
+"Ces faits sont punis des peines prévues aux articles 222-24 à 222-30 selon la nature des atteintes subies et selon les circonstances mentionnées à ces mêmes articles.
+"La tentative du délit prévu au présent article est punie des mêmes peines." ;
+2° L'article 222-29 est ainsi modifié :
+a) Après les mots : "imposées", la fin du premier alinéa est ainsi rédigée : "à une personne dont la particulière vulnérabilité due à son âge, à une maladie, à une infirmité, à une déficience physique ou psychique ou à un état de grossesse est apparente ou connue de son auteur." ;
+b) Les 1° et 2° sont abrogés ;
+3° L'article 222-30 est complété par un alinéa ainsi rédigé :
+"Est punie des mêmes peines l'infraction définie à l'article 222-27 lorsqu'elle est commise sur un mineur de quinze ans." ;
+4° L'article 225-11-2 est complété par un alinéa ainsi rédigé :
+"Il en est de même dans le cas où l'un des crimes mentionnés aux articles 225-7-1, 225-8 ou 225-9 a été commis sur un mineur hors du territoire de la République par un étranger résidant habituellement sur le territoire français." ;
+5° L'article 227-22 est ainsi modifié :
+a) À la seconde phrase du premier alinéa, les mots : "lorsque le mineur est âgé de moins de quinze ans ou" sont supprimés ;
+b) Le dernier alinéa est complété par les mots : "ou à l'encontre d'un mineur de quinze ans" ;
+c) Le deuxième alinéa est complété par les mots : "ou d'assister en connaissance de cause à de telles réunions" ;
+6° L'article 227-23 est ainsi modifié :
+a) Le premier alinéa est complété par une phrase ainsi rédigée :
+"Lorsque l'image ou la représentation concerne un mineur de quinze ans, ces faits sont punis même s'ils n'ont pas été commis en vue de la diffusion de cette image ou représentation." ;
+b) Le quatrième alinéa est supprimé ;
+c) Au cinquième alinéa, après le mot : "habituellement", sont insérés les mots : "ou en contrepartie d'un paiement" et, après les mots : "disposition une telle image ou représentation", sont insérés les mots : ", d'acquérir" ;
+d) Avant le dernier alinéa, il est inséré un alinéa ainsi rédigé :
+"La tentative des délits prévus au présent article est punie des mêmes peines." ;
+7° Au premier alinéa de l'article 227-27, les mots : "et non émancipé par le mariage" sont supprimés et les mots : "deux ans d'emprisonnement et de 30 000 €" sont remplacés par les mots : "trois ans d'emprisonnement et de 45 000 €" ;
+8° L'article 227-27-2 est ainsi rétabli :
+"Art. 227-27-2. - La tentative des délits prévus aux articles 227-25, 227-26 et 227-27 est punie des mêmes peines."
+
+4 bis
+――――
+
+Le code de procédure pénale est ainsi modifié :
+1° Le second alinéa de l'article 356 est supprimé ;
+2° La deuxième phrase du premier alinéa de l'article 706-50 est supprimée.
+
+Dispositions diverses et transitoires
+――――
+
+
+5
+――――
+
+Le chapitre IV du titre X du livre IV du code de procédure pénale est ainsi modifié :
+1° L'article 695-17 est complété par un alinéa ainsi rédigé :
+"Lorsque la personne arrêtée est recherchée aux fins d'exécution d'une peine ou d'une mesure de sûreté privative de liberté et que, ayant été condamnée en son absence, elle demande que lui soit communiquée la décision de condamnation, le ministère public, dès qu'il est informé de cette demande, transmet une copie de la décision à l'autorité judiciaire de l'État membre d'exécution pour qu'elle la remette à l'intéressé." ;
+2° Après l'article 695-22, il est inséré un article 695-22-1 ainsi rédigé :
+"Art. 695-22-1. - Lorsque le mandat d'arrêt européen est émis aux fins d'exécution d'une peine ou d'une mesure de sûreté privative de liberté, son exécution est également refusée dans le cas où l'intéressé n'a pas comparu en personne lors du procès à l'issue duquel la peine ou la mesure de sûreté a été prononcée sauf si, selon les indications portées par l'État membre d'émission dans le mandat d'arrêt européen, il se trouve dans l'un des cas suivants :
+"1° Il a été informé officiellement et effectivement, de manière non équivoque, en temps utile, par voie de citation ou par tout autre moyen, de la date et du lieu fixés pour le procès et de la possibilité qu'une décision puisse être rendue à son encontre en cas de non-comparution ;
+"2° Ayant eu connaissance de la date et du lieu du procès, il a été effectivement défendu pendant celui-ci par un conseil, désigné soit par lui-même, soit à la demande de l'autorité publique, auquel il avait donné mandat à cet effet ;
+"3° Ayant reçu signification de la décision et ayant été expressément informé de son droit d'exercer à l'encontre de celle-ci un recours permettant d'obtenir un nouvel examen de l'affaire au fond, en sa présence, par une juridiction ayant le pouvoir de prendre une décision annulant la décision initiale ou se substituant à celle-ci, il a indiqué expressément qu'il ne contestait pas la décision initiale ou n'a pas exercé dans le délai imparti le recours qui lui était ouvert ;
+"4° La décision dont il n'a pas reçu signification doit lui être signifiée dès sa remise lors de laquelle il est en outre informé de la possibilité d'exercer le recours prévu au 3° ainsi que du délai imparti pour l'exercer." ;
+3° L'article 695-27 est complété par un alinéa ainsi rédigé :
+"Lorsque le mandat d'arrêt européen a été émis aux fins d'exécution d'une peine ou d'une mesure de sûreté privative de liberté et que la personne se trouve dans le cas prévu au 4° de l'article 695-22-1 et n'a pas été informée officiellement de l'existence des poursuites pénales ayant abouti à la décision de condamnation, elle peut demander à recevoir copie de celle-ci avant la remise. Le procureur général informe de cette demande l'autorité compétente de l'État membre d'émission. Dès que cette autorité lui a adressé copie de la décision, le procureur général la communique à l'intéressé. Cette communication est faite pour information. Elle ne vaut pas signification de la décision et ne fait courir aucun délai de recours."
+
+6
+――――
+
+Le 7° de l'article 713-20 du même code est ainsi rédigé :
+"7° Si, selon les indications portées dans le certificat, l'intéressé n'a pas comparu en personne lors du procès à l'issue duquel la confiscation a été prononcée sauf si, selon ces indications, il se trouve dans l'un des cas prévus aux 1° à 3° de l'article 695-22-1 ;".
+
+Dispositions diverses et transitoires
+――――
+
+
+7
+――――
+
+La section 3 du chapitre II du titre X du livre IV du code de procédure pénale est ainsi modifiée :
+1° L'article 695-4 est ainsi modifié :
+a) Les mots : "d'un représentant" sont remplacés par les mots : "du membre" ;
+b) Sont ajoutés trois alinéas ainsi rédigés :
+"L'unité Eurojust peut également, avec l'accord des États membres concernés :
+"1° Coordonner l'exécution des demandes d'entraide judiciaire émises par un État non membre de l'Union européenne lorsque ces demandes se rattachent à des investigations portant sur les mêmes faits et doivent être exécutées dans deux États membres au moins ;
+"2° Faciliter l'exécution des demandes d'entraide judiciaire devant être exécutées dans un État non membre de l'Union européenne lorsqu'elles se rattachent à des investigations portant sur les mêmes faits et émanent d'au moins deux États membres." ;
+2° L'article 695-5 est ainsi modifié :
+a) Au premier alinéa, les mots : "de ses représentants nationaux" sont remplacés par les mots : "du membre national" ;
+b) Il est ajouté un alinéa ainsi rédigé :
+"L'unité Eurojust agissant par l'intermédiaire du membre national peut, en outre, demander au procureur général de faire prendre toute mesure d'investigation particulière ou toute autre mesure justifiée par les investigations ou les poursuites." ;
+3° Après l'article 695-5, il est inséré un article 695-5-1 ainsi rédigé :
+"Art. 695-5-1. - L'unité Eurojust, agissant en tant que collège, peut adresser au procureur général ou au juge d'instruction un avis écrit et motivé sur la manière de résoudre un conflit de compétences ou sur des difficultés ou refus récurrents rencontrés dans l'exécution de demandes présentées ou de décisions prises en matière de coopération judiciaire en application, notamment, d'instruments fondés sur le principe de reconnaissance mutuelle.
+"Le procureur général ou le juge d'instruction peuvent faire état auprès du collège d'Eurojust des difficultés ou refus mentionnés au premier alinéa et solliciter de celui-ci qu'il rende un avis écrit et motivé à ce sujet." ;
+4° L'article 695-6 est ainsi modifié :
+a) Au premier alinéa, après le mot : "demande", sont insérés les mots : "ou à un avis" ;
+b) Le second alinéa est ainsi rédigé :
+"Toutefois, cette motivation n'est pas obligatoire lorsqu'elle peut porter atteinte à la sécurité de la Nation ou compromettre la sécurité d'une personne." ;
+5° L'article 695-7 est ainsi modifié :
+a) Les mots : "d'entraide" sont remplacés par les mots : "présentée ou une décision prise en matière de coopération judiciaire en application, notamment, d'un instrument mettant en oeuvre le principe de reconnaissance mutuelle" ;
+b) Le mot : "représentant" est remplacé par le mot : "membre" ;
+c) Il est ajouté un alinéa ainsi rédigé :
+"En cas d'urgence, la demande de coopération peut être adressée au dispositif permanent de coordination d'Eurojust."
+
+8
+――――
+
+La section 4 du chapitre II du titre X du livre IV du même code est ainsi modifiée :
+1° À l'intitulé, les mots : "représentant national auprès" sont remplacés par les mots : "membre national" ;
+2° Au premier alinéa de l'article 695-8, le mot : "représentant" est remplacé par le mot : "membre" et le mot : "trois" est remplacé par le mot : "quatre" ;
+3° Après l'article 695-8, sont insérés des articles 695-8-1 à 695-8-5 ainsi rédigés :
+"Art. 695-8-1. - Pour les nécessités liées à l'accomplissement de sa mission, le membre national de l'unité Eurojust a accès, dans les mêmes conditions que les magistrats du ministère public, aux données contenues dans tout traitement automatisé de données à caractère personnel.
+"Art. 695-8-2. - I. - Le membre national est informé par le procureur général, le procureur de la République ou le juge d'instruction des investigations ou procédures en cours ainsi que des condamnations relatives à des affaires susceptibles d'entrer dans le champ de compétence d'Eurojust, lorsque :
+"1° Elles ont donné lieu ou sont susceptibles de donner lieu à la transmission à au moins deux États membres de demandes ou de décisions en matière de coopération judiciaire en application, notamment, d'instruments fondés sur le principe de reconnaissance mutuelle ;
+"2° Elles portent sur une infraction punissable, dans l'un au moins des États membres concernés, d'une peine ou d'une mesure de sûreté privative de liberté égale ou supérieure à cinq ans, lorsque l'une des conditions suivantes est remplie :
+"a) L'infraction entre dans l'une des catégories suivantes :
+"- traite des êtres humains ;
+"- exploitation sexuelle des enfants et pédopornographie ;
+"- trafic de drogue ;
+"- trafic d'armes à feu, de leurs éléments et munitions ;
+"- corruption ;
+"- fraude portant atteinte aux intérêts financiers de l'Union européenne ;
+"- contrefaçon de l'euro ;
+"- blanchiment de capitaux ;
+"- attaques visant les systèmes d'information ;
+"b) Les éléments du dossier font apparaître l'implication d'une organisation criminelle ;
+"c) Les éléments du dossier font apparaître que, par leur ampleur ou leur incidence transfrontalière, les faits sont susceptibles d'affecter gravement l'Union européenne ou de concerner des États membres autres que ceux directement impliqués.
+"Le membre national est, en outre, informé par le procureur général, le procureur de la République ou le juge d'instruction des investigations, des procédures et des condamnations relatives aux infractions terroristes qui intéressent, ou sont susceptibles d'intéresser, au moins un autre État membre.
+"II. - Le membre national est également informé par le procureur général, le procureur de la République ou le juge d'instruction :
+"1° De la mise en place des équipes communes d'enquête et des résultats de leurs travaux ;
+"2° De la mise en oeuvre d'une mesure de surveillance de l'acheminement ou du transport des objets, biens ou produits tirés de la commission d'une ou plusieurs infractions ou servant à les commettre, lorsque la mesure concerne au moins trois États dont au moins deux États membres ;
+"3° Des conflits de compétences avec un autre État membre et des difficultés ou refus récurrents d'exécution de demandes présentées ou de décisions prises en matière de coopération judiciaire en application, notamment, d'instruments fondés sur le principe de reconnaissance mutuelle.
+"III. - Le procureur général, le procureur de la République ou le juge d'instruction n'est pas tenu de communiquer à l'unité Eurojust les informations mentionnées aux I et II lorsque cette communication serait de nature à porter atteinte à la sécurité de la Nation ou à compromettre la sécurité d'une personne.
+"Art. 695-8-3. - Le membre national est compétent pour recevoir et transmettre au procureur général compétent des informations relatives aux enquêtes de l'Office européen de lutte antifraude dont il est destinataire.
+"Art. 695-8-4. - En qualité d'autorité nationale compétente, le membre national peut recevoir et transmettre, selon le cas, aux autorités compétentes des autres États membres ou aux autorités judiciaires françaises toutes demandes présentées ou toutes décisions prises par les unes ou les autres en matière de coopération judiciaire en application, notamment, d'instruments fondés sur le principe de reconnaissance mutuelle. Il peut assurer le suivi de ces demandes et décisions et en faciliter l'exécution. Lorsqu'il fait usage de ces prérogatives, le membre national en avise dans les plus brefs délais l'autorité judiciaire compétente.
+"Lorsqu'une demande ou une décision en matière de coopération judiciaire a fait l'objet, de la part des autorités judiciaires françaises, d'une exécution partielle ou insuffisante, le membre national peut demander à ces autorités l'accomplissement des mesures complémentaires qui lui paraissent nécessaires.
+"Art. 695-8-5. - I. - Le membre national peut, en qualité d'autorité nationale, à la demande ou avec l'autorisation de l'autorité judiciaire compétente, présenter des demandes ou prendre des décisions en matière de coopération judiciaire en application, notamment, d'instruments fondés sur le principe de reconnaissance mutuelle.
+"II. - Le membre national peut, en qualité d'autorité nationale, à la demande ou avec l'autorisation de l'autorité judiciaire compétente, procéder aux actes suivants ou requérir qu'il y soit procédé :
+"1° Actes nécessaires à l'exécution des demandes présentées ou des décisions prises en matière de coopération judiciaire par un autre État membre en application, notamment, d'instruments fondés sur le principe de reconnaissance mutuelle ;
+"2° Actes d'investigation qui ont été considérés, à l'issue d'une réunion de coordination organisée par l'unité Eurojust, comme nécessaires pour l'efficacité d'investigations conduites sur le territoire de plusieurs États membres ;
+"3° Opération de surveillance de l'acheminement ou du transport des objets, biens ou produits tirés de la commission d'une ou plusieurs infractions ou servant à les commettre ;
+"La demande ou l'autorisation de l'autorité judiciaire compétente prévue au I et au premier alinéa du présent II est écrite et ne peut porter que sur un ou plusieurs actes déterminés. En cas de refus d'autorisation par l'autorité judiciaire compétente, celle-ci fait connaître, dans les meilleurs délais et par écrit, au membre national d'Eurojust les motifs de ce refus. Dès l'exécution d'un acte mentionné dans la demande ou l'autorisation, le membre national en informe cette autorité et lui adresse les pièces d'exécution, en original ou en copie, selon la décision de celle-ci.
+"À tout moment, l'exécution d'un acte mentionné à l'avant-dernier alinéa du présent II peut être interrompue par l'autorité judiciaire l'ayant demandé ou autorisé." ;
+4° L'article 695-9 est ainsi rédigé :
+"Art. 695-9. - Avec l'accord de l'autorité judiciaire compétente, le membre national peut participer, en tant que représentant d'Eurojust, à la mise en place et au fonctionnement des équipes communes d'enquête. Il est invité à y participer lorsque l'équipe commune d'enquête bénéficie d'un financement de l'Union européenne."
+
+Dispositions diverses et transitoires
+――――
+
+
+9
+――――
+
+Le titre II du livre V du code de procédure pénale est complété par un chapitre VI ainsi rédigé :
+"Chapitre VI
+"De l'exécution des décisions de condamnation à une peine ou à une mesure de sûreté privative de liberté en application de la décision-cadre 2008/909/JAI du Conseil, du 27 novembre 2008, concernant l'application du principe de reconnaissance mutuelle aux jugements en matière pénale prononçant des peines ou des mesures privatives de liberté aux fins de leur exécution dans l'Union européenne
+"Section 1
+"Dispositions générales
+"Art. 728-10. - Les dispositions du présent chapitre déterminent les règles applicables, en vue de faciliter la réinsertion sociale de la personne condamnée, à la reconnaissance et à l'exécution, dans un État membre de l'Union européenne des condamnations pénales définitives à une peine ou à une mesure de sûreté privative de liberté prononcées par les juridictions françaises ainsi qu'à la reconnaissance et à l'exécution en France de telles condamnations prononcées par les juridictions d'un autre État membre.
+"L'État sur le territoire duquel a été prononcée la décision est appelé État de condamnation. L'État auquel est demandée l'exécution de cette décision sur son territoire est appelé État d'exécution.
+"Art. 728-11. - Une décision de condamnation prononcée par une juridiction française ou une juridiction d'un État membre peut être transmise, selon le cas, par l'autorité française compétente aux fins de reconnaissance et d'exécution dans l'État de condamnation ou à cette autorité aux fins de reconnaissance et d'exécution en France si la personne condamnée se trouve sur le territoire français ou celui de l'autre État membre et dans les cas suivants :
+"1° La personne condamnée est une ressortissante de l'État d'exécution et a sa résidence habituelle sur le territoire de cet État ou, lorsque la France est l'État d'exécution, est une ressortissante française et a sa résidence habituelle sur le territoire français ;
+"2° La personne condamnée est une ressortissante de l'État d'exécution ou, lorsque la France est l'État d'exécution, une ressortissante française et fait l'objet, en vertu de la décision de condamnation ou de toute autre décision judiciaire ou administrative, d'une mesure d'éloignement vers le territoire de l'État dont elle est ressortissante, applicable à sa libération ;
+"3° La personne condamnée, quelle que soit sa nationalité, ainsi que l'autorité compétente de l'État d'exécution ou, lorsque la France est État d'exécution, l'autorité compétente française consentent à l'exécution de la décision de la condamnation faisant l'objet de la transmission.
+"Dans le cas prévu au 3°, le consentement de la personne condamnée n'est pas requis lorsqu'elle s'est réfugiée sur le territoire de l'État d'exécution ou, lorsque la France est l'État d'exécution, sur le territoire français ou y est retournée en raison de sa condamnation ou des investigations et des poursuites ayant abouti à celle-ci.
+"Dans le cas prévu au 3° et lorsque la France est État d'exécution, l'autorité compétente ne peut consentir à l'exécution de la peine sur le territoire français que lorsque la personne condamnée réside légalement sur le territoire national de façon continue depuis au moins cinq ans.
+"Art. 728-12. - Toute décision de condamnation transmise en application du présent chapitre aux fins de reconnaissance et d'exécution sur le territoire français ou sur celui d'un autre État membre ou toute demande de transit est accompagnée d'un certificat précisant notamment :
+"1° La désignation de l'État de condamnation et de la juridiction ayant rendu la décision de condamnation ;
+"2° L'identité de la personne à l'encontre de laquelle la décision de condamnation a été rendue, l'adresse de son ou ses derniers domiciles connus et l'indication qu'elle se trouve dans l'État de condamnation ou dans l'État d'exécution ;
+"3° La date de la décision de condamnation et celle à laquelle cette décision est devenue définitive ;
+"4° Les motifs de la transmission de la décision de condamnation au regard de l'article 728-11 ;
+"5° La date, le lieu et les circonstances dans lesquels la ou les infractions ont été commises ainsi que la nature, la qualification juridique et une description complète des faits ;
+"6° La nature de la peine ou de la mesure de sûreté privative de liberté à exécuter, sa durée totale, la part déjà exécutée et la date prévue de fin d'exécution ;
+"7° L'indication, le cas échéant, du consentement de la personne condamnée à la transmission de la décision de condamnation ;
+"8° Les observations éventuelles de la personne condamnée sur la transmission de la décision de condamnation.
+"Le certificat est signé par l'autorité compétente de l'État de condamnation, qui atteste l'exactitude des informations y étant contenues.
+"Art. 728-13. - Le retrait du certificat vaut retrait de la demande de reconnaissance et d'exécution et fait obstacle à la mise à exécution de la peine ou de la mesure de sûreté privative de liberté en application du présent chapitre.
+"Art. 728-14. - La transmission de la décision de condamnation, de la demande de transit, du certificat et de toutes les pièces relatives à l'exécution de la condamnation ainsi que tout échange relatif à celle-ci s'effectuent directement, selon le cas, avec les autorités compétentes de l'État de condamnation ou celles de l'État d'exécution, par tout moyen laissant une trace écrite et dans des conditions permettant au destinataire de vérifier l'authenticité des pièces transmises.
+"Section 2
+"Dispositions relatives à l'exécution, sur le territoire des autres États membres de l'Union européenne, des condamnations prononcées par les juridictions françaises
+"Paragraphe 1
+"Transmission de la demande par le ministère public
+"Art. 728-15. - Le représentant du ministère public près la juridiction ayant prononcé la décision de condamnation est compétent pour transmettre à l'autorité compétente d'un autre État membre de l'Union européenne, aux fins qu'elle reconnaisse cette décision et la ramène à exécution, une copie de celle-ci et, après l'avoir établi et signé, le certificat prévu à l'article 728-12.
+"Il peut procéder à cette transmission d'office ou à la demande de l'autorité compétente de l'État d'exécution ou de la personne condamnée.
+"Il peut décider la transmission lorsque les conditions prévues à l'article 728-11 sont réunies et qu'il a acquis la certitude que l'exécution de la condamnation sur le territoire de l'autre État membre facilitera la réinsertion sociale de l'intéressé.
+"Art. 728-16. - Avant de procéder à la transmission de la décision de condamnation et du certificat, le représentant du ministère public peut consulter l'autorité compétente de l'État d'exécution afin de déterminer, notamment, si l'exécution de la condamnation sur le territoire de celui-ci est de nature à faciliter la réinsertion sociale de la personne condamnée. Une telle consultation est obligatoire dans les cas autres que ceux visés aux 1° et 2° de l'article 728-11.
+"Art. 728-17. - Lorsque la personne condamnée se trouve sur le territoire français, le représentant du ministère public procède ou fait procéder à son audition aux fins de recueillir ses observations orales ou écrites sur la transmission envisagée. Il recueille son consentement lorsque celui-ci est requis en application du 3° de l'article 728-11. Si la personne condamnée est mineure ou si elle fait l'objet d'une mesure de protection, il procède ou fait procéder, en outre, à l'audition de la personne chargée de la représenter ou de l'assister. Il est dressé procès-verbal des auditions. Le cas échéant, la personne chargée d'assister ou de représenter le mineur ou la personne faisant l'objet d'une mesure de protection peut faire part de ses observations orales ou écrites, qui sont jointes au dossier.
+"Lorsque la personne condamnée ou la personne chargée de la représenter ou de l'assister en raison de sa minorité ou d'une mesure de protection se trouve sur le territoire de l'État d'exécution, le ministère public demande à l'autorité compétente de cet État de procéder aux auditions prévues au premier alinéa.
+"Art. 728-18. - Si le représentant du ministère public décide de transmettre la décision de condamnation et le certificat à l'autorité compétente de l'État d'exécution, il en informe la personne condamnée dans une langue qu'elle comprend. Il l'informe en outre :
+"1° Que, en cas d'exécution de la condamnation sur le territoire de cet État, l'exécution de la peine sera régie par sa législation qui déterminera ainsi, notamment, les conditions d'une libération anticipée ou conditionnelle ;
+"2° Que la période de privation de liberté déjà subie au titre de la condamnation sera déduite de la peine restant à exécuter ;
+"3° Que l'autorité compétente de l'État d'exécution peut décider d'adapter la peine ou la mesure de sûreté privative de liberté prononcée si, par sa durée ou sa nature, elle est incompatible avec la législation de cet État ;
+"4° Que l'adaptation de la peine ou de la mesure de sûreté privative de liberté par l'État d'exécution ne peut avoir pour effet de l'aggraver.
+"Il est dressé procès-verbal de la formalité prévue au présent article.
+"Si la personne condamnée se trouve sur le territoire de l'État d'exécution, le représentant du ministère public demande à l'autorité compétente de cet État de procéder à cette formalité.
+"Art. 728-19. - Le représentant du ministère public transmet à l'autorité compétente de l'État d'exécution une copie certifiée conforme de la décision de condamnation ainsi que l'original ou une copie du certificat mentionné à l'article 728-12 et, le cas échéant, une copie du procès-verbal d'audition de la personne condamnée et du procès-verbal d'audition de la personne chargée de la représenter ou de l'assister.
+"Il transmet, en outre, à cette autorité une traduction du certificat soit dans la langue officielle ou dans une des langues officielles de l'État d'exécution, soit dans l'une des langues officielles des institutions de l'Union européenne acceptées par cet État. Sur demande de l'autorité compétente de l'État d'exécution, il fait établir et transmet la traduction, dans les mêmes conditions, de la décision de condamnation ou des parties essentielles de cette décision.
+"Sur demande de l'autorité compétente de l'État d'exécution, la copie certifiée conforme de la décision de condamnation et l'original du certificat lui sont adressés dans les meilleurs délais.
+"Art. 728-20. - Lorsque la personne condamnée se trouve sur le territoire de l'État d'exécution, le ministère public peut demander à l'autorité compétente de cet État, lors de la transmission de la décision de condamnation et du certificat, de procéder à l'arrestation provisoire de la personne condamnée ou de prendre toute mesure permettant d'assurer son maintien sur le territoire de cet État dans l'attente de la décision de reconnaissance et d'exécution.
+"En cas d'urgence, si le représentant du ministère public n'est pas en mesure d'adresser le certificat à l'autorité compétente de l'État de condamnation, il lui transmet les informations mentionnées aux 1° à 6° de l'article 728-12.
+"Art. 728-21. - Lorsque le représentant du ministère public est consulté par l'autorité compétente de l'État d'exécution sur une reconnaissance partielle de la décision de condamnation, il examine, après avoir envisagé en lien avec cette autorité les modalités possibles d'une telle solution, si un accord peut être trouvé.
+"L'exécution partielle de la décision de condamnation ne peut avoir pour conséquence d'accroître la durée de la peine ou de la mesure de sûreté privative de liberté.
+"S'il approuve les modalités d'exécution partielle envisagées, le représentant du ministère public donne son accord. Dans le cas contraire, il retire le certificat.
+"Art. 728-22. - Tant que l'exécution de la peine n'a pas commencé, le représentant du ministère public peut, à tout moment, décider de retirer le certificat. Il indique à l'autorité compétente de l'État d'exécution le motif de ce retrait.
+"Le certificat est retiré, notamment, lorsque :
+"1° L'autorité compétente de l'État d'exécution ayant émis, postérieurement à la transmission de la décision de condamnation, un avis motivé selon lequel l'exécution de la condamnation ne contribuerait pas à faciliter la réinsertion sociale de la personne condamnée, le représentant du ministère public estime cet avis fondé ;
+"2° L'autorité compétente de l'État d'exécution l'ayant informé de l'adaptation qui serait apportée à la peine prononcée, le représentant du ministère estime, au vu de cette information, ne pas devoir maintenir la demande aux fins de reconnaissance et d'exécution ;
+"3° L'autorité compétente de l'État d'exécution ayant communiqué, d'office ou à la demande du représentant du ministère public, les dispositions applicables dans cet État en matière de libération anticipée ou conditionnelle, celui-ci estime, au vu de cette information, ne pas devoir maintenir la demande aux fins de reconnaissance et d'exécution.
+"Paragraphe 2
+"Transfèrement et transit
+"Art. 728-23. - Dès que l'autorité compétente de l'État d'exécution a fait connaître qu'elle accepte de reconnaître la condamnation et de la mettre à exécution sur son territoire, le représentant du ministère public, si la personne condamnée se trouve sur le territoire français, prend les mesures nécessaires afin qu'elle soit transférée sur le territoire de l'État d'exécution.
+"Le transfèrement, dont la date est arrêtée conjointement par le ministre de la justice et l'autorité compétente de l'État d'exécution, a lieu au plus tard trente jours après la décision d'acceptation de l'État d'exécution. S'il est impossible d'y procéder dans ce délai en raison de circonstances imprévues, le transfèrement intervient dès que ces circonstances n'y font plus obstacle, à une nouvelle date arrêtée conjointement et, au plus tard, dans les dix jours de cette date.
+"Art. 728-24. - Le ministre de la justice transmet une demande de transit accompagnée d'une copie du certificat à l'autorité compétente de chaque État membre traversé à l'occasion du transfèrement. À la demande de cette autorité, il fournit une traduction du certificat dans la langue officielle ou dans une des langues officielles de l'État concerné ou dans l'une des langues officielles des institutions de l'Union européenne acceptées par cet État.
+"Art. 728-25. - Si l'État membre auquel le transit est demandé ne peut garantir que la personne condamnée ne sera pas poursuivie ou soumise à une mesure privative ou restrictive de liberté sur son territoire pour des faits ou condamnations antérieurs à son départ du territoire français, le ministre de la justice retire la demande de transit.
+"Art. 728-26. - Aucune demande de transit n'est requise lorsque le transfèrement s'effectue par un moyen de transport aérien sans escale prévue. Toutefois, en cas d'atterrissage fortuit sur le territoire d'un État membre de l'Union européenne, le ministre de la justice fournit à l'autorité compétente de cet État le certificat mentionné à l'article 728-12 dans un délai de soixante-douze heures.
+"Paragraphe 3
+"Consentement à l'exercice de poursuites ou à l'exécution d'une condamnation à raison d'une autre infraction
+"Art. 728-27. - Lorsque, avant ou après le transfèrement de la personne condamnée, l'autorité compétente de l'État d'exécution demande au représentant du ministère public qu'il soit consenti à ce que celle-ci puisse être poursuivie, condamnée ou privée de liberté dans l'État d'exécution pour une infraction qu'elle aurait commise avant son transfèrement, autre que celle pour laquelle la demande aux fins de reconnaissance et d'exécution a été présentée, la chambre de l'instruction est saisie de cette demande.
+"Lorsque la demande est présentée après le transfèrement, la chambre de l'instruction compétente est celle dans le ressort de laquelle siège la juridiction ayant prononcé la condamnation dont l'exécution a donné lieu au transfèrement.
+"La chambre de l'instruction statue sans recours après s'être assurée que la demande comporte les renseignements prévus à l'article 695-13 et avoir, le cas échéant, obtenu des garanties au regard de l'article 695-32, dans le délai de trente jours à compter de la réception de la demande.
+"Le consentement est donné lorsque les agissements pour lesquels il est demandé constituent l'une des infractions mentionnées à l'article 695-23 et entrent dans le champ d'application de l'article 695-12.
+"Paragraphe 4
+"Exécution de la peine
+"Art. 728-28. - L'exécution de la peine est régie par le droit de l'État sur le territoire duquel elle est exécutée.
+"Art. 728-29. - Lorsque la condamnation fait l'objet d'une amnistie, d'une grâce, d'une révision ou de toute autre décision ou mesure ayant pour effet de lui retirer, immédiatement ou non, son caractère exécutoire, le représentant du ministère public en informe sans délai l'autorité compétente de l'État d'exécution.
+"Art. 728-30. - Le ministère public recouvre la faculté de faire exécuter la décision de condamnation sur le territoire français dès que l'autorité compétente de l'État d'exécution l'informe de la non-exécution partielle de cette décision en raison de l'évasion de la personne condamnée ou du fait que celle-ci ne peut être trouvée sur le territoire de cet État.
+"Section 3
+"Dispositions relatives à l'exécution sur le territoire français des condamnations prononcées par les juridictions des autres États membres de l'Union européenne
+"Paragraphe 1
+"Motifs du refus de reconnaissance et d'exécution
+"Art. 728-31. - La reconnaissance et l'exécution sur le territoire français d'une décision de condamnation prononcée par la juridiction d'un autre État membre ne peuvent être refusées que dans les cas prévus aux articles 728-32 et 728-33.
+"La décision de refus est motivée par référence à ces mêmes articles.
+"Art. 728-32. - L'exécution de la décision de condamnation est refusée dans les cas suivants :
+"1° Le certificat n'est pas produit, est incomplet ou ne correspond manifestement pas à la décision de condamnation et n'a pas été complété ou corrigé dans le délai fixé ;
+"2° La personne condamnée ne se trouve ni en France, ni dans l'État de condamnation ;
+"3° Les conditions prévues à l'article 728-11 ne sont pas remplies ;
+"4° La décision de condamnation porte sur des infractions pour lesquelles la personne condamnée a déjà été jugée définitivement par les juridictions françaises ou par celles d'un État autre que l'État de condamnation, à condition que la peine ait été exécutée, soit en cours d'exécution ou ne puisse plus être mise à exécution selon la loi de l'État de condamnation ;
+"5° La condamnation est fondée sur des faits qui ne constituent pas des infractions selon la loi française ;
+"6° La personne condamnée bénéficie en France d'une immunité faisant obstacle à l'exécution de la condamnation ;
+"7° La personne condamnée n'a pas comparu en personne au procès qui a mené à la décision, sauf dans les cas visés aux 1° à 3° de l'article 695-22-1 ;
+"8° La prescription de la peine est acquise selon la loi française à la date de la réception du certificat ;
+"9° La condamnation a été prononcée à l'encontre d'un mineur de treize ans à la date des faits ;
+"10° La peine prononcée comporte une mesure de soins psychiatriques ou médicaux ou une autre mesure de sûreté privative de liberté qui ne peut être exécutée en application des règles du système juridique ou de santé français ;
+"11° Il est établi que la personne a été condamnée en raison de son sexe, de sa race, de sa religion, de son origine ethnique, de sa nationalité, de sa langue, de ses opinions politiques ou de son orientation ou identité sexuelle, ou qu'il peut être porté atteinte à la situation de cette personne pour l'une de ces raisons.
+"Le motif de refus prévu au 5° n'est pas opposable lorsque la décision de condamnation concerne une infraction en matière de taxes et d'impôts, de douane et de change, en raison de ce que le droit français n'impose pas le même type de taxes ou d'impôts ou ne contient pas le même type de réglementation en matière de taxes, d'impôts, de douane et de change que le droit de l'État de condamnation.
+"Art. 728-33. - L'exécution de la décision de condamnation peut être refusée dans les cas suivants :
+"1° La décision de condamnation est fondée sur des infractions commises en totalité, en majeure partie ou pour l'essentiel sur le territoire français ou en un lieu assimilé ;
+"2° La durée de la peine restant à exécuter est inférieure à six mois à la date de réception du certificat ;
+"3° L'État de condamnation a refusé de donner son consentement à ce que la personne condamnée puisse être poursuivie, condamnée ou privée de liberté en France pour une infraction commise avant son transfèrement, autre que celle ayant motivé celui-ci.
+"Paragraphe 2
+"Réception et instruction par le procureur de la République de la demande aux fins de reconnaissance et d'exécution
+"Art. 728-34. - Le procureur de la République reçoit les demandes tendant à la reconnaissance et à l'exécution sur le territoire français des décisions de condamnation prononcées par les juridictions des autres États membres. Il peut également demander à l'autorité compétente d'un autre État membre de lui transmettre une demande tendant à la reconnaissance et à l'exécution sur le territoire français d'une décision de condamnation prononcée par une juridiction de cet État.
+"Il peut procéder ou faire procéder à tout complément d'information qu'il estime utile.
+"Art. 728-35. - Le procureur de la République compétent est celui dans le ressort duquel se situe la dernière résidence connue de la personne condamnée, le lieu de détention de celle-ci ou le lieu de l'infraction lorsque les faits ont été commis pour partie sur le territoire français. À défaut, le procureur de la République près le tribunal de grande instance de Paris est compétent.
+"Si le procureur de la République auquel la demande a été adressée par l'État de condamnation aux fins de reconnaissance et d'exécution n'est pas compétent, il la transmet sans délai au procureur de la République compétent. L'autorité compétente de l'État de condamnation est informée de la transmission.
+"Art. 728-36. - Lorsque, avant de transmettre la décision de condamnation et le certificat, l'autorité compétente de l'État de condamnation consulte le procureur de la République, celui-ci l'informe sans délai, dans le cas où, en application du 3° de l'article 728-11, la reconnaissance de la décision est subordonnée au consentement de l'État d'exécution, de sa décision de consentir ou non à la transmission de la décision de condamnation et du certificat.
+"Lorsqu'il est consulté par l'autorité compétente de l'État de condamnation avant la transmission de la décision de condamnation et du certificat, le procureur de la République peut indiquer à l'autorité compétente de l'État de condamnation, dans un avis écrit et motivé, si l'exécution en France de la condamnation lui paraît de nature à favoriser la réinsertion sociale de la personne condamnée.
+"S'il n'a pas été consulté et que, ayant reçu la décision de condamnation et le certificat, il estime que l'exécution de la condamnation en France n'est pas de nature à favoriser la réinsertion sociale de la personne condamnée, le procureur de la République transmet d'office à l'autorité compétente un avis écrit et motivé en ce sens.
+"Art. 728-37. - Lorsque l'autorité compétente de l'État de condamnation lui en fait la demande, le procureur de la République procède à l'audition de la personne condamnée ou de la personne chargée de l'assister ou de la représenter en raison de sa minorité ou d'une mesure de protection, si elle se trouve sur le territoire français. Le cas échéant, il recueille le consentement de la personne condamnée. Le cas échéant, la personne chargée d'assister ou de représenter le mineur ou la personne faisant l'objet d'une mesure de protection peut faire part de ses observations orales ou écrites, qui sont jointes au dossier.
+"Art. 728-38. - Lorsqu'il reçoit la demande d'un État membre aux fins de reconnaissance et d'exécution en France d'une décision de condamnation à une peine ou à une mesure de sûreté privative de liberté prononcée par une juridiction de cet État, le procureur de la République s'assure de la transmission, par l'autorité compétente de l'État de condamnation, de la décision de condamnation ou d'une copie certifiée conforme de celle-ci ainsi que du certificat mentionné à l'article 728-12 et de sa traduction en langue française.
+"Le procureur de la République peut, s'il juge le contenu du certificat insuffisant pour prendre une décision sur la demande de reconnaissance et d'exécution, demander que la décision de condamnation ou les parties essentielles de celle-ci, désignées par lui en concertation avec l'autorité compétente de l'État de condamnation, fassent l'objet d'une traduction en langue française. Il peut également, s'il apparaît que le certificat est incomplet ou inexact, demander à cette autorité qu'il soit complété ou rectifié.
+"Art. 728-39. - Le procureur de la République peut demander à l'autorité compétente de l'État de condamnation si elle consent à ce que la personne condamnée puisse être poursuivie, condamnée ou privée de liberté en France pour une infraction commise avant son transfèrement. La demande doit comporter les renseignements prévus à l'article 695-13 et être traduite selon les modalités prévues à l'article 695-14.
+"Art. 728-40. - Lorsqu'il envisage d'opposer l'un des motifs de refus prévus aux 1° à 4°, 7°, 10° et 11° de l'article 728-32 ou au 1° de l'article 728-33, le procureur de la République en informe l'autorité compétente de l'État de condamnation afin de lui permettre de fournir, le cas échéant, toutes informations supplémentaires.
+"Art. 728-41. - Sur la demande de l'autorité compétente de l'État de condamnation, le procureur de la République lui donne connaissance des dispositions applicables en matière de libération conditionnelle ou anticipée.
+"Paragraphe 3
+"Décision sur la reconnaissance et l'exécution et recours
+"Art. 728-42. - Lorsqu'il est en possession des informations nécessaires, le procureur de la République décide, dans un délai maximal de huit jours, s'il y a lieu de reconnaître la décision de condamnation à une peine ou à une mesure de sûreté privative de liberté comme étant exécutoire sur le territoire français.
+"Art. 728-43. - Le procureur de la République reconnaît la décision de condamnation comme étant exécutoire sur le territoire français en l'absence de l'un des motifs de refus prévus aux articles 728-32 et 728-33.
+"Dans le cas où, en application du 3° de l'article 728-11, le consentement de l'autorité compétente de l'État d'exécution est requis, le procureur de la République apprécie s'il y a lieu de le donner en considérant, notamment, l'intérêt de sa décision pour la réinsertion sociale de la personne condamnée.
+"Dans le cas où le consentement de la personne condamnée est requis en application du même 3°, le procureur de la République constate expressément, dans la décision reconnaissant la décision de condamnation comme exécutoire, qu'il a été donné.
+"La décision du procureur de la République refusant de reconnaître la décision de condamnation comme exécutoire sur le territoire français est motivée.
+"Art. 728-44. - Si la décision de condamnation peut être reconnue comme étant exécutoire en France, le procureur de la République apprécie s'il y a lieu de procéder à l'adaptation de la peine ou de la mesure de sûreté privative de liberté prononcée.
+"Lorsque la durée de la peine ou de la mesure de sûreté privative de liberté prononcée est supérieure à celle qui aurait pu être légalement prononcée par une juridiction française pour les mêmes faits, le procureur de la République propose de la réduire au maximum légal encouru selon la loi française pour l'infraction correspondante. Lorsque la condamnation porte sur plusieurs infractions, il se réfère au maximum légal encouru pour l'infraction correspondante la plus sévèrement sanctionnée.
+"Lorsque, par sa nature, la peine ou la mesure de sûreté privative de liberté est incompatible avec la loi française, le procureur de la République propose de lui substituer la peine ou la mesure de sûreté privative de liberté encourue selon cette loi à moins que cette substitution n'ait pour conséquence d'aggraver la condamnation.
+"Art. 728-45. - (Supprimé)
+"Art. 728-46. - Lorsque la décision de condamnation est prononcée pour plusieurs infractions et que, pour l'un des motifs prévus aux articles 728-32 ou 728-33, elle ne peut être reconnue et exécutée en tant qu'elle porte sur l'une de ces infractions ou certaines d'entre elles, le procureur de la République consulte l'autorité compétente de l'État de condamnation afin de déterminer si une exécution partielle de la décision, du chef des seules infractions pouvant justifier la reconnaissance et l'exécution, est possible.
+"L'exécution partielle ne peut être décidée qu'avec l'accord de l'État de condamnation. Elle ne peut avoir pour effet d'accroître la durée de la peine ou de la mesure de sûreté privative de liberté.
+"Dans le cas prévu au premier alinéa du présent article, si une seule peine ou mesure de sûreté privative de liberté a été prononcée pour l'ensemble des infractions, la durée de la peine mise à exécution ne peut excéder, dans la limite de la durée de la peine prononcée, ni le maximum légalement applicable, selon la loi de l'État de condamnation, à l'infraction pouvant autoriser l'exécution de la décision en France, ni le maximum légalement applicable, selon la loi française, à l'infraction correspondante. Lorsque plusieurs des infractions ayant fait l'objet de la condamnation peuvent justifier la reconnaissance et l'exécution, l'infraction la plus sévèrement sanctionnée selon la loi de l'État de condamnation est prise en compte pour la détermination de la durée maximale de la peine susceptible d'être mise à exécution.
+"Art. 728-47. - Lorsque le procureur de la République propose d'adapter la peine en application de l'article 728-44, il saisit sans délai le président du tribunal de grande instance ou le juge délégué par lui aux fins d'homologation de la proposition d'adaptation.
+"Il communique au président du tribunal de grande instance ou au juge délégué par lui l'ensemble des pièces de la procédure.
+"Art. 728-48. - Dans les cinq jours de sa saisine, le président du tribunal de grande instance ou le juge délégué par lui décide, au vu des pièces qui lui ont été communiquées, s'il y a lieu d'homologuer la proposition d'adaptation formulée par le procureur de la République.
+"L'ordonnance par laquelle il refuse l'homologation est motivée.
+"Art. 728-49. - La décision du procureur de la République mentionnée à l'article 728-43 et, le cas échéant, l'ordonnance homologuant ou refusant d'homologuer la proposition d'adaptation de la peine ou de la mesure de sûreté privative de liberté mentionnée à l'article 728-48 sont notifiées sans délai à la personne condamnée. Celle-ci est informée par une mention portée dans l'acte de notification que, si elle n'accepte pas cette décision, elle dispose d'un délai de dix jours pour saisir la chambre des appels correctionnels d'une requête précisant, à peine d'irrecevabilité, les motifs de droit ou de fait de sa contestation et qu'elle a la possibilité de se faire représenter devant cette juridiction par un avocat de son choix ou, à défaut, par un avocat commis d'office par le bâtonnier de l'ordre des avocats.
+"Toutefois, la personne condamnée n'est pas recevable à saisir la chambre des appels correctionnels en cas de refus d'exécution opposé dans le cas prévu au 3° de l'article 728-11.
+"Art. 728-50. - En cas de refus d'homologation de la proposition d'adaptation qu'il a formulée, le procureur de la République peut soit saisir le président du tribunal de grande instance ou le juge délégué par lui d'une nouvelle requête lui soumettant une autre décision ou la même décision autrement motivée ou fondée sur des éléments nouveaux, soit, dans les dix jours de l'ordonnance refusant l'homologation, saisir la chambre des appels correctionnels pour qu'elle statue sur la reconnaissance et l'exécution de la décision de condamnation.
+"La personne condamnée est aussitôt informée de la saisine de la chambre des appels correctionnels et de son objet. Elle est invitée à faire connaître sans délai si elle entend se faire représenter devant cette juridiction par un avocat de son choix ou, à défaut, par un avocat commis d'office par le bâtonnier de l'ordre des avocats.
+"L'audience de la chambre des appels correctionnels ne peut se tenir moins de dix jours après que cette information a été fournie.
+"Art. 728-51. - En cas de saisine de la chambre des appels correctionnels, la décision du procureur de la République et l'ordonnance du président du tribunal de grande instance ou du juge délégué par lui sont non avenues.
+"Art. 728-52. - L'audience de la chambre des appels correctionnels est publique, sauf si la personne est mineure ou que la publicité est de nature à nuire au bon déroulement de la procédure en cours, aux intérêts d'un tiers ou à la dignité de la personne. Dans ce cas, la chambre des appels correctionnels, à la demande du ministère public, de l'avocat de la personne condamnée ou d'office, statue par un arrêt rendu en chambre du conseil qui n'est susceptible de pourvoi en cassation qu'en même temps que l'arrêt statuant sur la reconnaissance et l'exécution de la condamnation.
+"Le ministère public et, s'il en a été désigné, l'avocat de la personne condamnée, sont entendus. La chambre des appels correctionnels peut décider d'entendre la personne condamnée ou de la faire entendre par l'autorité compétente de l'État de condamnation.
+"La chambre des appels correctionnels peut, par une décision qui n'est susceptible d'aucun recours, autoriser l'État de condamnation à intervenir à l'audience par l'intermédiaire d'une personne habilitée par ce même État à cet effet. Lorsque l'État de condamnation est autorisé à intervenir, il ne devient pas partie à la procédure.
+"Art. 728-53. - Les articles 728-37 à 728-39 et 728-42 à 728-44 sont applicables devant la chambre des appels correctionnels. Pour l'application de ces mêmes articles, la chambre des appels correctionnels exerce les attributions du procureur de la République.
+"Si la demande de reconnaissance et d'exécution présentée par l'autorité compétente de l'État de condamnation entre dans les prévisions du 3° de l'article 728-11 et que le procureur général déclare ne pas consentir à l'exécution, la chambre des appels correctionnels lui en donne acte et constate que la peine ou la mesure de sûreté privative de liberté ne peut être mise à exécution en France.
+"Lorsque la chambre des appels correctionnels envisage d'opposer l'un des motifs de refus prévus aux 1° à 4°, 7°, 10° et 11° de l'article 728-32 ou au 1° de l'article 728-33, il n'y a pas lieu d'informer l'autorité compétente de l'État de condamnation s'il a déjà été procédé à cette information par le procureur de la République en application de l'article 728-40.
+"Art. 728-54. - Sauf si un complément d'information a été ordonné, la chambre des appels correctionnels statue dans les quinze jours de la tenue de l'audience.
+"Art. 728-55. - La décision de la chambre des appels correctionnels peut faire l'objet d'un pourvoi en cassation. L'article 568-1 et le premier alinéa de l'article 567-2 sont applicables.
+"Art. 728-56. - Lorsque, dans des cas exceptionnels, la décision définitive relative à la reconnaissance et à l'exécution de la condamnation ne peut être prise dans les quatre-vingt-dix jours qui suivent la réception de la décision de condamnation et du certificat, le procureur de la République en informe sans délai l'autorité compétente de l'État de condamnation en lui indiquant les raisons du retard et le délai supplémentaire qu'il estime nécessaire pour que soit prise la décision.
+"Dans le cas où le procureur de la République ou la chambre des appels correctionnels a demandé à l'autorité compétente de l'État de condamnation soit de compléter ou de corriger le certificat, soit de lui adresser une traduction complète ou partielle de la décision de condamnation, le cours du délai prévu au premier alinéa est suspendu à compter de la demande jusqu'à la transmission par l'État de condamnation des pièces demandées.
+"Art. 728-57. - Le procureur de la République informe sans délai l'autorité compétente de l'État de condamnation de la décision définitive prise sur la reconnaissance et l'exécution de la décision de condamnation et, le cas échéant, sur l'adaptation de la peine ou de la mesure de sûreté privative de liberté. Lorsque la décision définitive consiste en un refus de reconnaissance et d'exécution de la décision de condamnation ou comporte une adaptation de la peine ou de la mesure privative de liberté, le procureur de la République informe également l'autorité compétente de l'État de condamnation des motifs de la décision.
+"Lorsque, après adaptation de la peine ou de la mesure de sûreté privative de liberté et imputation sur la durée de celle-ci de la privation de liberté déjà subie, la décision de condamnation doit être regardée comme intégralement exécutée, le procureur de la République informe l'autorité compétente de l'État de condamnation que la personne condamnée ne pourra pas être écrouée en France en exécution de cette décision et que, en cas de transfèrement, elle sera mise immédiatement en liberté à son arrivée sur le sol français.
+"Paragraphe 4
+"Exécution de la peine
+"Art. 728-58. - Dès que la décision de reconnaître la décision de condamnation comme exécutoire en France est devenue définitive, la peine ou la mesure de sûreté privative de liberté peut être ramenée à exécution dans les conditions prévues par la décision, pour la partie qui restait à subir dans l'État de condamnation.
+"L'exécution de la peine est régie par le présent code.
+"Art. 728-59. - Lorsque la décision de condamnation fait l'objet soit d'une amnistie ou d'une grâce en France ou dans l'État de condamnation, soit d'une suspension ou d'une annulation décidée à la suite de l'engagement d'une procédure de révision dans l'État de condamnation, soit de toute autre décision ou mesure ayant pour effet de lui retirer son caractère exécutoire, le ministère public met fin à son exécution.
+"La condamnation prononcée à l'étranger ne peut faire l'objet d'une procédure de révision en France.
+"Art. 728-60. - Si la personne condamnée ne peut être retrouvée sur le territoire français, le procureur de la République informe l'autorité compétente de l'État de condamnation de l'impossibilité d'exécuter la décision de condamnation pour ce motif.
+"Art. 728-61. - Le retrait du certificat par l'État de condamnation, pour quelque cause que ce soit, fait obstacle à la mise à exécution de la condamnation s'il intervient avant que la personne condamnée ait été placée sous écrou au titre de cette exécution.
+"Art. 728-62. - Le ministère public informe sans délai l'autorité compétente de l'État de condamnation :
+"1° Des décisions ou mesures mentionnées à l'article 728-59, autres que celles prises par les autorités de l'État de condamnation, ayant retiré à la décision de condamnation son caractère exécutoire ;
+"2° De l'évasion de la personne condamnée ;
+"3° De la libération conditionnelle de la personne condamnée et de la date à laquelle cette mesure a pris fin ;
+"4° De ce que la peine ou la mesure de sûreté privative de liberté a été exécutée.
+"Paragraphe 5
+"Transfèrement
+"Art. 728-63. - Si la personne condamnée se trouve sur le territoire de l'État de condamnation, elle est transférée sur le territoire français à une date fixée par le ministre de la justice en accord avec l'autorité compétente de cet État, au plus tard trente jours à compter de la date à laquelle la décision de reconnaître la condamnation et d'exécuter la peine ou la mesure de sûreté privative de liberté a acquis un caractère définitif.
+"Si le transfèrement est impossible dans ce délai en raison de circonstances imprévues, le ministre de la justice et l'autorité compétente de l'État de condamnation conviennent d'une nouvelle date de transfèrement dès que ces circonstances ont cessé. Le transfèrement a lieu, au plus tard, dans les dix jours suivant cette nouvelle date.
+"Art. 728-64. - La personne transférée sur le territoire français pour la mise à exécution d'une condamnation à une peine ou à une mesure de sûreté privative de liberté prononcée par une juridiction d'un État membre ne peut être recherchée, poursuivie, condamnée ou détenue pour un fait quelconque antérieur à son transfèrement, autre que celui qui a motivé celui-ci, sauf si elle se trouve dans l'un des cas suivants :
+"1° Ayant eu la possibilité de le faire, elle n'a pas quitté le territoire national dans les quarante-cinq jours suivant sa libération définitive, ou y est retournée volontairement après l'avoir quitté ;
+"2° L'infraction n'est pas punie d'une peine ou d'une mesure de sûreté privative de liberté ;
+"3° Aucune mesure privative ou restrictive de liberté n'est appliquée durant la procédure suivie du chef de l'infraction reprochée ;
+"4° La personne condamnée n'est pas passible d'une peine ou d'une mesure privative de liberté en répression de cette infraction ;
+"5° Elle a consenti au transfèrement ;
+"6° Elle a renoncé expressément, après son transfèrement, devant le tribunal correctionnel du lieu d'exécution de la peine et dans les conditions prévues aux deux derniers alinéas de l'article 695-19, au bénéfice de la règle de la spécialité prévue au premier alinéa du présent article, sa renonciation étant irrévocable ;
+"7° L'autorité compétente de l'État de condamnation consent expressément à ce que cette règle soit écartée.
+"Art. 728-65. - La demande de consentement mentionnée au 7° de l'article 728-64 est adressée par le ministère public à l'autorité compétente de l'État de condamnation. Elle doit comporter les renseignements prévus à l'article 695-13 et être traduite selon les modalités prévues à l'article 695-14.
+"Paragraphe 6
+"Arrestation provisoire
+"Art. 728-66. - Lorsque la personne condamnée se trouve sur le territoire français et que l'autorité compétente de l'État de condamnation demande que, dans l'attente de la décision sur la reconnaissance et l'exécution de la décision de condamnation, la personne condamnée fasse l'objet d'une arrestation provisoire ou de toute autre mesure destinée à garantir son maintien sur le territoire français, le procureur de la République, s'il estime que la personne ne présente pas des garanties de représentation suffisantes, requiert qu'elle soit appréhendée et conduite devant lui dans les vingt-quatre heures. Pendant ce délai, les articles 63-2 et 63-3 sont applicables.
+"Dans le cas où la demande mentionnée au premier alinéa du présent article a été présentée par l'autorité compétente de l'État de condamnation avant la transmission par celle-ci de la décision de condamnation et du certificat, la personne ne peut être appréhendée en application du même premier alinéa que si l'autorité compétente de l'État de condamnation a fourni au procureur de la République les informations prévues aux 1° à 6° de l'article 728-12.
+"Art. 728-67. - Lorsque la personne lui est présentée, le procureur de la République vérifie son identité et l'informe, dans une langue qu'elle comprend, de la décision de condamnation dont elle fait l'objet et de la demande de l'État de condamnation. Il l'avise qu'il envisage de demander son incarcération, son assignation à résidence avec surveillance électronique ou son placement sous contrôle judiciaire au juge des libertés et de la détention et qu'elle peut être assistée par un avocat de son choix ou, à défaut, par un avocat commis d'office par le bâtonnier de l'ordre des avocats, informé sans délai et par tout moyen. Il l'avise également qu'elle peut s'entretenir immédiatement avec l'avocat désigné.
+"Art. 728-68. - La personne condamnée ne peut être placée en détention ou faire l'objet d'une assignation à résidence avec surveillance électronique en application de l'article 142-5 que si la durée de la peine restant à exécuter est supérieure ou égale à deux ans, sauf dans l'un des cas mentionnés à l'article 723-16.
+"Art. 728-69. - La personne comparaît devant le juge des libertés et de la détention assistée de son avocat. L'audience est publique, sauf si la publicité est de nature à nuire au bon déroulement de la procédure en cours, aux intérêts d'un tiers ou à la dignité de la personne. Dans ce cas, le juge des libertés et de la détention, à la demande du ministère public, de l'avocat de la personne ou d'office, statue par une ordonnance rendue en chambre du conseil.
+"Le juge des libertés et de la détention statue après avoir entendu le ministère public, la personne condamnée et son avocat. Si, saisi de réquisitions aux fins d'incarcération ou d'assignation à résidence avec surveillance électronique, il décide de ne pas y faire droit, il peut soumettre la personne à une ou plusieurs des obligations prévues à l'article 138.
+"Art. 728-70. - À tout moment, la personne peut demander au juge des libertés et de la détention, selon les modalités prévues aux articles 148-6 et 148-7, sa mise en liberté ou la mainlevée du contrôle judiciaire ou de l'assignation à résidence avec surveillance électronique.
+"Après avoir communiqué la demande mentionnée au premier alinéa du présent article au procureur de la République aux fins de réquisitions, le juge statue dans un délai de huit jours ouvrables par une décision motivée en considérant les garanties de représentation de la personne. Il peut, s'il l'estime utile, ordonner la comparution de la personne, assistée de son avocat. Les deux derniers alinéas de l'article 148 sont applicables. Pour l'application du dernier alinéa de ce même article, la chambre des appels correctionnels est compétente.
+"Dans le cas prévu au second alinéa de l'article 728-66, la personne est mise d'office en liberté si, dans les huit jours suivant son incarcération, l'autorité compétente de l'État de condamnation n'a pas transmis la décision de condamnation et le certificat.
+"Art. 728-71. - Les ordonnances rendues par le juge des libertés et de la détention en application des articles 728-69 et 728-70 peuvent faire l'objet d'un appel devant la chambre des appels correctionnels. Le troisième alinéa de l'article 194 et les deux derniers alinéas de l'article 199 sont applicables devant la chambre des appels correctionnels.
+"Art. 728-72. - La personne est immédiatement mise en liberté et il est mis fin à l'assignation à résidence avec surveillance électronique ou au contrôle judiciaire si la mise à exécution de la décision de condamnation est refusée ou si l'État de condamnation retire le certificat.
+"Section 4
+"Dispositions relatives au transit sur le territoire français
+"Art. 728-73. - Le ministre de la justice autorise le transit sur le territoire français des personnes transférées du territoire de l'État de condamnation à celui de l'État d'exécution.
+"Art. 728-74. - La demande de transit est accompagnée du certificat mentionné à l'article 728-12 établi par l'autorité compétente de l'État de condamnation. Le ministre de la justice peut demander la traduction en français du certificat.
+"Art. 728-75. - Lorsque le ministre de la justice ne peut garantir que la personne condamnée ne sera ni poursuivie, ni détenue, ni soumise à aucune autre restriction de sa liberté individuelle sur le territoire français, pour des faits ou condamnations antérieurs à son départ du territoire de l'État de condamnation, il en informe l'autorité qui a demandé le transit.
+"Art. 728-76. - Le ministre de la justice se prononce dans les plus brefs délais et au plus tard une semaine après réception de la demande de transit. Lorsqu'une traduction du certificat est demandée, ce délai ne court qu'à compter de la transmission de cette traduction.
+"Art. 728-77. - La personne condamnée ne peut être maintenue en détention que durant le temps strictement nécessaire au transit sur le territoire français.
+"Art. 728-78. - La présente section est applicable en cas d'atterrissage fortuit sur le territoire national au cours du transfèrement."
+
+Dispositions diverses et transitoires
+――――
+
+
+10
+――――
+
+I. - L'article 433-14 du code pénal est complété par un 4° ainsi rédigé :
+"4° D'user de l'emblème ou de la dénomination de l'un des signes distinctifs définis par les conventions signées à Genève le 12 août 1949 et leurs protocoles additionnels, ou d'une imitation de cet emblème ou de cette dénomination."
+II. - L'article 3 de la loi du 24 juillet 1913 portant application des articles 23, 27 et 28 de la convention internationale signée à Genève le 6 juillet 1906 pour l'amélioration du sort des blessés et malades dans les armées en campagne et des articles 5, 6 et 21 de la convention internationale signée à La Haye le 18 octobre 1907 pour l'adaptation à la guerre maritime des principes de la convention de Genève est abrogé.
+
+Dispositions diverses et transitoires
+――――
+
+
+11
+――――
+
+La loi n° 95-1 du 2 janvier 1995 portant adaptation de la législation française aux dispositions de la résolution 827 du Conseil de sécurité des Nations Unies instituant un tribunal international en vue de juger les personnes présumées responsables de violations graves du droit international humanitaire commises sur le territoire de l'ex-Yougoslavie depuis 1991 est ainsi modifiée :
+1° Après le premier alinéa de l'article 1er, il est inséré un alinéa ainsi rédigé :
+"Il en est de même pour l'application de la résolution 1966 du Conseil de sécurité des Nations Unies du 22 décembre 2010 instituant un mécanisme international chargé d'exercer les fonctions résiduelles des tribunaux pénaux." ;
+2° Au dernier alinéa de l'article 2, après le mot : "international", sont insérés les mots : "et le mécanisme résiduel", les mots : "est informé" sont remplacés par les mots : "sont informés" et le mot : "sa" est remplacé par le mot : "leur" ;
+3° Au premier alinéa de l'article 3, après le mot : "international", sont insérés les mots : "ou du mécanisme résiduel" ;
+4° Le premier alinéa de l'article 4 est complété par les mots : "ou au mécanisme résiduel" ;
+5° Le premier alinéa de l'article 5 est complété par les mots : "ou au mécanisme résiduel" ;
+6° Au second alinéa de l'article 6, après le mot : "international", sont insérés les mots : "ou le mécanisme résiduel" ;
+7° Au premier alinéa de l'article 7, après le mot : "international", sont insérés les mots : ", du mécanisme résiduel" et le mot : "son" est remplacé par le mot : "leur" ;
+8° L'article 8 est ainsi modifié :
+a) Le premier alinéa est complété par les mots : "ou près le mécanisme résiduel" ;
+b) Aux deux derniers alinéas, après le mot : "international", sont insérés les mots : "ou au mécanisme résiduel" ;
+9° Au premier alinéa de l'article 9, après le mot : "international", sont insérés les mots : "ou par le mécanisme résiduel" et le mot : "son" est remplacé par le mot : "leur" ;
+10° Au premier alinéa de l'article 15, après le mot : "international", sont insérés les mots : "ou du mécanisme résiduel" ;
+11° L'article 16 est ainsi modifié :
+a) La première phrase du premier alinéa est complétée par les mots : "ou du mécanisme résiduel" ;
+b) Au second alinéa, après le mot : "international", sont insérés les mots : "ou le mécanisme résiduel" ;
+12° L'article 16-1 est ainsi modifié :
+a) Au premier alinéa, après la seconde occurrence du mot : "international", sont insérés les mots : "ou par le mécanisme résiduel" ;
+b) La première phrase du second alinéa est complétée par les mots : "ou au mécanisme résiduel".
+
+12
+――――
+
+La loi n° 96-432 du 22 mai 1996 portant adaptation de la législation française aux dispositions de la résolution 955 du Conseil de sécurité des Nations Unies instituant un tribunal international en vue de juger les personnes présumées responsables d'actes de génocide ou d'autres violations graves du droit international humanitaire commis en 1994 sur le territoire du Rwanda et, s'agissant des citoyens rwandais, sur le territoire d'États voisins est ainsi modifiée :
+1° Après le premier alinéa de l'article 1er, il est inséré un alinéa ainsi rédigé :
+"Il en est de même pour l'application de la résolution 1966 du Conseil de sécurité des Nations Unies du 22 décembre 2010 instituant un mécanisme international chargé d'exercer les fonctions résiduelles des tribunaux pénaux." ;
+2° (Supprimé)
+
+Dispositions diverses et transitoires
+――――
+
+
+13
+――――
+
+Le code pénal est ainsi modifié :
+1° Le 9° de l'article 212-1 est ainsi rédigé :
+"9° La disparition forcée ;"
+2° Après le chapitre Ier du titre II du livre II, il est inséré un chapitre Ier bis ainsi rédigé :
+"Chapitre Ier bis
+"Des atteintes à la personne constituées par les disparitions forcées
+"Art. 221-12. - Constitue une disparition forcée l'arrestation, la détention, l'enlèvement ou toute autre forme de privation de liberté d'une personne, dans des conditions la soustrayant à la protection de la loi, par un ou plusieurs agents de l'État ou par une personne ou un groupe de personnes agissant avec l'autorisation, l'appui ou l'acquiescement des autorités de l'État, lorsque ces agissements sont suivis de sa disparition et accompagnés soit du déni de la reconnaissance de la privation de liberté, soit de la dissimulation du sort qui lui a été réservé ou de l'endroit où elle se trouve.
+"La disparition forcée est punie de la réclusion criminelle à perpétuité.
+"Les deux premiers alinéas de l'article 132-23, relatifs à la période de sûreté, sont applicables au crime prévu par le présent article.
+"Art. 221-13. - Sans préjudice de l'application de l'article 121-7, est considéré comme complice d'un crime de disparition forcée mentionné à l'article 221-12 commis par des subordonnés placés sous son autorité et son contrôle effectifs le supérieur qui savait, ou a délibérément négligé de tenir compte d'informations qui indiquaient clairement que ses subordonnés commettaient ou allaient commettre un crime de disparition forcée et qui n'a pas pris toutes les mesures nécessaires et raisonnables qui étaient en son pouvoir pour en empêcher ou en réprimer l'exécution ou pour en référer aux autorités compétentes aux fins d'enquête et de poursuites, alors que ce crime était lié à des activités relevant de sa responsabilité et de son contrôle effectifs.
+"Art. 221-14. - I. - Les personnes physiques coupables du crime prévu à l'article 221-12 encourent également les peines complémentaires suivantes :
+"1° L'interdiction des droits civiques, civils et de famille, selon les modalités prévues à l'article 131-26 ;
+"2° L'interdiction, suivant les modalités prévues à l'article 131-27, soit d'exercer une fonction publique ou l'activité professionnelle ou sociale dans l'exercice ou à l'occasion de l'exercice de laquelle l'infraction a été commise, soit d'exercer une profession commerciale ou industrielle, de diriger, d'administrer, de gérer ou de contrôler à un titre quelconque, directement ou indirectement, pour son propre compte ou pour le compte d'autrui, une entreprise commerciale ou industrielle ou une société commerciale. Ces interdictions d'exercice peuvent être prononcées cumulativement ;
+"3° L'interdiction de séjour, selon les modalités prévues à l'article 131-31 ;
+"4° et 5° (Supprimé)
+"6° La confiscation prévue à l'article 131-21.
+"II. - En cas de condamnation pour le crime prévu à l'article 221-12, le prononcé des peines complémentaires suivantes est obligatoire :
+"1° L'interdiction de détenir ou de porter, pour une durée de quinze ans au plus, une arme soumise à autorisation ;
+"2° La confiscation d'une ou de plusieurs armes dont le condamné est propriétaire ou dont il a la libre disposition.
+"Toutefois, la cour d'assises peut décider de ne pas prononcer ces peines, en considération des circonstances de l'infraction et de la personnalité de son auteur.
+"Art. 221-15. - Les personnes physiques coupables du crime prévu à l'article 221-12 encourent également le suivi socio-judiciaire selon les modalités prévues aux articles 131-36-1 à 131-36-13.
+"Art. 221-16. - L'interdiction du territoire français peut être prononcée dans les conditions prévues à l'article 131-30 soit à titre définitif, soit pour une durée de dix ans au plus, à l'encontre de tout étranger coupable du crime prévu à l'article 221-12.
+"Art. 221-17. - Les personnes morales déclarées responsables pénalement, dans les conditions prévues à l'article 121-2, du crime défini à l'article 221-12 encourent, outre l'amende suivant les modalités prévues à l'article 131-38, les peines mentionnées à l'article 131-39.
+"Art. 221-18. - L'action publique à l'égard du crime défini à l'article 221-12 ainsi que les peines prononcées se prescrivent par trente ans."
+
+14
+――――
+
+Le chapitre Ier du titre IX du livre IV du code de procédure pénale est complété par un article 689-13 ainsi rédigé :
+"Art. 689-13. - Pour l'application de la convention internationale pour la protection de toutes les personnes contre les disparitions forcées, adoptée à New York, le 20 décembre 2006, peut être poursuivie et jugée dans les conditions prévues à l'article 689-1 du présent code toute personne coupable ou complice d'un crime défini au 9° de l'article 212-1 ou à l'article 221-12 du code pénal lorsque cette infraction constitue une disparition forcée au sens de l'article 2 de la convention précitée."
+
+Dispositions diverses et transitoires
+――――
+
+
+15
+――――
+
+Le chapitre IV du titre X du livre IV du code de procédure pénale est ainsi modifié :
+1° L'intitulé est ainsi rédigé : "Du mandat d'arrêt européen, des procédures de remise entre États membres de l'Union européenne résultant de la décision-cadre du Conseil de l'Union européenne du 13 juin 2002 et des procédures de remise résultant d'accords conclus par l'Union européenne avec d'autres États" ;
+2° À l'article 695-14, les mots : "des Communautés européennes" sont remplacés par les mots : "de l'Union européenne" ;
+3° Après le mot : "française", la fin du 2° de l'article 695-24 est ainsi rédigée : "ou réside légalement de façon continue depuis au moins cinq ans sur le territoire national et que la décision de condamnation est exécutoire sur le territoire français en application de l'article 728-31 ;"
+4° À la première phrase du premier alinéa de l'article 695-26, après les mots : "Union européenne", sont insérés les mots : "ou d'un État lié à l'Union européenne par un accord mentionné à la section 5 du présent chapitre ;"
+5° L'article 695-32 est ainsi rédigé :
+"Art. 695-32. - Lorsque la personne recherchée est de nationalité française ou réside légalement sur le territoire national de façon continue depuis au moins cinq ans, l'exécution du mandat d'arrêt européen peut être subordonnée à la vérification qu'elle peut être renvoyée en France pour y effectuer la peine qui sera éventuellement prononcée par l'autorité judiciaire de l'État d'émission pour les faits faisant l'objet du mandat." ;
+6° Aux deux derniers alinéas de l'article 695-47, après le mot : "française", sont insérés les mots : "ou réside légalement de façon continue depuis au moins cinq ans sur le territoire national" ;
+7° À l'article 695-51, après la première occurrence du mot : "européenne", sont insérés les mots : "ou par un État lié à l'Union européenne par un accord mentionné à la section 5 du présent chapitre." ;
+8° Est ajoutée une section 5 ainsi rédigée :
+"Section 5
+"Des procédures de remise résultant d'accords conclus par l'Union européenne avec d'autres États
+"Art. 695-52. - En l'absence de stipulation contraire de l'accord concerné, le présent chapitre s'applique aux demandes de remise entre la France et un État non membre de l'Union européenne dès l'entrée en vigueur d'un accord conclu par l'Union européenne avec cet État et instituant un mécanisme de remise sur la base d'un mandat d'arrêt.
+"Pour l'application de la présente section, les mots : "mandat d'arrêt" sont entendus au sens de l'accord mentionné au premier alinéa.
+"Art. 695-53. - La remise d'une personne qui a la nationalité française ou qui avait cette nationalité au moment des faits visés par le mandat d'arrêt émis par un État non membre de l'Union européenne est refusée.
+"Art. 695-54. - Le transit d'une personne qui a la nationalité française ou qui avait cette nationalité au moment des faits visés par le mandat d'arrêt émis par un État non membre de l'Union européenne est refusé. Les deux derniers alinéas de l'article 695-47 ne sont pas applicables aux procédures de remise résultant d'accords conclus par l'Union européenne avec d'autres États.
+"Art. 695-55. - Les deuxième à dernier alinéas de l'article 695-23 ne sont pas applicables aux procédures de remise mentionnées à la présente section.
+"Par dérogation au premier alinéa du même article 695-23, la remise d'une personne est exécutée sans contrôle de la double incrimination des faits reprochés lorsque les agissements considérés sont, aux termes de la loi de l'État non membre de l'Union européenne, punis d'une peine privative de liberté d'une durée égale ou supérieure à douze mois d'emprisonnement ou d'une mesure de sûreté privative de liberté d'une durée similaire et entrent dans l'une des catégories d'infractions suivantes :
+"1° Participation à un groupe de personnes agissant dans un but commun aux fins de commettre une ou plusieurs infractions relevant d'activités de terrorisme visées aux articles 1er et 2 de la convention européenne pour la répression du terrorisme, signée à Strasbourg, le 27 janvier 1977, ainsi qu'aux articles 1er à 4 de la décision-cadre, du 13 juin 2002, relative à la lutte contre le terrorisme (2002/475/JAI) ;
+"2° Trafic illicite de stupéfiants ou de substances psychotropes ;
+"3° Homicide volontaire ;
+"4° Coups et blessures graves ;
+"5° Enlèvement, séquestration ou prise d'otage ;
+"6° Viol.
+"Art. 695-56. - Pour la mise en oeuvre du 2° de l'article 695-24, dans le cadre des procédures de remise prévues à la présente section, l'exécution du mandat d'arrêt peut être refusée si la personne recherchée pour l'exécution d'une peine ou d'une mesure de sûreté privatives de liberté n'est pas de nationalité française mais réside légalement de façon continue depuis au moins cinq ans sur le territoire national et que le procureur général s'engage à faire procéder à cette exécution sur le fondement d'une convention de transfèrement ou d'un accord international spécifique.
+"Art. 695-57. - La remise n'est pas accordée à un État non membre de l'Union européenne si l'infraction à raison de laquelle elle est demandée a un caractère politique, sauf s'il s'agit d'une infraction mentionnée aux articles 1er et 2 de la convention européenne pour la répression du terrorisme, signée à Strasbourg, le 27 janvier 1977, de l'infraction d'association de malfaiteurs en vue de la commission de ces infractions, ou des infractions mentionnées aux articles 1er à 4 de la décision-cadre, du 13 juin 2002, précitée.
+"Art. 695-58. - Pour l'application de l'article 695-46, dans le cadre des procédures de remise prévues à la présente section, le consentement est refusé à un État non membre de l'Union européenne si l'infraction à raison de laquelle elle est demandée a un caractère politique, sauf s'il s'agit d'une infraction mentionnée aux articles 1er et 2 de la convention européenne pour la répression du terrorisme, signée à Strasbourg, le 27 janvier 1977, de l'infraction d'association de malfaiteurs en vue de la commission de ces infractions, ou des infractions mentionnées aux articles 1er à 4 de la décision-cadre, du 13 juin 2002, précitée."
+
+Dispositions diverses et transitoires
+――――
+
+
+16
+――――
+
+Le titre II du livre II du code pénal est ainsi modifié :
+1° Après l'article 222-14-3, il est inséré un article 222-14-4 ainsi rédigé :
+"Art. 222-14-4. - Le fait, dans le but de contraindre une personne à contracter un mariage ou à conclure une union à l'étranger, d'user à son égard de manoeuvres dolosives afin de la déterminer à quitter le territoire de la République est puni de trois ans d'emprisonnement et de 45 000 € d'amende." ;
+1° bis Le chapitre Ier est complété par un article 221-11-1 ainsi rédigé :
+"Art. 221-11-1. - Dans le cas prévu au 10° de l'article 221-4, peut être également prononcée l'interdiction, pour une durée de dix ans au plus, de quitter le territoire de la République." ;
+1° ter Au second alinéa de l'article 222-47, après le mot : "mineurs,", sont insérées les références : "par le 6° bis des articles 222-3, 222-8, 222-10, 222-12 et 222-13, par l'article 222-14-4" ;
+2° La section 5 du chapitre III est complétée par un article 223-11 ainsi rétabli :
+"Art. 223-11. - La tentative du délit prévu à l'article 223-10 est punie des mêmes peines." ;
+3° Après l'article 227-24, il est inséré un article 227-24-1 ainsi rédigé :
+"Art. 227-24-1. - Le fait de faire à un mineur des offres ou des promesses ou de lui proposer des dons, présents ou avantages quelconques, ou d'user contre lui de pressions ou de contraintes de toute nature, afin qu'il se soumette à une mutilation sexuelle est puni, lorsque cette mutilation n'a pas été réalisée, de cinq ans d'emprisonnement et de 75 000 € d'amende.
+"Est puni des mêmes peines le fait de provoquer directement autrui à faire subir une mutilation sexuelle à un mineur, lorsque cette mutilation n'a pas été réalisée, ou d'en faire l'apologie."
+
+17
+――――
+
+Le code de procédure pénale est ainsi modifié :
+1° Après l'article 40-4, il est inséré un article 40-5 ainsi rédigé :
+"Art. 40-5. - En cas d'évasion d'une personne, le procureur de la République en informe la victime des faits ayant entraîné la détention ou sa famille lorsque celles-ci peuvent encourir un danger ou un risque identifié de préjudice. Cette information n'est pas communiquée si elle entraîne pour l'auteur des faits un risque identifié de préjudice." ;
+2° Le 3° de l'article 706-3 est ainsi modifié :
+a) Après le mot : "française", la fin du premier alinéa est ainsi rédigée : "ou les faits ont été commis sur le territoire national" ;
+b) Les deux derniers alinéas sont supprimés.
+
+Dispositions diverses et transitoires
+――――
+
+
+17 bis
+――――
+
+I. - L'article 26 de la loi du 29 juillet 1881 sur la liberté de la presse est abrogé.
+II. - Au premier alinéa de l'article 1er de la loi du 11 juin 1887, la référence : "26," est supprimée.
+
+Dispositions diverses et transitoires
+――――
+
+
+18
+――――
+
+L'article 113-8-1 du code pénal est ainsi modifié :
+1° Le premier alinéa est ainsi modifié :
+a) Après les mots : "dont l'extradition", sont insérés les mots : "ou la remise" ;
+b) Sont ajoutés les mots : ", soit que l'extradition ou la remise serait susceptible d'avoir, pour la personne réclamée, des conséquences d'une gravité exceptionnelle en raison, notamment, de son âge ou de son état de santé." ;
+2° La seconde phrase du second alinéa est supprimée.
+
+19
+――――
+
+I. - Au second alinéa de l'article 213-4-1 du code pénal, la dernière occurrence du mot : "ou" est remplacée par le mot : "et".
+II. - Au 4° de l'article 706-55 du code de procédure pénale, les mots : "et l'association de malfaiteurs" sont remplacés par les mots : ", l'association de malfaiteurs et les crimes et délits de guerre" et la référence : "et 450-1" est remplacée par les références : ", 450-1 et 461-1 à 461-31".
+
+20
+――――
+
+Le code de procédure pénale est ainsi modifié :
+1° Au second alinéa de l'article 716-4, après la référence : "712-19", est insérée la référence : ", de l'article 728-69" ;
+2° L'article 721-1 est complété par un alinéa ainsi rédigé :
+"En cas d'exécution sur le territoire de la République d'une peine prononcée à l'étranger, les réductions de peines accordées antérieurement à la mise à exécution de la peine en France restent acquises à la personne condamnée en tant qu'elles ont été accordées à raison de la durée de détention subie à l'étranger. La personne condamnée bénéficie d'un crédit de réduction de peine en application du présent article, calculé sur la durée de détention restant à subir en France à compter de son arrivée sur le territoire national, déduction faite des réductions de peine déjà accordées à l'étranger pour la période qui restait à exécuter." ;
+3° Le second alinéa de l'article 728-2 et le dernier alinéa de l'article 728-3 sont supprimés.
+
+21
+――――
+
+Après l'article 20-10 de l'ordonnance n° 45-174 du 2 février 1945 relative à l'enfance délinquante, il est inséré un article 20-11 ainsi rédigé :
+"Art. 20-11. - Lorsque la personne concernée était mineure à la date des faits, le tribunal pour enfants exerce les attributions du tribunal correctionnel pour l'application des articles 728-4 à 728-7 du code de procédure pénale et le juge des enfants exerce les attributions du président du tribunal de grande instance et du juge des libertés et de la détention pour l'application des articles 728-47 et 728-69 du même code."
+
+22
+――――
+
+I. - Le chapitre VI du titre II du livre V du code de procédure pénale est applicable aux demandes de reconnaissance et d'exécution de décisions de condamnation reçues ou adressées par la France postérieurement à la date de publication de la présente loi.
+II. - Les conventions internationales ou leurs stipulations relatives au transfèrement des personnes condamnées ou à l'exécution des condamnations pénales demeurent applicables dans les relations avec les États membres ayant procédé à la déclaration prévue à l'article 28 de la décision-cadre 2008/909/JAI du Conseil, du 27 novembre 2008, concernant l'application du principe de reconnaissance mutuelle aux jugements en matière pénale prononçant des peines ou des mesures privatives de liberté aux fins de leur exécution dans l'Union européenne lorsque la décision de condamnation prononcée, en France ou dans l'autre État, est antérieure à la date fixée dans cette déclaration.
+III. - Conformément au paragraphe 5 de l'article 6 de la décision-cadre 2008/909/JAI du Conseil, du 27 novembre 2008, précitée, l'exécution en Pologne des décisions de condamnation prononcées par les juridictions françaises et l'exécution sur le territoire français des décisions de condamnation prononcées par les juridictions polonaises sont subordonnées, lorsque ces décisions ont été prononcées avant le 5 décembre 2016, au consentement de la personne condamnée, y compris dans le cas où cette personne est ressortissante de l'État d'exécution et réside de manière habituelle sur le territoire de cet État.
+Toutefois, dans le cas prévu au premier alinéa du présent III, le consentement de la personne condamnée n'est pas requis soit lorsque l'exécution de la condamnation est décidée en application du 2° de l'article 695-24 du code de procédure pénale, dans sa rédaction résultant du 3° de l'article 15 de la présente loi, soit lorsque la personne s'est soustraite à l'exécution de la peine en s'enfuyant vers le pays dont elle est ressortissante.
+La dérogation prévue au premier alinéa du présent III cesse d'être applicable à compter de la notification par la Pologne au secrétariat général du Conseil de l'Union européenne, en application du paragraphe 5 de l'article 6 de la décision-cadre 2008/909/JAI, du 27 novembre 2008, précitée, de son intention de ne plus en faire usage.
+IV. - Dans les relations avec les États membres qui n'ont pas transposé la décision-cadre 2008/909/JAI du Conseil, du 27 novembre 2008, précitée, les dispositions du code de procédure pénale ainsi que les instruments juridiques existants en matière de transfèrement des personnes condamnées en vigueur antérieurement au 5 décembre 2011, notamment la convention sur le transfèrement des personnes condamnées, signée à Strasbourg, le 21 mars 1983, et son protocole additionnel, signé à Strasbourg, le 18 décembre 1997, ainsi que les articles 67 et 68 de la convention d'application du 19 juin 1990 de l'accord de Schengen, du 14 juin 1985, relatif à la suppression graduelle des contrôles aux frontières communes restent applicables.
+
+23
+――――
+
+I. - Les articles 695-11 à 695-58 du code de procédure pénale, dans leur rédaction résultant, le cas échéant, de l'article 15 de la présente loi, ne sont pas applicables aux demandes de remise adressées à la France par un État non membre de l'Union européenne et lié par un accord conclu par l'Union européenne et instituant un mécanisme de remise sur la base d'un mandat d'arrêt lorsque ces demandes concernent des faits commis avant la date indiquée dans la déclaration faite par le Gouvernement français au titre des dispositions transitoires.
+II. - Les articles 695-11 à 695-58 du code de procédure pénale, dans leur rédaction résultant, le cas échéant, de l'article 15 de la présente loi, ne sont pas applicables aux demandes de remise adressées par la France à un État lié par un accord conclu par l'Union européenne et instituant un mécanisme de remise sur la base d'un mandat d'arrêt lorsque ces demandes concernent des faits commis avant la date indiquée dans la déclaration faite par cet État au titre des dispositions transitoires.
+III. - Dans les cas mentionnés aux I et II ou lorsqu'un mandat d'arrêt tel que prévu par un accord conclu par l'Union européenne avec un État non membre de l'Union européenne instituant un mécanisme de remise sur la base d'un mandat d'arrêt ne peut être adressé ou reçu, pour quelque motif que ce soit, les articles 696 à 696-47 du code de procédure pénale sont applicables.
+IV. - Sous réserve des dispositions du I, lorsqu'une personne recherchée a été arrêtée sur la base d'une demande d'arrestation provisoire émanant d'un État non membre de l'Union européenne et lié par un accord conclu par l'Union européenne et instituant un mécanisme de remise sur la base d'un mandat d'arrêt et que la demande d'extradition y afférente n'est pas parvenue à la France avant la date d'entrée en vigueur de cet accord, la procédure applicable est celle prévue aux articles 696 à 696-47 du code de procédure pénale sauf si un mandat d'arrêt au sens dudit accord, en original ou en copie certifiée conforme, est reçu par le procureur général dans le délai prévu par la convention applicable avec l'État concerné à compter de l'arrestation provisoire de la personne recherchée. Dans ce cas, la procédure applicable est celle prévue aux articles 695-22 à 695-58 du même code et les délais mentionnés auxdits articles commencent à courir à compter de la réception du mandat d'arrêt.
+
+24
+――――
+
+La présente loi est applicable sur l'ensemble du territoire de la République.
+
+
+</pre>
+</body>
+
+</html>

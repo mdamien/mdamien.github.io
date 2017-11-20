@@ -1,0 +1,1572 @@
+
+<style>
+body {
+    max-width: 700px;
+}
+
+pre {
+    font-family: ubuntu, sans-serif;
+    font-size: 20px;
+}
+</style>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #AAAAAA; }
+.body_background { background-color: #000000; }
+.body_foreground > .bold,.bold > .body_foreground, body.body_foreground > pre > .bold { color: #FFFFFF; font-weight: normal; }
+.inv_foreground { color: #000000; }
+.inv_background { background-color: #AAAAAA; }
+.ansi1 { font-weight: bold; }
+.ansi2 { font-weight: lighter; }
+.ansi3 { font-style: italic; }
+.ansi4 { text-decoration: underline; }
+.ansi5 { text-decoration: blink; }
+.ansi6 { text-decoration: blink; }
+.ansi8 { visibility: hidden; }
+.ansi9 { text-decoration: line-through; }
+.ansi30 { color: #000316; }
+.inv30 { background-color: #000316; }
+.ansi31 { color: #aa0000; }
+.inv31 { background-color: #aa0000; }
+.ansi32 { color: #00aa00; }
+.inv32 { background-color: #00aa00; }
+.ansi33 { color: #aa5500; }
+.inv33 { background-color: #aa5500; }
+.ansi34 { color: #0000aa; }
+.inv34 { background-color: #0000aa; }
+.ansi35 { color: #E850A8; }
+.inv35 { background-color: #E850A8; }
+.ansi36 { color: #00aaaa; }
+.inv36 { background-color: #00aaaa; }
+.ansi37 { color: #F5F1DE; }
+.inv37 { background-color: #F5F1DE; }
+.ansi40 { background-color: #000316; }
+.inv40 { color: #000316; }
+.ansi41 { background-color: #aa0000; }
+.inv41 { color: #aa0000; }
+.ansi42 { background-color: #00aa00; }
+.inv42 { color: #00aa00; }
+.ansi43 { background-color: #aa5500; }
+.inv43 { color: #aa5500; }
+.ansi44 { background-color: #0000aa; }
+.inv44 { color: #0000aa; }
+.ansi45 { background-color: #E850A8; }
+.inv45 { color: #E850A8; }
+.ansi46 { background-color: #00aaaa; }
+.inv46 { color: #00aaaa; }
+.ansi47 { background-color: #F5F1DE; }
+.inv47 { color: #F5F1DE; }
+.ansi38-0 { color: #000316; }
+.inv38-0 { background-color: #000316; }
+.ansi38-1 { color: #aa0000; }
+.inv38-1 { background-color: #aa0000; }
+.ansi38-2 { color: #00aa00; }
+.inv38-2 { background-color: #00aa00; }
+.ansi38-3 { color: #aa5500; }
+.inv38-3 { background-color: #aa5500; }
+.ansi38-4 { color: #0000aa; }
+.inv38-4 { background-color: #0000aa; }
+.ansi38-5 { color: #E850A8; }
+.inv38-5 { background-color: #E850A8; }
+.ansi38-6 { color: #00aaaa; }
+.inv38-6 { background-color: #00aaaa; }
+.ansi38-7 { color: #F5F1DE; }
+.inv38-7 { background-color: #F5F1DE; }
+.ansi38-8 { color: #7f7f7f; }
+.inv38-8 { background-color: #7f7f7f; }
+.ansi38-9 { color: #ff0000; }
+.inv38-9 { background-color: #ff0000; }
+.ansi38-10 { color: #00ff00; }
+.inv38-10 { background-color: #00ff00; }
+.ansi38-11 { color: #ffff00; }
+.inv38-11 { background-color: #ffff00; }
+.ansi38-12 { color: #5c5cff; }
+.inv38-12 { background-color: #5c5cff; }
+.ansi38-13 { color: #ff00ff; }
+.inv38-13 { background-color: #ff00ff; }
+.ansi38-14 { color: #00ffff; }
+.inv38-14 { background-color: #00ffff; }
+.ansi38-15 { color: #ffffff; }
+.inv38-15 { background-color: #ffffff; }
+.ansi48-0 { background-color: #000316; }
+.inv48-0 { color: #000316; }
+.ansi48-1 { background-color: #aa0000; }
+.inv48-1 { color: #aa0000; }
+.ansi48-2 { background-color: #00aa00; }
+.inv48-2 { color: #00aa00; }
+.ansi48-3 { background-color: #aa5500; }
+.inv48-3 { color: #aa5500; }
+.ansi48-4 { background-color: #0000aa; }
+.inv48-4 { color: #0000aa; }
+.ansi48-5 { background-color: #E850A8; }
+.inv48-5 { color: #E850A8; }
+.ansi48-6 { background-color: #00aaaa; }
+.inv48-6 { color: #00aaaa; }
+.ansi48-7 { background-color: #F5F1DE; }
+.inv48-7 { color: #F5F1DE; }
+.ansi48-8 { background-color: #7f7f7f; }
+.inv48-8 { color: #7f7f7f; }
+.ansi48-9 { background-color: #ff0000; }
+.inv48-9 { color: #ff0000; }
+.ansi48-10 { background-color: #00ff00; }
+.inv48-10 { color: #00ff00; }
+.ansi48-11 { background-color: #ffff00; }
+.inv48-11 { color: #ffff00; }
+.ansi48-12 { background-color: #5c5cff; }
+.inv48-12 { color: #5c5cff; }
+.ansi48-13 { background-color: #ff00ff; }
+.inv48-13 { color: #ff00ff; }
+.ansi48-14 { background-color: #00ffff; }
+.inv48-14 { color: #00ffff; }
+.ansi48-15 { background-color: #ffffff; }
+.inv48-15 { color: #ffffff; }
+.ansi38-16 { color: #000000; }
+.inv38-16 { background: #000000; }
+.ansi48-16 { background: #000000; }
+.inv48-16 { color: #000000; }
+.ansi38-17 { color: #00002a; }
+.inv38-17 { background: #00002a; }
+.ansi48-17 { background: #00002a; }
+.inv48-17 { color: #00002a; }
+.ansi38-18 { color: #000054; }
+.inv38-18 { background: #000054; }
+.ansi48-18 { background: #000054; }
+.inv48-18 { color: #000054; }
+.ansi38-19 { color: #00007e; }
+.inv38-19 { background: #00007e; }
+.ansi48-19 { background: #00007e; }
+.inv48-19 { color: #00007e; }
+.ansi38-20 { color: #0000a8; }
+.inv38-20 { background: #0000a8; }
+.ansi48-20 { background: #0000a8; }
+.inv48-20 { color: #0000a8; }
+.ansi38-21 { color: #0000d2; }
+.inv38-21 { background: #0000d2; }
+.ansi48-21 { background: #0000d2; }
+.inv48-21 { color: #0000d2; }
+.ansi38-52 { color: #2a0000; }
+.inv38-52 { background: #2a0000; }
+.ansi48-52 { background: #2a0000; }
+.inv48-52 { color: #2a0000; }
+.ansi38-53 { color: #2a002a; }
+.inv38-53 { background: #2a002a; }
+.ansi48-53 { background: #2a002a; }
+.inv48-53 { color: #2a002a; }
+.ansi38-54 { color: #2a0054; }
+.inv38-54 { background: #2a0054; }
+.ansi48-54 { background: #2a0054; }
+.inv48-54 { color: #2a0054; }
+.ansi38-55 { color: #2a007e; }
+.inv38-55 { background: #2a007e; }
+.ansi48-55 { background: #2a007e; }
+.inv48-55 { color: #2a007e; }
+.ansi38-56 { color: #2a00a8; }
+.inv38-56 { background: #2a00a8; }
+.ansi48-56 { background: #2a00a8; }
+.inv48-56 { color: #2a00a8; }
+.ansi38-57 { color: #2a00d2; }
+.inv38-57 { background: #2a00d2; }
+.ansi48-57 { background: #2a00d2; }
+.inv48-57 { color: #2a00d2; }
+.ansi38-88 { color: #540000; }
+.inv38-88 { background: #540000; }
+.ansi48-88 { background: #540000; }
+.inv48-88 { color: #540000; }
+.ansi38-89 { color: #54002a; }
+.inv38-89 { background: #54002a; }
+.ansi48-89 { background: #54002a; }
+.inv48-89 { color: #54002a; }
+.ansi38-90 { color: #540054; }
+.inv38-90 { background: #540054; }
+.ansi48-90 { background: #540054; }
+.inv48-90 { color: #540054; }
+.ansi38-91 { color: #54007e; }
+.inv38-91 { background: #54007e; }
+.ansi48-91 { background: #54007e; }
+.inv48-91 { color: #54007e; }
+.ansi38-92 { color: #5400a8; }
+.inv38-92 { background: #5400a8; }
+.ansi48-92 { background: #5400a8; }
+.inv48-92 { color: #5400a8; }
+.ansi38-93 { color: #5400d2; }
+.inv38-93 { background: #5400d2; }
+.ansi48-93 { background: #5400d2; }
+.inv48-93 { color: #5400d2; }
+.ansi38-124 { color: #7e0000; }
+.inv38-124 { background: #7e0000; }
+.ansi48-124 { background: #7e0000; }
+.inv48-124 { color: #7e0000; }
+.ansi38-125 { color: #7e002a; }
+.inv38-125 { background: #7e002a; }
+.ansi48-125 { background: #7e002a; }
+.inv48-125 { color: #7e002a; }
+.ansi38-126 { color: #7e0054; }
+.inv38-126 { background: #7e0054; }
+.ansi48-126 { background: #7e0054; }
+.inv48-126 { color: #7e0054; }
+.ansi38-127 { color: #7e007e; }
+.inv38-127 { background: #7e007e; }
+.ansi48-127 { background: #7e007e; }
+.inv48-127 { color: #7e007e; }
+.ansi38-128 { color: #7e00a8; }
+.inv38-128 { background: #7e00a8; }
+.ansi48-128 { background: #7e00a8; }
+.inv48-128 { color: #7e00a8; }
+.ansi38-129 { color: #7e00d2; }
+.inv38-129 { background: #7e00d2; }
+.ansi48-129 { background: #7e00d2; }
+.inv48-129 { color: #7e00d2; }
+.ansi38-160 { color: #a80000; }
+.inv38-160 { background: #a80000; }
+.ansi48-160 { background: #a80000; }
+.inv48-160 { color: #a80000; }
+.ansi38-161 { color: #a8002a; }
+.inv38-161 { background: #a8002a; }
+.ansi48-161 { background: #a8002a; }
+.inv48-161 { color: #a8002a; }
+.ansi38-162 { color: #a80054; }
+.inv38-162 { background: #a80054; }
+.ansi48-162 { background: #a80054; }
+.inv48-162 { color: #a80054; }
+.ansi38-163 { color: #a8007e; }
+.inv38-163 { background: #a8007e; }
+.ansi48-163 { background: #a8007e; }
+.inv48-163 { color: #a8007e; }
+.ansi38-164 { color: #a800a8; }
+.inv38-164 { background: #a800a8; }
+.ansi48-164 { background: #a800a8; }
+.inv48-164 { color: #a800a8; }
+.ansi38-165 { color: #a800d2; }
+.inv38-165 { background: #a800d2; }
+.ansi48-165 { background: #a800d2; }
+.inv48-165 { color: #a800d2; }
+.ansi38-196 { color: #d20000; }
+.inv38-196 { background: #d20000; }
+.ansi48-196 { background: #d20000; }
+.inv48-196 { color: #d20000; }
+.ansi38-197 { color: #d2002a; }
+.inv38-197 { background: #d2002a; }
+.ansi48-197 { background: #d2002a; }
+.inv48-197 { color: #d2002a; }
+.ansi38-198 { color: #d20054; }
+.inv38-198 { background: #d20054; }
+.ansi48-198 { background: #d20054; }
+.inv48-198 { color: #d20054; }
+.ansi38-199 { color: #d2007e; }
+.inv38-199 { background: #d2007e; }
+.ansi48-199 { background: #d2007e; }
+.inv48-199 { color: #d2007e; }
+.ansi38-200 { color: #d200a8; }
+.inv38-200 { background: #d200a8; }
+.ansi48-200 { background: #d200a8; }
+.inv48-200 { color: #d200a8; }
+.ansi38-201 { color: #d200d2; }
+.inv38-201 { background: #d200d2; }
+.ansi48-201 { background: #d200d2; }
+.inv48-201 { color: #d200d2; }
+.ansi38-22 { color: #002a00; }
+.inv38-22 { background: #002a00; }
+.ansi48-22 { background: #002a00; }
+.inv48-22 { color: #002a00; }
+.ansi38-23 { color: #002a2a; }
+.inv38-23 { background: #002a2a; }
+.ansi48-23 { background: #002a2a; }
+.inv48-23 { color: #002a2a; }
+.ansi38-24 { color: #002a54; }
+.inv38-24 { background: #002a54; }
+.ansi48-24 { background: #002a54; }
+.inv48-24 { color: #002a54; }
+.ansi38-25 { color: #002a7e; }
+.inv38-25 { background: #002a7e; }
+.ansi48-25 { background: #002a7e; }
+.inv48-25 { color: #002a7e; }
+.ansi38-26 { color: #002aa8; }
+.inv38-26 { background: #002aa8; }
+.ansi48-26 { background: #002aa8; }
+.inv48-26 { color: #002aa8; }
+.ansi38-27 { color: #002ad2; }
+.inv38-27 { background: #002ad2; }
+.ansi48-27 { background: #002ad2; }
+.inv48-27 { color: #002ad2; }
+.ansi38-58 { color: #2a2a00; }
+.inv38-58 { background: #2a2a00; }
+.ansi48-58 { background: #2a2a00; }
+.inv48-58 { color: #2a2a00; }
+.ansi38-59 { color: #2a2a2a; }
+.inv38-59 { background: #2a2a2a; }
+.ansi48-59 { background: #2a2a2a; }
+.inv48-59 { color: #2a2a2a; }
+.ansi38-60 { color: #2a2a54; }
+.inv38-60 { background: #2a2a54; }
+.ansi48-60 { background: #2a2a54; }
+.inv48-60 { color: #2a2a54; }
+.ansi38-61 { color: #2a2a7e; }
+.inv38-61 { background: #2a2a7e; }
+.ansi48-61 { background: #2a2a7e; }
+.inv48-61 { color: #2a2a7e; }
+.ansi38-62 { color: #2a2aa8; }
+.inv38-62 { background: #2a2aa8; }
+.ansi48-62 { background: #2a2aa8; }
+.inv48-62 { color: #2a2aa8; }
+.ansi38-63 { color: #2a2ad2; }
+.inv38-63 { background: #2a2ad2; }
+.ansi48-63 { background: #2a2ad2; }
+.inv48-63 { color: #2a2ad2; }
+.ansi38-94 { color: #542a00; }
+.inv38-94 { background: #542a00; }
+.ansi48-94 { background: #542a00; }
+.inv48-94 { color: #542a00; }
+.ansi38-95 { color: #542a2a; }
+.inv38-95 { background: #542a2a; }
+.ansi48-95 { background: #542a2a; }
+.inv48-95 { color: #542a2a; }
+.ansi38-96 { color: #542a54; }
+.inv38-96 { background: #542a54; }
+.ansi48-96 { background: #542a54; }
+.inv48-96 { color: #542a54; }
+.ansi38-97 { color: #542a7e; }
+.inv38-97 { background: #542a7e; }
+.ansi48-97 { background: #542a7e; }
+.inv48-97 { color: #542a7e; }
+.ansi38-98 { color: #542aa8; }
+.inv38-98 { background: #542aa8; }
+.ansi48-98 { background: #542aa8; }
+.inv48-98 { color: #542aa8; }
+.ansi38-99 { color: #542ad2; }
+.inv38-99 { background: #542ad2; }
+.ansi48-99 { background: #542ad2; }
+.inv48-99 { color: #542ad2; }
+.ansi38-130 { color: #7e2a00; }
+.inv38-130 { background: #7e2a00; }
+.ansi48-130 { background: #7e2a00; }
+.inv48-130 { color: #7e2a00; }
+.ansi38-131 { color: #7e2a2a; }
+.inv38-131 { background: #7e2a2a; }
+.ansi48-131 { background: #7e2a2a; }
+.inv48-131 { color: #7e2a2a; }
+.ansi38-132 { color: #7e2a54; }
+.inv38-132 { background: #7e2a54; }
+.ansi48-132 { background: #7e2a54; }
+.inv48-132 { color: #7e2a54; }
+.ansi38-133 { color: #7e2a7e; }
+.inv38-133 { background: #7e2a7e; }
+.ansi48-133 { background: #7e2a7e; }
+.inv48-133 { color: #7e2a7e; }
+.ansi38-134 { color: #7e2aa8; }
+.inv38-134 { background: #7e2aa8; }
+.ansi48-134 { background: #7e2aa8; }
+.inv48-134 { color: #7e2aa8; }
+.ansi38-135 { color: #7e2ad2; }
+.inv38-135 { background: #7e2ad2; }
+.ansi48-135 { background: #7e2ad2; }
+.inv48-135 { color: #7e2ad2; }
+.ansi38-166 { color: #a82a00; }
+.inv38-166 { background: #a82a00; }
+.ansi48-166 { background: #a82a00; }
+.inv48-166 { color: #a82a00; }
+.ansi38-167 { color: #a82a2a; }
+.inv38-167 { background: #a82a2a; }
+.ansi48-167 { background: #a82a2a; }
+.inv48-167 { color: #a82a2a; }
+.ansi38-168 { color: #a82a54; }
+.inv38-168 { background: #a82a54; }
+.ansi48-168 { background: #a82a54; }
+.inv48-168 { color: #a82a54; }
+.ansi38-169 { color: #a82a7e; }
+.inv38-169 { background: #a82a7e; }
+.ansi48-169 { background: #a82a7e; }
+.inv48-169 { color: #a82a7e; }
+.ansi38-170 { color: #a82aa8; }
+.inv38-170 { background: #a82aa8; }
+.ansi48-170 { background: #a82aa8; }
+.inv48-170 { color: #a82aa8; }
+.ansi38-171 { color: #a82ad2; }
+.inv38-171 { background: #a82ad2; }
+.ansi48-171 { background: #a82ad2; }
+.inv48-171 { color: #a82ad2; }
+.ansi38-202 { color: #d22a00; }
+.inv38-202 { background: #d22a00; }
+.ansi48-202 { background: #d22a00; }
+.inv48-202 { color: #d22a00; }
+.ansi38-203 { color: #d22a2a; }
+.inv38-203 { background: #d22a2a; }
+.ansi48-203 { background: #d22a2a; }
+.inv48-203 { color: #d22a2a; }
+.ansi38-204 { color: #d22a54; }
+.inv38-204 { background: #d22a54; }
+.ansi48-204 { background: #d22a54; }
+.inv48-204 { color: #d22a54; }
+.ansi38-205 { color: #d22a7e; }
+.inv38-205 { background: #d22a7e; }
+.ansi48-205 { background: #d22a7e; }
+.inv48-205 { color: #d22a7e; }
+.ansi38-206 { color: #d22aa8; }
+.inv38-206 { background: #d22aa8; }
+.ansi48-206 { background: #d22aa8; }
+.inv48-206 { color: #d22aa8; }
+.ansi38-207 { color: #d22ad2; }
+.inv38-207 { background: #d22ad2; }
+.ansi48-207 { background: #d22ad2; }
+.inv48-207 { color: #d22ad2; }
+.ansi38-28 { color: #005400; }
+.inv38-28 { background: #005400; }
+.ansi48-28 { background: #005400; }
+.inv48-28 { color: #005400; }
+.ansi38-29 { color: #00542a; }
+.inv38-29 { background: #00542a; }
+.ansi48-29 { background: #00542a; }
+.inv48-29 { color: #00542a; }
+.ansi38-30 { color: #005454; }
+.inv38-30 { background: #005454; }
+.ansi48-30 { background: #005454; }
+.inv48-30 { color: #005454; }
+.ansi38-31 { color: #00547e; }
+.inv38-31 { background: #00547e; }
+.ansi48-31 { background: #00547e; }
+.inv48-31 { color: #00547e; }
+.ansi38-32 { color: #0054a8; }
+.inv38-32 { background: #0054a8; }
+.ansi48-32 { background: #0054a8; }
+.inv48-32 { color: #0054a8; }
+.ansi38-33 { color: #0054d2; }
+.inv38-33 { background: #0054d2; }
+.ansi48-33 { background: #0054d2; }
+.inv48-33 { color: #0054d2; }
+.ansi38-64 { color: #2a5400; }
+.inv38-64 { background: #2a5400; }
+.ansi48-64 { background: #2a5400; }
+.inv48-64 { color: #2a5400; }
+.ansi38-65 { color: #2a542a; }
+.inv38-65 { background: #2a542a; }
+.ansi48-65 { background: #2a542a; }
+.inv48-65 { color: #2a542a; }
+.ansi38-66 { color: #2a5454; }
+.inv38-66 { background: #2a5454; }
+.ansi48-66 { background: #2a5454; }
+.inv48-66 { color: #2a5454; }
+.ansi38-67 { color: #2a547e; }
+.inv38-67 { background: #2a547e; }
+.ansi48-67 { background: #2a547e; }
+.inv48-67 { color: #2a547e; }
+.ansi38-68 { color: #2a54a8; }
+.inv38-68 { background: #2a54a8; }
+.ansi48-68 { background: #2a54a8; }
+.inv48-68 { color: #2a54a8; }
+.ansi38-69 { color: #2a54d2; }
+.inv38-69 { background: #2a54d2; }
+.ansi48-69 { background: #2a54d2; }
+.inv48-69 { color: #2a54d2; }
+.ansi38-100 { color: #545400; }
+.inv38-100 { background: #545400; }
+.ansi48-100 { background: #545400; }
+.inv48-100 { color: #545400; }
+.ansi38-101 { color: #54542a; }
+.inv38-101 { background: #54542a; }
+.ansi48-101 { background: #54542a; }
+.inv48-101 { color: #54542a; }
+.ansi38-102 { color: #545454; }
+.inv38-102 { background: #545454; }
+.ansi48-102 { background: #545454; }
+.inv48-102 { color: #545454; }
+.ansi38-103 { color: #54547e; }
+.inv38-103 { background: #54547e; }
+.ansi48-103 { background: #54547e; }
+.inv48-103 { color: #54547e; }
+.ansi38-104 { color: #5454a8; }
+.inv38-104 { background: #5454a8; }
+.ansi48-104 { background: #5454a8; }
+.inv48-104 { color: #5454a8; }
+.ansi38-105 { color: #5454d2; }
+.inv38-105 { background: #5454d2; }
+.ansi48-105 { background: #5454d2; }
+.inv48-105 { color: #5454d2; }
+.ansi38-136 { color: #7e5400; }
+.inv38-136 { background: #7e5400; }
+.ansi48-136 { background: #7e5400; }
+.inv48-136 { color: #7e5400; }
+.ansi38-137 { color: #7e542a; }
+.inv38-137 { background: #7e542a; }
+.ansi48-137 { background: #7e542a; }
+.inv48-137 { color: #7e542a; }
+.ansi38-138 { color: #7e5454; }
+.inv38-138 { background: #7e5454; }
+.ansi48-138 { background: #7e5454; }
+.inv48-138 { color: #7e5454; }
+.ansi38-139 { color: #7e547e; }
+.inv38-139 { background: #7e547e; }
+.ansi48-139 { background: #7e547e; }
+.inv48-139 { color: #7e547e; }
+.ansi38-140 { color: #7e54a8; }
+.inv38-140 { background: #7e54a8; }
+.ansi48-140 { background: #7e54a8; }
+.inv48-140 { color: #7e54a8; }
+.ansi38-141 { color: #7e54d2; }
+.inv38-141 { background: #7e54d2; }
+.ansi48-141 { background: #7e54d2; }
+.inv48-141 { color: #7e54d2; }
+.ansi38-172 { color: #a85400; }
+.inv38-172 { background: #a85400; }
+.ansi48-172 { background: #a85400; }
+.inv48-172 { color: #a85400; }
+.ansi38-173 { color: #a8542a; }
+.inv38-173 { background: #a8542a; }
+.ansi48-173 { background: #a8542a; }
+.inv48-173 { color: #a8542a; }
+.ansi38-174 { color: #a85454; }
+.inv38-174 { background: #a85454; }
+.ansi48-174 { background: #a85454; }
+.inv48-174 { color: #a85454; }
+.ansi38-175 { color: #a8547e; }
+.inv38-175 { background: #a8547e; }
+.ansi48-175 { background: #a8547e; }
+.inv48-175 { color: #a8547e; }
+.ansi38-176 { color: #a854a8; }
+.inv38-176 { background: #a854a8; }
+.ansi48-176 { background: #a854a8; }
+.inv48-176 { color: #a854a8; }
+.ansi38-177 { color: #a854d2; }
+.inv38-177 { background: #a854d2; }
+.ansi48-177 { background: #a854d2; }
+.inv48-177 { color: #a854d2; }
+.ansi38-208 { color: #d25400; }
+.inv38-208 { background: #d25400; }
+.ansi48-208 { background: #d25400; }
+.inv48-208 { color: #d25400; }
+.ansi38-209 { color: #d2542a; }
+.inv38-209 { background: #d2542a; }
+.ansi48-209 { background: #d2542a; }
+.inv48-209 { color: #d2542a; }
+.ansi38-210 { color: #d25454; }
+.inv38-210 { background: #d25454; }
+.ansi48-210 { background: #d25454; }
+.inv48-210 { color: #d25454; }
+.ansi38-211 { color: #d2547e; }
+.inv38-211 { background: #d2547e; }
+.ansi48-211 { background: #d2547e; }
+.inv48-211 { color: #d2547e; }
+.ansi38-212 { color: #d254a8; }
+.inv38-212 { background: #d254a8; }
+.ansi48-212 { background: #d254a8; }
+.inv48-212 { color: #d254a8; }
+.ansi38-213 { color: #d254d2; }
+.inv38-213 { background: #d254d2; }
+.ansi48-213 { background: #d254d2; }
+.inv48-213 { color: #d254d2; }
+.ansi38-34 { color: #007e00; }
+.inv38-34 { background: #007e00; }
+.ansi48-34 { background: #007e00; }
+.inv48-34 { color: #007e00; }
+.ansi38-35 { color: #007e2a; }
+.inv38-35 { background: #007e2a; }
+.ansi48-35 { background: #007e2a; }
+.inv48-35 { color: #007e2a; }
+.ansi38-36 { color: #007e54; }
+.inv38-36 { background: #007e54; }
+.ansi48-36 { background: #007e54; }
+.inv48-36 { color: #007e54; }
+.ansi38-37 { color: #007e7e; }
+.inv38-37 { background: #007e7e; }
+.ansi48-37 { background: #007e7e; }
+.inv48-37 { color: #007e7e; }
+.ansi38-38 { color: #007ea8; }
+.inv38-38 { background: #007ea8; }
+.ansi48-38 { background: #007ea8; }
+.inv48-38 { color: #007ea8; }
+.ansi38-39 { color: #007ed2; }
+.inv38-39 { background: #007ed2; }
+.ansi48-39 { background: #007ed2; }
+.inv48-39 { color: #007ed2; }
+.ansi38-70 { color: #2a7e00; }
+.inv38-70 { background: #2a7e00; }
+.ansi48-70 { background: #2a7e00; }
+.inv48-70 { color: #2a7e00; }
+.ansi38-71 { color: #2a7e2a; }
+.inv38-71 { background: #2a7e2a; }
+.ansi48-71 { background: #2a7e2a; }
+.inv48-71 { color: #2a7e2a; }
+.ansi38-72 { color: #2a7e54; }
+.inv38-72 { background: #2a7e54; }
+.ansi48-72 { background: #2a7e54; }
+.inv48-72 { color: #2a7e54; }
+.ansi38-73 { color: #2a7e7e; }
+.inv38-73 { background: #2a7e7e; }
+.ansi48-73 { background: #2a7e7e; }
+.inv48-73 { color: #2a7e7e; }
+.ansi38-74 { color: #2a7ea8; }
+.inv38-74 { background: #2a7ea8; }
+.ansi48-74 { background: #2a7ea8; }
+.inv48-74 { color: #2a7ea8; }
+.ansi38-75 { color: #2a7ed2; }
+.inv38-75 { background: #2a7ed2; }
+.ansi48-75 { background: #2a7ed2; }
+.inv48-75 { color: #2a7ed2; }
+.ansi38-106 { color: #547e00; }
+.inv38-106 { background: #547e00; }
+.ansi48-106 { background: #547e00; }
+.inv48-106 { color: #547e00; }
+.ansi38-107 { color: #547e2a; }
+.inv38-107 { background: #547e2a; }
+.ansi48-107 { background: #547e2a; }
+.inv48-107 { color: #547e2a; }
+.ansi38-108 { color: #547e54; }
+.inv38-108 { background: #547e54; }
+.ansi48-108 { background: #547e54; }
+.inv48-108 { color: #547e54; }
+.ansi38-109 { color: #547e7e; }
+.inv38-109 { background: #547e7e; }
+.ansi48-109 { background: #547e7e; }
+.inv48-109 { color: #547e7e; }
+.ansi38-110 { color: #547ea8; }
+.inv38-110 { background: #547ea8; }
+.ansi48-110 { background: #547ea8; }
+.inv48-110 { color: #547ea8; }
+.ansi38-111 { color: #547ed2; }
+.inv38-111 { background: #547ed2; }
+.ansi48-111 { background: #547ed2; }
+.inv48-111 { color: #547ed2; }
+.ansi38-142 { color: #7e7e00; }
+.inv38-142 { background: #7e7e00; }
+.ansi48-142 { background: #7e7e00; }
+.inv48-142 { color: #7e7e00; }
+.ansi38-143 { color: #7e7e2a; }
+.inv38-143 { background: #7e7e2a; }
+.ansi48-143 { background: #7e7e2a; }
+.inv48-143 { color: #7e7e2a; }
+.ansi38-144 { color: #7e7e54; }
+.inv38-144 { background: #7e7e54; }
+.ansi48-144 { background: #7e7e54; }
+.inv48-144 { color: #7e7e54; }
+.ansi38-145 { color: #7e7e7e; }
+.inv38-145 { background: #7e7e7e; }
+.ansi48-145 { background: #7e7e7e; }
+.inv48-145 { color: #7e7e7e; }
+.ansi38-146 { color: #7e7ea8; }
+.inv38-146 { background: #7e7ea8; }
+.ansi48-146 { background: #7e7ea8; }
+.inv48-146 { color: #7e7ea8; }
+.ansi38-147 { color: #7e7ed2; }
+.inv38-147 { background: #7e7ed2; }
+.ansi48-147 { background: #7e7ed2; }
+.inv48-147 { color: #7e7ed2; }
+.ansi38-178 { color: #a87e00; }
+.inv38-178 { background: #a87e00; }
+.ansi48-178 { background: #a87e00; }
+.inv48-178 { color: #a87e00; }
+.ansi38-179 { color: #a87e2a; }
+.inv38-179 { background: #a87e2a; }
+.ansi48-179 { background: #a87e2a; }
+.inv48-179 { color: #a87e2a; }
+.ansi38-180 { color: #a87e54; }
+.inv38-180 { background: #a87e54; }
+.ansi48-180 { background: #a87e54; }
+.inv48-180 { color: #a87e54; }
+.ansi38-181 { color: #a87e7e; }
+.inv38-181 { background: #a87e7e; }
+.ansi48-181 { background: #a87e7e; }
+.inv48-181 { color: #a87e7e; }
+.ansi38-182 { color: #a87ea8; }
+.inv38-182 { background: #a87ea8; }
+.ansi48-182 { background: #a87ea8; }
+.inv48-182 { color: #a87ea8; }
+.ansi38-183 { color: #a87ed2; }
+.inv38-183 { background: #a87ed2; }
+.ansi48-183 { background: #a87ed2; }
+.inv48-183 { color: #a87ed2; }
+.ansi38-214 { color: #d27e00; }
+.inv38-214 { background: #d27e00; }
+.ansi48-214 { background: #d27e00; }
+.inv48-214 { color: #d27e00; }
+.ansi38-215 { color: #d27e2a; }
+.inv38-215 { background: #d27e2a; }
+.ansi48-215 { background: #d27e2a; }
+.inv48-215 { color: #d27e2a; }
+.ansi38-216 { color: #d27e54; }
+.inv38-216 { background: #d27e54; }
+.ansi48-216 { background: #d27e54; }
+.inv48-216 { color: #d27e54; }
+.ansi38-217 { color: #d27e7e; }
+.inv38-217 { background: #d27e7e; }
+.ansi48-217 { background: #d27e7e; }
+.inv48-217 { color: #d27e7e; }
+.ansi38-218 { color: #d27ea8; }
+.inv38-218 { background: #d27ea8; }
+.ansi48-218 { background: #d27ea8; }
+.inv48-218 { color: #d27ea8; }
+.ansi38-219 { color: #d27ed2; }
+.inv38-219 { background: #d27ed2; }
+.ansi48-219 { background: #d27ed2; }
+.inv48-219 { color: #d27ed2; }
+.ansi38-40 { color: #00a800; }
+.inv38-40 { background: #00a800; }
+.ansi48-40 { background: #00a800; }
+.inv48-40 { color: #00a800; }
+.ansi38-41 { color: #00a82a; }
+.inv38-41 { background: #00a82a; }
+.ansi48-41 { background: #00a82a; }
+.inv48-41 { color: #00a82a; }
+.ansi38-42 { color: #00a854; }
+.inv38-42 { background: #00a854; }
+.ansi48-42 { background: #00a854; }
+.inv48-42 { color: #00a854; }
+.ansi38-43 { color: #00a87e; }
+.inv38-43 { background: #00a87e; }
+.ansi48-43 { background: #00a87e; }
+.inv48-43 { color: #00a87e; }
+.ansi38-44 { color: #00a8a8; }
+.inv38-44 { background: #00a8a8; }
+.ansi48-44 { background: #00a8a8; }
+.inv48-44 { color: #00a8a8; }
+.ansi38-45 { color: #00a8d2; }
+.inv38-45 { background: #00a8d2; }
+.ansi48-45 { background: #00a8d2; }
+.inv48-45 { color: #00a8d2; }
+.ansi38-76 { color: #2aa800; }
+.inv38-76 { background: #2aa800; }
+.ansi48-76 { background: #2aa800; }
+.inv48-76 { color: #2aa800; }
+.ansi38-77 { color: #2aa82a; }
+.inv38-77 { background: #2aa82a; }
+.ansi48-77 { background: #2aa82a; }
+.inv48-77 { color: #2aa82a; }
+.ansi38-78 { color: #2aa854; }
+.inv38-78 { background: #2aa854; }
+.ansi48-78 { background: #2aa854; }
+.inv48-78 { color: #2aa854; }
+.ansi38-79 { color: #2aa87e; }
+.inv38-79 { background: #2aa87e; }
+.ansi48-79 { background: #2aa87e; }
+.inv48-79 { color: #2aa87e; }
+.ansi38-80 { color: #2aa8a8; }
+.inv38-80 { background: #2aa8a8; }
+.ansi48-80 { background: #2aa8a8; }
+.inv48-80 { color: #2aa8a8; }
+.ansi38-81 { color: #2aa8d2; }
+.inv38-81 { background: #2aa8d2; }
+.ansi48-81 { background: #2aa8d2; }
+.inv48-81 { color: #2aa8d2; }
+.ansi38-112 { color: #54a800; }
+.inv38-112 { background: #54a800; }
+.ansi48-112 { background: #54a800; }
+.inv48-112 { color: #54a800; }
+.ansi38-113 { color: #54a82a; }
+.inv38-113 { background: #54a82a; }
+.ansi48-113 { background: #54a82a; }
+.inv48-113 { color: #54a82a; }
+.ansi38-114 { color: #54a854; }
+.inv38-114 { background: #54a854; }
+.ansi48-114 { background: #54a854; }
+.inv48-114 { color: #54a854; }
+.ansi38-115 { color: #54a87e; }
+.inv38-115 { background: #54a87e; }
+.ansi48-115 { background: #54a87e; }
+.inv48-115 { color: #54a87e; }
+.ansi38-116 { color: #54a8a8; }
+.inv38-116 { background: #54a8a8; }
+.ansi48-116 { background: #54a8a8; }
+.inv48-116 { color: #54a8a8; }
+.ansi38-117 { color: #54a8d2; }
+.inv38-117 { background: #54a8d2; }
+.ansi48-117 { background: #54a8d2; }
+.inv48-117 { color: #54a8d2; }
+.ansi38-148 { color: #7ea800; }
+.inv38-148 { background: #7ea800; }
+.ansi48-148 { background: #7ea800; }
+.inv48-148 { color: #7ea800; }
+.ansi38-149 { color: #7ea82a; }
+.inv38-149 { background: #7ea82a; }
+.ansi48-149 { background: #7ea82a; }
+.inv48-149 { color: #7ea82a; }
+.ansi38-150 { color: #7ea854; }
+.inv38-150 { background: #7ea854; }
+.ansi48-150 { background: #7ea854; }
+.inv48-150 { color: #7ea854; }
+.ansi38-151 { color: #7ea87e; }
+.inv38-151 { background: #7ea87e; }
+.ansi48-151 { background: #7ea87e; }
+.inv48-151 { color: #7ea87e; }
+.ansi38-152 { color: #7ea8a8; }
+.inv38-152 { background: #7ea8a8; }
+.ansi48-152 { background: #7ea8a8; }
+.inv48-152 { color: #7ea8a8; }
+.ansi38-153 { color: #7ea8d2; }
+.inv38-153 { background: #7ea8d2; }
+.ansi48-153 { background: #7ea8d2; }
+.inv48-153 { color: #7ea8d2; }
+.ansi38-184 { color: #a8a800; }
+.inv38-184 { background: #a8a800; }
+.ansi48-184 { background: #a8a800; }
+.inv48-184 { color: #a8a800; }
+.ansi38-185 { color: #a8a82a; }
+.inv38-185 { background: #a8a82a; }
+.ansi48-185 { background: #a8a82a; }
+.inv48-185 { color: #a8a82a; }
+.ansi38-186 { color: #a8a854; }
+.inv38-186 { background: #a8a854; }
+.ansi48-186 { background: #a8a854; }
+.inv48-186 { color: #a8a854; }
+.ansi38-187 { color: #a8a87e; }
+.inv38-187 { background: #a8a87e; }
+.ansi48-187 { background: #a8a87e; }
+.inv48-187 { color: #a8a87e; }
+.ansi38-188 { color: #a8a8a8; }
+.inv38-188 { background: #a8a8a8; }
+.ansi48-188 { background: #a8a8a8; }
+.inv48-188 { color: #a8a8a8; }
+.ansi38-189 { color: #a8a8d2; }
+.inv38-189 { background: #a8a8d2; }
+.ansi48-189 { background: #a8a8d2; }
+.inv48-189 { color: #a8a8d2; }
+.ansi38-220 { color: #d2a800; }
+.inv38-220 { background: #d2a800; }
+.ansi48-220 { background: #d2a800; }
+.inv48-220 { color: #d2a800; }
+.ansi38-221 { color: #d2a82a; }
+.inv38-221 { background: #d2a82a; }
+.ansi48-221 { background: #d2a82a; }
+.inv48-221 { color: #d2a82a; }
+.ansi38-222 { color: #d2a854; }
+.inv38-222 { background: #d2a854; }
+.ansi48-222 { background: #d2a854; }
+.inv48-222 { color: #d2a854; }
+.ansi38-223 { color: #d2a87e; }
+.inv38-223 { background: #d2a87e; }
+.ansi48-223 { background: #d2a87e; }
+.inv48-223 { color: #d2a87e; }
+.ansi38-224 { color: #d2a8a8; }
+.inv38-224 { background: #d2a8a8; }
+.ansi48-224 { background: #d2a8a8; }
+.inv48-224 { color: #d2a8a8; }
+.ansi38-225 { color: #d2a8d2; }
+.inv38-225 { background: #d2a8d2; }
+.ansi48-225 { background: #d2a8d2; }
+.inv48-225 { color: #d2a8d2; }
+.ansi38-46 { color: #00d200; }
+.inv38-46 { background: #00d200; }
+.ansi48-46 { background: #00d200; }
+.inv48-46 { color: #00d200; }
+.ansi38-47 { color: #00d22a; }
+.inv38-47 { background: #00d22a; }
+.ansi48-47 { background: #00d22a; }
+.inv48-47 { color: #00d22a; }
+.ansi38-48 { color: #00d254; }
+.inv38-48 { background: #00d254; }
+.ansi48-48 { background: #00d254; }
+.inv48-48 { color: #00d254; }
+.ansi38-49 { color: #00d27e; }
+.inv38-49 { background: #00d27e; }
+.ansi48-49 { background: #00d27e; }
+.inv48-49 { color: #00d27e; }
+.ansi38-50 { color: #00d2a8; }
+.inv38-50 { background: #00d2a8; }
+.ansi48-50 { background: #00d2a8; }
+.inv48-50 { color: #00d2a8; }
+.ansi38-51 { color: #00d2d2; }
+.inv38-51 { background: #00d2d2; }
+.ansi48-51 { background: #00d2d2; }
+.inv48-51 { color: #00d2d2; }
+.ansi38-82 { color: #2ad200; }
+.inv38-82 { background: #2ad200; }
+.ansi48-82 { background: #2ad200; }
+.inv48-82 { color: #2ad200; }
+.ansi38-83 { color: #2ad22a; }
+.inv38-83 { background: #2ad22a; }
+.ansi48-83 { background: #2ad22a; }
+.inv48-83 { color: #2ad22a; }
+.ansi38-84 { color: #2ad254; }
+.inv38-84 { background: #2ad254; }
+.ansi48-84 { background: #2ad254; }
+.inv48-84 { color: #2ad254; }
+.ansi38-85 { color: #2ad27e; }
+.inv38-85 { background: #2ad27e; }
+.ansi48-85 { background: #2ad27e; }
+.inv48-85 { color: #2ad27e; }
+.ansi38-86 { color: #2ad2a8; }
+.inv38-86 { background: #2ad2a8; }
+.ansi48-86 { background: #2ad2a8; }
+.inv48-86 { color: #2ad2a8; }
+.ansi38-87 { color: #2ad2d2; }
+.inv38-87 { background: #2ad2d2; }
+.ansi48-87 { background: #2ad2d2; }
+.inv48-87 { color: #2ad2d2; }
+.ansi38-118 { color: #54d200; }
+.inv38-118 { background: #54d200; }
+.ansi48-118 { background: #54d200; }
+.inv48-118 { color: #54d200; }
+.ansi38-119 { color: #54d22a; }
+.inv38-119 { background: #54d22a; }
+.ansi48-119 { background: #54d22a; }
+.inv48-119 { color: #54d22a; }
+.ansi38-120 { color: #54d254; }
+.inv38-120 { background: #54d254; }
+.ansi48-120 { background: #54d254; }
+.inv48-120 { color: #54d254; }
+.ansi38-121 { color: #54d27e; }
+.inv38-121 { background: #54d27e; }
+.ansi48-121 { background: #54d27e; }
+.inv48-121 { color: #54d27e; }
+.ansi38-122 { color: #54d2a8; }
+.inv38-122 { background: #54d2a8; }
+.ansi48-122 { background: #54d2a8; }
+.inv48-122 { color: #54d2a8; }
+.ansi38-123 { color: #54d2d2; }
+.inv38-123 { background: #54d2d2; }
+.ansi48-123 { background: #54d2d2; }
+.inv48-123 { color: #54d2d2; }
+.ansi38-154 { color: #7ed200; }
+.inv38-154 { background: #7ed200; }
+.ansi48-154 { background: #7ed200; }
+.inv48-154 { color: #7ed200; }
+.ansi38-155 { color: #7ed22a; }
+.inv38-155 { background: #7ed22a; }
+.ansi48-155 { background: #7ed22a; }
+.inv48-155 { color: #7ed22a; }
+.ansi38-156 { color: #7ed254; }
+.inv38-156 { background: #7ed254; }
+.ansi48-156 { background: #7ed254; }
+.inv48-156 { color: #7ed254; }
+.ansi38-157 { color: #7ed27e; }
+.inv38-157 { background: #7ed27e; }
+.ansi48-157 { background: #7ed27e; }
+.inv48-157 { color: #7ed27e; }
+.ansi38-158 { color: #7ed2a8; }
+.inv38-158 { background: #7ed2a8; }
+.ansi48-158 { background: #7ed2a8; }
+.inv48-158 { color: #7ed2a8; }
+.ansi38-159 { color: #7ed2d2; }
+.inv38-159 { background: #7ed2d2; }
+.ansi48-159 { background: #7ed2d2; }
+.inv48-159 { color: #7ed2d2; }
+.ansi38-190 { color: #a8d200; }
+.inv38-190 { background: #a8d200; }
+.ansi48-190 { background: #a8d200; }
+.inv48-190 { color: #a8d200; }
+.ansi38-191 { color: #a8d22a; }
+.inv38-191 { background: #a8d22a; }
+.ansi48-191 { background: #a8d22a; }
+.inv48-191 { color: #a8d22a; }
+.ansi38-192 { color: #a8d254; }
+.inv38-192 { background: #a8d254; }
+.ansi48-192 { background: #a8d254; }
+.inv48-192 { color: #a8d254; }
+.ansi38-193 { color: #a8d27e; }
+.inv38-193 { background: #a8d27e; }
+.ansi48-193 { background: #a8d27e; }
+.inv48-193 { color: #a8d27e; }
+.ansi38-194 { color: #a8d2a8; }
+.inv38-194 { background: #a8d2a8; }
+.ansi48-194 { background: #a8d2a8; }
+.inv48-194 { color: #a8d2a8; }
+.ansi38-195 { color: #a8d2d2; }
+.inv38-195 { background: #a8d2d2; }
+.ansi48-195 { background: #a8d2d2; }
+.inv48-195 { color: #a8d2d2; }
+.ansi38-226 { color: #d2d200; }
+.inv38-226 { background: #d2d200; }
+.ansi48-226 { background: #d2d200; }
+.inv48-226 { color: #d2d200; }
+.ansi38-227 { color: #d2d22a; }
+.inv38-227 { background: #d2d22a; }
+.ansi48-227 { background: #d2d22a; }
+.inv48-227 { color: #d2d22a; }
+.ansi38-228 { color: #d2d254; }
+.inv38-228 { background: #d2d254; }
+.ansi48-228 { background: #d2d254; }
+.inv48-228 { color: #d2d254; }
+.ansi38-229 { color: #d2d27e; }
+.inv38-229 { background: #d2d27e; }
+.ansi48-229 { background: #d2d27e; }
+.inv48-229 { color: #d2d27e; }
+.ansi38-230 { color: #d2d2a8; }
+.inv38-230 { background: #d2d2a8; }
+.ansi48-230 { background: #d2d2a8; }
+.inv48-230 { color: #d2d2a8; }
+.ansi38-231 { color: #d2d2d2; }
+.inv38-231 { background: #d2d2d2; }
+.ansi48-231 { background: #d2d2d2; }
+.inv48-231 { color: #d2d2d2; }
+.ansi38-232 { color: #080808; }
+.inv38-232 { background: #080808; }
+.ansi48-232 { background: #080808; }
+.inv48-232 { color: #080808; }
+.ansi38-233 { color: #121212; }
+.inv38-233 { background: #121212; }
+.ansi48-233 { background: #121212; }
+.inv48-233 { color: #121212; }
+.ansi38-234 { color: #1c1c1c; }
+.inv38-234 { background: #1c1c1c; }
+.ansi48-234 { background: #1c1c1c; }
+.inv48-234 { color: #1c1c1c; }
+.ansi38-235 { color: #262626; }
+.inv38-235 { background: #262626; }
+.ansi48-235 { background: #262626; }
+.inv48-235 { color: #262626; }
+.ansi38-236 { color: #303030; }
+.inv38-236 { background: #303030; }
+.ansi48-236 { background: #303030; }
+.inv48-236 { color: #303030; }
+.ansi38-237 { color: #3a3a3a; }
+.inv38-237 { background: #3a3a3a; }
+.ansi48-237 { background: #3a3a3a; }
+.inv48-237 { color: #3a3a3a; }
+.ansi38-238 { color: #444444; }
+.inv38-238 { background: #444444; }
+.ansi48-238 { background: #444444; }
+.inv48-238 { color: #444444; }
+.ansi38-239 { color: #4e4e4e; }
+.inv38-239 { background: #4e4e4e; }
+.ansi48-239 { background: #4e4e4e; }
+.inv48-239 { color: #4e4e4e; }
+.ansi38-240 { color: #585858; }
+.inv38-240 { background: #585858; }
+.ansi48-240 { background: #585858; }
+.inv48-240 { color: #585858; }
+.ansi38-241 { color: #626262; }
+.inv38-241 { background: #626262; }
+.ansi48-241 { background: #626262; }
+.inv48-241 { color: #626262; }
+.ansi38-242 { color: #6c6c6c; }
+.inv38-242 { background: #6c6c6c; }
+.ansi48-242 { background: #6c6c6c; }
+.inv48-242 { color: #6c6c6c; }
+.ansi38-243 { color: #767676; }
+.inv38-243 { background: #767676; }
+.ansi48-243 { background: #767676; }
+.inv48-243 { color: #767676; }
+.ansi38-244 { color: #808080; }
+.inv38-244 { background: #808080; }
+.ansi48-244 { background: #808080; }
+.inv48-244 { color: #808080; }
+.ansi38-245 { color: #8a8a8a; }
+.inv38-245 { background: #8a8a8a; }
+.ansi48-245 { background: #8a8a8a; }
+.inv48-245 { color: #8a8a8a; }
+.ansi38-246 { color: #949494; }
+.inv38-246 { background: #949494; }
+.ansi48-246 { background: #949494; }
+.inv48-246 { color: #949494; }
+.ansi38-247 { color: #9e9e9e; }
+.inv38-247 { background: #9e9e9e; }
+.ansi48-247 { background: #9e9e9e; }
+.inv48-247 { color: #9e9e9e; }
+.ansi38-248 { color: #a8a8a8; }
+.inv38-248 { background: #a8a8a8; }
+.ansi48-248 { background: #a8a8a8; }
+.inv48-248 { color: #a8a8a8; }
+.ansi38-249 { color: #b2b2b2; }
+.inv38-249 { background: #b2b2b2; }
+.ansi48-249 { background: #b2b2b2; }
+.inv48-249 { color: #b2b2b2; }
+.ansi38-250 { color: #bcbcbc; }
+.inv38-250 { background: #bcbcbc; }
+.ansi48-250 { background: #bcbcbc; }
+.inv48-250 { color: #bcbcbc; }
+.ansi38-251 { color: #c6c6c6; }
+.inv38-251 { background: #c6c6c6; }
+.ansi48-251 { background: #c6c6c6; }
+.inv48-251 { color: #c6c6c6; }
+.ansi38-252 { color: #d0d0d0; }
+.inv38-252 { background: #d0d0d0; }
+.ansi48-252 { background: #d0d0d0; }
+.inv48-252 { color: #d0d0d0; }
+.ansi38-253 { color: #dadada; }
+.inv38-253 { background: #dadada; }
+.ansi48-253 { background: #dadada; }
+.inv48-253 { color: #dadada; }
+.ansi38-254 { color: #e4e4e4; }
+.inv38-254 { background: #e4e4e4; }
+.ansi48-254 { background: #e4e4e4; }
+.inv48-254 { color: #e4e4e4; }
+.ansi38-255 { color: #eeeeee; }
+.inv38-255 { background: #eeeeee; }
+.ansi48-255 { background: #eeeeee; }
+.inv48-255 { color: #eeeeee; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content">
+
+1er
+――――
+
+Après l'article 4 de la loi n° 2000-108 du 10 février 2000 relative à la modernisation et au développement du service public de l'électricité, il est inséré un article 4-1 ainsi rédigé :
+"Art. 4-1. - I. - Afin d'assurer la liberté de choix du fournisseur d'électricité tout en faisant bénéficier l'attractivité du territoire et l'ensemble des consommateurs de la compétitivité du parc électro-nucléaire français, il est mis en place à titre transitoire un accès régulé et limité à l'électricité nucléaire historique, produite par les centrales nucléaires mentionnées au II, ouvert à tous les opérateurs fournissant des consommateurs finals résidant sur le territoire métropolitain continental ou des gestionnaires de réseaux pour leurs pertes, à des conditions économiques équivalentes à celles résultant pour Électricité de France de l'utilisation de ses centrales nucléaires mentionnées au même II.
+"II. - Pendant la période définie au VII, Électricité de France cède de l'électricité, pour un volume maximal et dans les conditions définies au III, aux fournisseurs d'électricité qui en font la demande, titulaires de l'autorisation prévue au IV de l'article 22 et qui prévoient d'alimenter des consommateurs finals ou des gestionnaires de réseaux pour leurs pertes, situés sur le territoire métropolitain continental. Les conditions d'achat reflètent les conditions économiques de production d'électricité par les centrales nucléaires d'Électricité de France situées sur le territoire national et mises en service avant la publication de la loi n° du portant nouvelle organisation du marché de l'électricité.
+"Les conditions dans lesquelles s'effectue cette vente sont définies par arrêté du ministre chargé de l'énergie sur proposition de la Commission de régulation de l'énergie. Il en est de même des stipulations de l'accord-cadre mentionné au III du présent article.
+"Le volume global maximal d'électricité nucléaire historique pouvant être cédé est déterminé par arrêté des ministres chargés de l'économie et de l'énergie, après avis de la Commission de régulation de l'énergie, en fonction notamment du développement de la concurrence sur les marchés de la production d'électricité et de la fourniture de celle-ci à des consommateurs finals. Ce volume global maximal, qui demeure strictement proportionné aux objectifs poursuivis, ne peut excéder 100 térawattheures par an.
+"III. - Dans un délai d'un mois à compter de la demande présentée par un fournisseur mentionné au II, un accord-cadre conclu avec Électricité de France garantit, dans les conditions définies par le présent article, les modalités selon lesquelles ce fournisseur peut, à sa demande, exercer son droit d'accès régulé à l'électricité nucléaire historique pendant la période transitoire par la voie de cessions d'une durée d'un an. La liste des accords-cadres est publiée sur le site de la Commission de régulation de l'énergie.
+"Le volume maximal cédé à un fournisseur mentionné au II est calculé pour une année par la Commission de régulation de l'énergie, dans le respect des III et IV du présent article, en fonction des caractéristiques et des prévisions d'évolution de la consommation des consommateurs finals et des gestionnaires de réseaux pour leurs pertes que fournit et prévoit de fournir ce fournisseur sur le territoire métropolitain continental, et en fonction de ce que représente la part de la production des centrales mentionnées au II dans la consommation totale des consommateurs finals. De manière transitoire, jusqu'au 31 décembre 2015, afin de refléter la modulation de la production des centrales mentionnées au II, les règles de calcul de ce volume tiennent compte des catégories et du profil de consommation des clients du fournisseur dans la mesure où cela ne conduit pas à ce que la part du volume global maximal mentionné au II attribuée au titre d'une catégorie de consommateurs s'écarte de manière significative de ce que représente la consommation de cette catégorie de consommateurs dans la consommation totale du territoire métropolitain continental.
+"Si la somme des volumes maximaux définis au deuxième alinéa pour chacun des fournisseurs excède le volume global maximal fixé par l'arrêté mentionné au II, la Commission de régulation de l'énergie répartit ce dernier entre les fournisseurs de manière à permettre le développement de la concurrence sur l'ensemble des segments du marché de détail.
+"Le volume cédé à chaque fournisseur est fixé par la Commission de régulation de l'énergie, selon une périodicité infra-annuelle, et notifié au fournisseur. Les échanges d'information sont organisés, sous le contrôle de la Commission de régulation de l'énergie, notamment par le gestionnaire du réseau public de transport, de telle sorte qu'Électricité de France ne puisse pas avoir accès à des positions individuelles.
+"À compter du 1er août 2013, les droits des fournisseurs sont augmentés de manière progressive en suivant un échéancier sur trois ans défini par arrêté du ministre chargé de l'énergie, pour tenir compte des quantités d'électricité qu'ils fournissent aux gestionnaires de réseaux pour leurs pertes. Ces volumes supplémentaires s'ajoutent au plafond fixé par l'arrêté mentionné au II.
+"Les ministres chargés de l'énergie et de l'économie peuvent, par arrêté conjoint, suspendre le dispositif d'accès régulé à l'électricité nucléaire historique et la cession par Électricité de France de tout ou partie des volumes d'électricité correspondant audit dispositif en cas de circonstances exceptionnelles affectant les centrales mentionnées au II.
+"IV. - Le volume maximal mentionné au III est calculé selon les modalités suivantes :
+"1° En ce qui concerne les sites pour lesquels a été souscrite une puissance supérieure à 36 kilovoltampères, seules sont prises en compte les consommations d'électricité faisant l'objet de contrats avec des consommateurs finals conclus, ou modifiés par avenant pour tenir compte de l'accès régulé à l'électricité nucléaire historique, après la promulgation de la loi n° du portant nouvelle organisation du marché de l'électricité, ainsi que les perspectives de développement des portefeuilles de contrats ;
+"2° Les volumes d'électricité correspondant aux droits des actionnaires des sociétés de capitaux agréées qui ont pour activité l'acquisition de contrats d'approvisionnement à long terme d'électricité, mentionnées à l'article 238 bis HV du code général des impôts, sont décomptés dans des conditions précisées par décret ;
+"3° Le volume peut être réduit, sur décision conjointe du fournisseur et d'Électricité de France, des quantités d'électricité de base dont dispose, sur le territoire métropolitain continental, le fournisseur ou toute société qui lui est liée par le biais de contrats conclus avec Électricité de France, ou toute société liée à ce dernier, après la promulgation de la loi n° du précitée. Le cas échéant, les cocontractants notifient à la Commission de régulation de l'énergie la teneur de ces contrats et les modalités de prise en compte de la quantité d'électricité devant être déduite.
+"Deux sociétés sont réputées liées :
+"a) Soit lorsque l'une détient directement ou indirectement la majorité du capital social de l'autre ou y exerce en fait le pouvoir de décision ;
+"b) Soit lorsqu'elles sont placées l'une et l'autre sous le contrôle d'une même tierce entreprise qui détient directement ou indirectement la majorité du capital social de chacune ou y exerce en fait le pouvoir de décision.
+"V. - Dans le cas où les droits alloués à un fournisseur en début de période en application du III s'avèrent supérieurs aux droits correspondant à la consommation constatée des clients finals sur le territoire métropolitain continental et des gestionnaires de réseaux pour leurs pertes, la Commission de régulation de l'énergie notifie au fournisseur et à Électricité de France le complément de prix à acquitter par le premier au titre des volumes excédentaires. Ce complément, qui tient compte du coût de financement lié au caractère différé de son règlement, est au moins égal à la partie positive de l'écart moyen entre les prix observés sur les marchés de gros et le prix d'accès régulé à l'électricité nucléaire historique. Il tient également compte de l'ampleur de l'écart entre la prévision initialement faite par le fournisseur et la consommation constatée de ses clients finals sur le territoire métropolitain continental et des gestionnaires de réseaux pour leurs pertes. Les modalités de son calcul sont précisées par décret en Conseil d'État pris après avis de la Commission de régulation de l'énergie.
+"Les prix mentionnés à l'alinéa précédent s'entendent hors taxes.
+"V bis. - Les distributeurs non nationalisés mentionnés à l'article 23 de la loi n° 46-628 du 8 avril 1946 sur la nationalisation de l'électricité et du gaz peuvent confier la gestion des droits qui leur sont alloués en application du III du présent article, sur la base de la consommation de leurs clients situés dans leur zone de desserte, à un autre distributeur non nationalisé. Ce dernier est l'interlocuteur pour l'achat de ses volumes propres et ceux dont les droits lui ont été transférés.
+"VI. - Le prix de l'électricité cédée en application du présent article par Électricité de France aux fournisseurs de consommateurs finals sur le territoire métropolitain continental ou de gestionnaires de réseaux pour leurs pertes est arrêté par les ministres chargés de l'énergie et de l'économie, sur proposition de la Commission de régulation de l'énergie. La décision est réputée acquise en l'absence d'opposition de l'un des ministres dans un délai de trois mois suivant la réception de la proposition de la commission. Afin d'assurer une juste rémunération à Électricité de France, le prix, réexaminé chaque année, est représentatif des conditions économiques de production d'électricité par les centrales mentionnées au II sur la durée du dispositif mentionnée au VII. Il tient compte de l'addition :
+"1° D'une rémunération des capitaux prenant en compte la nature de l'activité ;
+"2° Des coûts d'exploitation ;
+"3° Des coûts des investissements de maintenance ou nécessaires à l'extension de la durée de l'autorisation d'exploitation ;
+"4° Des coûts prévisionnels liés aux charges pesant à long terme sur les exploitants d'installations nucléaires de base mentionnées au I de l'article 20 de la loi n° 2006-739 du 28 juin 2006 de programme relative à la gestion durable des matières et déchets radioactifs.
+"Pour apprécier les conditions économiques de production d'électricité par les centrales mentionnées au II du présent article, la Commission de régulation de l'énergie se fonde sur des documents permettant d'identifier l'ensemble des coûts exposés dans le périmètre d'activité de ces centrales, selon les méthodes usuelles. Elle peut exiger d'Électricité de France les documents correspondants et leur contrôle, aux frais d'Électricité de France, par un organisme indépendant qu'elle choisit.
+"À titre transitoire, pendant une durée de trois ans à compter de la promulgation de la loi n° du portant nouvelle organisation du marché de l'électricité, le prix est arrêté par les ministres chargés de l'énergie et de l'économie après avis motivé de la Commission de régulation de l'énergie. Toute décision des ministres passant outre l'avis motivé de la Commission de régulation de l'énergie est motivée. Le prix est initialement fixé en cohérence avec le tarif visé à l'article 30-1 de la loi n° 2004-803 du 9 août 2004 relative au service public de l'électricité et du gaz et aux entreprises électriques et gazières en vigueur à la date de publication du décret mentionné au VIII du présent article ou en vigueur le 31 décembre 2010 dans le cas où la publication de ce décret interviendrait après cette date.
+"VII. - Le dispositif transitoire d'accès régulé à l'électricité nucléaire historique est mis en place à compter de l'entrée en vigueur du décret mentionné au VIII et jusqu'au 31 décembre 2025.
+"Avant le 31 décembre 2015, puis tous les cinq ans, le Gouvernement présente au Parlement, sur la base de rapports de la Commission de régulation de l'énergie et de l'Autorité de la concurrence, un rapport sur le dispositif d'accès régulé à l'électricité nucléaire historique. Ce rapport :
+"1° Évalue la mise en oeuvre de l'accès régulé à l'électricité nucléaire historique ;
+"2° Évalue son impact sur le développement de la concurrence sur le marché de la fourniture d'électricité et la cohérence entre le prix des offres de détail et le prix régulé d'accès à l'électricité nucléaire historique ;
+"3° Évalue son impact sur le fonctionnement du marché de gros ;
+"4° Évalue son impact sur la conclusion de contrats de gré à gré entre les fournisseurs et Électricité de France et sur la participation des acteurs aux investissements dans les moyens de production nécessaires à la sécurité d'approvisionnement en électricité et propose, le cas échéant, au regard de cette évaluation, des modalités de fin du dispositif assurant une transition progressive pour les fournisseurs d'électricité ;
+"5° Propose, le cas échéant, des adaptations du dispositif ;
+"5° bis Propose, le cas échéant, des modalités permettant d'associer les acteurs intéressés, en particulier les fournisseurs d'électricité et les consommateurs électro-intensifs, aux investissements de prolongation de la durée d'exploitation des centrales nucléaires ;
+"6° Propose, le cas échéant, sur la base de la programmation pluriannuelle des investissements mentionnée à l'article 6 de la présente loi, qui peut fixer les objectifs en terme de prolongation de la durée d'exploitation des centrales nucléaires et d'échéancier de renouvellement du parc nucléaire, de prendre progressivement en compte dans le prix de l'électricité pour les consommateurs finals les coûts de développement de nouvelles capacités de production d'électricité de base et de mettre en place un dispositif spécifique permettant de garantir la constitution des moyens financiers appropriés pour engager le renouvellement du parc nucléaire.
+"À cet effet, les ministres chargés de l'énergie et de l'économie ont accès aux informations nécessaires dans les conditions fixées à l'article 33.
+"VII bis. - Tout fournisseur ayant conclu, avant la promulgation de la loi n° du portant nouvelle organisation du marché de l'électricité et afin de fournir en France les clients finals professionnels raccordés au réseau en basse tension dont la puissance souscrite n'excède pas 36 kilovoltampères et les clients domestiques, à l'issue d'une procédure d'enchère, un contrat avec Électricité de France pour l'acquisition de volumes d'électricité de base assorti d'une clause de prix complémentaire en cas de vente de l'électricité sur le marché de gros peut résilier ce contrat, dans un délai maximal de trois ans à compter de la promulgation de la même loi.
+"Cette résiliation ne peut donner lieu au paiement de quelque indemnité ou pénalité que ce soit. Elle ne peut donner lieu à l'application d'une facture complémentaire pour les quantités d'électricité ayant déjà été facturées. Cette résiliation ne fait pas obstacle à la possibilité pour Électricité de France de facturer, au prix prévu dans le contrat, les quantités d'électricité qu'elle a déjà livrées à la date de résiliation du contrat et qui n'ont pas été facturées à cette date. Le prix d'accès au contrat résultant de l'enchère mentionnée au premier alinéa du présent VII bis est réglé par le fournisseur à Électricité de France au prorata de la durée effective de livraison par rapport à la durée comprise entre la date de la première livraison et le 31 décembre 2012.
+"VIII. - Un décret en Conseil d'État, pris après avis de la Commission de régulation de l'énergie, précise les conditions d'application du présent article, notamment :
+"1° Les obligations qui s'imposent à Électricité de France et aux fournisseurs bénéficiant de l'accès régulé à l'électricité nucléaire historique en application des II et III, et les méthodes d'identification et de comptabilisation des coûts mentionnés au VI ;
+"2° Les conditions dans lesquelles la Commission de régulation de l'énergie calcule et notifie les volumes et propose les conditions d'achat de l'électricité cédée dans le cadre de l'accès régulé à l'électricité nucléaire historique en application du présent article et les conditions dans lesquelles les ministres chargés de l'économie et de l'énergie arrêtent ces conditions d'achat."
+
+1er bis A
+――――
+
+Après la deuxième phrase du premier alinéa du 2° de l'article 10 de la loi n° 2000-108 du 10 février 2000 précitée, il est inséré une phrase ainsi rédigée :
+"Les installations mettant en oeuvre la cogénération utilisant la biomasse au-dessus d'une puissance de 2 mégawatts bénéficient de cette obligation d'achat."
+
+1er bis B
+――――
+
+Le dixième alinéa de l'article 10 de la loi n° 2000-108 du 10 février 2000 précitée est complété par une phrase ainsi rédigée :
+"Cette disposition ne s'applique pas aux contrats d'achat d'une durée de quinze ans, qui arrivent à échéance à partir de 2012, dont bénéficient les installations de production hydroélectrique qui pourront être renouvelés une fois à leur échéance aux mêmes conditions et pour une durée de quinze ans, sous réserve de la réalisation d'un programme d'investissement défini par arrêté."
+
+1er bis
+――――
+
+La loi n° 90-449 du 31 mai 1990 visant à la mise en oeuvre du droit au logement est ainsi modifiée :
+I. - À la seconde phrase du premier alinéa de l'article 3, après les mots : "eau et", sont insérés les mots : "les fournisseurs".
+II. - Au cinquième alinéa de l'article 6-1, après les mots : "eau ou", sont insérés les mots : "du fournisseur".
+III. - Au deuxième alinéa de l'article 6-3, les mots : "d'Électricité de France, de Gaz de France et de chaque distributeur d'énergie ou d'eau" sont remplacés par les mots : "de chaque fournisseur d'énergie ou d'eau livrant des consommateurs domestiques".
+
+1er ter
+――――
+
+À la première phrase du V de l'article 7 de la loi n° 2003-8 du 3 janvier 2003 relative aux marchés du gaz et de l'électricité et au service public de l'énergie, les mots : "à leur demande," sont supprimés.
+
+2
+――――
+
+I. - Après l'article 4 de la loi n° 2000-108 du 10 février 2000 précitée, il est inséré un article 4-2 ainsi rédigé :
+"Art. 4-2. - Chaque fournisseur d'électricité contribue, en fonction des caractéristiques de consommation de ses clients, en puissance et en énergie, sur le territoire métropolitain continental, à la sécurité d'approvisionnement en électricité.
+"Chaque fournisseur d'électricité doit disposer de garanties directes ou indirectes de capacités d'effacement de consommation et de production d'électricité pouvant être mises en oeuvre pour satisfaire l'équilibre entre la production et la consommation sur le territoire métropolitain continental, notamment lors des périodes où la consommation de l'ensemble des consommateurs est la plus élevée. Les obligations faites aux fournisseurs sont déterminées de manière à inciter au respect à moyen terme du niveau de sécurité d'approvisionnement en électricité retenu pour l'élaboration du bilan prévisionnel pluriannuel mentionné à l'article 6 de la présente loi.
+"Un distributeur non nationalisé mentionné à l'article 23 de la loi n° 46-628 du 8 avril 1946 précitée peut transférer ses obligations relatives aux garanties de capacités d'effacement de consommation et de production d'électricité à un autre distributeur non nationalisé.
+"Les garanties de capacités dont doivent justifier les fournisseurs en application du présent article portent sur des capacités dont le gestionnaire du réseau public de transport a certifié la disponibilité et le caractère effectif.
+"La capacité d'une installation de production ou d'une capacité d'effacement de consommation est certifiée par contrat conclu entre l'exploitant de cette capacité et le gestionnaire du réseau public de transport. Ce contrat prévoit les conditions dans lesquelles est assuré le contrôle de la capacité certifiée, ainsi que la pénalité due par l'exploitant au gestionnaire du réseau public de transport dans le cas où la capacité effective est inférieure à celle certifiée. Les méthodes de certification d'une capacité tiennent compte des caractéristiques techniques de celle-ci et sont transparentes et non discriminatoires. Le mécanisme d'obligation de capacité prend en compte l'interconnexion du marché français avec les autres marchés européens.
+"Les garanties de capacités sont requises avec une anticipation suffisante pour laisser aux investisseurs le temps de développer les capacités de production ou d'effacement nécessaires pour résorber un éventuel déséquilibre entre offre et demande prévisionnelles.
+"Les garanties de capacités sont échangeables et cessibles.
+"Les méthodes de certification et les conditions du contrôle des capacités certifiées, notamment les conditions d'application de la pénalité contractuelle, sont approuvées par le ministre chargé de l'énergie, sur proposition du gestionnaire du réseau public de transport, après avis de la Commission de régulation de l'énergie.
+"Les écarts entre les garanties de capacités détenues par chaque fournisseur et les obligations lui incombant au titre du présent article sont calculés conformément à l'article 15-1 de la présente loi par le gestionnaire du réseau public de transport qui les transmet à la Commission de régulation de l'énergie.
+"Un fournisseur qui ne justifie pas qu'il détient la garantie de capacité nécessaire à l'accomplissement des obligations dont il a la charge encourt, après mise en demeure demeurée infructueuse d'apporter cette justification, une sanction pécuniaire prononcée par la Commission de régulation de l'énergie dans les conditions prévues à l'article 40. Cette sanction est déterminée de manière à assurer, à moyen terme, une incitation économique à la satisfaction des obligations faites aux fournisseurs. Le barème des sanctions est défini par la Commission de régulation de l'énergie, sur proposition du gestionnaire du réseau public de transport.
+"Si un fournisseur ne s'acquitte pas de l'amende mise à sa charge, le ministre chargé de l'énergie peut suspendre sans délai l'autorisation d'exercice de l'activité d'achat pour revente, délivrée en application de l'article 22.
+"L'obligation de contribuer à la sécurité d'approvisionnement en électricité prend effet à l'issue d'un délai de trois ans suivant la publication du décret en Conseil d'État mentionné au dernier alinéa du présent article.
+"Un décret en Conseil d'État précise les modalités d'application du présent article."
+II. - Après l'article 15 de la même loi, il est inséré un article 15-1 ainsi rédigé :
+"Art. 15-1. - I. - Le gestionnaire de réseau de transport certifie la disponibilité et le caractère effectif des garanties de capacité visées à l'article 4-2.
+"À cet effet, toute installation de production raccordée au réseau public de transport ou au réseau public de distribution et toute capacité d'effacement de consommation doit faire l'objet, par son exploitant, d'une demande de certification de capacité auprès du gestionnaire du réseau public de transport. Les modalités de cette certification de capacité, qui peuvent être adaptées pour les installations dont la participation à la sécurité d'approvisionnement est réduite, sont définies par le décret en Conseil d'État mentionné au même article.
+"La totalité des garanties de capacités certifiées doit être mise à disposition des fournisseurs, soit directement soit indirectement, en vue du respect de l'obligation mentionnée au même article. Les garanties de capacités détenues par un fournisseur en excédent de ces obligations doivent faire l'objet d'une offre publique de vente.
+"II. - Le gestionnaire de réseau de transport procède à la comptabilité des garanties de capacité détenues par chaque fournisseur et au calcul des écarts entre ces capacités et les obligations visées au deuxième alinéa de l'article 4-2.
+"Sur proposition du gestionnaire du réseau public de transport, la Commission de régulation de l'énergie approuve, préalablement à leur mise en oeuvre, les méthodes de calcul des écarts mentionnées à l'alinéa précédent."
+
+2 bis A
+――――
+
+À titre transitoire, afin de contribuer à la sécurité d'approvisionnement, notamment pendant les périodes de pointe de consommation, et pour l'application du troisième alinéa du III de l'article 15 de la loi n° 2000-108 du 10 février 2000 relative à la modernisation et au développement du service public de l'électricité, le gestionnaire du réseau public de transport organise un appel d'offres selon des modalités, notamment s'agissant des volumes, des prix fixes et des prix variables, approuvées par la Commission de régulation de l'énergie, pour mettre en oeuvre des capacités d'effacement additionnelles sur une durée de trois ans. Cet appel d'offres est renouvelé annuellement jusqu'à la publication du décret en Conseil d'État visé à l'article 4-2 de la même loi.
+
+2 bis B
+――――
+
+L'article 14 de la loi n° 2000-108 du 10 février 2000 précitée est complété par trois alinéas ainsi rédigés :
+"À la demande des collectivités territoriales, le gestionnaire du réseau public de transport peut participer au financement de la mise en souterrain des ouvrages existants dont il a la charge pour des motifs liés au développement économique local ou à la protection de l'environnement. Sa participation fait l'objet d'une convention avec les collectivités territoriales concernées et sa contribution financière est fixée selon des critères et un barème arrêtés conjointement par les ministres chargés de l'économie et de l'énergie sur proposition de la Commission de régulation de l'énergie.
+"Toutefois, lorsque le gestionnaire du réseau public de transport décide de profiter du projet de mise en souterrain pour anticiper les travaux de développement du réseau, la part correspondant aux coûts de développement anticipés est à sa charge exclusive.
+"Le gestionnaire du réseau public de transport tient une comptabilité séparée pour ces investissements, selon des règles approuvées par la Commission de régulation de l'énergie."
+
+2 bis
+――――
+
+Le troisième alinéa du III de l'article 15 de la loi n° 2000-108 du 10 février 2000 précitée est ainsi modifié :
+1° À la première phrase, après la seconde occurrence du mot : "transport", sont insérés les mots : "ou aux réseaux publics de distribution" ;
+2° À la seconde phrase, les mots : "du réseau" sont remplacés par les mots : "de ces réseaux" ;
+3° Il est ajouté une phrase ainsi rédigée :
+"Lorsqu'il décide de solliciter l'activation d'un contrat de réservation de puissance conclu en vertu du présent alinéa, le gestionnaire du réseau public de transport informe les gestionnaires des réseaux publics de distribution concernés."
+
+2 ter
+――――
+
+Après l'article 21-1 de la même loi, il est inséré un article 21-2 ainsi rédigé :
+"Art. 21-2. - Lorsque le fonctionnement normal du réseau public de transport est menacé de manière grave et immédiate ou requiert des appels aux réserves mobilisables, le gestionnaire du réseau public de transport procède, à son initiative, à l'interruption instantanée de la consommation des consommateurs finals raccordés au réseau public de transport et à profil d'interruption instantanée.
+"Les conditions d'agrément des consommateurs finals à profil d'interruption instantanée, les modalités techniques générales de l'interruption instantanée et la liste des consommateurs finals à profil d'interruption instantanée agréés sont fixées par arrêté du ministre chargé de l'énergie après avis de la Commission de régulation de l'énergie.
+"Les sujétions de service public ainsi imposées aux consommateurs finals à profil d'interruption instantanée agréés font l'objet d'une compensation par le gestionnaire du réseau public de transport dans des conditions fixées par arrêté conjoint des ministres chargés de l'économie et de l'énergie après avis de la Commission de régulation de l'énergie."
+
+2 quater
+――――
+
+Après le troisième alinéa du II de l'article 4 de la loi n° 2000-108 du 10 février 2000 précitée, il est inséré un alinéa ainsi rédigé :
+"Toutefois, s'agissant du raccordement d'une installation de production d'électricité, la contribution versée au maître d'ouvrage précité couvre intégralement les coûts de branchement et d'extension des réseaux, que ces travaux soient réalisés sous la maîtrise d'ouvrage des autorités organisatrices de la distribution publique d'électricité mentionnées à l'article 2 ou celle des gestionnaires de ces réseaux, conformément à la répartition opérée par le contrat de concession ou par le règlement de service de la régie."
+
+3
+――――
+
+I. - Le IV de l'article 22 de la même loi est ainsi rédigé :
+"IV. - Les fournisseurs souhaitant exercer l'activité d'achat d'électricité pour revente aux consommateurs finals ou aux gestionnaires de réseaux pour leurs pertes doivent être titulaires d'une autorisation délivrée par le ministre chargé de l'énergie.
+"L'autorisation est délivrée en fonction :
+"1° Des capacités techniques, économiques et financières du demandeur ;
+"2° De la compatibilité du projet du demandeur avec les obligations pesant sur les fournisseurs d'électricité, notamment celles prévues à l'article 4-2.
+"Un décret en Conseil d'État fixe les conditions d'application du présent IV, notamment le contenu du dossier de demande d'autorisation, et précise les obligations qui s'imposent en matière d'information des consommateurs d'électricité, tant aux fournisseurs mentionnés au présent IV qu'aux services de distribution et aux producteurs."
+I bis. - À la troisième phrase du troisième alinéa du II du même article 22, les mots : "effectuent la déclaration" sont remplacés par les mots : "doivent être titulaires de l'autorisation".
+II. - Les fournisseurs ayant déclaré exercer l'activité d'achat d'électricité pour revente en application de l'article 22 de la loi n° 2000-108 du 10 février 2000 précitée dans sa rédaction antérieure à la publication de la présente loi sont réputés autorisés, au titre du IV de ce même article 22 dans sa rédaction modifiée par la présente loi, pour une durée d'un an à compter de la promulgation de la présente loi.
+
+4
+――――
+
+L'article 4 de la loi n° 2000-108 du 10 février 2000 précitée est ainsi modifié :
+1° Le premier alinéa du I est ainsi rédigé :
+"Le deuxième alinéa de l'article L. 410-2 du code de commerce s'applique au prix de l'accès régulé à l'électricité nucléaire historique mentionné au I de l'article 4-1 de la présente loi, aux tarifs réglementés de vente d'électricité, aux tarifs de cession de l'électricité aux distributeurs non nationalisés mentionnés à l'article 23 de la loi n° 46-628 du 8 avril 1946 précitée, aux tarifs d'utilisation des réseaux publics de transport et de distribution et aux tarifs des prestations annexes réalisées sous le monopole des gestionnaires de ces réseaux." ;
+2° Le troisième alinéa du I est supprimé ;
+3° Au premier alinéa du II, après la première occurrence du mot : "tarifs", sont insérés les mots : "de cession de l'électricité aux distributeurs non nationalisés mentionnés à l'article 23 de la loi n° 46-628 du 8 avril 1946 précitée et les tarifs réglementés de vente d'électricité" ;
+4° Le dernier alinéa du II est remplacé par deux alinéas ainsi rédigés :
+"Dans un délai s'achevant au plus tard le 31 décembre 2015, les tarifs réglementés de vente d'électricité sont progressivement établis en tenant compte de l'addition du prix d'accès régulé à l'électricité nucléaire historique, du coût du complément à la fourniture d'électricité qui inclut la garantie de capacité, des coûts d'acheminement de l'électricité et des coûts de commercialisation ainsi que d'une rémunération normale.
+"Sous réserve que le produit total des tarifs réglementés de vente d'électricité couvre globalement l'ensemble des coûts mentionnés précédemment, la structure et le niveau de ces tarifs hors taxes peuvent être fixés de façon à inciter les consommateurs à réduire leur consommation pendant les périodes où la consommation d'ensemble est la plus élevée." ;
+5° Après le premier alinéa du III, sont insérés deux alinéas ainsi rédigés :
+"Les propositions motivées de tarifs réglementés de vente d'électricité sont transmises par la Commission de régulation de l'énergie aux ministres chargés de l'économie et de l'énergie. La décision est réputée acquise en l'absence d'opposition de l'un des ministres dans un délai de trois mois suivant la réception de ces propositions. Les tarifs sont publiés au Journal officiel.
+"À titre transitoire, pendant une durée de cinq ans suivant la publication de la loi n° du portant nouvelle organisation du marché de l'électricité, les tarifs réglementés de vente de l'électricité sont arrêtés par les ministres chargés de l'énergie et de l'économie après avis de la Commission de régulation de l'énergie." ;
+6° Le V est ainsi rédigé :
+"V. - Les distributeurs non nationalisés mentionnés à l'article 23 de la loi n° 46-628 du 8 avril 1946 précitée peuvent bénéficier des tarifs de cession mentionnés au I du présent article pour la seule fourniture des tarifs réglementés de vente et pour l'approvisionnement des pertes d'électricité des réseaux qu'ils exploitent. Le bénéfice des tarifs de cession pour l'approvisionnement des pertes d'électricité des réseaux est limité au 31 décembre 2013 pour les distributeurs non nationalisés desservant plus de cent mille clients.
+"Les propositions motivées de tarifs de cession sont transmises par la Commission de régulation de l'énergie aux ministres chargés de l'économie et de l'énergie. La décision est réputée acquise en l'absence d'opposition de l'un des ministres dans un délai de trois mois suivant la réception des propositions de la commission. Les tarifs sont publiés au Journal officiel.
+"À titre transitoire, pendant une durée de cinq ans suivant la publication de la loi n° du précitée, les tarifs de cession mentionnés au I du présent article sont arrêtés par les ministres chargés de l'énergie et de l'économie après avis motivé de la Commission de régulation de l'énergie. Toute décision des ministres passant outre l'avis motivé de cette commission est elle-même motivée."
+
+5
+――――
+
+I. - L'article 66 de la loi n° 2005-781 du 13 juillet 2005 de programme fixant les orientations de la politique énergétique est ainsi rédigé :
+"Art. 66. - I. - Les tarifs réglementés de vente de l'électricité mentionnés au premier alinéa du I de l'article 4 de la loi n° 2000-108 du 10 février 2000 précitée bénéficient, à leur demande, aux consommateurs finals domestiques et non domestiques pour leurs sites souscrivant une puissance inférieure ou égale à 36 kilovoltampères.
+"II. - Les tarifs réglementés de vente de l'électricité mentionnés au même premier alinéa du I de l'article 4 bénéficient, à leur demande, aux consommateurs finals domestiques et non domestiques pour leurs sites situés dans les zones non interconnectées au réseau métropolitain continental.
+"III. - Jusqu'au 31 décembre 2015, les consommateurs finals domestiques et non domestiques autres que ceux mentionnés au I du présent article bénéficient des tarifs réglementés de vente de l'électricité mentionnés à l'article 4 de la loi n° 2000-108 du 10 février 2000 précitée pour la consommation d'un site autre que ceux mentionnés au II du présent article et pour lequel il n'a pas été fait usage, à la date de promulgation de la loi n° du portant nouvelle organisation du marché de l'électricité, de la faculté prévue au I de l'article 22 de la loi n° 2000-108 du 10 février 2000 précitée. À partir du 1er janvier 2016, ils ne bénéficient plus, pour leurs sites autres que ceux mentionnés au II du présent article, de ces tarifs.
+"Jusqu'au 31 décembre 2015, les consommateurs finals domestiques et non domestiques autres que ceux mentionnés au I du présent article bénéficient, à leur demande et pour une durée qui ne peut être inférieure à un an, des tarifs réglementés de vente de l'électricité mentionnés à l'article 4 de la loi n° 2000-108 du 10 février 2000 précitée pour la consommation d'un site autre que ceux mentionnés au II du présent article et pour lequel il a été fait usage, après la date de publication de la loi n° du précitée, de la faculté prévue au I de l'article 22 de la loi n° 2000-108 du 10 février 2000 précitée. Les consommateurs finals qui font usage de la faculté prévue au même I ne peuvent demander à bénéficier à nouveau des tarifs réglementés qu'à l'expiration d'un délai d'un an après avoir usé de cette faculté. À partir du 1er janvier 2016, ils ne bénéficient plus, pour leurs sites autres que ceux mentionnés au II du présent article, de ces tarifs."
+II. - Le IV de l'article 66-1 de la même loi est ainsi rédigé :
+"IV. - Les consommateurs finals domestiques de gaz naturel et les consommateurs finals non domestiques de gaz naturel consommant moins de 30 000 kilowattheures par an et qui en font la demande bénéficient des tarifs réglementés de vente de gaz naturel mentionnés à l'article 7 de la loi n° 2003-8 du 3 janvier 2003 précitée."
+III. - Les articles 66-2 et 66-3 de la même loi sont abrogés.
+
+6
+――――
+
+À la première phrase du 1° du III de l'article 2 de la loi n° 2000-108 du 10 février 2000 précitée, les mots : "aux clients qui n'exercent pas les droits mentionnés à l'article 22" sont remplacés par les mots : "aux clients bénéficiaires des tarifs réglementés de vente d'électricité suivant les conditions de l'article 66 de la loi n° 2005-781 du 13 juillet 2005 de programme fixant les orientations de la politique énergétique".
+
+7
+――――
+
+I. - La dernière phrase du troisième alinéa du I de l'article 28 de la loi n° 2000-108 du 10 février 2000 précitée est remplacée par quatre phrases ainsi rédigées :
+"Afin de garantir un accès transparent, équitable et non discriminatoire à l'électricité produite par les centrales mentionnées au II de l'article 4-1, pour les fournisseurs d'électricité, y compris le propriétaire de ces centrales, elle propose les prix, calcule les droits et contrôle l'accès régulé à l'électricité nucléaire historique prévu par le même article. Elle surveille notamment les transactions effectuées par ces fournisseurs et s'assure de la cohérence entre les volumes d'électricité nucléaire historique bénéficiant de l'accès régulé et la consommation des consommateurs finals desservis sur le territoire métropolitain continental. Elle surveille la cohérence des offres, y compris de garanties de capacités, faites par les producteurs, négociants et fournisseurs, notamment vers les consommateurs finals, avec leurs contraintes économiques et techniques, le cas échéant leurs conditions d'approvisionnement par l'accès régulé à l'électricité nucléaire historique mentionné au même article. Elle peut formuler des avis et proposer toute mesure favorisant le bon fonctionnement et la transparence, notamment en matière de prix, du marché de détail."
+II. - À la première phrase du premier alinéa de l'article 33 de la même loi, après le mot : "liquéfié", sont insérés les mots : ", des fournisseurs de consommateurs finals sur le territoire métropolitain continental bénéficiant de l'accès régulé à l'électricité nucléaire historique mentionné à l'article 4-1".
+III. - Le troisième alinéa de l'article 32 de la même loi est ainsi modifié :
+1° À la première phrase, après le mot : "relatives", sont insérés les mots : "à l'accès régulé à l'électricité nucléaire historique et à la surveillance des marchés de détail et de gros," ;
+2° À la deuxième phrase, après les mots : "décisions sur", sont insérés les mots : "le développement de la concurrence, sur la situation des consommateurs résidentiels, professionnels et industriels, sur".
+IV. - L'article 37 de la même loi est complété par des 7° et 8° ainsi rédigés :
+"7° La méthode d'identification des coûts mentionnés au VI de l'article 4-1 ;
+"8° Les règles de calcul et d'ajustement des droits des fournisseurs à l'accès régulé à l'électricité nucléaire historique mentionné au même article 4-1."
+V. - À la seconde phrase du premier alinéa de l'article 40 de la même loi, après les mots : "ouvrages et installations,", sont insérés les mots : "y compris les fournisseurs d'électricité,".
+VI. - Au début de la première phrase du premier alinéa du 1° du même article 40, après les mots : "En cas", sont insérés les mots : "d'abus du droit d'accès régulé à l'électricité nucléaire historique mentionné à l'article 4-1 ou d'entrave à l'exercice de ce droit ou en cas".
+VII. - Le premier alinéa du même 1° est complété par une phrase ainsi rédigée :
+"Est regardé comme un abus du droit d'accès régulé à l'électricité nucléaire historique tout achat d'électricité nucléaire historique dans le cadre du dispositif d'accès régulé à celle-ci sans intention de constituer un portefeuille de clients y ouvrant droit, en particulier tout achat de quantités d'électricité nucléaire historique excédant substantiellement celles nécessaires à l'approvisionnement de sa clientèle et sans rapport avec la réalité du développement de son activité et les moyens consacrés à celui-ci, et plus généralement toute action participant directement ou indirectement au détournement des capacités d'électricité nucléaire historique à prix régulé."
+VIII. - Après le mot : "sans", la fin de la première phrase du b du même 1° est ainsi rédigée : "pouvoir excéder 8 % du chiffre d'affaires hors taxes lors du dernier exercice clos, porté à 10 % en cas de nouvelle violation de la même obligation."
+IX. - Au 2° du même article 40, après le mot : "installation", sont insérés les mots : "ou le fournisseur d'électricité".
+X. - Au 4° du même article 40, après le mot : "installation", sont insérés les mots : "ou le fournisseur d'électricité".
+
+8
+――――
+
+I. - L'article 28 de la loi n° 2000-108 du 10 février 2000 précitée est ainsi modifié :
+1° Le II est ainsi rédigé :
+"II. - Le collège est composé de cinq membres nommés en raison de leurs qualifications dans les domaines juridique, économique et technique. Le président est nommé par décret dans les conditions fixées par la loi organique n° 2010-837 du 23 juillet 2010 relative à l'application du cinquième alinéa de l'article 13 de la Constitution. Deux membres sont nommés par décret après avis des commissions du Parlement compétentes en matière d'énergie. Deux membres sont nommés respectivement par le Président de l'Assemblée nationale et par le Président du Sénat.
+"Les membres du collège sont nommés pour six ans. Leur mandat n'est pas renouvelable.
+"En cas de vacance d'un siège de membre du collège, il est procédé à son remplacement pour la durée du mandat restant à courir. Un mandat exercé pendant moins de deux ans n'est pas pris en compte pour l'application de la règle de non-renouvellement." ;
+2° À la première phrase du IV, le mot : "cinq" est remplacé par le mot : "trois" ;
+3° Le V est ainsi rédigé :
+"V. - Le président et les autres membres du collège exercent leur fonction à plein temps. Ces fonctions sont incompatibles avec tout mandat électif communal, départemental, régional, national ou européen, et avec la détention, directe ou indirecte, d'intérêts dans une entreprise du secteur de l'énergie. Chaque membre du collège fait une déclaration d'intérêts au moment de sa désignation.
+"Les fonctions de membre du collège sont incompatibles avec celles de membre du comité.
+"Les membres du collège ou du comité ne peuvent être nommés au-delà de l'âge de soixante-dix ans.
+"Le président du collège reçoit un traitement égal à celui afférent à la première des deux catégories supérieures des emplois de l'État classés hors échelle. Les autres membres du collège reçoivent un traitement égal à celui afférent à la seconde de ces deux catégories. Lorsqu'ils sont occupés par des fonctionnaires, les emplois de président et de membre du collège sont des emplois conduisant à pension au titre du code des pensions civiles et militaires de retraite."
+II. - Le mandat des membres du collège de la Commission de régulation de l'énergie en exercice à la date de promulgation de la présente loi s'achève deux mois après cette date.
+Le mandat des premiers membres du collège nommés après la date de promulgation de la présente loi entre en vigueur deux mois après cette date pour une durée de six ans en ce qui concerne le président, de quatre ans en ce qui concerne les membres nommés par les présidents de l'Assemblée nationale et du Sénat et de deux ans en ce qui concerne les deux autres membres.
+Par dérogation au deuxième alinéa du II de l'article 28 de la loi n° 2000-108 du 10 février 2000 précitée, le président et les membres en fonction lors de l'entrée en vigueur de la présente loi peuvent faire partie des premiers membres du collège nommés après la date de promulgation de la présente loi.
+III. - Le premier alinéa de l'article 32 de la même loi est complété par une phrase ainsi rédigée :
+"La Commission de régulation de l'énergie consulte le Conseil supérieur de l'énergie préalablement aux décisions, dont la liste est déterminée par décret en Conseil d'État, pouvant avoir une incidence importante sur les objectifs de la politique énergétique visés à l'article 1er de la loi n° 2005-781 du 13 juillet 2005 de programme fixant les orientations de la politique énergétique."
+
+9
+――――
+
+I. - La section 12 du chapitre Ier du titre II du livre Ier du code de la consommation est ainsi modifiée :
+1° L'article L. 121-86 est complété par les mots : ", ainsi qu'aux contrats souscrits par un non-professionnel pour une puissance électrique égale ou inférieure à 36 kilovoltampères ou pour une consommation de gaz naturel inférieure à 30 000 kilowattheures par an" ;
+2° Le 12° de l'article L. 121-87 est complété par les mots : "et les modalités de remboursement ou de compensation en cas d'erreur ou de retard de facturation ou lorsque les niveaux de qualité des services prévus dans le contrat ne sont pas atteints" ;
+3° Au 15° du même article L. 121-87, après le mot : "amiable", sont insérés les mots : "et contentieux" ;
+4° Après le 16° du même article L. 121-87, il est inséré un 17° ainsi rédigé :
+"17° Les coordonnées du site internet qui fournit gratuitement aux consommateurs soit directement, soit par l'intermédiaire de liens avec des sites internet d'organismes publics ou privés, les informations contenues dans l'aide-mémoire du consommateur d'énergie établi par la Commission européenne ou, à défaut, dans un document équivalent établi par les ministres chargés de la consommation et de l'énergie." ;
+5° Au début du deuxième alinéa de l'article L. 121-89, il est ajouté une phrase ainsi rédigée :
+"Le client peut changer de fournisseur dans un délai qui ne peut excéder vingt et un jours à compter de sa demande." ;
+6° Le même alinéa est complété par deux phrases ainsi rédigées :
+"Dans tous les cas, le consommateur reçoit la facture de clôture dans un délai de quatre semaines à compter de la résiliation du contrat. Le remboursement du trop-perçu éventuel est effectué dans un délai maximum de deux semaines après l'émission de la facture de clôture." ;
+7° À la première phrase du troisième alinéa du même article L. 121-89, les mots : "directement ou" sont supprimés ;
+8° L'article L. 121-91 est complété par trois alinéas ainsi rédigés :
+"Cet arrêté précise également les différents modes de paiement que le fournisseur est tenu d'offrir au client et leurs modalités. Il précise quels sont les délais de remboursement ou les conditions de report des trop-perçus.
+"En cas de facturation terme à échoir ou fondée sur un index estimé, l'estimation du fournisseur reflète de manière appropriée la consommation probable. Cette estimation est fondée sur les consommations réelles antérieures sur la base des données transmises par les gestionnaires de réseaux lorsqu'elles sont disponibles ; le fournisseur indique au client sur quelle base repose son estimation.
+"Le fournisseur est tenu d'offrir au client la possibilité de transmettre, par internet, par téléphone ou tout moyen à la convenance de ce dernier, des éléments sur sa consommation réelle, éventuellement sous forme d'index, à des dates qui permettent une prise en compte de ces index pour l'émission de ses factures." ;
+9° L'article L. 121-92 est complété par un alinéa ainsi rédigé :
+"Le consommateur accède gratuitement à ses données de consommation. Un décret pris après avis du Conseil national de la consommation et de la Commission de régulation de l'énergie précise les modalités d'accès aux données et aux relevés de consommation."
+II. - Les 2° à 9° du I du présent article entrent en vigueur le 1er mars 2011.
+III. - L'article 20 de la loi n° 2000-108 du 10 février 2000 précitée est complété par un alinéa ainsi rédigé :
+"Le décret précité précise également les conditions dans lesquelles le gestionnaire du réseau public de distribution est autorisé à communiquer aux fournisseurs les données de comptage de leurs clients ou, avec son accord exprès, de tout consommateur final d'électricité. Toute déclaration frauduleuse de la part d'un fournisseur en vue d'obtenir ces données est punie de l'amende mentionnée au premier alinéa ; le gestionnaire du réseau public de distribution ne peut voir sa responsabilité engagée du fait des manoeuvres frauduleuses d'un fournisseur."
+
+9 bis A
+――――
+
+Le I de l'article 30-1 de la loi n° 2004-803 du 9 août 2004 relative au service public de l'électricité et du gaz et aux entreprises électriques et gazières est ainsi modifié :
+1° À la seconde phrase du premier alinéa, les mots : "jusqu'au 31 décembre 2010" sont remplacés par les mots : "jusqu'à la date de mise en place effective du dispositif d'accès régulé à l'électricité nucléaire historique" ;
+2° À la dernière phrase du deuxième alinéa, les mots : "à compter du 1er janvier 2011" sont remplacés par les mots : "à compter du lendemain de la mise en place effective du dispositif d'accès régulé à l'électricité nucléaire historique".
+
+<span class="ansi1 ansi31">9 bis
+</span><span class="ansi1 ansi31">――――</span>
+
+
+11
+――――
+
+Le III de l'article 20 de la loi n° 2006-739 du 28 juin 2006 de programme relative à la gestion durable des matières et déchets radioactifs est complété par quatre alinéas ainsi rédigés :
+"À titre dérogatoire, un report de cinq ans pour la mise en oeuvre du plan de constitution des actifs définis au II est accordé à un exploitant nucléaire si les deux conditions suivantes sont remplies :
+"1° Les charges mentionnées au I, à l'exclusion de celles liées au cycle d'exploitation, évaluées en euros courants sur la période allant de la date de publication de la présente loi à 2030 sont inférieures à 10 % de l'ensemble des charges mentionnées au I du présent article, à l'exclusion de celles liées au cycle d'exploitation, évaluées en euros courants ;
+"2° Au moins 75 % des provisions mentionnées au premier alinéa du II, à l'exclusion de celles liées au cycle d'exploitation, sont couvertes au 29 juin 2011 par des actifs mentionnés à ce même II.
+"Jusqu'au 29 juin 2016, la dotation moyenne annuelle au titre des actifs susmentionnés doit être positive ou nulle, déduction faite des décaissements au titre des opérations de démantèlement en cours et des dotations au titre des charges nouvelles ajoutées au passif des fonds dédiés."
+
+11 bis A
+――――
+
+Le troisième alinéa du I de l'article L. 2224-31 du code général des collectivités territoriales est complété par trois phrases ainsi rédigées :
+"Chaque organisme de distribution d'électricité et de gaz transmet à chacune des autorités concédantes précitées un compte rendu de la politique d'investissement et de développement des réseaux prévue au 1° du II de l'article 13 de la loi n° 2004-803 du 9 août 2004 relative au service public de l'électricité et du gaz et aux entreprises électriques et gazières. Sur la base de ce compte rendu, les autorités organisatrices établissent un bilan détaillé de la mise en oeuvre du programme prévisionnel de tous les investissements envisagés sur le réseau de distribution. Ce programme prévisionnel, qui précise notamment le montant et la localisation des travaux, est élaboré à l'occasion d'une conférence départementale réunie sous l'égide du préfet et transmis à chacune des autorités concédantes."
+
+11 bis
+――――
+
+L'article L. 2224-31 du même code est complété par un alinéa ainsi rédigé :
+"Si la compétence d'autorité organisatrice de la distribution d'électricité ou de gaz a été transférée, dans une de ces communes, à un établissement public de coopération intercommunale avant la publication de la loi n° 2004-803 du 9 août 2004 précitée, cette commune peut, nonobstant toutes dispositions contraires, être autorisée par le représentant de l'État dans le département, après avis de la commission départementale de la coopération intercommunale réunie dans la formation prévue au second alinéa de l'article L. 5211-45, à se retirer de l'établissement public de coopération intercommunale lorsque cet établissement ne décide pas d'exercer le droit prévu au premier alinéa."
+
+12
+――――
+
+I. - La section 2 du chapitre III du titre III du livre III de la deuxième partie du même code est ainsi rédigée :
+"Section 2
+"Taxe communale sur la consommation finale d'électricité
+"Art. L. 2333-2. - Il est institué, au profit des communes ou, selon le cas, au profit des établissements publics de coopération intercommunale ou des départements qui leur sont substitués au titre de leur compétence d'autorité organisatrice de la distribution publique d'électricité visée à l'article L. 2224-31, une taxe communale sur la consommation finale d'électricité, relevant du code NC 2716 de la nomenclature douanière.
+"Art. L. 2333-3. - La taxe mentionnée à l'article L. 2333-2 s'applique dans les mêmes conditions que celles mentionnées à l'article L. 3333-2.
+"Art. L. 2333-4. - La taxe mentionnée à l'article L. 2333-2 est assise selon les mêmes règles que celles mentionnées à l'article L. 3333-3.
+"Lorsque la taxe est instituée au profit de la commune, le conseil municipal en fixe le tarif en appliquant aux montants mentionnés à l'article L. 3333-3 un coefficient multiplicateur unique compris entre 0 et 8. À partir de l'année 2012, la limite supérieure du coefficient multiplicateur est actualisée en proportion de l'indice moyen des prix à la consommation hors tabac établi pour l'année précédente par rapport au même indice établi pour l'année 2009. Les montants qui en résultent sont arrondis à la deuxième décimale la plus proche.
+"La décision du conseil municipal doit être adoptée avant le 1er octobre pour être applicable l'année suivante. Le maire la transmet, s'il y a lieu, au comptable public assignataire de la commune au plus tard quinze jours après la date limite prévue pour son adoption.
+"La décision ainsi communiquée demeure applicable tant qu'elle n'est pas rapportée ou modifiée par une nouvelle décision.
+"Pour 2011, le coefficient multiplicateur mentionné au deuxième alinéa est, sous réserve du respect des limites qui y sont fixées, égal à la multiplication par 100 du taux en valeur décimale appliqué au 31 décembre 2010 conformément à l'article L. 2333-4 dans sa rédaction antérieure à la promulgation de la loi n° du portant nouvelle organisation du marché de l'électricité.
+"En cas de changement du tarif de la taxe au cours d'une période de facturation, les quantités d'électricité concernées sont réparties en fonction des tarifs proportionnellement au nombre de jours de chaque période.
+"Art. L. 2333-5. - Les redevables de la taxe sont tenus d'adresser aux comptables publics assignataires des communes la déclaration mentionnée au premier alinéa de l'article L. 3333-3-1 dans un délai de deux mois suivant le trimestre concerné, accompagnée du paiement de la taxe, selon les mêmes modalités, périodicité et délai que ceux prévus audit article.
+"Les redevables sont également tenus d'adresser aux maires des communes une copie de la déclaration mentionnée au premier alinéa dans un délai de deux mois suivant le trimestre concerné.
+"Les redevables prélèvent à leur profit, pour les frais de déclaration et de versement, 2 % du montant de la taxe qu'ils versent aux communes. Ce prélèvement est ramené à 1,5 % à compter du 1er janvier 2012.
+"La taxe est contrôlée et sanctionnée par les agents habilités par le maire dans les mêmes conditions que celles prévues à l'article L. 3333-3-2.
+"Le droit de reprise de la commune, les réclamations relatives à l'assiette et au recouvrement de la taxe ainsi que les contestations relatives aux poursuites s'effectuent dans les mêmes conditions que celles prévues à l'article L. 3333-3-3.
+"Le maire informe le président du conseil général des contrôles effectués, des rectifications du montant de la taxe ou de la taxation d'office opérées. Sur la base des informations transmises, le président du conseil général procède au recouvrement de la taxe affectée au département en application de l'article L. 3333-2.
+"Une personne qui a fait l'objet d'une vérification de la taxe exigible au titre de ses livraisons ou de sa consommation dans les conditions prévues au présent article par les agents habilités par le maire et qui a acquitté la taxe due ne peut, pour les mêmes opérations, faire l'objet d'une nouvelle vérification de la part d'agents habilités par une autorité locale en application des articles L. 3333-3-2 ou L. 5212-24-2.
+"Lorsque l'électricité est livrée à des points de livraison situés dans plusieurs communes et fait l'objet d'une facturation globale, le produit de la taxe est réparti entre les collectivités au prorata de la consommation afférente à chaque point de livraison."
+II. - La section 2 du chapitre III du titre III du livre III de la troisième partie du même code est ainsi rédigée :
+"Section 2
+"Taxe départementale sur la consommation finale d'électricité
+"Art. L. 3333-2. - I. - Il est institué, au profit des départements, une taxe départementale sur la consommation finale d'électricité relevant du code NC 2716 de la nomenclature douanière.
+"II. - Le fait générateur de la taxe intervient lors de la livraison de l'électricité par un fournisseur à chaque point de livraison, situé en France, d'un utilisateur final. La taxe est exigible au moment de la livraison. Toutefois, lorsque la livraison donne lieu à des décomptes ou à des encaissements successifs et que le redevable a exercé l'option prévue au second alinéa du a du 2 de l'article 269 du code général des impôts, l'exigibilité intervient au moment du débit.
+"L'exigibilité intervient en tout état de cause dès la perception d'acomptes financiers lorsqu'il en est demandé avant l'intervention du fait générateur.
+"Dans le cas mentionné au 2° du III du présent article, le fait générateur et l'exigibilité de la taxe interviennent lors de la consommation de l'électricité.
+"III. - Sont redevables de la taxe :
+"1° Les fournisseurs d'électricité.
+"Un fournisseur d'électricité s'entend de la personne qui produit ou achète de l'électricité en vue de la revendre à un consommateur final.
+"Les fournisseurs d'électricité non établis en France et qui y sont redevables de la taxe au titre des livraisons d'électricité qu'ils effectuent à destination d'un utilisateur final sont tenus de faire accréditer, auprès du ministre chargé des collectivités territoriales, un représentant établi en France. Ce représentant se porte garant du paiement de la taxe et du dépôt de la déclaration mentionnée à l'article L. 3333-3-1 en cas de défaillance du redevable.
+"Le montant de la taxe dû par les fournisseurs apparaît distinctement, en addition au prix de vente de l'électricité, sur les factures qu'ils émettent ou qui sont émises pour leur compte ;
+"2° Les personnes qui, dans le cadre de leur activité économique, produisent de l'électricité et l'utilisent pour les besoins de cette activité.
+"IV. - L'électricité n'est pas soumise à la taxe mentionnée au I dans les cas suivants :
+"1° Lorsqu'elle est principalement utilisée dans des procédés métallurgiques, de réduction chimique ou d'électrolyse. Le bénéfice de la présente mesure ne s'applique pas aux quantités d'électricité utilisées pour des besoins autres que ceux de ces procédés ;
+"2° Lorsque sa valeur représente plus de la moitié du coût d'un produit ;
+"3° Lorsqu'elle est utilisée dans des procédés de fabrication de produits minéraux non métalliques classés conformément au règlement (CEE) n° 3037/90 du Conseil, du 9 octobre 1990, relatif à la nomenclature statistique des activités économiques dans la Communauté européenne ;
+"4° Lorsqu'elle est consommée dans l'enceinte des établissements de production de produits énergétiques, pour les besoins de la production des produits énergétiques eux-mêmes ou pour ceux de la production de tout ou partie de l'énergie nécessaire à leur fabrication.
+"V. - L'électricité est exonérée de la taxe mentionnée au I lorsqu'elle est :
+"1° Utilisée pour la production de l'électricité et pour le maintien de la capacité de production de l'électricité ;
+"2° Utilisée pour le transport de personnes et de marchandises par train, métro, tramway et trolleybus ;
+"3° Produite à bord des bateaux ;
+"4° Produite par de petits producteurs d'électricité qui la consomment pour les besoins de leur activité. Sont considérées comme petits producteurs d'électricité les personnes qui exploitent des installations de production d'électricité dont la production annuelle n'excède pas 240 millions de kilowattheures par site de production.
+"VI. - Sont admis en franchise de la taxe les achats d'électricité effectués par les gestionnaires de réseaux publics de transport et de distribution d'électricité pour les besoins de la compensation des pertes inhérentes aux opérations de transport et de distribution de l'électricité.
+"VII. - Les personnes qui ont reçu de l'électricité qu'elles utilisent dans les conditions mentionnées aux IV à VI adressent à leurs fournisseurs une attestation, conforme au modèle fixé par arrêté du directeur général chargé de l'énergie, justifiant la livraison de cette électricité sans application de la taxe mentionnée au I. Elles sont tenues d'acquitter la taxe ou le supplément de taxe due lorsque tout ou partie de l'électricité n'a pas été affectée à l'usage ayant justifié l'absence de taxation, l'exonération ou la franchise.
+"Art. L. 3333-3. - La taxe mentionnée à l'article L. 3333-2 est assise sur la quantité d'électricité fournie ou consommée, exprimée en mégawattheures ou fraction de mégawattheure.
+"1. Pour les consommations professionnelles, le tarif de la taxe est fixé selon le barème suivant :
+<span class="ansi1 ansi32">&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;"&lt;/td&gt;&lt;td&gt;Qualité de l'électricité fournie&lt;/td&gt;&lt;td&gt;Tarif en euro par mégawattheure&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Puissance inférieure ou égale à 36 kilovoltampères&lt;/td&gt;&lt;td&gt;0,75&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Puissance supérieure à 36 kilovoltampères et inférieure ou égale à 250 kilovoltampères&lt;/td&gt;&lt;td&gt;0,25&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</span>
+"
+Qualité de l'électricité fournie
+Tarif en euro par mégawattheure
+Puissance inférieure ou égale <span class="ansi1 ansi31">à36</span> <span class="ansi1 ansi32">à 36</span> kilovoltampères
+0,75
+Puissance supérieure à 36 kilovoltampères et inférieure ou égale à 250 kilovoltampères
+0,25
+"Relèvent de ce barème les consommations professionnelles des personnes qui assurent d'une manière indépendante, en tout lieu, la fourniture de biens et de services quels que soient la finalité ou les résultats de leurs activités économiques, qu'il s'agisse des activités de producteurs, de commerçants ou de prestataires de services, y compris les activités extractives, agricoles et celles des professions libérales ou assimilées.
+"2. Le tarif de la taxe est fixé à 0,75 € par mégawattheure pour toutes les consommations autres que professionnelles.
+"3. Le conseil général applique aux montants mentionnés aux 1 et 2 un coefficient multiplicateur unique compris entre 2 et 4. À partir de l'année 2012, la limite supérieure du coefficient multiplicateur est actualisée en proportion de l'indice moyen des prix à la consommation hors tabac établi pour l'année précédente par rapport au même indice établi pour l'année 2009. Les montants qui en résultent sont arrondis à la deuxième décimale la plus proche.
+"La décision du conseil général doit être adoptée avant le 1er octobre pour être applicable l'année suivante. Le président du conseil général la transmet, s'il y a lieu, au comptable public assignataire du département au plus tard quinze jours après la date limite prévue pour son adoption.
+"La décision ainsi communiquée demeure applicable tant qu'elle n'est pas rapportée ou modifiée par une nouvelle décision.
+"Pour 2011, le coefficient multiplicateur mentionné au premier alinéa du présent 3 est, sous réserve du respect des limites qui y sont fixées, égal à la multiplication par 100 du taux en valeur décimale appliqué au 31 décembre 2010 conformément à l'article L. 3333-2 dans sa rédaction antérieure à la promulgation de la loi n° du portant nouvelle organisation du marché de l'électricité.
+"En cas de changement du tarif de la taxe au cours d'une période de facturation, les quantités d'électricité concernées sont réparties en fonction des tarifs proportionnellement au nombre de jours de chaque période.
+"Art. L. 3333-3-1. - Les redevables de la taxe doivent établir une déclaration au titre de chaque trimestre civil, conforme au modèle fixé par arrêté conjoint du directeur général chargé des finances publiques et du directeur général chargé de l'énergie, comportant les indications nécessaires à la détermination de l'assiette, à la liquidation et au recouvrement de la taxe. Les petits producteurs mentionnés au 4° du V de l'article L. 3333-2 sont dispensés de l'obligation d'établir la déclaration.
+"Les redevables sont tenus d'adresser aux comptables publics assignataires des départements la déclaration mentionnée au premier alinéa du présent article dans un délai de deux mois suivant le trimestre concerné. La déclaration est accompagnée du paiement de la taxe.
+"Les redevables prélèvent à leur profit, pour les frais de déclaration et de versement, 2 % du montant de la taxe qu'ils versent aux départements. Ce prélèvement est ramené à 1,5 % à compter du 1er janvier 2012.
+"Art. L. 3333-3-2. - I. - La déclaration trimestrielle mentionnée à l'article L. 3333-3-1 est contrôlée par les agents habilités par le président du conseil général.
+"Ces agents peuvent demander aux redevables ou aux personnes mentionnées au VII de l'article L. 3333-2 tous les renseignements ou justificatifs relatifs aux éléments de la déclaration ou de l'attestation adressée aux fournisseurs. Ils peuvent examiner sur place les documents utiles. Préalablement, un avis de vérification est adressé au redevable ou à la personne mentionnée au même VII, afin qu'il puisse se faire assister d'un conseil. Au titre de la période concernée, le contrôle porte à la fois sur la taxe départementale sur la consommation finale d'électricité ainsi que sur la taxe communale prévue à l'article L. 2333-2.
+"Les agents habilités sont soumis à l'obligation de secret professionnel définie aux articles 226-13 et 226-14 du code pénal.
+"Pour les contrôles qu'ils effectuent, les agents habilités sont autorisés à se faire communiquer par les gestionnaires de réseaux les informations relatives aux fournisseurs qui effectuent des livraisons d'électricité dans le périmètre du département.
+"Le droit de communication s'exerce quel que soit le support utilisé pour la conservation des documents.
+"Le refus de communiquer les informations relatives aux fournisseurs sous un délai de trente jours ou la communication d'informations incomplètes ou inexactes constituent une entrave à l'exercice du droit de communication entraînant l'application d'une amende de 3 000 € par commune concernée.
+"II. - 1. Lorsque les agents habilités constatent une insuffisance, une inexactitude, une omission ou une dissimulation des éléments servant de base au calcul de la taxe, les rectifications correspondantes sont notifiées aux redevables ou aux personnes mentionnées au VII de l'article L. 3333-2 qui disposent d'un délai de trente jours à compter de la date de réception de la notification pour présenter leurs observations. Dans le cas où le redevable ou la personne tenue d'acquitter la taxe fait part de ses observations, une réponse motivée lui est adressée. Les droits notifiés sont assortis d'une majoration de 10 %.
+"2. Lorsque le redevable n'a pas adressé la déclaration mentionnée à l'article L. 3333-3-1, une lettre de mise en demeure avec demande d'avis de réception lui est adressée par le président du conseil général. À défaut de régularisation dans un délai de trente jours à compter de la date de réception de cette mise en demeure, il est procédé à la taxation d'office. À cette fin, la base d'imposition est fixée sur la base des livraisons d'un fournisseur ou d'un producteur comparable. Les droits notifiés sont assortis d'une majoration de 40 %.
+"3. En cas d'entrave à l'exercice du contrôle par les agents habilités, y compris le défaut ou l'insuffisance de réponse aux demandes de renseignements ou de justificatifs prévues au deuxième alinéa du I du présent article, une lettre de mise en demeure est adressée par pli recommandé avec demande d'avis de réception aux redevables ou aux personnes mentionnées au VII de l'article L. 3333-2 par le président du conseil général. Si, au terme d'un délai de trente jours à compter de la date de réception de cette mise en demeure, les entraves au contrôle perdurent, il est procédé à une taxation d'office dans les conditions mentionnées au 2 du présent II. Les droits notifiés sont assortis d'une majoration de 40 %.
+"4. Les montants de la taxe et, le cas échéant, des majorations notifiés aux redevables ou aux personnes mentionnées au VII de l'article L. 3333-2 sont exigibles trente jours après la date de réception par ces personnes de la réponse à leurs observations ou, en l'absence d'observations, trente jours après la date de la notification ou, en cas de taxation d'office, trente jours après la date de notification des droits. L'action des comptables publics, les réclamations contentieuses relatives à l'assiette de la taxe, aux actes de poursuite et au recouvrement sont effectuées dans les conditions prévues par l'article L. 1617-5.
+"5. Le président du conseil général informe les collectivités territoriales auxquelles est affectée la taxe mentionnée à l'article L. 2333-2 des contrôles effectués, des rectifications du montant de la taxe ou de la taxation d'office opérées. Sur la base des informations transmises, les maires et les présidents d'établissements publics de coopération intercommunale concernés procèdent au recouvrement de ladite taxe.
+"Art. L. 3333-3-3. - I. - Le droit de reprise des collectivités territoriales bénéficiaires de la taxe s'exerce jusqu'au 31 décembre de la troisième année qui suit celle au cours de laquelle la taxe est devenue exigible.
+"II. - Une personne qui a fait l'objet d'une vérification de la taxe exigible au titre de ses livraisons ou de sa consommation dans les conditions prévues à l'article L. 3333-3-2 par les agents habilités par le président du conseil général et qui a acquitté la taxe due ne peut, pour les mêmes opérations, faire l'objet d'une nouvelle vérification de la part d'agents habilités par une autorité locale en application des articles L. 2333-5 ou L. 5212-24-2.
+"III. - Lorsque l'électricité est livrée à des points de livraison situés dans plusieurs départements et fait l'objet d'une facturation globale, le produit de la taxe est réparti entre les collectivités au prorata de la consommation afférente à chaque point de livraison."
+III. - L'article L. 5212-24 du même code est ainsi rédigé et, après ce même article, sont insérés deux articles L. 5212-24-1 et L. 5212-24-2 ainsi rédigés :
+"Art. L. 5212-24. - Lorsqu'il existe un syndicat intercommunal exerçant la compétence d'autorité organisatrice de la distribution publique d'électricité ou que cette compétence est exercée par le département, la taxe prévue à l'article L. 2333-2 est perçue par le syndicat ou par ce département en lieu et place de toutes les communes dont la population recensée par l'Institut national de la statistique et des études économiques au 1er janvier de l'année est inférieure ou égale à 2 000 habitants ou dans lesquelles la taxe est perçue par le syndicat au 31 décembre 2010. Pour les autres communes, cette taxe peut être perçue par le syndicat ou le département en lieu et place de la commune s'il en est décidé ainsi par délibérations concordantes du syndicat, ou du département s'il exerce cette compétence, et de la commune.
+"Lorsque la taxe est perçue au profit du syndicat intercommunal ou du département en lieu et place de la commune en application de l'alinéa précédent, l'organe délibérant du syndicat intercommunal ou le conseil général fixe le tarif applicable dans les conditions prévues au deuxième alinéa de l'article L. 2333-4.
+"Par dérogation à l'alinéa précédent, lorsqu'il est situé hors du territoire métropolitain, le syndicat intercommunal peut fixer le coefficient multiplicateur mentionné au deuxième alinéa de l'article L. 2333-4 dans la limite de 12, sous réserve qu'il affecte la part de la taxe résultant de l'application d'un coefficient multiplicateur excédant 8 à des opérations de maîtrise de la demande d'énergie concernant les consommateurs domestiques.
+"La décision de l'organe délibérant du syndicat intercommunal ou du conseil général doit être adoptée avant le 1er octobre pour être applicable l'année suivante. Le président du syndicat intercommunal ou du conseil général la transmet, s'il y a lieu, au comptable public assignataire au plus tard quinze jours après la date limite prévue pour son adoption.
+"La décision ainsi communiquée demeure applicable tant qu'elle n'est pas rapportée ou modifiée par une nouvelle décision.
+"Pour 2011, le tarif est fixé dans les conditions prévues au cinquième alinéa de l'article L. 2333-4.
+"En cas de changement du tarif de la taxe au cours d'une période de facturation, les quantités d'électricité concernées sont réparties en fonction des tarifs proportionnellement au nombre de jours de chaque période.
+"Le syndicat intercommunal ou le département peut reverser à une commune une fraction de la taxe perçue sur le territoire de celle-ci.
+"Art. L. 5212-24-1. - Les redevables sont tenus d'adresser, selon le cas, aux comptables publics assignataires du syndicat intercommunal ou du département la déclaration mentionnée au premier alinéa de l'article L. 3333-3-1 dans un délai de deux mois suivant le trimestre concerné, accompagnée du paiement de la taxe, selon les mêmes modalités, périodicité et délai que ceux prévus audit article.
+"Les redevables sont également tenus d'adresser, selon le cas, au président du syndicat intercommunal ou du conseil général une copie de la déclaration mentionnée à l'alinéa précédent dans un délai de deux mois suivant le trimestre concerné.
+"Les redevables prélèvent à leur profit, pour les frais de déclaration et de versement, 2 % du montant de la taxe qu'ils versent aux syndicats ou aux départements. Ce prélèvement est ramené à 1 % à compter du 1er janvier 2012.
+"Art. L. 5212-24-2. - La taxe est contrôlée et sanctionnée par les agents habilités, selon le cas, par le président du syndicat intercommunal ou du conseil général, dans les mêmes conditions que celles prévues à l'article L. 3333-3-2. Les informations requises comportent le cas échéant une ventilation par commune.
+"Le droit de reprise, selon le cas, du syndicat intercommunal ou du conseil général s'exerce dans les mêmes conditions que celles prévues à l'article L. 3333-3-3. Les réclamations relatives à l'assiette et au recouvrement de la taxe ainsi que les contestations relatives aux poursuites s'effectuent dans les mêmes conditions que celles prévues au 4 du II de l'article L. 3333-3-2.
+"Le président du syndicat intercommunal informe le président du conseil général des contrôles effectués, des rectifications du montant de la taxe ou de la taxation d'office opérées. Sur la base des informations transmises, le président du conseil général procède au recouvrement de la taxe affectée au département en application de l'article L. 3333-2.
+"Une personne qui a fait l'objet d'une vérification de la taxe exigible au titre de ses livraisons ou de sa consommation dans les conditions prévues au présent article par les agents habilités par le président du syndicat intercommunal et qui a acquitté la taxe due ne peut, pour les mêmes opérations, faire l'objet d'une nouvelle vérification de la part d'agents habilités par le président du conseil général en application de l'article L. 3333-3-2.
+"Lorsque l'électricité est livrée à des points de livraison situés dans plusieurs communes et fait l'objet d'une facturation globale, le produit de la taxe est réparti entre les collectivités au prorata de la consommation afférente à chaque point de livraison."
+III bis. - La section 4 du chapitre II du titre Ier du livre II de la cinquième partie du même code est complétée par un article L. 5212-26 ainsi rédigé :
+"Art. L. 5212-26. - Afin de financer la réalisation ou le fonctionnement d'un équipement public local, des fonds de concours peuvent être versés entre un syndicat visé à l'article L. 5212-24 et les communes ou les établissements publics de coopération intercommunale membres, après accords concordants exprimés à la majorité simple du comité syndical et des conseils municipaux ou des organes délibérants des établissements publics de coopération intercommunale concernés.
+"Le montant total des fonds de concours ne peut excéder les trois quarts du coût hors taxe de l'opération concernée."
+IV. - Au second alinéa du 1° des articles L. 5214-23 et L. 5216-8 du même code, les mots : "à la place des communes membres, selon les compétences qui lui sont transférées, la taxe sur les fournitures d'électricité dans les conditions prévues aux articles L. 2333-2 à L. 2333-5" sont remplacés par les mots : ", au titre de la compétence d'autorité organisatrice de la distribution publique d'électricité mentionnée à l'article L. 2224-31, sous réserve que cette compétence ne soit pas déjà exercée par une autorité mentionnée à l'article L. 5212-24, la taxe communale sur la consommation finale d'électricité prévue à l'article L. 2333-2".
+V. - L'article 76 de la loi n° 2005-781 du 13 juillet 2005 de programme fixant les orientations de la politique énergétique est ainsi modifié :
+1° Le troisième alinéa est supprimé ;
+2° Le quatrième alinéa est ainsi rédigé :
+"À compter du 1er janvier 2007, les tarifs de vente de l'électricité applicables dans la collectivité départementale sont identiques à ceux pratiqués en métropole." ;
+3° Le dernier alinéa est remplacé par trois alinéas ainsi rédigés :
+"À compter du 1er janvier 2011, la collectivité départementale peut instituer à son profit une taxe locale sur l'électricité dont l'assiette est définie à l'article L. 3333-3 du code général des collectivités territoriales et dont les modalités de recouvrement sont définies à l'article L. 3333-3-1 du même code. Le tarif ne peut dépasser :
+"- 8,40 € par mégawattheure pour les consommations autres que professionnelles ;
+"- 8,40 € par mégawattheure lorsque la puissance souscrite est inférieure ou égale à 36 kilovoltampères et 2,40 € par mégawattheure lorsque la puissance souscrite est supérieure à 36 kilovoltampères et inférieure ou égale à 250 kilovoltampères, pour les consommations professionnelles."
+VI. - Le e de l'article 1609 nonies D du code général des impôts est ainsi rédigé :
+"e) La taxe communale sur la consommation finale d'électricité prévue à l'article L. 2333-2 du code général des collectivités territoriales en lieu et place des communes membres dont la population est inférieure ou égale à 2 000 habitants."
+VII. - Le a du 3 de l'article 265 bis et le 1° du 5 de l'article 266 quinquies B du code des douanes sont complétés par les mots : "et des produits utilisés pour leurs besoins par les petits producteurs d'électricité au sens du 4° du V de l'article L. 3333-2 du code général des collectivités territoriales".
+VIII. - À la première phrase du second alinéa du 2° du I de l'article 265 C du même code, après les mots : "procédés métallurgiques", sont insérés les mots : ", d'électrolyse".
+IX. - Le premier alinéa du a du 5 de l'article 266 quinquies du même code est complété par les mots : ", à l'exclusion du gaz naturel utilisé par les petits producteurs d'électricité au sens du 4° du V de l'article L. 3333-2 du code général des collectivités territoriales".
+X. - Après l'article 266 quinquies B du même code, il est inséré un article 266 quinquies C ainsi rédigé :
+"Art. 266 quinquies C. - 1. Il est institué une taxe intérieure sur la consommation finale d'électricité relevant du code NC 2716 de la nomenclature douanière, fournie ou consommée sous une puissance souscrite supérieure à 250 kilovoltampères.
+"2. Le fait générateur de la taxe intervient lors de la livraison de l'électricité par un fournisseur à chaque point de livraison situé en France d'un utilisateur final. La taxe est exigible au moment de la livraison. Toutefois, lorsque la livraison donne lieu à des décomptes ou à des encaissements successifs et que le redevable a exercé l'option prévue au second alinéa du a du 2 de l'article 269 du code général des impôts, l'exigibilité intervient au moment du débit.
+"L'exigibilité intervient, en tout état de cause, dès la perception d'acomptes financiers lorsqu'il en est demandé avant l'intervention du fait générateur.
+"Dans le cas mentionné au 2° du 3 du présent article, le fait générateur et l'exigibilité de la taxe interviennent lors de la consommation de l'électricité.
+"3. Sont redevables de la taxe :
+"1° Les fournisseurs d'électricité.
+"Un fournisseur d'électricité s'entend de la personne qui produit ou achète de l'électricité en vue de la revendre à un consommateur final.
+"Le montant de la taxe dû par les fournisseurs apparaît distinctement, en addition au prix de vente de l'électricité, sur les factures qu'ils émettent ou qui sont émises pour leur compte ;
+"2° Les personnes qui produisent de l'électricité et l'utilisent pour leurs propres besoins.
+"4. L'électricité n'est pas soumise à la taxe mentionnée au 1 dans les cas suivants :
+"1° Lorsqu'elle est principalement utilisée dans des procédés métallurgiques, d'électrolyse ou de réduction chimique. Le bénéfice de la présente mesure ne s'applique pas aux quantités d'électricité utilisées pour des besoins autres que ceux de ces procédés ;
+"2° Lorsque sa valeur représente plus de la moitié du coût d'un produit ;
+"3° Lorsqu'elle est utilisée dans des procédés de fabrication de produits minéraux non métalliques classés conformément au règlement (CEE) n° 3037/90 du Conseil, du 9 octobre 1990, relatif à la nomenclature statistique des activités économiques dans la Communauté européenne ;
+"4° Lorsqu'elle est consommée dans l'enceinte des établissements de production de produits énergétiques, pour les besoins de la production des produits énergétiques eux-mêmes ou pour ceux de la production de tout ou partie de l'énergie nécessaire à leur fabrication.
+"5. L'électricité est exonérée de la taxe mentionnée au 1 lorsqu'elle est :
+"1° Utilisée pour la production de l'électricité et pour le maintien de la capacité de production de l'électricité ;
+"2° Utilisée pour le transport de personnes et de marchandises par train, métro, tramway et trolleybus ;
+"3° Produite à bord des bateaux ;
+"4° Produite par de petits producteurs d'électricité qui la consomment pour les besoins de leur activité. Sont considérées comme petits producteurs d'électricité les personnes qui exploitent des installations de production d'électricité dont la production annuelle n'excède pas 240 millions de kilowattheures par site de production ;
+"5° D'une puissance souscrite supérieure à 250 kilovoltampères et utilisée par des personnes grandes consommatrices d'énergie soumises à autorisation pour l'émission de gaz à effet de serre pour les besoins des installations mentionnées à l'article L. 229-5 du code de l'environnement.
+"Sont considérées comme grandes consommatrices en énergie les entreprises :
+"- dont les achats d'électricité de puissance souscrite supérieure à 250 kilovoltampères et de produits énergétiques soumis aux taxes intérieures de consommation visées aux articles 265, 266 quinquies et 266 quinquies B du présent code atteignent au moins 3 % du chiffre d'affaires ;
+"- ou pour lesquelles le montant total de la taxe applicable à l'électricité de puissance souscrite supérieure à 250 kilovoltampères et des taxes intérieures de consommation visées au précédent alinéa est au moins égal à 0,5 % de la valeur ajoutée telle que définie à l'article 1586 sexies du code général des impôts.
+"6. Sont admis en franchise de la taxe les achats d'électricité effectués par les gestionnaires de réseaux publics de transport et de distribution d'électricité pour les besoins de la compensation des pertes inhérentes aux opérations de transport et de distribution de l'électricité.
+"7. Les personnes qui ont reçu de l'électricité qu'elles utilisent dans les conditions mentionnées aux 4 à 6 adressent à leurs fournisseurs une attestation, conforme au modèle fixé par arrêté du ministre chargé du budget, justifiant la livraison de cette électricité sans application de la taxe. Elles sont tenues d'acquitter la taxe ou le supplément de taxe due lorsque tout ou partie de l'électricité n'a pas été affectée à l'usage ayant justifié l'absence de taxation, l'exonération ou la franchise.
+"8. La taxe est assise sur la quantité d'électricité d'une puissance souscrite supérieure à 250 kilovoltampères fournie ou consommée, exprimée en mégawattheures ou fraction de mégawattheure.
+"Le tarif de la taxe est fixé à 0,50 € par mégawattheure.
+"Les fournisseurs d'électricité établis en France sont tenus de se faire enregistrer auprès de l'administration des douanes et droits indirects chargée du recouvrement de la taxe intérieure de consommation préalablement au commencement de leur activité.
+"Ils tiennent une comptabilité des livraisons d'électricité d'une puissance souscrite supérieure à 250 kilovoltampères qu'ils effectuent en France et communiquent à l'administration chargée du recouvrement le lieu de livraison effectif, le nom ou la raison sociale et l'adresse du destinataire.
+"La comptabilité des livraisons doit être présentée à toute réquisition de l'administration.
+"Les fournisseurs d'électricité non établis en France désignent une personne qui y est établie et a été enregistrée auprès de l'administration des douanes et droits indirects pour effectuer en leur lieu et place les obligations qui leur incombent et acquitter la taxe intérieure sur la consommation finale d'électricité. À défaut, la taxe est due par le destinataire du produit soumis à accise.
+"9. La taxe est acquittée, selon une périodicité trimestrielle, auprès de l'administration des douanes et des droits indirects.
+"Les quantités d'électricité de puissance souscrite supérieure à 250 kilovoltampères livrées à un utilisateur final ou consommées par un utilisateur final au titre d'un trimestre, pour lesquelles la taxe est devenue exigible, sont portées sur une déclaration déposée dans un délai de deux mois suivant le trimestre concerné. La taxe correspondante est acquittée lors du dépôt de la déclaration. Toutefois, les petits producteurs mentionnés au 4° du 5 sont dispensés de l'obligation d'établir la déclaration.
+"La forme de la déclaration d'acquittement et les modalités déclaratives sont définies par arrêté du ministre chargé du budget.
+"Un décret détermine les modalités d'application de l'assiette de la taxe lorsque les livraisons d'électricité donnent lieu, de la part des fournisseurs, à des décomptes ou à des encaissements successifs ou à la perception d'acomptes financiers. Il détermine également les modalités du contrôle et de la destination de l'électricité et de son affectation aux usages mentionnés aux 4 à 6."
+XI. - À la première phrase du premier alinéa du 1 de l'article 267 du même code, la référence : "et 266 quinquies B" est remplacée par les références : ", 266 quinquies B et 266 quinquies C".
+XII. - Un décret détermine la notion de puissance utilisée pour déterminer le tarif de la taxe communale sur la consommation finale d'électricité, de la taxe départementale sur la consommation finale d'électricité et de la taxe intérieure sur la consommation finale d'électricité ainsi que les modalités d'application de l'assiette de la taxe prévue aux I et II du présent article lorsque les livraisons d'électricité donnent lieu, de la part des fournisseurs, à des décomptes ou encaissements successifs ou à la perception d'acomptes financiers.
+Il détermine aussi la liste des procédés métallurgiques, d'électrolyse, de réduction chimique et de fabrication de produits minéraux non métalliques mentionnés aux 1° et 3° du IV de l'article L. 3333-2 du code général des collectivités territoriales, la nature des sites ou installations directement utilisées pour les besoins des activités de transport mentionnées au 2° du V du même article, la liste des documents ou éléments mentionnés au I de l'article L. 3333-3-2 du même code que les redevables, les personnes mentionnées au VII de l'article L. 3333-2 du même code et les gestionnaires de réseaux doivent tenir à disposition ou communiquer aux agents habilités.
+XIII. - Les I à XI du présent article entrent en vigueur à compter du 1er janvier 2011.
+
+13
+――――
+
+L'article 23 bis de la loi n° 46-628 du 8 avril 1946 sur la nationalisation de l'électricité et du gaz est ainsi modifié :
+1° Au troisième alinéa, après le mot : "régie", sont insérés les mots : ", d'une société publique locale" ;
+2° Au quatrième alinéa, après les mots : "Les sociétés d'économie mixte locales", sont insérés les mots : "et les sociétés publiques locales" et les mots : "de lui transférer l'ensemble de leurs contrats de fourniture d'électricité ou de gaz à des clients qui ont exercé leur droit à l'éligibilité," sont remplacés par les mots : "d'y localiser les activités de fourniture d'électricité ou de gaz à des clients situés en dehors de leur zone de desserte qui ont exercé leur droit à l'éligibilité en lui transférant l'ensemble de leurs contrats de fourniture," ;
+3° Au dernier alinéa, après les mots : "fourniture d'électricité ou de gaz des clients", sont insérés les mots : "situés hors de leur zone de desserte historique".
+
+14
+――――
+
+La première phrase du troisième alinéa de l'article 47 de la loi n° 46-628 du 8 avril 1946 précitée est remplacée par deux phrases ainsi rédigées :
+"Ce statut s'applique à tout le personnel de l'industrie électrique et gazière en situation d'activité ou d'inactivité, en particulier celui des entreprises de production, de transport, de distribution, de commercialisation et de fourniture aux clients finals d'électricité ou de gaz naturel, sous réserve qu'une convention collective nationale du secteur de l'énergie, qu'un statut national ou qu'un régime conventionnel du secteur de l'énergie ne s'applique pas au sein de l'entreprise. Il s'applique au personnel des usines exclues de la nationalisation par l'article 8, à l'exception des ouvriers mineurs employés par les centrales et les cokeries des houillères et des employés de chemin de fer qui conservent, sauf demande de leur part, leur statut professionnel."
+
+14 bis
+――――
+
+I. - Dans l'intitulé de la section 1 du chapitre IV du titre II du livre IV de la cinquième partie du code du travail, les mots : "du secteur public" sont supprimés.
+II. - L'article L. 5424-1 du même code est complété par un 6° ainsi rédigé :
+"6° Les salariés des entreprises de la branche professionnelle des industries électriques et gazières soumis au statut national du personnel des industries électriques et gazières."
+III. - L'article L. 5424-2 du même code est ainsi modifié :
+1° Au 2° la référence : "et 4°" est remplacée par les références : ", 4° et 6°" ;
+2° Il est ajouté un alinéa ainsi rédigé :
+"Les entreprises de la branche professionnelle des industries électriques et gazières soumises au statut national du personnel des industries électriques et gazières, adhérentes, avant leur assujettissement au statut national, au régime d'assurance chômage prévue par les articles L. 5422-1 et suivants, ainsi que les entreprises en création sont considérées comme ayant exercé leur option irrévocable mentionnée au 2°."
+
+14 ter
+――――
+
+I. - Au dernier alinéa du I de l'article L. 442-3 du code de la construction et de l'habitation, après le mot : "entreprise", sont insérés les mots : "ou d'un contrat d'achat d'électricité, d'énergie calorifique ou de gaz naturel combustible, distribués par réseaux".
+II. - Au dernier alinéa de l'article 23 de la loi n° 89-462 du 6 juillet 1989 tendant à améliorer les rapports locatifs et portant modification de la loi n° 86-1290 du 23 décembre 1986, après le mot : "entreprise", sont insérés les mots : "ou d'un contrat d'achat d'électricité, d'énergie calorifique ou de gaz naturel combustible, distribués par réseaux".
+
+15
+――――
+
+L'article 92 de la loi n° 2009-526 du 12 mai 2009 de simplification et de clarification du droit et d'allègement des procédures est ainsi modifié :
+1° Au premier alinéa du I, après le mot : "environnement", sont insérés les mots : "et le code de la défense" et après les mots : "les dispositions des lois", sont insérés les mots : "n° 68-943 du 30 octobre 1968 relative à la responsabilité civile dans le domaine de l'énergie nucléaire," ;
+2° Au premier alinéa du II, les mots : "dix-huit mois" sont remplacés par les mots : "vingt-quatre mois".
+
+16
+――――
+
+Au deuxième alinéa du V de l'article 18 de la loi n° 2004-803 du 9 août 2004 relative au service public de l'électricité et du gaz et aux entreprises électriques et gazières, après les mots : "transport d'électricité", sont insérés les mots : "ou à un réseau public de distribution d'électricité de tension supérieure ou égale à 50 kV" et, avant la seconde occurrence du mot : "consommateurs", est inséré le mot : "autres".
+
+
+</pre>
+</body>
+
+</html>

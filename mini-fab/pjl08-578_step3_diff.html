@@ -1,0 +1,1713 @@
+
+<style>
+body {
+    max-width: 700px;
+}
+
+pre {
+    font-family: ubuntu, sans-serif;
+    font-size: 20px;
+}
+</style>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #AAAAAA; }
+.body_background { background-color: #000000; }
+.body_foreground > .bold,.bold > .body_foreground, body.body_foreground > pre > .bold { color: #FFFFFF; font-weight: normal; }
+.inv_foreground { color: #000000; }
+.inv_background { background-color: #AAAAAA; }
+.ansi1 { font-weight: bold; }
+.ansi2 { font-weight: lighter; }
+.ansi3 { font-style: italic; }
+.ansi4 { text-decoration: underline; }
+.ansi5 { text-decoration: blink; }
+.ansi6 { text-decoration: blink; }
+.ansi8 { visibility: hidden; }
+.ansi9 { text-decoration: line-through; }
+.ansi30 { color: #000316; }
+.inv30 { background-color: #000316; }
+.ansi31 { color: #aa0000; }
+.inv31 { background-color: #aa0000; }
+.ansi32 { color: #00aa00; }
+.inv32 { background-color: #00aa00; }
+.ansi33 { color: #aa5500; }
+.inv33 { background-color: #aa5500; }
+.ansi34 { color: #0000aa; }
+.inv34 { background-color: #0000aa; }
+.ansi35 { color: #E850A8; }
+.inv35 { background-color: #E850A8; }
+.ansi36 { color: #00aaaa; }
+.inv36 { background-color: #00aaaa; }
+.ansi37 { color: #F5F1DE; }
+.inv37 { background-color: #F5F1DE; }
+.ansi40 { background-color: #000316; }
+.inv40 { color: #000316; }
+.ansi41 { background-color: #aa0000; }
+.inv41 { color: #aa0000; }
+.ansi42 { background-color: #00aa00; }
+.inv42 { color: #00aa00; }
+.ansi43 { background-color: #aa5500; }
+.inv43 { color: #aa5500; }
+.ansi44 { background-color: #0000aa; }
+.inv44 { color: #0000aa; }
+.ansi45 { background-color: #E850A8; }
+.inv45 { color: #E850A8; }
+.ansi46 { background-color: #00aaaa; }
+.inv46 { color: #00aaaa; }
+.ansi47 { background-color: #F5F1DE; }
+.inv47 { color: #F5F1DE; }
+.ansi38-0 { color: #000316; }
+.inv38-0 { background-color: #000316; }
+.ansi38-1 { color: #aa0000; }
+.inv38-1 { background-color: #aa0000; }
+.ansi38-2 { color: #00aa00; }
+.inv38-2 { background-color: #00aa00; }
+.ansi38-3 { color: #aa5500; }
+.inv38-3 { background-color: #aa5500; }
+.ansi38-4 { color: #0000aa; }
+.inv38-4 { background-color: #0000aa; }
+.ansi38-5 { color: #E850A8; }
+.inv38-5 { background-color: #E850A8; }
+.ansi38-6 { color: #00aaaa; }
+.inv38-6 { background-color: #00aaaa; }
+.ansi38-7 { color: #F5F1DE; }
+.inv38-7 { background-color: #F5F1DE; }
+.ansi38-8 { color: #7f7f7f; }
+.inv38-8 { background-color: #7f7f7f; }
+.ansi38-9 { color: #ff0000; }
+.inv38-9 { background-color: #ff0000; }
+.ansi38-10 { color: #00ff00; }
+.inv38-10 { background-color: #00ff00; }
+.ansi38-11 { color: #ffff00; }
+.inv38-11 { background-color: #ffff00; }
+.ansi38-12 { color: #5c5cff; }
+.inv38-12 { background-color: #5c5cff; }
+.ansi38-13 { color: #ff00ff; }
+.inv38-13 { background-color: #ff00ff; }
+.ansi38-14 { color: #00ffff; }
+.inv38-14 { background-color: #00ffff; }
+.ansi38-15 { color: #ffffff; }
+.inv38-15 { background-color: #ffffff; }
+.ansi48-0 { background-color: #000316; }
+.inv48-0 { color: #000316; }
+.ansi48-1 { background-color: #aa0000; }
+.inv48-1 { color: #aa0000; }
+.ansi48-2 { background-color: #00aa00; }
+.inv48-2 { color: #00aa00; }
+.ansi48-3 { background-color: #aa5500; }
+.inv48-3 { color: #aa5500; }
+.ansi48-4 { background-color: #0000aa; }
+.inv48-4 { color: #0000aa; }
+.ansi48-5 { background-color: #E850A8; }
+.inv48-5 { color: #E850A8; }
+.ansi48-6 { background-color: #00aaaa; }
+.inv48-6 { color: #00aaaa; }
+.ansi48-7 { background-color: #F5F1DE; }
+.inv48-7 { color: #F5F1DE; }
+.ansi48-8 { background-color: #7f7f7f; }
+.inv48-8 { color: #7f7f7f; }
+.ansi48-9 { background-color: #ff0000; }
+.inv48-9 { color: #ff0000; }
+.ansi48-10 { background-color: #00ff00; }
+.inv48-10 { color: #00ff00; }
+.ansi48-11 { background-color: #ffff00; }
+.inv48-11 { color: #ffff00; }
+.ansi48-12 { background-color: #5c5cff; }
+.inv48-12 { color: #5c5cff; }
+.ansi48-13 { background-color: #ff00ff; }
+.inv48-13 { color: #ff00ff; }
+.ansi48-14 { background-color: #00ffff; }
+.inv48-14 { color: #00ffff; }
+.ansi48-15 { background-color: #ffffff; }
+.inv48-15 { color: #ffffff; }
+.ansi38-16 { color: #000000; }
+.inv38-16 { background: #000000; }
+.ansi48-16 { background: #000000; }
+.inv48-16 { color: #000000; }
+.ansi38-17 { color: #00002a; }
+.inv38-17 { background: #00002a; }
+.ansi48-17 { background: #00002a; }
+.inv48-17 { color: #00002a; }
+.ansi38-18 { color: #000054; }
+.inv38-18 { background: #000054; }
+.ansi48-18 { background: #000054; }
+.inv48-18 { color: #000054; }
+.ansi38-19 { color: #00007e; }
+.inv38-19 { background: #00007e; }
+.ansi48-19 { background: #00007e; }
+.inv48-19 { color: #00007e; }
+.ansi38-20 { color: #0000a8; }
+.inv38-20 { background: #0000a8; }
+.ansi48-20 { background: #0000a8; }
+.inv48-20 { color: #0000a8; }
+.ansi38-21 { color: #0000d2; }
+.inv38-21 { background: #0000d2; }
+.ansi48-21 { background: #0000d2; }
+.inv48-21 { color: #0000d2; }
+.ansi38-52 { color: #2a0000; }
+.inv38-52 { background: #2a0000; }
+.ansi48-52 { background: #2a0000; }
+.inv48-52 { color: #2a0000; }
+.ansi38-53 { color: #2a002a; }
+.inv38-53 { background: #2a002a; }
+.ansi48-53 { background: #2a002a; }
+.inv48-53 { color: #2a002a; }
+.ansi38-54 { color: #2a0054; }
+.inv38-54 { background: #2a0054; }
+.ansi48-54 { background: #2a0054; }
+.inv48-54 { color: #2a0054; }
+.ansi38-55 { color: #2a007e; }
+.inv38-55 { background: #2a007e; }
+.ansi48-55 { background: #2a007e; }
+.inv48-55 { color: #2a007e; }
+.ansi38-56 { color: #2a00a8; }
+.inv38-56 { background: #2a00a8; }
+.ansi48-56 { background: #2a00a8; }
+.inv48-56 { color: #2a00a8; }
+.ansi38-57 { color: #2a00d2; }
+.inv38-57 { background: #2a00d2; }
+.ansi48-57 { background: #2a00d2; }
+.inv48-57 { color: #2a00d2; }
+.ansi38-88 { color: #540000; }
+.inv38-88 { background: #540000; }
+.ansi48-88 { background: #540000; }
+.inv48-88 { color: #540000; }
+.ansi38-89 { color: #54002a; }
+.inv38-89 { background: #54002a; }
+.ansi48-89 { background: #54002a; }
+.inv48-89 { color: #54002a; }
+.ansi38-90 { color: #540054; }
+.inv38-90 { background: #540054; }
+.ansi48-90 { background: #540054; }
+.inv48-90 { color: #540054; }
+.ansi38-91 { color: #54007e; }
+.inv38-91 { background: #54007e; }
+.ansi48-91 { background: #54007e; }
+.inv48-91 { color: #54007e; }
+.ansi38-92 { color: #5400a8; }
+.inv38-92 { background: #5400a8; }
+.ansi48-92 { background: #5400a8; }
+.inv48-92 { color: #5400a8; }
+.ansi38-93 { color: #5400d2; }
+.inv38-93 { background: #5400d2; }
+.ansi48-93 { background: #5400d2; }
+.inv48-93 { color: #5400d2; }
+.ansi38-124 { color: #7e0000; }
+.inv38-124 { background: #7e0000; }
+.ansi48-124 { background: #7e0000; }
+.inv48-124 { color: #7e0000; }
+.ansi38-125 { color: #7e002a; }
+.inv38-125 { background: #7e002a; }
+.ansi48-125 { background: #7e002a; }
+.inv48-125 { color: #7e002a; }
+.ansi38-126 { color: #7e0054; }
+.inv38-126 { background: #7e0054; }
+.ansi48-126 { background: #7e0054; }
+.inv48-126 { color: #7e0054; }
+.ansi38-127 { color: #7e007e; }
+.inv38-127 { background: #7e007e; }
+.ansi48-127 { background: #7e007e; }
+.inv48-127 { color: #7e007e; }
+.ansi38-128 { color: #7e00a8; }
+.inv38-128 { background: #7e00a8; }
+.ansi48-128 { background: #7e00a8; }
+.inv48-128 { color: #7e00a8; }
+.ansi38-129 { color: #7e00d2; }
+.inv38-129 { background: #7e00d2; }
+.ansi48-129 { background: #7e00d2; }
+.inv48-129 { color: #7e00d2; }
+.ansi38-160 { color: #a80000; }
+.inv38-160 { background: #a80000; }
+.ansi48-160 { background: #a80000; }
+.inv48-160 { color: #a80000; }
+.ansi38-161 { color: #a8002a; }
+.inv38-161 { background: #a8002a; }
+.ansi48-161 { background: #a8002a; }
+.inv48-161 { color: #a8002a; }
+.ansi38-162 { color: #a80054; }
+.inv38-162 { background: #a80054; }
+.ansi48-162 { background: #a80054; }
+.inv48-162 { color: #a80054; }
+.ansi38-163 { color: #a8007e; }
+.inv38-163 { background: #a8007e; }
+.ansi48-163 { background: #a8007e; }
+.inv48-163 { color: #a8007e; }
+.ansi38-164 { color: #a800a8; }
+.inv38-164 { background: #a800a8; }
+.ansi48-164 { background: #a800a8; }
+.inv48-164 { color: #a800a8; }
+.ansi38-165 { color: #a800d2; }
+.inv38-165 { background: #a800d2; }
+.ansi48-165 { background: #a800d2; }
+.inv48-165 { color: #a800d2; }
+.ansi38-196 { color: #d20000; }
+.inv38-196 { background: #d20000; }
+.ansi48-196 { background: #d20000; }
+.inv48-196 { color: #d20000; }
+.ansi38-197 { color: #d2002a; }
+.inv38-197 { background: #d2002a; }
+.ansi48-197 { background: #d2002a; }
+.inv48-197 { color: #d2002a; }
+.ansi38-198 { color: #d20054; }
+.inv38-198 { background: #d20054; }
+.ansi48-198 { background: #d20054; }
+.inv48-198 { color: #d20054; }
+.ansi38-199 { color: #d2007e; }
+.inv38-199 { background: #d2007e; }
+.ansi48-199 { background: #d2007e; }
+.inv48-199 { color: #d2007e; }
+.ansi38-200 { color: #d200a8; }
+.inv38-200 { background: #d200a8; }
+.ansi48-200 { background: #d200a8; }
+.inv48-200 { color: #d200a8; }
+.ansi38-201 { color: #d200d2; }
+.inv38-201 { background: #d200d2; }
+.ansi48-201 { background: #d200d2; }
+.inv48-201 { color: #d200d2; }
+.ansi38-22 { color: #002a00; }
+.inv38-22 { background: #002a00; }
+.ansi48-22 { background: #002a00; }
+.inv48-22 { color: #002a00; }
+.ansi38-23 { color: #002a2a; }
+.inv38-23 { background: #002a2a; }
+.ansi48-23 { background: #002a2a; }
+.inv48-23 { color: #002a2a; }
+.ansi38-24 { color: #002a54; }
+.inv38-24 { background: #002a54; }
+.ansi48-24 { background: #002a54; }
+.inv48-24 { color: #002a54; }
+.ansi38-25 { color: #002a7e; }
+.inv38-25 { background: #002a7e; }
+.ansi48-25 { background: #002a7e; }
+.inv48-25 { color: #002a7e; }
+.ansi38-26 { color: #002aa8; }
+.inv38-26 { background: #002aa8; }
+.ansi48-26 { background: #002aa8; }
+.inv48-26 { color: #002aa8; }
+.ansi38-27 { color: #002ad2; }
+.inv38-27 { background: #002ad2; }
+.ansi48-27 { background: #002ad2; }
+.inv48-27 { color: #002ad2; }
+.ansi38-58 { color: #2a2a00; }
+.inv38-58 { background: #2a2a00; }
+.ansi48-58 { background: #2a2a00; }
+.inv48-58 { color: #2a2a00; }
+.ansi38-59 { color: #2a2a2a; }
+.inv38-59 { background: #2a2a2a; }
+.ansi48-59 { background: #2a2a2a; }
+.inv48-59 { color: #2a2a2a; }
+.ansi38-60 { color: #2a2a54; }
+.inv38-60 { background: #2a2a54; }
+.ansi48-60 { background: #2a2a54; }
+.inv48-60 { color: #2a2a54; }
+.ansi38-61 { color: #2a2a7e; }
+.inv38-61 { background: #2a2a7e; }
+.ansi48-61 { background: #2a2a7e; }
+.inv48-61 { color: #2a2a7e; }
+.ansi38-62 { color: #2a2aa8; }
+.inv38-62 { background: #2a2aa8; }
+.ansi48-62 { background: #2a2aa8; }
+.inv48-62 { color: #2a2aa8; }
+.ansi38-63 { color: #2a2ad2; }
+.inv38-63 { background: #2a2ad2; }
+.ansi48-63 { background: #2a2ad2; }
+.inv48-63 { color: #2a2ad2; }
+.ansi38-94 { color: #542a00; }
+.inv38-94 { background: #542a00; }
+.ansi48-94 { background: #542a00; }
+.inv48-94 { color: #542a00; }
+.ansi38-95 { color: #542a2a; }
+.inv38-95 { background: #542a2a; }
+.ansi48-95 { background: #542a2a; }
+.inv48-95 { color: #542a2a; }
+.ansi38-96 { color: #542a54; }
+.inv38-96 { background: #542a54; }
+.ansi48-96 { background: #542a54; }
+.inv48-96 { color: #542a54; }
+.ansi38-97 { color: #542a7e; }
+.inv38-97 { background: #542a7e; }
+.ansi48-97 { background: #542a7e; }
+.inv48-97 { color: #542a7e; }
+.ansi38-98 { color: #542aa8; }
+.inv38-98 { background: #542aa8; }
+.ansi48-98 { background: #542aa8; }
+.inv48-98 { color: #542aa8; }
+.ansi38-99 { color: #542ad2; }
+.inv38-99 { background: #542ad2; }
+.ansi48-99 { background: #542ad2; }
+.inv48-99 { color: #542ad2; }
+.ansi38-130 { color: #7e2a00; }
+.inv38-130 { background: #7e2a00; }
+.ansi48-130 { background: #7e2a00; }
+.inv48-130 { color: #7e2a00; }
+.ansi38-131 { color: #7e2a2a; }
+.inv38-131 { background: #7e2a2a; }
+.ansi48-131 { background: #7e2a2a; }
+.inv48-131 { color: #7e2a2a; }
+.ansi38-132 { color: #7e2a54; }
+.inv38-132 { background: #7e2a54; }
+.ansi48-132 { background: #7e2a54; }
+.inv48-132 { color: #7e2a54; }
+.ansi38-133 { color: #7e2a7e; }
+.inv38-133 { background: #7e2a7e; }
+.ansi48-133 { background: #7e2a7e; }
+.inv48-133 { color: #7e2a7e; }
+.ansi38-134 { color: #7e2aa8; }
+.inv38-134 { background: #7e2aa8; }
+.ansi48-134 { background: #7e2aa8; }
+.inv48-134 { color: #7e2aa8; }
+.ansi38-135 { color: #7e2ad2; }
+.inv38-135 { background: #7e2ad2; }
+.ansi48-135 { background: #7e2ad2; }
+.inv48-135 { color: #7e2ad2; }
+.ansi38-166 { color: #a82a00; }
+.inv38-166 { background: #a82a00; }
+.ansi48-166 { background: #a82a00; }
+.inv48-166 { color: #a82a00; }
+.ansi38-167 { color: #a82a2a; }
+.inv38-167 { background: #a82a2a; }
+.ansi48-167 { background: #a82a2a; }
+.inv48-167 { color: #a82a2a; }
+.ansi38-168 { color: #a82a54; }
+.inv38-168 { background: #a82a54; }
+.ansi48-168 { background: #a82a54; }
+.inv48-168 { color: #a82a54; }
+.ansi38-169 { color: #a82a7e; }
+.inv38-169 { background: #a82a7e; }
+.ansi48-169 { background: #a82a7e; }
+.inv48-169 { color: #a82a7e; }
+.ansi38-170 { color: #a82aa8; }
+.inv38-170 { background: #a82aa8; }
+.ansi48-170 { background: #a82aa8; }
+.inv48-170 { color: #a82aa8; }
+.ansi38-171 { color: #a82ad2; }
+.inv38-171 { background: #a82ad2; }
+.ansi48-171 { background: #a82ad2; }
+.inv48-171 { color: #a82ad2; }
+.ansi38-202 { color: #d22a00; }
+.inv38-202 { background: #d22a00; }
+.ansi48-202 { background: #d22a00; }
+.inv48-202 { color: #d22a00; }
+.ansi38-203 { color: #d22a2a; }
+.inv38-203 { background: #d22a2a; }
+.ansi48-203 { background: #d22a2a; }
+.inv48-203 { color: #d22a2a; }
+.ansi38-204 { color: #d22a54; }
+.inv38-204 { background: #d22a54; }
+.ansi48-204 { background: #d22a54; }
+.inv48-204 { color: #d22a54; }
+.ansi38-205 { color: #d22a7e; }
+.inv38-205 { background: #d22a7e; }
+.ansi48-205 { background: #d22a7e; }
+.inv48-205 { color: #d22a7e; }
+.ansi38-206 { color: #d22aa8; }
+.inv38-206 { background: #d22aa8; }
+.ansi48-206 { background: #d22aa8; }
+.inv48-206 { color: #d22aa8; }
+.ansi38-207 { color: #d22ad2; }
+.inv38-207 { background: #d22ad2; }
+.ansi48-207 { background: #d22ad2; }
+.inv48-207 { color: #d22ad2; }
+.ansi38-28 { color: #005400; }
+.inv38-28 { background: #005400; }
+.ansi48-28 { background: #005400; }
+.inv48-28 { color: #005400; }
+.ansi38-29 { color: #00542a; }
+.inv38-29 { background: #00542a; }
+.ansi48-29 { background: #00542a; }
+.inv48-29 { color: #00542a; }
+.ansi38-30 { color: #005454; }
+.inv38-30 { background: #005454; }
+.ansi48-30 { background: #005454; }
+.inv48-30 { color: #005454; }
+.ansi38-31 { color: #00547e; }
+.inv38-31 { background: #00547e; }
+.ansi48-31 { background: #00547e; }
+.inv48-31 { color: #00547e; }
+.ansi38-32 { color: #0054a8; }
+.inv38-32 { background: #0054a8; }
+.ansi48-32 { background: #0054a8; }
+.inv48-32 { color: #0054a8; }
+.ansi38-33 { color: #0054d2; }
+.inv38-33 { background: #0054d2; }
+.ansi48-33 { background: #0054d2; }
+.inv48-33 { color: #0054d2; }
+.ansi38-64 { color: #2a5400; }
+.inv38-64 { background: #2a5400; }
+.ansi48-64 { background: #2a5400; }
+.inv48-64 { color: #2a5400; }
+.ansi38-65 { color: #2a542a; }
+.inv38-65 { background: #2a542a; }
+.ansi48-65 { background: #2a542a; }
+.inv48-65 { color: #2a542a; }
+.ansi38-66 { color: #2a5454; }
+.inv38-66 { background: #2a5454; }
+.ansi48-66 { background: #2a5454; }
+.inv48-66 { color: #2a5454; }
+.ansi38-67 { color: #2a547e; }
+.inv38-67 { background: #2a547e; }
+.ansi48-67 { background: #2a547e; }
+.inv48-67 { color: #2a547e; }
+.ansi38-68 { color: #2a54a8; }
+.inv38-68 { background: #2a54a8; }
+.ansi48-68 { background: #2a54a8; }
+.inv48-68 { color: #2a54a8; }
+.ansi38-69 { color: #2a54d2; }
+.inv38-69 { background: #2a54d2; }
+.ansi48-69 { background: #2a54d2; }
+.inv48-69 { color: #2a54d2; }
+.ansi38-100 { color: #545400; }
+.inv38-100 { background: #545400; }
+.ansi48-100 { background: #545400; }
+.inv48-100 { color: #545400; }
+.ansi38-101 { color: #54542a; }
+.inv38-101 { background: #54542a; }
+.ansi48-101 { background: #54542a; }
+.inv48-101 { color: #54542a; }
+.ansi38-102 { color: #545454; }
+.inv38-102 { background: #545454; }
+.ansi48-102 { background: #545454; }
+.inv48-102 { color: #545454; }
+.ansi38-103 { color: #54547e; }
+.inv38-103 { background: #54547e; }
+.ansi48-103 { background: #54547e; }
+.inv48-103 { color: #54547e; }
+.ansi38-104 { color: #5454a8; }
+.inv38-104 { background: #5454a8; }
+.ansi48-104 { background: #5454a8; }
+.inv48-104 { color: #5454a8; }
+.ansi38-105 { color: #5454d2; }
+.inv38-105 { background: #5454d2; }
+.ansi48-105 { background: #5454d2; }
+.inv48-105 { color: #5454d2; }
+.ansi38-136 { color: #7e5400; }
+.inv38-136 { background: #7e5400; }
+.ansi48-136 { background: #7e5400; }
+.inv48-136 { color: #7e5400; }
+.ansi38-137 { color: #7e542a; }
+.inv38-137 { background: #7e542a; }
+.ansi48-137 { background: #7e542a; }
+.inv48-137 { color: #7e542a; }
+.ansi38-138 { color: #7e5454; }
+.inv38-138 { background: #7e5454; }
+.ansi48-138 { background: #7e5454; }
+.inv48-138 { color: #7e5454; }
+.ansi38-139 { color: #7e547e; }
+.inv38-139 { background: #7e547e; }
+.ansi48-139 { background: #7e547e; }
+.inv48-139 { color: #7e547e; }
+.ansi38-140 { color: #7e54a8; }
+.inv38-140 { background: #7e54a8; }
+.ansi48-140 { background: #7e54a8; }
+.inv48-140 { color: #7e54a8; }
+.ansi38-141 { color: #7e54d2; }
+.inv38-141 { background: #7e54d2; }
+.ansi48-141 { background: #7e54d2; }
+.inv48-141 { color: #7e54d2; }
+.ansi38-172 { color: #a85400; }
+.inv38-172 { background: #a85400; }
+.ansi48-172 { background: #a85400; }
+.inv48-172 { color: #a85400; }
+.ansi38-173 { color: #a8542a; }
+.inv38-173 { background: #a8542a; }
+.ansi48-173 { background: #a8542a; }
+.inv48-173 { color: #a8542a; }
+.ansi38-174 { color: #a85454; }
+.inv38-174 { background: #a85454; }
+.ansi48-174 { background: #a85454; }
+.inv48-174 { color: #a85454; }
+.ansi38-175 { color: #a8547e; }
+.inv38-175 { background: #a8547e; }
+.ansi48-175 { background: #a8547e; }
+.inv48-175 { color: #a8547e; }
+.ansi38-176 { color: #a854a8; }
+.inv38-176 { background: #a854a8; }
+.ansi48-176 { background: #a854a8; }
+.inv48-176 { color: #a854a8; }
+.ansi38-177 { color: #a854d2; }
+.inv38-177 { background: #a854d2; }
+.ansi48-177 { background: #a854d2; }
+.inv48-177 { color: #a854d2; }
+.ansi38-208 { color: #d25400; }
+.inv38-208 { background: #d25400; }
+.ansi48-208 { background: #d25400; }
+.inv48-208 { color: #d25400; }
+.ansi38-209 { color: #d2542a; }
+.inv38-209 { background: #d2542a; }
+.ansi48-209 { background: #d2542a; }
+.inv48-209 { color: #d2542a; }
+.ansi38-210 { color: #d25454; }
+.inv38-210 { background: #d25454; }
+.ansi48-210 { background: #d25454; }
+.inv48-210 { color: #d25454; }
+.ansi38-211 { color: #d2547e; }
+.inv38-211 { background: #d2547e; }
+.ansi48-211 { background: #d2547e; }
+.inv48-211 { color: #d2547e; }
+.ansi38-212 { color: #d254a8; }
+.inv38-212 { background: #d254a8; }
+.ansi48-212 { background: #d254a8; }
+.inv48-212 { color: #d254a8; }
+.ansi38-213 { color: #d254d2; }
+.inv38-213 { background: #d254d2; }
+.ansi48-213 { background: #d254d2; }
+.inv48-213 { color: #d254d2; }
+.ansi38-34 { color: #007e00; }
+.inv38-34 { background: #007e00; }
+.ansi48-34 { background: #007e00; }
+.inv48-34 { color: #007e00; }
+.ansi38-35 { color: #007e2a; }
+.inv38-35 { background: #007e2a; }
+.ansi48-35 { background: #007e2a; }
+.inv48-35 { color: #007e2a; }
+.ansi38-36 { color: #007e54; }
+.inv38-36 { background: #007e54; }
+.ansi48-36 { background: #007e54; }
+.inv48-36 { color: #007e54; }
+.ansi38-37 { color: #007e7e; }
+.inv38-37 { background: #007e7e; }
+.ansi48-37 { background: #007e7e; }
+.inv48-37 { color: #007e7e; }
+.ansi38-38 { color: #007ea8; }
+.inv38-38 { background: #007ea8; }
+.ansi48-38 { background: #007ea8; }
+.inv48-38 { color: #007ea8; }
+.ansi38-39 { color: #007ed2; }
+.inv38-39 { background: #007ed2; }
+.ansi48-39 { background: #007ed2; }
+.inv48-39 { color: #007ed2; }
+.ansi38-70 { color: #2a7e00; }
+.inv38-70 { background: #2a7e00; }
+.ansi48-70 { background: #2a7e00; }
+.inv48-70 { color: #2a7e00; }
+.ansi38-71 { color: #2a7e2a; }
+.inv38-71 { background: #2a7e2a; }
+.ansi48-71 { background: #2a7e2a; }
+.inv48-71 { color: #2a7e2a; }
+.ansi38-72 { color: #2a7e54; }
+.inv38-72 { background: #2a7e54; }
+.ansi48-72 { background: #2a7e54; }
+.inv48-72 { color: #2a7e54; }
+.ansi38-73 { color: #2a7e7e; }
+.inv38-73 { background: #2a7e7e; }
+.ansi48-73 { background: #2a7e7e; }
+.inv48-73 { color: #2a7e7e; }
+.ansi38-74 { color: #2a7ea8; }
+.inv38-74 { background: #2a7ea8; }
+.ansi48-74 { background: #2a7ea8; }
+.inv48-74 { color: #2a7ea8; }
+.ansi38-75 { color: #2a7ed2; }
+.inv38-75 { background: #2a7ed2; }
+.ansi48-75 { background: #2a7ed2; }
+.inv48-75 { color: #2a7ed2; }
+.ansi38-106 { color: #547e00; }
+.inv38-106 { background: #547e00; }
+.ansi48-106 { background: #547e00; }
+.inv48-106 { color: #547e00; }
+.ansi38-107 { color: #547e2a; }
+.inv38-107 { background: #547e2a; }
+.ansi48-107 { background: #547e2a; }
+.inv48-107 { color: #547e2a; }
+.ansi38-108 { color: #547e54; }
+.inv38-108 { background: #547e54; }
+.ansi48-108 { background: #547e54; }
+.inv48-108 { color: #547e54; }
+.ansi38-109 { color: #547e7e; }
+.inv38-109 { background: #547e7e; }
+.ansi48-109 { background: #547e7e; }
+.inv48-109 { color: #547e7e; }
+.ansi38-110 { color: #547ea8; }
+.inv38-110 { background: #547ea8; }
+.ansi48-110 { background: #547ea8; }
+.inv48-110 { color: #547ea8; }
+.ansi38-111 { color: #547ed2; }
+.inv38-111 { background: #547ed2; }
+.ansi48-111 { background: #547ed2; }
+.inv48-111 { color: #547ed2; }
+.ansi38-142 { color: #7e7e00; }
+.inv38-142 { background: #7e7e00; }
+.ansi48-142 { background: #7e7e00; }
+.inv48-142 { color: #7e7e00; }
+.ansi38-143 { color: #7e7e2a; }
+.inv38-143 { background: #7e7e2a; }
+.ansi48-143 { background: #7e7e2a; }
+.inv48-143 { color: #7e7e2a; }
+.ansi38-144 { color: #7e7e54; }
+.inv38-144 { background: #7e7e54; }
+.ansi48-144 { background: #7e7e54; }
+.inv48-144 { color: #7e7e54; }
+.ansi38-145 { color: #7e7e7e; }
+.inv38-145 { background: #7e7e7e; }
+.ansi48-145 { background: #7e7e7e; }
+.inv48-145 { color: #7e7e7e; }
+.ansi38-146 { color: #7e7ea8; }
+.inv38-146 { background: #7e7ea8; }
+.ansi48-146 { background: #7e7ea8; }
+.inv48-146 { color: #7e7ea8; }
+.ansi38-147 { color: #7e7ed2; }
+.inv38-147 { background: #7e7ed2; }
+.ansi48-147 { background: #7e7ed2; }
+.inv48-147 { color: #7e7ed2; }
+.ansi38-178 { color: #a87e00; }
+.inv38-178 { background: #a87e00; }
+.ansi48-178 { background: #a87e00; }
+.inv48-178 { color: #a87e00; }
+.ansi38-179 { color: #a87e2a; }
+.inv38-179 { background: #a87e2a; }
+.ansi48-179 { background: #a87e2a; }
+.inv48-179 { color: #a87e2a; }
+.ansi38-180 { color: #a87e54; }
+.inv38-180 { background: #a87e54; }
+.ansi48-180 { background: #a87e54; }
+.inv48-180 { color: #a87e54; }
+.ansi38-181 { color: #a87e7e; }
+.inv38-181 { background: #a87e7e; }
+.ansi48-181 { background: #a87e7e; }
+.inv48-181 { color: #a87e7e; }
+.ansi38-182 { color: #a87ea8; }
+.inv38-182 { background: #a87ea8; }
+.ansi48-182 { background: #a87ea8; }
+.inv48-182 { color: #a87ea8; }
+.ansi38-183 { color: #a87ed2; }
+.inv38-183 { background: #a87ed2; }
+.ansi48-183 { background: #a87ed2; }
+.inv48-183 { color: #a87ed2; }
+.ansi38-214 { color: #d27e00; }
+.inv38-214 { background: #d27e00; }
+.ansi48-214 { background: #d27e00; }
+.inv48-214 { color: #d27e00; }
+.ansi38-215 { color: #d27e2a; }
+.inv38-215 { background: #d27e2a; }
+.ansi48-215 { background: #d27e2a; }
+.inv48-215 { color: #d27e2a; }
+.ansi38-216 { color: #d27e54; }
+.inv38-216 { background: #d27e54; }
+.ansi48-216 { background: #d27e54; }
+.inv48-216 { color: #d27e54; }
+.ansi38-217 { color: #d27e7e; }
+.inv38-217 { background: #d27e7e; }
+.ansi48-217 { background: #d27e7e; }
+.inv48-217 { color: #d27e7e; }
+.ansi38-218 { color: #d27ea8; }
+.inv38-218 { background: #d27ea8; }
+.ansi48-218 { background: #d27ea8; }
+.inv48-218 { color: #d27ea8; }
+.ansi38-219 { color: #d27ed2; }
+.inv38-219 { background: #d27ed2; }
+.ansi48-219 { background: #d27ed2; }
+.inv48-219 { color: #d27ed2; }
+.ansi38-40 { color: #00a800; }
+.inv38-40 { background: #00a800; }
+.ansi48-40 { background: #00a800; }
+.inv48-40 { color: #00a800; }
+.ansi38-41 { color: #00a82a; }
+.inv38-41 { background: #00a82a; }
+.ansi48-41 { background: #00a82a; }
+.inv48-41 { color: #00a82a; }
+.ansi38-42 { color: #00a854; }
+.inv38-42 { background: #00a854; }
+.ansi48-42 { background: #00a854; }
+.inv48-42 { color: #00a854; }
+.ansi38-43 { color: #00a87e; }
+.inv38-43 { background: #00a87e; }
+.ansi48-43 { background: #00a87e; }
+.inv48-43 { color: #00a87e; }
+.ansi38-44 { color: #00a8a8; }
+.inv38-44 { background: #00a8a8; }
+.ansi48-44 { background: #00a8a8; }
+.inv48-44 { color: #00a8a8; }
+.ansi38-45 { color: #00a8d2; }
+.inv38-45 { background: #00a8d2; }
+.ansi48-45 { background: #00a8d2; }
+.inv48-45 { color: #00a8d2; }
+.ansi38-76 { color: #2aa800; }
+.inv38-76 { background: #2aa800; }
+.ansi48-76 { background: #2aa800; }
+.inv48-76 { color: #2aa800; }
+.ansi38-77 { color: #2aa82a; }
+.inv38-77 { background: #2aa82a; }
+.ansi48-77 { background: #2aa82a; }
+.inv48-77 { color: #2aa82a; }
+.ansi38-78 { color: #2aa854; }
+.inv38-78 { background: #2aa854; }
+.ansi48-78 { background: #2aa854; }
+.inv48-78 { color: #2aa854; }
+.ansi38-79 { color: #2aa87e; }
+.inv38-79 { background: #2aa87e; }
+.ansi48-79 { background: #2aa87e; }
+.inv48-79 { color: #2aa87e; }
+.ansi38-80 { color: #2aa8a8; }
+.inv38-80 { background: #2aa8a8; }
+.ansi48-80 { background: #2aa8a8; }
+.inv48-80 { color: #2aa8a8; }
+.ansi38-81 { color: #2aa8d2; }
+.inv38-81 { background: #2aa8d2; }
+.ansi48-81 { background: #2aa8d2; }
+.inv48-81 { color: #2aa8d2; }
+.ansi38-112 { color: #54a800; }
+.inv38-112 { background: #54a800; }
+.ansi48-112 { background: #54a800; }
+.inv48-112 { color: #54a800; }
+.ansi38-113 { color: #54a82a; }
+.inv38-113 { background: #54a82a; }
+.ansi48-113 { background: #54a82a; }
+.inv48-113 { color: #54a82a; }
+.ansi38-114 { color: #54a854; }
+.inv38-114 { background: #54a854; }
+.ansi48-114 { background: #54a854; }
+.inv48-114 { color: #54a854; }
+.ansi38-115 { color: #54a87e; }
+.inv38-115 { background: #54a87e; }
+.ansi48-115 { background: #54a87e; }
+.inv48-115 { color: #54a87e; }
+.ansi38-116 { color: #54a8a8; }
+.inv38-116 { background: #54a8a8; }
+.ansi48-116 { background: #54a8a8; }
+.inv48-116 { color: #54a8a8; }
+.ansi38-117 { color: #54a8d2; }
+.inv38-117 { background: #54a8d2; }
+.ansi48-117 { background: #54a8d2; }
+.inv48-117 { color: #54a8d2; }
+.ansi38-148 { color: #7ea800; }
+.inv38-148 { background: #7ea800; }
+.ansi48-148 { background: #7ea800; }
+.inv48-148 { color: #7ea800; }
+.ansi38-149 { color: #7ea82a; }
+.inv38-149 { background: #7ea82a; }
+.ansi48-149 { background: #7ea82a; }
+.inv48-149 { color: #7ea82a; }
+.ansi38-150 { color: #7ea854; }
+.inv38-150 { background: #7ea854; }
+.ansi48-150 { background: #7ea854; }
+.inv48-150 { color: #7ea854; }
+.ansi38-151 { color: #7ea87e; }
+.inv38-151 { background: #7ea87e; }
+.ansi48-151 { background: #7ea87e; }
+.inv48-151 { color: #7ea87e; }
+.ansi38-152 { color: #7ea8a8; }
+.inv38-152 { background: #7ea8a8; }
+.ansi48-152 { background: #7ea8a8; }
+.inv48-152 { color: #7ea8a8; }
+.ansi38-153 { color: #7ea8d2; }
+.inv38-153 { background: #7ea8d2; }
+.ansi48-153 { background: #7ea8d2; }
+.inv48-153 { color: #7ea8d2; }
+.ansi38-184 { color: #a8a800; }
+.inv38-184 { background: #a8a800; }
+.ansi48-184 { background: #a8a800; }
+.inv48-184 { color: #a8a800; }
+.ansi38-185 { color: #a8a82a; }
+.inv38-185 { background: #a8a82a; }
+.ansi48-185 { background: #a8a82a; }
+.inv48-185 { color: #a8a82a; }
+.ansi38-186 { color: #a8a854; }
+.inv38-186 { background: #a8a854; }
+.ansi48-186 { background: #a8a854; }
+.inv48-186 { color: #a8a854; }
+.ansi38-187 { color: #a8a87e; }
+.inv38-187 { background: #a8a87e; }
+.ansi48-187 { background: #a8a87e; }
+.inv48-187 { color: #a8a87e; }
+.ansi38-188 { color: #a8a8a8; }
+.inv38-188 { background: #a8a8a8; }
+.ansi48-188 { background: #a8a8a8; }
+.inv48-188 { color: #a8a8a8; }
+.ansi38-189 { color: #a8a8d2; }
+.inv38-189 { background: #a8a8d2; }
+.ansi48-189 { background: #a8a8d2; }
+.inv48-189 { color: #a8a8d2; }
+.ansi38-220 { color: #d2a800; }
+.inv38-220 { background: #d2a800; }
+.ansi48-220 { background: #d2a800; }
+.inv48-220 { color: #d2a800; }
+.ansi38-221 { color: #d2a82a; }
+.inv38-221 { background: #d2a82a; }
+.ansi48-221 { background: #d2a82a; }
+.inv48-221 { color: #d2a82a; }
+.ansi38-222 { color: #d2a854; }
+.inv38-222 { background: #d2a854; }
+.ansi48-222 { background: #d2a854; }
+.inv48-222 { color: #d2a854; }
+.ansi38-223 { color: #d2a87e; }
+.inv38-223 { background: #d2a87e; }
+.ansi48-223 { background: #d2a87e; }
+.inv48-223 { color: #d2a87e; }
+.ansi38-224 { color: #d2a8a8; }
+.inv38-224 { background: #d2a8a8; }
+.ansi48-224 { background: #d2a8a8; }
+.inv48-224 { color: #d2a8a8; }
+.ansi38-225 { color: #d2a8d2; }
+.inv38-225 { background: #d2a8d2; }
+.ansi48-225 { background: #d2a8d2; }
+.inv48-225 { color: #d2a8d2; }
+.ansi38-46 { color: #00d200; }
+.inv38-46 { background: #00d200; }
+.ansi48-46 { background: #00d200; }
+.inv48-46 { color: #00d200; }
+.ansi38-47 { color: #00d22a; }
+.inv38-47 { background: #00d22a; }
+.ansi48-47 { background: #00d22a; }
+.inv48-47 { color: #00d22a; }
+.ansi38-48 { color: #00d254; }
+.inv38-48 { background: #00d254; }
+.ansi48-48 { background: #00d254; }
+.inv48-48 { color: #00d254; }
+.ansi38-49 { color: #00d27e; }
+.inv38-49 { background: #00d27e; }
+.ansi48-49 { background: #00d27e; }
+.inv48-49 { color: #00d27e; }
+.ansi38-50 { color: #00d2a8; }
+.inv38-50 { background: #00d2a8; }
+.ansi48-50 { background: #00d2a8; }
+.inv48-50 { color: #00d2a8; }
+.ansi38-51 { color: #00d2d2; }
+.inv38-51 { background: #00d2d2; }
+.ansi48-51 { background: #00d2d2; }
+.inv48-51 { color: #00d2d2; }
+.ansi38-82 { color: #2ad200; }
+.inv38-82 { background: #2ad200; }
+.ansi48-82 { background: #2ad200; }
+.inv48-82 { color: #2ad200; }
+.ansi38-83 { color: #2ad22a; }
+.inv38-83 { background: #2ad22a; }
+.ansi48-83 { background: #2ad22a; }
+.inv48-83 { color: #2ad22a; }
+.ansi38-84 { color: #2ad254; }
+.inv38-84 { background: #2ad254; }
+.ansi48-84 { background: #2ad254; }
+.inv48-84 { color: #2ad254; }
+.ansi38-85 { color: #2ad27e; }
+.inv38-85 { background: #2ad27e; }
+.ansi48-85 { background: #2ad27e; }
+.inv48-85 { color: #2ad27e; }
+.ansi38-86 { color: #2ad2a8; }
+.inv38-86 { background: #2ad2a8; }
+.ansi48-86 { background: #2ad2a8; }
+.inv48-86 { color: #2ad2a8; }
+.ansi38-87 { color: #2ad2d2; }
+.inv38-87 { background: #2ad2d2; }
+.ansi48-87 { background: #2ad2d2; }
+.inv48-87 { color: #2ad2d2; }
+.ansi38-118 { color: #54d200; }
+.inv38-118 { background: #54d200; }
+.ansi48-118 { background: #54d200; }
+.inv48-118 { color: #54d200; }
+.ansi38-119 { color: #54d22a; }
+.inv38-119 { background: #54d22a; }
+.ansi48-119 { background: #54d22a; }
+.inv48-119 { color: #54d22a; }
+.ansi38-120 { color: #54d254; }
+.inv38-120 { background: #54d254; }
+.ansi48-120 { background: #54d254; }
+.inv48-120 { color: #54d254; }
+.ansi38-121 { color: #54d27e; }
+.inv38-121 { background: #54d27e; }
+.ansi48-121 { background: #54d27e; }
+.inv48-121 { color: #54d27e; }
+.ansi38-122 { color: #54d2a8; }
+.inv38-122 { background: #54d2a8; }
+.ansi48-122 { background: #54d2a8; }
+.inv48-122 { color: #54d2a8; }
+.ansi38-123 { color: #54d2d2; }
+.inv38-123 { background: #54d2d2; }
+.ansi48-123 { background: #54d2d2; }
+.inv48-123 { color: #54d2d2; }
+.ansi38-154 { color: #7ed200; }
+.inv38-154 { background: #7ed200; }
+.ansi48-154 { background: #7ed200; }
+.inv48-154 { color: #7ed200; }
+.ansi38-155 { color: #7ed22a; }
+.inv38-155 { background: #7ed22a; }
+.ansi48-155 { background: #7ed22a; }
+.inv48-155 { color: #7ed22a; }
+.ansi38-156 { color: #7ed254; }
+.inv38-156 { background: #7ed254; }
+.ansi48-156 { background: #7ed254; }
+.inv48-156 { color: #7ed254; }
+.ansi38-157 { color: #7ed27e; }
+.inv38-157 { background: #7ed27e; }
+.ansi48-157 { background: #7ed27e; }
+.inv48-157 { color: #7ed27e; }
+.ansi38-158 { color: #7ed2a8; }
+.inv38-158 { background: #7ed2a8; }
+.ansi48-158 { background: #7ed2a8; }
+.inv48-158 { color: #7ed2a8; }
+.ansi38-159 { color: #7ed2d2; }
+.inv38-159 { background: #7ed2d2; }
+.ansi48-159 { background: #7ed2d2; }
+.inv48-159 { color: #7ed2d2; }
+.ansi38-190 { color: #a8d200; }
+.inv38-190 { background: #a8d200; }
+.ansi48-190 { background: #a8d200; }
+.inv48-190 { color: #a8d200; }
+.ansi38-191 { color: #a8d22a; }
+.inv38-191 { background: #a8d22a; }
+.ansi48-191 { background: #a8d22a; }
+.inv48-191 { color: #a8d22a; }
+.ansi38-192 { color: #a8d254; }
+.inv38-192 { background: #a8d254; }
+.ansi48-192 { background: #a8d254; }
+.inv48-192 { color: #a8d254; }
+.ansi38-193 { color: #a8d27e; }
+.inv38-193 { background: #a8d27e; }
+.ansi48-193 { background: #a8d27e; }
+.inv48-193 { color: #a8d27e; }
+.ansi38-194 { color: #a8d2a8; }
+.inv38-194 { background: #a8d2a8; }
+.ansi48-194 { background: #a8d2a8; }
+.inv48-194 { color: #a8d2a8; }
+.ansi38-195 { color: #a8d2d2; }
+.inv38-195 { background: #a8d2d2; }
+.ansi48-195 { background: #a8d2d2; }
+.inv48-195 { color: #a8d2d2; }
+.ansi38-226 { color: #d2d200; }
+.inv38-226 { background: #d2d200; }
+.ansi48-226 { background: #d2d200; }
+.inv48-226 { color: #d2d200; }
+.ansi38-227 { color: #d2d22a; }
+.inv38-227 { background: #d2d22a; }
+.ansi48-227 { background: #d2d22a; }
+.inv48-227 { color: #d2d22a; }
+.ansi38-228 { color: #d2d254; }
+.inv38-228 { background: #d2d254; }
+.ansi48-228 { background: #d2d254; }
+.inv48-228 { color: #d2d254; }
+.ansi38-229 { color: #d2d27e; }
+.inv38-229 { background: #d2d27e; }
+.ansi48-229 { background: #d2d27e; }
+.inv48-229 { color: #d2d27e; }
+.ansi38-230 { color: #d2d2a8; }
+.inv38-230 { background: #d2d2a8; }
+.ansi48-230 { background: #d2d2a8; }
+.inv48-230 { color: #d2d2a8; }
+.ansi38-231 { color: #d2d2d2; }
+.inv38-231 { background: #d2d2d2; }
+.ansi48-231 { background: #d2d2d2; }
+.inv48-231 { color: #d2d2d2; }
+.ansi38-232 { color: #080808; }
+.inv38-232 { background: #080808; }
+.ansi48-232 { background: #080808; }
+.inv48-232 { color: #080808; }
+.ansi38-233 { color: #121212; }
+.inv38-233 { background: #121212; }
+.ansi48-233 { background: #121212; }
+.inv48-233 { color: #121212; }
+.ansi38-234 { color: #1c1c1c; }
+.inv38-234 { background: #1c1c1c; }
+.ansi48-234 { background: #1c1c1c; }
+.inv48-234 { color: #1c1c1c; }
+.ansi38-235 { color: #262626; }
+.inv38-235 { background: #262626; }
+.ansi48-235 { background: #262626; }
+.inv48-235 { color: #262626; }
+.ansi38-236 { color: #303030; }
+.inv38-236 { background: #303030; }
+.ansi48-236 { background: #303030; }
+.inv48-236 { color: #303030; }
+.ansi38-237 { color: #3a3a3a; }
+.inv38-237 { background: #3a3a3a; }
+.ansi48-237 { background: #3a3a3a; }
+.inv48-237 { color: #3a3a3a; }
+.ansi38-238 { color: #444444; }
+.inv38-238 { background: #444444; }
+.ansi48-238 { background: #444444; }
+.inv48-238 { color: #444444; }
+.ansi38-239 { color: #4e4e4e; }
+.inv38-239 { background: #4e4e4e; }
+.ansi48-239 { background: #4e4e4e; }
+.inv48-239 { color: #4e4e4e; }
+.ansi38-240 { color: #585858; }
+.inv38-240 { background: #585858; }
+.ansi48-240 { background: #585858; }
+.inv48-240 { color: #585858; }
+.ansi38-241 { color: #626262; }
+.inv38-241 { background: #626262; }
+.ansi48-241 { background: #626262; }
+.inv48-241 { color: #626262; }
+.ansi38-242 { color: #6c6c6c; }
+.inv38-242 { background: #6c6c6c; }
+.ansi48-242 { background: #6c6c6c; }
+.inv48-242 { color: #6c6c6c; }
+.ansi38-243 { color: #767676; }
+.inv38-243 { background: #767676; }
+.ansi48-243 { background: #767676; }
+.inv48-243 { color: #767676; }
+.ansi38-244 { color: #808080; }
+.inv38-244 { background: #808080; }
+.ansi48-244 { background: #808080; }
+.inv48-244 { color: #808080; }
+.ansi38-245 { color: #8a8a8a; }
+.inv38-245 { background: #8a8a8a; }
+.ansi48-245 { background: #8a8a8a; }
+.inv48-245 { color: #8a8a8a; }
+.ansi38-246 { color: #949494; }
+.inv38-246 { background: #949494; }
+.ansi48-246 { background: #949494; }
+.inv48-246 { color: #949494; }
+.ansi38-247 { color: #9e9e9e; }
+.inv38-247 { background: #9e9e9e; }
+.ansi48-247 { background: #9e9e9e; }
+.inv48-247 { color: #9e9e9e; }
+.ansi38-248 { color: #a8a8a8; }
+.inv38-248 { background: #a8a8a8; }
+.ansi48-248 { background: #a8a8a8; }
+.inv48-248 { color: #a8a8a8; }
+.ansi38-249 { color: #b2b2b2; }
+.inv38-249 { background: #b2b2b2; }
+.ansi48-249 { background: #b2b2b2; }
+.inv48-249 { color: #b2b2b2; }
+.ansi38-250 { color: #bcbcbc; }
+.inv38-250 { background: #bcbcbc; }
+.ansi48-250 { background: #bcbcbc; }
+.inv48-250 { color: #bcbcbc; }
+.ansi38-251 { color: #c6c6c6; }
+.inv38-251 { background: #c6c6c6; }
+.ansi48-251 { background: #c6c6c6; }
+.inv48-251 { color: #c6c6c6; }
+.ansi38-252 { color: #d0d0d0; }
+.inv38-252 { background: #d0d0d0; }
+.ansi48-252 { background: #d0d0d0; }
+.inv48-252 { color: #d0d0d0; }
+.ansi38-253 { color: #dadada; }
+.inv38-253 { background: #dadada; }
+.ansi48-253 { background: #dadada; }
+.inv48-253 { color: #dadada; }
+.ansi38-254 { color: #e4e4e4; }
+.inv38-254 { background: #e4e4e4; }
+.ansi48-254 { background: #e4e4e4; }
+.inv48-254 { color: #e4e4e4; }
+.ansi38-255 { color: #eeeeee; }
+.inv38-255 { background: #eeeeee; }
+.ansi48-255 { background: #eeeeee; }
+.inv48-255 { color: #eeeeee; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content">
+
+<span class="ansi1 ansi31">Coordination des politiques de formation professionnelle et contrôle de la formation professionnelle
+</span><span class="ansi1 ansi31">――――</span>
+
+
+1er
+――――
+
+La sixième partie du code du travail est ainsi modifiée :
+1° Le premier alinéa de l'article L. 6111-1 est complété par deux phrases ainsi rédigées :
+"Elle vise à permettre à chaque personne, indépendamment de son statut, d'acquérir et d'actualiser des connaissances et des compétences favorisant son évolution professionnelle, ainsi que de progresser d'au moins un niveau de qualification au cours de sa vie professionnelle. Une stratégie nationale coordonnée est définie et mise en oeuvre par l'État, les régions et les partenaires sociaux." ;
+2° Au premier alinéa de l'article L. 6311-1, après les mots : "économique et culturel", sont insérés les mots : ", à la sécurisation des parcours professionnels" ;
+3° Au 1° de l'article L. 6123-1, après les mots : "la conception des politiques de formation professionnelle", sont insérés les mots : ", la définition annuelle de leurs orientations" ;
+4° Le 2° du même article est ainsi rédigé :
+"2° D'évaluer les politiques d'apprentissage et de formation professionnelle tout au long de la vie aux niveaux national et régional, sectoriel et interprofessionnel ;"
+5° Le même article est complété par un 4° et un 5° ainsi rédigés :
+"4° D'évaluer les politiques de formation professionnelle menées en faveur des travailleurs handicapés ;
+"5° D'évaluer les politiques de formation professionnelle menées en faveur des personnes ayant bénéficié d'une formation initiale courte."
+
+2
+――――
+
+L'article L. 6111-2 du code du travail est ainsi modifié :
+1° Avant l'alinéa unique, il est inséré un alinéa ainsi rédigé :
+"Les connaissances et les compétences mentionnées au premier alinéa de l'article L. 6111-1, notamment l'aptitude à actualiser ses connaissances et ses compétences et l'aptitude à travailler en équipe, complètent le socle mentionné à l'article L. 122-1-1 du code de l'éducation." ;
+2° Après le mot : "font", est inséré le mot : "également".
+
+2 bis
+――――
+
+Le code du travail est ainsi modifié :
+1° L'intitulé du chapitre IV du titre Ier du livre III de la sixième partie est ainsi rédigé : "Droit à l'information, à l'orientation et à la qualification professionnelles" ;
+2° Le premier alinéa de l'article L. 6314-1 est ainsi modifié :
+a) Les mots : "la qualification professionnelle" sont remplacés par les mots : "l'information, à l'orientation et à la qualification professionnelles" ;
+b) Les mots : "d'acquérir" sont remplacés par les mots : "de progresser au cours de sa vie professionnelle d'au moins un niveau en acquérant".
+
+3
+――――
+
+I. - Le chapitre IV du titre Ier du livre III de la sixième partie du code du travail est complété par trois articles L. 6314-3, L. 6314-4 et L. 6314-5 ainsi rédigés :
+"Art. L. 6314-3. - Toute personne dispose du droit à être informée, conseillée et accompagnée en matière d'orientation professionnelle.
+"Art. L. 6314-4. - Pour l'exercice du droit mentionné à l'article L. 6314-3, il est créé un service dématérialisé, gratuit, de qualité, accessible à toute personne et lui permettant :
+"1° De disposer d'une première information et d'un premier conseil personnalisé en matière d'orientation et de formation professionnelle ;
+"2° D'être orientée vers les structures susceptibles de lui fournir les informations et les conseils nécessaires à sa bonne orientation professionnelle, notamment les organismes visés à l'article L. 6314-5.
+"Une convention peut être conclue entre l'État, les régions et le fonds visé à l'article L. 6332-18 pour concourir au financement de ce service.
+"Art. L. 6314-5. - Peuvent être reconnus comme participant à la mission de service public d'information et d'orientation professionnelles les organismes qui proposent dans un lieu unique, en complémentarité avec le service visé à l'article L. 6314-4, à toute personne engagée dans la vie active ou qui s'y engage, un ensemble de services de qualité lui permettant :
+"1° De disposer d'une information exhaustive et objective sur les métiers, les compétences et les qualifications nécessaires pour les exercer, les dispositifs de formation et de certification, ainsi que les organismes de formation et les labels de qualité dont ceux-ci bénéficient ;
+"2° De bénéficier de conseils personnalisés en matière d'orientation professionnelle afin de pouvoir choisir en connaissance de cause un métier, une formation ou une certification adapté à ses aspirations, ses besoins et la situation de l'économie et, lorsque le métier, la formation ou la certification envisagé fait l'objet d'un service d'orientation ou d'accompagnement spécifique assuré par un autre organisme, d'être orientée de manière pertinente vers cet organisme."
+II. - Les modalités d'application du présent article sont définies par décret en Conseil d'État.
+
+<span class="ansi1 ansi31">Coordination des politiques de formation professionnelle et contrôle de la formation professionnelle
+</span><span class="ansi1 ansi31">――――</span>
+
+
+4
+――――
+
+Le chapitre III du titre II du livre III de la sixième partie du code du travail est ainsi modifié :
+1° Il est ajouté une section 6 ainsi rédigée :
+"Section 6
+"Portabilité du droit individuel à la formation
+"Art. L. 6323-21. - Sans préjudice des dispositions de la section 5, en cas de rupture non consécutive à une faute lourde ou d'échéance du terme du contrat de travail qui ouvrent droit à une prise en charge par le régime d'assurance chômage, les sommes correspondant au solde du nombre d'heures acquises au titre du droit individuel à la formation et non utilisées multiplié par un montant forfaitaire peuvent être affectées :
+"1° Par un demandeur d'emploi, au financement d'actions de formation, de bilan de compétences, de validation des acquis de l'expérience. La mobilisation de ces sommes a lieu en priorité pendant la période de la prise en charge de l'intéressé par le régime d'assurance chômage et, chaque fois que possible, au cours de la première moitié de cette période. Elle se fait en accord avec le référent chargé de l'accompagnement de l'intéressé ;
+"2° Par un salarié, au financement d'actions de formation, de bilan de compétences ou de validation des acquis de l'expérience. La mobilisation de ces sommes se fait en accord avec un nouvel employeur et a lieu pendant les deux années suivant son embauche.
+"Art. L. 6323-22. - Les organismes collecteurs paritaires mentionnés au chapitre II du titre III du présent livre prennent en charge les sommes mentionnées au premier alinéa de l'article L. 6323-21 selon les modalités suivantes :
+"1° Lorsque l'intéressé est demandeur d'emploi, l'organisme collecteur paritaire compétent est celui dont relève l'entreprise dans laquelle il a acquis ses droits ;
+"2° Lorsque l'intéressé est embauché dans une nouvelle entreprise, l'organisme collecteur paritaire compétent est celui dont relève cette entreprise.
+"Les modalités d'imputation de ces sommes sont définies par accord collectif de branche ou par accord collectif conclu entre les organisations représentatives d'employeurs et de salariés signataires de l'accord constitutif d'un organisme collecteur paritaire interprofessionnel agréé. À défaut d'un tel accord, ces montants sont imputés au titre de la section "professionnalisation" de l'organisme collecteur paritaire compétent.
+"Art. L. 6323-23. - À l'expiration du contrat de travail, l'employeur mentionne sur le certificat de travail prévu à l'article L. 1234-19, dans des conditions fixées par décret, les droits acquis par le salarié au titre du droit individuel à la formation, ainsi que l'organisme collecteur paritaire compétent pour verser les sommes prévues à l'article L. 6323-22 au titre de la professionnalisation, ou, le cas échéant, au titre du plan de formation." ;
+2° (Supprimé)
+3° Le dernier alinéa de l'article L. 6323-12 est complété par une phrase ainsi rédigée :
+"La durée de la formation ainsi réalisée se déduit du contingent d'heures de formation acquis au titre du droit individuel à la formation."
+
+4 bis
+――――
+
+Le Gouvernement remet au Parlement, avant le 1er janvier 2011, un rapport sur le financement du droit individuel à la formation et le traitement comptable des droits acquis à ce titre par les salariés et non encore mobilisés. Ce rapport évalue notamment l'opportunité d'instituer une faculté de passer des provisions ad hoc, sous l'angle comptable et sous l'angle fiscal.
+
+5
+――――
+
+Le code du travail est ainsi modifié :
+1° L'article L. 6321-2 est ainsi rédigé :
+"Art. L. 6321-2. - Toute action de formation suivie par un salarié pour assurer son adaptation au poste de travail ou liée à l'évolution ou au maintien dans l'emploi dans l'entreprise constitue un temps de travail effectif et donne lieu pendant sa réalisation au maintien par l'entreprise de la rémunération." ;
+2° La sous-section 2 de la section 2 du chapitre Ier du titre II du livre III de la sixième partie et l'article L. 6321-9 sont abrogés ;
+3° L'intitulé de la sous-section 1 de la section 2 du chapitre Ier du titre II du livre III de la sixième partie est ainsi rédigé : "Actions d'adaptation au poste de travail ou liées à l'évolution ou au maintien dans l'emploi" ;
+4° Les quatre derniers alinéas de l'article L. 2323-36 sont remplacés par trois alinéas ainsi rédigés :
+"Ils précisent notamment la nature des actions de formation proposées par l'employeur en application de l'article L. 6321-1 et distinguent :
+"1° Les actions d'adaptation du salarié au poste de travail ou liées à l'évolution ou au maintien dans l'emploi dans l'entreprise ;
+"2° Les actions de développement des compétences du salarié."
+
+6
+――――
+
+Le chapitre II du titre II du livre III de la sixième partie du code du travail est complété par une section 4 ainsi rédigée :
+"Section 4
+"Formations se déroulant en dehors du temps de travail
+"Art. L. 6322-64. - Dès lors que le salarié dispose d'une ancienneté d'un an dans l'entreprise et à sa demande, l'organisme collecteur paritaire agréé au titre du congé individuel de formation désigné en application de l'article L. 6322-47 peut assurer la prise en charge de tout ou partie des frais liés à la réalisation d'une formation se déroulant en dehors du temps de travail, selon les mêmes modalités que celles prévues au dernier alinéa de l'article L. 6322-20. Pendant la durée de cette formation, le salarié bénéficie de la législation de la sécurité sociale relative à la protection en matière d'accidents du travail et de maladies professionnelles."
+
+7
+――――
+
+Le titre Ier du livre III de la sixième partie du code du travail est complété par un chapitre V ainsi rédigé :
+"Chapitre <span class="ansi1 ansi31">v</span> <span class="ansi1 ansi32">V</span>
+"Bilan d'étape professionnel et passeport orientation et formation
+"Art. L. 6315-1. - Tout salarié ayant au moins deux ans d'ancienneté dans la même entreprise bénéficie, à sa demande, d'un bilan d'étape professionnel. Ce bilan peut être renouvelé tous les cinq ans.
+"Le bilan d'étape professionnel a pour objet, à partir d'un diagnostic réalisé en commun par le salarié et son employeur, de permettre au salarié d'évaluer ses capacités professionnelles et ses compétences et à son employeur de déterminer les objectifs de formation du salarié.
+"Un accord national interprofessionnel étendu détermine les conditions d'application du bilan d'étape professionnel, notamment les conditions dans lesquelles les salariés sont informés de la possibilité d'en bénéficier.
+"Art. L. 6315-2. - Il est mis à disposition de toute personne un modèle de passeport orientation et formation qui recense :
+"1° Dans le cadre de la formation initiale, les diplômes et titres ainsi que les aptitudes, connaissances et compétences acquises, susceptibles d'aider à l'orientation ;
+"2° Dans le cadre de la formation continue :
+"- tout ou partie des informations recueillies à l'occasion d'un entretien professionnel, d'un bilan de compétences ou d'un bilan d'étape professionnel ;
+"- les actions de formation prescrites par l'institution mentionnée à l'article L. 5312-1 ;
+"- les actions de formation mises en oeuvre par l'employeur ou relevant de l'initiative individuelle ;
+"- les expériences professionnelles acquises lors des périodes de stage ou de formation en entreprise ;
+"- les qualifications obtenues ;
+"- les habilitations de personnes ;
+"- le ou les emplois occupés et les activités bénévoles, ainsi que les connaissances, les compétences et les aptitudes professionnelles mises en oeuvre dans le cadre de ces emplois et de ces activités.
+"Un décret en Conseil d'État détermine les modalités de mise en oeuvre du présent article."
+
+7 bis
+――――
+
+Après le deuxième alinéa de l'article L. 6321-1 du code du travail, il est inséré un alinéa ainsi rédigé :
+"Dans les entreprises et les groupes d'entreprises au sens de l'article L. 2331-1 employant au moins cinquante salariés, il organise pour chacun de ses salariés dans l'année qui suit leur quarante-cinquième anniversaire un entretien professionnel au cours duquel il informe le salarié notamment sur ses droits en matière d'accès à un bilan d'étape professionnel, à un bilan de compétences ou à une action de professionnalisation."
+
+8
+――――
+
+L'article L. 2241-6 du code du travail est complété par un alinéa ainsi rédigé :
+"Cette négociation porte notamment sur l'égal accès à la formation des salariés selon leur catégorie professionnelle et la taille de leur entreprise, la portabilité du droit individuel à la formation, la validation des acquis de l'expérience, l'accès aux certifications, la mise en oeuvre du passeport orientation et formation, le développement du tutorat et la valorisation de la fonction de tuteur, en particulier les conditions de son exercice par des salariés âgés de plus de cinquante-cinq ans."
+
+8 bis A
+――――
+
+I. - À la première phrase du premier alinéa de l'article L. 214-14 du code de l'éducation, le mot : "dix-huit" est remplacé par le mot : "seize".
+II. - Au deuxième alinéa de l'article L. 130-1 du code du service national, les mots : "dix-huit ans à vingt-deux" sont remplacés par les mots : "seize ans à vingt-cinq".
+
+8 bis
+――――
+
+Dans un délai d'un an après la promulgation de la présente loi, le Gouvernement remet au Parlement un rapport sur les modalités d'accès à la formation professionnelle dans les zones transfrontalières et en outre-mer, l'harmonisation des conditions d'accès à la formation pour les travailleurs et les demandeurs d'emplois, la reconnaissance mutuelle des certifications professionnelles et des expériences acquises en formation et en entreprise ainsi que les systèmes d'indemnisation et le financement des formations suivies dans un pays frontalier.
+Ce rapport formule, le cas échéant, des propositions d'amélioration des systèmes existants ainsi que des modalités de suivi de ses conclusions.
+
+<span class="ansi1 ansi31">Coordination des politiques de formation professionnelle et contrôle de la formation professionnelle
+</span><span class="ansi1 ansi31">――――</span>
+
+
+9
+――――
+
+I. - La section 4 du chapitre II du titre III du livre III de la sixième partie du code du travail est ainsi rédigée :
+"Section 4
+"Fonds paritaire de sécurisation des parcours professionnels
+"Art. L. 6332-18. - Le fonds paritaire de sécurisation des parcours professionnels, habilité à recevoir les ressources mentionnées aux articles L. 6332-19 et L. 6332-20, est créé par un accord conclu entre les organisations représentatives d'employeurs et de salariés au niveau national et interprofessionnel qui détermine son organisation.
+"Le fonds est soumis à l'agrément de l'autorité administrative. L'agrément est accordé si le fonds respecte les conditions légales et réglementaires relatives à son fonctionnement et à ses dirigeants.
+"Art. L. 6332-19. - Le fonds paritaire de sécurisation des parcours professionnels dispose des ressources suivantes :
+"1° Les sommes correspondant à un pourcentage de la participation des employeurs de moins de dix salariés calculée dans les conditions définies par les articles L. 6331-2 et L. 6322-37 ;
+"2° Les sommes correspondant à un pourcentage de la participation des employeurs de dix salariés et plus calculée dans les conditions définies par les premier et troisième alinéas de l'article L. 6331-9 et par l'article L. 6322-37 ;
+"3° Les sommes dont disposent les organismes collecteurs paritaires agréés au titre de la professionnalisation et du congé individuel de formation au 31 décembre de chaque année, en tant qu'elles excèdent le tiers de leurs charges comptabilisées au cours du dernier exercice clos selon les règles du plan comptable applicable aux organismes collecteurs paritaires agréés.
+"Le pourcentage mentionné aux 1° et 2°, compris entre 5 % et 13 %, est fixé annuellement par arrêté ministériel, sur proposition des organisations représentatives d'employeurs et de salariés au niveau national et interprofessionnel émise selon les modalités prévues par un accord conclu entre celles-ci. Un décret définit les conditions dans lesquelles est recueilli et pris en compte l'avis des autres organisations syndicales d'employeurs ou employeurs signataires de l'accord constitutif d'un organisme collecteur paritaire agréé.
+"Les sommes mentionnées aux 1° et 2° s'imputent sur les participations des employeurs dues au titre du congé individuel de formation, du plan de formation et de la professionnalisation. Au titre du congé individuel de formation, elles sont calculées en appliquant le pourcentage mentionné à l'alinéa précédent. Au titre du plan de formation et de la professionnalisation, elles sont déterminées par un accord de branche ou un accord collectif conclu entre les organisations syndicales de salariés et d'employeurs signataires de l'accord constitutif d'un organisme collecteur paritaire agréé interprofessionnel. À défaut d'accord, elles sont calculées en appliquant le pourcentage mentionné à l'alinéa précédent de manière identique à chacune de ces participations. Les pourcentages appliqués respectivement au titre du plan de formation et de la professionnalisation peuvent être encadrés par voie réglementaire.
+"Les sommes mentionnées aux 1° et 2° sont versées par l'intermédiaire des organismes collecteurs paritaires agréés au titre de la professionnalisation et du congé individuel de formation.
+"À défaut de versement avant le 30 avril de l'année suivant la clôture de l'exercice, le fonds recouvre les ressources mentionnées au 3° auprès des organismes concernés selon les règles applicables en matière de taxe sur le chiffre d'affaires.
+"Art. L. 6332-20. - Le fonds paritaire de sécurisation des parcours professionnels reçoit également, à l'exclusion des versements exigibles en application de l'article L. 6362-12 :
+"1° Dans les entreprises de moins de dix salariés, par dérogation à l'article L. 6331-6, le montant de la différence entre les dépenses justifiées par l'employeur au titre de la professionnalisation et sa participation due à ce titre lorsqu'elle a été majorée en application de l'article L. 6331-6 ;
+"2° Dans les entreprises de dix salariés et plus, par dérogation aux articles L. 6331-13, L. 6331-28 et L. 6331-31, le montant de la différence entre les dépenses justifiées par l'employeur au titre de la professionnalisation et sa participation due à ce titre lorsqu'elle a été majorée en application de l'article L. 6331-30.
+"Art. L. 6332-21. - Les ressources du fonds paritaire de sécurisation des parcours professionnels permettent :
+"1° De contribuer au financement d'actions de formation professionnelle concourant à la qualification et à la requalification des salariés et demandeurs d'emploi, notamment en faveur :
+"a) Des salariés les plus exposés au risque de rupture de leur parcours professionnel ;
+"b) Des salariés peu ou pas qualifiés ;
+"c) Des salariés n'ayant pas bénéficié d'une action de formation depuis cinq années ;
+"d) Des salariés alternant fréquemment périodes de travail, notamment en mission de travail temporaire, et de chômage ;
+"e) Des salariés des petites et moyennes entreprises ;
+"e bis) Des salariés à temps partiel ;
+"e ter) Des salariés dont la reconversion exige une formation longue ;
+"e quater) Des personnes handicapées ;
+"f) Des demandeurs d'emploi ayant besoin d'une formation pour favoriser leur retour à l'emploi ;
+"g) Des personnes éloignées de l'emploi ainsi que des personnes bénéficiaires d'un contrat conclu en application de l'article L. 5134-19-1 ;
+"2° De financer des études et des actions de promotion ;
+"3° D'assurer la péréquation des fonds par des versements complémentaires aux organismes collecteurs paritaires agréés au titre de la professionnalisation et du congé individuel de formation, notamment pour la mise en oeuvre de l'article L. 6323-22 ;
+"4° De contribuer au financement du service visé au premier alinéa de l'article L. 6314-4.
+"L'affectation des ressources du fonds est déterminée par un accord conclu entre les organisations représentatives d'employeurs et de salariés au niveau national et interprofessionnel, qui reçoivent et prennent en compte, dans des conditions fixées par décret, l'avis des autres organisations syndicales d'employeurs ou employeurs signataires de l'accord constitutif d'un organisme collecteur paritaire agréé.
+"La déclinaison de cet accord donne lieu à une convention-cadre signée entre l'État et le fonds. Cette convention-cadre peut prévoir une participation de l'État au financement des actions de formation professionnelle mentionnées au 1° du présent article.
+"Cette convention détermine le cadre dans lequel des conventions peuvent être conclues entre le fonds et les organisations représentatives d'employeurs et de salariés au niveau professionnel ou interprofessionnel, les conseils régionaux ou l'institution mentionnée à l'article L. 5312-1.
+"Un comité composé des signataires de la convention-cadre assure le suivi de l'emploi des ressources du fonds et en évalue l'impact.
+"Art. L. 6332-22. - Les versements mentionnés au 3° de l'article L. 6332-21 sont subordonnés aux conditions suivantes :
+"1° L'organisme collecteur paritaire agréé affecte au moins 40 % des fonds recueillis au titre de la professionnalisation, déduction faite de la part de ces fonds qui est versée au fonds paritaire de sécurisation des parcours professionnels en application des 1° et 2° de l'article L. 6332-19, aux contrats de professionnalisation ainsi qu'aux périodes de professionnalisation visant des qualifications mentionnées aux 1° et 3° de l'article L. 6314-1 ;
+"2° Un besoin de financement de l'organisme est constaté.
+"Art. L. 6332-22-1. - Un décret en Conseil d'État détermine les conditions d'application de la présente section, notamment :
+"1° Les modalités de reversement par les organismes collecteurs paritaires agréés au titre de la professionnalisation et du congé individuel de formation des sommes mentionnées aux 1° et 2° de l'article L. 6332-19 ;
+"2° La nature des disponibilités et des charges mentionnées au 3° de l'article L. 6332-19 ;
+"3° Les conditions dans lesquelles les sommes reçues par le fonds paritaire de sécurisation des parcours professionnels sont affectées par l'accord mentionné au seizième alinéa de l'article L. 6332-21 ;
+"4° Les documents et pièces relatifs à leur gestion que les organismes collecteurs paritaires agréés communiquent au fonds paritaire de sécurisation des parcours professionnels et ceux qu'ils présentent aux personnes commissionnées par ce dernier pour les contrôler. Ces dispositions s'appliquent sans préjudice des contrôles exercés par les agents mentionnés à l'article L. 6361-5 ;
+"5° Les modalités d'application au fonds paritaire de sécurisation des parcours professionnels du principe de transparence prévu au 2° de l'article L. 6332-6 ;
+"6° Les règles relatives aux contrôles auxquels est soumis le fonds paritaire de sécurisation des parcours professionnels ainsi qu'aux modalités de reversement au Trésor public des dépenses non admises par les agents mentionnés à l'article L. 6361-5 ;
+"7° Les conditions d'affectation des fonds en l'absence d'accord ou de convention-cadre mentionnés à l'article L. 6332-21 ;
+"8° Les conditions dans lesquelles, en l'absence de fonds agréé, les organismes collecteurs paritaires agréés déposent leurs disponibilités sur un compte unique."
+I bis. - À compter de la date de publication de la présente loi, le fonds national de péréquation est agréé en tant que fonds paritaire de sécurisation des parcours professionnels en application de l'article L. 6332-18 du code du travail dans sa rédaction issue de la présente loi.
+II. - Le code du travail est ainsi modifié :
+1° Le titre II du livre III de la sixième partie est complété par un chapitre VI ainsi rédigé :
+"Chapitre <span class="ansi1 ansi31">vi</span> <span class="ansi1 ansi32">VI</span>
+"Préparation opérationnelle à l'emploi
+"Art. L. 6326-1. - Des actions de préparation opérationnelle à l'emploi sont mises en oeuvre, de façon individuelle ou collective, au bénéfice de demandeurs d'emploi susceptibles d'occuper un emploi correspondant à la fois à des besoins identifiés par une branche professionnelle et à une offre identifiée et déposée par une entreprise auprès de l'institution mentionnée à l'article L. 5312-1. Elles sont conçues pour leur permettre d'acquérir les compétences professionnelles nécessaires pour occuper l'emploi proposé.
+"Ces actions peuvent également être utilisées pour faciliter l'accès au contrat de professionnalisation à durée indéterminée.
+"Art. L. 6326-2. - Les actions mentionnées à l'article L. 6326-1 sont prises en charge et mises en oeuvre par l'institution mentionnée à l'article L. 5312-1.
+"Le fonds mentionné à l'article L. 6332-18 et les organismes collecteurs paritaires agréés peuvent contribuer au financement de ces actions pour ce qui concerne les coûts pédagogiques et les frais annexes." ;
+2° Au premier alinéa de l'article L. 6332-23, à l'article L. 6332-24 et au 2° de l'article L. 6355-24, les mots : "fonds national de péréquation" sont remplacés par les mots : "fonds paritaire de sécurisation des parcours professionnels".
+III. - (Supprimé)
+
+9 bis
+――――
+
+I. - Au 1° du I de l'article 32 de la loi n° 2006-339 du 23 mars 2006 pour le retour à l'emploi et sur les droits et les devoirs des bénéficiaires de minima sociaux, le mot : "cinq" est remplacé par le mot : "six".
+II. - L'ordonnance n° 2006-433 du 13 avril 2006 relative à l'expérimentation du contrat de transition professionnelle est ainsi modifiée :
+1° Au premier alinéa et à la première phrase du deuxième alinéa de l'article 1er et au second alinéa de l'article 2, l'année : "2009" est remplacée par l'année : "2010" ;
+2° À la première phrase du deuxième alinéa de l'article 1er, le mot : "dix-huit" est remplacé par le mot : "trente-trois".
+
+10
+――――
+
+I. - Le chapitre II du titre IV du livre Ier de la troisième partie du code du travail est ainsi modifié :
+1° Au premier alinéa de l'article L. 3142-3, les mots : "ou pour participer à un jury d'examen ou de validation des acquis de l'expérience" sont supprimés ;
+2° Après l'article L. 3142-3, il est inséré un article L. 3142-3-1 ainsi rédigé :
+"Art. L. 3142-3-1. - Lorsqu'un salarié est désigné pour participer à un jury d'examen ou de validation des acquis de l'expérience, l'employeur lui accorde une autorisation d'absence pour participer à ce jury sous réserve de respecter un délai de prévenance dont la durée est fixée par décret." ;
+3° Au premier alinéa de l'article L. 3142-4, après les mots : "L'autorisation d'absence" sont insérés les mots : "au titre des articles L. 3142-3 ou L. 3142-3-1" ;
+4° À l'article L. 3142-5, les mots : "mentionnées dans la présente sous-section" sont remplacés par les mots : "et aux jurys mentionnés aux articles L. 3142-3 ou L. 3142-3-1" ;
+5° Au premier alinéa de l'article L. 3142-6, les mots : "dans la présente sous-section" sont remplacés par les mots : "à l'article L. 3142-3".
+II. - Le chapitre III du titre Ier du livre III de la sixième partie du code du travail est ainsi modifié :
+1° L'article L. 6313-1 est complété par un alinéa ainsi rédigé :
+"Entre également dans le champ d'application des dispositions relatives à la formation professionnelle continue la participation à un jury d'examen ou de validation des acquis de l'expérience mentionné à l'article L. 3142-3-1 lorsque ce jury intervient pour délivrer des certifications professionnelles inscrites au répertoire national des certifications professionnelles dans les conditions prévues à l'article L. 335-6 du code de l'éducation ou des certificats de qualification professionnelle établis par une ou plusieurs commissions paritaires nationales de l'emploi d'une branche professionnelle. " ;
+2° Après l'article L. 6313-11, il est inséré un article L. 6313-12 ainsi rédigé :
+"Art. L. 6313-12. - Les dépenses afférentes à la participation d'un salarié à un jury d'examen ou de validation des acquis de l'expérience mentionné au dernier alinéa de l'article L. 6313-1 couvrent, selon des modalités fixées par accord de branche ou par accord collectif conclu entre les organisations syndicales de salariés et d'employeurs signataires de l'accord constitutif d'un organisme collecteur paritaire agréé interprofessionnel :
+"1° Les frais de transport, d'hébergement et de restauration ;
+"2° La rémunération du salarié ;
+"3° Les cotisations sociales obligatoires ou conventionnelles qui s'y rattachent ;
+"4° Le cas échéant, la taxe sur les salaires qui s'y rattache.
+"Pour les travailleurs indépendants, les membres des professions libérales et des professions non salariées, une indemnité forfaitaire ainsi que le remboursement des frais de transport, d'hébergement et de restauration pour la participation à un jury d'examen ou de validation des acquis de l'expérience mentionné au dernier alinéa de l'article L. 6313-1 peuvent être pris en charge par les fonds d'assurance-formation de non-salariés mentionnés à l'article L. 6332-9."
+
+11
+――――
+
+I. - Le chapitre IV du titre Ier du livre III de la sixième partie du code du travail est ainsi modifié :
+1° Le 3° de l'article L. 6314-1 est ainsi rédigé :
+"3° Soit ouvrant droit à un certificat de qualification professionnelle." ;
+2° Après l'article L. 6314-1, il est inséré un article L. 6314-2 ainsi rédigé :
+"Art. L. 6314-2. - Les certificats de qualification professionnelle sont établis par une ou plusieurs commissions paritaires nationales de l'emploi d'une branche professionnelle.
+"Ils s'appuient, d'une part, sur un référentiel d'activités qui permet d'analyser les situations de travail et d'en déduire les connaissances et les compétences nécessaires et, d'autre part, sur un référentiel de certification qui définit les modalités et les critères d'évaluation des acquis."
+II. - Le II de l'article L. 335-6 du code de l'éducation est ainsi modifié :
+1° Au deuxième alinéa, les mots : "figurant sur une liste établie par la commission paritaire nationale de l'emploi" sont remplacés par les mots : "professionnelle établis par une ou plusieurs commissions paritaires nationales de l'emploi" et, après les mots : "des organismes", sont insérés les mots : "ou instances" ;
+2° Le troisième alinéa est complété par deux phrases ainsi rédigées :
+"Préalablement à leur élaboration, l'opportunité de leur création fait l'objet d'un avis de la commission nationale de la certification professionnelle dans un délai de deux mois. Passé ce délai, cet avis est réputé favorable." ;
+3° La dernière phrase du quatrième alinéa est ainsi rédigée :
+"Elle veille à la cohérence, à la complémentarité et au renouvellement des diplômes et des titres ainsi qu'à leur adaptation à l'évolution des qualifications et de l'organisation du travail." ;
+4° Après le quatrième alinéa, il est inséré un alinéa ainsi rédigé :
+"Les certifications et habilitations correspondant à des compétences transversales exercées en situation professionnelle peuvent être recensées dans un inventaire spécifique établi par la Commission nationale de la certification professionnelle." ;
+5° Après le quatrième alinéa, il est inséré un alinéa ainsi rédigé :
+"Les personnes qui appartiennent aux promotions prises en compte dans le cadre de la procédure d'instruction pour enregistrement au répertoire national des certifications professionnelles visé au présent article ainsi que celles qui appartiennent à la promotion en cours et ayant obtenu la certification peuvent se prévaloir de l'inscription de cette certification au répertoire national des certifications professionnelles." ;
+6° Le début de l'avant-dernier alinéa est ainsi rédigé : "La Commission nationale de la certification professionnelle émet des recommandations<span class="ansi1 ansi31">…</span><span class="ansi1 ansi32">...</span> (le reste sans changement)."
+III. - Dans un délai d'un an après la date de publication de la présente loi, le Gouvernement remet au Parlement un rapport sur l'opportunité d'adapter le régime juridique de la Commission nationale de la certification professionnelle au regard de ses missions.
+
+<span class="ansi1 ansi31">Coordination des politiques de formation professionnelle et contrôle de la formation professionnelle
+</span><span class="ansi1 ansi31">――――</span>
+
+
+12
+――――
+
+Le livre III de la sixième partie du code du travail est ainsi modifié :
+1° L'article L. 6325-1 est complété par un 3° ainsi rédigé :
+"3° Aux bénéficiaires du revenu de solidarité active, de l'allocation de solidarité spécifique ou de l'allocation aux adultes handicapés ou aux personnes ayant bénéficié d'un contrat conclu en application de l'article L. 5134-19-1." ;
+2° Après l'article L. 6325-1, il est inséré un article L. 6325-1-1 ainsi rédigé :
+"Art. L. 6325-1-1. - Les personnes mentionnées au 1° de l'article L. 6325-1 qui n'ont pas validé un second cycle de l'enseignement secondaire et qui ne sont pas titulaires d'un diplôme de l'enseignement technologique ou professionnel, ainsi que les personnes mentionnées au 3° du même article bénéficient du contrat de professionnalisation selon les modalités prévues aux articles L. 6325-12, L. 6325-14, L. 6332-14 et L. 6332-15." ;
+3° Au premier alinéa de l'article L. 6325-12, les mots : "la personne sortie" sont remplacés par les mots : "les personnes mentionnées à l'article L. 6325-1-1 ainsi que pour les personnes sorties" ;
+4° Au premier alinéa de l'article L. 6325-14, les mots : "les jeunes n'ayant pas achevé un second cycle de l'enseignement secondaire et qui ne sont pas titulaires d'un diplôme de l'enseignement technologique ou professionnel," sont remplacés par les mots : "ceux mentionnés à l'article L. 6325-1-1" ;
+5° L'article L. 6332-14 est complété par deux alinéas ainsi rédigés :
+"La convention ou l'accord collectif mentionné au premier alinéa détermine des forfaits horaires spécifiques pour les contrats de professionnalisation conclus avec les personnes mentionnées à l'article L. 6325-1-1.
+"Les organismes collecteurs paritaires agréés mentionnés au premier alinéa peuvent poursuivre la prise en charge des actions d'évaluation, d'accompagnement et de formation des bénéficiaires du contrat prévu à l'article L. 6325-5 dans les cas de rupture du contrat définis aux articles L. 1233-3 et L. 1243-4 et dans les cas de redressement ou de liquidation judiciaire de l'entreprise." ;
+6° L'article L. 6332-15 est ainsi modifié :
+a) Au deuxième alinéa, les mots : "d'un plafond mensuel et d'une durée maximale" sont remplacés par les mots : "de plafonds mensuels et de durées maximales" ;
+b) Le deuxième alinéa est complété par une phrase ainsi rédigée :
+"Cette prise en charge fait l'objet d'un plafond spécifique lorsque les contrats de professionnalisation sont conclus avec les personnes mentionnées à l'article L. 6325-1-1." ;
+c) Il est ajouté un alinéa ainsi rédigé :
+"Ces organismes peuvent également prendre en charge, dans les mêmes conditions, une partie des dépenses de tutorat externe à l'entreprise engagées pour les personnes mentionnées à l'article L. 6325-1-1, les personnes qui ont été suivies par un référent avant la signature du contrat de professionnalisation et les personnes qui n'ont exercé aucune activité professionnelle à plein temps et en contrat à durée indéterminée au cours des trois années précédant la signature du contrat de professionnalisation."
+
+13
+――――
+
+I. - L'article L. 6222-18 du code du travail est complété par un alinéa ainsi rédigé :
+"L'article L. 1242-10 est applicable lorsque, après la rupture d'un contrat d'apprentissage, un nouveau contrat est conclu entre l'apprenti et un nouvel employeur pour achever la formation."
+II. - Le dernier alinéa de l'article L. 6241-4 du même code est complété par une phrase ainsi rédigée :
+"À défaut de publication de ce coût, le montant de ce concours est égal à un montant forfaitaire fixé par arrêté du ministre chargé de la formation professionnelle."
+
+13 bis A
+――――
+
+I. - L'article L. 6241-3 du code du travail est ainsi modifié :
+1° Les mots : "de la taxe d'apprentissage prévue à" sont remplacés par les mots : "du quota prévue au deuxième alinéa de" ;
+2° Sont ajoutés les mots : "et la contribution prévue au troisième alinéa de l'article 225 du code général des impôts".
+II. - L'article 225 du code général des impôts est ainsi modifié :
+1° Le début de la première phrase du troisième alinéa est ainsi rédigé : "Pour les rémunérations versées à compter du 1er janvier 2009, une contribution supplémentaire pareillement assise et dont le taux est fixé à 0,1 % est due par les entreprises de deux cent cinquante salariés et plus lorsque<span class="ansi1 ansi31">…</span><span class="ansi1 ansi32">...</span> (le reste sans changement)." ;
+2° Le même alinéa est complété par une phrase ainsi rédigée :
+"Le produit de cette contribution, collectée par le Trésor public selon les mêmes modalités que la taxe, est intégralement reversé au fonds prévu à l'article L. 6241-3 du code du travail."
+
+<span class="ansi1 ansi31">Coordination des politiques de formation professionnelle et contrôle de la formation professionnelle
+</span><span class="ansi1 ansi31">――――</span>
+
+
+13 bis B
+――――
+
+À la première phrase du dernier alinéa de l'article 9 de la loi n° 2006-396 du 31 mars 2006 pour l'égalité des chances, le mot : "trois" est remplacé par le mot : "deux".
+
+13 bis
+――――
+
+L'État peut conclure des conventions d'objectifs sur le développement de la formation des jeunes par l'alternance avec les entreprises ou avec les organisations syndicales et associations les représentant au niveau des branches professionnelles. Ces conventions comprennent notamment des engagements sur le taux de jeunes de seize à vingt-cinq ans révolus en formation par l'alternance et présents dans leur effectif que les entreprises ou les organisations et associations susmentionnées s'engagent à atteindre aux échéances du 1er janvier 2012 et du 1er janvier 2015.
+Ces conventions déterminent également les conditions dans lesquelles la réalisation des engagements pris est évaluée. Au plus tard trois mois avant chacune des deux échéances mentionnées au premier alinéa, le Gouvernement remet au Parlement un rapport d'évaluation sur cette réalisation. Au regard de l'écart existant, pour l'ensemble de l'emploi privé et pour les principales branches professionnelles, entre le taux de jeunes en formation par l'alternance présents dans les effectifs et le taux de 5 %, le Gouvernement peut alors présenter au Parlement, si nécessaire, un projet de loi comportant les mesures destinées à atteindre ce taux de 5 %.
+
+13 ter
+――――
+
+À titre expérimental et dans le respect du code des marchés publics, l'État et les collectivités et établissements publics soumis au code précité mettent en oeuvre des clauses d'exécution de leurs marchés et accords-cadres stipulant que, pour certaines catégories d'achats et au-dessus de certains montants de marché, 5 % au moins du volume des services, fournitures ou travaux en cause <span class="ansi1 ansi31">soit produit</span> <span class="ansi1 ansi32">soient produits</span> par des jeunes de moins de vingt-six ans peu ou pas qualifiés.
+La présente expérimentation s'applique aux procédures de marché engagées à compter de la publication de la présente loi et jusqu'au 31 décembre 2011.
+Les catégories d'achats concernées, les montants de marché au-delà desquels le présent article s'applique et le niveau maximal de qualification des jeunes pris en compte sont définis par voie réglementaire.
+Le Gouvernement remet au Parlement, au plus tard le 30 septembre 2011, un rapport sur la présente expérimentation, qui évalue en particulier son impact sur l'accès des jeunes peu ou pas qualifiés à l'emploi, à la formation et à la qualification.
+
+13 quater
+――――
+
+À titre expérimental, jusqu'au 31 décembre 2011 et dans des départements dont la liste est fixée par voie réglementaire, le représentant de l'État dans le département conclut avec les personnes visées aux articles L. 5323-1 et L. 5323-2 du code du travail des conventions d'objectifs comportant des engagements réciproques des signataires.
+Ces conventions déterminent :
+- des objectifs d'identification des offres d'emploi non pourvues dans le bassin d'emploi considéré ;
+- des objectifs de mutualisation au sein du service public de l'emploi des données relatives au marché du travail ainsi recueillies ;
+- des objectifs de placement des demandeurs d'emploi en fonction des offres d'emploi identifiées ;
+- des objectifs d'accompagnement dans l'emploi des personnes embauchées et les modalités selon lesquelles ces personnes peuvent bénéficier d'actions de formation.
+Ces conventions prévoient, le cas échéant, les indicateurs quantitatifs et qualitatifs associés à la définition des objectifs.
+Elles déterminent également le processus d'évaluation contradictoire des résultats obtenus au regard des objectifs fixés.
+Le Gouvernement remet au Parlement, au plus tard le 30 septembre 2011, un rapport évaluant la présente expérimentation.
+
+13 quinquies
+――――
+
+À titre expérimental, lorsqu'elles sont engagées à compter de la publication de la présente loi et jusqu'au 31 décembre 2011, peuvent être financées au titre de la participation des employeurs au développement de la formation professionnelle continue dans le cadre du plan de formation les dépenses correspondant :
+- à une part de la rémunération des salariés assurant le tutorat de jeunes de moins de vingt-six ans embauchés depuis moins de six mois ou stagiaires dans l'entreprise ;
+- aux éventuels compléments de salaire versés aux salariés en contrepartie de leur activité de tutorat des jeunes susmentionnés.
+Les conditions d'imputabilité des dépenses mentionnées aux deux alinéas précédents, notamment les formations préalables au tutorat dont doivent attester les salariés tuteurs, la part de leur rémunération susceptible d'être imputée, le montant maximal de cette part ainsi que celui des compléments de salaires imputables sont définis par voie réglementaire.
+Le Gouvernement remet au Parlement, au plus tard le 30 septembre 2011, un rapport sur la présente expérimentation, qui évalue en particulier son impact sur le développement et la valorisation du tutorat ainsi que sur l'accès des jeunes peu ou pas qualifiés à l'emploi, à la formation et à la qualification.
+
+13 sexies
+――――
+
+À titre expérimental, jusqu'au 31 décembre 2011, tout apprenti dont la formation n'a pas été sanctionnée par un diplôme ou un titre à finalité professionnelle conformément à l'article L. 6211-1 du code du travail peut bénéficier, à sa demande, de la prise en compte de ses acquis en vue de l'obtention d'un certificat de qualification professionnelle.
+Les modalités de mise en oeuvre du présent article sont fixées par des conventions ou accords de branche déposés avant le 31 décembre 2010. Un décret détermine les modalités applicables à défaut d'accord ou de convention de branche.
+Le Gouvernement remet au Parlement, au plus tard le 30 septembre 2011, un rapport évaluant la présente expérimentation.
+
+13 septies
+――――
+
+Après le premier alinéa de l'article L. 5221-5 du code du travail, il est inséré un alinéa ainsi rédigé :
+"L'autorisation de travail est accordée de droit à l'étranger autorisé à séjourner en France pour la conclusion d'un contrat d'apprentissage ou de professionnalisation à durée déterminée."
+
+13 octies
+――――
+
+À la première phrase du troisième alinéa de l'article 225 du code général des impôts, après les mots : "contrat d'apprentissage", sont insérés les mots : "ou de jeunes accomplissant un volontariat international en entreprise régi par les articles L. 122-1 et suivants du code du service national".
+
+13 nonies A
+――――
+
+Après l'article L. 313-6 du code de l'éducation, il est inséré un article L. 313-7 ainsi rédigé :
+"Art. L. 313-7. - Dans des conditions, notamment de délai, fixées par voie réglementaire et dans le respect de la législation relative à l'informatique et aux libertés, chaque établissement d'enseignement du second degré, y compris les établissements privés ayant passé avec l'État l'un des contrats prévus par le présent code et ceux de l'enseignement agricole, et chaque centre de formation d'apprentis ou section d'apprentissage transmet à des personnes et organismes désignés par le représentant de l'État dans le département, ainsi qu'à la mission locale pour l'insertion professionnelle et sociale des jeunes visée à l'article L. 5314-1 du code du travail compétente ou, à défaut, à l'institution visée à l'article L. 5312-1 du même code, les coordonnées de ses anciens élèves qui ne sont plus inscrits dans un cycle de formation et qui n'ont pas atteint un niveau de qualification fixé par voie réglementaire.
+"Dans chaque département, le dispositif défini au présent article est mis en oeuvre et coordonné sous l'autorité du représentant de l'État."
+
+13 nonies
+――――
+
+L'article L. 5314-2 du code du travail est complété par un alinéa ainsi rédigé :
+"Les résultats obtenus par les missions locales en termes d'insertion professionnelle sont évalués dans des conditions qui sont fixées par convention avec l'État et les collectivités territoriales qui les financent. Les financements accordés tiennent compte de ces résultats."
+
+13 decies
+――――
+
+Après le deuxième alinéa de l'article L. 214-14 du code de l'éducation, il est inséré un alinéa ainsi rédigé :
+"Le réseau des écoles de la deuxième chance tend à assurer une couverture complète et équilibrée du territoire national, en concertation avec les collectivités territoriales."
+
+<span class="ansi1 ansi31">Coordination des politiques de formation professionnelle et contrôle de la formation professionnelle
+</span><span class="ansi1 ansi31">――――</span>
+
+
+14
+――――
+
+I. - Les sous-sections 2 et 4 de la section 2 du chapitre Ier du titre III du livre III de la sixième partie du code du travail sont abrogées.
+II. - Le chapitre II du titre III du livre III de la sixième partie du même code est ainsi modifié :
+1° Après l'article L. 6332-1, il est inséré un article L. 6332-1-1 ainsi rédigé :
+"Art. L. 6332-1-1. - Les organismes collecteurs paritaires agréés contribuent au développement de la formation professionnelle continue. Ils concourent notamment à l'information, la sensibilisation et l'accompagnement des entreprises, en particulier des petites et moyennes entreprises, pour l'analyse et la définition de leurs besoins en matière de formation professionnelle. Ils participent également à l'identification des compétences et des qualifications mobilisables au sein de l'entreprise et à la définition des besoins collectifs et individuels au regard de la stratégie de l'entreprise, en prenant en compte les objectifs définis par les accords de gestion prévisionnelle des emplois et des compétences. Les organismes collecteurs paritaires agréés peuvent prendre en charge les coûts des diagnostics des petites et moyennes entreprises réalisés à cet effet, selon les modalités définies par accord de branche ou accord collectif conclu entre les organisations d'employeurs et de salariés signataires de l'accord constitutif d'un organisme collecteur paritaire agréé interprofessionnel.
+"Ils peuvent conclure avec l'État des conventions dont l'objet est de définir la part des ressources qu'ils peuvent affecter au cofinancement d'actions en faveur de la formation professionnelle et du développement des compétences des salariés et des demandeurs d'emploi.
+"Ils doivent être en capacité d'assurer un service de proximité au bénéfice des entreprises, et notamment des très petites, petites et moyennes entreprises.
+"Les politiques des organismes collecteurs paritaires agréés font l'objet d'une évaluation triannuelle." ;
+1° bis Après l'article L. 6332-2, il est inséré un article L. 6332-2-1 ainsi rédigé :
+"Art. L. 6332-2-1. - Lorsqu'une personne exerce une fonction d'administrateur ou salariée dans un établissement de formation ou un établissement de crédit, elle ne peut exercer une fonction d'administrateur ou salariée dans un organisme collecteur paritaire agréé ou un organisme délégué par ce dernier." ;
+2° La dernière phrase du second alinéa de l'article L. 6332-3 est ainsi rédigée :
+"L'organisme collecteur paritaire agréé peut affecter les versements des employeurs de dix salariés et plus au financement des plans de formation présentés par les employeurs de moins de dix salariés adhérant à l'organisme." ;
+2° bis Après l'article L. 6332-3, il est inséré un article L. 6332-3-1 ainsi rédigé :
+"Art. L. 6332-3-1. - Les sommes versées au titre du développement de la formation professionnelle continue par les employeurs occupant de dix à moins de cinquante salariés sont gérées paritairement au sein d'une section particulière de l'organisme collecteur paritaire agréé.
+"Elles sont mutualisées dès leur réception. L'organisme collecteur paritaire agréé peut affecter les versements des employeurs de cinquante salariés et plus au financement des plans de formation présentés par les employeurs de moins de cinquante salariés adhérant à l'organisme." ;
+2° ter Après l'article L. 6332-5, il est inséré un article L. 6332-5-1 ainsi rédigé :
+"Art. L. 6332-5-1. - L'organisme collecteur paritaire agréé est assujetti aux neuvième et dixième alinéas de l'article L. 441-6 du code de commerce pour le délai de règlement des sommes dues aux organismes de formation." ;
+2° quater Le 3° de l'article L. 6332-6 est complété par les mots : "et des prestataires de formation" ;
+3° Le 5° de l'article L. 6332-6 est ainsi rédigé :
+"5° Les règles applicables aux excédents financiers dont est susceptible de disposer l'organisme collecteur paritaire agréé et les conditions d'utilisation de ces fonds pour le financement des actions mentionnées à l'article L. 6332-21, d'actions de maintien ou d'accès à l'emploi, de développement des compétences, de formation professionnelle, notamment en faveur des actifs peu ou pas qualifiés et des petites et moyennes entreprises, et de compensation entre organismes collecteurs paritaires agréés, ainsi que pour le financement d'études et d'actions de promotion ;"
+3° bis Au 6° de l'article L. 6332-6, les mots : "de la section particulière prévue à l'article L. 6332-3 ainsi que les modalités de fonctionnement de cette section" sont remplacés par les mots : "des sections particulières prévues aux articles L. 6332-3 et L. 6332-3-1 ainsi que les modalités de fonctionnement de ces sections" ;
+4° L'article L. 6332-7 est ainsi modifié :
+a) Le premier alinéa est complété par trois phrases ainsi rédigées :
+"Ils concourent notamment à l'information, la sensibilisation et l'accompagnement des entreprises, en particulier des petites et moyennes entreprises, pour l'analyse et la définition de leurs besoins en matière de formation professionnelle incluant l'aide à l'identification des compétences et des qualifications mobilisables au sein de l'entreprise et à la définition des besoins collectifs et individuels au regard de la stratégie de l'entreprise, en prenant en compte les objectifs définis par les accords de gestion prévisionnelle des emplois et des compétences. Les organismes paritaires collecteurs agréés peuvent prendre en charge les coûts de diagnostics des petites et moyennes entreprises réalisés à cet effet dans le cadre des accords de gestion prévisionnelle des emplois et des compétences, selon les modalités définies par accord de branche ou accord collectif conclu entre les organisations d'employeurs et de salariés signataires de l'accord constitutif d'un organisme paritaire collecteur agréé interprofessionnel. Ils peuvent conclure les conventions mentionnées au deuxième alinéa de l'article L. 6332-1-1." ;
+b) Le quatrième alinéa est remplacé par six alinéas ainsi rédigés :
+"Ils sont agréés par l'autorité administrative, dans les conditions prévues par le dernier alinéa de l'article L. 6332-1, au titre d'une ou plusieurs des catégories suivantes :
+"1° A Pour les contributions dues au titre du plan de formation des employeurs occupant moins de dix salariés ;
+"1° Pour les contributions dues au titre du plan de formation des employeurs occupant de dix à moins de cinquante salariés ;
+"2° Pour les contributions dues au titre du plan de formation des employeurs occupant cinquante salariés et plus ;
+"3° Pour les contributions dues au titre de la professionnalisation ;
+"4° Pour les contributions dues au titre du congé individuel de formation." ;
+5° L'article L. 6332-13 est ainsi rédigé :
+"Art. L. 6332-13. - Un décret en Conseil d'État détermine les conditions d'application de la présente section selon les modalités définies à l'article L. 6332-6."
+
+15
+――――
+
+I. - La validité des agréments délivrés aux organismes collecteurs paritaires des fonds de la formation professionnelle continue mentionnés aux sections 1, 2 et 3 du chapitre II du titre III du livre III de la sixième partie du code du travail expire au plus tard deux ans après la date de publication de la présente loi.
+Un nouvel agrément est subordonné à l'existence d'un accord conclu à cette fin entre les organisations syndicales de salariés et d'employeurs représentatives dans le champ d'application de l'accord.
+II. - L'article L. 6332-1 du code du travail est ainsi modifié :
+1° Le dernier alinéa est complété par une phrase ainsi rédigée :
+"S'agissant d'un organisme collecteur paritaire interprofessionnel, cet accord est valide et peut être agréé même s'il n'est signé que par une organisation syndicale représentative d'employeurs." ;
+2° Il est ajouté un alinéa ainsi rédigé :
+"L'agrément est accordé aux organismes au regard de l'importance de leur capacité financière, de leur mode de gestion paritaire, de l'application d'engagements relatifs à la transparence des comptes, de leur organisation professionnelle ou interprofessionnelle et de leur aptitude à remplir leurs missions et à assurer des services de proximité, notamment auprès des petites et moyennes entreprises, au niveau des territoires."
+
+15 bis
+――――
+
+À l'article L. 6331-20 du code du travail, le mot : "cadres" est supprimé.
+
+15 ter
+――――
+
+L'article L. 6523-1 du code du travail est complété par les mots : "et de toutes les activités relevant de la production agricole".
+
+<span class="ansi1 ansi31">Coordination des politiques de formation professionnelle et contrôle de la formation professionnelle
+</span><span class="ansi1 ansi31">――――</span>
+
+
+16 A
+――――
+
+Chaque année, le Conseil national de la formation professionnelle tout au long de la vie établit un bilan et une évaluation, par bassin d'emploi, des actions de formation professionnelle qui ont été réalisées par l'ensemble des organismes dispensant de telles actions.
+
+16
+――――
+
+Le titre V du livre III de la sixième partie du code du travail est ainsi modifié :
+1° A Au début du chapitre Ier, il est inséré une section 1 ainsi rédigée :
+"Section 1
+"Principes généraux
+"Art. L. 6351-1 A. - L'employeur est libre de choisir l'organisme de formation, enregistré après déclaration préalable, auquel il confie la formation de ses salariés." ;
+1° B Avant l'article L. 6351-1, il est inséré une section 2 intitulée : "Régime juridique de la déclaration d'activité" et comprenant les articles L. 6351-1 à L. 6351-8 ;
+1° Le dernier alinéa de l'article L. 6351-1 est ainsi rédigé :
+"L'autorité administrative procède à l'enregistrement de la déclaration sauf dans les cas prévus par l'article L. 6351-3." ;
+2° L'article L. 6351-3 est ainsi rédigé :
+"Art. L. 6351-3. - L'enregistrement de la déclaration d'activité peut être refusé de manière motivée, avec indication des modalités de recours, par décision de l'autorité administrative dans les cas suivants :
+"1° Les prestations prévues à la première convention de formation professionnelle ou au premier contrat de formation professionnelle ne correspondent pas aux actions mentionnées à l'article L. 6313-1 ;
+"2° Les dispositions du chapitre III du présent titre relatives à la réalisation des actions de formation ne sont pas respectées ;
+"3° L'une des pièces justificatives n'est pas produite." ;
+3° L'article L. 6351-4 est ainsi rédigé :
+"Art. L. 6351-4. - L'enregistrement de la déclaration d'activité est annulé par décision de l'autorité administrative lorsqu'il est constaté, au terme d'un contrôle réalisé en application du 1° de l'article L. 6361-2 :
+"1° Soit que les prestations réalisées ne correspondent pas aux actions mentionnées à l'article L. 6313-1 ;
+"2° Soit que l'une des dispositions du chapitre III du présent titre relatives à la réalisation des actions de formation n'est pas respectée ;
+"3° Soit que, après mise en demeure de se mettre en conformité avec les textes applicables dans un délai fixé par décret, l'une des dispositions du chapitre II du présent titre relatives au fonctionnement des organismes de formation n'est pas respectée.
+"Avant toute décision d'annulation, l'intéressé est invité à faire part de ses observations." ;
+4° Avant l'alinéa unique de l'article L. 6351-5, il est inséré un alinéa ainsi rédigé :
+"Une déclaration rectificative est souscrite en cas de modification d'un ou des éléments de la déclaration initiale." ;
+4° bis L'article L. 6351-6 est ainsi rédigé :
+"Art. L. 6351-6. - La déclaration d'activité devient caduque lorsque le bilan pédagogique et financier prévu à l'article L. 6352-11 ne fait apparaître aucune activité de formation, ou lorsque ce bilan n'a pas été adressé à l'autorité administrative." ;
+5° Après l'article L. 6351-7, il est inséré un article L. 6351-7-1 ainsi rédigé :
+"Art. L. 6351-7-1. - La liste des organismes déclarés dans les conditions fixées au présent chapitre et à jour de leur obligation de transmettre le bilan pédagogique et financier mentionné à l'article L. 6352-11 est rendue publique, notamment au moyen de services de communication électronique." ;
+6° À l'article L. 6352-1, les mots : "qu'elle emploie" sont remplacés par les mots : "qui interviennent à quelque titre que ce soit dans les prestations de formation qu'elle réalise" ;
+7° L'article L. 6353-2 est ainsi rédigé :
+"Art. L. 6353-2. - Pour la réalisation des actions de formation professionnelle mentionnées au présent chapitre, une convention de formation est conclue entre l'acheteur de formation, le dispensateur de formation et la personne physique qui entreprend une formation.
+"Cette convention précise l'intitulé, la nature, la durée, les effectifs, les modalités du déroulement et de sanction de la formation ainsi que le prix et les contributions financières éventuelles de personnes publiques.
+"Un décret en Conseil d'État fixe les modalités d'application du présent article, notamment la durée minimale des actions de formation professionnelle concernées." ;
+8° À l'article L. 6355-3, les mots : "de l'article L. 6351-3" sont remplacés par les mots : "du premier alinéa de l'article L. 6351-5".
+
+16 bis
+――――
+
+I. - Le code pénal est ainsi modifié :
+1° Au 6° de l'article 215-1, après le mot : "publique", sont insérés les mots : "ainsi que l'activité de prestataire de formation professionnelle continue au sens de l'article L. 6313-1 du code du travail pour une durée de cinq ans," ;
+2° L'article 215-3 est complété par un 4° ainsi rédigé :
+"4° L'interdiction d'exercer une fonction de prestataire de formation professionnelle continue au sens de l'article L. 6313-1 du code du travail pour une durée de cinq ans." ;
+3° Les articles 222-36, 223-13, 225-13, 313-7 et 433-17 sont complétés par un alinéa ainsi rédigé :
+"Les personnes physiques ou morales coupables du délit prévu à la présente section encourent également la peine complémentaire suivante : interdiction de l'activité de prestataire de formation professionnelle continue au sens de l'article L. 6313-1 du code du travail pour une durée de cinq ans." ;
+4° Le 2° de l'article 223-15-3 est complété par les mots : ", ainsi que l'activité de prestataire de formation professionnelle continue au sens de l'article L. 6313-1 du code du travail, pour la même durée".
+II. - Le code de la santé publique est ainsi modifié :
+1° Après le c de l'article L. 4161-5, il est inséré un d ainsi rédigé :
+"d) L'interdiction d'exercer pour une durée de cinq ans l'activité de prestataire de formation professionnelle continue au sens de l'article <span class="ansi1 ansi32">L.</span> 6313-1 du code du travail." ;
+2° Le c de l'article L. 4223-1 est complété par les mots : ", ainsi que l'activité de prestataire de formation professionnelle continue au sens de l'article L. 6313-1 du code du travail pour une durée de cinq ans".
+
+16 ter
+――――
+
+Avant le 31 décembre 2010, le fonds paritaire de sécurisation des parcours professionnels prévu à l'article L. 6332-18 du code du travail établit une charte qualité de la commande de formation pour les entreprises et les organismes collecteurs paritaires agréés.
+
+17
+――――
+
+Le livre III de la sixième partie du code du travail est ainsi modifié :
+1° Après le deuxième alinéa de l'article L. 6331-21, il est inséré un alinéa ainsi rédigé :
+"Lorsque les actions de formation sont organisées par l'entreprise elle-même, l'employeur délivre au stagiaire à l'issue de la formation l'attestation prévue à l'article L. 6353-1." ;
+2° L'article L. 6353-1 est complété par un alinéa ainsi rédigé :
+"À l'issue de la formation, le prestataire délivre au stagiaire une attestation mentionnant les objectifs, la nature et la durée de l'action et, le cas échéant, les résultats de l'évaluation de la formation." ;
+3° L'article L. 6353-8 est ainsi rédigé :
+"Art. L. 6353-8. - Le programme et les objectifs de la formation, la liste des formateurs avec la mention de leurs titres ou qualités, les horaires, les modalités d'évaluation de la formation, les références de la personne commanditaire auprès de laquelle le stagiaire peut exposer ses griefs et le règlement intérieur applicable à la formation sont remis au stagiaire au plus tard le premier jour de l'action de formation.
+"Dans le cas des contrats conclus en application de l'article L. 6353-3, les documents précités ainsi que les tarifs, les modalités de règlement et les conditions financières prévues en cas de cessation anticipée de la formation ou d'abandon en cours de stage sont remis au stagiaire potentiel avant son inscription définitive et tout règlement de frais." ;
+4° L'article L. 6353-3 est complété par un alinéa ainsi rédigé :
+"Ce contrat est conclu avant l'inscription définitive du stagiaire et tout règlement de frais." ;
+5° À l'article L. 6355-22, les mots : "les documents mentionnés" sont remplacés par les mots : "le document mentionné".
+
+18
+――――
+
+À la première phrase du quatrième alinéa de l'article L. 214-12 du code de l'éducation, les mots : "si la formation désirée n'y est pas accessible" sont supprimés.
+
+19
+――――
+
+Au plus tard le 1er avril 2010, les salariés de l'Association nationale pour la formation professionnelle des adultes qui participent à l'accomplissement des missions d'orientation professionnelle des demandeurs d'emploi vers la formation sont transférés, pour exercer ces mêmes missions, à l'institution mentionnée à l'article L. 5312-1 du code du travail. Les salariés dont le contrat de travail est transféré demeurent à titre transitoire régis par l'accord du 4 juillet 1996 sur les dispositions générales régissant le personnel de l'Association nationale pour la formation professionnelle des adultes. La convention collective applicable aux personnels de l'institution mentionnée à l'article L. 5312-1 du code du travail leur devient applicable, dès que les adaptations nécessaires ont fait l'objet d'un accord ou, au plus tard, quinze mois après leur transfert.
+
+19 bis
+――――
+
+Le deuxième alinéa de l'article L. 718-2-1 du code rural est ainsi modifié :
+1° Au début, sont insérés les mots : "Pour les personnes mentionnées à l'article L. 731-23 qui n'ont pas atteint l'âge déterminé à l'article L. 732-25," ;
+2° Il est ajouté une phrase ainsi rédigée :
+"Ces personnes bénéficient de la formation professionnelle continue."
+
+19 ter
+――――
+
+I. - Au 12° de l'article L. 6313-1 du code du travail, après le mot : "entreprises", il est inséré le mot : "agricoles,".
+II. - L'article L. 718-2-3 du code rural est ainsi rétabli :
+"Art. L. 718-2-3. - Les actions qui ont pour objet de permettre aux repreneurs ou créateurs d'exploitation ou d'entreprise agricole, exerçant ou non une activité, d'acquérir les compétences et connaissances nécessaires pour s'inscrire dans les dispositions relatives à la politique d'installation prévues à l'article L. 330-1 entrent dans le champ d'application de l'article L. 6313-1 du code du travail.
+"À défaut d'être déjà financées par un organisme de financement de la formation professionnelle continue ou de demandeurs d'emploi, les dépenses de formation engagées par le candidat à la création ou la reprise d'une exploitation agricole sont éligibles au financement du fonds de formation des non salariés agricoles."
+
+<span class="ansi1 ansi31">Coordination des politiques de formation professionnelle et contrôle de la formation professionnelle
+</span><span class="ansi1 ansi31">――――</span>
+
+
+20
+――――
+
+I. - L'article L. 214-13 du code de l'éducation est ainsi modifié :
+1° Le I est ainsi rédigé :
+"I. - Un plan régional de développement des formations professionnelles est élaboré par chaque région pour une durée de six ans débutant le 1er juin de la première année civile suivant le début de la mandature du conseil régional.
+"Ce plan détermine les objectifs communs aux différents acteurs sur le territoire régional notamment en termes de filières de formation professionnelle initiale et continue sur la base d'une analyse des besoins en termes d'emplois et de compétences par <span class="ansi1 ansi31">bassins</span> <span class="ansi1 ansi32">bassin</span> d'emploi.
+"Il porte sur l'ensemble du territoire régional et peut être décliné par <span class="ansi1 ansi31">bassins</span> <span class="ansi1 ansi32">bassin</span> d'emploi.
+"Ce plan a pour objet de définir une programmation à moyen terme des actions de formation professionnelle des jeunes et des adultes et d'assurer un développement cohérent de l'ensemble des filières de formation en favorisant un accès équilibré des femmes et des hommes à chacune de ces filières de formation. Il comporte des actions d'information et de formation destinées à favoriser leur insertion sociale. Il définit également les priorités relatives à l'information, à l'orientation et à la validation des acquis de l'expérience.
+"Il est élaboré dans le cadre d'une concertation entre l'État, les collectivités territoriales concernées, les organisations syndicales d'employeurs et de salariés représentatives à l'échelon national ainsi que l'institution mentionnée à l'article L. 5312-1 du code du travail. Il prend en compte les orientations mentionnées à l'article L. 6111-1 du même code.
+"Le plan régional de développement des formations professionnelles est signé par le président du conseil régional, le représentant de l'État dans la région et, en ce qui concerne la formation initiale, l'autorité académique.
+"Il est soumis, préalablement à sa signature, pour avis, aux départements, au conseil économique et social régional, à la chambre régionale de commerce et d'industrie, à la chambre régionale de métiers et de l'artisanat, à la chambre régionale d'agriculture, au conseil académique de l'éducation nationale, au comité régional de l'enseignement agricole et au comité de coordination régional de l'emploi et de la formation professionnelle.
+"Les parties signataires s'assurent de son suivi et de son évaluation. Le cadre général de cette évaluation est défini par le Conseil national de la formation professionnelle tout au long de la vie." ;
+2° Le dernier alinéa du IV est complété par deux phrases ainsi rédigées :
+"S'agissant des demandeurs d'emploi, ces conventions, lorsqu'elles comportent des engagements réciproques de l'État, de la région et de l'institution mentionnée à l'article L. 5312-1 du code du travail, sont également signées par cette institution. Elles précisent, en matière d'orientation et de formation professionnelles, les conditions de mise en oeuvre de la convention prévue à l'article L. 5312-11 du même code." ;
+3° Au premier alinéa du VI, les mots : "de son" sont remplacés par le mot : "du".
+II. - Le deuxième alinéa de l'article L. 4424-34 du code général des collectivités territoriales est remplacé par trois alinéas ainsi rédigés :
+"Elle élabore avec l'État et les collectivités territoriales concernées le plan régional de développement de la formation professionnelle.
+"Ce plan est signé par le président du conseil exécutif de Corse, le représentant de l'État dans la collectivité territoriale de Corse et l'autorité académique après avis des conseils généraux et du conseil économique, social et culturel de Corse.
+"Le suivi et l'évaluation de ce plan sont assurés selon des modalités générales définies par le Conseil national de la formation professionnelle tout au long de la vie."
+
+21
+――――
+
+Le titre VI du livre III de la sixième partie du code du travail est ainsi modifié :
+1° L'article L. 6361-5 est ainsi rédigé :
+"Art. L. 6361-5. - Sans préjudice des attributions propres des corps d'inspection compétents à l'égard des établissements concernés, les contrôles prévus au présent titre sont réalisés par les inspecteurs et contrôleurs du travail, les inspecteurs de la formation professionnelle et les agents de la fonction publique de l'État de catégorie A placés sous l'autorité du ministre chargé de la formation professionnelle, assermentés et commissionnés à cet effet.
+"Ils peuvent se faire assister par des agents de l'État.
+"Les agents participant aux contrôles sont tenus au secret professionnel dans les termes des articles 226-13 et 226-14 du code pénal." ;
+2° Au premier alinéa de l'article L. 6363-1, après les mots : "les inspecteurs de la formation professionnelle", sont insérés les mots : "et les agents de la fonction publique de l'État de catégorie A placés sous l'autorité du ministre chargé de la formation professionnelle" ;
+3° L'article L. 6363-2 est ainsi rédigé :
+"Art. L. 6363-2. - Les articles L. 8114-1 et L. 8114-2 sont applicables aux faits et gestes commis à l'égard des agents en charge des contrôles prévus au présent titre."
+
+22
+――――
+
+I. - À l'article L. 6361-1 du code du travail, les mots : "les collectivités locales ou les organismes collecteurs paritaires agréés" sont remplacés par les mots : "les collectivités territoriales, le fonds paritaire de sécurisation des parcours professionnels, l'institution mentionnée à l'article L. 5312-1 ou les organismes collecteurs des fonds de la formation professionnelle continue".
+II. - Au premier alinéa de l'article L. 6362-4 du même code, les mots : "les collectivités locales ou les organismes collecteurs des fonds de la formation professionnelle continue" sont remplacés par les mots : "les collectivités territoriales, le fonds paritaire de sécurisation des parcours professionnels, l'institution mentionnée à l'article L. 5312-1 ou les organismes collecteurs des fonds de la formation professionnelle continue".
+
+23
+――――
+
+I. - À l'article L. 6362-1 du code du travail, les mots : "le fonds national de péréquation" sont remplacés par les mots : "le fonds paritaire de sécurisation des parcours professionnels, l'institution mentionnée à l'article L. 5312-1, les collectivités territoriales, les employeurs, les organismes prestataires de formation".
+II. - L'article L. 6362-11 du même code est ainsi rédigé :
+"Art. L. 6362-11. - Lorsque les contrôles ont porté sur des prestations de formation financées par l'État, les collectivités territoriales, le fonds national de sécurisation des parcours professionnels, l'institution publique mentionnée à l'article L. 5312-1, les employeurs ou les organismes collecteurs des fonds de la formation professionnelle continue, l'autorité administrative les informe, chacun pour ce qui le concerne, des constats opérés.
+"Le cas échéant, les constats opérés sont adressés au service en charge du contrôle de l'application de la législation du travail."
+
+24
+――――
+
+I. - L'article L. 6354-2 du code du travail est abrogé.
+II. - Au deuxième alinéa de l'article L. 6362-6 du même code, les mots : "au sens de l'article L. 6354-1" sont remplacés par les mots : "et donnent lieu à remboursement au cocontractant des sommes perçues conformément à l'article L. 6354-1".
+III. - Le dernier alinéa de l'article L. 6362-7 du même code est supprimé.
+IV. - Après l'article L. 6362-7 du même code, sont insérés trois articles L. 6362-7-1 à L. 6362-7-3 ainsi rédigés :
+"Art. L. 6362-7-1. - En cas de contrôle, les remboursements mentionnés aux articles L. 6362-4 et L. 6362-6 interviennent dans le délai fixé à l'intéressé pour faire valoir ses observations.
+"À défaut, l'intéressé verse au Trésor public, par décision de l'autorité administrative, une somme équivalente aux remboursements non effectués.
+"Art. L. 6362-7-2. - Tout employeur ou prestataire de formation qui établit ou utilise intentionnellement des documents de nature à éluder l'une de ses <span class="ansi1 ansi31">obligation</span> <span class="ansi1 ansi32">obligations</span> en matière de formation professionnelle ou à obtenir indûment le versement d'une aide, le paiement ou la prise en charge de tout ou partie du prix des prestations de formation professionnelle, est tenu, par décision de l'autorité administrative, solidairement avec ses dirigeants de fait ou de droit, de verser au Trésor public une somme égale aux montants imputés à tort sur l'obligation en matière de formation ou indûment reçus.
+"Art. L. 6362-7-3. - Sans préjudice des dispositions des articles L. 8114-1 et L. 8114-2, le refus de se soumettre aux contrôles prévus au présent chapitre donne lieu à évaluation d'office par l'administration des sommes faisant l'objet des remboursements ou des versements au Trésor public prévus au présent livre.
+"Un décret en Conseil d'État détermine les modalités d'application du présent article."
+V. - À l'article L. 6362-10 du même code, les mots : "au présent titre" sont remplacés par les mots : "au présent livre".
+
+
+</pre>
+</body>
+
+</html>

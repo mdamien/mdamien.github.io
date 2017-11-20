@@ -1,0 +1,3108 @@
+
+<style>
+body {
+    max-width: 700px;
+}
+
+pre {
+    font-family: ubuntu, sans-serif;
+    font-size: 20px;
+}
+</style>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #AAAAAA; }
+.body_background { background-color: #000000; }
+.body_foreground > .bold,.bold > .body_foreground, body.body_foreground > pre > .bold { color: #FFFFFF; font-weight: normal; }
+.inv_foreground { color: #000000; }
+.inv_background { background-color: #AAAAAA; }
+.ansi1 { font-weight: bold; }
+.ansi2 { font-weight: lighter; }
+.ansi3 { font-style: italic; }
+.ansi4 { text-decoration: underline; }
+.ansi5 { text-decoration: blink; }
+.ansi6 { text-decoration: blink; }
+.ansi8 { visibility: hidden; }
+.ansi9 { text-decoration: line-through; }
+.ansi30 { color: #000316; }
+.inv30 { background-color: #000316; }
+.ansi31 { color: #aa0000; }
+.inv31 { background-color: #aa0000; }
+.ansi32 { color: #00aa00; }
+.inv32 { background-color: #00aa00; }
+.ansi33 { color: #aa5500; }
+.inv33 { background-color: #aa5500; }
+.ansi34 { color: #0000aa; }
+.inv34 { background-color: #0000aa; }
+.ansi35 { color: #E850A8; }
+.inv35 { background-color: #E850A8; }
+.ansi36 { color: #00aaaa; }
+.inv36 { background-color: #00aaaa; }
+.ansi37 { color: #F5F1DE; }
+.inv37 { background-color: #F5F1DE; }
+.ansi40 { background-color: #000316; }
+.inv40 { color: #000316; }
+.ansi41 { background-color: #aa0000; }
+.inv41 { color: #aa0000; }
+.ansi42 { background-color: #00aa00; }
+.inv42 { color: #00aa00; }
+.ansi43 { background-color: #aa5500; }
+.inv43 { color: #aa5500; }
+.ansi44 { background-color: #0000aa; }
+.inv44 { color: #0000aa; }
+.ansi45 { background-color: #E850A8; }
+.inv45 { color: #E850A8; }
+.ansi46 { background-color: #00aaaa; }
+.inv46 { color: #00aaaa; }
+.ansi47 { background-color: #F5F1DE; }
+.inv47 { color: #F5F1DE; }
+.ansi38-0 { color: #000316; }
+.inv38-0 { background-color: #000316; }
+.ansi38-1 { color: #aa0000; }
+.inv38-1 { background-color: #aa0000; }
+.ansi38-2 { color: #00aa00; }
+.inv38-2 { background-color: #00aa00; }
+.ansi38-3 { color: #aa5500; }
+.inv38-3 { background-color: #aa5500; }
+.ansi38-4 { color: #0000aa; }
+.inv38-4 { background-color: #0000aa; }
+.ansi38-5 { color: #E850A8; }
+.inv38-5 { background-color: #E850A8; }
+.ansi38-6 { color: #00aaaa; }
+.inv38-6 { background-color: #00aaaa; }
+.ansi38-7 { color: #F5F1DE; }
+.inv38-7 { background-color: #F5F1DE; }
+.ansi38-8 { color: #7f7f7f; }
+.inv38-8 { background-color: #7f7f7f; }
+.ansi38-9 { color: #ff0000; }
+.inv38-9 { background-color: #ff0000; }
+.ansi38-10 { color: #00ff00; }
+.inv38-10 { background-color: #00ff00; }
+.ansi38-11 { color: #ffff00; }
+.inv38-11 { background-color: #ffff00; }
+.ansi38-12 { color: #5c5cff; }
+.inv38-12 { background-color: #5c5cff; }
+.ansi38-13 { color: #ff00ff; }
+.inv38-13 { background-color: #ff00ff; }
+.ansi38-14 { color: #00ffff; }
+.inv38-14 { background-color: #00ffff; }
+.ansi38-15 { color: #ffffff; }
+.inv38-15 { background-color: #ffffff; }
+.ansi48-0 { background-color: #000316; }
+.inv48-0 { color: #000316; }
+.ansi48-1 { background-color: #aa0000; }
+.inv48-1 { color: #aa0000; }
+.ansi48-2 { background-color: #00aa00; }
+.inv48-2 { color: #00aa00; }
+.ansi48-3 { background-color: #aa5500; }
+.inv48-3 { color: #aa5500; }
+.ansi48-4 { background-color: #0000aa; }
+.inv48-4 { color: #0000aa; }
+.ansi48-5 { background-color: #E850A8; }
+.inv48-5 { color: #E850A8; }
+.ansi48-6 { background-color: #00aaaa; }
+.inv48-6 { color: #00aaaa; }
+.ansi48-7 { background-color: #F5F1DE; }
+.inv48-7 { color: #F5F1DE; }
+.ansi48-8 { background-color: #7f7f7f; }
+.inv48-8 { color: #7f7f7f; }
+.ansi48-9 { background-color: #ff0000; }
+.inv48-9 { color: #ff0000; }
+.ansi48-10 { background-color: #00ff00; }
+.inv48-10 { color: #00ff00; }
+.ansi48-11 { background-color: #ffff00; }
+.inv48-11 { color: #ffff00; }
+.ansi48-12 { background-color: #5c5cff; }
+.inv48-12 { color: #5c5cff; }
+.ansi48-13 { background-color: #ff00ff; }
+.inv48-13 { color: #ff00ff; }
+.ansi48-14 { background-color: #00ffff; }
+.inv48-14 { color: #00ffff; }
+.ansi48-15 { background-color: #ffffff; }
+.inv48-15 { color: #ffffff; }
+.ansi38-16 { color: #000000; }
+.inv38-16 { background: #000000; }
+.ansi48-16 { background: #000000; }
+.inv48-16 { color: #000000; }
+.ansi38-17 { color: #00002a; }
+.inv38-17 { background: #00002a; }
+.ansi48-17 { background: #00002a; }
+.inv48-17 { color: #00002a; }
+.ansi38-18 { color: #000054; }
+.inv38-18 { background: #000054; }
+.ansi48-18 { background: #000054; }
+.inv48-18 { color: #000054; }
+.ansi38-19 { color: #00007e; }
+.inv38-19 { background: #00007e; }
+.ansi48-19 { background: #00007e; }
+.inv48-19 { color: #00007e; }
+.ansi38-20 { color: #0000a8; }
+.inv38-20 { background: #0000a8; }
+.ansi48-20 { background: #0000a8; }
+.inv48-20 { color: #0000a8; }
+.ansi38-21 { color: #0000d2; }
+.inv38-21 { background: #0000d2; }
+.ansi48-21 { background: #0000d2; }
+.inv48-21 { color: #0000d2; }
+.ansi38-52 { color: #2a0000; }
+.inv38-52 { background: #2a0000; }
+.ansi48-52 { background: #2a0000; }
+.inv48-52 { color: #2a0000; }
+.ansi38-53 { color: #2a002a; }
+.inv38-53 { background: #2a002a; }
+.ansi48-53 { background: #2a002a; }
+.inv48-53 { color: #2a002a; }
+.ansi38-54 { color: #2a0054; }
+.inv38-54 { background: #2a0054; }
+.ansi48-54 { background: #2a0054; }
+.inv48-54 { color: #2a0054; }
+.ansi38-55 { color: #2a007e; }
+.inv38-55 { background: #2a007e; }
+.ansi48-55 { background: #2a007e; }
+.inv48-55 { color: #2a007e; }
+.ansi38-56 { color: #2a00a8; }
+.inv38-56 { background: #2a00a8; }
+.ansi48-56 { background: #2a00a8; }
+.inv48-56 { color: #2a00a8; }
+.ansi38-57 { color: #2a00d2; }
+.inv38-57 { background: #2a00d2; }
+.ansi48-57 { background: #2a00d2; }
+.inv48-57 { color: #2a00d2; }
+.ansi38-88 { color: #540000; }
+.inv38-88 { background: #540000; }
+.ansi48-88 { background: #540000; }
+.inv48-88 { color: #540000; }
+.ansi38-89 { color: #54002a; }
+.inv38-89 { background: #54002a; }
+.ansi48-89 { background: #54002a; }
+.inv48-89 { color: #54002a; }
+.ansi38-90 { color: #540054; }
+.inv38-90 { background: #540054; }
+.ansi48-90 { background: #540054; }
+.inv48-90 { color: #540054; }
+.ansi38-91 { color: #54007e; }
+.inv38-91 { background: #54007e; }
+.ansi48-91 { background: #54007e; }
+.inv48-91 { color: #54007e; }
+.ansi38-92 { color: #5400a8; }
+.inv38-92 { background: #5400a8; }
+.ansi48-92 { background: #5400a8; }
+.inv48-92 { color: #5400a8; }
+.ansi38-93 { color: #5400d2; }
+.inv38-93 { background: #5400d2; }
+.ansi48-93 { background: #5400d2; }
+.inv48-93 { color: #5400d2; }
+.ansi38-124 { color: #7e0000; }
+.inv38-124 { background: #7e0000; }
+.ansi48-124 { background: #7e0000; }
+.inv48-124 { color: #7e0000; }
+.ansi38-125 { color: #7e002a; }
+.inv38-125 { background: #7e002a; }
+.ansi48-125 { background: #7e002a; }
+.inv48-125 { color: #7e002a; }
+.ansi38-126 { color: #7e0054; }
+.inv38-126 { background: #7e0054; }
+.ansi48-126 { background: #7e0054; }
+.inv48-126 { color: #7e0054; }
+.ansi38-127 { color: #7e007e; }
+.inv38-127 { background: #7e007e; }
+.ansi48-127 { background: #7e007e; }
+.inv48-127 { color: #7e007e; }
+.ansi38-128 { color: #7e00a8; }
+.inv38-128 { background: #7e00a8; }
+.ansi48-128 { background: #7e00a8; }
+.inv48-128 { color: #7e00a8; }
+.ansi38-129 { color: #7e00d2; }
+.inv38-129 { background: #7e00d2; }
+.ansi48-129 { background: #7e00d2; }
+.inv48-129 { color: #7e00d2; }
+.ansi38-160 { color: #a80000; }
+.inv38-160 { background: #a80000; }
+.ansi48-160 { background: #a80000; }
+.inv48-160 { color: #a80000; }
+.ansi38-161 { color: #a8002a; }
+.inv38-161 { background: #a8002a; }
+.ansi48-161 { background: #a8002a; }
+.inv48-161 { color: #a8002a; }
+.ansi38-162 { color: #a80054; }
+.inv38-162 { background: #a80054; }
+.ansi48-162 { background: #a80054; }
+.inv48-162 { color: #a80054; }
+.ansi38-163 { color: #a8007e; }
+.inv38-163 { background: #a8007e; }
+.ansi48-163 { background: #a8007e; }
+.inv48-163 { color: #a8007e; }
+.ansi38-164 { color: #a800a8; }
+.inv38-164 { background: #a800a8; }
+.ansi48-164 { background: #a800a8; }
+.inv48-164 { color: #a800a8; }
+.ansi38-165 { color: #a800d2; }
+.inv38-165 { background: #a800d2; }
+.ansi48-165 { background: #a800d2; }
+.inv48-165 { color: #a800d2; }
+.ansi38-196 { color: #d20000; }
+.inv38-196 { background: #d20000; }
+.ansi48-196 { background: #d20000; }
+.inv48-196 { color: #d20000; }
+.ansi38-197 { color: #d2002a; }
+.inv38-197 { background: #d2002a; }
+.ansi48-197 { background: #d2002a; }
+.inv48-197 { color: #d2002a; }
+.ansi38-198 { color: #d20054; }
+.inv38-198 { background: #d20054; }
+.ansi48-198 { background: #d20054; }
+.inv48-198 { color: #d20054; }
+.ansi38-199 { color: #d2007e; }
+.inv38-199 { background: #d2007e; }
+.ansi48-199 { background: #d2007e; }
+.inv48-199 { color: #d2007e; }
+.ansi38-200 { color: #d200a8; }
+.inv38-200 { background: #d200a8; }
+.ansi48-200 { background: #d200a8; }
+.inv48-200 { color: #d200a8; }
+.ansi38-201 { color: #d200d2; }
+.inv38-201 { background: #d200d2; }
+.ansi48-201 { background: #d200d2; }
+.inv48-201 { color: #d200d2; }
+.ansi38-22 { color: #002a00; }
+.inv38-22 { background: #002a00; }
+.ansi48-22 { background: #002a00; }
+.inv48-22 { color: #002a00; }
+.ansi38-23 { color: #002a2a; }
+.inv38-23 { background: #002a2a; }
+.ansi48-23 { background: #002a2a; }
+.inv48-23 { color: #002a2a; }
+.ansi38-24 { color: #002a54; }
+.inv38-24 { background: #002a54; }
+.ansi48-24 { background: #002a54; }
+.inv48-24 { color: #002a54; }
+.ansi38-25 { color: #002a7e; }
+.inv38-25 { background: #002a7e; }
+.ansi48-25 { background: #002a7e; }
+.inv48-25 { color: #002a7e; }
+.ansi38-26 { color: #002aa8; }
+.inv38-26 { background: #002aa8; }
+.ansi48-26 { background: #002aa8; }
+.inv48-26 { color: #002aa8; }
+.ansi38-27 { color: #002ad2; }
+.inv38-27 { background: #002ad2; }
+.ansi48-27 { background: #002ad2; }
+.inv48-27 { color: #002ad2; }
+.ansi38-58 { color: #2a2a00; }
+.inv38-58 { background: #2a2a00; }
+.ansi48-58 { background: #2a2a00; }
+.inv48-58 { color: #2a2a00; }
+.ansi38-59 { color: #2a2a2a; }
+.inv38-59 { background: #2a2a2a; }
+.ansi48-59 { background: #2a2a2a; }
+.inv48-59 { color: #2a2a2a; }
+.ansi38-60 { color: #2a2a54; }
+.inv38-60 { background: #2a2a54; }
+.ansi48-60 { background: #2a2a54; }
+.inv48-60 { color: #2a2a54; }
+.ansi38-61 { color: #2a2a7e; }
+.inv38-61 { background: #2a2a7e; }
+.ansi48-61 { background: #2a2a7e; }
+.inv48-61 { color: #2a2a7e; }
+.ansi38-62 { color: #2a2aa8; }
+.inv38-62 { background: #2a2aa8; }
+.ansi48-62 { background: #2a2aa8; }
+.inv48-62 { color: #2a2aa8; }
+.ansi38-63 { color: #2a2ad2; }
+.inv38-63 { background: #2a2ad2; }
+.ansi48-63 { background: #2a2ad2; }
+.inv48-63 { color: #2a2ad2; }
+.ansi38-94 { color: #542a00; }
+.inv38-94 { background: #542a00; }
+.ansi48-94 { background: #542a00; }
+.inv48-94 { color: #542a00; }
+.ansi38-95 { color: #542a2a; }
+.inv38-95 { background: #542a2a; }
+.ansi48-95 { background: #542a2a; }
+.inv48-95 { color: #542a2a; }
+.ansi38-96 { color: #542a54; }
+.inv38-96 { background: #542a54; }
+.ansi48-96 { background: #542a54; }
+.inv48-96 { color: #542a54; }
+.ansi38-97 { color: #542a7e; }
+.inv38-97 { background: #542a7e; }
+.ansi48-97 { background: #542a7e; }
+.inv48-97 { color: #542a7e; }
+.ansi38-98 { color: #542aa8; }
+.inv38-98 { background: #542aa8; }
+.ansi48-98 { background: #542aa8; }
+.inv48-98 { color: #542aa8; }
+.ansi38-99 { color: #542ad2; }
+.inv38-99 { background: #542ad2; }
+.ansi48-99 { background: #542ad2; }
+.inv48-99 { color: #542ad2; }
+.ansi38-130 { color: #7e2a00; }
+.inv38-130 { background: #7e2a00; }
+.ansi48-130 { background: #7e2a00; }
+.inv48-130 { color: #7e2a00; }
+.ansi38-131 { color: #7e2a2a; }
+.inv38-131 { background: #7e2a2a; }
+.ansi48-131 { background: #7e2a2a; }
+.inv48-131 { color: #7e2a2a; }
+.ansi38-132 { color: #7e2a54; }
+.inv38-132 { background: #7e2a54; }
+.ansi48-132 { background: #7e2a54; }
+.inv48-132 { color: #7e2a54; }
+.ansi38-133 { color: #7e2a7e; }
+.inv38-133 { background: #7e2a7e; }
+.ansi48-133 { background: #7e2a7e; }
+.inv48-133 { color: #7e2a7e; }
+.ansi38-134 { color: #7e2aa8; }
+.inv38-134 { background: #7e2aa8; }
+.ansi48-134 { background: #7e2aa8; }
+.inv48-134 { color: #7e2aa8; }
+.ansi38-135 { color: #7e2ad2; }
+.inv38-135 { background: #7e2ad2; }
+.ansi48-135 { background: #7e2ad2; }
+.inv48-135 { color: #7e2ad2; }
+.ansi38-166 { color: #a82a00; }
+.inv38-166 { background: #a82a00; }
+.ansi48-166 { background: #a82a00; }
+.inv48-166 { color: #a82a00; }
+.ansi38-167 { color: #a82a2a; }
+.inv38-167 { background: #a82a2a; }
+.ansi48-167 { background: #a82a2a; }
+.inv48-167 { color: #a82a2a; }
+.ansi38-168 { color: #a82a54; }
+.inv38-168 { background: #a82a54; }
+.ansi48-168 { background: #a82a54; }
+.inv48-168 { color: #a82a54; }
+.ansi38-169 { color: #a82a7e; }
+.inv38-169 { background: #a82a7e; }
+.ansi48-169 { background: #a82a7e; }
+.inv48-169 { color: #a82a7e; }
+.ansi38-170 { color: #a82aa8; }
+.inv38-170 { background: #a82aa8; }
+.ansi48-170 { background: #a82aa8; }
+.inv48-170 { color: #a82aa8; }
+.ansi38-171 { color: #a82ad2; }
+.inv38-171 { background: #a82ad2; }
+.ansi48-171 { background: #a82ad2; }
+.inv48-171 { color: #a82ad2; }
+.ansi38-202 { color: #d22a00; }
+.inv38-202 { background: #d22a00; }
+.ansi48-202 { background: #d22a00; }
+.inv48-202 { color: #d22a00; }
+.ansi38-203 { color: #d22a2a; }
+.inv38-203 { background: #d22a2a; }
+.ansi48-203 { background: #d22a2a; }
+.inv48-203 { color: #d22a2a; }
+.ansi38-204 { color: #d22a54; }
+.inv38-204 { background: #d22a54; }
+.ansi48-204 { background: #d22a54; }
+.inv48-204 { color: #d22a54; }
+.ansi38-205 { color: #d22a7e; }
+.inv38-205 { background: #d22a7e; }
+.ansi48-205 { background: #d22a7e; }
+.inv48-205 { color: #d22a7e; }
+.ansi38-206 { color: #d22aa8; }
+.inv38-206 { background: #d22aa8; }
+.ansi48-206 { background: #d22aa8; }
+.inv48-206 { color: #d22aa8; }
+.ansi38-207 { color: #d22ad2; }
+.inv38-207 { background: #d22ad2; }
+.ansi48-207 { background: #d22ad2; }
+.inv48-207 { color: #d22ad2; }
+.ansi38-28 { color: #005400; }
+.inv38-28 { background: #005400; }
+.ansi48-28 { background: #005400; }
+.inv48-28 { color: #005400; }
+.ansi38-29 { color: #00542a; }
+.inv38-29 { background: #00542a; }
+.ansi48-29 { background: #00542a; }
+.inv48-29 { color: #00542a; }
+.ansi38-30 { color: #005454; }
+.inv38-30 { background: #005454; }
+.ansi48-30 { background: #005454; }
+.inv48-30 { color: #005454; }
+.ansi38-31 { color: #00547e; }
+.inv38-31 { background: #00547e; }
+.ansi48-31 { background: #00547e; }
+.inv48-31 { color: #00547e; }
+.ansi38-32 { color: #0054a8; }
+.inv38-32 { background: #0054a8; }
+.ansi48-32 { background: #0054a8; }
+.inv48-32 { color: #0054a8; }
+.ansi38-33 { color: #0054d2; }
+.inv38-33 { background: #0054d2; }
+.ansi48-33 { background: #0054d2; }
+.inv48-33 { color: #0054d2; }
+.ansi38-64 { color: #2a5400; }
+.inv38-64 { background: #2a5400; }
+.ansi48-64 { background: #2a5400; }
+.inv48-64 { color: #2a5400; }
+.ansi38-65 { color: #2a542a; }
+.inv38-65 { background: #2a542a; }
+.ansi48-65 { background: #2a542a; }
+.inv48-65 { color: #2a542a; }
+.ansi38-66 { color: #2a5454; }
+.inv38-66 { background: #2a5454; }
+.ansi48-66 { background: #2a5454; }
+.inv48-66 { color: #2a5454; }
+.ansi38-67 { color: #2a547e; }
+.inv38-67 { background: #2a547e; }
+.ansi48-67 { background: #2a547e; }
+.inv48-67 { color: #2a547e; }
+.ansi38-68 { color: #2a54a8; }
+.inv38-68 { background: #2a54a8; }
+.ansi48-68 { background: #2a54a8; }
+.inv48-68 { color: #2a54a8; }
+.ansi38-69 { color: #2a54d2; }
+.inv38-69 { background: #2a54d2; }
+.ansi48-69 { background: #2a54d2; }
+.inv48-69 { color: #2a54d2; }
+.ansi38-100 { color: #545400; }
+.inv38-100 { background: #545400; }
+.ansi48-100 { background: #545400; }
+.inv48-100 { color: #545400; }
+.ansi38-101 { color: #54542a; }
+.inv38-101 { background: #54542a; }
+.ansi48-101 { background: #54542a; }
+.inv48-101 { color: #54542a; }
+.ansi38-102 { color: #545454; }
+.inv38-102 { background: #545454; }
+.ansi48-102 { background: #545454; }
+.inv48-102 { color: #545454; }
+.ansi38-103 { color: #54547e; }
+.inv38-103 { background: #54547e; }
+.ansi48-103 { background: #54547e; }
+.inv48-103 { color: #54547e; }
+.ansi38-104 { color: #5454a8; }
+.inv38-104 { background: #5454a8; }
+.ansi48-104 { background: #5454a8; }
+.inv48-104 { color: #5454a8; }
+.ansi38-105 { color: #5454d2; }
+.inv38-105 { background: #5454d2; }
+.ansi48-105 { background: #5454d2; }
+.inv48-105 { color: #5454d2; }
+.ansi38-136 { color: #7e5400; }
+.inv38-136 { background: #7e5400; }
+.ansi48-136 { background: #7e5400; }
+.inv48-136 { color: #7e5400; }
+.ansi38-137 { color: #7e542a; }
+.inv38-137 { background: #7e542a; }
+.ansi48-137 { background: #7e542a; }
+.inv48-137 { color: #7e542a; }
+.ansi38-138 { color: #7e5454; }
+.inv38-138 { background: #7e5454; }
+.ansi48-138 { background: #7e5454; }
+.inv48-138 { color: #7e5454; }
+.ansi38-139 { color: #7e547e; }
+.inv38-139 { background: #7e547e; }
+.ansi48-139 { background: #7e547e; }
+.inv48-139 { color: #7e547e; }
+.ansi38-140 { color: #7e54a8; }
+.inv38-140 { background: #7e54a8; }
+.ansi48-140 { background: #7e54a8; }
+.inv48-140 { color: #7e54a8; }
+.ansi38-141 { color: #7e54d2; }
+.inv38-141 { background: #7e54d2; }
+.ansi48-141 { background: #7e54d2; }
+.inv48-141 { color: #7e54d2; }
+.ansi38-172 { color: #a85400; }
+.inv38-172 { background: #a85400; }
+.ansi48-172 { background: #a85400; }
+.inv48-172 { color: #a85400; }
+.ansi38-173 { color: #a8542a; }
+.inv38-173 { background: #a8542a; }
+.ansi48-173 { background: #a8542a; }
+.inv48-173 { color: #a8542a; }
+.ansi38-174 { color: #a85454; }
+.inv38-174 { background: #a85454; }
+.ansi48-174 { background: #a85454; }
+.inv48-174 { color: #a85454; }
+.ansi38-175 { color: #a8547e; }
+.inv38-175 { background: #a8547e; }
+.ansi48-175 { background: #a8547e; }
+.inv48-175 { color: #a8547e; }
+.ansi38-176 { color: #a854a8; }
+.inv38-176 { background: #a854a8; }
+.ansi48-176 { background: #a854a8; }
+.inv48-176 { color: #a854a8; }
+.ansi38-177 { color: #a854d2; }
+.inv38-177 { background: #a854d2; }
+.ansi48-177 { background: #a854d2; }
+.inv48-177 { color: #a854d2; }
+.ansi38-208 { color: #d25400; }
+.inv38-208 { background: #d25400; }
+.ansi48-208 { background: #d25400; }
+.inv48-208 { color: #d25400; }
+.ansi38-209 { color: #d2542a; }
+.inv38-209 { background: #d2542a; }
+.ansi48-209 { background: #d2542a; }
+.inv48-209 { color: #d2542a; }
+.ansi38-210 { color: #d25454; }
+.inv38-210 { background: #d25454; }
+.ansi48-210 { background: #d25454; }
+.inv48-210 { color: #d25454; }
+.ansi38-211 { color: #d2547e; }
+.inv38-211 { background: #d2547e; }
+.ansi48-211 { background: #d2547e; }
+.inv48-211 { color: #d2547e; }
+.ansi38-212 { color: #d254a8; }
+.inv38-212 { background: #d254a8; }
+.ansi48-212 { background: #d254a8; }
+.inv48-212 { color: #d254a8; }
+.ansi38-213 { color: #d254d2; }
+.inv38-213 { background: #d254d2; }
+.ansi48-213 { background: #d254d2; }
+.inv48-213 { color: #d254d2; }
+.ansi38-34 { color: #007e00; }
+.inv38-34 { background: #007e00; }
+.ansi48-34 { background: #007e00; }
+.inv48-34 { color: #007e00; }
+.ansi38-35 { color: #007e2a; }
+.inv38-35 { background: #007e2a; }
+.ansi48-35 { background: #007e2a; }
+.inv48-35 { color: #007e2a; }
+.ansi38-36 { color: #007e54; }
+.inv38-36 { background: #007e54; }
+.ansi48-36 { background: #007e54; }
+.inv48-36 { color: #007e54; }
+.ansi38-37 { color: #007e7e; }
+.inv38-37 { background: #007e7e; }
+.ansi48-37 { background: #007e7e; }
+.inv48-37 { color: #007e7e; }
+.ansi38-38 { color: #007ea8; }
+.inv38-38 { background: #007ea8; }
+.ansi48-38 { background: #007ea8; }
+.inv48-38 { color: #007ea8; }
+.ansi38-39 { color: #007ed2; }
+.inv38-39 { background: #007ed2; }
+.ansi48-39 { background: #007ed2; }
+.inv48-39 { color: #007ed2; }
+.ansi38-70 { color: #2a7e00; }
+.inv38-70 { background: #2a7e00; }
+.ansi48-70 { background: #2a7e00; }
+.inv48-70 { color: #2a7e00; }
+.ansi38-71 { color: #2a7e2a; }
+.inv38-71 { background: #2a7e2a; }
+.ansi48-71 { background: #2a7e2a; }
+.inv48-71 { color: #2a7e2a; }
+.ansi38-72 { color: #2a7e54; }
+.inv38-72 { background: #2a7e54; }
+.ansi48-72 { background: #2a7e54; }
+.inv48-72 { color: #2a7e54; }
+.ansi38-73 { color: #2a7e7e; }
+.inv38-73 { background: #2a7e7e; }
+.ansi48-73 { background: #2a7e7e; }
+.inv48-73 { color: #2a7e7e; }
+.ansi38-74 { color: #2a7ea8; }
+.inv38-74 { background: #2a7ea8; }
+.ansi48-74 { background: #2a7ea8; }
+.inv48-74 { color: #2a7ea8; }
+.ansi38-75 { color: #2a7ed2; }
+.inv38-75 { background: #2a7ed2; }
+.ansi48-75 { background: #2a7ed2; }
+.inv48-75 { color: #2a7ed2; }
+.ansi38-106 { color: #547e00; }
+.inv38-106 { background: #547e00; }
+.ansi48-106 { background: #547e00; }
+.inv48-106 { color: #547e00; }
+.ansi38-107 { color: #547e2a; }
+.inv38-107 { background: #547e2a; }
+.ansi48-107 { background: #547e2a; }
+.inv48-107 { color: #547e2a; }
+.ansi38-108 { color: #547e54; }
+.inv38-108 { background: #547e54; }
+.ansi48-108 { background: #547e54; }
+.inv48-108 { color: #547e54; }
+.ansi38-109 { color: #547e7e; }
+.inv38-109 { background: #547e7e; }
+.ansi48-109 { background: #547e7e; }
+.inv48-109 { color: #547e7e; }
+.ansi38-110 { color: #547ea8; }
+.inv38-110 { background: #547ea8; }
+.ansi48-110 { background: #547ea8; }
+.inv48-110 { color: #547ea8; }
+.ansi38-111 { color: #547ed2; }
+.inv38-111 { background: #547ed2; }
+.ansi48-111 { background: #547ed2; }
+.inv48-111 { color: #547ed2; }
+.ansi38-142 { color: #7e7e00; }
+.inv38-142 { background: #7e7e00; }
+.ansi48-142 { background: #7e7e00; }
+.inv48-142 { color: #7e7e00; }
+.ansi38-143 { color: #7e7e2a; }
+.inv38-143 { background: #7e7e2a; }
+.ansi48-143 { background: #7e7e2a; }
+.inv48-143 { color: #7e7e2a; }
+.ansi38-144 { color: #7e7e54; }
+.inv38-144 { background: #7e7e54; }
+.ansi48-144 { background: #7e7e54; }
+.inv48-144 { color: #7e7e54; }
+.ansi38-145 { color: #7e7e7e; }
+.inv38-145 { background: #7e7e7e; }
+.ansi48-145 { background: #7e7e7e; }
+.inv48-145 { color: #7e7e7e; }
+.ansi38-146 { color: #7e7ea8; }
+.inv38-146 { background: #7e7ea8; }
+.ansi48-146 { background: #7e7ea8; }
+.inv48-146 { color: #7e7ea8; }
+.ansi38-147 { color: #7e7ed2; }
+.inv38-147 { background: #7e7ed2; }
+.ansi48-147 { background: #7e7ed2; }
+.inv48-147 { color: #7e7ed2; }
+.ansi38-178 { color: #a87e00; }
+.inv38-178 { background: #a87e00; }
+.ansi48-178 { background: #a87e00; }
+.inv48-178 { color: #a87e00; }
+.ansi38-179 { color: #a87e2a; }
+.inv38-179 { background: #a87e2a; }
+.ansi48-179 { background: #a87e2a; }
+.inv48-179 { color: #a87e2a; }
+.ansi38-180 { color: #a87e54; }
+.inv38-180 { background: #a87e54; }
+.ansi48-180 { background: #a87e54; }
+.inv48-180 { color: #a87e54; }
+.ansi38-181 { color: #a87e7e; }
+.inv38-181 { background: #a87e7e; }
+.ansi48-181 { background: #a87e7e; }
+.inv48-181 { color: #a87e7e; }
+.ansi38-182 { color: #a87ea8; }
+.inv38-182 { background: #a87ea8; }
+.ansi48-182 { background: #a87ea8; }
+.inv48-182 { color: #a87ea8; }
+.ansi38-183 { color: #a87ed2; }
+.inv38-183 { background: #a87ed2; }
+.ansi48-183 { background: #a87ed2; }
+.inv48-183 { color: #a87ed2; }
+.ansi38-214 { color: #d27e00; }
+.inv38-214 { background: #d27e00; }
+.ansi48-214 { background: #d27e00; }
+.inv48-214 { color: #d27e00; }
+.ansi38-215 { color: #d27e2a; }
+.inv38-215 { background: #d27e2a; }
+.ansi48-215 { background: #d27e2a; }
+.inv48-215 { color: #d27e2a; }
+.ansi38-216 { color: #d27e54; }
+.inv38-216 { background: #d27e54; }
+.ansi48-216 { background: #d27e54; }
+.inv48-216 { color: #d27e54; }
+.ansi38-217 { color: #d27e7e; }
+.inv38-217 { background: #d27e7e; }
+.ansi48-217 { background: #d27e7e; }
+.inv48-217 { color: #d27e7e; }
+.ansi38-218 { color: #d27ea8; }
+.inv38-218 { background: #d27ea8; }
+.ansi48-218 { background: #d27ea8; }
+.inv48-218 { color: #d27ea8; }
+.ansi38-219 { color: #d27ed2; }
+.inv38-219 { background: #d27ed2; }
+.ansi48-219 { background: #d27ed2; }
+.inv48-219 { color: #d27ed2; }
+.ansi38-40 { color: #00a800; }
+.inv38-40 { background: #00a800; }
+.ansi48-40 { background: #00a800; }
+.inv48-40 { color: #00a800; }
+.ansi38-41 { color: #00a82a; }
+.inv38-41 { background: #00a82a; }
+.ansi48-41 { background: #00a82a; }
+.inv48-41 { color: #00a82a; }
+.ansi38-42 { color: #00a854; }
+.inv38-42 { background: #00a854; }
+.ansi48-42 { background: #00a854; }
+.inv48-42 { color: #00a854; }
+.ansi38-43 { color: #00a87e; }
+.inv38-43 { background: #00a87e; }
+.ansi48-43 { background: #00a87e; }
+.inv48-43 { color: #00a87e; }
+.ansi38-44 { color: #00a8a8; }
+.inv38-44 { background: #00a8a8; }
+.ansi48-44 { background: #00a8a8; }
+.inv48-44 { color: #00a8a8; }
+.ansi38-45 { color: #00a8d2; }
+.inv38-45 { background: #00a8d2; }
+.ansi48-45 { background: #00a8d2; }
+.inv48-45 { color: #00a8d2; }
+.ansi38-76 { color: #2aa800; }
+.inv38-76 { background: #2aa800; }
+.ansi48-76 { background: #2aa800; }
+.inv48-76 { color: #2aa800; }
+.ansi38-77 { color: #2aa82a; }
+.inv38-77 { background: #2aa82a; }
+.ansi48-77 { background: #2aa82a; }
+.inv48-77 { color: #2aa82a; }
+.ansi38-78 { color: #2aa854; }
+.inv38-78 { background: #2aa854; }
+.ansi48-78 { background: #2aa854; }
+.inv48-78 { color: #2aa854; }
+.ansi38-79 { color: #2aa87e; }
+.inv38-79 { background: #2aa87e; }
+.ansi48-79 { background: #2aa87e; }
+.inv48-79 { color: #2aa87e; }
+.ansi38-80 { color: #2aa8a8; }
+.inv38-80 { background: #2aa8a8; }
+.ansi48-80 { background: #2aa8a8; }
+.inv48-80 { color: #2aa8a8; }
+.ansi38-81 { color: #2aa8d2; }
+.inv38-81 { background: #2aa8d2; }
+.ansi48-81 { background: #2aa8d2; }
+.inv48-81 { color: #2aa8d2; }
+.ansi38-112 { color: #54a800; }
+.inv38-112 { background: #54a800; }
+.ansi48-112 { background: #54a800; }
+.inv48-112 { color: #54a800; }
+.ansi38-113 { color: #54a82a; }
+.inv38-113 { background: #54a82a; }
+.ansi48-113 { background: #54a82a; }
+.inv48-113 { color: #54a82a; }
+.ansi38-114 { color: #54a854; }
+.inv38-114 { background: #54a854; }
+.ansi48-114 { background: #54a854; }
+.inv48-114 { color: #54a854; }
+.ansi38-115 { color: #54a87e; }
+.inv38-115 { background: #54a87e; }
+.ansi48-115 { background: #54a87e; }
+.inv48-115 { color: #54a87e; }
+.ansi38-116 { color: #54a8a8; }
+.inv38-116 { background: #54a8a8; }
+.ansi48-116 { background: #54a8a8; }
+.inv48-116 { color: #54a8a8; }
+.ansi38-117 { color: #54a8d2; }
+.inv38-117 { background: #54a8d2; }
+.ansi48-117 { background: #54a8d2; }
+.inv48-117 { color: #54a8d2; }
+.ansi38-148 { color: #7ea800; }
+.inv38-148 { background: #7ea800; }
+.ansi48-148 { background: #7ea800; }
+.inv48-148 { color: #7ea800; }
+.ansi38-149 { color: #7ea82a; }
+.inv38-149 { background: #7ea82a; }
+.ansi48-149 { background: #7ea82a; }
+.inv48-149 { color: #7ea82a; }
+.ansi38-150 { color: #7ea854; }
+.inv38-150 { background: #7ea854; }
+.ansi48-150 { background: #7ea854; }
+.inv48-150 { color: #7ea854; }
+.ansi38-151 { color: #7ea87e; }
+.inv38-151 { background: #7ea87e; }
+.ansi48-151 { background: #7ea87e; }
+.inv48-151 { color: #7ea87e; }
+.ansi38-152 { color: #7ea8a8; }
+.inv38-152 { background: #7ea8a8; }
+.ansi48-152 { background: #7ea8a8; }
+.inv48-152 { color: #7ea8a8; }
+.ansi38-153 { color: #7ea8d2; }
+.inv38-153 { background: #7ea8d2; }
+.ansi48-153 { background: #7ea8d2; }
+.inv48-153 { color: #7ea8d2; }
+.ansi38-184 { color: #a8a800; }
+.inv38-184 { background: #a8a800; }
+.ansi48-184 { background: #a8a800; }
+.inv48-184 { color: #a8a800; }
+.ansi38-185 { color: #a8a82a; }
+.inv38-185 { background: #a8a82a; }
+.ansi48-185 { background: #a8a82a; }
+.inv48-185 { color: #a8a82a; }
+.ansi38-186 { color: #a8a854; }
+.inv38-186 { background: #a8a854; }
+.ansi48-186 { background: #a8a854; }
+.inv48-186 { color: #a8a854; }
+.ansi38-187 { color: #a8a87e; }
+.inv38-187 { background: #a8a87e; }
+.ansi48-187 { background: #a8a87e; }
+.inv48-187 { color: #a8a87e; }
+.ansi38-188 { color: #a8a8a8; }
+.inv38-188 { background: #a8a8a8; }
+.ansi48-188 { background: #a8a8a8; }
+.inv48-188 { color: #a8a8a8; }
+.ansi38-189 { color: #a8a8d2; }
+.inv38-189 { background: #a8a8d2; }
+.ansi48-189 { background: #a8a8d2; }
+.inv48-189 { color: #a8a8d2; }
+.ansi38-220 { color: #d2a800; }
+.inv38-220 { background: #d2a800; }
+.ansi48-220 { background: #d2a800; }
+.inv48-220 { color: #d2a800; }
+.ansi38-221 { color: #d2a82a; }
+.inv38-221 { background: #d2a82a; }
+.ansi48-221 { background: #d2a82a; }
+.inv48-221 { color: #d2a82a; }
+.ansi38-222 { color: #d2a854; }
+.inv38-222 { background: #d2a854; }
+.ansi48-222 { background: #d2a854; }
+.inv48-222 { color: #d2a854; }
+.ansi38-223 { color: #d2a87e; }
+.inv38-223 { background: #d2a87e; }
+.ansi48-223 { background: #d2a87e; }
+.inv48-223 { color: #d2a87e; }
+.ansi38-224 { color: #d2a8a8; }
+.inv38-224 { background: #d2a8a8; }
+.ansi48-224 { background: #d2a8a8; }
+.inv48-224 { color: #d2a8a8; }
+.ansi38-225 { color: #d2a8d2; }
+.inv38-225 { background: #d2a8d2; }
+.ansi48-225 { background: #d2a8d2; }
+.inv48-225 { color: #d2a8d2; }
+.ansi38-46 { color: #00d200; }
+.inv38-46 { background: #00d200; }
+.ansi48-46 { background: #00d200; }
+.inv48-46 { color: #00d200; }
+.ansi38-47 { color: #00d22a; }
+.inv38-47 { background: #00d22a; }
+.ansi48-47 { background: #00d22a; }
+.inv48-47 { color: #00d22a; }
+.ansi38-48 { color: #00d254; }
+.inv38-48 { background: #00d254; }
+.ansi48-48 { background: #00d254; }
+.inv48-48 { color: #00d254; }
+.ansi38-49 { color: #00d27e; }
+.inv38-49 { background: #00d27e; }
+.ansi48-49 { background: #00d27e; }
+.inv48-49 { color: #00d27e; }
+.ansi38-50 { color: #00d2a8; }
+.inv38-50 { background: #00d2a8; }
+.ansi48-50 { background: #00d2a8; }
+.inv48-50 { color: #00d2a8; }
+.ansi38-51 { color: #00d2d2; }
+.inv38-51 { background: #00d2d2; }
+.ansi48-51 { background: #00d2d2; }
+.inv48-51 { color: #00d2d2; }
+.ansi38-82 { color: #2ad200; }
+.inv38-82 { background: #2ad200; }
+.ansi48-82 { background: #2ad200; }
+.inv48-82 { color: #2ad200; }
+.ansi38-83 { color: #2ad22a; }
+.inv38-83 { background: #2ad22a; }
+.ansi48-83 { background: #2ad22a; }
+.inv48-83 { color: #2ad22a; }
+.ansi38-84 { color: #2ad254; }
+.inv38-84 { background: #2ad254; }
+.ansi48-84 { background: #2ad254; }
+.inv48-84 { color: #2ad254; }
+.ansi38-85 { color: #2ad27e; }
+.inv38-85 { background: #2ad27e; }
+.ansi48-85 { background: #2ad27e; }
+.inv48-85 { color: #2ad27e; }
+.ansi38-86 { color: #2ad2a8; }
+.inv38-86 { background: #2ad2a8; }
+.ansi48-86 { background: #2ad2a8; }
+.inv48-86 { color: #2ad2a8; }
+.ansi38-87 { color: #2ad2d2; }
+.inv38-87 { background: #2ad2d2; }
+.ansi48-87 { background: #2ad2d2; }
+.inv48-87 { color: #2ad2d2; }
+.ansi38-118 { color: #54d200; }
+.inv38-118 { background: #54d200; }
+.ansi48-118 { background: #54d200; }
+.inv48-118 { color: #54d200; }
+.ansi38-119 { color: #54d22a; }
+.inv38-119 { background: #54d22a; }
+.ansi48-119 { background: #54d22a; }
+.inv48-119 { color: #54d22a; }
+.ansi38-120 { color: #54d254; }
+.inv38-120 { background: #54d254; }
+.ansi48-120 { background: #54d254; }
+.inv48-120 { color: #54d254; }
+.ansi38-121 { color: #54d27e; }
+.inv38-121 { background: #54d27e; }
+.ansi48-121 { background: #54d27e; }
+.inv48-121 { color: #54d27e; }
+.ansi38-122 { color: #54d2a8; }
+.inv38-122 { background: #54d2a8; }
+.ansi48-122 { background: #54d2a8; }
+.inv48-122 { color: #54d2a8; }
+.ansi38-123 { color: #54d2d2; }
+.inv38-123 { background: #54d2d2; }
+.ansi48-123 { background: #54d2d2; }
+.inv48-123 { color: #54d2d2; }
+.ansi38-154 { color: #7ed200; }
+.inv38-154 { background: #7ed200; }
+.ansi48-154 { background: #7ed200; }
+.inv48-154 { color: #7ed200; }
+.ansi38-155 { color: #7ed22a; }
+.inv38-155 { background: #7ed22a; }
+.ansi48-155 { background: #7ed22a; }
+.inv48-155 { color: #7ed22a; }
+.ansi38-156 { color: #7ed254; }
+.inv38-156 { background: #7ed254; }
+.ansi48-156 { background: #7ed254; }
+.inv48-156 { color: #7ed254; }
+.ansi38-157 { color: #7ed27e; }
+.inv38-157 { background: #7ed27e; }
+.ansi48-157 { background: #7ed27e; }
+.inv48-157 { color: #7ed27e; }
+.ansi38-158 { color: #7ed2a8; }
+.inv38-158 { background: #7ed2a8; }
+.ansi48-158 { background: #7ed2a8; }
+.inv48-158 { color: #7ed2a8; }
+.ansi38-159 { color: #7ed2d2; }
+.inv38-159 { background: #7ed2d2; }
+.ansi48-159 { background: #7ed2d2; }
+.inv48-159 { color: #7ed2d2; }
+.ansi38-190 { color: #a8d200; }
+.inv38-190 { background: #a8d200; }
+.ansi48-190 { background: #a8d200; }
+.inv48-190 { color: #a8d200; }
+.ansi38-191 { color: #a8d22a; }
+.inv38-191 { background: #a8d22a; }
+.ansi48-191 { background: #a8d22a; }
+.inv48-191 { color: #a8d22a; }
+.ansi38-192 { color: #a8d254; }
+.inv38-192 { background: #a8d254; }
+.ansi48-192 { background: #a8d254; }
+.inv48-192 { color: #a8d254; }
+.ansi38-193 { color: #a8d27e; }
+.inv38-193 { background: #a8d27e; }
+.ansi48-193 { background: #a8d27e; }
+.inv48-193 { color: #a8d27e; }
+.ansi38-194 { color: #a8d2a8; }
+.inv38-194 { background: #a8d2a8; }
+.ansi48-194 { background: #a8d2a8; }
+.inv48-194 { color: #a8d2a8; }
+.ansi38-195 { color: #a8d2d2; }
+.inv38-195 { background: #a8d2d2; }
+.ansi48-195 { background: #a8d2d2; }
+.inv48-195 { color: #a8d2d2; }
+.ansi38-226 { color: #d2d200; }
+.inv38-226 { background: #d2d200; }
+.ansi48-226 { background: #d2d200; }
+.inv48-226 { color: #d2d200; }
+.ansi38-227 { color: #d2d22a; }
+.inv38-227 { background: #d2d22a; }
+.ansi48-227 { background: #d2d22a; }
+.inv48-227 { color: #d2d22a; }
+.ansi38-228 { color: #d2d254; }
+.inv38-228 { background: #d2d254; }
+.ansi48-228 { background: #d2d254; }
+.inv48-228 { color: #d2d254; }
+.ansi38-229 { color: #d2d27e; }
+.inv38-229 { background: #d2d27e; }
+.ansi48-229 { background: #d2d27e; }
+.inv48-229 { color: #d2d27e; }
+.ansi38-230 { color: #d2d2a8; }
+.inv38-230 { background: #d2d2a8; }
+.ansi48-230 { background: #d2d2a8; }
+.inv48-230 { color: #d2d2a8; }
+.ansi38-231 { color: #d2d2d2; }
+.inv38-231 { background: #d2d2d2; }
+.ansi48-231 { background: #d2d2d2; }
+.inv48-231 { color: #d2d2d2; }
+.ansi38-232 { color: #080808; }
+.inv38-232 { background: #080808; }
+.ansi48-232 { background: #080808; }
+.inv48-232 { color: #080808; }
+.ansi38-233 { color: #121212; }
+.inv38-233 { background: #121212; }
+.ansi48-233 { background: #121212; }
+.inv48-233 { color: #121212; }
+.ansi38-234 { color: #1c1c1c; }
+.inv38-234 { background: #1c1c1c; }
+.ansi48-234 { background: #1c1c1c; }
+.inv48-234 { color: #1c1c1c; }
+.ansi38-235 { color: #262626; }
+.inv38-235 { background: #262626; }
+.ansi48-235 { background: #262626; }
+.inv48-235 { color: #262626; }
+.ansi38-236 { color: #303030; }
+.inv38-236 { background: #303030; }
+.ansi48-236 { background: #303030; }
+.inv48-236 { color: #303030; }
+.ansi38-237 { color: #3a3a3a; }
+.inv38-237 { background: #3a3a3a; }
+.ansi48-237 { background: #3a3a3a; }
+.inv48-237 { color: #3a3a3a; }
+.ansi38-238 { color: #444444; }
+.inv38-238 { background: #444444; }
+.ansi48-238 { background: #444444; }
+.inv48-238 { color: #444444; }
+.ansi38-239 { color: #4e4e4e; }
+.inv38-239 { background: #4e4e4e; }
+.ansi48-239 { background: #4e4e4e; }
+.inv48-239 { color: #4e4e4e; }
+.ansi38-240 { color: #585858; }
+.inv38-240 { background: #585858; }
+.ansi48-240 { background: #585858; }
+.inv48-240 { color: #585858; }
+.ansi38-241 { color: #626262; }
+.inv38-241 { background: #626262; }
+.ansi48-241 { background: #626262; }
+.inv48-241 { color: #626262; }
+.ansi38-242 { color: #6c6c6c; }
+.inv38-242 { background: #6c6c6c; }
+.ansi48-242 { background: #6c6c6c; }
+.inv48-242 { color: #6c6c6c; }
+.ansi38-243 { color: #767676; }
+.inv38-243 { background: #767676; }
+.ansi48-243 { background: #767676; }
+.inv48-243 { color: #767676; }
+.ansi38-244 { color: #808080; }
+.inv38-244 { background: #808080; }
+.ansi48-244 { background: #808080; }
+.inv48-244 { color: #808080; }
+.ansi38-245 { color: #8a8a8a; }
+.inv38-245 { background: #8a8a8a; }
+.ansi48-245 { background: #8a8a8a; }
+.inv48-245 { color: #8a8a8a; }
+.ansi38-246 { color: #949494; }
+.inv38-246 { background: #949494; }
+.ansi48-246 { background: #949494; }
+.inv48-246 { color: #949494; }
+.ansi38-247 { color: #9e9e9e; }
+.inv38-247 { background: #9e9e9e; }
+.ansi48-247 { background: #9e9e9e; }
+.inv48-247 { color: #9e9e9e; }
+.ansi38-248 { color: #a8a8a8; }
+.inv38-248 { background: #a8a8a8; }
+.ansi48-248 { background: #a8a8a8; }
+.inv48-248 { color: #a8a8a8; }
+.ansi38-249 { color: #b2b2b2; }
+.inv38-249 { background: #b2b2b2; }
+.ansi48-249 { background: #b2b2b2; }
+.inv48-249 { color: #b2b2b2; }
+.ansi38-250 { color: #bcbcbc; }
+.inv38-250 { background: #bcbcbc; }
+.ansi48-250 { background: #bcbcbc; }
+.inv48-250 { color: #bcbcbc; }
+.ansi38-251 { color: #c6c6c6; }
+.inv38-251 { background: #c6c6c6; }
+.ansi48-251 { background: #c6c6c6; }
+.inv48-251 { color: #c6c6c6; }
+.ansi38-252 { color: #d0d0d0; }
+.inv38-252 { background: #d0d0d0; }
+.ansi48-252 { background: #d0d0d0; }
+.inv48-252 { color: #d0d0d0; }
+.ansi38-253 { color: #dadada; }
+.inv38-253 { background: #dadada; }
+.ansi48-253 { background: #dadada; }
+.inv48-253 { color: #dadada; }
+.ansi38-254 { color: #e4e4e4; }
+.inv38-254 { background: #e4e4e4; }
+.ansi48-254 { background: #e4e4e4; }
+.inv48-254 { color: #e4e4e4; }
+.ansi38-255 { color: #eeeeee; }
+.inv38-255 { background: #eeeeee; }
+.ansi48-255 { background: #eeeeee; }
+.inv48-255 { color: #eeeeee; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content">
+
+<span class="ansi1 ansi31">du projet de loi :
+</span><span class="ansi1 ansi31">――――
+</span><span class="ansi1 ansi31">
+</span><span class="ansi1 ansi31">Conformément à l'article 37 de la loi organique relative aux lois de finances du 1er août 2001, la loi de règlement :
+</span><span class="ansi1 ansi31">I- […] arrête le montant définitif des recettes et des dépenses du budget auquel elle se rapporte, ainsi que le résultat budgétaire qui en découle : article 1er
+</span><span class="ansi1 ansi31">II- […] arrête le montant définitif des ressources et des charges de trésorerie ayant concouru à la réalisation de l'équilibre financier de l'année correspondante, présenté dans un tableau de financement : article 2
+</span><span class="ansi1 ansi31">III- […] approuve le compte de résultat de l'exercice, établi à partir des ressources et des charges constatées dans les conditions prévues par l'article 30. Elle affecte au bilan le résultat comptable de l'exercice et approuve le bilan après affectation ainsi que ses annexes : article 3
+</span><span class="ansi1 ansi31">IV- Le cas échéant, la loi de règlement :
+</span><span class="ansi1 ansi31">1° Ratifie les modifications apportées par décret d'avance aux crédits ouverts par la dernière loi de finances afférente à cette année : sans objet cette année ;
+</span><span class="ansi1 ansi31">2° Ouvre, pour chaque programme ou dotation concerné, les crédits nécessaires pour régulariser les dépassements constatés résultant de circonstances de force majeure dûment justifiées et procède à l'annulation des crédits n'ayant été ni consommés ni reportés : articles 4 (budget général), 5 (budgets annexes), 6 (comptes spéciaux - comptes à crédits) ;
+</span><span class="ansi1 ansi31">3° Majore, pour chaque compte spécial concerné, le montant du découvert autorisé au niveau du découvert constaté : article 6 (comptes spéciaux non dotés de crédits - comptes à découverts) ;
+</span><span class="ansi1 ansi31">4° Arrête les soldes des comptes spéciaux non reportés sur l'exercice suivant : article 7 ;
+</span><span class="ansi1 ansi31">5° Apure les profits et pertes survenus sur chaque compte spécial : article 8 "Constatation d'une perte au titre d'avances consenties".
+</span><span class="ansi1 ansi31">V- […] peut également comporter toutes dispositions relatives à l'information et au contrôle du Parlement sur la gestion des finances publiques, ainsi qu'à la comptabilité de l'État et au régime de la responsabilité pécuniaire des agents des services publics : article 9 "Reconnaissance d'utilité publique de dépenses comprises dans une gestion de fait".
+</span><span class="ansi1 ansi31">Annexes au projet de loi :
+</span><span class="ansi1 ansi31">L'article 54 de la LOLF établit la liste des annexes au projet de loi de règlement :</span>
+1er <span class="ansi1 ansi31">- Le développement des recettes du budget général : développement des recettes du budget général ;
+</span><span class="ansi1 ansi31">2- Des annexes explicatives, développant, par programme ou par dotation, le montant définitif des crédits ouverts et des dépenses constatées, en indiquant les écarts avec la présentation par titre des crédits ouverts, et les modifications de crédits demandées. Elles présentent également l'écart entre les estimations et les réalisations au titre des fonds de concours : développement des crédits ouverts et des dépenses constatées au budget général ;
+</span><span class="ansi1 ansi31">3- Une annexe explicative présentant les recettes et les dépenses effectives du budget de l'État selon les conventions prévues au 3° de l'article 51 et comportant pour chaque programme, les justifications des circonstances ayant conduit à ne pas engager les dépenses correspondant aux crédits destinés à financer les dépenses visées au 5° du I de l'article 5 : recettes et dépenses du budget de l'État par section ;
+</span><span class="ansi1 ansi31">4- Les rapports annuels de performances, faisant connaître, par programme, en mettant en évidence les écarts avec les prévisions des lois de finances de l'année considérée, ainsi qu'avec les réalisations constatées dans la dernière loi de règlement :
+</span><span class="ansi1 ansi31">a) les objectifs, les résultats attendus et obtenus, les indicateurs et les coûts associés ;
+</span><span class="ansi1 ansi31">b) la justification, pour chaque titre, des mouvements de crédits et des dépenses constatées, en précisant, le cas échéant, l'origine des dépassements de crédits exceptionnellement constatés pour cause de force majeure ;
+</span><span class="ansi1 ansi31">c) la gestion des autorisations d'emplois, en précisant, d'une part, la répartition des emplois effectifs selon les modalités prévues au e du 5° de l'article 51, ainsi que les coûts correspondants et, d'autre part, les mesures justifiant la variation du nombre des emplois présentés selon les mêmes modalités ainsi que les coûts associés à ces mesures : rapports annuels de performance ;
+</span><span class="ansi1 ansi31">5- Des annexes explicatives développant, par programme ou par dotation, pour chaque budget annexe et chaque compte spécial, le montant définitif des recettes et des dépenses constatées, des crédits ouverts ou du découvert autorisé, ainsi que les modifications de crédits ou de découvert demandées. Ces annexes sont accompagnées du rapport annuel de performances de chacun d'entre eux, dans les conditions prévues au 4° : comptes des recettes et dépenses des budgets annexes ; développement des opérations constatées aux comptes spéciaux ;
+</span><span class="ansi1 ansi31">6- Des annexes explicatives présentant les résultats de la comptabilité selon les dispositions prévues au deuxième alinéa de l'article 27 : rapports annuels de performance ;
+</span><span class="ansi1 ansi31">7- Le compte général de l'État, qui comprend la balance générale des comptes, le compte de résultat, le bilan et ses annexes, parmi lesquelles la présentation du traitement comptable des opérations mentionnées au deuxième alinéa de l'article 8, ainsi qu'une évaluation des engagements hors bilan de l'État. Il est accompagné d'un rapport de présentation, qui indique notamment les changements des méthodes et des règles comptables appliqués au cours de l'exercice : compte général de l'État ; rapport de présentation.
+</span><span class="ansi1 ansi31">
+</span><span class="ansi1 ansi31">DU PROJET DE LOI
+</span><span class="ansi1 ansi31">――――
+</span><span class="ansi1 ansi31">
+</span><span class="ansi1 ansi31">
+</span><span class="ansi1 ansi31">EXPOSÉ DES MOTIFS PAR ARTICLE
+</span><span class="ansi1 ansi31">――――
+</span><span class="ansi1 ansi31">
+</span><span class="ansi1 ansi31">
+</span><span class="ansi1 ansi31">1er: Résultats du budget de l'année 2008</span>
+――――
+
+I<span class="ansi1 ansi32">.</span> - Le résultat budgétaire de l'État en 2008 est arrêté à la somme de - 56 271 159 295,99 €.
+II<span class="ansi1 ansi32">.</span> - Le montant définitif des recettes et des dépenses du budget de l'année 2008 est arrêté aux sommes mentionnées dans le tableau ci-après :
+<span class="ansi1 ansi32">(En euros)</span>
+Dépenses
+Recettes
+Soldes
+Budget général
+Recettes
+Recettes fiscales brutes
+352 135 273 852,24
+À déduire : Remboursements et dégrèvements d'impôts
+92 174 205 391,40
+Recettes fiscales nettes (a)
+259 961 068 460,84
+Recettes non fiscales (b)
+27 958 321 622,62
+Montant net des recettes<span class="ansi1 ansi32">,</span> hors fonds de concours (c) = (a) + (b)
+287 919 390 083,46
+<span class="ansi1 ansi31">A</span> <span class="ansi1 ansi32">À</span> déduire : Prélèvements sur recettes au profit des collectivités territoriales et des Communautés européennes (d)
+69 876 347 241,98
+Total net des recettes<span class="ansi1 ansi32">,</span> hors prélèvements sur recettes (e) = (c) - (d)
+218 043 042 841,48
+Fonds de concours (f)
+3 202 307 451,70
+Montant net des recettes<span class="ansi1 ansi32">,</span> y compris fonds de concours (g) = (e) + (f)
+221 245 350 293,18
+Dépenses
+Dépenses brutes<span class="ansi1 ansi32">,</span> hors fonds de concours
+367 206 538 077,51
+À déduire : Remboursements et dégrèvements d'impôts
+92 174 205 391,40
+Montant net des dépenses (h)
+275 032 332 686,11
+Fonds de concours (i)
+3 202 307 451,70
+Montant net des dépenses<span class="ansi1 ansi32">,</span> y compris fonds de concours (j) = (h ) + (i)
+278 234 640 137,81
+Total du budget général<span class="ansi1 ansi32">,</span> y compris fonds de concours
+278 234 640 137,81
+221 245 350 293,18
+-56 989 289 844,63
+Budgets annexes
+Contrôle et exploitation aériens
+1 700 516 901,33
+1 700 516 901,33
+Publications officielles et information administrative
+236 706 272,24
+236 706 272,24
+Montant des budgets annexes<span class="ansi1 ansi32">,</span> hors fonds de concours
+1 937 223 173,57
+1 937 223 173,57
+Fonds de concours
+17 126 030,73
+17 126 030,73
+Total des budgets annexes<span class="ansi1 ansi32">,</span> y compris fonds de concours
+1 954 349 204,30
+1 954 349 204,30
+Comptes spéciaux
+Comptes d'affectation spéciale
+50 880 295 851,89
+51 553 643 671,20
+673 347 819,31
+Comptes de concours financiers
+90 793 430 604,84
+90 670 048 465,86
+-123 382 138,98
+Comptes de commerce (solde)
+-182 282 964,66
+182 282 964,66
+Comptes d'opérations monétaires<span class="ansi1 ansi32">,</span> hors Fonds monétaire international (solde)
+14 118 096,35
+-14 118 096,35
+Total des comptes spéciaux<span class="ansi1 ansi32">,</span> hors Fonds monétaire international
+141 505 561 588,42
+142 223 692 137,06
+718 130 548,64
+Solde d'exécution des lois de finances<span class="ansi1 ansi32">,</span> hors Fonds monétaire international
+-56 271 159 295,99
+
+<span class="ansi1 ansi32">2
+</span><span class="ansi1 ansi32">――――
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">Le montant définitif des ressources et des charges de trésorerie ayant concouru à la réalisation de l'équilibre financier de l'année 2008 est arrêté aux sommes présentées dans le tableau de financement ci-après :
+</span><span class="ansi1 ansi32">(En milliards d'euros)
+</span><span class="ansi1 ansi32">Exécution 2008
+</span><span class="ansi1 ansi32">Besoin de financement
+</span><span class="ansi1 ansi32">Amortissement de la dette à long terme
+</span><span class="ansi1 ansi32">39,3
+</span><span class="ansi1 ansi32">Amortissement de la dette à moyen terme
+</span><span class="ansi1 ansi32">58,3
+</span><span class="ansi1 ansi32">Amortissement de dettes reprises par l'État
+</span><span class="ansi1 ansi32">10,3
+</span><span class="ansi1 ansi32">Variation des dépôts de garantie
+</span><span class="ansi1 ansi32">- 0,4
+</span><span class="ansi1 ansi32">Variation d'autres besoins de trésorerie
+</span><span class="ansi1 ansi32">0,1
+</span><span class="ansi1 ansi32">Impact en trésorerie du solde de la gestion 2008
+</span><span class="ansi1 ansi32">56,4
+</span><span class="ansi1 ansi32">Total du besoin de financement
+</span><span class="ansi1 ansi32">164,0
+</span><span class="ansi1 ansi32">Ressources de financement
+</span><span class="ansi1 ansi32">Émissions à moyen et long terme (obligations assimilables du Trésor et bons du Trésor à taux fixe et intérêts annuels), nettes des rachats
+</span><span class="ansi1 ansi32">128,5
+</span><span class="ansi1 ansi32">Annulation de titres de l'État par la Caisse de la dette publique
+</span><span class="ansi1 ansi32">0,0
+</span><span class="ansi1 ansi32">Variation des bons du Trésor à taux fixe et intérêts précomptés
+</span><span class="ansi1 ansi32">59,8
+</span><span class="ansi1 ansi32">Variation des dépôts des correspondants
+</span><span class="ansi1 ansi32">- 1,6
+</span><span class="ansi1 ansi32">Variation d'avances de trésorerie
+</span><span class="ansi1 ansi32">0,1
+</span><span class="ansi1 ansi32">Variation du compte du Trésor
+</span><span class="ansi1 ansi32">- 25,3
+</span><span class="ansi1 ansi32">Autres ressources de trésorerie
+</span><span class="ansi1 ansi32">2,4
+</span><span class="ansi1 ansi32">Total des ressources de financement
+</span><span class="ansi1 ansi32">164,0.
+</span><span class="ansi1 ansi32">(1) Le total des ressources de financement (164 milliards d'euros) n'est pas égal à la somme des lignes du tableau, présentées à la centaine de million d'euros près, du fait d'effets d'arrondis.
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">3
+</span><span class="ansi1 ansi32">――――
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">I. - Le compte de résultat de l'exercice 2008 est approuvé tel que présenté dans le tableau ci-après. Le résultat comptable de l'exercice 2008 s'établit à - 73 105 777 853,13 € :
+</span><span class="ansi1 ansi32">Charges nettes
+</span><span class="ansi1 ansi32">(En millions d'euros)
+</span><span class="ansi1 ansi32">2008
+</span><span class="ansi1 ansi32">Charges de fonctionnement nettes
+</span><span class="ansi1 ansi32">Charges de personnel
+</span><span class="ansi1 ansi32">132 692
+</span><span class="ansi1 ansi32">Achats, variations de stocks et prestations externes
+</span><span class="ansi1 ansi32">18 751
+</span><span class="ansi1 ansi32">Dotations aux amortissements, aux provisions et aux dépréciations
+</span><span class="ansi1 ansi32">55 507
+</span><span class="ansi1 ansi32">Autres charges de fonctionnement
+</span><span class="ansi1 ansi32">10 856
+</span><span class="ansi1 ansi32">Total des charges de fonctionnement direct (I)
+</span><span class="ansi1 ansi32">217 807
+</span><span class="ansi1 ansi32">Subventions pour charges de service public
+</span><span class="ansi1 ansi32">14 775
+</span><span class="ansi1 ansi32">Dotations aux provisions
+</span><span class="ansi1 ansi32">Total des charges de fonctionnement indirect (II)
+</span><span class="ansi1 ansi32">14 775
+</span><span class="ansi1 ansi32">Total des charges de fonctionnement (III = I + II)
+</span><span class="ansi1 ansi32">232 581
+</span><span class="ansi1 ansi32">Ventes de produits et prestations de services
+</span><span class="ansi1 ansi32">3 538
+</span><span class="ansi1 ansi32">Production stockée immobilisée
+</span><span class="ansi1 ansi32">130
+</span><span class="ansi1 ansi32">Reprises sur provisions et sur dépréciations
+</span><span class="ansi1 ansi32">43 254
+</span><span class="ansi1 ansi32">Autres produits de fonctionnement
+</span><span class="ansi1 ansi32">18 285
+</span><span class="ansi1 ansi32">Total des produits de fonctionnement (IV)
+</span><span class="ansi1 ansi32">65 207
+</span><span class="ansi1 ansi32">Total des charges de fonctionnement nettes (V = III - IV)
+</span><span class="ansi1 ansi32">167 374
+</span><span class="ansi1 ansi32">Charges d'intervention nettes
+</span><span class="ansi1 ansi32">Transferts aux ménages
+</span><span class="ansi1 ansi32">27 683
+</span><span class="ansi1 ansi32">Transferts aux entreprises
+</span><span class="ansi1 ansi32">13 877
+</span><span class="ansi1 ansi32">Transferts aux collectivités territoriales
+</span><span class="ansi1 ansi32">74 875
+</span><span class="ansi1 ansi32">Transferts aux autres collectivités
+</span><span class="ansi1 ansi32">19 762
+</span><span class="ansi1 ansi32">Charges résultant de la mise en jeu de garanties
+</span><span class="ansi1 ansi32">62
+</span><span class="ansi1 ansi32">Dotations aux provisions et aux dépréciations
+</span><span class="ansi1 ansi32">25 321
+</span><span class="ansi1 ansi32">Total des charges d'intervention (VI)
+</span><span class="ansi1 ansi32">161 580
+</span><span class="ansi1 ansi32">Contributions reçues de tiers
+</span><span class="ansi1 ansi32">7 848
+</span><span class="ansi1 ansi32">Reprises sur provisions et sur dépréciations
+</span><span class="ansi1 ansi32">17 755
+</span><span class="ansi1 ansi32">Total des produits d'intervention (VII)
+</span><span class="ansi1 ansi32">25 603
+</span><span class="ansi1 ansi32">Total des charges d'intervention nettes (VIII = VI - VII)
+</span><span class="ansi1 ansi32">135 977
+</span><span class="ansi1 ansi32">Charges financières nettes
+</span><span class="ansi1 ansi32">Intérêts
+</span><span class="ansi1 ansi32">40 453
+</span><span class="ansi1 ansi32">Pertes de change liées aux opérations financières
+</span><span class="ansi1 ansi32">318
+</span><span class="ansi1 ansi32">Dotations aux amortissements, aux provisions et aux dépréciations
+</span><span class="ansi1 ansi32">2 072
+</span><span class="ansi1 ansi32">Autres charges financières
+</span><span class="ansi1 ansi32">19 816
+</span><span class="ansi1 ansi32">Total des charges financières (IX)
+</span><span class="ansi1 ansi32">62 659
+</span><span class="ansi1 ansi32">Produits des créances de l'actif immobilisé
+</span><span class="ansi1 ansi32">10 489
+</span><span class="ansi1 ansi32">Gains de change liés aux opérations financières
+</span><span class="ansi1 ansi32">358
+</span><span class="ansi1 ansi32">Reprises sur provisions et sur dépréciations
+</span><span class="ansi1 ansi32">4 056
+</span><span class="ansi1 ansi32">Autres intérêts et produits assimilés
+</span><span class="ansi1 ansi32">3 230
+</span><span class="ansi1 ansi32">Total des produits financiers (X)
+</span><span class="ansi1 ansi32">18 132
+</span><span class="ansi1 ansi32">Total des charges financières nettes (XI = IX - X)
+</span><span class="ansi1 ansi32">44 527
+</span><span class="ansi1 ansi32">Total des charges nettes (XII = V + VIII + XI)
+</span><span class="ansi1 ansi32">347 878
+</span><span class="ansi1 ansi32">Produits régaliens nets
+</span><span class="ansi1 ansi32">(En millions d'euros)
+</span><span class="ansi1 ansi32">2008
+</span><span class="ansi1 ansi32">Impôt sur le revenu
+</span><span class="ansi1 ansi32">51 184
+</span><span class="ansi1 ansi32">Impôt sur les sociétés
+</span><span class="ansi1 ansi32">52 064
+</span><span class="ansi1 ansi32">Taxe sur les salaires
+</span><span class="ansi1 ansi32">Taxe intérieure sur les produits pétroliers
+</span><span class="ansi1 ansi32">15 614
+</span><span class="ansi1 ansi32">Taxe sur la valeur ajoutée
+</span><span class="ansi1 ansi32">131 735
+</span><span class="ansi1 ansi32">Enregistrement, timbre, autres contributions et taxes indirectes
+</span><span class="ansi1 ansi32">16 908
+</span><span class="ansi1 ansi32">Autres produits de nature fiscale et assimilés
+</span><span class="ansi1 ansi32">18 233
+</span><span class="ansi1 ansi32">Total des produits fiscaux nets (XIII)
+</span><span class="ansi1 ansi32">285 739
+</span><span class="ansi1 ansi32">Amendes, prélèvements divers et autres pénalités
+</span><span class="ansi1 ansi32">5 653
+</span><span class="ansi1 ansi32">Total des autres produits régaliens nets (XIV)
+</span><span class="ansi1 ansi32">5 653
+</span><span class="ansi1 ansi32">Ressource propre de l'Union européenne basée sur le produit national brut
+</span><span class="ansi1 ansi32">- 11 906
+</span><span class="ansi1 ansi32">Ressource propre de l'Union européenne basée sur la taxe sur la valeur ajoutée
+</span><span class="ansi1 ansi32">- 4 714
+</span><span class="ansi1 ansi32">Total des ressources propres du budget de l'Union européenne basées sur le produit national brut et la taxe sur la valeur ajoutée (XV)
+</span><span class="ansi1 ansi32">- 16 620
+</span><span class="ansi1 ansi32">Total des produits régaliens nets (XVI = XIII + XIV - XV)
+</span><span class="ansi1 ansi32">274 773
+</span><span class="ansi1 ansi32">Solde des opérations de l'exercice
+</span><span class="ansi1 ansi32">(En millions d'euros)
+</span><span class="ansi1 ansi32">2008
+</span><span class="ansi1 ansi32">Charges de fonctionnement nettes (V)
+</span><span class="ansi1 ansi32">167 374
+</span><span class="ansi1 ansi32">Charges d'intervention nettes (VIII)
+</span><span class="ansi1 ansi32">135 977
+</span><span class="ansi1 ansi32">Charges financières nettes (XI)
+</span><span class="ansi1 ansi32">44 527
+</span><span class="ansi1 ansi32">Charges nettes (XII)
+</span><span class="ansi1 ansi32">347 878
+</span><span class="ansi1 ansi32">Produits fiscaux nets (XIII)
+</span><span class="ansi1 ansi32">285 739
+</span><span class="ansi1 ansi32">Autres produits régaliens nets (XIV)
+</span><span class="ansi1 ansi32">5 653
+</span><span class="ansi1 ansi32">Ressources propres de l'Union européenne basées sur le produit national brut et la taxe sur la valeur ajoutée (XV)
+</span><span class="ansi1 ansi32">- 16 620
+</span><span class="ansi1 ansi32">Produits régaliens nets (XVI)
+</span><span class="ansi1 ansi32">274 773
+</span><span class="ansi1 ansi32">Solde des opérations de l'exercice (XVI - XII)
+</span><span class="ansi1 ansi32">- 73 106
+</span><span class="ansi1 ansi32">II. - Le résultat comptable de l'exercice 2008 est affecté au bilan à la ligne "report des exercices antérieurs".
+</span><span class="ansi1 ansi32">III. - Le bilan, après affectation du résultat comptable, s'établit comme suit :
+</span><span class="ansi1 ansi32">(En millions d'euros)
+</span><span class="ansi1 ansi32">31 décembre 2008
+</span><span class="ansi1 ansi32">Brut
+</span><span class="ansi1 ansi32">Amortissements dépréciations
+</span><span class="ansi1 ansi32">Net
+</span><span class="ansi1 ansi32">Actif immobilisé
+</span><span class="ansi1 ansi32">Immobilisations incorporelles
+</span><span class="ansi1 ansi32">49 346
+</span><span class="ansi1 ansi32">13 676
+</span><span class="ansi1 ansi32">35 670
+</span><span class="ansi1 ansi32">Immobilisations corporelles
+</span><span class="ansi1 ansi32">322 907
+</span><span class="ansi1 ansi32">68 059
+</span><span class="ansi1 ansi32">254 848
+</span><span class="ansi1 ansi32">Immobilisations financières
+</span><span class="ansi1 ansi32">210 394
+</span><span class="ansi1 ansi32">6 503
+</span><span class="ansi1 ansi32">203 891
+</span><span class="ansi1 ansi32">Total actif immobilisé
+</span><span class="ansi1 ansi32">582 646
+</span><span class="ansi1 ansi32">88 238
+</span><span class="ansi1 ansi32">494 408
+</span><span class="ansi1 ansi32">Actif circulant (hors trésorerie)
+</span><span class="ansi1 ansi32">Stocks
+</span><span class="ansi1 ansi32">33 330
+</span><span class="ansi1 ansi32">3 874
+</span><span class="ansi1 ansi32">29 455
+</span><span class="ansi1 ansi32">Créances
+</span><span class="ansi1 ansi32">90 277
+</span><span class="ansi1 ansi32">33 900
+</span><span class="ansi1 ansi32">56 377
+</span><span class="ansi1 ansi32">Redevables
+</span><span class="ansi1 ansi32">77 019
+</span><span class="ansi1 ansi32">32 622
+</span><span class="ansi1 ansi32">44 397
+</span><span class="ansi1 ansi32">Clients
+</span><span class="ansi1 ansi32">5 759
+</span><span class="ansi1 ansi32">890
+</span><span class="ansi1 ansi32">4 868
+</span><span class="ansi1 ansi32">Autres créances
+</span><span class="ansi1 ansi32">7 499
+</span><span class="ansi1 ansi32">388
+</span><span class="ansi1 ansi32">7 111
+</span><span class="ansi1 ansi32">Charges constatées d'avance
+</span><span class="ansi1 ansi32">31
+</span><span class="ansi1 ansi32">0
+</span><span class="ansi1 ansi32">31
+</span><span class="ansi1 ansi32">Total actif circulant (hors trésorerie)
+</span><span class="ansi1 ansi32">123 638
+</span><span class="ansi1 ansi32">37 774
+</span><span class="ansi1 ansi32">85 864
+</span><span class="ansi1 ansi32">Trésorerie
+</span><span class="ansi1 ansi32">Fonds bancaires et fonds en caisse
+</span><span class="ansi1 ansi32">10 519
+</span><span class="ansi1 ansi32">10 519
+</span><span class="ansi1 ansi32">Valeurs escomptées, en cours d'encaissement et de décaissement
+</span><span class="ansi1 ansi32">- 1 578
+</span><span class="ansi1 ansi32">- 1 578
+</span><span class="ansi1 ansi32">Autres composantes de trésorerie
+</span><span class="ansi1 ansi32">26 914
+</span><span class="ansi1 ansi32">26 914
+</span><span class="ansi1 ansi32">Équivalents de trésorerie
+</span><span class="ansi1 ansi32">10 308
+</span><span class="ansi1 ansi32">10 308
+</span><span class="ansi1 ansi32">Total trésorerie
+</span><span class="ansi1 ansi32">46 163
+</span><span class="ansi1 ansi32">46 163
+</span><span class="ansi1 ansi32">Comptes de régularisation
+</span><span class="ansi1 ansi32">12 940
+</span><span class="ansi1 ansi32">12 940
+</span><span class="ansi1 ansi32">Total actif (I)
+</span><span class="ansi1 ansi32">765 388
+</span><span class="ansi1 ansi32">126 013
+</span><span class="ansi1 ansi32">639 375
+</span><span class="ansi1 ansi32">Dettes financières
+</span><span class="ansi1 ansi32">Titres négociables
+</span><span class="ansi1 ansi32">1 031 844
+</span><span class="ansi1 ansi32">Titres non négociables
+</span><span class="ansi1 ansi32">260
+</span><span class="ansi1 ansi32">Autres emprunts
+</span><span class="ansi1 ansi32">12 043
+</span><span class="ansi1 ansi32">Total dettes financières
+</span><span class="ansi1 ansi32">1 044 146
+</span><span class="ansi1 ansi32">Dettes non financières (hors trésorerie)
+</span><span class="ansi1 ansi32">Dettes de fonctionnement
+</span><span class="ansi1 ansi32">4 276
+</span><span class="ansi1 ansi32">Dettes d'intervention
+</span><span class="ansi1 ansi32">11 698
+</span><span class="ansi1 ansi32">Produits constatés d'avance
+</span><span class="ansi1 ansi32">5 727
+</span><span class="ansi1 ansi32">Autres dettes non financières
+</span><span class="ansi1 ansi32">89 415
+</span><span class="ansi1 ansi32">Total dettes non financières
+</span><span class="ansi1 ansi32">111 116
+</span><span class="ansi1 ansi32">Provisions pour risques et charges
+</span><span class="ansi1 ansi32">Provisions pour risques
+</span><span class="ansi1 ansi32">10 030
+</span><span class="ansi1 ansi32">Provisions pour charges
+</span><span class="ansi1 ansi32">63 374
+</span><span class="ansi1 ansi32">Total provisions pour risques et charges
+</span><span class="ansi1 ansi32">73 403
+</span><span class="ansi1 ansi32">Autres passifs (hors trésorerie)
+</span><span class="ansi1 ansi32">11 866
+</span><span class="ansi1 ansi32">Trésorerie
+</span><span class="ansi1 ansi32">Correspondants du Trésor et personnes habilitées
+</span><span class="ansi1 ansi32">66 204
+</span><span class="ansi1 ansi32">Autres
+</span><span class="ansi1 ansi32">963
+</span><span class="ansi1 ansi32">Total trésorerie
+</span><span class="ansi1 ansi32">67 167
+</span><span class="ansi1 ansi32">Comptes de régularisation
+</span><span class="ansi1 ansi32">17 705
+</span><span class="ansi1 ansi32">Total passif (hors situation nette) (II)
+</span><span class="ansi1 ansi32">1 325 404
+</span><span class="ansi1 ansi32">Report des exercices antérieurs
+</span><span class="ansi1 ansi32">- 870 458
+</span><span class="ansi1 ansi32">Écarts de réévaluation et d'intégration
+</span><span class="ansi1 ansi32">184 429
+</span><span class="ansi1 ansi32">Solde des opérations de l'exercice
+</span><span class="ansi1 ansi32">Situation nette (III = I - II)
+</span><span class="ansi1 ansi32">- 686 029
+</span><span class="ansi1 ansi32">IV. - L'annexe du compte général de l'État de l'exercice 2008 est approuvée.
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">4
+</span><span class="ansi1 ansi32">――――
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">I. - Le montant des autorisations d'engagement engagées sur le budget général au titre de l'année 2008 est arrêté par missions et programmes aux sommes mentionnées dans le tableau ci-après. Les autorisations d'engagement ouvertes sont modifiées comme indiqué dans ce tableau.
+</span><span class="ansi1 ansi32">(En euros)
+</span><span class="ansi1 ansi32">Ajustements de la loi de règlement
+</span><span class="ansi1 ansi32">Désignation des missions et des programmes
+</span><span class="ansi1 ansi32">Autorisations d'engagement engagées
+</span><span class="ansi1 ansi32">Ouvertures d'autorisations d'engagement complémentaires
+</span><span class="ansi1 ansi32">Annulations d'autorisations d'engagement non engagées et non reportées
+</span><span class="ansi1 ansi32">Action extérieure de l'État
+</span><span class="ansi1 ansi32">2 425 511 783,67
+</span><span class="ansi1 ansi32">17 157 931,33
+</span><span class="ansi1 ansi32">- Action de la France en Europe et dans le monde
+</span><span class="ansi1 ansi32">1 650 544 910,65
+</span><span class="ansi1 ansi32">17 100 776,35
+</span><span class="ansi1 ansi32">- Rayonnement culturel et scientifique
+</span><span class="ansi1 ansi32">476 044 704,01
+</span><span class="ansi1 ansi32">39 416,99
+</span><span class="ansi1 ansi32">- Français à l'étranger, affaires consulaires et sécurité des personnes
+</span><span class="ansi1 ansi32">298 922 169,01
+</span><span class="ansi1 ansi32">17 737,99
+</span><span class="ansi1 ansi32">Administration générale et territoriale de l'État
+</span><span class="ansi1 ansi32">2 627 697 753,59
+</span><span class="ansi1 ansi32">13 716 279,41
+</span><span class="ansi1 ansi32">- Administration territoriale
+</span><span class="ansi1 ansi32">1 646 080 278,60
+</span><span class="ansi1 ansi32">6 944 541,40
+</span><span class="ansi1 ansi32">- Administration territoriale : expérimentation Chorus
+</span><span class="ansi1 ansi32">104 467 539,01
+</span><span class="ansi1 ansi32">1 102 175,99
+</span><span class="ansi1 ansi32">- Vie politique, cultuelle et associative
+</span><span class="ansi1 ansi32">347 509 222,06
+</span><span class="ansi1 ansi32">4 007 132,94
+</span><span class="ansi1 ansi32">- Conduite et pilotage des politiques de l'intérieur
+</span><span class="ansi1 ansi32">529 640 713,92
+</span><span class="ansi1 ansi32">1 662 429,08
+</span><span class="ansi1 ansi32">Agriculture, pêche, forêt et affaires rurales
+</span><span class="ansi1 ansi32">3 348 515 192,97
+</span><span class="ansi1 ansi32">20 988 901,03
+</span><span class="ansi1 ansi32">- Gestion durable de l'agriculture, de la pêche et développement rural
+</span><span class="ansi1 ansi32">1 364 721 985,92
+</span><span class="ansi1 ansi32">3 070 562,08
+</span><span class="ansi1 ansi32">- Valorisation des produits, orientation et régulation des marchés
+</span><span class="ansi1 ansi32">780 487 671,51
+</span><span class="ansi1 ansi32">6 753 170,49
+</span><span class="ansi1 ansi32">- Forêt
+</span><span class="ansi1 ansi32">289 296 474,37
+</span><span class="ansi1 ansi32">4 280 858,63
+</span><span class="ansi1 ansi32">- Conduite et pilotage des politiques de l'agriculture
+</span><span class="ansi1 ansi32">914 009 061,17
+</span><span class="ansi1 ansi32">6 884 309,83
+</span><span class="ansi1 ansi32">Aide publique au développement
+</span><span class="ansi1 ansi32">4 362 175 672,03
+</span><span class="ansi1 ansi32">49 414 735,97
+</span><span class="ansi1 ansi32">- Aide économique et financière au développement
+</span><span class="ansi1 ansi32">2 215 681 827,37
+</span><span class="ansi1 ansi32">11 135 516,63
+</span><span class="ansi1 ansi32">- Solidarité à l'égard des pays en développement
+</span><span class="ansi1 ansi32">2 093 448 802,97
+</span><span class="ansi1 ansi32">38 169 069,03
+</span><span class="ansi1 ansi32">- Codéveloppement
+</span><span class="ansi1 ansi32">53 045 041,69
+</span><span class="ansi1 ansi32">110 150,31
+</span><span class="ansi1 ansi32">Anciens combattants, mémoire et liens avec la Nation
+</span><span class="ansi1 ansi32">3 676 399 381,56
+</span><span class="ansi1 ansi32">3 807 327,44
+</span><span class="ansi1 ansi32">- Liens entre la Nation et son armée
+</span><span class="ansi1 ansi32">251 218 416,31
+</span><span class="ansi1 ansi32">3 029 475,69
+</span><span class="ansi1 ansi32">- Mémoire, reconnaissance et réparation en faveur du monde combattant
+</span><span class="ansi1 ansi32">3 290 925 555,38
+</span><span class="ansi1 ansi32">245 156,62
+</span><span class="ansi1 ansi32">- Indemnisation des victimes des persécutions antisémites et des actes de barbarie pendant la seconde guerre mondiale
+</span><span class="ansi1 ansi32">134 255 409,87
+</span><span class="ansi1 ansi32">532 695,13
+</span><span class="ansi1 ansi32">Conseil et contrôle de l'État
+</span><span class="ansi1 ansi32">484 054 847,55
+</span><span class="ansi1 ansi32">3 906 087,45
+</span><span class="ansi1 ansi32">- Conseil d'État et autres juridictions administratives
+</span><span class="ansi1 ansi32">262 145 876,73
+</span><span class="ansi1 ansi32">2 800 327,27
+</span><span class="ansi1 ansi32">- Conseil économique et social
+</span><span class="ansi1 ansi32">35 898 965,00
+</span><span class="ansi1 ansi32">426 058,00
+</span><span class="ansi1 ansi32">- Cour des comptes et autres juridictions financières
+</span><span class="ansi1 ansi32">186 010 005,82
+</span><span class="ansi1 ansi32">679 702,18
+</span><span class="ansi1 ansi32">Culture
+</span><span class="ansi1 ansi32">2 760 495 939,81
+</span><span class="ansi1 ansi32">112 392 246,19
+</span><span class="ansi1 ansi32">- Patrimoines
+</span><span class="ansi1 ansi32">1 160 099 070,31
+</span><span class="ansi1 ansi32">82 959 130,69
+</span><span class="ansi1 ansi32">- Création
+</span><span class="ansi1 ansi32">802 548 928,97
+</span><span class="ansi1 ansi32">3 700 572,03
+</span><span class="ansi1 ansi32">- Transmission des savoirs et démocratisation de la culture
+</span><span class="ansi1 ansi32">797 847 940,53
+</span><span class="ansi1 ansi32">25 732 543,47
+</span><span class="ansi1 ansi32">Défense
+</span><span class="ansi1 ansi32">36 792 422 879,75
+</span><span class="ansi1 ansi32">469 934 902,25
+</span><span class="ansi1 ansi32">- Environnement et prospective de la politique de défense
+</span><span class="ansi1 ansi32">1 653 858 735,55
+</span><span class="ansi1 ansi32">18 618 909,45
+</span><span class="ansi1 ansi32">- Préparation et emploi des forces
+</span><span class="ansi1 ansi32">22 150 019 635,92
+</span><span class="ansi1 ansi32">108 986 645,08
+</span><span class="ansi1 ansi32">- Soutien de la politique de la défense
+</span><span class="ansi1 ansi32">3 262 232 257,90
+</span><span class="ansi1 ansi32">323 284 128,10
+</span><span class="ansi1 ansi32">- Équipement des forces
+</span><span class="ansi1 ansi32">9 726 312 250,38
+</span><span class="ansi1 ansi32">19 045 219,62
+</span><span class="ansi1 ansi32">Développement et régulation économiques
+</span><span class="ansi1 ansi32">1 496 179 590,00
+</span><span class="ansi1 ansi32">72 537 477,00
+</span><span class="ansi1 ansi32">- Développement des entreprises et des services
+</span><span class="ansi1 ansi32">1 116 138 510,57
+</span><span class="ansi1 ansi32">50 578 058,43
+</span><span class="ansi1 ansi32">- Tourisme
+</span><span class="ansi1 ansi32">84 412 334,80
+</span><span class="ansi1 ansi32">11 823 485,20
+</span><span class="ansi1 ansi32">- Régulation économique
+</span><span class="ansi1 ansi32">295 628 744,63
+</span><span class="ansi1 ansi32">10 135 933,37
+</span><span class="ansi1 ansi32">Direction de l'action du Gouvernement
+</span><span class="ansi1 ansi32">544 232 579,38
+</span><span class="ansi1 ansi32">38 264 527,62
+</span><span class="ansi1 ansi32">- Coordination du travail gouvernemental
+</span><span class="ansi1 ansi32">390 274 838,85
+</span><span class="ansi1 ansi32">8 694 233,15
+</span><span class="ansi1 ansi32">- Présidence française de l'Union européenne
+</span><span class="ansi1 ansi32">153 957 740,53
+</span><span class="ansi1 ansi32">29 570 294,47
+</span><span class="ansi1 ansi32">Écologie, développement et aménagement durables
+</span><span class="ansi1 ansi32">10 065 565 845,84
+</span><span class="ansi1 ansi32">431 458 759,16
+</span><span class="ansi1 ansi32">- Réseau routier national
+</span><span class="ansi1 ansi32">1 808 600 315,31
+</span><span class="ansi1 ansi32">849 236,69
+</span><span class="ansi1 ansi32">- Sécurité routière
+</span><span class="ansi1 ansi32">100 712 109,02
+</span><span class="ansi1 ansi32">35 002 186,98
+</span><span class="ansi1 ansi32">- Transports terrestres et maritimes
+</span><span class="ansi1 ansi32">2 151 518 109,18
+</span><span class="ansi1 ansi32">88 984 219,82
+</span><span class="ansi1 ansi32">- Passifs financiers ferroviaires
+</span><span class="ansi1 ansi32">686 200 000,00
+</span><span class="ansi1 ansi32">- Sécurité et affaires maritimes
+</span><span class="ansi1 ansi32">171 257 387,01
+</span><span class="ansi1 ansi32">3 517 784,99
+</span><span class="ansi1 ansi32">- Transports aériens
+</span><span class="ansi1 ansi32">65 437 564,69
+</span><span class="ansi1 ansi32">29 501 727,31
+</span><span class="ansi1 ansi32">- Météorologie
+</span><span class="ansi1 ansi32">174 312 532,00
+</span><span class="ansi1 ansi32">23 000,00
+</span><span class="ansi1 ansi32">- Aménagement, urbanisme et ingénierie publique
+</span><span class="ansi1 ansi32">58 047 602,67
+</span><span class="ansi1 ansi32">5 381 443,33
+</span><span class="ansi1 ansi32">- Information géographique et cartographique
+</span><span class="ansi1 ansi32">60 417 131,21
+</span><span class="ansi1 ansi32">719 234,79
+</span><span class="ansi1 ansi32">- Protection de l'environnement et prévention des risques
+</span><span class="ansi1 ansi32">119 304 553,99
+</span><span class="ansi1 ansi32">228 181 853,01
+</span><span class="ansi1 ansi32">- Énergie et matières premières
+</span><span class="ansi1 ansi32">837 122 008,42
+</span><span class="ansi1 ansi32">10 312 727,58
+</span><span class="ansi1 ansi32">- Conduite et pilotage des politiques de l'écologie, du développement et de l'aménagement durables
+</span><span class="ansi1 ansi32">3 832 636 532,34
+</span><span class="ansi1 ansi32">28 985 344,66
+</span><span class="ansi1 ansi32">Engagements financiers de l'État
+</span><span class="ansi1 ansi32">46 198 694 618,61
+</span><span class="ansi1 ansi32">785 767 702,39
+</span><span class="ansi1 ansi32">- Charge de la dette et trésorerie de l'État (crédits évaluatifs)
+</span><span class="ansi1 ansi32">44 464 122 116,49
+</span><span class="ansi1 ansi32">731 877 883,51
+</span><span class="ansi1 ansi32">- Appels en garantie de l'État (crédits évaluatifs)
+</span><span class="ansi1 ansi32">233 979 706,65
+</span><span class="ansi1 ansi32">53 670 293,35
+</span><span class="ansi1 ansi32">- Épargne
+</span><span class="ansi1 ansi32">1 278 799 975,29
+</span><span class="ansi1 ansi32">24,71
+</span><span class="ansi1 ansi32">- Majoration de rentes
+</span><span class="ansi1 ansi32">221 792 820,18
+</span><span class="ansi1 ansi32">219 500,82
+</span><span class="ansi1 ansi32">Enseignement scolaire
+</span><span class="ansi1 ansi32">59 218 059 706,14
+</span><span class="ansi1 ansi32">15 717 198,86
+</span><span class="ansi1 ansi32">- Enseignement scolaire public du premier degré
+</span><span class="ansi1 ansi32">16 773 518 064,06
+</span><span class="ansi1 ansi32">2 004 427,94
+</span><span class="ansi1 ansi32">- Enseignement scolaire public du second degré
+</span><span class="ansi1 ansi32">28 321 649 837,97
+</span><span class="ansi1 ansi32">4 227 511,03
+</span><span class="ansi1 ansi32">- Vie de l'élève
+</span><span class="ansi1 ansi32">3 868 623 566,34
+</span><span class="ansi1 ansi32">595 986,66
+</span><span class="ansi1 ansi32">- Enseignement privé du premier et du second degrés
+</span><span class="ansi1 ansi32">6 921 225 008,92
+</span><span class="ansi1 ansi32">1 619 192,08
+</span><span class="ansi1 ansi32">- Soutien de la politique de l'éducation nationale
+</span><span class="ansi1 ansi32">2 038 168 190,34
+</span><span class="ansi1 ansi32">6 768 300,66
+</span><span class="ansi1 ansi32">- Enseignement technique agricole
+</span><span class="ansi1 ansi32">1 294 875 038,51
+</span><span class="ansi1 ansi32">501 780,49
+</span><span class="ansi1 ansi32">Gestion des finances publiques et des ressources humaines
+</span><span class="ansi1 ansi32">11 108 196 966,28
+</span><span class="ansi1 ansi32">209 472 812,72
+</span><span class="ansi1 ansi32">- Gestion fiscale et financière de l'État et du secteur public local
+</span><span class="ansi1 ansi32">8 216 611 654,37
+</span><span class="ansi1 ansi32">174 324 093,63
+</span><span class="ansi1 ansi32">- Stratégie des finances publiques et modernisation de l'État
+</span><span class="ansi1 ansi32">218 526 769,35
+</span><span class="ansi1 ansi32">1 782 763,65
+</span><span class="ansi1 ansi32">- Conduite et pilotage des politiques économique et financière
+</span><span class="ansi1 ansi32">939 906 621,30
+</span><span class="ansi1 ansi32">31 153 486,70
+</span><span class="ansi1 ansi32">- Facilitation et sécurisation des échanges
+</span><span class="ansi1 ansi32">1 526 404 993,63
+</span><span class="ansi1 ansi32">2 211 468,37
+</span><span class="ansi1 ansi32">- Fonction publique
+</span><span class="ansi1 ansi32">206 746 927,63
+</span><span class="ansi1 ansi32">1 000,37
+</span><span class="ansi1 ansi32">Immigration, asile et intégration
+</span><span class="ansi1 ansi32">599 026 613,48
+</span><span class="ansi1 ansi32">7 129 893,52
+</span><span class="ansi1 ansi32">- Immigration et asile
+</span><span class="ansi1 ansi32">455 740 088,81
+</span><span class="ansi1 ansi32">913 486,19
+</span><span class="ansi1 ansi32">- Intégration et accès à la nationalité française
+</span><span class="ansi1 ansi32">143 286 524,67
+</span><span class="ansi1 ansi32">6 216 407,33
+</span><span class="ansi1 ansi32">Justice
+</span><span class="ansi1 ansi32">7 041 270 019,06
+</span><span class="ansi1 ansi32">138 219 866,94
+</span><span class="ansi1 ansi32">- Justice judiciaire
+</span><span class="ansi1 ansi32">2 651 703 661,83
+</span><span class="ansi1 ansi32">14 196 263,17
+</span><span class="ansi1 ansi32">- Administration pénitentiaire
+</span><span class="ansi1 ansi32">2 920 680 019,44
+</span><span class="ansi1 ansi32">34 191 367,56
+</span><span class="ansi1 ansi32">- Protection judiciaire de la jeunesse
+</span><span class="ansi1 ansi32">770 966 994,55
+</span><span class="ansi1 ansi32">73 530 681,45
+</span><span class="ansi1 ansi32">- Accès au droit et à la justice
+</span><span class="ansi1 ansi32">445 025 393,84
+</span><span class="ansi1 ansi32">47 415,16
+</span><span class="ansi1 ansi32">- Conduite et pilotage de la politique de la justice et organismes rattachés
+</span><span class="ansi1 ansi32">252 893 949,40
+</span><span class="ansi1 ansi32">16 254 139,60
+</span><span class="ansi1 ansi32">Médias
+</span><span class="ansi1 ansi32">514 508 807,55
+</span><span class="ansi1 ansi32">15 757 322,45
+</span><span class="ansi1 ansi32">- Presse
+</span><span class="ansi1 ansi32">266 316 553,55
+</span><span class="ansi1 ansi32">15 494 523,45
+</span><span class="ansi1 ansi32">- Chaîne française d'information internationale
+</span><span class="ansi1 ansi32">92 480 936,00
+</span><span class="ansi1 ansi32">- Audiovisuel extérieur
+</span><span class="ansi1 ansi32">155 711 318,00
+</span><span class="ansi1 ansi32">262 799,00
+</span><span class="ansi1 ansi32">Outre-mer
+</span><span class="ansi1 ansi32">1 868 628 411,81
+</span><span class="ansi1 ansi32">118 541 143,19
+</span><span class="ansi1 ansi32">- Emploi outre-mer
+</span><span class="ansi1 ansi32">1 222 905 085,23
+</span><span class="ansi1 ansi32">3 078 618,77
+</span><span class="ansi1 ansi32">- Conditions de vie outre-mer
+</span><span class="ansi1 ansi32">645 723 326,58
+</span><span class="ansi1 ansi32">115 462 524,42
+</span><span class="ansi1 ansi32">Pilotage de l'économie française
+</span><span class="ansi1 ansi32">858 752 898,47
+</span><span class="ansi1 ansi32">32 341 972,53
+</span><span class="ansi1 ansi32">- Statistiques et études économiques
+</span><span class="ansi1 ansi32">459 656 556,53
+</span><span class="ansi1 ansi32">1 178 324,47
+</span><span class="ansi1 ansi32">- Politique économique et de l'emploi
+</span><span class="ansi1 ansi32">399 096 341,94
+</span><span class="ansi1 ansi32">31 163 648,06
+</span><span class="ansi1 ansi32">Politique des territoires
+</span><span class="ansi1 ansi32">370 829 949,44
+</span><span class="ansi1 ansi32">73 838 738,56
+</span><span class="ansi1 ansi32">- Impulsion et coordination de la politique d'aménagement du territoire
+</span><span class="ansi1 ansi32">259 076 201,72
+</span><span class="ansi1 ansi32">34 688 085,28
+</span><span class="ansi1 ansi32">- Interventions territoriales de l'État
+</span><span class="ansi1 ansi32">111 753 747,72
+</span><span class="ansi1 ansi32">39 150 653,28
+</span><span class="ansi1 ansi32">Pouvoirs publics
+</span><span class="ansi1 ansi32">1 016 762 706,00
+</span><span class="ansi1 ansi32">90 000,00
+</span><span class="ansi1 ansi32">- Présidence de la République
+</span><span class="ansi1 ansi32">109 992 140,00
+</span><span class="ansi1 ansi32">- Assemblée nationale
+</span><span class="ansi1 ansi32">533 910 000,00
+</span><span class="ansi1 ansi32">- Sénat
+</span><span class="ansi1 ansi32">327 694 000,00
+</span><span class="ansi1 ansi32">- La Chaîne parlementaire
+</span><span class="ansi1 ansi32">28 595 000,00
+</span><span class="ansi1 ansi32">- Indemnités des représentants français au Parlement européen
+</span><span class="ansi1 ansi32">8 034 650,00
+</span><span class="ansi1 ansi32">- Conseil constitutionnel
+</span><span class="ansi1 ansi32">7 752 473,00
+</span><span class="ansi1 ansi32">- Cour de justice de la République
+</span><span class="ansi1 ansi32">784 443,00
+</span><span class="ansi1 ansi32">90 000,00
+</span><span class="ansi1 ansi32">Provisions
+</span><span class="ansi1 ansi32">15 309 234,00
+</span><span class="ansi1 ansi32">- Provision relative aux rémunérations publiques
+</span><span class="ansi1 ansi32">3 739 608,00
+</span><span class="ansi1 ansi32">- Dépenses accidentelles et imprévisibles
+</span><span class="ansi1 ansi32">11 569 626,00
+</span><span class="ansi1 ansi32">Recherche et enseignement supérieur
+</span><span class="ansi1 ansi32">22 781 269 562,48
+</span><span class="ansi1 ansi32">51 798 676,52
+</span><span class="ansi1 ansi32">- Formations supérieures et recherche universitaire
+</span><span class="ansi1 ansi32">11 110 800 765,71
+</span><span class="ansi1 ansi32">7 774 568,29
+</span><span class="ansi1 ansi32">- Vie étudiante
+</span><span class="ansi1 ansi32">1 948 898 013,43
+</span><span class="ansi1 ansi32">752 549,57
+</span><span class="ansi1 ansi32">- Recherches scientifiques et technologiques pluridisciplinaires
+</span><span class="ansi1 ansi32">4 789 598 628,94
+</span><span class="ansi1 ansi32">1 214 754,06
+</span><span class="ansi1 ansi32">- Recherche dans le domaine de la gestion des milieux et des ressources
+</span><span class="ansi1 ansi32">1 179 582 252,00
+</span><span class="ansi1 ansi32">657,00
+</span><span class="ansi1 ansi32">- Recherche spatiale
+</span><span class="ansi1 ansi32">1 238 088 174,00
+</span><span class="ansi1 ansi32">- Recherche dans le domaine des risques et des pollutions
+</span><span class="ansi1 ansi32">224 565 130,53
+</span><span class="ansi1 ansi32">2 620 410,47
+</span><span class="ansi1 ansi32">- Recherche dans le domaine de l'énergie
+</span><span class="ansi1 ansi32">640 743 979,99
+</span><span class="ansi1 ansi32">993 696,01
+</span><span class="ansi1 ansi32">- Recherche industrielle
+</span><span class="ansi1 ansi32">661 627 534,15
+</span><span class="ansi1 ansi32">20 141 842,85
+</span><span class="ansi1 ansi32">- Recherche dans le domaine des transports, de l'équipement et de l'habitat
+</span><span class="ansi1 ansi32">378 116 743,26
+</span><span class="ansi1 ansi32">14 210 984,74
+</span><span class="ansi1 ansi32">- Recherche duale (civile et militaire)
+</span><span class="ansi1 ansi32">195 049 076,00
+</span><span class="ansi1 ansi32">- Recherche culturelle et culture scientifique
+</span><span class="ansi1 ansi32">143 039 751,58
+</span><span class="ansi1 ansi32">2 898 980,42
+</span><span class="ansi1 ansi32">- Enseignement supérieur et recherche agricoles
+</span><span class="ansi1 ansi32">271 159 512,89
+</span><span class="ansi1 ansi32">1 190 233,11
+</span><span class="ansi1 ansi32">Régimes sociaux et de retraite
+</span><span class="ansi1 ansi32">5 407 723 682,29
+</span><span class="ansi1 ansi32">3 550 717,71
+</span><span class="ansi1 ansi32">- Régimes sociaux et de retraite des transports terrestres
+</span><span class="ansi1 ansi32">3 581 935 949,31
+</span><span class="ansi1 ansi32">994 050,69
+</span><span class="ansi1 ansi32">- Régimes de retraite et de sécurité sociale des marins
+</span><span class="ansi1 ansi32">756 200 000,00
+</span><span class="ansi1 ansi32">- Régime de retraite des mines, de la SEITA et divers
+</span><span class="ansi1 ansi32">1 069 587 732,98
+</span><span class="ansi1 ansi32">2 556 667,02
+</span><span class="ansi1 ansi32">Relations avec les collectivités territoriales
+</span><span class="ansi1 ansi32">2 336 570 455,00
+</span><span class="ansi1 ansi32">76 652 710,00
+</span><span class="ansi1 ansi32">- Concours financiers aux communes et groupements de communes
+</span><span class="ansi1 ansi32">698 145 985,12
+</span><span class="ansi1 ansi32">46 984 811,88
+</span><span class="ansi1 ansi32">- Concours financiers aux départements
+</span><span class="ansi1 ansi32">470 976 622,11
+</span><span class="ansi1 ansi32">15 095 944,89
+</span><span class="ansi1 ansi32">- Concours financiers aux régions
+</span><span class="ansi1 ansi32">837 246 691,00
+</span><span class="ansi1 ansi32">- Concours spécifiques et administration
+</span><span class="ansi1 ansi32">330 201 156,77
+</span><span class="ansi1 ansi32">14 571 953,23
+</span><span class="ansi1 ansi32">Remboursements et dégrèvements
+</span><span class="ansi1 ansi32">92 174 205 391,40
+</span><span class="ansi1 ansi32">1 101 505 391,40
+</span><span class="ansi1 ansi32">- Remboursements et dégrèvements d'impôts d'État (crédits évaluatifs)
+</span><span class="ansi1 ansi32">75 961 506 363,13
+</span><span class="ansi1 ansi32">1 078 806 363,13
+</span><span class="ansi1 ansi32">- Remboursements et dégrèvements d'impôts locaux (crédits évaluatifs)
+</span><span class="ansi1 ansi32">16 212 699 028,27
+</span><span class="ansi1 ansi32">22 699 028,27
+</span><span class="ansi1 ansi32">Santé
+</span><span class="ansi1 ansi32">408 219 893,50
+</span><span class="ansi1 ansi32">2 740 011,50
+</span><span class="ansi1 ansi32">- Santé publique et prévention
+</span><span class="ansi1 ansi32">270 679 804,83
+</span><span class="ansi1 ansi32">1 565 652,17
+</span><span class="ansi1 ansi32">- Offre de soins et qualité du système de soins
+</span><span class="ansi1 ansi32">110 163 579,31
+</span><span class="ansi1 ansi32">564 569,69
+</span><span class="ansi1 ansi32">- Drogue et toxicomanie
+</span><span class="ansi1 ansi32">27 376 509,36
+</span><span class="ansi1 ansi32">609 789,64
+</span><span class="ansi1 ansi32">Sécurité
+</span><span class="ansi1 ansi32">15 963 783 911,21
+</span><span class="ansi1 ansi32">165 526 872,79
+</span><span class="ansi1 ansi32">- Police nationale
+</span><span class="ansi1 ansi32">8 342 192 974,06
+</span><span class="ansi1 ansi32">140 665 986,94
+</span><span class="ansi1 ansi32">- Gendarmerie nationale
+</span><span class="ansi1 ansi32">7 621 590 937,15
+</span><span class="ansi1 ansi32">24 860 885,85
+</span><span class="ansi1 ansi32">Sécurité civile
+</span><span class="ansi1 ansi32">417 622 069,95
+</span><span class="ansi1 ansi32">3 670 491,05
+</span><span class="ansi1 ansi32">- Interventions des services opérationnels
+</span><span class="ansi1 ansi32">244 629 061,70
+</span><span class="ansi1 ansi32">0,30
+</span><span class="ansi1 ansi32">- Coordination des moyens de secours
+</span><span class="ansi1 ansi32">172 993 008,25
+</span><span class="ansi1 ansi32">3 670 490,75
+</span><span class="ansi1 ansi32">Sécurité sanitaire
+</span><span class="ansi1 ansi32">775 531 638,61
+</span><span class="ansi1 ansi32">9 287 215,39
+</span><span class="ansi1 ansi32">- Veille et sécurité sanitaires
+</span><span class="ansi1 ansi32">177 854 296,13
+</span><span class="ansi1 ansi32">4 878 401,87
+</span><span class="ansi1 ansi32">- Sécurité et qualité sanitaires de l'alimentation
+</span><span class="ansi1 ansi32">597 677 342,48
+</span><span class="ansi1 ansi32">4 408 813,52
+</span><span class="ansi1 ansi32">Solidarité, insertion et égalité des chances
+</span><span class="ansi1 ansi32">13 086 863 556,30
+</span><span class="ansi1 ansi32">134 432 947,70
+</span><span class="ansi1 ansi32">- Prévention de l'exclusion et insertion des personnes vulnérables
+</span><span class="ansi1 ansi32">1 609 606 050,88
+</span><span class="ansi1 ansi32">52 781 378,12
+</span><span class="ansi1 ansi32">- Lutte contre la pauvreté : expérimentations
+</span><span class="ansi1 ansi32">36 757 604,11
+</span><span class="ansi1 ansi32">4 326 726,89
+</span><span class="ansi1 ansi32">- Actions en faveur des familles vulnérables
+</span><span class="ansi1 ansi32">1 333 538 049,53
+</span><span class="ansi1 ansi32">767 470,47
+</span><span class="ansi1 ansi32">- Handicap et dépendance
+</span><span class="ansi1 ansi32">8 417 576 742,84
+</span><span class="ansi1 ansi32">62 214 783,16
+</span><span class="ansi1 ansi32">- Protection maladie
+</span><span class="ansi1 ansi32">607 085 505,43
+</span><span class="ansi1 ansi32">1 037,57
+</span><span class="ansi1 ansi32">- Égalité entre les hommes et les femmes
+</span><span class="ansi1 ansi32">27 069 660,30
+</span><span class="ansi1 ansi32">321 223,70
+</span><span class="ansi1 ansi32">- Conduite et soutien des politiques sanitaires et sociales
+</span><span class="ansi1 ansi32">1 055 229 943,21
+</span><span class="ansi1 ansi32">14 020 327,79
+</span><span class="ansi1 ansi32">Sport, jeunesse et vie associative
+</span><span class="ansi1 ansi32">744 518 637,05
+</span><span class="ansi1 ansi32">8 899 164,95
+</span><span class="ansi1 ansi32">- Sport
+</span><span class="ansi1 ansi32">182 926 866,63
+</span><span class="ansi1 ansi32">2 532 956,37
+</span><span class="ansi1 ansi32">- Jeunesse et vie associative
+</span><span class="ansi1 ansi32">125 798 203,17
+</span><span class="ansi1 ansi32">2 422 189,83
+</span><span class="ansi1 ansi32">- Conduite et pilotage de la politique du sport, de la jeunesse et de la vie associative
+</span><span class="ansi1 ansi32">435 793 567,25
+</span><span class="ansi1 ansi32">3 944 018,75
+</span><span class="ansi1 ansi32">Travail et emploi
+</span><span class="ansi1 ansi32">12 861 101 611,99
+</span><span class="ansi1 ansi32">40 844 696,01
+</span><span class="ansi1 ansi32">- Accès et retour à l'emploi
+</span><span class="ansi1 ansi32">6 630 448 307,77
+</span><span class="ansi1 ansi32">32 522 941,23
+</span><span class="ansi1 ansi32">- Accompagnement des mutations économiques et développement de l'emploi
+</span><span class="ansi1 ansi32">5 336 666 633,86
+</span><span class="ansi1 ansi32">0,14
+</span><span class="ansi1 ansi32">- Amélioration de la qualité de l'emploi et des relations du travail
+</span><span class="ansi1 ansi32">158 468 184,79
+</span><span class="ansi1 ansi32">2 690 514,21
+</span><span class="ansi1 ansi32">- Conception, gestion et évaluation des politiques de l'emploi et du travail
+</span><span class="ansi1 ansi32">735 518 485,57
+</span><span class="ansi1 ansi32">5 631 240,43
+</span><span class="ansi1 ansi32">Ville et logement
+</span><span class="ansi1 ansi32">7 422 527 680,05
+</span><span class="ansi1 ansi32">80 018 253,95
+</span><span class="ansi1 ansi32">- Rénovation urbaine
+</span><span class="ansi1 ansi32">358 014 393,06
+</span><span class="ansi1 ansi32">4 051 885,94
+</span><span class="ansi1 ansi32">- Équité sociale et territoriale et soutien
+</span><span class="ansi1 ansi32">760 770 896,76
+</span><span class="ansi1 ansi32">3 193 236,24
+</span><span class="ansi1 ansi32">- Aide à l'accès au logement
+</span><span class="ansi1 ansi32">5 094 312 057,00
+</span><span class="ansi1 ansi32">- Développement et amélioration de l'offre de logement
+</span><span class="ansi1 ansi32">1 209 430 333,23
+</span><span class="ansi1 ansi32">72 773 131,77
+</span><span class="ansi1 ansi32">Total
+</span><span class="ansi1 ansi32">371 757 920 252,82
+</span><span class="ansi1 ansi32">1 101 505 391,40
+</span><span class="ansi1 ansi32">3 223 186 817,58
+</span><span class="ansi1 ansi32">II. - Le montant des dépenses relatives au budget général au titre de l'année 2008 est arrêté par missions et programmes aux sommes mentionnées dans le tableau ci-après. Les crédits de paiement ouverts sont modifiés comme indiqué dans ce tableau.
+</span><span class="ansi1 ansi32">(En euros)
+</span><span class="ansi1 ansi32">Ajustements de la loi de règlement
+</span><span class="ansi1 ansi32">Désignation des missions et des programmes
+</span><span class="ansi1 ansi32">Dépenses
+</span><span class="ansi1 ansi32">Ouvertures de crédits complémentaires
+</span><span class="ansi1 ansi32">Annulations de crédits non consommés et non reportés
+</span><span class="ansi1 ansi32">Action extérieure de l'État
+</span><span class="ansi1 ansi32">2 432 557 374,89
+</span><span class="ansi1 ansi32">39 418,11
+</span><span class="ansi1 ansi32">- Action de la France en Europe et dans le monde
+</span><span class="ansi1 ansi32">1 657 920 422,60
+</span><span class="ansi1 ansi32">0,40
+</span><span class="ansi1 ansi32">- Rayonnement culturel et scientifique
+</span><span class="ansi1 ansi32">474 250 863,60
+</span><span class="ansi1 ansi32">39 415,40
+</span><span class="ansi1 ansi32">- Français à l'étranger, affaires consulaires et sécurité des personnes
+</span><span class="ansi1 ansi32">300 386 088,69
+</span><span class="ansi1 ansi32">2,31
+</span><span class="ansi1 ansi32">Administration générale et territoriale de l'État
+</span><span class="ansi1 ansi32">2 623 618 115,19
+</span><span class="ansi1 ansi32">3 426 599,81
+</span><span class="ansi1 ansi32">- Administration territoriale
+</span><span class="ansi1 ansi32">1 641 702 586,37
+</span><span class="ansi1 ansi32">1 434 196,63
+</span><span class="ansi1 ansi32">- Administration territoriale : expérimentation Chorus
+</span><span class="ansi1 ansi32">105 560 020,54
+</span><span class="ansi1 ansi32">0,46
+</span><span class="ansi1 ansi32">- Vie politique, cultuelle et associative
+</span><span class="ansi1 ansi32">349 796 724,23
+</span><span class="ansi1 ansi32">1 711 218,77
+</span><span class="ansi1 ansi32">- Conduite et pilotage des politiques de l'intérieur
+</span><span class="ansi1 ansi32">526 558 784,05
+</span><span class="ansi1 ansi32">281 183,95
+</span><span class="ansi1 ansi32">Agriculture, pêche, forêt et affaires rurales
+</span><span class="ansi1 ansi32">3 085 471 847,64
+</span><span class="ansi1 ansi32">1,36
+</span><span class="ansi1 ansi32">- Gestion durable de l'agriculture, de la pêche et développement rural
+</span><span class="ansi1 ansi32">1 087 954 517,40
+</span><span class="ansi1 ansi32">0,60
+</span><span class="ansi1 ansi32">- Valorisation des produits, orientation et régulation des marchés
+</span><span class="ansi1 ansi32">802 131 385,73
+</span><span class="ansi1 ansi32">0,27
+</span><span class="ansi1 ansi32">- Forêt
+</span><span class="ansi1 ansi32">305 037 167,60
+</span><span class="ansi1 ansi32">0,40
+</span><span class="ansi1 ansi32">- Conduite et pilotage des politiques de l'agriculture
+</span><span class="ansi1 ansi32">890 348 776,91
+</span><span class="ansi1 ansi32">0,09
+</span><span class="ansi1 ansi32">Aide publique au développement
+</span><span class="ansi1 ansi32">2 996 805 525,13
+</span><span class="ansi1 ansi32">508 818,87
+</span><span class="ansi1 ansi32">- Aide économique et financière au développement
+</span><span class="ansi1 ansi32">942 703 556,65
+</span><span class="ansi1 ansi32">0,35
+</span><span class="ansi1 ansi32">- Solidarité à l'égard des pays en développement
+</span><span class="ansi1 ansi32">2 031 216 339,08
+</span><span class="ansi1 ansi32">0,92
+</span><span class="ansi1 ansi32">- Codéveloppement
+</span><span class="ansi1 ansi32">22 885 629,40
+</span><span class="ansi1 ansi32">508 817,60
+</span><span class="ansi1 ansi32">Anciens combattants, mémoire et liens avec la Nation
+</span><span class="ansi1 ansi32">3 683 135 300,00
+</span><span class="ansi1 ansi32">3,00
+</span><span class="ansi1 ansi32">- Liens entre la Nation et son armée
+</span><span class="ansi1 ansi32">252 645 222,40
+</span><span class="ansi1 ansi32">0,60
+</span><span class="ansi1 ansi32">- Mémoire, reconnaissance et réparation en faveur du monde combattant
+</span><span class="ansi1 ansi32">3 291 588 780,08
+</span><span class="ansi1 ansi32">0,92
+</span><span class="ansi1 ansi32">- Indemnisation des victimes des persécutions antisémites et des actes de barbarie pendant la seconde guerre mondiale
+</span><span class="ansi1 ansi32">138 901 297,52
+</span><span class="ansi1 ansi32">1,48
+</span><span class="ansi1 ansi32">Conseil et contrôle de l'État
+</span><span class="ansi1 ansi32">490 779 218,68
+</span><span class="ansi1 ansi32">1 596 091,32
+</span><span class="ansi1 ansi32">- Conseil d'État et autres juridictions administratives
+</span><span class="ansi1 ansi32">263 542 327,25
+</span><span class="ansi1 ansi32">1 190 059,75
+</span><span class="ansi1 ansi32">- Conseil économique et social
+</span><span class="ansi1 ansi32">35 898 965,00
+</span><span class="ansi1 ansi32">406 031,00
+</span><span class="ansi1 ansi32">- Cour des comptes et autres juridictions financières
+</span><span class="ansi1 ansi32">191 337 926,43
+</span><span class="ansi1 ansi32">0,57
+</span><span class="ansi1 ansi32">Culture
+</span><span class="ansi1 ansi32">2 818 597 389,62
+</span><span class="ansi1 ansi32">422 547,38
+</span><span class="ansi1 ansi32">- Patrimoines
+</span><span class="ansi1 ansi32">1 183 606 554,55
+</span><span class="ansi1 ansi32">107 733,45
+</span><span class="ansi1 ansi32">- Création
+</span><span class="ansi1 ansi32">811 130 300,30
+</span><span class="ansi1 ansi32">294 681,70
+</span><span class="ansi1 ansi32">- Transmission des savoirs et démocratisation de la culture
+</span><span class="ansi1 ansi32">823 860 534,77
+</span><span class="ansi1 ansi32">20 132,23
+</span><span class="ansi1 ansi32">Défense
+</span><span class="ansi1 ansi32">37 614 678 539,68
+</span><span class="ansi1 ansi32">15 325 184,32
+</span><span class="ansi1 ansi32">- Environnement et prospective de la politique de défense
+</span><span class="ansi1 ansi32">1 664 900 826,17
+</span><span class="ansi1 ansi32">669 620,83
+</span><span class="ansi1 ansi32">- Préparation et emploi des forces
+</span><span class="ansi1 ansi32">22 238 943 887,06
+</span><span class="ansi1 ansi32">0,94
+</span><span class="ansi1 ansi32">- Soutien de la politique de la défense
+</span><span class="ansi1 ansi32">3 364 720 664,89
+</span><span class="ansi1 ansi32">14 655 562,11
+</span><span class="ansi1 ansi32">- Équipement des forces
+</span><span class="ansi1 ansi32">10 346 113 161,56
+</span><span class="ansi1 ansi32">0,44
+</span><span class="ansi1 ansi32">Développement et régulation économiques
+</span><span class="ansi1 ansi32">1 508 057 339,21
+</span><span class="ansi1 ansi32">7 828 983,79
+</span><span class="ansi1 ansi32">- Développement des entreprises et des services
+</span><span class="ansi1 ansi32">1 102 944 226,86
+</span><span class="ansi1 ansi32">1 679 717,14
+</span><span class="ansi1 ansi32">- Tourisme
+</span><span class="ansi1 ansi32">101 916 202,50
+</span><span class="ansi1 ansi32">2 937 650,50
+</span><span class="ansi1 ansi32">- Régulation économique
+</span><span class="ansi1 ansi32">303 196 909,85
+</span><span class="ansi1 ansi32">3 211 616,15
+</span><span class="ansi1 ansi32">Direction de l'action du Gouvernement
+</span><span class="ansi1 ansi32">503 467 287,70
+</span><span class="ansi1 ansi32">12 327 039,30
+</span><span class="ansi1 ansi32">- Coordination du travail gouvernemental
+</span><span class="ansi1 ansi32">392 958 750,33
+</span><span class="ansi1 ansi32">6 086 722,67
+</span><span class="ansi1 ansi32">- Présidence française de l'Union européenne
+</span><span class="ansi1 ansi32">110 508 537,37
+</span><span class="ansi1 ansi32">6 240 316,63
+</span><span class="ansi1 ansi32">Écologie, développement et aménagement durables
+</span><span class="ansi1 ansi32">10 527 434 751,31
+</span><span class="ansi1 ansi32">37 930 180,69
+</span><span class="ansi1 ansi32">- Réseau routier national
+</span><span class="ansi1 ansi32">1 824 158 878,85
+</span><span class="ansi1 ansi32">0,15
+</span><span class="ansi1 ansi32">- Sécurité routière
+</span><span class="ansi1 ansi32">94 731 102,86
+</span><span class="ansi1 ansi32">727 507,14
+</span><span class="ansi1 ansi32">- Transports terrestres et maritimes
+</span><span class="ansi1 ansi32">2 337 092 215,85
+</span><span class="ansi1 ansi32">6 266 326,15
+</span><span class="ansi1 ansi32">- Passifs financiers ferroviaires
+</span><span class="ansi1 ansi32">686 200 000,00
+</span><span class="ansi1 ansi32">- Sécurité et affaires maritimes
+</span><span class="ansi1 ansi32">170 419 702,89
+</span><span class="ansi1 ansi32">2 745 654,11
+</span><span class="ansi1 ansi32">- Transports aériens
+</span><span class="ansi1 ansi32">72 369 724,60
+</span><span class="ansi1 ansi32">1 499 298,40
+</span><span class="ansi1 ansi32">- Météorologie
+</span><span class="ansi1 ansi32">174 335 532,00
+</span><span class="ansi1 ansi32">- Aménagement, urbanisme et ingénierie publique
+</span><span class="ansi1 ansi32">67 734 445,84
+</span><span class="ansi1 ansi32">2 003 736,16
+</span><span class="ansi1 ansi32">- Information géographique et cartographique
+</span><span class="ansi1 ansi32">60 981 812,61
+</span><span class="ansi1 ansi32">154 553,39
+</span><span class="ansi1 ansi32">- Protection de l'environnement et prévention des risques
+</span><span class="ansi1 ansi32">392 876 437,65
+</span><span class="ansi1 ansi32">8 518 199,35
+</span><span class="ansi1 ansi32">- Énergie et matières premières
+</span><span class="ansi1 ansi32">848 477 212,50
+</span><span class="ansi1 ansi32">7 364 388,50
+</span><span class="ansi1 ansi32">- Conduite et pilotage des politiques de l'écologie, du développement et de l'aménagement durables
+</span><span class="ansi1 ansi32">3 798 057 685,66
+</span><span class="ansi1 ansi32">8 650 517,34
+</span><span class="ansi1 ansi32">Engagements financiers de l'État
+</span><span class="ansi1 ansi32">46 198 696 438,61
+</span><span class="ansi1 ansi32">785 765 882,39
+</span><span class="ansi1 ansi32">- Charge de la dette et trésorerie de l'État (crédits évaluatifs)
+</span><span class="ansi1 ansi32">44 464 122 116,49
+</span><span class="ansi1 ansi32">731 877 883,51
+</span><span class="ansi1 ansi32">- Appels en garantie de l'État (crédits évaluatifs)
+</span><span class="ansi1 ansi32">233 981 526,65
+</span><span class="ansi1 ansi32">53 668 473,35
+</span><span class="ansi1 ansi32">- Épargne
+</span><span class="ansi1 ansi32">1 278 799 975,29
+</span><span class="ansi1 ansi32">24,71
+</span><span class="ansi1 ansi32">- Majoration de rentes
+</span><span class="ansi1 ansi32">221 792 820,18
+</span><span class="ansi1 ansi32">219 500,82
+</span><span class="ansi1 ansi32">Enseignement scolaire
+</span><span class="ansi1 ansi32">59 163 588 281,42
+</span><span class="ansi1 ansi32">9 809 222,58
+</span><span class="ansi1 ansi32">- Enseignement scolaire public du premier degré
+</span><span class="ansi1 ansi32">16 773 643 393,80
+</span><span class="ansi1 ansi32">1 879 207,20
+</span><span class="ansi1 ansi32">- Enseignement scolaire public du second degré
+</span><span class="ansi1 ansi32">28 321 905 780,43
+</span><span class="ansi1 ansi32">3 971 568,57
+</span><span class="ansi1 ansi32">- Vie de l'élève
+</span><span class="ansi1 ansi32">3 868 668 652,43
+</span><span class="ansi1 ansi32">550 903,57
+</span><span class="ansi1 ansi32">- Enseignement privé du premier et du second degrés
+</span><span class="ansi1 ansi32">6 920 655 535,96
+</span><span class="ansi1 ansi32">1 619 192,04
+</span><span class="ansi1 ansi32">- Soutien de la politique de l'éducation nationale
+</span><span class="ansi1 ansi32">2 022 131 201,47
+</span><span class="ansi1 ansi32">1 788 350,53
+</span><span class="ansi1 ansi32">- Enseignement technique agricole
+</span><span class="ansi1 ansi32">1 256 583 717,33
+</span><span class="ansi1 ansi32">0,67
+</span><span class="ansi1 ansi32">Gestion des finances publiques et des ressources humaines
+</span><span class="ansi1 ansi32">11 107 073 327,81
+</span><span class="ansi1 ansi32">1 856 540,19
+</span><span class="ansi1 ansi32">- Gestion fiscale et financière de l'État et du secteur public local
+</span><span class="ansi1 ansi32">8 255 027 541,61
+</span><span class="ansi1 ansi32">77 186,39
+</span><span class="ansi1 ansi32">- Stratégie des finances publiques et modernisation de l'État
+</span><span class="ansi1 ansi32">245 256 287,24
+</span><span class="ansi1 ansi32">20 372,76
+</span><span class="ansi1 ansi32">- Conduite et pilotage des politiques économique et financière
+</span><span class="ansi1 ansi32">861 967 385,35
+</span><span class="ansi1 ansi32">0,65
+</span><span class="ansi1 ansi32">- Facilitation et sécurisation des échanges
+</span><span class="ansi1 ansi32">1 531 096 158,23
+</span><span class="ansi1 ansi32">1 745 420,77
+</span><span class="ansi1 ansi32">- Fonction publique
+</span><span class="ansi1 ansi32">213 725 955,38
+</span><span class="ansi1 ansi32">13 559,62
+</span><span class="ansi1 ansi32">Immigration, asile et intégration
+</span><span class="ansi1 ansi32">583 773 665,48
+</span><span class="ansi1 ansi32">6 048 154,52
+</span><span class="ansi1 ansi32">- Immigration et asile
+</span><span class="ansi1 ansi32">441 681 056,84
+</span><span class="ansi1 ansi32">13 045,16
+</span><span class="ansi1 ansi32">- Intégration et accès à la nationalité française
+</span><span class="ansi1 ansi32">142 092 608,64
+</span><span class="ansi1 ansi32">6 035 109,36
+</span><span class="ansi1 ansi32">Justice
+</span><span class="ansi1 ansi32">6 376 690 001,24
+</span><span class="ansi1 ansi32">3,76
+</span><span class="ansi1 ansi32">- Justice judiciaire
+</span><span class="ansi1 ansi32">2 655 705 502,40
+</span><span class="ansi1 ansi32">0,60
+</span><span class="ansi1 ansi32">- Administration pénitentiaire
+</span><span class="ansi1 ansi32">2 369 064 201,22
+</span><span class="ansi1 ansi32">0,78
+</span><span class="ansi1 ansi32">- Protection judiciaire de la jeunesse
+</span><span class="ansi1 ansi32">776 214 705,18
+</span><span class="ansi1 ansi32">0,82
+</span><span class="ansi1 ansi32">- Accès au droit et à la justice
+</span><span class="ansi1 ansi32">325 587 400,02
+</span><span class="ansi1 ansi32">0,98
+</span><span class="ansi1 ansi32">- Conduite et pilotage de la politique de la justice et organismes rattachés
+</span><span class="ansi1 ansi32">250 118 192,42
+</span><span class="ansi1 ansi32">0,58
+</span><span class="ansi1 ansi32">Médias
+</span><span class="ansi1 ansi32">522 247 196,21
+</span><span class="ansi1 ansi32">1 552 111,79
+</span><span class="ansi1 ansi32">- Presse
+</span><span class="ansi1 ansi32">274 054 942,21
+</span><span class="ansi1 ansi32">1 552 111,79
+</span><span class="ansi1 ansi32">- Chaîne française d'information internationale
+</span><span class="ansi1 ansi32">92 480 936,00
+</span><span class="ansi1 ansi32">- Audiovisuel extérieur
+</span><span class="ansi1 ansi32">155 711 318,00
+</span><span class="ansi1 ansi32">Outre-mer
+</span><span class="ansi1 ansi32">1 977 434 701,08
+</span><span class="ansi1 ansi32">23 102,92
+</span><span class="ansi1 ansi32">- Emploi outre-mer
+</span><span class="ansi1 ansi32">1 234 488 254,14
+</span><span class="ansi1 ansi32">18 928,86
+</span><span class="ansi1 ansi32">- Conditions de vie outre-mer
+</span><span class="ansi1 ansi32">742 946 446,94
+</span><span class="ansi1 ansi32">4 174,06
+</span><span class="ansi1 ansi32">Pilotage de l'économie française
+</span><span class="ansi1 ansi32">868 395 784,66
+</span><span class="ansi1 ansi32">13 118 950,34
+</span><span class="ansi1 ansi32">- Statistiques et études économiques
+</span><span class="ansi1 ansi32">463 809 421,31
+</span><span class="ansi1 ansi32">1 102 990,69
+</span><span class="ansi1 ansi32">- Politique économique et de l'emploi
+</span><span class="ansi1 ansi32">404 586 363,35
+</span><span class="ansi1 ansi32">12 015 959,65
+</span><span class="ansi1 ansi32">Politique des territoires
+</span><span class="ansi1 ansi32">479 321 162,67
+</span><span class="ansi1 ansi32">4 901 950,33
+</span><span class="ansi1 ansi32">- Impulsion et coordination de la politique d'aménagement du territoire
+</span><span class="ansi1 ansi32">377 767 245,38
+</span><span class="ansi1 ansi32">2 494 713,62
+</span><span class="ansi1 ansi32">- Interventions territoriales de l'État
+</span><span class="ansi1 ansi32">101 553 917,29
+</span><span class="ansi1 ansi32">2 407 236,71
+</span><span class="ansi1 ansi32">Pouvoirs publics
+</span><span class="ansi1 ansi32">1 016 686 792,26
+</span><span class="ansi1 ansi32">165 913,74
+</span><span class="ansi1 ansi32">- Présidence de la République
+</span><span class="ansi1 ansi32">109 992 140,00
+</span><span class="ansi1 ansi32">- Assemblée nationale
+</span><span class="ansi1 ansi32">533 910 000,00
+</span><span class="ansi1 ansi32">- Sénat
+</span><span class="ansi1 ansi32">327 694 000,00
+</span><span class="ansi1 ansi32">- La Chaîne parlementaire
+</span><span class="ansi1 ansi32">28 595 000,00
+</span><span class="ansi1 ansi32">- Indemnités des représentants français au Parlement européen
+</span><span class="ansi1 ansi32">8 034 650,00
+</span><span class="ansi1 ansi32">- Conseil constitutionnel
+</span><span class="ansi1 ansi32">7 752 473,00
+</span><span class="ansi1 ansi32">- Cour de justice de la République
+</span><span class="ansi1 ansi32">708 529,26
+</span><span class="ansi1 ansi32">165 913,74
+</span><span class="ansi1 ansi32">Provisions
+</span><span class="ansi1 ansi32">7 809 234,00
+</span><span class="ansi1 ansi32">- Provision relative aux rémunérations publiques
+</span><span class="ansi1 ansi32">3 739 608,00
+</span><span class="ansi1 ansi32">- Dépenses accidentelles et imprévisibles
+</span><span class="ansi1 ansi32">4 069 626,00
+</span><span class="ansi1 ansi32">Recherche et enseignement supérieur
+</span><span class="ansi1 ansi32">22 799 532 969,59
+</span><span class="ansi1 ansi32">25 705 297,41
+</span><span class="ansi1 ansi32">- Formations supérieures et recherche universitaire
+</span><span class="ansi1 ansi32">11 355 338 310,49
+</span><span class="ansi1 ansi32">10 627 564,51
+</span><span class="ansi1 ansi32">- Vie étudiante
+</span><span class="ansi1 ansi32">1 934 318 817,04
+</span><span class="ansi1 ansi32">860 266,96
+</span><span class="ansi1 ansi32">- Recherches scientifiques et technologiques pluridisciplinaires
+</span><span class="ansi1 ansi32">4 783 029 540,35
+</span><span class="ansi1 ansi32">13 610 305,65
+</span><span class="ansi1 ansi32">- Recherche dans le domaine de la gestion des milieux et des ressources
+</span><span class="ansi1 ansi32">1 209 082 332,00
+</span><span class="ansi1 ansi32">1,00
+</span><span class="ansi1 ansi32">- Recherche spatiale
+</span><span class="ansi1 ansi32">1 238 088 174,00
+</span><span class="ansi1 ansi32">- Recherche dans le domaine des risques et des pollutions
+</span><span class="ansi1 ansi32">227 791 225,62
+</span><span class="ansi1 ansi32">4,38
+</span><span class="ansi1 ansi32">- Recherche dans le domaine de l'énergie
+</span><span class="ansi1 ansi32">640 743 979,99
+</span><span class="ansi1 ansi32">254 904,01
+</span><span class="ansi1 ansi32">- Recherche industrielle
+</span><span class="ansi1 ansi32">449 727 357,84
+</span><span class="ansi1 ansi32">10,16
+</span><span class="ansi1 ansi32">- Recherche dans le domaine des transports, de l'équipement et de l'habitat
+</span><span class="ansi1 ansi32">348 128 899,41
+</span><span class="ansi1 ansi32">2 252,59
+</span><span class="ansi1 ansi32">- Recherche duale (civile et militaire)
+</span><span class="ansi1 ansi32">195 049 076,00
+</span><span class="ansi1 ansi32">- Recherche culturelle et culture scientifique
+</span><span class="ansi1 ansi32">143 003 502,89
+</span><span class="ansi1 ansi32">349 987,11
+</span><span class="ansi1 ansi32">- Enseignement supérieur et recherche agricoles
+</span><span class="ansi1 ansi32">275 231 753,96
+</span><span class="ansi1 ansi32">1,04
+</span><span class="ansi1 ansi32">Régimes sociaux et de retraite
+</span><span class="ansi1 ansi32">5 407 789 649,21
+</span><span class="ansi1 ansi32">4 434 857,79
+</span><span class="ansi1 ansi32">- Régimes sociaux et de retraite des transports terrestres
+</span><span class="ansi1 ansi32">3 581 998 019,21
+</span><span class="ansi1 ansi32">1 882 087,79
+</span><span class="ansi1 ansi32">- Régimes de retraite et de sécurité sociale des marins
+</span><span class="ansi1 ansi32">756 200 000,00
+</span><span class="ansi1 ansi32">- Régime de retraite des mines, de la SEITA et divers
+</span><span class="ansi1 ansi32">1 069 591 630,00
+</span><span class="ansi1 ansi32">2 552 770,00
+</span><span class="ansi1 ansi32">Relations avec les collectivités territoriales
+</span><span class="ansi1 ansi32">2 373 842 203,30
+</span><span class="ansi1 ansi32">10 364 924,70
+</span><span class="ansi1 ansi32">- Concours financiers aux communes et groupements de communes
+</span><span class="ansi1 ansi32">693 902 170,62
+</span><span class="ansi1 ansi32">0,38
+</span><span class="ansi1 ansi32">- Concours financiers aux départements
+</span><span class="ansi1 ansi32">473 934 206,79
+</span><span class="ansi1 ansi32">10 364 791,21
+</span><span class="ansi1 ansi32">- Concours financiers aux régions
+</span><span class="ansi1 ansi32">837 246 691,00
+</span><span class="ansi1 ansi32">133,00
+</span><span class="ansi1 ansi32">- Concours spécifiques et administration
+</span><span class="ansi1 ansi32">368 759 134,89
+</span><span class="ansi1 ansi32">0,11
+</span><span class="ansi1 ansi32">Remboursements et dégrèvements
+</span><span class="ansi1 ansi32">92 174 205 391,40
+</span><span class="ansi1 ansi32">1 101 505 391,40
+</span><span class="ansi1 ansi32">- Remboursements et dégrèvements d'impôts d'État (crédits évaluatifs)
+</span><span class="ansi1 ansi32">75 961 506 363,13
+</span><span class="ansi1 ansi32">1 078 806 363,13
+</span><span class="ansi1 ansi32">- Remboursements et dégrèvements d'impôts locaux (crédits évaluatifs)
+</span><span class="ansi1 ansi32">16 212 699 028,27
+</span><span class="ansi1 ansi32">22 699 028,27
+</span><span class="ansi1 ansi32">Santé
+</span><span class="ansi1 ansi32">406 902 263,95
+</span><span class="ansi1 ansi32">1 849 155,05
+</span><span class="ansi1 ansi32">- Santé publique et prévention
+</span><span class="ansi1 ansi32">270 004 858,34
+</span><span class="ansi1 ansi32">0,66
+</span><span class="ansi1 ansi32">- Offre de soins et qualité du système de soins
+</span><span class="ansi1 ansi32">110 316 980,37
+</span><span class="ansi1 ansi32">1 692 637,63
+</span><span class="ansi1 ansi32">- Drogue et toxicomanie
+</span><span class="ansi1 ansi32">26 580 425,24
+</span><span class="ansi1 ansi32">156 516,76
+</span><span class="ansi1 ansi32">Sécurité
+</span><span class="ansi1 ansi32">15 845 414 245,88
+</span><span class="ansi1 ansi32">1 094 320,12
+</span><span class="ansi1 ansi32">- Police nationale
+</span><span class="ansi1 ansi32">8 396 986 521,94
+</span><span class="ansi1 ansi32">0,06
+</span><span class="ansi1 ansi32">- Gendarmerie nationale
+</span><span class="ansi1 ansi32">7 448 427 723,94
+</span><span class="ansi1 ansi32">1 094 320,06
+</span><span class="ansi1 ansi32">Sécurité civile
+</span><span class="ansi1 ansi32">401 396 764,94
+</span><span class="ansi1 ansi32">184 002,06
+</span><span class="ansi1 ansi32">- Interventions des services opérationnels
+</span><span class="ansi1 ansi32">228 990 398,64
+</span><span class="ansi1 ansi32">25 300,36
+</span><span class="ansi1 ansi32">- Coordination des moyens de secours
+</span><span class="ansi1 ansi32">172 406 366,30
+</span><span class="ansi1 ansi32">158 701,70
+</span><span class="ansi1 ansi32">Sécurité sanitaire
+</span><span class="ansi1 ansi32">792 130 844,52
+</span><span class="ansi1 ansi32">1 275 251,48
+</span><span class="ansi1 ansi32">- Veille et sécurité sanitaires
+</span><span class="ansi1 ansi32">157 877 598,41
+</span><span class="ansi1 ansi32">1 275 250,59
+</span><span class="ansi1 ansi32">- Sécurité et qualité sanitaires de l'alimentation
+</span><span class="ansi1 ansi32">634 253 246,11
+</span><span class="ansi1 ansi32">0,89
+</span><span class="ansi1 ansi32">Solidarité, insertion et égalité des chances
+</span><span class="ansi1 ansi32">13 133 304 963,23
+</span><span class="ansi1 ansi32">4 842 465,77
+</span><span class="ansi1 ansi32">- Prévention de l'exclusion et insertion des personnes vulnérables
+</span><span class="ansi1 ansi32">1 619 509 254,54
+</span><span class="ansi1 ansi32">2 513,46
+</span><span class="ansi1 ansi32">- Lutte contre la pauvreté : expérimentations
+</span><span class="ansi1 ansi32">37 456 984,34
+</span><span class="ansi1 ansi32">3 570 615,66
+</span><span class="ansi1 ansi32">- Actions en faveur des familles vulnérables
+</span><span class="ansi1 ansi32">1 333 526 763,15
+</span><span class="ansi1 ansi32">679 909,85
+</span><span class="ansi1 ansi32">- Handicap et dépendance
+</span><span class="ansi1 ansi32">8 452 810 393,01
+</span><span class="ansi1 ansi32">0,99
+</span><span class="ansi1 ansi32">- Protection maladie
+</span><span class="ansi1 ansi32">607 080 693,05
+</span><span class="ansi1 ansi32">0,95
+</span><span class="ansi1 ansi32">- Égalité entre les hommes et les femmes
+</span><span class="ansi1 ansi32">27 200 329,46
+</span><span class="ansi1 ansi32">132 179,54
+</span><span class="ansi1 ansi32">- Conduite et soutien des politiques sanitaires et sociales
+</span><span class="ansi1 ansi32">1 055 720 545,68
+</span><span class="ansi1 ansi32">457 245,32
+</span><span class="ansi1 ansi32">Sport, jeunesse et vie associative
+</span><span class="ansi1 ansi32">764 148 966,65
+</span><span class="ansi1 ansi32">3 271 343,35
+</span><span class="ansi1 ansi32">- Sport
+</span><span class="ansi1 ansi32">200 714 908,04
+</span><span class="ansi1 ansi32">0,96
+</span><span class="ansi1 ansi32">- Jeunesse et vie associative
+</span><span class="ansi1 ansi32">127 976 994,73
+</span><span class="ansi1 ansi32">102 664,27
+</span><span class="ansi1 ansi32">- Conduite et pilotage de la politique du sport, de la jeunesse et de la vie associative
+</span><span class="ansi1 ansi32">435 457 063,88
+</span><span class="ansi1 ansi32">3 168 678,12
+</span><span class="ansi1 ansi32">Travail et emploi
+</span><span class="ansi1 ansi32">12 841 315 879,62
+</span><span class="ansi1 ansi32">543 886,38
+</span><span class="ansi1 ansi32">- Accès et retour à l'emploi
+</span><span class="ansi1 ansi32">6 646 238 227,21
+</span><span class="ansi1 ansi32">0,79
+</span><span class="ansi1 ansi32">- Accompagnement des mutations économiques et développement de l'emploi
+</span><span class="ansi1 ansi32">5 348 479 663,37
+</span><span class="ansi1 ansi32">31 209,63
+</span><span class="ansi1 ansi32">- Amélioration de la qualité de l'emploi et des relations du travail
+</span><span class="ansi1 ansi32">117 293 862,27
+</span><span class="ansi1 ansi32">512 674,73
+</span><span class="ansi1 ansi32">- Conception, gestion et évaluation des politiques de l'emploi et du travail
+</span><span class="ansi1 ansi32">729 304 126,77
+</span><span class="ansi1 ansi32">1,23
+</span><span class="ansi1 ansi32">Ville et logement
+</span><span class="ansi1 ansi32">6 890 351 346,43
+</span><span class="ansi1 ansi32">2 455 855,57
+</span><span class="ansi1 ansi32">- Rénovation urbaine
+</span><span class="ansi1 ansi32">59 221 411,64
+</span><span class="ansi1 ansi32">2 425 887,36
+</span><span class="ansi1 ansi32">- Équité sociale et territoriale et soutien
+</span><span class="ansi1 ansi32">793 724 028,33
+</span><span class="ansi1 ansi32">0,67
+</span><span class="ansi1 ansi32">- Aide à l'accès au logement
+</span><span class="ansi1 ansi32">5 094 312 057,00
+</span><span class="ansi1 ansi32">- Développement et amélioration de l'offre de logement
+</span><span class="ansi1 ansi32">943 093 849,46
+</span><span class="ansi1 ansi32">29 967,54
+</span><span class="ansi1 ansi32">Total
+</span><span class="ansi1 ansi32">370 408 845 529,21
+</span><span class="ansi1 ansi32">1 101 505 391,40
+</span><span class="ansi1 ansi32">966 477 294,19
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">5
+</span><span class="ansi1 ansi32">――――
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">I. - Le montant des autorisations d'engagement engagées sur les budgets annexes au titre de l'année 2008 est arrêté par missions et programmes aux sommes mentionnées dans le tableau ci-après. Les autorisations d'engagement ouvertes sont modifiées comme indiqué dans ce tableau.
+</span><span class="ansi1 ansi32">(En euros)
+</span><span class="ansi1 ansi32">Ajustements de la loi de règlement
+</span><span class="ansi1 ansi32">Désignation des budgets annexes
+</span><span class="ansi1 ansi32">Autorisations d'engagement engagées
+</span><span class="ansi1 ansi32">Ouvertures d'autorisations d'engagement complémentaires
+</span><span class="ansi1 ansi32">Annulations d'autorisations d'engagement non engagées et non reportées
+</span><span class="ansi1 ansi32">Contrôle et exploitation aériens
+</span><span class="ansi1 ansi32">1 698 433 970,66
+</span><span class="ansi1 ansi32">1 365 645,93
+</span><span class="ansi1 ansi32">111 607 395,27
+</span><span class="ansi1 ansi32">613. - Soutien aux prestations de l'aviation civile
+</span><span class="ansi1 ansi32">286 777 341,32
+</span><span class="ansi1 ansi32">586 453,39
+</span><span class="ansi1 ansi32">17 678 739,07
+</span><span class="ansi1 ansi32">612. - Navigation aérienne
+</span><span class="ansi1 ansi32">1 254 121 849,41
+</span><span class="ansi1 ansi32">589 846,41
+</span><span class="ansi1 ansi32">93 624 141,00
+</span><span class="ansi1 ansi32">614. - Surveillance et certification
+</span><span class="ansi1 ansi32">84 418 414,45
+</span><span class="ansi1 ansi32">189 346,13
+</span><span class="ansi1 ansi32">275 792,68
+</span><span class="ansi1 ansi32">611. - Formation aéronautique
+</span><span class="ansi1 ansi32">73 116 365,48
+</span><span class="ansi1 ansi32">28 722,52
+</span><span class="ansi1 ansi32">Publications officielles et information administrative
+</span><span class="ansi1 ansi32">176 938 180,52
+</span><span class="ansi1 ansi32">31 832 922,48
+</span><span class="ansi1 ansi32">621. - Accès au droit, publications officielles et annonces légales
+</span><span class="ansi1 ansi32">139 893 195,52
+</span><span class="ansi1 ansi32">16 874 762,48
+</span><span class="ansi1 ansi32">622. - Édition publique et information administrative
+</span><span class="ansi1 ansi32">37 044 985,00
+</span><span class="ansi1 ansi32">14 958 160,00
+</span><span class="ansi1 ansi32">Total
+</span><span class="ansi1 ansi32">1 875 372 151,18
+</span><span class="ansi1 ansi32">1 365 645,93
+</span><span class="ansi1 ansi32">143 440 317,75
+</span><span class="ansi1 ansi32">II. - Les résultats relatifs aux budgets annexes au titre de l'année 2008 sont arrêtés par missions et programmes aux sommes mentionnées dans le tableau ci-après. Les crédits ouverts sont modifiés comme indiqué dans ce tableau.
+</span><span class="ansi1 ansi32">(En euros)
+</span><span class="ansi1 ansi32">Ajustements de la loi de règlement
+</span><span class="ansi1 ansi32">Désignation des budgets annexes
+</span><span class="ansi1 ansi32">Dépenses
+</span><span class="ansi1 ansi32">Recettes
+</span><span class="ansi1 ansi32">Ouvertures de crédits complémentaires
+</span><span class="ansi1 ansi32">Annulations des crédits non consommés et non reportés
+</span><span class="ansi1 ansi32">Contrôle et exploitation aériens
+</span><span class="ansi1 ansi32">1 717 642 932,06
+</span><span class="ansi1 ansi32">1 717 642 932,06
+</span><span class="ansi1 ansi32">1 365 645,93
+</span><span class="ansi1 ansi32">7 317 540,87
+</span><span class="ansi1 ansi32">613. - Soutien aux prestations de l'aviation civile
+</span><span class="ansi1 ansi32">283 143 080,44
+</span><span class="ansi1 ansi32">586 453,39
+</span><span class="ansi1 ansi32">6 719 084,95
+</span><span class="ansi1 ansi32">612. - Navigation aérienne
+</span><span class="ansi1 ansi32">1 284 302 910,24
+</span><span class="ansi1 ansi32">589 846,41
+</span><span class="ansi1 ansi32">325 141,17
+</span><span class="ansi1 ansi32">614. - Surveillance et certi-fication
+</span><span class="ansi1 ansi32">84 532 089,66
+</span><span class="ansi1 ansi32">189 346,13
+</span><span class="ansi1 ansi32">273 105,47
+</span><span class="ansi1 ansi32">611. - Formation aéronautique
+</span><span class="ansi1 ansi32">65 664 851,72
+</span><span class="ansi1 ansi32">209,28
+</span><span class="ansi1 ansi32">Publications officielles et information administrative
+</span><span class="ansi1 ansi32">236 706 272,24
+</span><span class="ansi1 ansi32">236 706 272,24
+</span><span class="ansi1 ansi32">63 477 297,05
+</span><span class="ansi1 ansi32">25 992 505,14
+</span><span class="ansi1 ansi32">621. - Accès au droit, publications officielles et annonces légales
+</span><span class="ansi1 ansi32">200 895 584,91
+</span><span class="ansi1 ansi32">200 895 584,91
+</span><span class="ansi1 ansi32">63 477 297,05
+</span><span class="ansi1 ansi32">12 725 943,14
+</span><span class="ansi1 ansi32">622. - Édition publique et information administrative
+</span><span class="ansi1 ansi32">35 810 687,33
+</span><span class="ansi1 ansi32">35 810 687,33
+</span><span class="ansi1 ansi32">13 266 562,00
+</span><span class="ansi1 ansi32">Total
+</span><span class="ansi1 ansi32">1 954 349 204,30
+</span><span class="ansi1 ansi32">1 954 349 204,30
+</span><span class="ansi1 ansi32">64 842 942,98
+</span><span class="ansi1 ansi32">33 310 046,01
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">6
+</span><span class="ansi1 ansi32">――――
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">I. - Le montant des autorisations d'engagement engagées sur les comptes spéciaux dont les opérations se poursuivent en 2009 est arrêté, au 31 décembre 2008, par missions et programmes aux sommes mentionnées dans le tableau ci-après. Les autorisations d'engagement ouvertes sont modifiées comme indiqué dans ce tableau.
+</span><span class="ansi1 ansi32">(En euros)
+</span><span class="ansi1 ansi32">Ajustements de la loi de règlement
+</span><span class="ansi1 ansi32">Désignation des comptes spéciaux
+</span><span class="ansi1 ansi32">Autorisations d'engagement engagées
+</span><span class="ansi1 ansi32">Ouvertures d'autorisations d'engagement complémentaires
+</span><span class="ansi1 ansi32">Annulations d'autorisations d'engagement non engagées et non reportées
+</span><span class="ansi1 ansi32">Comptes à crédits
+</span><span class="ansi1 ansi32">Comptes d'affectation spéciale
+</span><span class="ansi1 ansi32">Contrôle et sanction automatisés des infractions au code de la route
+</span><span class="ansi1 ansi32">176 364 044,55
+</span><span class="ansi1 ansi32">0,45
+</span><span class="ansi1 ansi32">- Radars
+</span><span class="ansi1 ansi32">163 076 686,92
+</span><span class="ansi1 ansi32">0,08
+</span><span class="ansi1 ansi32">- Fichier national du permis de conduire
+</span><span class="ansi1 ansi32">13 287 357,63
+</span><span class="ansi1 ansi32">0,37
+</span><span class="ansi1 ansi32">Développement agricole et rural
+</span><span class="ansi1 ansi32">103 690 701,95
+</span><span class="ansi1 ansi32">1,05
+</span><span class="ansi1 ansi32">- Développement agricole et rural pluriannuel
+</span><span class="ansi1 ansi32">93 985 349,63
+</span><span class="ansi1 ansi32">0,37
+</span><span class="ansi1 ansi32">- Innovation et partenariat
+</span><span class="ansi1 ansi32">9 705 352,32
+</span><span class="ansi1 ansi32">0,68
+</span><span class="ansi1 ansi32">Gestion du patrimoine immobilier de l'État
+</span><span class="ansi1 ansi32">336 070 174,35
+</span><span class="ansi1 ansi32">203 330 899,65
+</span><span class="ansi1 ansi32">- Contribution au désendettement de l'État
+</span><span class="ansi1 ansi32">51 238 005,06
+</span><span class="ansi1 ansi32">26 575 476,94
+</span><span class="ansi1 ansi32">- Dépenses immobilières
+</span><span class="ansi1 ansi32">284 832 169,29
+</span><span class="ansi1 ansi32">176 755 422,71
+</span><span class="ansi1 ansi32">Participations financières de l'État
+</span><span class="ansi1 ansi32">1 765 559 822,91
+</span><span class="ansi1 ansi32">2 920 085 618,09
+</span><span class="ansi1 ansi32">- Opérations en capital intéressant les participations financières de l'État
+</span><span class="ansi1 ansi32">1 624 559 822,91
+</span><span class="ansi1 ansi32">107 640,09
+</span><span class="ansi1 ansi32">- Désendettement de l'État et d'établissements publics de l'État
+</span><span class="ansi1 ansi32">141 000 000,00
+</span><span class="ansi1 ansi32">2 919 977 978,00
+</span><span class="ansi1 ansi32">Pensions
+</span><span class="ansi1 ansi32">47 852 713 185,56
+</span><span class="ansi1 ansi32">0,31
+</span><span class="ansi1 ansi32">2 118 518,75
+</span><span class="ansi1 ansi32">- Pensions civiles et militaires de retraite et allocations temporaires d'invalidité
+</span><span class="ansi1 ansi32">43 335 546 776,05
+</span><span class="ansi1 ansi32">0,95
+</span><span class="ansi1 ansi32">- Ouvriers des établissements industriels de l'État
+</span><span class="ansi1 ansi32">1 765 613 564,82
+</span><span class="ansi1 ansi32">0,31
+</span><span class="ansi1 ansi32">2 118 517,49
+</span><span class="ansi1 ansi32">- Pensions militaires d'invalidité et des victimes de guerre et autres pensions
+</span><span class="ansi1 ansi32">2 751 552 844,69
+</span><span class="ansi1 ansi32">0,31
+</span><span class="ansi1 ansi32">Total des comptes d'affectation spéciale
+</span><span class="ansi1 ansi32">50 234 397 929,32
+</span><span class="ansi1 ansi32">0,31
+</span><span class="ansi1 ansi32">3 125 535 037,99
+</span><span class="ansi1 ansi32">Comptes de concours financiers
+</span><span class="ansi1 ansi32">Accords monétaires internationaux
+</span><span class="ansi1 ansi32">- Relations avec l'Union monétaire ouest-africaine
+</span><span class="ansi1 ansi32">- Relations avec l'Union monétaire d'Afrique centrale
+</span><span class="ansi1 ansi32">- Relations avec l'Union des Comores
+</span><span class="ansi1 ansi32">Avances à divers services de l'État ou organismes gérant des services publics
+</span><span class="ansi1 ansi32">6 816 734 079,59
+</span><span class="ansi1 ansi32">836 965 920,41
+</span><span class="ansi1 ansi32">- Avances à l'Agence unique de paiement, au titre du préfinancement des aides communautaires de la politique agricole commune
+</span><span class="ansi1 ansi32">6 680 542 079,59
+</span><span class="ansi1 ansi32">819 457 920,41
+</span><span class="ansi1 ansi32">- Avances à des organismes distincts de l'État et gérant des services publics
+</span><span class="ansi1 ansi32">32 500 000,00
+</span><span class="ansi1 ansi32">17 500 000,00
+</span><span class="ansi1 ansi32">- Avances à des services de l'État
+</span><span class="ansi1 ansi32">103 692 000,00
+</span><span class="ansi1 ansi32">8 000,00
+</span><span class="ansi1 ansi32">Avances à l'audiovisuel public
+</span><span class="ansi1 ansi32">2 890 664 700,00
+</span><span class="ansi1 ansi32">- France Télévisions
+</span><span class="ansi1 ansi32">1 985 845 000,00
+</span><span class="ansi1 ansi32">- ARTE-France
+</span><span class="ansi1 ansi32">223 333 540,00
+</span><span class="ansi1 ansi32">- Radio France
+</span><span class="ansi1 ansi32">539 455 560,00
+</span><span class="ansi1 ansi32">- Radio France Internationale
+</span><span class="ansi1 ansi32">58 717 000,00
+</span><span class="ansi1 ansi32">- Institut national de l'audiovisuel
+</span><span class="ansi1 ansi32">83 313 600,00
+</span><span class="ansi1 ansi32">Avances au fonds d'aide à l'acquisition de véhicules propres
+</span><span class="ansi1 ansi32">483 000 000,00
+</span><span class="ansi1 ansi32">- Avances au titre du paiement de l'aide à l'acquisition de véhicules propres
+</span><span class="ansi1 ansi32">455 700 000,00
+</span><span class="ansi1 ansi32">- Avances au titre du paiement de la majoration de l'aide à l'acquisition de véhicules propres en cas de destruction simultanée d'un véhicule de plus de quinze ans
+</span><span class="ansi1 ansi32">27 300 000,00
+</span><span class="ansi1 ansi32">Avances aux collectivités territoriales
+</span><span class="ansi1 ansi32">80 295 155 636,00
+</span><span class="ansi1 ansi32">565 644 364,00
+</span><span class="ansi1 ansi32">- Avances aux collectivités et établissements publics et à la Nouvelle-Calédonie
+</span><span class="ansi1 ansi32">45 735,00
+</span><span class="ansi1 ansi32">6 754 265,00
+</span><span class="ansi1 ansi32">- Avances sur le montant des impositions revenant aux régions, départements, communes, établissements et divers organismes
+</span><span class="ansi1 ansi32">80 295 109 901,00
+</span><span class="ansi1 ansi32">558 890 099,00
+</span><span class="ansi1 ansi32">Prêts à des États étrangers
+</span><span class="ansi1 ansi32">1 061 930 515,12
+</span><span class="ansi1 ansi32">227 634 515,12
+</span><span class="ansi1 ansi32">- Prêts à des États étrangers, de la Réserve pays émergents, en vue de faciliter la réalisation de projets d'infrastructures
+</span><span class="ansi1 ansi32">525 745 947,10
+</span><span class="ansi1 ansi32">175 745 947,10
+</span><span class="ansi1 ansi32">- Prêts à des États étrangers pour consolidation de dettes envers la France
+</span><span class="ansi1 ansi32">218 184 568,02
+</span><span class="ansi1 ansi32">2 888 568,02
+</span><span class="ansi1 ansi32">- Prêts à l'Agence française de développement en vue de favoriser le développement économique et social dans des États étrangers
+</span><span class="ansi1 ansi32">318 000 000,00
+</span><span class="ansi1 ansi32">49 000 000,00
+</span><span class="ansi1 ansi32">Prêts et avances à des particuliers ou à des organismes privés
+</span><span class="ansi1 ansi32">7 707 136,18
+</span><span class="ansi1 ansi32">272 863,82
+</span><span class="ansi1 ansi32">- Prêts et avances à des particuliers ou à des associations
+</span><span class="ansi1 ansi32">527 136,18
+</span><span class="ansi1 ansi32">272 863,82
+</span><span class="ansi1 ansi32">- Prêts pour le développement économique et social
+</span><span class="ansi1 ansi32">7 180 000,00
+</span><span class="ansi1 ansi32">Total des comptes de concours financiers
+</span><span class="ansi1 ansi32">91 555 192 066,89
+</span><span class="ansi1 ansi32">227 634 515,12
+</span><span class="ansi1 ansi32">1 402 883 148,23
+</span><span class="ansi1 ansi32">Total comptes à crédits
+</span><span class="ansi1 ansi32">141 789 589 996,21
+</span><span class="ansi1 ansi32">227 634 515,43
+</span><span class="ansi1 ansi32">4 528 418 186,22
+</span><span class="ansi1 ansi32">II. - Les résultats des comptes spéciaux dont les opérations se poursuivent en 2009 sont arrêtés, au 31 décembre 2008, par missions et programmes aux sommes mentionnées dans les tableaux ci-après. Les crédits de paiement ouverts et les découverts autorisés sont modifiés comme indiqué dans ces tableaux.
+</span><span class="ansi1 ansi32">(En euros)
+</span><span class="ansi1 ansi32">Opérations de l'année
+</span><span class="ansi1 ansi32">Ajustements de la loi de règlement
+</span><span class="ansi1 ansi32">Désignation des comptes spéciaux
+</span><span class="ansi1 ansi32">Dépenses
+</span><span class="ansi1 ansi32">Recettes
+</span><span class="ansi1 ansi32">Ouvertures de crédits complémentaires
+</span><span class="ansi1 ansi32">Annulations de crédits non consommés et non reportés
+</span><span class="ansi1 ansi32">A. - comptes à crédits
+</span><span class="ansi1 ansi32">Comptes d'affectation spéciale
+</span><span class="ansi1 ansi32">Contrôle et sanction automatisés des infractions au code de la route
+</span><span class="ansi1 ansi32">157 121 743,21
+</span><span class="ansi1 ansi32">194 000 000,00
+</span><span class="ansi1 ansi32">0,07
+</span><span class="ansi1 ansi32">0,86
+</span><span class="ansi1 ansi32">- Radars
+</span><span class="ansi1 ansi32">147 113 828,07
+</span><span class="ansi1 ansi32">0,07
+</span><span class="ansi1 ansi32">- Fichier national du permis de conduire
+</span><span class="ansi1 ansi32">10 007 915,14
+</span><span class="ansi1 ansi32">0,86
+</span><span class="ansi1 ansi32">Développement agricole et rural
+</span><span class="ansi1 ansi32">98 467 395,55
+</span><span class="ansi1 ansi32">106 838 642,56
+</span><span class="ansi1 ansi32">0,45
+</span><span class="ansi1 ansi32">- Développement agricole et rural pluriannuel
+</span><span class="ansi1 ansi32">90 289 757,83
+</span><span class="ansi1 ansi32">0,17
+</span><span class="ansi1 ansi32">- Innovation et partenariat
+</span><span class="ansi1 ansi32">8 177 637,72
+</span><span class="ansi1 ansi32">0,28
+</span><span class="ansi1 ansi32">Gestion du patrimoine immobilier de l'État
+</span><span class="ansi1 ansi32">356 971 034,69
+</span><span class="ansi1 ansi32">397 069 477,96
+</span><span class="ansi1 ansi32">203 330 900,31
+</span><span class="ansi1 ansi32">- Contribution au désendettement de l'État
+</span><span class="ansi1 ansi32">51 238 005,06
+</span><span class="ansi1 ansi32">26 575 476,94
+</span><span class="ansi1 ansi32">- Dépenses immobilières
+</span><span class="ansi1 ansi32">305 733 029,63
+</span><span class="ansi1 ansi32">176 755 423,37
+</span><span class="ansi1 ansi32">Participations financières de l'État
+</span><span class="ansi1 ansi32">1 764 696 202,91
+</span><span class="ansi1 ansi32">2 080 022 021,78
+</span><span class="ansi1 ansi32">2 919 977 978,09
+</span><span class="ansi1 ansi32">- Opérations en capital intéressant les partici-pations financières de l'État
+</span><span class="ansi1 ansi32">1 623 696 202,91
+</span><span class="ansi1 ansi32">0,09
+</span><span class="ansi1 ansi32">- Désendettement de l'État et d'établisse-ments publics de l'État
+</span><span class="ansi1 ansi32">141 000 000,00
+</span><span class="ansi1 ansi32">2 919 977 978,00
+</span><span class="ansi1 ansi32">Pensions
+</span><span class="ansi1 ansi32">47 852 527 353,37
+</span><span class="ansi1 ansi32">48 226 789 476,43
+</span><span class="ansi1 ansi32">0,31
+</span><span class="ansi1 ansi32">2 118 518,94
+</span><span class="ansi1 ansi32">- Pensions civiles et militaires de retraite et allocations temporaires d'invalidité
+</span><span class="ansi1 ansi32">43 335 546 776,05
+</span><span class="ansi1 ansi32">0,95
+</span><span class="ansi1 ansi32">- Ouvriers des établisse-ments industriels de l'État
+</span><span class="ansi1 ansi32">1 765 613 564,82
+</span><span class="ansi1 ansi32">0,31
+</span><span class="ansi1 ansi32">2 118 517,49
+</span><span class="ansi1 ansi32">- Pensions militaires d'invalidité et des victimes de guerre et autres pensions
+</span><span class="ansi1 ansi32">2 751 367 012,50
+</span><span class="ansi1 ansi32">0,50
+</span><span class="ansi1 ansi32">Total des comptes d'affectation spéciale
+</span><span class="ansi1 ansi32">50 229 783 729,73
+</span><span class="ansi1 ansi32">51 004 719 618,73
+</span><span class="ansi1 ansi32">0,38
+</span><span class="ansi1 ansi32">3 125 427 398,65
+</span><span class="ansi1 ansi32">Comptes de concours financiers
+</span><span class="ansi1 ansi32">Accords monétaires internationaux
+</span><span class="ansi1 ansi32">- Relations avec l'Union monétaire ouest-africaine
+</span><span class="ansi1 ansi32">- Relations avec l'Union monétaire d'Afrique centrale centrale
+</span><span class="ansi1 ansi32">- Relations avec l'Union des Comores
+</span><span class="ansi1 ansi32">Avances à divers services de l'État ou organismes gérant des services publics
+</span><span class="ansi1 ansi32">6 816 734 079,59
+</span><span class="ansi1 ansi32">6 705 285 549,11
+</span><span class="ansi1 ansi32">836 965 920,41
+</span><span class="ansi1 ansi32">- Avances à l'Agence unique de paiement, au titre du préfinancement des aides communau-taires de la politique agricole commune
+</span><span class="ansi1 ansi32">6 680 542 079,59
+</span><span class="ansi1 ansi32">819 457 920,41
+</span><span class="ansi1 ansi32">- Avances à des organismes distincts de l'État et gérant des services publics
+</span><span class="ansi1 ansi32">32 500 000,00
+</span><span class="ansi1 ansi32">17 500 000,00
+</span><span class="ansi1 ansi32">- Avances à des services de l'État
+</span><span class="ansi1 ansi32">103 692 000,00
+</span><span class="ansi1 ansi32">8 000,00
+</span><span class="ansi1 ansi32">Avances à l'audiovisuel public
+</span><span class="ansi1 ansi32">2 890 664 700,00
+</span><span class="ansi1 ansi32">2 890 664 620,50
+</span><span class="ansi1 ansi32">- France Télévisions
+</span><span class="ansi1 ansi32">1 985 845 000,00
+</span><span class="ansi1 ansi32">- ARTE-France
+</span><span class="ansi1 ansi32">223 333 540,00
+</span><span class="ansi1 ansi32">- Radio France
+</span><span class="ansi1 ansi32">539 455 560,00
+</span><span class="ansi1 ansi32">- Radio France Internationale
+</span><span class="ansi1 ansi32">58 717 000,00
+</span><span class="ansi1 ansi32">- Institut national de l'audiovisuel
+</span><span class="ansi1 ansi32">83 313 600,00
+</span><span class="ansi1 ansi32">Avances au fonds d'aide à l'acquisition de véhicules propres
+</span><span class="ansi1 ansi32">439 372 869,12
+</span><span class="ansi1 ansi32">225 373 916,02
+</span><span class="ansi1 ansi32">43 627 130,88
+</span><span class="ansi1 ansi32">- Avances au titre du paiement de l'aide à l'acquisition de véhicules propres
+</span><span class="ansi1 ansi32">428 190 814,99
+</span><span class="ansi1 ansi32">27 509 185,01
+</span><span class="ansi1 ansi32">- Avances au titre du paiement de la majoration de l'aide à l'acquisition de véhicules propres en cas de destruction simultanée d'un véhicule de plus de quinze ans
+</span><span class="ansi1 ansi32">11 182 054,13
+</span><span class="ansi1 ansi32">16 117 945,87
+</span><span class="ansi1 ansi32">Avances aux collectivités territoriales
+</span><span class="ansi1 ansi32">80 161 605 719,50
+</span><span class="ansi1 ansi32">79 703 307 654,74
+</span><span class="ansi1 ansi32">699 194 280,50
+</span><span class="ansi1 ansi32">- Avances aux collectivités et établissements publics et à la Nouvelle-Calédonie
+</span><span class="ansi1 ansi32">45 735,00
+</span><span class="ansi1 ansi32">6 754 265,00
+</span><span class="ansi1 ansi32">- Avances sur le montant des impositions revenant aux régions, départements, communes, établissements et divers organismes
+</span><span class="ansi1 ansi32">80 161 559 984,50
+</span><span class="ansi1 ansi32">692 440 015,50
+</span><span class="ansi1 ansi32">Prêts à des États étrangers
+</span><span class="ansi1 ansi32">479 848 118,81
+</span><span class="ansi1 ansi32">1 140 710 972,90
+</span><span class="ansi1 ansi32">44 814 933,50
+</span><span class="ansi1 ansi32">24 262 814,69
+</span><span class="ansi1 ansi32">- Prêts à des États étrangers, de la réserve pays émergents, en vue de faciliter la réalisation de projets d'infrastructures
+</span><span class="ansi1 ansi32">164 814 933,50
+</span><span class="ansi1 ansi32">44 814 933,50
+</span><span class="ansi1 ansi32">- Prêts à des États étrangers pour consolidation de dettes envers la France
+</span><span class="ansi1 ansi32">203 433 185,31
+</span><span class="ansi1 ansi32">11 862 814,69
+</span><span class="ansi1 ansi32">- Prêts à l'Agence française de développement en vue de favoriser le développement économique et social dans des États étrangers
+</span><span class="ansi1 ansi32">111 600 000,00
+</span><span class="ansi1 ansi32">12 400 000,00
+</span><span class="ansi1 ansi32">Prêts et avances à des particuliers ou à des organismes privés
+</span><span class="ansi1 ansi32">5 205 117,82
+</span><span class="ansi1 ansi32">4 705 752,59
+</span><span class="ansi1 ansi32">274 882,18
+</span><span class="ansi1 ansi32">- Prêts et avances à des particuliers ou à des associations
+</span><span class="ansi1 ansi32">525 117,82
+</span><span class="ansi1 ansi32">274 882,18
+</span><span class="ansi1 ansi32">- Prêts pour le développement économique et social
+</span><span class="ansi1 ansi32">4 680 000,00
+</span><span class="ansi1 ansi32">Total des comptes de concours financiers
+</span><span class="ansi1 ansi32">90 793 430 604,84
+</span><span class="ansi1 ansi32">90 670 048 465,86
+</span><span class="ansi1 ansi32">44 814 933,50
+</span><span class="ansi1 ansi32">1 604 325 028,66
+</span><span class="ansi1 ansi32">Total comptes à crédits
+</span><span class="ansi1 ansi32">141 023 214 334,57
+</span><span class="ansi1 ansi32">141 674 768 084,59
+</span><span class="ansi1 ansi32">44 814 933,88
+</span><span class="ansi1 ansi32">4 729 752 427,31
+</span><span class="ansi1 ansi32">(En euros)
+</span><span class="ansi1 ansi32">Opérations de l'année
+</span><span class="ansi1 ansi32">Ajustements de la loi de règlement
+</span><span class="ansi1 ansi32">Désignation des comptes spéciaux
+</span><span class="ansi1 ansi32">Dépenses
+</span><span class="ansi1 ansi32">Recettes
+</span><span class="ansi1 ansi32">Majorations du découvert
+</span><span class="ansi1 ansi32">B. comptes à découvert
+</span><span class="ansi1 ansi32">Comptes de commerce
+</span><span class="ansi1 ansi32">- Approvisionnement des armées en produits pétroliers
+</span><span class="ansi1 ansi32">664 371 224,40
+</span><span class="ansi1 ansi32">669 072 944,22
+</span><span class="ansi1 ansi32">- Cantine et travail des détenus dans le cadre pénitentiaire
+</span><span class="ansi1 ansi32">89 040 811,40
+</span><span class="ansi1 ansi32">90 106 865,42
+</span><span class="ansi1 ansi32">- Couverture des risques financiers de l'État
+</span><span class="ansi1 ansi32">1 593 052 225,82
+</span><span class="ansi1 ansi32">1 593 052 225,81
+</span><span class="ansi1 ansi32">- Exploitations industrielles des ateliers aéronautiques de l'État
+</span><span class="ansi1 ansi32">454 286 419,30
+</span><span class="ansi1 ansi32">503 949 537,72
+</span><span class="ansi1 ansi32">- Gestion de la dette et de la trésorerie de l'État
+</span><span class="ansi1 ansi32">49 170 696 936,97
+</span><span class="ansi1 ansi32">49 326 285 057,86
+</span><span class="ansi1 ansi32">- Lancement de certains matériels aéronautiques et de certains matériels d'armement complexes
+</span><span class="ansi1 ansi32">5 398 450,00
+</span><span class="ansi1 ansi32">12 437 398,21
+</span><span class="ansi1 ansi32">- Liquidation d'établissements publics de l'État et liquidations diverses
+</span><span class="ansi1 ansi32">240 610,71
+</span><span class="ansi1 ansi32">254 107,96
+</span><span class="ansi1 ansi32">- Opérations commerciales des domaines
+</span><span class="ansi1 ansi32">103 610 441,33
+</span><span class="ansi1 ansi32">109 957 622,89
+</span><span class="ansi1 ansi32">- Opérations industrielles et commerciales des directions départementales et régionales de l'équipement
+</span><span class="ansi1 ansi32">860 112 176,48
+</span><span class="ansi1 ansi32">815 994 118,69
+</span><span class="ansi1 ansi32">- Régie industrielle des établissements pénitentiaires
+</span><span class="ansi1 ansi32">21 865 925,98
+</span><span class="ansi1 ansi32">23 848 308,27
+</span><span class="ansi1 ansi32">Total des comptes de commerce
+</span><span class="ansi1 ansi32">52 962 675 222,39
+</span><span class="ansi1 ansi32">53 144 958 187,05
+</span><span class="ansi1 ansi32">Comptes d'opérations monétaires
+</span><span class="ansi1 ansi32">- Émission des monnaies métalliques
+</span><span class="ansi1 ansi32">217 511 290,67
+</span><span class="ansi1 ansi32">204 145 716,64
+</span><span class="ansi1 ansi32">- Opérations avec le Fonds monétaire international
+</span><span class="ansi1 ansi32">173 939 252,95
+</span><span class="ansi1 ansi32">1 789 067 363,79
+</span><span class="ansi1 ansi32">9 575 241 384,04
+</span><span class="ansi1 ansi32">- Pertes et bénéfices de change
+</span><span class="ansi1 ansi32">27 416 681,39
+</span><span class="ansi1 ansi32">26 664 159,07
+</span><span class="ansi1 ansi32">Total des comptes d'opérations monétaires
+</span><span class="ansi1 ansi32">418 867 225,01
+</span><span class="ansi1 ansi32">2 019 877 239,50
+</span><span class="ansi1 ansi32">9 575 241 384,04
+</span><span class="ansi1 ansi32">Total comptes à découvert
+</span><span class="ansi1 ansi32">53 381 542 447,40
+</span><span class="ansi1 ansi32">55 164 835 426,55
+</span><span class="ansi1 ansi32">9 575 241 384,04
+</span><span class="ansi1 ansi32">III. - Les soldes des comptes spéciaux dont les opérations se poursuivent en 2009 sont arrêtés, à la date du 31 décembre 2008, aux sommes ci-après :
+</span><span class="ansi1 ansi32">(En euros)
+</span><span class="ansi1 ansi32">Soldes au 31 décembre 2008
+</span><span class="ansi1 ansi32">Désignation des comptes spéciaux
+</span><span class="ansi1 ansi32">Débiteurs
+</span><span class="ansi1 ansi32">Créditeurs
+</span><span class="ansi1 ansi32">A. - comptes à crédits
+</span><span class="ansi1 ansi32">Comptes d'affectation spéciale
+</span><span class="ansi1 ansi32">Contrôle et sanction automatisés des infractions au code de la route
+</span><span class="ansi1 ansi32">123 279 726,65
+</span><span class="ansi1 ansi32">Développement agricole et rural
+</span><span class="ansi1 ansi32">55 339 700,34
+</span><span class="ansi1 ansi32">Gestion du patrimoine immobilier de l'État
+</span><span class="ansi1 ansi32">928 652 371,25
+</span><span class="ansi1 ansi32">Participations financières de l'État
+</span><span class="ansi1 ansi32">4 212 386 042,18
+</span><span class="ansi1 ansi32">Pensions
+</span><span class="ansi1 ansi32">800 665 879,95
+</span><span class="ansi1 ansi32">Comptes de concours financiers
+</span><span class="ansi1 ansi32">Accords monétaires internationaux
+</span><span class="ansi1 ansi32">Avances à divers services de l'État ou organismes gérant des services publics
+</span><span class="ansi1 ansi32">604 797 206,98
+</span><span class="ansi1 ansi32">Avances à l'audiovisuel public
+</span><span class="ansi1 ansi32">2 432 759,20
+</span><span class="ansi1 ansi32">Avances au fonds d'aide à l'acquisition de véhicules propres
+</span><span class="ansi1 ansi32">213 998 953,10
+</span><span class="ansi1 ansi32">Avances aux collectivités territoriales
+</span><span class="ansi1 ansi32">13 087 704 726,66
+</span><span class="ansi1 ansi32">Prêts à des États étrangers
+</span><span class="ansi1 ansi32">12 425 801 687,42
+</span><span class="ansi1 ansi32">Prêts et avances à des particuliers ou à des organismes privés
+</span><span class="ansi1 ansi32">209 225 140,81
+</span><span class="ansi1 ansi32">Total des comptes à crédits
+</span><span class="ansi1 ansi32">26 541 527 714,97
+</span><span class="ansi1 ansi32">6 122 756 479,57
+</span><span class="ansi1 ansi32">B. - comptes à découvert
+</span><span class="ansi1 ansi32">Comptes de commerce
+</span><span class="ansi1 ansi32">Approvisionnement des armées en produits pétroliers
+</span><span class="ansi1 ansi32">8 387 923,02
+</span><span class="ansi1 ansi32">Cantine et travail des détenus dans le cadre pénitentiaire
+</span><span class="ansi1 ansi32">7 875 148,29
+</span><span class="ansi1 ansi32">Couverture des risques financiers de l'État
+</span><span class="ansi1 ansi32">0,01
+</span><span class="ansi1 ansi32">Exploitations industrielles des ateliers aéronautiques de l'État
+</span><span class="ansi1 ansi32">238 782 639,54
+</span><span class="ansi1 ansi32">Gestion de la dette et de la trésorerie de l'État
+</span><span class="ansi1 ansi32">2 111 794 306,75
+</span><span class="ansi1 ansi32">Lancement de certains matériels aéronautiques et de certains matériels d'armement complexes
+</span><span class="ansi1 ansi32">58 997 816,34
+</span><span class="ansi1 ansi32">Liquidation d'établissements publics de l'État et liquidations diverses
+</span><span class="ansi1 ansi32">16 494 502,54
+</span><span class="ansi1 ansi32">Opérations commerciales des domaines
+</span><span class="ansi1 ansi32">117 368 059,12
+</span><span class="ansi1 ansi32">Opérations industrielles et commerciales des directions départementales et régionales de l'équipement
+</span><span class="ansi1 ansi32">40 030 177,20
+</span><span class="ansi1 ansi32">Régie industrielle des établissements pénitentiaires
+</span><span class="ansi1 ansi32">18 390 687,10
+</span><span class="ansi1 ansi32">Comptes d'opérations monétaires
+</span><span class="ansi1 ansi32">Émission des monnaies métalliques
+</span><span class="ansi1 ansi32">2 411 528 375,20
+</span><span class="ansi1 ansi32">Opérations avec le Fonds monétaire international
+</span><span class="ansi1 ansi32">9 575 241 384,04
+</span><span class="ansi1 ansi32">Pertes et bénéfices de change
+</span><span class="ansi1 ansi32">752 522,32
+</span><span class="ansi1 ansi32">Total des comptes à découvert
+</span><span class="ansi1 ansi32">9 592 256 977,68
+</span><span class="ansi1 ansi32">5 013 386 563,79
+</span><span class="ansi1 ansi32">Totaux
+</span><span class="ansi1 ansi32">36 133 784 692,65
+</span><span class="ansi1 ansi32">11 136 143 043,36
+</span><span class="ansi1 ansi32">IV. - Les soldes arrêtés au III sont reportés à la gestion 2009 à l'exception :
+</span><span class="ansi1 ansi32">- d'un solde débiteur global de 313 932 739,30 € concernant les comptes de concours financiers suivants : "Prêts à des États étrangers" (243 766 216,42 €), "Avances à divers services de l'État ou organismes gérant des services publics" (69 599 802,50 €), "Prêts et avances à des particuliers ou à des organismes privés" (566 720,38 €) ;
+</span><span class="ansi1 ansi32">- d'un solde débiteur de 6 759 947,13 € relatif au compte de commerce "Lancement de certains matériels aéronautiques et de certains matériels d'armement complexes" ;
+</span><span class="ansi1 ansi32">- d'un solde débiteur de 752 522,32 € afférent au compte d'opérations monétaires "Pertes et bénéfices de change".
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">7
+</span><span class="ansi1 ansi32">――――
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">I. - Le montant des autorisations d'engagement engagées sur le compte spécial "Cinéma, audiovisuel et expression radiophonique locale" est arrêté, au 31 décembre 2008, par programme, aux sommes mentionnées dans le tableau ci-après. Les autorisations d'engagement ouvertes sont modifiées comme indiqué dans ce tableau.
+</span><span class="ansi1 ansi32">(En euros)
+</span><span class="ansi1 ansi32">Ajustements de la loi de règlement
+</span><span class="ansi1 ansi32">Désignation des comptes spéciaux
+</span><span class="ansi1 ansi32">Autorisations d'engagement engagées
+</span><span class="ansi1 ansi32">Ouvertures d'autorisations d'engagement complémentaires
+</span><span class="ansi1 ansi32">Annulations d'autorisations d'engagement non engagées et non reportées
+</span><span class="ansi1 ansi32">Comptes à crédits
+</span><span class="ansi1 ansi32">Comptes d'affectation spéciale
+</span><span class="ansi1 ansi32">Cinéma, audiovisuel et expression radiophonique locale
+</span><span class="ansi1 ansi32">650 512 122,16
+</span><span class="ansi1 ansi32">5 461 835,84
+</span><span class="ansi1 ansi32">- Industries cinématographiques
+</span><span class="ansi1 ansi32">314 296 012,91
+</span><span class="ansi1 ansi32">5 278 153,09
+</span><span class="ansi1 ansi32">- Industries audiovisuelles
+</span><span class="ansi1 ansi32">310 029 319,00
+</span><span class="ansi1 ansi32">- Soutien à l'expression radiophonique locale
+</span><span class="ansi1 ansi32">26 186 790,25
+</span><span class="ansi1 ansi32">183 682,75
+</span><span class="ansi1 ansi32">Totaux comptes à crédits
+</span><span class="ansi1 ansi32">650 512 122,16
+</span><span class="ansi1 ansi32">5 461 835,84
+</span><span class="ansi1 ansi32">II. - Les résultats du compte spécial "Cinéma, audiovisuel et expression radiophonique locale" sont arrêtés, au 31 décembre 2008, par programme, aux sommes mentionnées dans le tableau ci-après. Les crédits de paiement ouverts sont modifiés comme indiqué dans ce tableau.
+</span><span class="ansi1 ansi32">(En euros)
+</span><span class="ansi1 ansi32">Opérations de l'année
+</span><span class="ansi1 ansi32">Ajustements de la loi de règlement
+</span><span class="ansi1 ansi32">Désignation des comptes spéciaux
+</span><span class="ansi1 ansi32">Dépenses
+</span><span class="ansi1 ansi32">Recettes
+</span><span class="ansi1 ansi32">Ouvertures de crédits complémentaires
+</span><span class="ansi1 ansi32">Annulations de crédits non consommés et non reportés
+</span><span class="ansi1 ansi32">Comptes à crédits
+</span><span class="ansi1 ansi32">Comptes d'affectation spéciale
+</span><span class="ansi1 ansi32">Cinéma, audiovisuel et expression radiophonique locale
+</span><span class="ansi1 ansi32">650 512 122,16
+</span><span class="ansi1 ansi32">548 924 052,47
+</span><span class="ansi1 ansi32">5 461 835,84
+</span><span class="ansi1 ansi32">- Industries cinématographiques
+</span><span class="ansi1 ansi32">314 296 012,91
+</span><span class="ansi1 ansi32">5 278 153,09
+</span><span class="ansi1 ansi32">- Industries audiovisuelles
+</span><span class="ansi1 ansi32">310 029 319,00
+</span><span class="ansi1 ansi32">- Soutien à l'expression radiophonique locale
+</span><span class="ansi1 ansi32">26 186 790,25
+</span><span class="ansi1 ansi32">183 682,75
+</span><span class="ansi1 ansi32">Totaux comptes à crédits
+</span><span class="ansi1 ansi32">650 512 122,16
+</span><span class="ansi1 ansi32">548 924 052,47
+</span><span class="ansi1 ansi32">5 461 835,84
+</span><span class="ansi1 ansi32">III. - Le solde du compte spécial "Cinéma, audiovisuel et expression radiophonique locale" est arrêté, au 31 décembre 2008, au montant mentionné ci-dessous :
+</span><span class="ansi1 ansi32">(En euros)
+</span><span class="ansi1 ansi32">Soldes au 31 décembre 2008
+</span><span class="ansi1 ansi32">Désignation des comptes spéciaux
+</span><span class="ansi1 ansi32">Débiteurs
+</span><span class="ansi1 ansi32">Créditeurs
+</span><span class="ansi1 ansi32">Comptes à crédits
+</span><span class="ansi1 ansi32">Comptes d'affectation spéciale
+</span><span class="ansi1 ansi32">Cinéma, audiovisuel et expression radiophonique locale
+</span><span class="ansi1 ansi32">400 083,20
+</span><span class="ansi1 ansi32">Totaux comptes à crédits
+</span><span class="ansi1 ansi32">400 083,20
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">8
+</span><span class="ansi1 ansi32">――――
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">Il est constaté une perte au titre des avances consenties en 2008 aux groupements de producteurs de bananes antillais, par l'intermédiaire de l'Office de développement de l'économie agricole dans les départements d'outre-mer, pour un montant de 32 500 000 € en capital assorti des intérêts ayant couru depuis le 1er février 2009 jusqu'à la date de publication de la présente loi.
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">9
+</span><span class="ansi1 ansi32">――――
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">Sont reconnues d'utilité publique, pour un montant de 521 060,35 €, les dépenses comprises dans la gestion de fait des deniers de l'État, jugée par la Cour des comptes dans ses arrêts n° 37558 du 25 septembre 2003, nos 39812 et 39813 des 10 et 17 juin 2004, nos 52865 et 52866 du 12 septembre 2008, au titre du ministère de l'enseignement supérieur et de la recherche.
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">10
+</span><span class="ansi1 ansi32">――――
+</span><span class="ansi1 ansi32">
+</span><span class="ansi1 ansi32">L'article 112 de loi de finances pour 1996 (n° 95-1346 du 30 décembre 1995) est ainsi modifié :
+</span><span class="ansi1 ansi32">1° À la dernière phrase, après le mot : "organismes", sont insérés les mots : "en milliers d'euros lors des trois années précédentes" ;
+</span><span class="ansi1 ansi32">2° Il est ajouté une phrase ainsi rédigée :
+</span><span class="ansi1 ansi32">"Cette liste est complétée par une justification de l'évolution des coûts de fonctionnement."</span>
+
+
+</pre>
+</body>
+
+</html>

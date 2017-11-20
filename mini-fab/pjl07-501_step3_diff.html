@@ -1,0 +1,1603 @@
+
+<style>
+body {
+    max-width: 700px;
+}
+
+pre {
+    font-family: ubuntu, sans-serif;
+    font-size: 20px;
+}
+</style>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #AAAAAA; }
+.body_background { background-color: #000000; }
+.body_foreground > .bold,.bold > .body_foreground, body.body_foreground > pre > .bold { color: #FFFFFF; font-weight: normal; }
+.inv_foreground { color: #000000; }
+.inv_background { background-color: #AAAAAA; }
+.ansi1 { font-weight: bold; }
+.ansi2 { font-weight: lighter; }
+.ansi3 { font-style: italic; }
+.ansi4 { text-decoration: underline; }
+.ansi5 { text-decoration: blink; }
+.ansi6 { text-decoration: blink; }
+.ansi8 { visibility: hidden; }
+.ansi9 { text-decoration: line-through; }
+.ansi30 { color: #000316; }
+.inv30 { background-color: #000316; }
+.ansi31 { color: #aa0000; }
+.inv31 { background-color: #aa0000; }
+.ansi32 { color: #00aa00; }
+.inv32 { background-color: #00aa00; }
+.ansi33 { color: #aa5500; }
+.inv33 { background-color: #aa5500; }
+.ansi34 { color: #0000aa; }
+.inv34 { background-color: #0000aa; }
+.ansi35 { color: #E850A8; }
+.inv35 { background-color: #E850A8; }
+.ansi36 { color: #00aaaa; }
+.inv36 { background-color: #00aaaa; }
+.ansi37 { color: #F5F1DE; }
+.inv37 { background-color: #F5F1DE; }
+.ansi40 { background-color: #000316; }
+.inv40 { color: #000316; }
+.ansi41 { background-color: #aa0000; }
+.inv41 { color: #aa0000; }
+.ansi42 { background-color: #00aa00; }
+.inv42 { color: #00aa00; }
+.ansi43 { background-color: #aa5500; }
+.inv43 { color: #aa5500; }
+.ansi44 { background-color: #0000aa; }
+.inv44 { color: #0000aa; }
+.ansi45 { background-color: #E850A8; }
+.inv45 { color: #E850A8; }
+.ansi46 { background-color: #00aaaa; }
+.inv46 { color: #00aaaa; }
+.ansi47 { background-color: #F5F1DE; }
+.inv47 { color: #F5F1DE; }
+.ansi38-0 { color: #000316; }
+.inv38-0 { background-color: #000316; }
+.ansi38-1 { color: #aa0000; }
+.inv38-1 { background-color: #aa0000; }
+.ansi38-2 { color: #00aa00; }
+.inv38-2 { background-color: #00aa00; }
+.ansi38-3 { color: #aa5500; }
+.inv38-3 { background-color: #aa5500; }
+.ansi38-4 { color: #0000aa; }
+.inv38-4 { background-color: #0000aa; }
+.ansi38-5 { color: #E850A8; }
+.inv38-5 { background-color: #E850A8; }
+.ansi38-6 { color: #00aaaa; }
+.inv38-6 { background-color: #00aaaa; }
+.ansi38-7 { color: #F5F1DE; }
+.inv38-7 { background-color: #F5F1DE; }
+.ansi38-8 { color: #7f7f7f; }
+.inv38-8 { background-color: #7f7f7f; }
+.ansi38-9 { color: #ff0000; }
+.inv38-9 { background-color: #ff0000; }
+.ansi38-10 { color: #00ff00; }
+.inv38-10 { background-color: #00ff00; }
+.ansi38-11 { color: #ffff00; }
+.inv38-11 { background-color: #ffff00; }
+.ansi38-12 { color: #5c5cff; }
+.inv38-12 { background-color: #5c5cff; }
+.ansi38-13 { color: #ff00ff; }
+.inv38-13 { background-color: #ff00ff; }
+.ansi38-14 { color: #00ffff; }
+.inv38-14 { background-color: #00ffff; }
+.ansi38-15 { color: #ffffff; }
+.inv38-15 { background-color: #ffffff; }
+.ansi48-0 { background-color: #000316; }
+.inv48-0 { color: #000316; }
+.ansi48-1 { background-color: #aa0000; }
+.inv48-1 { color: #aa0000; }
+.ansi48-2 { background-color: #00aa00; }
+.inv48-2 { color: #00aa00; }
+.ansi48-3 { background-color: #aa5500; }
+.inv48-3 { color: #aa5500; }
+.ansi48-4 { background-color: #0000aa; }
+.inv48-4 { color: #0000aa; }
+.ansi48-5 { background-color: #E850A8; }
+.inv48-5 { color: #E850A8; }
+.ansi48-6 { background-color: #00aaaa; }
+.inv48-6 { color: #00aaaa; }
+.ansi48-7 { background-color: #F5F1DE; }
+.inv48-7 { color: #F5F1DE; }
+.ansi48-8 { background-color: #7f7f7f; }
+.inv48-8 { color: #7f7f7f; }
+.ansi48-9 { background-color: #ff0000; }
+.inv48-9 { color: #ff0000; }
+.ansi48-10 { background-color: #00ff00; }
+.inv48-10 { color: #00ff00; }
+.ansi48-11 { background-color: #ffff00; }
+.inv48-11 { color: #ffff00; }
+.ansi48-12 { background-color: #5c5cff; }
+.inv48-12 { color: #5c5cff; }
+.ansi48-13 { background-color: #ff00ff; }
+.inv48-13 { color: #ff00ff; }
+.ansi48-14 { background-color: #00ffff; }
+.inv48-14 { color: #00ffff; }
+.ansi48-15 { background-color: #ffffff; }
+.inv48-15 { color: #ffffff; }
+.ansi38-16 { color: #000000; }
+.inv38-16 { background: #000000; }
+.ansi48-16 { background: #000000; }
+.inv48-16 { color: #000000; }
+.ansi38-17 { color: #00002a; }
+.inv38-17 { background: #00002a; }
+.ansi48-17 { background: #00002a; }
+.inv48-17 { color: #00002a; }
+.ansi38-18 { color: #000054; }
+.inv38-18 { background: #000054; }
+.ansi48-18 { background: #000054; }
+.inv48-18 { color: #000054; }
+.ansi38-19 { color: #00007e; }
+.inv38-19 { background: #00007e; }
+.ansi48-19 { background: #00007e; }
+.inv48-19 { color: #00007e; }
+.ansi38-20 { color: #0000a8; }
+.inv38-20 { background: #0000a8; }
+.ansi48-20 { background: #0000a8; }
+.inv48-20 { color: #0000a8; }
+.ansi38-21 { color: #0000d2; }
+.inv38-21 { background: #0000d2; }
+.ansi48-21 { background: #0000d2; }
+.inv48-21 { color: #0000d2; }
+.ansi38-52 { color: #2a0000; }
+.inv38-52 { background: #2a0000; }
+.ansi48-52 { background: #2a0000; }
+.inv48-52 { color: #2a0000; }
+.ansi38-53 { color: #2a002a; }
+.inv38-53 { background: #2a002a; }
+.ansi48-53 { background: #2a002a; }
+.inv48-53 { color: #2a002a; }
+.ansi38-54 { color: #2a0054; }
+.inv38-54 { background: #2a0054; }
+.ansi48-54 { background: #2a0054; }
+.inv48-54 { color: #2a0054; }
+.ansi38-55 { color: #2a007e; }
+.inv38-55 { background: #2a007e; }
+.ansi48-55 { background: #2a007e; }
+.inv48-55 { color: #2a007e; }
+.ansi38-56 { color: #2a00a8; }
+.inv38-56 { background: #2a00a8; }
+.ansi48-56 { background: #2a00a8; }
+.inv48-56 { color: #2a00a8; }
+.ansi38-57 { color: #2a00d2; }
+.inv38-57 { background: #2a00d2; }
+.ansi48-57 { background: #2a00d2; }
+.inv48-57 { color: #2a00d2; }
+.ansi38-88 { color: #540000; }
+.inv38-88 { background: #540000; }
+.ansi48-88 { background: #540000; }
+.inv48-88 { color: #540000; }
+.ansi38-89 { color: #54002a; }
+.inv38-89 { background: #54002a; }
+.ansi48-89 { background: #54002a; }
+.inv48-89 { color: #54002a; }
+.ansi38-90 { color: #540054; }
+.inv38-90 { background: #540054; }
+.ansi48-90 { background: #540054; }
+.inv48-90 { color: #540054; }
+.ansi38-91 { color: #54007e; }
+.inv38-91 { background: #54007e; }
+.ansi48-91 { background: #54007e; }
+.inv48-91 { color: #54007e; }
+.ansi38-92 { color: #5400a8; }
+.inv38-92 { background: #5400a8; }
+.ansi48-92 { background: #5400a8; }
+.inv48-92 { color: #5400a8; }
+.ansi38-93 { color: #5400d2; }
+.inv38-93 { background: #5400d2; }
+.ansi48-93 { background: #5400d2; }
+.inv48-93 { color: #5400d2; }
+.ansi38-124 { color: #7e0000; }
+.inv38-124 { background: #7e0000; }
+.ansi48-124 { background: #7e0000; }
+.inv48-124 { color: #7e0000; }
+.ansi38-125 { color: #7e002a; }
+.inv38-125 { background: #7e002a; }
+.ansi48-125 { background: #7e002a; }
+.inv48-125 { color: #7e002a; }
+.ansi38-126 { color: #7e0054; }
+.inv38-126 { background: #7e0054; }
+.ansi48-126 { background: #7e0054; }
+.inv48-126 { color: #7e0054; }
+.ansi38-127 { color: #7e007e; }
+.inv38-127 { background: #7e007e; }
+.ansi48-127 { background: #7e007e; }
+.inv48-127 { color: #7e007e; }
+.ansi38-128 { color: #7e00a8; }
+.inv38-128 { background: #7e00a8; }
+.ansi48-128 { background: #7e00a8; }
+.inv48-128 { color: #7e00a8; }
+.ansi38-129 { color: #7e00d2; }
+.inv38-129 { background: #7e00d2; }
+.ansi48-129 { background: #7e00d2; }
+.inv48-129 { color: #7e00d2; }
+.ansi38-160 { color: #a80000; }
+.inv38-160 { background: #a80000; }
+.ansi48-160 { background: #a80000; }
+.inv48-160 { color: #a80000; }
+.ansi38-161 { color: #a8002a; }
+.inv38-161 { background: #a8002a; }
+.ansi48-161 { background: #a8002a; }
+.inv48-161 { color: #a8002a; }
+.ansi38-162 { color: #a80054; }
+.inv38-162 { background: #a80054; }
+.ansi48-162 { background: #a80054; }
+.inv48-162 { color: #a80054; }
+.ansi38-163 { color: #a8007e; }
+.inv38-163 { background: #a8007e; }
+.ansi48-163 { background: #a8007e; }
+.inv48-163 { color: #a8007e; }
+.ansi38-164 { color: #a800a8; }
+.inv38-164 { background: #a800a8; }
+.ansi48-164 { background: #a800a8; }
+.inv48-164 { color: #a800a8; }
+.ansi38-165 { color: #a800d2; }
+.inv38-165 { background: #a800d2; }
+.ansi48-165 { background: #a800d2; }
+.inv48-165 { color: #a800d2; }
+.ansi38-196 { color: #d20000; }
+.inv38-196 { background: #d20000; }
+.ansi48-196 { background: #d20000; }
+.inv48-196 { color: #d20000; }
+.ansi38-197 { color: #d2002a; }
+.inv38-197 { background: #d2002a; }
+.ansi48-197 { background: #d2002a; }
+.inv48-197 { color: #d2002a; }
+.ansi38-198 { color: #d20054; }
+.inv38-198 { background: #d20054; }
+.ansi48-198 { background: #d20054; }
+.inv48-198 { color: #d20054; }
+.ansi38-199 { color: #d2007e; }
+.inv38-199 { background: #d2007e; }
+.ansi48-199 { background: #d2007e; }
+.inv48-199 { color: #d2007e; }
+.ansi38-200 { color: #d200a8; }
+.inv38-200 { background: #d200a8; }
+.ansi48-200 { background: #d200a8; }
+.inv48-200 { color: #d200a8; }
+.ansi38-201 { color: #d200d2; }
+.inv38-201 { background: #d200d2; }
+.ansi48-201 { background: #d200d2; }
+.inv48-201 { color: #d200d2; }
+.ansi38-22 { color: #002a00; }
+.inv38-22 { background: #002a00; }
+.ansi48-22 { background: #002a00; }
+.inv48-22 { color: #002a00; }
+.ansi38-23 { color: #002a2a; }
+.inv38-23 { background: #002a2a; }
+.ansi48-23 { background: #002a2a; }
+.inv48-23 { color: #002a2a; }
+.ansi38-24 { color: #002a54; }
+.inv38-24 { background: #002a54; }
+.ansi48-24 { background: #002a54; }
+.inv48-24 { color: #002a54; }
+.ansi38-25 { color: #002a7e; }
+.inv38-25 { background: #002a7e; }
+.ansi48-25 { background: #002a7e; }
+.inv48-25 { color: #002a7e; }
+.ansi38-26 { color: #002aa8; }
+.inv38-26 { background: #002aa8; }
+.ansi48-26 { background: #002aa8; }
+.inv48-26 { color: #002aa8; }
+.ansi38-27 { color: #002ad2; }
+.inv38-27 { background: #002ad2; }
+.ansi48-27 { background: #002ad2; }
+.inv48-27 { color: #002ad2; }
+.ansi38-58 { color: #2a2a00; }
+.inv38-58 { background: #2a2a00; }
+.ansi48-58 { background: #2a2a00; }
+.inv48-58 { color: #2a2a00; }
+.ansi38-59 { color: #2a2a2a; }
+.inv38-59 { background: #2a2a2a; }
+.ansi48-59 { background: #2a2a2a; }
+.inv48-59 { color: #2a2a2a; }
+.ansi38-60 { color: #2a2a54; }
+.inv38-60 { background: #2a2a54; }
+.ansi48-60 { background: #2a2a54; }
+.inv48-60 { color: #2a2a54; }
+.ansi38-61 { color: #2a2a7e; }
+.inv38-61 { background: #2a2a7e; }
+.ansi48-61 { background: #2a2a7e; }
+.inv48-61 { color: #2a2a7e; }
+.ansi38-62 { color: #2a2aa8; }
+.inv38-62 { background: #2a2aa8; }
+.ansi48-62 { background: #2a2aa8; }
+.inv48-62 { color: #2a2aa8; }
+.ansi38-63 { color: #2a2ad2; }
+.inv38-63 { background: #2a2ad2; }
+.ansi48-63 { background: #2a2ad2; }
+.inv48-63 { color: #2a2ad2; }
+.ansi38-94 { color: #542a00; }
+.inv38-94 { background: #542a00; }
+.ansi48-94 { background: #542a00; }
+.inv48-94 { color: #542a00; }
+.ansi38-95 { color: #542a2a; }
+.inv38-95 { background: #542a2a; }
+.ansi48-95 { background: #542a2a; }
+.inv48-95 { color: #542a2a; }
+.ansi38-96 { color: #542a54; }
+.inv38-96 { background: #542a54; }
+.ansi48-96 { background: #542a54; }
+.inv48-96 { color: #542a54; }
+.ansi38-97 { color: #542a7e; }
+.inv38-97 { background: #542a7e; }
+.ansi48-97 { background: #542a7e; }
+.inv48-97 { color: #542a7e; }
+.ansi38-98 { color: #542aa8; }
+.inv38-98 { background: #542aa8; }
+.ansi48-98 { background: #542aa8; }
+.inv48-98 { color: #542aa8; }
+.ansi38-99 { color: #542ad2; }
+.inv38-99 { background: #542ad2; }
+.ansi48-99 { background: #542ad2; }
+.inv48-99 { color: #542ad2; }
+.ansi38-130 { color: #7e2a00; }
+.inv38-130 { background: #7e2a00; }
+.ansi48-130 { background: #7e2a00; }
+.inv48-130 { color: #7e2a00; }
+.ansi38-131 { color: #7e2a2a; }
+.inv38-131 { background: #7e2a2a; }
+.ansi48-131 { background: #7e2a2a; }
+.inv48-131 { color: #7e2a2a; }
+.ansi38-132 { color: #7e2a54; }
+.inv38-132 { background: #7e2a54; }
+.ansi48-132 { background: #7e2a54; }
+.inv48-132 { color: #7e2a54; }
+.ansi38-133 { color: #7e2a7e; }
+.inv38-133 { background: #7e2a7e; }
+.ansi48-133 { background: #7e2a7e; }
+.inv48-133 { color: #7e2a7e; }
+.ansi38-134 { color: #7e2aa8; }
+.inv38-134 { background: #7e2aa8; }
+.ansi48-134 { background: #7e2aa8; }
+.inv48-134 { color: #7e2aa8; }
+.ansi38-135 { color: #7e2ad2; }
+.inv38-135 { background: #7e2ad2; }
+.ansi48-135 { background: #7e2ad2; }
+.inv48-135 { color: #7e2ad2; }
+.ansi38-166 { color: #a82a00; }
+.inv38-166 { background: #a82a00; }
+.ansi48-166 { background: #a82a00; }
+.inv48-166 { color: #a82a00; }
+.ansi38-167 { color: #a82a2a; }
+.inv38-167 { background: #a82a2a; }
+.ansi48-167 { background: #a82a2a; }
+.inv48-167 { color: #a82a2a; }
+.ansi38-168 { color: #a82a54; }
+.inv38-168 { background: #a82a54; }
+.ansi48-168 { background: #a82a54; }
+.inv48-168 { color: #a82a54; }
+.ansi38-169 { color: #a82a7e; }
+.inv38-169 { background: #a82a7e; }
+.ansi48-169 { background: #a82a7e; }
+.inv48-169 { color: #a82a7e; }
+.ansi38-170 { color: #a82aa8; }
+.inv38-170 { background: #a82aa8; }
+.ansi48-170 { background: #a82aa8; }
+.inv48-170 { color: #a82aa8; }
+.ansi38-171 { color: #a82ad2; }
+.inv38-171 { background: #a82ad2; }
+.ansi48-171 { background: #a82ad2; }
+.inv48-171 { color: #a82ad2; }
+.ansi38-202 { color: #d22a00; }
+.inv38-202 { background: #d22a00; }
+.ansi48-202 { background: #d22a00; }
+.inv48-202 { color: #d22a00; }
+.ansi38-203 { color: #d22a2a; }
+.inv38-203 { background: #d22a2a; }
+.ansi48-203 { background: #d22a2a; }
+.inv48-203 { color: #d22a2a; }
+.ansi38-204 { color: #d22a54; }
+.inv38-204 { background: #d22a54; }
+.ansi48-204 { background: #d22a54; }
+.inv48-204 { color: #d22a54; }
+.ansi38-205 { color: #d22a7e; }
+.inv38-205 { background: #d22a7e; }
+.ansi48-205 { background: #d22a7e; }
+.inv48-205 { color: #d22a7e; }
+.ansi38-206 { color: #d22aa8; }
+.inv38-206 { background: #d22aa8; }
+.ansi48-206 { background: #d22aa8; }
+.inv48-206 { color: #d22aa8; }
+.ansi38-207 { color: #d22ad2; }
+.inv38-207 { background: #d22ad2; }
+.ansi48-207 { background: #d22ad2; }
+.inv48-207 { color: #d22ad2; }
+.ansi38-28 { color: #005400; }
+.inv38-28 { background: #005400; }
+.ansi48-28 { background: #005400; }
+.inv48-28 { color: #005400; }
+.ansi38-29 { color: #00542a; }
+.inv38-29 { background: #00542a; }
+.ansi48-29 { background: #00542a; }
+.inv48-29 { color: #00542a; }
+.ansi38-30 { color: #005454; }
+.inv38-30 { background: #005454; }
+.ansi48-30 { background: #005454; }
+.inv48-30 { color: #005454; }
+.ansi38-31 { color: #00547e; }
+.inv38-31 { background: #00547e; }
+.ansi48-31 { background: #00547e; }
+.inv48-31 { color: #00547e; }
+.ansi38-32 { color: #0054a8; }
+.inv38-32 { background: #0054a8; }
+.ansi48-32 { background: #0054a8; }
+.inv48-32 { color: #0054a8; }
+.ansi38-33 { color: #0054d2; }
+.inv38-33 { background: #0054d2; }
+.ansi48-33 { background: #0054d2; }
+.inv48-33 { color: #0054d2; }
+.ansi38-64 { color: #2a5400; }
+.inv38-64 { background: #2a5400; }
+.ansi48-64 { background: #2a5400; }
+.inv48-64 { color: #2a5400; }
+.ansi38-65 { color: #2a542a; }
+.inv38-65 { background: #2a542a; }
+.ansi48-65 { background: #2a542a; }
+.inv48-65 { color: #2a542a; }
+.ansi38-66 { color: #2a5454; }
+.inv38-66 { background: #2a5454; }
+.ansi48-66 { background: #2a5454; }
+.inv48-66 { color: #2a5454; }
+.ansi38-67 { color: #2a547e; }
+.inv38-67 { background: #2a547e; }
+.ansi48-67 { background: #2a547e; }
+.inv48-67 { color: #2a547e; }
+.ansi38-68 { color: #2a54a8; }
+.inv38-68 { background: #2a54a8; }
+.ansi48-68 { background: #2a54a8; }
+.inv48-68 { color: #2a54a8; }
+.ansi38-69 { color: #2a54d2; }
+.inv38-69 { background: #2a54d2; }
+.ansi48-69 { background: #2a54d2; }
+.inv48-69 { color: #2a54d2; }
+.ansi38-100 { color: #545400; }
+.inv38-100 { background: #545400; }
+.ansi48-100 { background: #545400; }
+.inv48-100 { color: #545400; }
+.ansi38-101 { color: #54542a; }
+.inv38-101 { background: #54542a; }
+.ansi48-101 { background: #54542a; }
+.inv48-101 { color: #54542a; }
+.ansi38-102 { color: #545454; }
+.inv38-102 { background: #545454; }
+.ansi48-102 { background: #545454; }
+.inv48-102 { color: #545454; }
+.ansi38-103 { color: #54547e; }
+.inv38-103 { background: #54547e; }
+.ansi48-103 { background: #54547e; }
+.inv48-103 { color: #54547e; }
+.ansi38-104 { color: #5454a8; }
+.inv38-104 { background: #5454a8; }
+.ansi48-104 { background: #5454a8; }
+.inv48-104 { color: #5454a8; }
+.ansi38-105 { color: #5454d2; }
+.inv38-105 { background: #5454d2; }
+.ansi48-105 { background: #5454d2; }
+.inv48-105 { color: #5454d2; }
+.ansi38-136 { color: #7e5400; }
+.inv38-136 { background: #7e5400; }
+.ansi48-136 { background: #7e5400; }
+.inv48-136 { color: #7e5400; }
+.ansi38-137 { color: #7e542a; }
+.inv38-137 { background: #7e542a; }
+.ansi48-137 { background: #7e542a; }
+.inv48-137 { color: #7e542a; }
+.ansi38-138 { color: #7e5454; }
+.inv38-138 { background: #7e5454; }
+.ansi48-138 { background: #7e5454; }
+.inv48-138 { color: #7e5454; }
+.ansi38-139 { color: #7e547e; }
+.inv38-139 { background: #7e547e; }
+.ansi48-139 { background: #7e547e; }
+.inv48-139 { color: #7e547e; }
+.ansi38-140 { color: #7e54a8; }
+.inv38-140 { background: #7e54a8; }
+.ansi48-140 { background: #7e54a8; }
+.inv48-140 { color: #7e54a8; }
+.ansi38-141 { color: #7e54d2; }
+.inv38-141 { background: #7e54d2; }
+.ansi48-141 { background: #7e54d2; }
+.inv48-141 { color: #7e54d2; }
+.ansi38-172 { color: #a85400; }
+.inv38-172 { background: #a85400; }
+.ansi48-172 { background: #a85400; }
+.inv48-172 { color: #a85400; }
+.ansi38-173 { color: #a8542a; }
+.inv38-173 { background: #a8542a; }
+.ansi48-173 { background: #a8542a; }
+.inv48-173 { color: #a8542a; }
+.ansi38-174 { color: #a85454; }
+.inv38-174 { background: #a85454; }
+.ansi48-174 { background: #a85454; }
+.inv48-174 { color: #a85454; }
+.ansi38-175 { color: #a8547e; }
+.inv38-175 { background: #a8547e; }
+.ansi48-175 { background: #a8547e; }
+.inv48-175 { color: #a8547e; }
+.ansi38-176 { color: #a854a8; }
+.inv38-176 { background: #a854a8; }
+.ansi48-176 { background: #a854a8; }
+.inv48-176 { color: #a854a8; }
+.ansi38-177 { color: #a854d2; }
+.inv38-177 { background: #a854d2; }
+.ansi48-177 { background: #a854d2; }
+.inv48-177 { color: #a854d2; }
+.ansi38-208 { color: #d25400; }
+.inv38-208 { background: #d25400; }
+.ansi48-208 { background: #d25400; }
+.inv48-208 { color: #d25400; }
+.ansi38-209 { color: #d2542a; }
+.inv38-209 { background: #d2542a; }
+.ansi48-209 { background: #d2542a; }
+.inv48-209 { color: #d2542a; }
+.ansi38-210 { color: #d25454; }
+.inv38-210 { background: #d25454; }
+.ansi48-210 { background: #d25454; }
+.inv48-210 { color: #d25454; }
+.ansi38-211 { color: #d2547e; }
+.inv38-211 { background: #d2547e; }
+.ansi48-211 { background: #d2547e; }
+.inv48-211 { color: #d2547e; }
+.ansi38-212 { color: #d254a8; }
+.inv38-212 { background: #d254a8; }
+.ansi48-212 { background: #d254a8; }
+.inv48-212 { color: #d254a8; }
+.ansi38-213 { color: #d254d2; }
+.inv38-213 { background: #d254d2; }
+.ansi48-213 { background: #d254d2; }
+.inv48-213 { color: #d254d2; }
+.ansi38-34 { color: #007e00; }
+.inv38-34 { background: #007e00; }
+.ansi48-34 { background: #007e00; }
+.inv48-34 { color: #007e00; }
+.ansi38-35 { color: #007e2a; }
+.inv38-35 { background: #007e2a; }
+.ansi48-35 { background: #007e2a; }
+.inv48-35 { color: #007e2a; }
+.ansi38-36 { color: #007e54; }
+.inv38-36 { background: #007e54; }
+.ansi48-36 { background: #007e54; }
+.inv48-36 { color: #007e54; }
+.ansi38-37 { color: #007e7e; }
+.inv38-37 { background: #007e7e; }
+.ansi48-37 { background: #007e7e; }
+.inv48-37 { color: #007e7e; }
+.ansi38-38 { color: #007ea8; }
+.inv38-38 { background: #007ea8; }
+.ansi48-38 { background: #007ea8; }
+.inv48-38 { color: #007ea8; }
+.ansi38-39 { color: #007ed2; }
+.inv38-39 { background: #007ed2; }
+.ansi48-39 { background: #007ed2; }
+.inv48-39 { color: #007ed2; }
+.ansi38-70 { color: #2a7e00; }
+.inv38-70 { background: #2a7e00; }
+.ansi48-70 { background: #2a7e00; }
+.inv48-70 { color: #2a7e00; }
+.ansi38-71 { color: #2a7e2a; }
+.inv38-71 { background: #2a7e2a; }
+.ansi48-71 { background: #2a7e2a; }
+.inv48-71 { color: #2a7e2a; }
+.ansi38-72 { color: #2a7e54; }
+.inv38-72 { background: #2a7e54; }
+.ansi48-72 { background: #2a7e54; }
+.inv48-72 { color: #2a7e54; }
+.ansi38-73 { color: #2a7e7e; }
+.inv38-73 { background: #2a7e7e; }
+.ansi48-73 { background: #2a7e7e; }
+.inv48-73 { color: #2a7e7e; }
+.ansi38-74 { color: #2a7ea8; }
+.inv38-74 { background: #2a7ea8; }
+.ansi48-74 { background: #2a7ea8; }
+.inv48-74 { color: #2a7ea8; }
+.ansi38-75 { color: #2a7ed2; }
+.inv38-75 { background: #2a7ed2; }
+.ansi48-75 { background: #2a7ed2; }
+.inv48-75 { color: #2a7ed2; }
+.ansi38-106 { color: #547e00; }
+.inv38-106 { background: #547e00; }
+.ansi48-106 { background: #547e00; }
+.inv48-106 { color: #547e00; }
+.ansi38-107 { color: #547e2a; }
+.inv38-107 { background: #547e2a; }
+.ansi48-107 { background: #547e2a; }
+.inv48-107 { color: #547e2a; }
+.ansi38-108 { color: #547e54; }
+.inv38-108 { background: #547e54; }
+.ansi48-108 { background: #547e54; }
+.inv48-108 { color: #547e54; }
+.ansi38-109 { color: #547e7e; }
+.inv38-109 { background: #547e7e; }
+.ansi48-109 { background: #547e7e; }
+.inv48-109 { color: #547e7e; }
+.ansi38-110 { color: #547ea8; }
+.inv38-110 { background: #547ea8; }
+.ansi48-110 { background: #547ea8; }
+.inv48-110 { color: #547ea8; }
+.ansi38-111 { color: #547ed2; }
+.inv38-111 { background: #547ed2; }
+.ansi48-111 { background: #547ed2; }
+.inv48-111 { color: #547ed2; }
+.ansi38-142 { color: #7e7e00; }
+.inv38-142 { background: #7e7e00; }
+.ansi48-142 { background: #7e7e00; }
+.inv48-142 { color: #7e7e00; }
+.ansi38-143 { color: #7e7e2a; }
+.inv38-143 { background: #7e7e2a; }
+.ansi48-143 { background: #7e7e2a; }
+.inv48-143 { color: #7e7e2a; }
+.ansi38-144 { color: #7e7e54; }
+.inv38-144 { background: #7e7e54; }
+.ansi48-144 { background: #7e7e54; }
+.inv48-144 { color: #7e7e54; }
+.ansi38-145 { color: #7e7e7e; }
+.inv38-145 { background: #7e7e7e; }
+.ansi48-145 { background: #7e7e7e; }
+.inv48-145 { color: #7e7e7e; }
+.ansi38-146 { color: #7e7ea8; }
+.inv38-146 { background: #7e7ea8; }
+.ansi48-146 { background: #7e7ea8; }
+.inv48-146 { color: #7e7ea8; }
+.ansi38-147 { color: #7e7ed2; }
+.inv38-147 { background: #7e7ed2; }
+.ansi48-147 { background: #7e7ed2; }
+.inv48-147 { color: #7e7ed2; }
+.ansi38-178 { color: #a87e00; }
+.inv38-178 { background: #a87e00; }
+.ansi48-178 { background: #a87e00; }
+.inv48-178 { color: #a87e00; }
+.ansi38-179 { color: #a87e2a; }
+.inv38-179 { background: #a87e2a; }
+.ansi48-179 { background: #a87e2a; }
+.inv48-179 { color: #a87e2a; }
+.ansi38-180 { color: #a87e54; }
+.inv38-180 { background: #a87e54; }
+.ansi48-180 { background: #a87e54; }
+.inv48-180 { color: #a87e54; }
+.ansi38-181 { color: #a87e7e; }
+.inv38-181 { background: #a87e7e; }
+.ansi48-181 { background: #a87e7e; }
+.inv48-181 { color: #a87e7e; }
+.ansi38-182 { color: #a87ea8; }
+.inv38-182 { background: #a87ea8; }
+.ansi48-182 { background: #a87ea8; }
+.inv48-182 { color: #a87ea8; }
+.ansi38-183 { color: #a87ed2; }
+.inv38-183 { background: #a87ed2; }
+.ansi48-183 { background: #a87ed2; }
+.inv48-183 { color: #a87ed2; }
+.ansi38-214 { color: #d27e00; }
+.inv38-214 { background: #d27e00; }
+.ansi48-214 { background: #d27e00; }
+.inv48-214 { color: #d27e00; }
+.ansi38-215 { color: #d27e2a; }
+.inv38-215 { background: #d27e2a; }
+.ansi48-215 { background: #d27e2a; }
+.inv48-215 { color: #d27e2a; }
+.ansi38-216 { color: #d27e54; }
+.inv38-216 { background: #d27e54; }
+.ansi48-216 { background: #d27e54; }
+.inv48-216 { color: #d27e54; }
+.ansi38-217 { color: #d27e7e; }
+.inv38-217 { background: #d27e7e; }
+.ansi48-217 { background: #d27e7e; }
+.inv48-217 { color: #d27e7e; }
+.ansi38-218 { color: #d27ea8; }
+.inv38-218 { background: #d27ea8; }
+.ansi48-218 { background: #d27ea8; }
+.inv48-218 { color: #d27ea8; }
+.ansi38-219 { color: #d27ed2; }
+.inv38-219 { background: #d27ed2; }
+.ansi48-219 { background: #d27ed2; }
+.inv48-219 { color: #d27ed2; }
+.ansi38-40 { color: #00a800; }
+.inv38-40 { background: #00a800; }
+.ansi48-40 { background: #00a800; }
+.inv48-40 { color: #00a800; }
+.ansi38-41 { color: #00a82a; }
+.inv38-41 { background: #00a82a; }
+.ansi48-41 { background: #00a82a; }
+.inv48-41 { color: #00a82a; }
+.ansi38-42 { color: #00a854; }
+.inv38-42 { background: #00a854; }
+.ansi48-42 { background: #00a854; }
+.inv48-42 { color: #00a854; }
+.ansi38-43 { color: #00a87e; }
+.inv38-43 { background: #00a87e; }
+.ansi48-43 { background: #00a87e; }
+.inv48-43 { color: #00a87e; }
+.ansi38-44 { color: #00a8a8; }
+.inv38-44 { background: #00a8a8; }
+.ansi48-44 { background: #00a8a8; }
+.inv48-44 { color: #00a8a8; }
+.ansi38-45 { color: #00a8d2; }
+.inv38-45 { background: #00a8d2; }
+.ansi48-45 { background: #00a8d2; }
+.inv48-45 { color: #00a8d2; }
+.ansi38-76 { color: #2aa800; }
+.inv38-76 { background: #2aa800; }
+.ansi48-76 { background: #2aa800; }
+.inv48-76 { color: #2aa800; }
+.ansi38-77 { color: #2aa82a; }
+.inv38-77 { background: #2aa82a; }
+.ansi48-77 { background: #2aa82a; }
+.inv48-77 { color: #2aa82a; }
+.ansi38-78 { color: #2aa854; }
+.inv38-78 { background: #2aa854; }
+.ansi48-78 { background: #2aa854; }
+.inv48-78 { color: #2aa854; }
+.ansi38-79 { color: #2aa87e; }
+.inv38-79 { background: #2aa87e; }
+.ansi48-79 { background: #2aa87e; }
+.inv48-79 { color: #2aa87e; }
+.ansi38-80 { color: #2aa8a8; }
+.inv38-80 { background: #2aa8a8; }
+.ansi48-80 { background: #2aa8a8; }
+.inv48-80 { color: #2aa8a8; }
+.ansi38-81 { color: #2aa8d2; }
+.inv38-81 { background: #2aa8d2; }
+.ansi48-81 { background: #2aa8d2; }
+.inv48-81 { color: #2aa8d2; }
+.ansi38-112 { color: #54a800; }
+.inv38-112 { background: #54a800; }
+.ansi48-112 { background: #54a800; }
+.inv48-112 { color: #54a800; }
+.ansi38-113 { color: #54a82a; }
+.inv38-113 { background: #54a82a; }
+.ansi48-113 { background: #54a82a; }
+.inv48-113 { color: #54a82a; }
+.ansi38-114 { color: #54a854; }
+.inv38-114 { background: #54a854; }
+.ansi48-114 { background: #54a854; }
+.inv48-114 { color: #54a854; }
+.ansi38-115 { color: #54a87e; }
+.inv38-115 { background: #54a87e; }
+.ansi48-115 { background: #54a87e; }
+.inv48-115 { color: #54a87e; }
+.ansi38-116 { color: #54a8a8; }
+.inv38-116 { background: #54a8a8; }
+.ansi48-116 { background: #54a8a8; }
+.inv48-116 { color: #54a8a8; }
+.ansi38-117 { color: #54a8d2; }
+.inv38-117 { background: #54a8d2; }
+.ansi48-117 { background: #54a8d2; }
+.inv48-117 { color: #54a8d2; }
+.ansi38-148 { color: #7ea800; }
+.inv38-148 { background: #7ea800; }
+.ansi48-148 { background: #7ea800; }
+.inv48-148 { color: #7ea800; }
+.ansi38-149 { color: #7ea82a; }
+.inv38-149 { background: #7ea82a; }
+.ansi48-149 { background: #7ea82a; }
+.inv48-149 { color: #7ea82a; }
+.ansi38-150 { color: #7ea854; }
+.inv38-150 { background: #7ea854; }
+.ansi48-150 { background: #7ea854; }
+.inv48-150 { color: #7ea854; }
+.ansi38-151 { color: #7ea87e; }
+.inv38-151 { background: #7ea87e; }
+.ansi48-151 { background: #7ea87e; }
+.inv48-151 { color: #7ea87e; }
+.ansi38-152 { color: #7ea8a8; }
+.inv38-152 { background: #7ea8a8; }
+.ansi48-152 { background: #7ea8a8; }
+.inv48-152 { color: #7ea8a8; }
+.ansi38-153 { color: #7ea8d2; }
+.inv38-153 { background: #7ea8d2; }
+.ansi48-153 { background: #7ea8d2; }
+.inv48-153 { color: #7ea8d2; }
+.ansi38-184 { color: #a8a800; }
+.inv38-184 { background: #a8a800; }
+.ansi48-184 { background: #a8a800; }
+.inv48-184 { color: #a8a800; }
+.ansi38-185 { color: #a8a82a; }
+.inv38-185 { background: #a8a82a; }
+.ansi48-185 { background: #a8a82a; }
+.inv48-185 { color: #a8a82a; }
+.ansi38-186 { color: #a8a854; }
+.inv38-186 { background: #a8a854; }
+.ansi48-186 { background: #a8a854; }
+.inv48-186 { color: #a8a854; }
+.ansi38-187 { color: #a8a87e; }
+.inv38-187 { background: #a8a87e; }
+.ansi48-187 { background: #a8a87e; }
+.inv48-187 { color: #a8a87e; }
+.ansi38-188 { color: #a8a8a8; }
+.inv38-188 { background: #a8a8a8; }
+.ansi48-188 { background: #a8a8a8; }
+.inv48-188 { color: #a8a8a8; }
+.ansi38-189 { color: #a8a8d2; }
+.inv38-189 { background: #a8a8d2; }
+.ansi48-189 { background: #a8a8d2; }
+.inv48-189 { color: #a8a8d2; }
+.ansi38-220 { color: #d2a800; }
+.inv38-220 { background: #d2a800; }
+.ansi48-220 { background: #d2a800; }
+.inv48-220 { color: #d2a800; }
+.ansi38-221 { color: #d2a82a; }
+.inv38-221 { background: #d2a82a; }
+.ansi48-221 { background: #d2a82a; }
+.inv48-221 { color: #d2a82a; }
+.ansi38-222 { color: #d2a854; }
+.inv38-222 { background: #d2a854; }
+.ansi48-222 { background: #d2a854; }
+.inv48-222 { color: #d2a854; }
+.ansi38-223 { color: #d2a87e; }
+.inv38-223 { background: #d2a87e; }
+.ansi48-223 { background: #d2a87e; }
+.inv48-223 { color: #d2a87e; }
+.ansi38-224 { color: #d2a8a8; }
+.inv38-224 { background: #d2a8a8; }
+.ansi48-224 { background: #d2a8a8; }
+.inv48-224 { color: #d2a8a8; }
+.ansi38-225 { color: #d2a8d2; }
+.inv38-225 { background: #d2a8d2; }
+.ansi48-225 { background: #d2a8d2; }
+.inv48-225 { color: #d2a8d2; }
+.ansi38-46 { color: #00d200; }
+.inv38-46 { background: #00d200; }
+.ansi48-46 { background: #00d200; }
+.inv48-46 { color: #00d200; }
+.ansi38-47 { color: #00d22a; }
+.inv38-47 { background: #00d22a; }
+.ansi48-47 { background: #00d22a; }
+.inv48-47 { color: #00d22a; }
+.ansi38-48 { color: #00d254; }
+.inv38-48 { background: #00d254; }
+.ansi48-48 { background: #00d254; }
+.inv48-48 { color: #00d254; }
+.ansi38-49 { color: #00d27e; }
+.inv38-49 { background: #00d27e; }
+.ansi48-49 { background: #00d27e; }
+.inv48-49 { color: #00d27e; }
+.ansi38-50 { color: #00d2a8; }
+.inv38-50 { background: #00d2a8; }
+.ansi48-50 { background: #00d2a8; }
+.inv48-50 { color: #00d2a8; }
+.ansi38-51 { color: #00d2d2; }
+.inv38-51 { background: #00d2d2; }
+.ansi48-51 { background: #00d2d2; }
+.inv48-51 { color: #00d2d2; }
+.ansi38-82 { color: #2ad200; }
+.inv38-82 { background: #2ad200; }
+.ansi48-82 { background: #2ad200; }
+.inv48-82 { color: #2ad200; }
+.ansi38-83 { color: #2ad22a; }
+.inv38-83 { background: #2ad22a; }
+.ansi48-83 { background: #2ad22a; }
+.inv48-83 { color: #2ad22a; }
+.ansi38-84 { color: #2ad254; }
+.inv38-84 { background: #2ad254; }
+.ansi48-84 { background: #2ad254; }
+.inv48-84 { color: #2ad254; }
+.ansi38-85 { color: #2ad27e; }
+.inv38-85 { background: #2ad27e; }
+.ansi48-85 { background: #2ad27e; }
+.inv48-85 { color: #2ad27e; }
+.ansi38-86 { color: #2ad2a8; }
+.inv38-86 { background: #2ad2a8; }
+.ansi48-86 { background: #2ad2a8; }
+.inv48-86 { color: #2ad2a8; }
+.ansi38-87 { color: #2ad2d2; }
+.inv38-87 { background: #2ad2d2; }
+.ansi48-87 { background: #2ad2d2; }
+.inv48-87 { color: #2ad2d2; }
+.ansi38-118 { color: #54d200; }
+.inv38-118 { background: #54d200; }
+.ansi48-118 { background: #54d200; }
+.inv48-118 { color: #54d200; }
+.ansi38-119 { color: #54d22a; }
+.inv38-119 { background: #54d22a; }
+.ansi48-119 { background: #54d22a; }
+.inv48-119 { color: #54d22a; }
+.ansi38-120 { color: #54d254; }
+.inv38-120 { background: #54d254; }
+.ansi48-120 { background: #54d254; }
+.inv48-120 { color: #54d254; }
+.ansi38-121 { color: #54d27e; }
+.inv38-121 { background: #54d27e; }
+.ansi48-121 { background: #54d27e; }
+.inv48-121 { color: #54d27e; }
+.ansi38-122 { color: #54d2a8; }
+.inv38-122 { background: #54d2a8; }
+.ansi48-122 { background: #54d2a8; }
+.inv48-122 { color: #54d2a8; }
+.ansi38-123 { color: #54d2d2; }
+.inv38-123 { background: #54d2d2; }
+.ansi48-123 { background: #54d2d2; }
+.inv48-123 { color: #54d2d2; }
+.ansi38-154 { color: #7ed200; }
+.inv38-154 { background: #7ed200; }
+.ansi48-154 { background: #7ed200; }
+.inv48-154 { color: #7ed200; }
+.ansi38-155 { color: #7ed22a; }
+.inv38-155 { background: #7ed22a; }
+.ansi48-155 { background: #7ed22a; }
+.inv48-155 { color: #7ed22a; }
+.ansi38-156 { color: #7ed254; }
+.inv38-156 { background: #7ed254; }
+.ansi48-156 { background: #7ed254; }
+.inv48-156 { color: #7ed254; }
+.ansi38-157 { color: #7ed27e; }
+.inv38-157 { background: #7ed27e; }
+.ansi48-157 { background: #7ed27e; }
+.inv48-157 { color: #7ed27e; }
+.ansi38-158 { color: #7ed2a8; }
+.inv38-158 { background: #7ed2a8; }
+.ansi48-158 { background: #7ed2a8; }
+.inv48-158 { color: #7ed2a8; }
+.ansi38-159 { color: #7ed2d2; }
+.inv38-159 { background: #7ed2d2; }
+.ansi48-159 { background: #7ed2d2; }
+.inv48-159 { color: #7ed2d2; }
+.ansi38-190 { color: #a8d200; }
+.inv38-190 { background: #a8d200; }
+.ansi48-190 { background: #a8d200; }
+.inv48-190 { color: #a8d200; }
+.ansi38-191 { color: #a8d22a; }
+.inv38-191 { background: #a8d22a; }
+.ansi48-191 { background: #a8d22a; }
+.inv48-191 { color: #a8d22a; }
+.ansi38-192 { color: #a8d254; }
+.inv38-192 { background: #a8d254; }
+.ansi48-192 { background: #a8d254; }
+.inv48-192 { color: #a8d254; }
+.ansi38-193 { color: #a8d27e; }
+.inv38-193 { background: #a8d27e; }
+.ansi48-193 { background: #a8d27e; }
+.inv48-193 { color: #a8d27e; }
+.ansi38-194 { color: #a8d2a8; }
+.inv38-194 { background: #a8d2a8; }
+.ansi48-194 { background: #a8d2a8; }
+.inv48-194 { color: #a8d2a8; }
+.ansi38-195 { color: #a8d2d2; }
+.inv38-195 { background: #a8d2d2; }
+.ansi48-195 { background: #a8d2d2; }
+.inv48-195 { color: #a8d2d2; }
+.ansi38-226 { color: #d2d200; }
+.inv38-226 { background: #d2d200; }
+.ansi48-226 { background: #d2d200; }
+.inv48-226 { color: #d2d200; }
+.ansi38-227 { color: #d2d22a; }
+.inv38-227 { background: #d2d22a; }
+.ansi48-227 { background: #d2d22a; }
+.inv48-227 { color: #d2d22a; }
+.ansi38-228 { color: #d2d254; }
+.inv38-228 { background: #d2d254; }
+.ansi48-228 { background: #d2d254; }
+.inv48-228 { color: #d2d254; }
+.ansi38-229 { color: #d2d27e; }
+.inv38-229 { background: #d2d27e; }
+.ansi48-229 { background: #d2d27e; }
+.inv48-229 { color: #d2d27e; }
+.ansi38-230 { color: #d2d2a8; }
+.inv38-230 { background: #d2d2a8; }
+.ansi48-230 { background: #d2d2a8; }
+.inv48-230 { color: #d2d2a8; }
+.ansi38-231 { color: #d2d2d2; }
+.inv38-231 { background: #d2d2d2; }
+.ansi48-231 { background: #d2d2d2; }
+.inv48-231 { color: #d2d2d2; }
+.ansi38-232 { color: #080808; }
+.inv38-232 { background: #080808; }
+.ansi48-232 { background: #080808; }
+.inv48-232 { color: #080808; }
+.ansi38-233 { color: #121212; }
+.inv38-233 { background: #121212; }
+.ansi48-233 { background: #121212; }
+.inv48-233 { color: #121212; }
+.ansi38-234 { color: #1c1c1c; }
+.inv38-234 { background: #1c1c1c; }
+.ansi48-234 { background: #1c1c1c; }
+.inv48-234 { color: #1c1c1c; }
+.ansi38-235 { color: #262626; }
+.inv38-235 { background: #262626; }
+.ansi48-235 { background: #262626; }
+.inv48-235 { color: #262626; }
+.ansi38-236 { color: #303030; }
+.inv38-236 { background: #303030; }
+.ansi48-236 { background: #303030; }
+.inv48-236 { color: #303030; }
+.ansi38-237 { color: #3a3a3a; }
+.inv38-237 { background: #3a3a3a; }
+.ansi48-237 { background: #3a3a3a; }
+.inv48-237 { color: #3a3a3a; }
+.ansi38-238 { color: #444444; }
+.inv38-238 { background: #444444; }
+.ansi48-238 { background: #444444; }
+.inv48-238 { color: #444444; }
+.ansi38-239 { color: #4e4e4e; }
+.inv38-239 { background: #4e4e4e; }
+.ansi48-239 { background: #4e4e4e; }
+.inv48-239 { color: #4e4e4e; }
+.ansi38-240 { color: #585858; }
+.inv38-240 { background: #585858; }
+.ansi48-240 { background: #585858; }
+.inv48-240 { color: #585858; }
+.ansi38-241 { color: #626262; }
+.inv38-241 { background: #626262; }
+.ansi48-241 { background: #626262; }
+.inv48-241 { color: #626262; }
+.ansi38-242 { color: #6c6c6c; }
+.inv38-242 { background: #6c6c6c; }
+.ansi48-242 { background: #6c6c6c; }
+.inv48-242 { color: #6c6c6c; }
+.ansi38-243 { color: #767676; }
+.inv38-243 { background: #767676; }
+.ansi48-243 { background: #767676; }
+.inv48-243 { color: #767676; }
+.ansi38-244 { color: #808080; }
+.inv38-244 { background: #808080; }
+.ansi48-244 { background: #808080; }
+.inv48-244 { color: #808080; }
+.ansi38-245 { color: #8a8a8a; }
+.inv38-245 { background: #8a8a8a; }
+.ansi48-245 { background: #8a8a8a; }
+.inv48-245 { color: #8a8a8a; }
+.ansi38-246 { color: #949494; }
+.inv38-246 { background: #949494; }
+.ansi48-246 { background: #949494; }
+.inv48-246 { color: #949494; }
+.ansi38-247 { color: #9e9e9e; }
+.inv38-247 { background: #9e9e9e; }
+.ansi48-247 { background: #9e9e9e; }
+.inv48-247 { color: #9e9e9e; }
+.ansi38-248 { color: #a8a8a8; }
+.inv38-248 { background: #a8a8a8; }
+.ansi48-248 { background: #a8a8a8; }
+.inv48-248 { color: #a8a8a8; }
+.ansi38-249 { color: #b2b2b2; }
+.inv38-249 { background: #b2b2b2; }
+.ansi48-249 { background: #b2b2b2; }
+.inv48-249 { color: #b2b2b2; }
+.ansi38-250 { color: #bcbcbc; }
+.inv38-250 { background: #bcbcbc; }
+.ansi48-250 { background: #bcbcbc; }
+.inv48-250 { color: #bcbcbc; }
+.ansi38-251 { color: #c6c6c6; }
+.inv38-251 { background: #c6c6c6; }
+.ansi48-251 { background: #c6c6c6; }
+.inv48-251 { color: #c6c6c6; }
+.ansi38-252 { color: #d0d0d0; }
+.inv38-252 { background: #d0d0d0; }
+.ansi48-252 { background: #d0d0d0; }
+.inv48-252 { color: #d0d0d0; }
+.ansi38-253 { color: #dadada; }
+.inv38-253 { background: #dadada; }
+.ansi48-253 { background: #dadada; }
+.inv48-253 { color: #dadada; }
+.ansi38-254 { color: #e4e4e4; }
+.inv38-254 { background: #e4e4e4; }
+.ansi48-254 { background: #e4e4e4; }
+.inv48-254 { color: #e4e4e4; }
+.ansi38-255 { color: #eeeeee; }
+.inv38-255 { background: #eeeeee; }
+.ansi48-255 { background: #eeeeee; }
+.inv48-255 { color: #eeeeee; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content">
+
+Dispositions relatives à la marine marchande
+――――
+
+
+1er
+――――
+
+I. - La loi n° 82-1153 du 30 décembre 1982 d'orientation des transports intérieurs est ainsi modifiée :
+1° Le huitième alinéa de l'article 5 est complété par trois phrases ainsi rédigées :
+"Pour l'exercice de ces missions, l'État et les autres personnes publiques précédemment mentionnées ont accès aux informations relatives au trafic ferroviaire et aux données économiques nécessaires à la conduite d'études et de recherches de nature à faciliter la réalisation des objectifs assignés au système de transports. Lorsque la divulgation de ces informations est susceptible de porter atteinte au secret des affaires, leur détenteur peut demander que leur diffusion à ces personnes publiques soit assurée par le ministre chargé des transports. Dans ce cas, celui-ci désigne les services habilités à procéder à cette diffusion, en précise les conditions et modalités garantissant le respect de ce secret et arrête la nature des informations pouvant être rendues publiques." ;
+2° L'article 13-1 est ainsi modifié :
+a) Le premier alinéa est complété par une phrase ainsi rédigée :
+"Les dispositions du présent alinéa ne concernent pas la construction ou la modification substantielle des véhicules de transport public guidé ou ferroviaire." ;
+b) Au début de la première phrase du deuxième alinéa, les mots : "Leur mise en exploitation commerciale" sont remplacés par les mots : "La mise en exploitation commerciale de ces systèmes" ;
+c) Après le deuxième alinéa, il est inséré un alinéa ainsi rédigé :
+"L'autorisation de mise en exploitation commerciale d'un véhicule de transport ferroviaire ou guidé délivrée par l'autorité compétente d'un autre État membre de l'Union européenne ou celle d'un État appliquant, en vertu d'accords auxquels la France ou l'Union européenne sont parties, des règles techniques et de sécurité équivalentes à celles de l'Union européenne, emporte autorisation de son exploitation commerciale dès lors qu'elle a été délivrée en application de règles communautaires ou de règles reconnues par l'autorité compétente comme étant de nature à garantir la sécurité." ;
+d) Le quatrième alinéa est complété par les mots : "ainsi que les modalités de reconnaissance des règles mentionnées au troisième alinéa." ;
+3° À la première phrase du premier alinéa des articles 13-1 et 13-2, les mots : "un expert ou un organisme" sont remplacés par les mots : "un organisme" ;
+4° À la seconde phrase du premier alinéa de l'article 13-1, le mot : "ouvrages" est remplacé par le mot : "systèmes" et à la fin de la deuxième phrase du deuxième alinéa du même article, les mots : "de l'ouvrage" sont remplacés par les mots : "du système" ;
+5° À la seconde phrase du premier alinéa de l'article 13-2, les mots : "ces ouvrages" sont remplacés par les mots : "ces systèmes" ;
+6° La section I du chapitre Ier du titre II est ainsi modifiée :
+a) L'intitulé est ainsi rédigé : "De l'organisation du transport ferroviaire et du service public ferroviaire" ;
+b) Avant l'article 18, sont insérés trois articles 17-1, 17-2 et 17-3 ainsi rédigés :
+"Art. 17-1. - I. - Au sens du présent article, le réseau ferroviaire est composé du réseau ferré national et des lignes ferroviaires ouvertes à la circulation publique qui lui sont reliées, y compris les lignes d'accès aux ports et aux terminaux desservant ou pouvant desservir plus d'un utilisateur final.
+"Au sens du présent article, on entend par " capacités de l'infrastructure " la possibilité de programmer des sillons sollicités pour un segment de l'infrastructure pendant une certaine période, et on entend par " sillon " la capacité d'infrastructure requise pour faire circuler un train donné d'un point à un autre à un moment donné.
+"II. - La gestion de l'infrastructure ferroviaire est comptablement séparée de l'exploitation des services de transport des entreprises ferroviaires. Aucune aide publique versée à une de ces activités ne peut être affectée à l'autre.
+"III. - En ce qui concerne les entreprises ferroviaires, des comptes de profits et pertes et, soit des bilans, soit des bilans financiers annuels décrivant l'actif et le passif sont tenus et publiés pour les activités relatives à la fourniture des services de transport ferroviaire de fret.
+"Les concours publics reçus par les entreprises ferroviaires au titre des missions de service public de voyageurs qui leur sont confiées ne peuvent être affectés à d'autres activités et doivent figurer dans les comptes correspondants.
+"IV. - Les entreprises ferroviaires autorisées à exploiter des services de transport ont, dans des conditions équitables et sans discrimination, un droit d'accès à l'ensemble du réseau ferroviaire, y compris pour l'accès par le réseau aux infrastructures de services, ainsi que, lorsqu'il n'existe pas d'autre possibilité d'accès dans des conditions économiques raisonnables, aux services que ces infrastructures permettent de leur fournir.
+"Un décret en Conseil d'État précise pour les gares et toutes autres infrastructures de services la nature des prestations minimales ou complémentaires dont toute entreprise ferroviaire autorisée à réaliser des services de transport peut demander la fourniture et, en tant que de besoin, les principes de tarification applicables à ces prestations.
+"L'utilisation de l'infrastructure donne lieu à la passation d'un contrat entre le bénéficiaire d'un sillon et le gestionnaire d'infrastructure et à la perception d'une redevance par ce dernier. Les capacités de l'infrastructure disponible ne peuvent, une fois affectées à un candidat, être transférées par le bénéficiaire à une autre entreprise ou un autre service. Tout transfert de capacités d'infrastructure à titre onéreux ou gratuit est interdit et entraîne l'exclusion de l'attribution ultérieure de capacités.
+"Toutefois, d'autres personnes que les entreprises ferroviaires peuvent être autorisées à demander l'attribution de sillons en vue de les mettre à la disposition d'une entreprise ferroviaire. Une telle mise à disposition des sillons qui leur sont attribués à une entreprise ferroviaire ne constitue pas un transfert prohibé au sens de l'alinéa précédent.
+"Les redevances pour les prestations complémentaires ou connexes offertes par un seul fournisseur sont liées au coût de la prestation calculé d'après le degré d'utilisation réelle.
+"V. - Le gestionnaire d'infrastructure publie un document de référence du réseau qui décrit les caractéristiques de l'infrastructure mise à disposition des entreprises ferroviaires, les tarifs des prestations offertes, les règles de répartition des capacités, ainsi que les informations nécessaires à l'exercice des droits d'accès au réseau.
+"Le gestionnaire d'infrastructure d'un réseau sur lequel une seule entreprise circule et n'effectue que des services de marchandises est dispensé d'établir le document de référence du réseau jusqu'à ce qu'un autre candidat demande à utiliser la capacité dudit réseau.
+"VI. - Tout candidat demandeur de sillons peut conclure avec le gestionnaire d'infrastructure un accord-cadre précisant les caractéristiques des capacités d'infrastructure ferroviaire qui lui sont offertes pour une durée déterminée tenant compte, le cas échéant, de l'existence de contrats commerciaux, d'investissements particuliers ou de risques.
+"VII. - Les entreprises ferroviaires qui exploitent des services avant le 1er janvier 2010 peuvent conclure avec le gestionnaire d'infrastructure des accords-cadres pour une durée de cinq ans, renouvelables une fois, sur la base des caractéristiques des capacités utilisées à condition que ces entreprises justifient d'investissements spéciaux ou de contrats commerciaux avant cette date.
+"Un décret en Conseil d'État fixe les modalités d'application du présent article.
+"Art. 17-2. - À compter du 13 décembre 2009, les entreprises ferroviaires exploitant des services de transport international de voyageurs peuvent, à cette occasion, assurer des dessertes intérieures à condition que l'objet principal du service exploité par l'entreprise ferroviaire soit le transport de voyageurs entre des gares situées dans des États membres différents.
+"L'autorité administrative compétente peut limiter ces dessertes intérieures, sous réserve que l'Autorité de régulation des activités ferroviaires ait, par un avis motivé, estimé que la condition précitée n'était pas remplie.
+"Toute autorité organisatrice de transport ferroviaire compétente peut également limiter ou, le cas échéant, interdire ces dessertes intérieures, sous réserve que l'Autorité de régulation des activités ferroviaires ait, par un avis motivé, estimé que ces dessertes compromettent l'équilibre économique d'un contrat de service public.
+"Un décret en Conseil d'État fixe les conditions d'application du présent article.
+"Art. 17-3. - La consistance et les caractéristiques principales du réseau ferré national sont fixées par un décret en Conseil d'État pris en application des principes énoncés par l'article 14 de la présente loi.
+"La gestion du réseau ferré national est confiée à Réseau ferré de France qui en assure la responsabilité dans les conditions prévues par la loi n° 97-135 du 13 février 1997 portant création de l'établissement public Réseau ferré de France en vue du renouveau du transport ferroviaire.
+"Réseau ferré de France et les titulaires des contrats de partenariat ou de délégations de service public mentionnés aux articles 1er-1 et 1er-2 de la loi n° 97-135 du 13 février 1997 précitée ont la qualité de gestionnaire d'infrastructure." ;
+c) Le troisième alinéa de l'article 18 est complété par les mots : ", sous réserve des dispositions du premier alinéa de l'article 17-2" ;
+d ) L'article 24 est complété par un III ainsi rédigé :
+"III. - Au sein de la Société nationale des chemins de fer français, un service spécialisé exerce, à compter du 1er janvier 2010, pour le compte et selon les objectifs et principes de gestion définis par Réseau ferré de France, les missions de gestion du trafic et des circulations sur le réseau ferré national mentionnées à l'article 1er de la loi n° 97-135 du 13 février 1997 portant création de l'établissement public "Réseau ferré de France" en vue du renouveau du transport ferroviaire, dans des conditions assurant l'indépendance des fonctions essentielles ainsi exercées garantissant une concurrence libre et loyale et l'absence de toute discrimination.
+"Le directeur du service gestionnaire des trafics et des circulations ne reçoit aucune instruction qui soit de nature à remettre en cause ou à fausser cette indépendance et veille au caractère non discriminatoire des décisions prises pour l'exécution de ses missions. Il est nommé, pour cinq ans, par décret du Premier ministre sur proposition du ministre chargé des transports et après avis de l'Autorité de régulation des activités ferroviaires. Il ne peut être mis fin de manière anticipée à ses fonctions, le cas échéant à la demande du président de la Société nationale des chemins de fer français, que dans l'intérêt du service et selon des modalités identiques à celles de sa nomination.
+"Le directeur du service gestionnaire des trafics et des circulations ne peut être membre du conseil d'administration de la Société nationale des chemins de fer français. Les personnels employés par le service ne peuvent recevoir d'instructions que du directeur ou d'un agent placé sous son autorité.
+"Les dispositions de l'article 226-13 du code pénal s'appliquent à la divulgation, à toute personne étrangère au service gestionnaire des trafics et des circulations, d'informations d'ordre économique, commercial, industriel, financier ou technique dont la communication serait de nature à porter atteinte aux règles d'une concurrence libre et loyale et de non-discrimination imposées par la loi. Ces dispositions ne s'appliquent pas à la communication des informations nécessaires à l'accomplissement de leurs missions par Réseau ferré de France et par les services gestionnaires des trafics et des circulations sur d'autres réseaux ferroviaires français ou étrangers. Elles ne s'appliquent pas non plus à la communication des informations aux fonctionnaires et agents chargés de la tutelle de la Société nationale des chemins de fer français et de Réseau ferré de France.
+"Le service gestionnaire des trafics et des circulations dispose d'un budget propre, dont le financement est assuré par Réseau ferré de France dans le cadre d'une convention passée avec la Société nationale des chemins de fer français, co-signée par le directeur du service gestionnaire. Cette convention fixe, conformément à l'article 1er de la loi n° 97-135 du 13 février 1997 précitée, les conditions d'exécution et de rémunération des missions exercées par le service, notamment pour ce qui concerne les études techniques d'exécution nécessaires à l'instruction des demandes de sillons et la gestion opérationnelle des circulations.
+"Le directeur du service gestionnaire des trafics et des circulations est seul responsable de la gestion administrative et budgétaire du service. Il dispose, à ce titre, du pouvoir d'engager les dépenses liées à son fonctionnement et à l'accomplissement de ses missions.
+"Aucune décision intéressant, directement ou indirectement, la carrière d'un agent affecté au service gestionnaire des trafics et des circulations ne peut être prise sans l'avis du directeur du service, préalablement consulté. Cet avis est communiqué, à sa demande, à l'agent intéressé.
+"Un agent du service gestionnaire des trafics et des circulations ayant eu à connaître, dans l'exercice de ses fonctions, d'informations dont la divulgation est sanctionnée au titre du présent article ne peut exercer, en dehors de ce service, des activités dont la liste est définie par décret en Conseil d'État. Ce décret fixe la durée de l'interdiction.
+"Un décret précise, en tant que de besoin, les exigences matérielles d'indépendance auxquelles doit satisfaire le service gestionnaire, notamment en matière de sécurité d'accès aux locaux et aux systèmes d'information.
+"Un décret en Conseil d'État précise, en tant que de besoin, les modalités d'application du présent III, en particulier les règles de fonctionnement du service gestionnaire des trafics et des circulations." ;
+7° L'article 30-1 est complété par un alinéa ainsi rédigé :
+"Il peut comprendre des syndicats mixtes définis à l'article L. 5711-1 ou à l'article L. 5721-2 du code général des collectivités territoriales et compétents en matière d'organisation des transports."
+II. - Le premier alinéa de l'article 1er de la loi n° 97-135 du 13 février 1997 portant création de l'établissement public "Réseau ferré de France" en vue du renouveau du transport ferroviaire est ainsi modifié :
+1° À la deuxième phrase, les mots : "de l'infrastructure" sont supprimés ;
+2° La dernière phrase est ainsi rédigée :
+"Il est le gestionnaire du réseau ferré national."
+
+1er bis
+――――
+
+I. - Nul ne peut assurer la conduite d'un train sur le réseau ferroviaire s'il n'est titulaire d'une licence dont la délivrance est subordonnée à des conditions de formation scolaire, de connaissances professionnelles et d'aptitudes physiques et psychologiques.
+Un recours devant une commission d'aptitudes ferroviaires peut être formé à l'encontre d'une décision du médecin ou du psychologue.
+Le premier alinéa entre en vigueur au 1er décembre 2010 et au 1er décembre 2012 pour les conducteurs n'effectuant que des services intérieurs. Ces dates sont repoussées au 1er décembre 2017 pour les personnes régulièrement habilitées à la conduite de trains avant le 1er décembre 2010.
+La licence délivrée dans un État membre de la Communauté européenne ou dans un État appliquant des règles équivalentes à celles de l'Union européenne en vertu d'accords conclus avec celle-ci est valable sur le territoire national.
+II. - Le fait de conduire un train sans être titulaire de la licence et des documents requis par la réglementation de sécurité ou d'affecter à la conduite de trains une personne qui n'est pas titulaire de ces documents est puni d'un emprisonnement d'un an et d'une amende de 75 000 €. L'amende est quintuplée lorsque l'infraction est commise par une personne morale.
+III. - Un décret en Conseil d'État précise les modalités d'application du présent article et notamment les conditions d'organisation et de fonctionnement de la commission d'aptitudes ferroviaires.
+
+1er ter
+――――
+
+I. - À compter du 4 décembre 2009, le règlement (CE) n° 1371/2007 du Parlement européen et du Conseil du 23 octobre 2007 sur les droits et obligations des voyageurs ferroviaires s'applique aux voyages et services ferroviaires pour lesquels une entreprise doit avoir obtenu une licence conformément à la directive 95/18/CE du Conseil, du 19 juin 1995, concernant les licences des entreprises ferroviaires.
+II. - Les services publics de transport ferroviaire de voyageurs organisés par le syndicat des transports d'Île de France et par les régions sont soumis à l'application des seuls articles 9, 11, 12, 19, 26 et du 1 de l'article 20 du règlement précité.
+Les autres services intérieurs de transport ferroviaire de voyageurs sont soumis à l'application des seuls articles 9, 11, 12, 19, 26 et du 1 de l'article 20 du règlement pour une période de cinq ans. Celle-ci peut être renouvelée, par décret, deux fois par période maximale de cinq ans. À l'issue de cette période, l'ensemble des dispositions du règlement est applicable à ces services.
+Le présent article ne fait pas obstacle à ce que l'autorité compétente pour l'organisation d'un service public ferroviaire de transport de voyageurs décide de l'application de tout ou partie des dispositions non obligatoires du règlement précité.
+
+2
+――――
+
+La loi n° 97-135 du 13 février 1997 portant création de l'établissement public "Réseau ferré de France" en vue du renouveau du transport ferroviaire est ainsi modifiée :
+1° Le deuxième alinéa de l'article 1er est complété par deux phrases ainsi rédigées :
+"Cependant, pour des lignes à faible trafic réservées au transport de marchandises, Réseau ferré de France peut confier par convention ces missions à toute personne selon les mêmes objectifs et principes de gestion. Un opérateur de proximité ne peut en aucun cas devenir propriétaire de l'infrastructure ferroviaire qui demeure propriété de Réseau ferré de France, et ce même quand il est composé, pour tout ou partie, de collectivités locales ou d'établissements publics." ;
+2° À la fin de la deuxième phrase de l'article 1er-1, les mots : "qui demeurent régis par le deuxième alinéa de l'article 1er" sont remplacés par les mots : "qui sont assurés par la Société nationale des chemins de fer français, pour le compte du cocontractant qui la rémunère à cet effet, dans le respect des objectifs et principes de gestion du réseau ferré national définis par Réseau ferré de France" ;
+3° Le premier alinéa de l'article 2 est complété par deux phrases ainsi rédigées :
+"Pour l'application à Réseau ferré de France de l'article 5 de cette loi, la personnalité mentionnée au dernier alinéa du même article est choisie parmi les représentants des usagers du service de transport public. Le conseil d'administration comprend également un représentant d'une association de protection de l'environnement agréée au titre de l'article L. 141-1 du code de l'environnement excerçant ses activités sur l'ensemble du territoire national, désigné par le ministre chargé de l'écologie." ;
+3° bis Après l'article 2, sont insérés deux articles 2-1 et 2-2 ainsi rédigés :
+"Art. 2-1. - Les autorités organisatrices de services de transport ferroviaire, les entreprises ferroviaires, les opérateurs de transport combiné, les grands ports maritimes, les chargeurs, les usagers, les milieux professionnels de l'industrie ferroviaire, les associations de protection de l'environnement sont représentés dans un conseil de développement du réseau ferré national.
+"Ce conseil est consulté, dans un objectif de promotion du développement durable et d'efficacité économique et sociale, sur les grandes orientations de gestion et de développement de l'infrastructure du réseau ferré national. Il peut émettre toute proposition en la matière.
+"Un décret en Conseil d'État, Réseau ferré de France entendu, précise la composition de ce conseil, les modalités de désignation de ses membres et ses règles de fonctionnement.
+"Art. 2-2. - Les actes administratifs de Réseau ferré de France sont publiés au bulletin officiel de l'établissement public, diffusé sur son site internet sous forme électronique dans des conditions propres à en garantir la fiabilité. Un arrêté du ministre chargé des transports fixe les catégories d'actes et de délibérations qui sont publiés au bulletin officiel de Réseau ferré de France." ;
+4° L'article 13 est ainsi modifié :
+a) Au sixième alinéa, après les mots : "concurrence intermodale ;", sont insérés les mots : "il tient compte, lorsque le marché s'y prête, de la valeur économique, pour l'attributaire du sillon, de l'utilisation du réseau ferré national, et respecte les gains de productivité réalisés par les entreprises ferroviaires ;"
+b ) L'avant-dernier alinéa est complété par une phrase ainsi rédigée :
+"Les principes d'évolution de ces redevances sont fixés de façon pluriannuelle."
+
+Dispositions relatives à la marine marchande
+――――
+
+
+3 A
+――――
+
+Avant la fin de l'année 2009, le Gouvernement dépose au Parlement un rapport présentant les solutions envisageables pour que soit rendu possible le remboursement progressif de la dette de Réseau ferré de France.
+
+3
+――――
+
+I. - Le dernier alinéa de l'article 5 de la loi n° 83-675 du 26 juillet 1983 relative à la démocratisation du secteur public s'applique à compter de la publication d'un décret fixant les conditions d'application du présent alinéa et, notamment, la liste des entreprises et établissements publics concernés et les critères de désignation des représentants des consommateurs et des usagers.
+II. - Sous réserve des décisions de justice passées en force de chose jugée et des instances en cours avant le 10 septembre 2008, les délibérations prises depuis le 7 janvier 2006 par le conseil d'administration de l'établissement public "Réseau ferré de France" sont validées en tant que leur régularité serait contestée au regard des dispositions figurant à l'article 5 de la loi n° 83-675 du 26 juillet 1983 relative à la démocratisation du secteur public relatives à la représentation des consommateurs ou des usagers.
+III. - Sous réserve des décisions de justice passées en force de chose jugée et des instances en cours avant le 10 septembre 2008, les délibérations prises depuis le 16 mai 2001 par les conseils d'administration et de surveillance des autres entreprises publiques et établissements publics auxquels est applicable le dernier alinéa de l'article 5 de la loi n° 83-675 du 26 juillet 1983 relative à la démocratisation du secteur public sont validées en tant que leur régularité serait contestée au regard des dispositions de cet article relatives à la représentation des consommateurs et des usagers.
+
+Dispositions relatives à la marine marchande
+――――
+
+
+4
+――――
+
+L'Autorité de régulation des activités ferroviaires est une autorité publique indépendante, dotée de la personnalité morale, qui concourt au bon fonctionnement du service public et des activités concurrentielles de transport ferroviaire, au bénéfice des usagers et clients des services de transport ferroviaire.
+Elle veille en particulier à ce que les conditions d'accès au réseau ferroviaire par les entreprises ferroviaires n'entravent pas le développement de la concurrence.
+Elle assure une mission générale d'observation des conditions d'accès au réseau ferroviaire et peut, à ce titre, après avoir procédé à toute consultation qu'elle estime utile des acteurs du secteur des transports ferroviaires, formuler et publier toute recommandation.
+Elle veille à ce que l'accès aux capacités d'infrastructure sur le réseau et aux différentes prestations associées soit accordé de manière équitable et non discriminatoire. Elle s'assure de la cohérence des dispositions économiques, contractuelles et techniques mises en oeuvre par les gestionnaires d'infrastructure et les entreprises ferroviaires, avec leurs contraintes économiques, juridiques et techniques.
+L'autorité est compétente pour le réseau ferroviaire défini au I de l'article 17-1 de la loi n° 82-1153 du 30 décembre 1982 d'orientation des transports intérieurs, sous réserve des pouvoirs dévolus à la Commission intergouvernementale instituée par le traité entre la République française et le Royaume-Uni de Grande-Bretagne et d'Irlande du Nord, concernant la construction et l'exploitation par des sociétés privées concessionnaires d'une liaison fixe trans-Manche, signé le 12 février 1986.
+À la demande du ministre chargé des transports, l'autorité est associée à la préparation de la position française dans les négociations ou les actions de coopération internationales dans les domaines du transport ferroviaire et participe à la représentation française dans les organisations internationales et communautaires compétentes en ce domaine.
+
+5
+――――
+
+I. - L'Autorité de régulation des activités ferroviaires est composée de sept membres nommés en raison de leur compétence en matière ferroviaire, économique ou juridique, ou pour leur expertise en matière de concurrence. Leur mandat est de six ans non renouvelable.
+Le président de l'autorité et les six autres membres sont nommés par décret. Trois des membres autres que le président sont désignés respectivement par le président de l'Assemblée nationale, le président du Sénat et le président du Conseil économique, social et environnemental.
+À l'exception du président, les membres du collège sont renouvelés par tiers tous les deux ans.
+En cas de vacance de la présidence de l'autorité pour quelque cause que ce soit ou en cas d'empêchement constaté par le collège, les fonctions du président sont provisoirement exercées par le doyen d'âge du collège.
+En cas de vacance d'un siège de membre du collège, il est procédé à son remplacement pour la durée du mandat restant à courir. Un mandat exercé pendant moins de deux ans n'est pas pris en compte pour l'application de la règle de non-renouvellement.
+Le collège ne peut délibérer que si cinq au moins de ses membres sont présents. Les avis, décisions et recommandations sont pris à la majorité des membres présents. En cas de partage égal des voix, celle du président est prépondérante.
+Le président a qualité pour agir en justice au nom de l'autorité.
+II. - Pour la constitution du collège, le président est nommé pour six ans. La durée du mandat des membres désignés par les présidents des assemblées parlementaires et du Conseil économique, social et environnemental est fixée, par tirage au sort, à deux, quatre et six ans. La durée du mandat des trois autres membres est fixée par tirage au sort à deux, quatre et six ans.
+
+6
+――――
+
+Le président de l'Autorité de régulation des activités ferroviaires exerce cette fonction à plein temps. Sa fonction est incompatible avec toute activité professionnelle, tout mandat électif communal, départemental, régional, national ou européen, avec tout emploi public et toute détention, directe ou indirecte, d'intérêts dans une entreprise du secteur du transport ferroviaire.
+Les fonctions des autres membres du collège sont incompatibles avec tout mandat électif départemental, régional, national ou européen et toute détention, directe ou indirecte, d'intérêts dans une entreprise du secteur du transport ferroviaire.
+Les membres du collège ne prennent, à titre personnel, aucune position publique sur des sujets relevant de la compétence de l'autorité.
+Sans préjudice de la possibilité, pour tout membre du collège, de se déporter dans toute affaire dans laquelle il l'estimerait nécessaire, aucun membre ne peut délibérer dans une affaire dans laquelle il a ou a eu un intérêt au cours des trois années précédant la délibération ; cette exclusion s'applique également lorsque au cours de la même période, un membre a détenu un mandat ou exercé des fonctions de direction, de conseil ou de contrôle au sein d'une personne morale ayant eu intérêt à cette affaire.
+Les membres du collège ne sont pas révocables, sous réserve des dispositions suivantes :
+1° Tout membre qui ne respecte pas les règles d'incompatibilité prévues au présent article est déclaré, après consultation du collège, démissionnaire d'office par décret ;
+2° Il peut être mis fin aux fonctions d'un membre en cas d'empêchement constaté par le collège, dans les conditions prévues par le règlement intérieur de l'autorité ;
+3° Il peut également être mis fin aux fonctions d'un membre en cas de manquement grave à ses obligations, par décret pris sur proposition du collège.
+Le président de l'autorité prend les mesures appropriées pour assurer le respect des obligations définies au présent article.
+
+7
+――――
+
+Dans le respect des dispositions législatives et réglementaires, l'Autorité de régulation des activités ferroviaires précise, en tant que de besoin, dans le cadre des missions fixées à l'article 4, les règles concernant :
+1° Les conditions de raccordement au réseau ferroviaire ;
+2° Les conditions techniques et administratives d'accès au réseau et de son utilisation ;
+2° bis Les conditions d'accès aux services présentant un caractère de facilités essentielles et leurs conditions d'utilisation ;
+3° Les périmètres de chacune des activités comptablement séparées, désignées aux II et III de l'article 17-1 de la loi n° 82-1153 du 30 décembre 1982 précitée, les règles d'imputation comptable qui leur sont appliquées ainsi que les principes déterminant les relations financières entre ces activités.
+Les règles formulées en application du présent article sont transmises pour homologation au ministre chargé des transports, qui se prononce dans les deux mois. L'absence de notification dans ce délai d'une opposition par le ministre vaut homologation. Le refus d'homologation doit être motivé. Les règles homologuées sont publiées au Journal officiel.
+
+8
+――――
+
+I. - Lorsqu'une entreprise ferroviaire assure des dessertes intérieures à l'occasion d'un service international de voyageurs, l'Autorité de régulation des activités ferroviaires vérifie, à la demande de l'autorité administrative compétente ou des entreprises ferroviaires concernées, que le transport de voyageurs entre des gares situées dans des États membres différents constitue l'objet principal du service ainsi assuré afin de permettre, le cas échéant, à l'autorité administrative compétente d'encadrer l'exercice de ces dessertes intérieures, conformément à l'article 17-2 de la loi n° 82-1153 du 30 décembre 1982 précitée.
+Elle se prononce également sur l'existence éventuelle d'une atteinte à l'équilibre économique d'un contrat de service public par ces dessertes intérieures, à la demande de l'autorité administrative compétente, de l'autorité qui a attribué ledit contrat, du gestionnaire ou de l'entreprise ferroviaire qui exécute le contrat afin de permettre à l'autorité organisatrice compétente de limiter ou, le cas échéant, d'interdire ces dessertes intérieures, conformément au même article 17-2.
+II. - L'autorité est informée par tout gestionnaire d'infrastructure de son intention de négocier des redevances d'utilisation de l'infrastructure avec un demandeur autorisé de capacité d'infrastructure ferroviaire. Les tarifs négociés sont transmis à l'autorité qui peut s'y opposer s'ils méconnaissent les dispositions des deuxième et quatrième alinéas de l'article 4.
+III. - L'autorité autorise l'entrée en vigueur des accords-cadres prévus au VII de l'article 17-1 de la loi n° 82-1153 du 30 décembre 1982 précitée.
+IV. - L'autorité approuve, après avis de l'Autorité de la concurrence, les règles de la séparation comptable prévue à l'article 17-1 de la loi n° 82-1153 du 30 décembre 1982 précitée, les règles d'imputation, les périmètres comptables et les principes régissant les relations financières entre les activités comptablement séparées, qui sont proposés par les opérateurs. Elle veille à ce que ces règles, périmètres et principes ne permettent aucune discrimination, subvention croisée ou distorsion de concurrence. Les modifications de ces règles, périmètres et principes sont approuvées dans les mêmes conditions.
+V. - L'autorité émet un avis conforme sur la fixation des redevances d'infrastructure liées à l'utilisation du réseau ferré national au regard des principes et des règles de tarification applicables sur ce réseau, tels qu'ils résultent notamment de la loi n° 97-135 du 13 février 1997 portant création de l'établissement public "Réseau ferré de France" en vue du renouveau du transport ferroviaire et des dispositions prises pour son application.
+Lorsque, notamment en application d'une convention de délégation de service public prévue aux articles 1er-1 et 1er-2 de la loi n° 97-135 du 13 février 1997 précitée, les redevances sont fixées conformément à des dispositions tarifaires sur l'application desquelles l'autorité s'est déjà prononcée dans les conditions et selon les modalités prévues à l'alinéa précédent, l'avis visé à cet alinéa est réputé obtenu.
+V bis. - L'autorité émet un avis motivé sur le document de référence du réseau dans un délai de deux mois suivant sa publication. Les modifications qui, au vu de cet avis, sont nécessaires pour rendre les dispositions conformes à la réglementation sont apportées sans nouvelle consultation des parties intéressées.
+VI. - À la demande de l'autorité administrative compétente, l'autorité émet un avis sur les tarifs des services de transport de voyageurs réalisés à titre exclusif par une entreprise ferroviaire à laquelle l'exploitation est confiée sans mise en concurrence préalable. Elle se prononce en particulier sur l'équité des politiques tarifaires. Elle veille à l'existence d'un socle commun de tarification applicable à l'ensemble du territoire et de nature à permettre une égalité d'accessibilité aux voyageurs. Elle veille au respect, à ce titre, des tarifications sociales et de la loi sur le handicap. Les modalités d'application de ces dispositions sont fixées par décret en Conseil d'État.
+VII. - L'autorité est consultée sur les projets de textes réglementaires relatifs à l'accès au réseau ferroviaire, à la conception, la réalisation et l'utilisation des infrastructures et des matériels de transport ferroviaire.
+
+9
+――――
+
+I. - Toute personne s'estimant victime de la part de l'Établissement public de sécurité ferroviaire d'un traitement inéquitable, d'une discrimination ou de toute autre pratique ayant pour effet de restreindre abusivement l'accès au réseau ferroviaire peut, dans les délais de recours contentieux, solliciter pour avis l'Autorité de régulation des activités ferroviaires. L'autorité ainsi saisie en informe sans délai l'Établissement public de sécurité ferroviaire qui lui fournit les informations utiles à l'instruction de la saisine. Elle dispose d'un délai maximum de deux mois, à compter de la réception de la saisine, pour formuler son avis, qu'elle peut publier. Le directeur général de l'Établissement public de sécurité ferroviaire prend, au vu de cet avis, toute mesure qu'il juge nécessaire. Il notifie sa décision à l'auteur de la saisine et à l'autorité.
+La saisine de l'autorité suspend les délais de recours à l'encontre de la décision de l'Établissement public de sécurité ferroviaire. Ces délais recommencent à courir à compter de la notification au demandeur de l'avis de l'autorité. L'autorité ne peut intervenir au titre des présentes dispositions lorsqu'une procédure est engagée devant une juridiction.
+II. - Toute personne autorisée à demander des capacités d'infrastructures ferroviaires ou tout gestionnaire d'infrastructure peut saisir l'Autorité de régulation des activités ferroviaires dès lors qu'il s'estime victime d'un traitement inéquitable, d'une discrimination ou de tout autre préjudice liés à l'accès au réseau ferroviaire et en particulier :
+1° Au contenu du document de référence du réseau ;
+2° À la procédure de répartition des capacités d'infrastructures ferroviaires et aux décisions afférentes ;
+3° Aux conditions particulières qui lui sont faites ou aux redevances à acquitter en application de la tarification ferroviaire ;
+4° À l'exercice du droit d'accès au réseau ;
+5° À la fourniture des prestations minimales, complémentaires ou connexes liées à l'infrastructure ainsi qu'à l'accès aux infrastructures de services y compris les gares ;
+6° À l'exécution des accords-cadres mentionnés aux VI et VII de l'article 17-1 de la loi n° 82-1153 du 30 décembre 1982 précitée ainsi que des contrats d'utilisation de l'infrastructure ;
+7° À la création de services intérieurs de voyageurs effectués lors d'un service international de voyageurs.
+La décision de l'autorité, qui peut être assortie d'astreintes, précise les conditions d'ordre technique et financier de règlement du différend dans le délai qu'elle accorde. Lorsque c'est nécessaire pour le règlement du différend, l'autorité fixe, de manière objective, transparente, non discriminatoire et proportionnée, les modalités d'accès au réseau et ses conditions d'utilisation. Sa décision est notifiée aux parties et publiée au Journal officiel, sous réserve des secrets protégés par la loi.
+En cas d'atteinte grave et immédiate aux règles régissant l'accès au réseau ou à son utilisation, l'autorité peut, après avoir entendu les parties en cause, ordonner, le cas échéant sous astreinte, les mesures conservatoires nécessaires. Ces mesures peuvent comporter la suspension des pratiques portant atteinte aux règles régissant l'accès au réseau concerné ou à son utilisation.
+III. - L'autorité se prononce dans un délai de deux mois maximum à compter de la réception de l'ensemble des pièces utiles à l'instruction.
+Les décisions prises par l'autorité au titre du II sont susceptibles de recours en annulation ou en réformation dans un délai d'un mois à compter de leur notification. Ces recours relèvent de la compétence de la cour d'appel de Paris.
+Le recours n'est pas suspensif. Toutefois, le sursis à exécution de la décision peut être ordonné par le juge, si celle-ci est susceptible d'entraîner des conséquences manifestement excessives ou s'il est survenu, postérieurement à sa notification, des faits nouveaux d'une exceptionnelle gravité.
+Le pourvoi en cassation formé contre l'arrêt de la cour d'appel est exercé dans le délai d'un mois suivant la notification ou la signification de cet arrêt.
+
+10
+――――
+
+I. - L'Autorité de régulation des activités ferroviaires peut soit d'office, soit à la demande de l'autorité administrative compétente, d'une organisation professionnelle, d'un gestionnaire d'infrastructure, d'une entreprise ferroviaire ou de toute autre personne concernée, sanctionner les manquements qu'elle constate de la part des acteurs du secteur du transport ferroviaire, dans les conditions suivantes :
+1° En cas de manquement d'un gestionnaire d'infrastructure ou d'une entreprise ferroviaire aux obligations lui incombant, au titre de l'accès au réseau ou de son utilisation, et notamment en cas de méconnaissance par un gestionnaire d'infrastructure ou une entreprise ferroviaire d'une règle édictée par l'autorité en application de l'article 7 ou d'une décision prise par elle en application des III et IV de l'article 8, l'autorité met en demeure l'organisme intéressé de se conformer à ses obligations dans un délai qu'elle détermine. Elle peut rendre publique cette mise en demeure.
+Lorsque l'intéressé ne se conforme pas à cette mise en demeure dans le délai imparti, l'autorité peut prononcer à son encontre, en fonction de la gravité du manquement :
+a) Une interdiction temporaire d'accès à tout ou partie du réseau ferroviaire pour une durée n'excédant pas un an ;
+b) Une sanction pécuniaire, dont le montant est proportionné à la gravité du manquement, à la situation de l'intéressé, à l'ampleur du dommage et aux avantages qui en sont tirés, sans pouvoir excéder 3 % du chiffre d'affaires hors taxes du dernier exercice clos réalisé en France, porté à 5 % en cas de nouvelle violation de la même obligation. À défaut d'activité permettant de déterminer ce plafond, le montant de la sanction ne peut excéder 150 000 €, porté à 375 000 € en cas de nouvelle violation de la même obligation. Si le manquement a déjà fait l'objet d'une sanction pécuniaire au titre des articles L. 420-1, L. 420-2 et L. 420-5 du code de commerce, la sanction pécuniaire éventuellement prononcée par l'autorité est limitée de sorte que le montant global des sanctions pécuniaires ne dépasse pas le montant le plus élevé de l'une des sanctions encourues.
+Les sanctions pécuniaires sont recouvrées comme les créances de l'État étrangères à l'impôt et au domaine ;
+2° Les mêmes sanctions sont encourues lorsque le gestionnaire d'infrastructure ou l'entreprise ferroviaire ne s'est pas conformé, dans les délais requis, à une décision prise par l'autorité en application de l'article 9 après mise en demeure de remédier au manquement constaté restée sans effet ;
+3° En cas de manquement soit d'un gestionnaire d'infrastructure, soit d'une entreprise ferroviaire, soit d'une autre entreprise exerçant une activité dans le secteur du transport ferroviaire aux obligations de communication de documents et d'informations prévues à l'article 15 ou à l'obligation de donner accès à leur comptabilité, ainsi qu'aux informations économiques, financières et sociales prévues au même article, l'autorité met l'intéressé en demeure de s'y conformer dans un délai qu'elle détermine.
+Lorsque l'intéressé ne se conforme pas à cette mise en demeure dans le délai fixé ou fournit des renseignements incomplets ou erronés, l'autorité peut prononcer à son encontre les sanctions prévues au 1°.
+II. - Les manquements sont constatés par les agents de l'autorité habilités par le président et font l'objet de procès-verbaux qui, ainsi que les sanctions maximales encourues, sont notifiés à la personne concernée.
+L'instruction et la procédure devant l'autorité sont contradictoires. Les sanctions sont prononcées après que la personne concernée a reçu notification des griefs, a été mise à même de consulter le dossier établi par les services de l'autorité et a été invitée à présenter ses observations écrites et orales. Elle peut être assistée de la personne de son choix.
+Sauf dans les cas où la communication ou la consultation de documents est nécessaire à la procédure ou à l'exercice de leurs droits par la ou les parties mises en cause, le président de l'autorité peut refuser la communication ou la consultation de pièces ou de certains éléments contenus dans ces pièces dont la divulgation porterait atteinte à un secret protégé par la loi. Les pièces considérées sont retirées du dossier ou certaines de leurs mentions occultées.
+Dans les cas où la communication ou la consultation de ces documents dont la divulgation porterait atteinte à un secret protégé par la loi est nécessaire à la procédure ou à l'exercice des droits d'une ou plusieurs des parties, ces documents sont versés en annexe confidentielle au dossier et ne sont communiqués qu'à la ou aux parties mises en cause pour lesquelles ces pièces ou éléments sont nécessaires à l'exercice de leurs droits.
+Est punie des peines prévues à l'article 226-13 du code pénal la divulgation, par l'une des parties, des informations concernant une autre partie ou un tiers et dont elle n'a pu avoir connaissance qu'à la suite des communications ou consultations auxquelles il a été procédé.
+Le collège siège à huis clos. Les parties peuvent être présentes, demander à être entendues et se faire représenter ou assister.
+Le collège délibère sur les affaires dont il est saisi hors la présence des agents ayant constaté les manquements et de ceux ayant établi le dossier d'instruction.
+Les décisions de sanction sont notifiées aux parties intéressées et publiées au Journal officiel. Elles peuvent faire l'objet d'un recours de pleine juridiction devant le Conseil d'État. Le recours contre des sanctions pécuniaires a un caractère suspensif.
+L'autorité ne peut être saisie de faits remontant à plus de cinq ans s'il n'a été fait aucun acte tendant à leur recherche, leur constatation ou leur sanction.
+III. - L'Autorité de régulation des activités ferroviaires adopte et publie un règlement intérieur précisant ses modalités d'instruction et de procédures ainsi que ses méthodes de travail.
+IV. - L'article L. 311-4 du code de justice administrative est complété par un 10° ainsi rédigé :
+"10° De l'article 10 de la loi n° du relative à l'organisation et à la régulation des transports ferroviaires et portant diverses dispositions relatives aux transports contre les décisions de sanction prises par l'Autorité de régulation des activités ferroviaires."
+
+11
+――――
+
+Les propositions, avis et décisions de l'Autorité de régulation des activités ferroviaires sont motivés.
+
+12
+――――
+
+L'Autorité de régulation des activités ferroviaires dispose de services qui sont placés sous l'autorité de son président.
+L'autorité peut employer des magistrats et des fonctionnaires. Elle peut recruter des agents contractuels.
+Les ministres chargés des transports et du budget arrêtent la rémunération du président de l'Autorité de régulation des activités ferroviaires et le montant des vacations versées aux autres membres du collège ainsi que leurs modalités d'évolution pour la durée de leur mandat.
+Le secrétaire général, nommé par le président, peut, dans les conditions et limites fixées par le collège, recruter les agents, conclure des contrats, conventions et marchés. Il a qualité pour agir en justice pour les affaires relevant du fonctionnement de l'autorité.
+Il peut déléguer ses pouvoirs à tout agent de l'autorité dans des matières et des limites déterminées par le collège.
+
+13
+――――
+
+Les membres et agents de l'Autorité de régulation des activités ferroviaires exercent leurs fonctions en toute impartialité, sans recevoir d'instruction du Gouvernement ni d'aucune institution, personne, entreprise ou organisme.
+Les membres et agents de l'autorité sont tenus au secret professionnel pour les faits, actes et renseignements dont ils ont pu avoir connaissance en raison de leurs fonctions.
+Le non-respect du secret professionnel établi par une décision de justice entraîne la cessation d'office des fonctions au sein de l'autorité.
+L'obligation de secret professionnel ne fait pas obstacle à la communication par l'autorité des informations ou documents qu'elle détient à la Commission européenne ou à une autorité d'un autre État membre de l'Union européenne ou à une autorité d'un État appliquant des règles équivalentes à celles de l'Union européenne en vertu d'accords conclus avec elle et exerçant des compétences analogues à celles de l'autorité, sous réserve de réciprocité et à condition que ses membres et ses agents soient astreints aux mêmes obligations de secret professionnel que celles définies au présent article.
+
+14
+――――
+
+I. - L'Autorité de régulation des activités ferroviaires dispose de l'autonomie financière. Elle perçoit le produit du droit fixe établi au II du présent article. La loi du 10 août 1922 relative à l'organisation du contrôle des dépenses engagées ne lui est pas applicable.
+L'autorité perçoit, le cas échéant, des rémunérations pour services rendus.
+Le président de l'autorité est ordonnateur des recettes et des dépenses.
+L'autorité est soumise au contrôle de la Cour des comptes.
+II. - Il est institué, à compter du 1er janvier 2009, un droit fixe dû par les personnes gérant des infrastructures ferroviaires relevant du champ de compétence de l'Autorité de régulation des activités ferroviaires. Le montant de ce droit est fixé par les ministres chargés des transports et du budget sur proposition de l'autorité.
+Ce droit comprend, selon le cas :
+1° Une part du produit des redevances d'utilisation perçues par les gestionnaires d'infrastructure du réseau ferré national dans la limite de 5 millièmes de ce produit ;
+2° Une somme proportionnelle au nombre de kilomètres de lignes gérées par les personnes autres que celles mentionnées au 1°, dans la limite de 200 € par kilomètre.
+Ce droit est déclaré et acquitté par les personnes précitées dans les mêmes conditions que celles prévues pour le droit de sécurité institué par l'article 3 de la loi n° 2006-10 du 5 janvier 2006 relative à la sécurité et au développement des transports auprès du comptable compétent pour le recouvrement des taxes sur le chiffre d'affaires dues par les non-résidents membres de l'Union européenne. Celui-ci reverse tous les mois à l'autorité l'intégralité du produit du droit fixe collecté.
+Ce droit est constaté et recouvré dans les mêmes délais et sous les mêmes garanties et sanctions que celles applicables en matière de taxes sur le chiffre d'affaires.
+
+15
+――――
+
+I. - Pour l'accomplissement de ses missions, l'Autorité de régulation des activités ferroviaires dispose d'un droit d'accès à la comptabilité des gestionnaires d'infrastructure et des entreprises ferroviaires ainsi qu'aux informations économiques, financières et sociales nécessaires.
+Elle peut recueillir toutes les informations utiles auprès des services de l'État et des autorités organisant des services de transport ferroviaire, de l'établissement public de sécurité ferroviaire, des gestionnaires d'infrastructure et des entreprises ferroviaires, ainsi qu'auprès des autres entreprises intervenant sur le marché des transports ferroviaires. Elle peut également entendre toute personne dont l'audition lui paraît susceptible de contribuer à son information.
+Les agents de l'autorité habilités par le président procèdent aux enquêtes nécessaires à l'accomplissement des missions confiées à l'autorité. Le président désigne toute personne compétente pour réaliser, le cas échéant, une expertise.
+Les enquêtes donnent lieu à procès-verbal. Un double en est transmis dans les cinq jours aux parties intéressées.
+Les agents habilités de l'autorité reçoivent, à leur demande, communication des documents comptables et factures, de toute pièce ou document utile, en prennent copie et recueillent, sur convocation ou sur place, les renseignements et justifications propres à l'accomplissement de leur mission.
+II. - Les agents habilités de l'autorité ont accès entre huit et vingt heures, ou en dehors de ces heures lorsque l'accès au public est autorisé ou lorsqu'une activité professionnelle est en cours, aux locaux, lieux, installations et matériels de transport relevant des gestionnaires d'infrastructure et des entreprises mentionnées au deuxième alinéa du I, à l'exclusion des domiciles et de la partie des locaux servant de domicile. Ils peuvent se faire assister par des experts extérieurs désignés par le président de l'autorité et procéder à des visites conjointes avec des agents appartenant aux services de l'État ou de ses établissements publics.
+
+16
+――――
+
+I. - En dehors de ces cas, ou lorsque cet accès leur est refusé, les agents habilités ne peuvent procéder aux visites en tous lieux, ainsi qu'à la saisie de pièces et de documents, dans le cadre d'enquêtes demandées par l'Autorité de régulation des activités ferroviaires, que sur autorisation judiciaire donnée par ordonnance du juge des libertés et de la détention du tribunal de grande instance dans le ressort duquel sont situés les locaux à visiter. Le ministère d'avocat n'est alors pas obligatoire. Lorsque ces locaux sont situés dans le ressort de plusieurs juridictions et qu'une action simultanée doit être menée dans chacun d'eux, la requête peut être portée auprès de l'une de ces juridictions.
+Le juge vérifie que la demande d'autorisation qui lui est soumise est fondée ; cette demande doit comporter tous les éléments d'information de nature à justifier la visite.
+La visite et la saisie s'effectuent sous l'autorité et le contrôle du juge qui les a autorisées. Il désigne un ou plusieurs officiers de police judiciaire chargés d'assister à ces opérations et de le tenir informé de leur déroulement. Lorsqu'elles ont lieu en dehors du ressort de son tribunal de grande instance, il délivre une commission rogatoire, pour exercer ce contrôle, au juge des libertés et de la détention du tribunal de grande instance dans le ressort duquel s'effectue la visite.
+Le juge peut, s'il l'estime utile, se rendre dans les locaux pendant l'intervention.
+Il peut, à tout moment, décider la suspension ou l'arrêt de la visite.
+L'ordonnance mentionnée au premier alinéa est exécutoire au seul vu de la minute.
+L'ordonnance est notifiée verbalement et sur place au moment de la visite à l'occupant des lieux ou à son représentant qui en reçoit copie intégrale contre récépissé ou émargement au procès-verbal prévu au III. En l'absence de l'occupant des lieux ou de son représentant, l'ordonnance est notifiée, après la visite, par lettre recommandée avec demande d'avis de réception. La notification est réputée faite à la date de réception figurant sur l'avis.
+À défaut de réception, il est procédé à la signification de l'ordonnance par acte d'huissier de justice. Le délai et la voie de recours sont mentionnés dans l'ordonnance.
+L'ordonnance peut faire l'objet d'un appel devant le premier président de la cour d'appel. Les parties ne sont pas tenues de constituer avoué.
+Suivant les règles prévues par le code de procédure civile, cet appel doit être exclusivement formé par déclaration remise ou adressée, par pli recommandé ou par voie électronique, au greffe de la cour dans un délai de quinze jours. Ce délai court à compter soit de la remise, soit de la réception, soit de la signification de l'ordonnance. Cet appel n'est pas suspensif.
+Le greffe du tribunal de grande instance transmet sans délai le dossier de l'affaire au greffe de la cour d'appel où les parties peuvent le consulter.
+L'ordonnance du premier président de la cour d'appel est susceptible d'un pourvoi en cassation, selon les règles prévues par le code de procédure civile. Le délai du pourvoi en cassation est de quinze jours.
+II. - La visite, qui ne peut commencer avant six heures ou après vingt-et-une heures, est effectuée en présence de l'occupant des lieux ou de son représentant. En cas d'impossibilité, l'officier de police judiciaire requiert deux témoins choisis en dehors des personnes relevant de son autorité ou de celle de l'Autorité de régulation des activités ferroviaires.
+Les enquêteurs, l'occupant des lieux ou son représentant ainsi que l'officier de police judiciaire peuvent seuls prendre connaissance des pièces et documents avant leur saisie.
+III. - Un procès-verbal relatant les modalités et le déroulement de l'opération et consignant les constatations effectuées est dressé sur-le-champ par les agents enquêteurs. Un inventaire des pièces et documents saisis lui est annexé s'il y a lieu. Le procès-verbal et l'inventaire sont signés par les agents enquêteurs et par l'officier de police judiciaire ainsi que par les personnes mentionnées au premier alinéa du II ; en cas de refus de signer, mention en est faite au procès-verbal.
+Si l'inventaire sur place présente des difficultés, les pièces et documents saisis sont placés sous scellés. L'occupant des lieux ou son représentant est avisé qu'il peut assister à l'ouverture des scellés qui a lieu en présence de l'officier de police judiciaire ; l'inventaire est alors établi.
+Les originaux du procès-verbal et de l'inventaire sont, dès qu'ils ont été établis, adressés au juge qui a autorisé la visite ; une copie de ces mêmes documents est remise à l'occupant des lieux ou à son représentant.
+Les pièces et documents saisis sont restitués à l'occupant des locaux dans les six mois de la visite ; toutefois, lorsque des poursuites pénales sont engagées, leur restitution est autorisée par l'autorité judiciaire compétente.
+Le procès-verbal et l'inventaire mentionnent le délai et la voie de recours.
+Le premier président de la cour d'appel connaît des recours contre le déroulement des opérations de visite ou de saisie. Les parties ne sont pas tenues de constituer avoué.
+Suivant les règles prévues par le code de procédure civile, ce recours doit être exclusivement formé par déclaration remise ou adressée, par pli recommandé ou par voie électronique, au greffe de la cour dans un délai de quinze jours. Ce délai court à compter de la remise ou de la réception soit du procès-verbal, soit de l'inventaire. Ce recours n'est pas suspensif.
+L'ordonnance du premier président de la cour d'appel est susceptible d'un pourvoi en cassation selon les règles prévues par le code de procédure civile. Le délai du pourvoi en cassation est de quinze jours.
+
+16 bis
+――――
+
+Sont qualifiés pour procéder, dans l'exercice de leurs fonctions, à la recherche et à la constatation des manquements aux obligations résultant des dispositions du présent titre et des textes pris pour son application les agents de l'Autorité de régulation des activités ferroviaires mentionnés à l'article 15, habilités par le président de l'autorité et assermentés dans des conditions similaires à celles applicables aux agents de la Commission de régulation de l'énergie.
+Lorsque le président de l'autorité désigne des personnes pour réaliser un rapport d'expertise ou des experts extérieurs pour assister dans leurs enquêtes les agents habilités de l'autorité, il veille, si les intéressés ne sont pas inscrits sur une liste d'experts judiciaires, à ce qu'ils soient assermentés dans les mêmes conditions.
+Le procureur de la République est préalablement informé des opérations d'enquête envisagées en application du III de l'article 15 et de l'article 16.
+
+17
+――――
+
+I. - Le fait de s'opposer de quelque façon que ce soit à l'exercice des fonctions dont les agents de l'autorité sont chargés en application de l'article 16, ou de refuser de leur communiquer les éléments mentionnés à ce même article, est puni de six mois d'emprisonnement et de 7 500 € d'amende.
+Les personnes physiques coupables des infractions prévues au premier alinéa encourent également les peines complémentaires suivantes :
+1° La fermeture temporaire ou à titre définitif de l'un, de plusieurs ou de l'ensemble des établissements de l'entreprise appartenant à la personne condamnée ;
+2° L'interdiction d'exercer l'activité professionnelle ou sociale dans l'exercice ou à l'occasion de l'exercice de laquelle l'infraction a été commise, suivant les modalités prévues par l'article 131-27 du code pénal ;
+3° L'affichage ou la diffusion de la décision prononcée, dans les conditions prévues par l'article 131-35 du code pénal.
+II. - Les personnes morales reconnues pénalement responsables de l'infraction définie au I encourent, outre l'amende, les peines suivantes :
+1° La fermeture temporaire, pour une durée de cinq ans au plus ou à titre définitif de l'un, de plusieurs ou de l'ensemble des établissements de l'entreprise appartenant à la personne condamnée ;
+2° L'interdiction, à titre définitif ou pour une durée de cinq ans au plus, d'exercer directement ou indirectement l'activité professionnelle ou sociale dans l'exercice ou à l'occasion de l'exercice de laquelle l'infraction a été commise ;
+3° L'affichage ou la diffusion de la décision prononcée, dans les conditions prévues par l'article 131-35 du code pénal.
+III. - Supprimé <span class="ansi1 ansi32">........................................................................................</span>
+
+18
+――――
+
+L'Autorité de régulation des activités ferroviaires établit chaque année un rapport d'activité qui porte à la fois sur l'application des dispositions relatives à l'accès au réseau ferroviaire et à son utilisation, sur l'instruction des réclamations et sur l'observation de l'accès au réseau. Ce rapport rend compte des investigations menées par l'autorité et évalue les effets de ses décisions sur les conditions d'accès au réseau ferroviaire et sur les conditions de son utilisation. Il est adressé au Gouvernement et au Parlement. Il est rendu public.
+
+19
+――――
+
+Le président de l'Autorité de régulation des activités ferroviaires saisit l'Autorité de la concurrence des abus de position dominante et des pratiques entravant le libre exercice de la concurrence dont il a connaissance dans le secteur du transport ferroviaire, notamment lorsqu'il estime que ces pratiques sont prohibées par les articles L. 420-1 et L. 420-2 du code de commerce. Cette saisine peut être introduite dans le cadre d'une procédure d'urgence, conformément à l'article L. 464-1 du même code. Le président peut également la saisir, pour avis, de toute autre question relevant de sa compétence.
+L'Autorité de la concurrence communique à l'autorité toute saisine entrant dans le champ des compétences de celle-ci. Elle peut également saisir l'autorité, pour avis, de toute question relative au secteur du transport ferroviaire. Lorsqu'elle est consultée, en application du présent alinéa, par l'Autorité de la concurrence sur des pratiques dont cette dernière est saisie dans le secteur du transport ferroviaire, l'autorité joint à son avis, dans le délai imparti, tous les éléments utiles à l'instruction de l'affaire qui sont en sa possession.
+
+20
+――――
+
+I. - L'Autorité de régulation des activités ferroviaires peut être consultée par les juridictions sur les pratiques relevées dans les affaires dont elles sont saisies et entrant dans le champ de compétence de l'autorité, ainsi que sur des affaires dont cette dernière a eu à connaître. Le cours de la prescription est suspendu par la consultation de l'autorité.
+Les juridictions adressent à l'autorité copie du jugement portant sur les affaires pour lesquelles elles l'ont consultée.
+II. - Lorsque l'autorité a connaissance de faits qui lui paraissent de nature à justifier des poursuites pénales, elle adresse le dossier au procureur de la République. Cette transmission interrompt la prescription de l'action publique.
+III. - La prescription est également interrompue lorsque les faits visés dans la saisine font l'objet d'un acte tendant à leur recherche, leur constatation ou leur sanction par la Commission européenne ou par une autorité de régulation ferroviaire d'un autre État membre de l'Union européenne.
+IV. - Les juridictions d'instruction et de jugement peuvent communiquer à l'autorité, sur sa demande, les procès-verbaux ou rapports d'enquête ayant un lien direct avec des faits dont l'autorité est saisie.
+
+21
+――――
+
+Un décret en Conseil d'État précise, en tant que de besoin, les conditions d'application du présent titre.
+
+22
+――――
+
+I. - L'article 21-4 de la loi n° 82-1153 du 30 décembre 1982 précitée est ainsi modifié :
+1° Le deuxième alinéa est supprimé ;
+2° Au troisième alinéa, les mots : ", les modalités de règlement des litiges" sont remplacés par les mots : "et les modalités de règlement des litiges" et les mots : ", ainsi que les conditions dans lesquelles le ministre chargé des transports tranche les différends relatifs à l'attribution des sillons ferroviaires" sont supprimés.
+II. - Supprimé <span class="ansi1 ansi32">..........................................................................................</span>
+
+22 bis
+――――
+
+Les articles 8 et 9 du présent titre ainsi que l'article 22 entrent en vigueur le premier jour du cinquième mois suivant la promulgation de la présente loi.
+
+Dispositions relatives à la marine marchande
+――――
+
+
+23
+――――
+
+I. - À compter de l'entrée en vigueur de la convention signée à Lucques le 24 novembre 2006 entre la République française et la République italienne, l'article L. 153-7 du code de la voirie routière est ainsi rédigé :
+"Art. L. 153-7. - Les conditions d'exploitation du tunnel routier sous le Mont-Blanc font l'objet de la convention signée à Lucques le 24 novembre 2006, entre le Gouvernement de la République française et le Gouvernement de la République italienne, relative au tunnel routier sous le Mont-Blanc, dont l'approbation a été autorisée par la loi n° 2008-575 du 19 juin 2008."
+II. - La concession pour la construction, l'entretien et l'exploitation de l'autoroute A 40, entre Chatillon-en-Michaille et Le Fayet, de l'autoroute A 411 entre la frontière suisse à Gaillard et Annemasse et de l'autoroute A 401 entre Saint-Julien-en-Genevois et le raccordement à la route suisse RN 1a prendra fin le 31 décembre 2050. Les autres modifications apportées à la convention et au cahier des charges font l'objet d'un avenant.
+III. - Pour assurer la continuité de l'exploitation du réseau routier national entre l'autoroute A 40 et le tunnel du Mont-Blanc, la route nationale RN 205, se situant entre l'échangeur A 40/RN 205, au droit de Le Fayet, et la rampe d'accès au tunnel du Mont-Blanc, est intégrée à l'assiette de la concession mentionnée au II. Les modalités techniques et financières de cette intégration font l'objet d'un avenant qui prévoira une participation du concessionnaire aux travaux d'aménagement de cet itinéraire.
+IV. - Pour les besoins de la mise en sécurité du tunnel de Sainte-Marie-aux-Mines, l'article 5 du cahier des charges annexé à la convention passée entre l'État et la société des autoroutes Paris-Rhin-Rhône (APRR) pour la concession d'exploitation et d'entretien de cet ouvrage est rédigé comme suit : "La concession prendra fin le 31 décembre 2068". Les autres modifications apportées à la convention et au cahier des charges font l'objet d'un avenant.
+
+Dispositions relatives à la marine marchande
+――――
+
+
+23 bis
+――――
+
+I. - L'article 6-1 de la loi n° 82-1153 du 30 décembre 1982 d'orientation des transports intérieurs est ainsi modifié :
+1° Le I est ainsi rédigé :
+"I. - L'activité de cabotage routier de marchandises est subordonnée à la réalisation préalable d'un transport routier international. À cette condition, elle peut être pratiquée à titre temporaire par tout transporteur routier pour compte d'autrui établi dans un État partie à l'Espace économique européen et titulaire d'une licence communautaire, aux fins de rationalisation du transport international aux plans économique, énergétique et environnemental, sous réserve des dispositions transitoires prévues par les traités d'adhésion en matière de cabotage routier de marchandises.
+"Lorsque le transport international est à destination du territoire français, le cabotage routier est autorisé, après déchargement des marchandises, dans la limite de trois opérations sur le territoire français. Ces trois opérations de cabotage doivent être achevées dans le délai de sept jours à compter du déchargement des marchandises ayant fait l'objet du transport international. Le cabotage doit être réalisé avec le même véhicule que celui qui a servi au transport international ou, s'il s'agit d'un ensemble de véhicules, avec le même véhicule moteur.
+"Lorsque le transport routier international n'a pas pour destination le territoire français, il ne peut être effectué qu'une seule opération de cabotage sur le territoire français, dans le délai maximum de trois jours suivant l'entrée à vide du véhicule sur le territoire national. Cette opération de cabotage doit être achevée dans le délai de sept jours à compter du déchargement des marchandises ayant fait l'objet du transport international.
+"Tout véhicule effectuant en France une opération de cabotage routier de marchandises doit être accompagné des documents permettant de justifier du respect des dispositions qui précèdent. Ces documents attestent du transport international préalable auquel cette activité est subordonnée ainsi que de chaque opération de cabotage réalisée." ;
+2° Après le I, sont insérés un I bis et un I ter ainsi rédigés :
+"I bis. - Dans le cas de services occasionnels, un véhicule utilisé par une entreprise de transport de personnes non résidente, pour effectuer sur le territoire français des prestations de cabotage prévues par le règlement (CE) n° 12/98 du Conseil du 11 décembre 1997 fixant les conditions de l'admission des transporteurs non résidents aux transports nationaux de voyageurs par route dans un État membre, ne peut rester sur ce territoire plus de trente jours consécutifs, ni plus de quarante-cinq jours sur une période de douze mois.
+"I ter. - Le contrôle de l'activité de cabotage routier prévue aux I et I bis s'effectue notamment au regard des données d'activité enregistrées par l'appareil de contrôle prévu par le règlement (CEE) n° 3821/85 du Conseil du 20 décembre 1985 concernant l'appareil de contrôle dans le domaine des transports par route."
+II. - L'article 25 de la loi n° 52-401 du 14 avril 1952 de finances pour l'exercice 1952 est ainsi modifié :
+1° Le dernier alinéa du I est complété par une phrase ainsi rédigée :
+"Ils peuvent se faire présenter tous documents relatifs aux transports effectués, notamment pour le contrôle du cabotage." ;
+2° Au dernier alinéa du II, le montant : "7 500 euros" est remplacé par le montant : "15 000 euros" et les mots : "avec un véhicule demeurant sur le territoire national plus de trente jours consécutifs ou plus de quarante-cinq jours sur une période de douze mois" sont remplacés par les mots : "en contrevenant aux conditions fixées par les I et I bis de l'article 6-1 de la loi n° 82-1153 du 30 décembre 1982 d'orientation des transports intérieurs".
+III. - Le 12° de l'article 13 de l'ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative) est abrogé.
+IV. - Un décret en Conseil d'État détermine les conditions particulières d'application de l'article L. 1262-4 du code du travail aux salariés des entreprises de transport routier ou fluvial établies hors de France qui, à la demande de leur employeur, exécutent des opérations de cabotage sur le sol français pendant une durée limitée.
+
+23 ter
+――――
+
+I. - Après le deuxième alinéa de l'article 113-6 du code pénal, il est inséré un alinéa ainsi rédigé :
+"Elle est applicable aux infractions aux dispositions du règlement (CE) n° 561/2006 du Parlement européen et du Conseil du 15 mars 2006 relatif à l'harmonisation de certaines dispositions de la législation sociale dans le domaine des transports par route, commises dans un autre État membre de l'Union européenne et constatées en France, sous réserve des dispositions de l'article 692 du code de procédure pénale ou de la justification d'une sanction administrative qui a été exécutée ou ne peut plus être mise à exécution."
+II. - À l'article 689 du code de procédure pénale, après les mots : "convention internationale", sont insérés les mots : "ou un acte pris en application du Traité instituant les Communautés européennes".
+III. - Après l'article 689-10 du même code, il est inséré un article 689-11 ainsi rédigé :
+"Art. 689-11. - Pour l'application du règlement (CE) n° 561/2006 du Parlement européen et du Conseil du 15 mars 2006 relatif à l'harmonisation de certaines dispositions de la législation sociale dans le domaine des transports par route, peut être poursuivie et jugée dans les conditions prévues à l'article 689-1 toute personne coupable d'infractions au temps de conduite et de repos au sens du chapitre II du règlement commises dans un État de l'Union européenne."
+
+Dispositions relatives à la marine marchande
+――――
+
+
+24
+――――
+
+I. - L'article L. 422-1 du code de l'aviation civile est complété par un alinéa ainsi rédigé :
+"Sans préjudice de l'application des articles L. 422-2 à L. 422-4 et dans le respect des dispositions prises pour assurer la sécurité des vols, afin de permettre l'organisation du transport public aérien, l'équipage est tenu d'assurer l'intégralité des opérations aériennes qui constitue la mission. Constitue une mission une succession préalablement définie d'opérations aériennes entre deux temps de repos qui débute et se termine à la base d'affectation."
+II. - L'article L. 422-5 du même code est ainsi modifié :
+1° Le premier alinéa est précédé de la mention : "I. -" ;
+2° Il est ajouté un II ainsi rédigé :
+"II. - Pour les salariés mentionnés au premier alinéa du I, il est admis, dans les conditions d'exploitation des entreprises de transport et de travail aériens, qu'à la durée légale du travail effectif, telle que définie au premier alinéa de l'article L. 3121-10 du code du travail, correspond un temps de travail exprimé en heures de vol d'une durée déterminée par décret en Conseil d'État par mois ou trimestre ou année civils. Par exception à l'article L. 3121-22 du même code, les heures supplémentaires de vol donnent lieu à une majoration de 25 % portant sur les éléments de rémunération, à l'exclusion des remboursements de frais.
+"Les articles L. 3121-33, L. 3122-29 à L. 3122-45, L. 3131-1 et L. 3131-2 du même code ne s'appliquent pas aux personnels entrant dans le champ du premier alinéa.
+"Les articles L. 1225-47 à L. 1225-60, L. 3122-28, L. 3123-1, L. 3123-2, L. 3123-5 à L. 3123-8, L. 3123-10, L. 3123-11, L. 3123-14 à L. 3123-23 et L. 3142-78 à L. 3142-99 du même code sont applicables à ces mêmes personnels dans des conditions déterminées, compte tenu des adaptations rendues nécessaires par les contraintes propres aux activités aériennes, par décret en Conseil d'État."
+
+25
+――――
+
+L'article 4 de la loi n° 84-4 du 3 janvier 1984 instituant pour les salariés un congé pour la création d'entreprise et un congé sabbatique et l'article 7 de la loi n° 98-461 du 13 juin 1998 d'orientation et d'incitation relative à la réduction du temps de travail sont abrogés.
+À l'article 7 de la loi n° 84-9 du 4 janvier 1984 portant modification du code du travail et relative au congé parental d'éducation et au travail à mi-temps des parents d'un jeune enfant, les mots : "et aux personnels navigants professionnels de l'aviation civile," sont supprimés.
+
+26
+――――
+
+I. - À compter du premier jour du quatrième mois suivant la date de publication de la présente loi, le chapitre VII du titre II du livre II du code de l'aviation civile (partie législative) est ainsi modifié :
+1° L'article L. 227-1 est ainsi modifié :
+a) Au premier alinéa, les mots : "Il est institué, dans les six mois à compter de la promulgation de la loi n° 99-588 du 12 juillet 1999 portant création de l'Autorité de contrôle des nuisances sonores aéroportuaires, une autorité administrative indépendante dénommée "Autorité de contrôle des nuisances sonores aéroportuaires"," sont remplacés par les mots : "L'Autorité de contrôle des nuisances sonores aéroportuaires est une autorité administrative indépendante" ;
+b) Au sixième alinéa, les mots : "gêne sonore" sont remplacés par les mots : "nuisances sonores" ;
+c) Les seizième et dix-septième alinéas sont supprimés ;
+2° L'article L. 227-4 est ainsi modifié :
+a) Le premier alinéa est précédé de la mention : "I" et les mots : "Sur proposition de la Commission nationale de prévention des nuisances," sont supprimés ;
+b) Au sixième alinéa, les mots : "dont l'aéronef ne respecte" sont remplacés par les mots : "ne respectant" ;
+c) Les douzième à quinzième alinéas sont remplacés par seize alinéas ainsi rédigés :
+"II. - Pour l'exercice de son pouvoir de sanction, et dans les conditions fixées par son règlement intérieur, l'autorité bénéficie du concours de sept membres associés :
+"- deux représentants des professions aéronautiques ;
+"- deux représentants d'associations de riverains d'aérodromes ;
+"- un représentant d'associations de protection de l'environnement agréées au niveau national ;
+"- un représentant d'activités riveraines des aéroports impactées par l'activité aéroportuaire ;
+"- un représentant du ministre chargé de l'aviation civile.
+"Ces membres associés et leurs deux suppléants respectifs sont nommés par arrêté du ministre chargé de l'aviation civile pour une période de trois ans renouvelable. Les membres associés titulaires et leurs suppléants perdent leur qualité de membre s'ils perdent la qualité en fonction de laquelle ils ont été désignés.
+"III. - Les manquements à ces mesures sont constatés par les fonctionnaires et agents visés à l'article L. 150-13. Ces manquements font l'objet de procès-verbaux qui, ainsi que le montant de l'amende encourue, sont notifiés à la personne concernée et communiqués à l'autorité.
+"À l'issue de l'instruction, le président de l'autorité peut classer sans suite la procédure dès lors que les circonstances particulières à la commission des faits le justifient ou que ceux-ci ne sont pas constitutifs d'un manquement pouvant donner lieu à sanction.
+"L'instruction et la procédure devant l'autorité sont contradictoires.
+"L'instruction est assurée par des fonctionnaires et agents visés à l'article L. 150-13 autres que ceux qui ont constaté le manquement, qui peuvent entendre toutes personnes susceptibles de contribuer à l'information et se faire communiquer tous documents nécessaires.
+"Un rapporteur permanent et son suppléant sont placés auprès de l'autorité.
+"Au terme de l'instruction, le rapporteur notifie le dossier complet d'instruction à la personne concernée. Celle-ci peut présenter ses observations au rapporteur.
+"L'autorité met la personne concernée en mesure de se présenter devant elle ou de se faire représenter. Elle délibère valablement au cas où la personne concernée néglige de comparaître ou de se faire représenter.
+"Après avoir entendu le rapporteur et, le cas échéant, la personne concernée ou son représentant, l'autorité délibère hors de leur présence.
+"Les membres associés participent à la séance. Ils ne participent pas aux délibérations et ne prennent pas part au vote." ;
+d) La dernière phrase de l'avant-dernier alinéa est ainsi rédigée :
+"Aucune poursuite ne peut être engagée plus de deux ans après la commission d'un manquement." ;
+e) Après l'avant-dernier alinéa, il est inséré un alinéa ainsi rédigé :
+"Les conditions d'application du présent article sont déterminées par décret en Conseil d'État." ;
+f) Le dernier alinéa est supprimé ;
+3° Au troisième alinéa de l'article L. 227-5, les mots : "de la gêne sonore" sont remplacés par les mots : "des nuisances sonores" ;
+4° L'article L. 227-7 est ainsi modifié :
+a) La dernière phrase du premier alinéa est supprimée ;
+b) Au second alinéa, après le mot : "rapport", il est inséré le mot : "public" ;
+5° L'article L. 227-9 est ainsi modifié :
+a) Après le premier alinéa, il est inséré un alinéa ainsi rédigé :
+"Celui-ci nomme le rapporteur permanent et son suppléant." ;
+b) Le deuxième alinéa est ainsi rédigé :
+"Pour l'exécution de ses missions, l'autorité établit son règlement intérieur qui est publié au Journal officiel."
+II. - Sous réserve des dispositions de l'article L. 227-1 du code de l'aviation civile, les membres de l'Autorité de contrôle des nuisances sonores aéroportuaires nommés à la date de la promulgation de la présente loi exercent leur mandat jusqu'au terme de celui-ci, y compris le président qui conserve sa fonction.
+III. - Pour les manquements ayant fait l'objet d'une proposition de la Commission nationale de prévention des nuisances avant le premier jour du quatrième mois suivant la date de publication de la présente loi, l'Autorité de contrôle des nuisances sonores aéroportuaires se prononce au vu de ces propositions. Elle s'assure que ces propositions sont communiquées à la personne concernée.
+
+27
+――――
+
+I. - Après l'article L. 330-10 du code de l'aviation civile, sont insérés trois articles L. 330-10-1, L. 330-10-2 et L. 330-10-3 ainsi rédigés :
+"Art. L. 330-10-1. - Les agents et fonctionnaires énumérés à l'article L. 330-10 sont chargés de veiller au respect des dispositions prévues par les textes communautaires entrant dans le champ de compétence de l'autorité administrative chargée de l'aviation civile et mentionnés à l'annexe du règlement (CE) n° 2006/2004 du Parlement européen et du Conseil du 27 octobre 2004 relatif à la coopération entre les autorités nationales chargées de veiller à l'application de la législation en matière de protection des consommateurs. À cette fin, ils disposent des pouvoirs énumérés à l'article 4 du règlement précité.
+"Pour l'exercice de leurs missions, les agents mentionnés au premier alinéa ont accès, lorsqu'ils sont à usage professionnel, aux locaux, terrains, aéronefs, à l'exclusion des domiciles et de la partie des locaux servant de domicile. Ils ne peuvent y accéder qu'entre huit heures et vingt heures, ou en dehors de ces heures, lorsque l'accès au public est autorisé ou lorsqu'une activité est en cours.
+"En cas d'opposition du responsable des lieux, la visite ne peut se dérouler qu'avec l'autorisation du juge des libertés et de la détention du tribunal de grande instance dans le ressort duquel sont situés les locaux à visiter.
+"Ce magistrat est saisi à la requête de l'autorité administrative chargée de l'aviation civile. Il statue par une ordonnance motivée, conformément aux dispositions prévues aux articles 493 à 498 du code de procédure civile. La procédure est sans représentation obligatoire.
+"La visite s'effectue sous l'autorité et le contrôle du juge qui l'a autorisée. Celui-ci peut se rendre dans les locaux durant l'intervention. À tout moment, il peut décider l'arrêt ou la suspension de la visite.
+"Sous réserve du respect des données à caractère personnel, le secret professionnel ne peut être opposé aux agents et fonctionnaires agissant dans le cadre des pouvoirs visés au présent article.
+"À l'issue de leurs opérations, les agents et fonctionnaires dressent procès-verbal, dont copie est remise aux parties intéressées.
+"Art. L. 330-10-2. - Les agents et fonctionnaires habilités à constater les manquements aux textes mentionnés à l'article L. 330-10-1 peuvent enjoindre aux parties intéressées, en leur impartissant un délai raisonnable, de se conformer aux obligations résultant des textes mentionnés à l'article L. 330-10-1 ou de faire cesser les manquements à ces textes.
+"L'autorité administrative chargée de l'aviation civile peut agir devant la juridiction civile pour demander au juge d'ordonner, s'il y a lieu sous astreinte, toute mesure de nature à mettre un terme aux manquements mentionnés aux textes figurant à l'article L. 330-10-1.
+"Art. L. 330-10-3. - Les dispositions relatives au secret professionnel ne font pas obstacle à la communication aux autorités compétentes des États membres de l'Union européenne, par l'autorité administrative chargée de l'aviation civile, selon les conditions et modalités du Règlement (CE) n° 2006/2004 du Parlement et du Conseil du 27 octobre 2004 précité, d'informations et de documents détenus et recueillis dans l'exercice de leurs missions par les agents et fonctionnaires habilités à constater et rechercher des manquements aux dispositions entrant dans l'application dudit règlement."
+II. - À l'article L. 330-11 du même code, les mots : "et L. 330-6" sont remplacés par les mots : "L. 330-6, L. 330-10-1, L. 330-10-2 et L. 330-10-3".
+
+28
+――――
+
+Le premier alinéa de l'article L. 123-4 du code de l'aviation civile est remplacé par trois alinéas ainsi rédigés :
+"L'exploitant d'aérodrome ou l'autorité administrative de l'État compétente peut, après avoir mis le redevable en demeure de régulariser sa situation, requérir la saisie conservatoire d'un aéronef exploité par le redevable ou lui appartenant auprès du juge du lieu d'exécution de la mesure dans les situations suivantes :
+"- en cas de non-paiement ou de paiement insuffisant des redevances aéroportuaires, de la redevance de route, de la redevance pour services terminaux de la circulation aérienne ou des amendes administratives prononcées par l'Autorité de contrôle des nuisances sonores aéroportuaires ;
+"- en cas de non restitution d'une aide d'État ayant fait l'objet d'une décision de récupération de la part de la Commission européenne ou d'un arrêt de la Cour de justice des Communautés européennes."
+
+Dispositions relatives à la marine marchande
+――――
+
+
+29
+――――
+
+Le chapitre VII du titre V du livre VII de la troisième partie du code de l'éducation est ainsi rédigé :
+"Chapitre VII
+"L'École nationale supérieure maritime
+"Art. L. 757-1. - L'École nationale supérieure maritime est un établissement public d'enseignement supérieur placé sous la tutelle du ministre chargé de la mer. Elle a notamment pour objet de préparer dans plusieurs sites aux carrières d'officier de la marine marchande.
+"Les règles d'organisation et de fonctionnement de l'École nationale supérieure maritime sont fixées par décret en Conseil d'État.
+"L'article L. 421-21 est applicable aux élèves de l'École nationale supérieure maritime."
+
+
+</pre>
+</body>
+
+</html>
