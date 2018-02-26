@@ -145,6 +145,9 @@ var levels = [
         rect(200, 200, 40, 20),
         rect(240, 120, 40, 20),
     ],
+    [
+        rect(0, 300, 20000, 20),
+    ]
 ];
 
 var replays = [];
@@ -165,7 +168,9 @@ function animate() {
     all_dt += dt;
 
     if (last_record + 10 < all_dt && !showing_replay) {
-        replay.push([p.x, p.y])
+        if (replay.length == 0 || replay[replay.length-1][0] !== p.x || replay[replay.length-1][1] !== p.y) {
+            replay.push([p.x, p.y])
+        }
         last_record = all_dt;
     }
 
