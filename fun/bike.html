@@ -117,10 +117,52 @@ var levels = [
         rect(0, 460, 300, 20),
         rect(0, 480, 300, 20),
     ],
+    [
+        rect(200, 0, 200000, 20),
+        rect(200, 20, 200000, 20),
+        rect(200, 40, 200000, 20),
+        rect(300, 60, 200000, 20),
+        rect(400, 80, 200000, 20),
+
+        rect(0, 100, 100, 20),
+        rect(0, 120, 200, 20),
+        rect(0, 140, 300, 20),
+        rect(0, 160, 200, 20),
+        rect(0, 180, 100, 20),
+
+        rect(400, 180, 200000, 20),
+        rect(300, 200, 200000, 20),
+        rect(200, 220, 200000, 20),
+        rect(300, 240, 200000, 20),
+        rect(400, 260, 200000, 20),
+
+        rect(0, 240, 100, 20),
+        rect(0, 260, 200, 20),
+        rect(0, 280, 300, 20),
+        rect(0, 300, 200, 20),
+        rect(0, 320, 100, 20),
+
+        rect(400, 320, 200000, 20),
+        rect(300, 340, 200000, 20),
+        rect(200, 360, 200000, 20),
+        rect(300, 380, 200000, 20),
+        rect(400, 400, 200000, 20),
+
+        rect(0, 400, 100, 20),
+        rect(0, 420, 200, 20),
+        rect(0, 440, 300, 20),
+        rect(0, 460, 300, 20),
+        rect(0, 480, 300, 20),
+    ],
 ];
 
+var replays = [];
+var replay = [];
 
-var level = 0;
+var level = levels.length - 1;
+
+var showing_replay = false;
+var last_record = 0;
 
 var time;
 var all_dt = 0;
@@ -129,19 +171,43 @@ function animate() {
     var now = new Date().getTime(),
         dt = now - (time || now);
     time = now;
-    all_dt += dt/350;
+    all_dt += dt;
+
+    if (last_record + 10 < all_dt && !showing_replay) {
+        replay.push([p.x, p.y])
+        last_record = all_dt;
+    }
 
     var ddt = dt;
 
     ctx.clearRect(0, 0, cvWidth, cvHeight);
 
-    ctx.fillRect(p.x, p.y, 10, 10);
+    if (showing_replay) {
+        ctx.globalAlpha = 0.4;
+        var i = Math.round((all_dt-last_record)/15);
+        if (i < replay.length) {
+            replays.forEach(replay => {
+                var pos = replay[i] ? replay[i] : replay[replay.length-1]
+                ctx.fillRect(pos[0], pos[1], 10, 10);
+            })
+        } else {
+            showing_replay = false;
+            replay = [];
+            replays = [];
+            level = (level + 1) % levels.length;
+        }
+        ctx.globalAlpha = 1;
+    } else {
+        ctx.fillRect(p.x, p.y, 10, 10);
+    }
 
     levels[level].forEach(obs => {
         ctx.fillRect(obs[0],obs[1],obs[2],obs[3]);
         if (intersect(pimp_my_rect(obs), pimp_my_rect([p.x, p.y, 10, 10]))) {
             p.x = 0;
             p.y = 0;
+            replays.push(replay);
+            replay = [];
         }
     })
 
@@ -151,8 +217,10 @@ function animate() {
     ctx.fill();
     ctx.globalAlpha = 1;
 
-    p.x += p.vx * ddt;
-    p.y += p.vy * ddt;
+    if (!showing_replay) {
+        p.x += p.vx * ddt;
+        p.y += p.vy * ddt;
+    }
 
     p.vx = - (cvWidth/2 - mouse.x) / cvWidth / 2;
     p.vy = - (cvHeight/2 - mouse.y) / cvHeight / 2;
@@ -181,7 +249,8 @@ function animate() {
     if (intersect(pimp_my_rect([400, 460, 15, 15]), pimp_my_rect([p.x, p.y, 10, 10]))) {
         p.x = 0;
         p.y = 0;
-        level = (level + 1) % levels.length;
+        replays.push(replay);
+        showing_replay = true;
     }
 }
 
