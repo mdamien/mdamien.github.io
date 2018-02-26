@@ -1,0 +1,118 @@
+<body style='background: black'><center><canvas onmousemove="updateMousePos(event)" id="canvas" width="500" height="500" style='border:1px solid black; margin: 20px; background: white;'></canvas>
+
+<script type="text/javascript">
+
+var cv = document.getElementById('canvas');
+var ctx = cv.getContext('2d');
+var cvWidth = cv.width;
+var cvHeight = cv.height;
+
+var mouse = {x:100, y:100};
+function updateMousePos(evt) {
+    var rect = cv.getBoundingClientRect();
+    mouse = {
+      x: evt.clientX - rect.left,
+      y: evt.clientY - rect.top,
+    };
+}
+
+function pimp_my_rect(a) {
+    return {
+        left: a[0],
+        right: a[0] + a[2],
+        top: a[1],
+        bottom: a[1] + a[3],
+    }
+}
+
+function intersect(a, b) {
+  return (a.left <= b.right &&
+          b.left <= a.right &&
+          a.top <= b.bottom &&
+          b.top <= a.bottom)
+}
+
+function rect() {
+    return Array.from(arguments);
+}
+
+var p = {
+    x: 0,
+    y: 0,
+    vx: 0.05,
+    vy: 0.05,
+}
+
+var obstacles = [
+    rect(0, 100, 200, 20),
+    rect(100, 200, 20000, 20),
+    rect(20, 150, 20, 20),
+    rect(20, 240, 20, 20),
+    rect(20, 200, 20, 20),
+    rect(100, 100, 200, 20),
+    rect(100, 200, 200, 20),
+    rect(20, 150, 20, 20),
+    rect(20, 240, 20, 20),
+    rect(20, 200, 20, 20),
+    rect(100, 400, 20000, 20),
+    rect(0, 400, 80, 20),
+]
+
+var time;
+var all_dt = 0;
+function animate() {
+    requestAnimationFrame(animate);
+    var now = new Date().getTime(),
+        dt = now - (time || now);
+    time = now;
+    all_dt += dt/350;
+
+    var ddt = dt;
+
+    ctx.clearRect(0, 0, cvWidth, cvHeight);
+
+    ctx.fillRect(p.x, p.y, 10, 10);
+
+    obstacles.forEach(obs => {
+        ctx.fillRect(obs[0],obs[1],obs[2],obs[3]);
+        if (intersect(pimp_my_rect(obs), pimp_my_rect([p.x, p.y, 10, 10]))) {
+            p.x = 0;
+            p.y = 0;
+        }
+    })
+
+    ctx.globalAlpha = 0.6;
+    ctx.beginPath();
+    ctx.arc(400, 460, 15, 0, 2*Math.PI);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+
+    p.x += p.vx * ddt;
+    p.y += p.vy * ddt;
+
+    p.vx = - (cvWidth/2 - mouse.x) / cvWidth / 2;
+    p.vy = - (cvHeight/2 - mouse.y) / cvHeight / 2;
+
+    if (p.x < 20) {
+        p.x = 20;
+    }
+    if (p.y < 20) {
+        p.y = 20;
+    }
+    if (p.y > cvHeight - 20) {
+        p.y = cvHeight - 20;
+    }
+    if (p.x > cvWidth - 20) {
+        p.x = cvWidth - 20;
+    }
+
+    ctx.save();
+    ctx.beginPath();
+    ctx.moveTo(cvWidth/2, cvHeight/2);
+    ctx.lineTo(cvWidth/2 + p.vx * 100, cvHeight/2 + p.vy * 100);
+    ctx.stroke();
+    ctx.restore();
+}
+
+animate();
+</script>
