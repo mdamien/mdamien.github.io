@@ -118,48 +118,39 @@ var levels = [
         rect(0, 480, 300, 20),
     ],
     [
-        rect(200, 0, 200000, 20),
-        rect(200, 20, 200000, 20),
-        rect(200, 40, 200000, 20),
-        rect(300, 60, 200000, 20),
-        rect(400, 80, 200000, 20),
+        rect(20, 60, 20, 350),
+        rect(40, 80, 20, 100),
+        rect(80, 200, 20, 132),
+        rect(100, 20, 20, 340),
+        
+        rect(190, 80, 20, 330),
+        rect(40, 80, 20, 100),
+        rect(80, 200, 20, 132),
+        rect(280, 20, 20, 340),
+        
+        rect(380, 60, 20, 350),
+        
+        rect(100, 20, 300, 20),
+        
+        rect(20, 400, 400, 20),
 
-        rect(0, 100, 100, 20),
-        rect(0, 120, 200, 20),
-        rect(0, 140, 300, 20),
-        rect(0, 160, 200, 20),
-        rect(0, 180, 100, 20),
 
-        rect(400, 180, 200000, 20),
-        rect(300, 200, 200000, 20),
-        rect(200, 220, 200000, 20),
-        rect(300, 240, 200000, 20),
-        rect(400, 260, 200000, 20),
+        rect(150, 280, 20, 20),
+        rect(140, 220, 20, 20),
+        rect(150, 150, 20, 20),
+        rect(140, 100, 20, 20),
 
-        rect(0, 240, 100, 20),
-        rect(0, 260, 200, 20),
-        rect(0, 280, 300, 20),
-        rect(0, 300, 200, 20),
-        rect(0, 320, 100, 20),
 
-        rect(400, 320, 200000, 20),
-        rect(300, 340, 200000, 20),
-        rect(200, 360, 200000, 20),
-        rect(300, 380, 200000, 20),
-        rect(400, 400, 200000, 20),
-
-        rect(0, 400, 100, 20),
-        rect(0, 420, 200, 20),
-        rect(0, 440, 300, 20),
-        rect(0, 460, 300, 20),
-        rect(0, 480, 300, 20),
+        rect(240, 280, 40, 20),
+        rect(200, 200, 40, 20),
+        rect(240, 120, 40, 20),
     ],
 ];
 
 var replays = [];
 var replay = [];
 
-var level = levels.length - 1;
+var level = 0;
 
 var showing_replay = false;
 var last_record = 0;
@@ -238,20 +229,22 @@ function animate() {
         p.x = cvWidth - 20;
     }
 
-    ctx.save();
-    ctx.beginPath();
-    ctx.moveTo(cvWidth/2, cvHeight/2);
-    ctx.lineTo(cvWidth/2 + p.vx * 300, cvHeight/2 + p.vy * 300);
-    ctx.lineWidth = 4;
-    ctx.stroke();
-    ctx.restore();
-
-    if (intersect(pimp_my_rect([400, 460, 15, 15]), pimp_my_rect([p.x, p.y, 10, 10]))) {
-        p.x = 0;
-        p.y = 0;
-        replays.push(replay);
-        showing_replay = true;
+    if (!showing_replay) {
+        ctx.save();
+        ctx.beginPath();
+        ctx.moveTo(cvWidth/2, cvHeight/2);
+        ctx.lineTo(cvWidth/2 + p.vx * 300, cvHeight/2 + p.vy * 300);
+        ctx.lineWidth = 4;
+        ctx.stroke();
+        ctx.restore();
+        if (intersect(pimp_my_rect([400, 460, 15, 15]), pimp_my_rect([p.x, p.y, 10, 10]))) {
+            p.x = 0;
+            p.y = 0;
+            replays.push(replay);
+            showing_replay = true;
+        }
     }
+
 }
 
 animate();
