@@ -1,4 +1,4 @@
-<body style='background: black'><center><canvas onmousemove="updateMousePos(event)" id="canvas" width="500" height="500" style='border:1px solid black; margin: 20px; background: white;'></canvas>
+<body style='background: black' onmousemove="updateMousePos(event)"><center><canvas  id="canvas" width="500" height="500" style='border:1px solid black; margin: 20px; background: white;'></canvas>
 
 <script type="text/javascript">
 
@@ -43,20 +43,84 @@ var p = {
     vy: 0.05,
 }
 
-var obstacles = [
-    rect(0, 100, 200, 20),
-    rect(100, 200, 20000, 20),
-    rect(20, 150, 20, 20),
-    rect(20, 240, 20, 20),
-    rect(20, 200, 20, 20),
-    rect(100, 100, 200, 20),
-    rect(100, 200, 200, 20),
-    rect(20, 150, 20, 20),
-    rect(20, 240, 20, 20),
-    rect(20, 200, 20, 20),
-    rect(100, 400, 20000, 20),
-    rect(0, 400, 80, 20),
-]
+var levels = [
+    [
+    ],
+    [
+        rect(0, 100, 300, 20),
+        rect(100, 200, 20000, 20),
+
+        rect(20, 120, 20, 20),
+        rect(20, 160, 20, 20),
+        rect(20, 200, 20, 20),
+        rect(20, 240, 20, 20),
+        rect(20, 280, 20, 20),
+        rect(20, 320, 20, 20),
+        rect(20, 360, 20, 20),
+
+        rect(120, 240, 20, 20),
+        rect(120, 280, 20, 20),
+        rect(120, 320, 20, 20),
+        rect(120, 360, 20, 20),
+
+        rect(100, 400, 20000, 20),
+        rect(0, 400, 80, 20),
+    ],
+    [
+        rect(20, 60, 20, 350),
+        rect(60, 60, 20, 350),
+        rect(100, 60, 20, 350),
+        rect(140, 60, 20, 350),
+        rect(180, 60, 20, 350),
+        rect(220, 60, 20, 350),
+        rect(260, 60, 20, 350),
+        rect(300, 60, 20, 350),
+        rect(340, 60, 20, 350),
+        rect(380, 60, 20, 350),
+        rect(420, 60, 20, 350),
+        rect(460, 60, 20, 350),
+    ],
+    [
+        rect(200, 0, 200000, 20),
+        rect(200, 20, 200000, 20),
+        rect(200, 40, 200000, 20),
+        rect(300, 60, 200000, 20),
+        rect(400, 80, 200000, 20),
+
+        rect(0, 100, 100, 20),
+        rect(0, 120, 200, 20),
+        rect(0, 140, 300, 20),
+        rect(0, 160, 200, 20),
+        rect(0, 180, 100, 20),
+
+        rect(400, 180, 200000, 20),
+        rect(300, 200, 200000, 20),
+        rect(200, 220, 200000, 20),
+        rect(300, 240, 200000, 20),
+        rect(400, 260, 200000, 20),
+
+        rect(0, 240, 100, 20),
+        rect(0, 260, 200, 20),
+        rect(0, 280, 300, 20),
+        rect(0, 300, 200, 20),
+        rect(0, 320, 100, 20),
+
+        rect(400, 320, 200000, 20),
+        rect(300, 340, 200000, 20),
+        rect(200, 360, 200000, 20),
+        rect(300, 380, 200000, 20),
+        rect(400, 400, 200000, 20),
+
+        rect(0, 400, 100, 20),
+        rect(0, 420, 200, 20),
+        rect(0, 440, 300, 20),
+        rect(0, 460, 300, 20),
+        rect(0, 480, 300, 20),
+    ],
+];
+
+
+var level = 0;
 
 var time;
 var all_dt = 0;
@@ -73,7 +137,7 @@ function animate() {
 
     ctx.fillRect(p.x, p.y, 10, 10);
 
-    obstacles.forEach(obs => {
+    levels[level].forEach(obs => {
         ctx.fillRect(obs[0],obs[1],obs[2],obs[3]);
         if (intersect(pimp_my_rect(obs), pimp_my_rect([p.x, p.y, 10, 10]))) {
             p.x = 0;
@@ -81,7 +145,7 @@ function animate() {
         }
     })
 
-    ctx.globalAlpha = 0.6;
+    ctx.globalAlpha = 0.2;
     ctx.beginPath();
     ctx.arc(400, 460, 15, 0, 2*Math.PI);
     ctx.fill();
@@ -109,9 +173,16 @@ function animate() {
     ctx.save();
     ctx.beginPath();
     ctx.moveTo(cvWidth/2, cvHeight/2);
-    ctx.lineTo(cvWidth/2 + p.vx * 100, cvHeight/2 + p.vy * 100);
+    ctx.lineTo(cvWidth/2 + p.vx * 300, cvHeight/2 + p.vy * 300);
+    ctx.lineWidth = 4;
     ctx.stroke();
     ctx.restore();
+
+    if (intersect(pimp_my_rect([400, 460, 15, 15]), pimp_my_rect([p.x, p.y, 10, 10]))) {
+        p.x = 0;
+        p.y = 0;
+        level = (level + 1) % levels.length;
+    }
 }
 
 animate();
