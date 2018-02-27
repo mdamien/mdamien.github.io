@@ -1,4 +1,9 @@
-<body style='background: black' onmousemove="updateMousePos(event)"><center><canvas  id="canvas" width="500" height="500" style='border:1px solid black; margin: 20px; background: white;'></canvas>
+<body style='background: black' onmousemove="updateMousePos(event)"
+    ontouchstart="touchStart(event)"
+    ontouchmove="touchMove(event)"
+    ontouchend="touchEnd(event)"
+    >
+    <center><canvas  id="canvas" width="500" height="500" style='border:1px solid black; margin: 20px; background: white;'></canvas>
 
 <script type="text/javascript">
 
@@ -8,11 +13,37 @@ var cvWidth = cv.width;
 var cvHeight = cv.height;
 
 var mouse = {x:100, y:100};
+var mouse_center = {x: 250, y: 250}
+
 function updateMousePos(evt) {
     var rect = cv.getBoundingClientRect();
     mouse = {
       x: evt.clientX - rect.left,
       y: evt.clientY - rect.top,
+    };
+}
+
+function touchStart(evt) {
+    if (evt.touches.length > 1) return;
+    var rect = cv.getBoundingClientRect();
+    mouse_center = {
+      x: evt.touches[0].clientX - rect.left,
+      y: evt.touches[0].clientY - rect.top,
+    };
+}
+
+function touchEnd(evt) {
+    if (evt.touches.length > 1) return;
+    mouse = mouse_center;
+}
+
+function touchMove(evt) {
+    if (evt.touches.length > 1) return;
+    evt.preventDefault();
+    var rect = cv.getBoundingClientRect();
+    mouse = {
+      x: evt.touches[0].clientX - rect.left,
+      y: evt.touches[0].clientY - rect.top,
     };
 }
 
@@ -218,8 +249,8 @@ function animate() {
         p.y += p.vy * ddt;
     }
 
-    p.vx = - (cvWidth/2 - mouse.x) / cvWidth / 2;
-    p.vy = - (cvHeight/2 - mouse.y) / cvHeight / 2;
+    p.vx = - (mouse_center.x - mouse.x) / cvWidth / 2;
+    p.vy = - (mouse_center.y - mouse.y) / cvHeight / 2;
 
     if (p.x < 20) {
         p.x = 20;
