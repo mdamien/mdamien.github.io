@@ -14,7 +14,7 @@
   },
   "legend": {
     "edgeLabel": "est-client",
-    "colorLabel": "",
+    "colorLabel": "rouge \u003d a des clients",
     "nodeLabel": "Lobby"
   },
   "features": {
