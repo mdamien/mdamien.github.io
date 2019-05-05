@@ -1,0 +1,367 @@
+commit	message	characters	characters %
+ee4512ed481a126dadd33334186e0e759d7f2f47	trace2: create new combined trace facility	2011	7.54
+231af8322ac5313243bc1e8beac8dfd9ff95051d	Teach the "git" command to handle some commands internally	1132	4.25
+e9547947795472c07453d0551b0cabb4ae378b5f	git.c: add hidden option --list-parseopt-builtins	766	2.87
+2b11e3170e919866c7f5554dd4089289a1bb6726	If you have a config containing something like this:	709	2.66
+74866d75793559e8b351a17100679f83b96972ca	git: make super-prefix option	663	2.49
+0089521cacd99db8018b7a31e205dad0bf0738c7	git.c: convert --list-* to --list-cmds=*	505	1.89
+6acbcb927f8e34857fa8f68fcb4f9076941b24ff	git wrapper: add --git-dir=<path> and --bare options	473	1.77
+4ab243a944a6013d9e862adadd6fe6152c842401	Allow an alias to start with "-p"	409	1.53
+4394efecfa9f94ad14fe49bc9f499c5806aa83af	make git barf when an alias changes environment variables	395	1.48
+0f157315a1020fce76fe2c5a703e40684b9b1699	Check for IO errors after running a command	392	1.47
+4e10738a9392ad285aca7d3a19e6775d6b7b513e	Allow per-command pager config	371	1.39
+8e49d50388211a0f3e7286f6ee600bf7736f4814	C implementation of the 'git' program, take two.	362	1.36
+82f71d9a5a9df718553bf257ad8610e2ef1e1179	alias: show the call history when an alias is looping	352	1.32
+e5d7a61953c236fbc468bc1bb01383766d2cb55b	git --list-cmds: collect command list in a string_list	350	1.31
+892c41b98ae2e6baf3aa13901cb10db9ac67d2f3	introduce GIT_WORK_TREE to specify the work tree	330	1.24
+a1bea2c1fc5e5243e873919248940dd5fff593a4	ref namespaces: infrastructure	322	1.21
+efffea033457eedb90ad63596687564f797f12de	git.c: Rename NEEDS_PREFIX to RUN_SETUP	295	1.11
+823ab40fd4adc5bf5b5c66b6d189deae34d2a138	add global --literal-pathspecs option	295	1.11
+e11dca10cfb3ef1e561c3e789b346a9719f0344a	completion: add and use --list-cmds=nohelpers	287	1.08
+44e1e4d67d5148c245db362cc48c3cc6c2ec82ca	git: run in a directory given with -C option	256	0.96
+087350398e8b2c5d4b39f051b23a2e533f4d830b	Merge branch 'nr/git-cd-to-a-directory'	233	0.87
+2c6b6d9f7d8a26b6ae6493584cc3d2a3cbae7358	help: make option --help open man pages only for Git commands	211	0.79
+8b1fa778676ae94f7a6d4113fa90947b548154dd	Allow passing of configuration parameters in the command line	210	0.79
+d8e96fd86d415554a9c2e09ffb929a9e22fdad25	git: use run_command() to execute dashed externals	198	0.74
+033fe3d92ca16c36fb45ed7cb58d42344088e7bd	git.c: provide setup_auto_pager()	192	0.72
+a633fca0c056aa221d23493c276d3713191621b3	Call setup_git_directory() much earlier	188	0.71
+a025463bc0ec2c894a88f2dfb44cf88ba71bb712	git alias: try alias last.	188	0.71
+90a462725ef3932a2408e78a47e3dfc1b8d445cf	stash: optionally use the scripted version again	187	0.7
+441981bc85ea2b648d7ffb2515b371071208e657	git: simplify environment save/restore logic	185	0.69
+1f9a980636d39c08c1cf1c13a6e6584d9d039e0e	Merge branch 'jk/maint-config-alias-fix'	180	0.68
+63ca1c099c36e61b0e9cd7fa0b912c0b9d89b628	git.c: simplify stripping extension of a file in handle_builtin()	172	0.65
+f3bb8b4b8452f1b7add220e787ef56c737ceff6a	Merge branch 'nd/setup'	169	0.63
+a907e1b6ec3038306df68dc1275edad7457bba4b	git.c: make autocorrected aliases work	165	0.62
+ee38dfb89ef88a3e4e6818b7cfe31d122a1c640d	git wrapper: allow setup_git_directory_gently() be called earlier	161	0.6
+8cc5b29065e19267cbc08b39c34674b02c2e3d59	git merge -X<option>	158	0.59
+7eff28a9b42cb0d3aad932338b2e645fc6ed8fa9	Disallow working directory commands in a bare repository.	157	0.59
+73903d0bcb00518e508f412a1d5c482b5094587e	help: mention -a and -g option, and 'git help <concept>' usage.	154	0.58
+7550be0a2bbf47aaa63c806bb5d7fcb8ab197cf8	Prepare execv_git_cmd() for removal of builtins from the filesystem	154	0.58
+506ee60d222f94a1598769feaba3b3621bd9fa1a	Merge branch 'ts/alias-of-alias'	154	0.58
+6035d6aad8ca11954c0d7821f6f3e7c047039c8f	fetch-pack: prepare updated shallow file before fetching the pack	153	0.57
+8893fd95b66cbd6566136a289dd05fcf4e547281	git: add hidden --list-builtins option	151	0.57
+83b0ecf333e518867935f6b12c18294a8a7f5017	git: read local config in --list-cmds	150	0.56
+6bb2dc0b9472a84c7d17ee93bda28a7c1c97d415	completion: implement and use --list-cmds=main,others	149	0.56
+1cd95087c331e17c44a8b62f0614d55e621dcfd4	Support "git cmd --help" syntax	149	0.56
+c4f901d1593f3ef097c3e73daa2847ed9ad9efe0	builtin: move builtin retrieval to get_builtin()	147	0.55
+dfd42a3c6281275b518f10938dcd858558cd82e3	Allow aliases to expand to shell commands	146	0.55
+2b296c93d49d65303a4ce291225c8755eeab1ff8	execv_dashed_external: use child_process struct	145	0.54
+850d2fec53ee188bab9e458f77906041ac7f1904	convert manual allocations to argv_array	143	0.54
+822a7d507151e1d6310f52d5b05234d65db11a88	Remove cmd_usage() routine and re-organize the help/usage code.	142	0.53
+93d935371654faf2956a4c37c1ca46f3195ee832	parse_pathspec: accept :(icase)path syntax	142	0.53
+27344d6a6c8056664966e11acf674e5da6dd7ee3	git: add --no-optional-locks option	140	0.53
+3c7777672bf9bc9ac2ddb422633b39af4faa1682	git: support --list-cmds=list-<category>	133	0.5
+47d0b4ff57f391786ed050f38c0de51462eda97a	Clean up internal command handling	132	0.5
+a9a60b94ccda5ff25faf51f39faeac11cac68346	git.c: handle_alias: prepend alias info when first argument is -h	132	0.5
+5ae50845d8a30d7db32e139ce04b712f9deb99cd	Merge branch 'pk/rebase-in-c'	131	0.49
+463a849d004b2a3f3c8254b1e7985d4e986b9f1a	Add and document a global --no-pager option for git.	130	0.49
+c6d75bc17a045af8cadd2dce982f5737a5ca38bb	alias: add support for aliases of an alias	129	0.48
+f3dd015c9147e3116fc1941d96f4dad38386b1db	Print a sane error message if an alias expands to an invalid git command	127	0.48
+c6127fa3e25551e969d775b0332d37dc84db1969	builtin/help.c: speed up is_git_command() by checking for builtin commands first	122	0.46
+7f51f8bc2b9d0556f2fbe20056e8fc8839766c99	alias: use run_command api to execute aliases	121	0.45
+6ed547b53b90bebd2371b086b83b416b22b243b2	Merge branch 'js/ref-namespaces'	116	0.44
+b7d9681974e61959f10c7b2c1063b7781c5b904e	Print info about "git help COMMAND" on git's main usage pages	115	0.43
+86d26f240fcb4f287258ad459efc2b5e30e60cfd	setup.c: re-fix d95138e (setup: set env $GIT_WORK_TREE when ..	109	0.41
+246f0edec0b789ccfeebcf7fef85417b7cb04425	execv_dashed_external: stop exiting with negative code	105	0.39
+b0fa7ab51b29d34579d8f6bb4443dfbcb8278c7a	git: add --no-replace-objects option to disable replacing	102	0.38
+511707d42b3b3e57d9623493092590546ffeae80	use only the $PATH for exec'ing git commands	102	0.38
+e8cc9cd98e2ecd7fd8bb03e725d470405c8e2b94	Builtin git-diff-files, git-diff-index, git-diff-stages, and git-diff-tree.	97	0.36
+89a56bfbd3fd855cb0c2a381520e6255de41a55e	add --html-path to get the location of installed HTML docs	95	0.36
+575ba9d69d5dfd07d95343fe946a5991c4cb27d6	GIT_TRACE: show which built-in/external commands are executed	95	0.36
+9509af686bffdbd7c3f17faf3c07d2034d480ffc	Make git-revert & git-cherry-pick a builtin	92	0.35
+a87cd02ce02e97083eb76eb8b9bfeb2e46800fd7	Nicer output from 'git'	88	0.33
+c321f00d09f56dcf2f149757a2a337f3732f3097	Keep "git --git-dir" from causing a bus error.	87	0.33
+7ae3df8c0aa3b7337ae9ac7b6184ac05985bf996	Use new semantics of is_bare/inside_git_dir/inside_work_tree	80	0.3
+bd30c2e48432c692f9e77d3529c9cf25117066bb	pathspec: support :(glob) syntax	80	0.3
+cf32190aa6966dea519e77cdcc80b87026beb3b4	git.c: execution path	80	0.3
+3d7e2d857a570b1d6368285f95b67994fc95629e	"git" returns 1; "git help" and "git help -a" return 0	79	0.3
+55d1932bce99d83fa0d891331fe3f3562d33af2e	Merge branch 'cr/tag'	78	0.29
+c409824cc2abac46e06091fcb29639b048d23b5d	git.c: let builtins opt for handling `pager.foo` themselves	77	0.29
+6476b38b1f3d258006566c3c9c6c80cc07fda354	replace: use a GIT_NO_REPLACE_OBJECTS env variable	77	0.29
+6532f3740b1c228c0a2a03a4126f4f7e4f2d73e7	completion: allow to customize the completable command list	76	0.29
+b4dfefe00f7035140b7a10e855a665c1347cacd6	Make fsck and fsck-objects be builtins.	76	0.29
+a9bcf6586d1a4888aea91553d73cda20494b8335	alias: use the early config machinery to expand aliases	73	0.27
+e1b3a2cad79a8138d18593c6eb3c46906ad2ee42	Build-in merge-recursive	73	0.27
+0227f9887bcc158dcd22ac4f60e5e428b259dd2d	git: Try a bit harder not to lose errno in stdio	70	0.26
+6d87780399e1196932cd5ea72f84aa90224e7402	git: avoid magic number with skip_prefix	70	0.26
+3301d36b29467a05107340e4d9688ebf74335021	completion: add and use --list-cmds=alias	68	0.26
+1736855c9b59ac787af979a44840a58361cbaf66	Add merge-subtree back	68	0.26
+f5bbc3225c4b073a7ff3218164a0c820299bc9c6	Port git commit to C.	67	0.25
+c0562611c525bb3c564b79c345fc7e4f9e799e54	git potty: restore environments after alias expansion	66	0.25
+8616a2d0cb57865540f1c00ac2e5385a6cc5d84e	block alloc: add validations around cache_entry lifecyle	66	0.25
+7dbc2c0402d728a206d4f1bc59729bf3a5cc4455	git wrapper: basic fixes.	65	0.24
+c00ba2233ef7dcfa478068c75bc4b25a7ac2a0a8	Sync 'ds/multi-pack-index' to v2.19.0-rc0	65	0.24
+53a1116c611e9e717d90e1406b29d97648460773	update-server-info: make builtin, use parseopt	62	0.23
+5786f4fac7afa881a306e2b771a0307e4ee05384	Merge branch 'as/autocorrect-alias'	62	0.23
+6854a8f5c9ecf32f5bd85020e77d48d3ffdf48fc	common-main: stop munging argv[0] path	62	0.23
+9590b041ea464c46d5a6811df5bce83c5dd4d457	Builtins: control the use of pager from the command table.	61	0.23
+55071ea248ef8040e4b29575376273e4dd061683	rebase: start implementing it as a builtin	61	0.23
+65e1449614d3af34a022007cd335d0e563dea721	Merge branch 'sb/submodule-helper'	60	0.23
+783cfafb91538c178d78a9f6c7b609e4f06582f8	Merge branch 'cc/replace'	59	0.22
+782c2d65c24066a5d83453efb52763bc34c10f81	Build in checkout	59	0.22
+4557f1add261b70887136498084e7491a3f9535f	rebase--helper: add a builtin helper for interactive rebases	59	0.22
+1bc01efed17c751e98fd6c5f9889759bfa9a8e9b	upload-archive: use start_command instead of fork	58	0.22
+3473ad0cf6c90917813aba978dada6c10352baaa	checkout: don't require a work tree when checking out into a new one	56	0.21
+92058e4d3e032714da6d2df5fa1fe2cf612979a5	support pager.* for external commands	56	0.21
+70b006b9712b57741ec1320b15aef2f8b1d6a905	Tie it all together: "git log"	55	0.21
+377d0276ca7446ce9fb2f6987b1e6b4ba9e7cf29	make "git pack-redundant" a built-in	54	0.2
+7ae0b0cb65f069b657155abcb6aa6780b93ce881	git-log (internal): more options.	53	0.2
+113f10f22f4b3b599e44e192e241e0bace9cc39e	Make git-clean a builtin	53	0.2
+226ad3482ac506af0eadd04e732dda556fda80e4	builtin: add git-check-mailmap command	52	0.2
+39177c7f184b4c07a1f53f99f59c920c3fb6222d	Merge branch 'mg/verify-commit'	52	0.2
+030149a4dcd584f6b47221f5b087d081e582d790	git --paginate: paginate external commands again	51	0.19
+dc4179f9a76473176eb473f6f568b0006c823fba	maint: check return of split_cmdline to avoid bad config strings	51	0.19
+1e1ea69fa4e5fb20baefe9e5422527e971d56a86	pull: implement skeletal builtin pull	51	0.19
+11920d28da1ac1b65eb4041c1b7355924e5d1366	Add a built-in alias for 'stage' to the 'add' command	51	0.19
+f2dd8c3799ddbd7df63a89a9043916f8545a70a3	git: add --info-path and --man-path options	49	0.18
+1bf072e3661eeef8d9721079a332e804b5678c7e	bisect--helper: implement "git bisect--helper"	49	0.18
+77cb17e940c806a4cc811bfd66187277b729a1e7	Exec git programs without using PATH.	48	0.18
+fc045fe7d4fa220f19274715c936636fe0516ea3	Mark messages for translations	48	0.18
+ae021d87911da4328157273df24779892cb51277	use skip_prefix to avoid magic numbers	48	0.18
+6ce4e61f1be690681f6494eb5ca26540c2316f81	Trace into a file or an open fd and refactor tracing code.	48	0.18
+3eefc189172b88dece6fb6d479b3ed13cc483dbc	Tentative built-in format-patch.	48	0.18
+acca687fa9db8eaa380b65d63c3f0d4364892acf	git-pickaxe: retire pickaxe	48	0.18
+f2dc849e9c5fe363ad089f6c3f2b7b3d79fd6a6f	Add 'git fast-export', the sister of 'git fast-import'	48	0.18
+0ecace728f8e48b87f81433b053d7f277f22e674	make "merge-index" a built-in	48	0.18
+b53258182bf90b4fb922a20d164a02e6f0e9afd1	make "git unpack-file" a built-in	48	0.18
+5135d1c3d2a2c8c6c9701bd0cbcf57ce587f750d	Merge branch 'nd/clear-gitenv-upon-use-of-alias'	47	0.18
+9370bae2cef351617272aa142fbe4ce039833d13	Make git-check-format-ref a builtin.	47	0.18
+d0bfd026a8241d544c339944976927b388d61a5e	Add basic infrastructure to assign attributes to paths	46	0.17
+2d4177c01c238071777db5b1fbd8a14efb62ce02	Make fetch-pack a builtin with an internal API	46	0.17
+3f784a4dcbe270a1f48b23177917a1832a777d1c	git.c: consistently use the term "builtin" instead of "internal command"	46	0.17
+7cf16a14f5c070f7b14cf28023769450133172ae	handle_alias: provide GIT_PREFIX to !alias	45	0.17
+b7786bb4b09463641f3e39eca18aefc630ee4f38	Merge branch 'js/difftool-builtin'	45	0.17
+6441363079d85cf17aee21b8925e9745c8abda16	Make git-unpack-objects a builtin	45	0.17
+281e67d6fa8e523147792c17fbe6db03f13f72e1	Fix usage string to match that given in the man page	44	0.17
+47e5c0ca2cabb406518dda5c09432dc996f7ef2b	Save errno in handle_alias()	44	0.17
+e414156ab6e7869b29622ee3439e3c91361f5b0e	Make git-checkout-index a builtin	44	0.17
+7e29b8254f08af820b2f0c3770836638ffe517ab	Add column layout skeleton and git-column	44	0.17
+e1e22e37f47e3f4d741d28920e1d27e3775c31ad	Start handling references internally as a sorted in-memory list	44	0.17
+96249c04c07f00485a3ed1052ff10b27ab147fc5	Build-in send-pack, with an API for other programs to call.	44	0.17
+39345a216ff37bda9fb7cec85f6de44069f5205d	Add git-upload-archive	43	0.16
+85fb65ed6e41e93760a91b33b512d3d9dc67ac66	"git -p cmd" to page anywhere	42	0.16
+a39b15b4f6a3f08b67b17d968935d177821e680f	Merge branch 'as/check-ignore'	42	0.16
+e861ce1692fa9809f3e7b898804f8ddaf7cd8975	Merge branch 'jc/bare'	42	0.16
+e9800b28c24465377dc2b8e26b322d362912647c	Merge branch 'jc/lt-ref2-with-lt-refs' into jc/ref-locking	42	0.16
+d820f918711446a74cc74577f6f2535a78752708	Merge branch 'jc/count'	41	0.15
+00449f992b629f7f7884fb2cf46ff411a2a4f381	Make git-fmt-merge-msg a builtin	41	0.15
+1c7b76be7d620bbaf2e6b8417f04012326bbb9df	Build in merge	41	0.15
+5d4a60033543e063bc9d77ca957de0187fb58fb3	Make git-pack-objects a builtin	41	0.15
+53bb2c002a53cdd0746444defbf5323ea21eb8d5	Make git-prune-packed a builtin	41	0.15
+348ae56cb2266d3294611112ae0368386124d720	Introduce `range-diff` to compare iterations of a topic branch	41	0.15
+640ce1052bbd6a8f1dd4d58beaa521d7592a0f02	Make git-symbolic-ref a builtin	41	0.15
+368aa52952deb631b38a89837c4abbb00c5261c1	add git-check-ignore sub-command	40	0.15
+73c2779f421fe1eaead6f1c07a0e134a9c17d6db	builtin-am: implement skeletal builtin am	40	0.15
+54b0c1e041e50cc08b1520b7d557770916d0b7ab	Add new "git replace" command	40	0.15
+fb3b7b1f95ce3c39f1116ebabf0bbcbfd3bb8796	Merge branch 'jk/alias-in-bare'	39	0.15
+be5908aed35d1c129f1ea38913b230ee1927361b	receive-pack: make it a builtin	39	0.15
+fefe81c9964a12394d6ea81ce474ff402f0eb070	Make git-update-index a builtin	39	0.15
+56532fa147d56057ad4121f5ccea8e254748afdd	Merge branch 'rs/cherry'	38	0.14
+633e3556ccbcc7e443f5e9194c4a830181696ef0	build-in git-mktree	38	0.14
+e8b4029f990907e24fac0e7772ee19ee6dd55c1c	Merge branch 'jc/fsck-reflog'	38	0.14
+211c89682eeef310f39022b91e88d07cd5784953	Make git-remote a builtin	38	0.14
+dec034a34e3887beaea9a7a390fd950346806c1e	Merge branch 'sb/repack-in-c'	38	0.14
+9def2138a17325c68961c3b1e6c967d33f28a4f1	Merge branch 'js/rerere'	38	0.14
+51ce34b9923d9b119ac53414584f80e05520abea	Builtin git-show-branch.	37	0.14
+6d96ac18e52aca19ff1087ffa64e2d616cc75c6f	Builtin git-commit-tree.	37	0.14
+b28a1ce04cdafbd3b470ec43c0f562054bd45d4d	make "git hash-object" a built-in	37	0.14
+2e3ed670eb09feffe847af55db38da3dcecc2a88	git-verify-pack: make builtin	37	0.14
+45b097947d6297a4b3f1016b05c66cdc15b411c2	Replace "GIT_DIR" with GIT_DIR_ENVIRONMENT.	36	0.14
+8aa8c1409774ba4fd718bfa9f7f667170aa3089b	git.c: mark more strings for translation	36	0.14
+b888d61c8308027433df9c243fa551f42db1c76a	Make fetch a builtin	36	0.14
+112dd5146589ecb76d52bf349bd51dbe2936e936	make "mktag" a built-in	36	0.14
+cd067d3bf4ea3f89969cd143be3e281e1c5ac58a	Builtin-ify git-notes	36	0.14
+0e5a7faa3a903cf7a0a66c81e20a76b91f17faab	Make "git reset" a builtin.	36	0.14
+ed10cb952d315ae47d2f7f6f29333a9ee227bf6b	serve: introduce git-serve	36	0.14
+3bb7256281bb1d291bb705a57dc3f30b26b7c127	make "index-pack" a built-in	35	0.13
+7499c996156ea99702fe13e203b97ae60d8868ad	Make git-stripspace a builtin	35	0.13
+ba1f5f353775ddbf97bc0d543888783630693023	Add builtin merge-file, a minimal replacement for RCS merge	35	0.13
+7f3ecebfcda9b32252a4791dc716c1e3d88c9f70	git-remote-ext	35	0.13
+8ed05fb5e90f8ad2051ff7071b7425a53c594892	Make git-write-tree a builtin	35	0.13
+854b4629f97fb216a91805706cd61b33beb49172	Make git-update-ref a builtin	35	0.13
+ad9ac6db5d58de08d0497b9184e86926377c20dd	split_cmdline: Allow caller to access error string	34	0.13
+358ddb62cfd03bba1ca2f1ae8e81b9510f42ea9a	Add "git show-ref" builtin command	34	0.13
+9f2de9c121c60cba9e55db5263a7bceffcd8fe2d	Merge branch 'kb/perf-trace'	34	0.13
+03a0fb0ccf48c831060c2243f830b6a12cd8fdf3	git.c: make usage match manual page	33	0.12
+895f10c3b596ef955c7f252717e5b4668530c569	Builtin git-rev-parse.	33	0.12
+8951d7c1f1ae38f34617b6c2490bf65e73e371f7	Build in ls-remote	33	0.12
+e690e84315de1bb806eb2292f8a87cbee30b75ab	Make git-mailsplit a builtin	33	0.12
+d6b64ed0f3549f56c4d948dc2c0f12abc52fd6c9	Make git-name-rev a builtin	33	0.12
+3a9ed4bdee5032ecb9328aea51a752d69a2d966e	git-remote-fd	33	0.12
+0305b636542c8c137ed7c82fee90db8d3621118c	Merge branch 'ei/worktree+filter'	32	0.12
+62b4698e551c29b3d2539a764ad0e93cfff53c03	Use angles for placeholders consistently	32	0.12
+e91ae32a01ffe294b8510c1d8cd7138493a0712f	Merge branch 'jk/skip-prefix'	32	0.12
+f789e347465dded7fcec3a605473fa3f549792d8	Remove git-annotate.perl and create a builtin-alias for git-blame	32	0.12
+d147e501f37a596e73a430ce46f125f83e06aa07	Builtin git-read-tree.	32	0.12
+b8ec59234ba2c1833e29eece9ed87f7a471cbae2	Build in shortlog	32	0.12
+10b15b86f545e081aebba8783ad9e9acf6bf0d98	git wrapper: more careful argument stuffing	32	0.12
+6adcca3fe84e6859fc62df6c4ab916192ca02795	Fix initialization of a bare repository	31	0.12
+f81daefe56b3c97b93a851e1ada14eeca0dea47a	Builtin git-cat-file	31	0.12
+0864f26421b3c599b462bc867de948d14b268d76	Builtin git-ls-files.	31	0.12
+34488e3c375d159506d5d98e012f3b36e7cd9fe7	Make git-mailinfo a builtin	31	0.12
+dedc0ec5d778214528dae3bddf60d77cfcde4bd4	make "git patch-id" a built-in	31	0.12
+f655651e09b9fa7bf8ff13f1b4a5b16c7956e4cf	Merge branch 'rs/strbuf-getcwd'	30	0.11
+6a536e2076f02a98e0d6403ff68f3acf717fa1c4	git: treat "git -C '<path>'" as a no-op when <path> is empty	30	0.11
+4ce58ee38de3ab0955b94946bfc339f387227223	commit-graph: create git-commit-graph builtin	30	0.11
+6757ada403bf0eb0fb1fddcffbbeb74d91cbbb51	Make gc a builtin.	30	0.11
+99caeed05d3e89176d352104a2b70a77aa7e5d81	Let 'git <command> -h' show usage without a git dir	29	0.11
+c3c8835fbb182d971d71939b9a3ec7c8b86d6caf	Builtin git-init-db	29	0.11
+aae01bda7f6d3224cf6b2ce0aa9aa668ce35d0b7	Builtin git-ls-tree.	29	0.11
+8a0fc8d19dff0c0ed09ce6656e353daf06c21892	stash: convert apply to builtin	29	0.11
+ba84a797e76c27932e0b317c7ce54925e81093f7	builtin "git prune"	28	0.11
+fa82bb70d9ef3acb6a47cddfb38a7b0ca40ac362	Merge branch 'jk/show-index'	27	0.1
+e30b2feb1b50c2d14d32dc3e6e41f7b20a677ff2	add 'git credential' plumbing command	27	0.1
+e0d10e1c63bc52b37bbec99b07deee794058d9b4	[PATCH] Rename git-repo-config to git-config.	27	0.1
+46df6906f3aaf74dafe2026b028c8c5c1a0d5f58	execv_dashed_external: wait for child on signal death	27	0.1
+7213c288187bd9ef1e32e4f86c20c55436f1ae90	git: add -P as a short option for --no-pager	26	0.1
+24ad8e0ce23d08d28a5d664ab6164b10125146ce	Merge branch 'jc/pickaxe'	26	0.1
+b467fb0b909883f28c4653361ccfa530ccf1a03e	Merge branch 'jk/diff'	26	0.1
+52ba03cbb1c718093946f5254187082bd7b32845	Built-in git-get-tar-commit-id	26	0.1
+515377ea9ec6192f82a2fa5c5b5b7651d9d6cf6c	"init-db" can really be just "init"	26	0.1
+6c6ea3800d1eace51994d90fbeb19ffe918e63b0	Merge branch 'sb/clean'	26	0.1
+5b84f4d87a1bd58c7540e9ea82ee3673ecddbad5	Built-in git-whatchanged.	26	0.1
+5f02274e4c4506b923b510a24da7991656f4db14	Merge branch 'pt/pull-builtin'	26	0.1
+9201c707426b3dc0c894775416f576c25c008d46	Const tightening.	25	0.09
+ac6245e31a359200b65bfdd910bba9a0fbe90c11	Builtin git-apply.	25	0.09
+8434c2f1afedb936e0ea8c07ce25733013c2f743	Build in clone	25	0.09
+dede29612a723a7da9f489fecbdf02500a018430	Merge branch 'ak/git-strip-extension-from-dashed-command'	25	0.09
+7752999cd6bbe1aff4e34f83ed078ffffc232667	Merge branch 'rv/alias-help'	25	0.09
+4dd47c3b867f51211d0dc4474dab0fee5ca614da	Refactor git_set_argv0_path() to git_extract_argv0_path()	25	0.09
+606ee4be54b5ef3c8593a71b4b1bd6b4ee2d323d	Merge branch 'js/info-man-path'	24	0.09
+f8adbec9feaa7a1ab9814db1115826e87033712e	cache.h: flip NO_THE_INDEX_COMPATIBILITY_MACROS switch	24	0.09
+907a7cb51c6c44d25f4c734a46d5174363190a84	make "git merge-tree" a built-in	24	0.09
+595d59e2b53a19f8c5c277348e4e1a07bb913ba4	git.c: ignore pager.* when launching builtin as dashed external	24	0.09
+f2054be4c4816d8c363dc867f462bc0af9031c02	Merge branch 'jc/builtin-n-tar-tree'	23	0.09
+2243d229f75be41318db8798fc90399dd6dedb42	Merge branch 'sb/unpack-trees-super-prefix'	23	0.09
+ba1d45051e050cbcf68ccccacea86a4b6ecde731	Tentative built-in "git show"	23	0.09
+55d128ae06b7b82f867961b677984620612a201c	Merge branch 'bw/grep-recurse-submodules'	23	0.09
+9bfa0f9be3e718f701200a242ea04259a4dc4dfc	Merge branch 'bw/protocol-v2'	23	0.09
+d3ba675aae3c6c5722ad15cd9d0f3b7634e976ce	Merge branch 'ml/trace'	22	0.08
+b49ef560ed66449d24a3fdfe25972c390bb44951	Merge branch 'ag/rebase-i-in-c'	22	0.08
+e36adf712251a19bd2ada0016764d340dfcf2ba0	Merge branch 'ps/stash-in-c'	22	0.08
+511a3fc116799df5e3b2262f8f6e501ca73ba2fe	wrap git's main usage string.	21	0.08
+73546c085d49694c5e54b421f80bde6bc25006fb	handle_options(): do not miscount how many arguments were used	21	0.08
+94351118c0a820002b093598e7fac5bdf3c0291f	make alias lookup a public, procedural function	21	0.08
+d74b541e0b40be0bf35e836bd8c6cbf653283d4b	branch: respect `pager.branch` in list-mode only	21	0.08
+32888b8fd56175f52f3139915d931f78d8c4ef89	config: respect `pager.config` in list/get-mode only	21	0.08
+7061cf0f205e86613c3a3306fdfedf2a5dcc8a65	Merge branch 'lt/setup' into __/setup-n-mv	21	0.08
+de121ffe57fd14334c24f0ac51dbc6828a3bc315	tag: respect `pager.tag` in list-mode only	21	0.08
+55b6745d633b9501576eb02183da0b0fb1cee964	make "git var" a built-in	21	0.08
+b2141fc1d20e659810245ec6ca1c143c60e033ec	config: don't include config.h by default	20	0.08
+a00a42ae33708caa742d9e9fbf10692cfa42f032	git-merge-ours: make it a builtin.	20	0.08
+b10edb2df55241b2e042b3d5473537904d09d193	Merge branch 'ds/commit-graph'	20	0.08
+bb1ab2db08f48add4236a5a9c08aa1a6aa4d5d48	Merge branch 'j6t/mingw'	20	0.08
+23326d14edbd16469453f6c3ecdd98ab90e6efb7	Windows: Strip ".exe" from the program name.	20	0.08
+65b5f9483eafea0ccdea59884da4e00e0cfeee1f	Move declaration for alias.c to alias.h	19	0.07
+773b69bf7189f5babb26b899b4c35f604cd993c7	shortlog: run setup_git_directory_gently() sooner	19	0.07
+5b6df8e45f31c7eb26c30536448cffe1b715e1ce	Handle invalid argc gently	19	0.07
+70827b15bfb11f7aea52c6995956be9d149233e1	Split up builtin commands into separate files from git.c	18	0.07
+fd5c363da4635d81f29193ae19d8fa7b5657ab39	builtin.h: Move two functions definitions to help.h.	18	0.07
+0d78153952e70c21e94dc6b7eefcb2ac5337a902	Do "git add" as a builtin	18	0.07
+d1ea896290629185dc0bf4efa3469b410bd41313	apply: run setup_git_directory_gently() sooner	18	0.07
+eb0224c617ba6b4299f2a9f85d6c4b3b5e10abc0	archive: read local configuration	18	0.07
+2cb60093e6c6b53cfc8ffe75f697386a1adab778	bundle: run setup_git_directory_gently() sooner	18	0.07
+3ba7e6e29afd67e69ff5963d8ed76728824959a0	config: run setup_git_directory_gently() sooner	18	0.07
+ff38d1a9953b3bce7741f8f962c5e067fda2d9ea	grep: run setup_git_directory_gently() sooner	18	0.07
+e0fce074fc4fdf2d2175ff97f1cc3db918ea87e9	index-pack: run setup_git_directory_gently() sooner	18	0.07
+f0ef6a6eff15a3df8dc9ec61d93e3f7e540ed0ac	ls-remote: run setup_git_directory_gently() sooner	18	0.07
+3f0ec0687d95e0f53c899f964d769ca1846874da	mailinfo: read local configuration	18	0.07
+253e772edeb56092e0fad43ec0640658671313c5	Merge branch 'maint'	18	0.07
+3668d4238314dc5db98de3034058f68ff57a6b1e	merge-file: run setup_git_directory_gently() sooner	18	0.07
+1c2b1f7018ba7d5f6a5d949e29e4eaeeef3261e2	Merge branch 'bw/ls-files-recurse-submodules'	18	0.07
+2bc8c1a8a6b1cdffc19badc7272f552302b79d3e	var: run setup_git_directory_gently() sooner	18	0.07
+43885c2a557871aedcbb1a412fc18e98c3dd1dc4	rename internal format-patch wip	17	0.06
+4465f410d6a8fa7abc5436aac6f58196f2b618d8	checkout-index needs a working tree	17	0.06
+4f38f6b5bafb1f7f85c7b54d0bb0a0e977cd947c	diff*: fix worktree setup	17	0.06
+0ac77ec3150f43a5c2a6b1e47e9db5aafe53fb72	run_command: report system call errors instead of returning error codes	17	0.06
+95c2b13a5fc06db6556def93843653e948e71e4b	Merge branch 'jk/common-main'	17	0.06
+2cd83d10bb6bcf768129e1c4e5a4dee4b6bcd27f	setup: suppress implicit "." work-tree for bare repos	16	0.06
+2756ca4347cbda05b16954cd7f445c216b935e76	use REALLOC_ARRAY for changing the allocation size of arrays	16	0.06
+9f613ddd21cbd05bfc139d9b1551b5780aa171f6	Add git-for-each-ref: helper for language bindings	16	0.06
+df0b6cfbda88144714541664fb501146d6465a82	worktree: new place for "git prune --worktrees"	16	0.06
+97fc6c5fbacc2181319bbd7e2faa8ac04476f862	git --help COMMAND brings up the git-COMMAND man-page.	15	0.06
+00624d608cc69bd62801c93e74d1ea7a7ddd6598	Merge branch 'sb/object-store-grafts'	15	0.06
+c91f0d92efb36d7b349f586cafafaf0e6ac3f5b2	git-commit.sh: convert run_status to a C builtin	15	0.06
+cee7f245dcaef6dade28464f59420095a9949aac	git-pickaxe: blame rewritten.	15	0.06
+4a164d48df6bb1b4a771741c63d4437fd2dca0bb	Merge branch 'jc/merge-base' (early part)	15	0.06
+c74320872b445104fe5c265e60785d9d26d94cc5	built-in count-objects.	15	0.06
+be8a90e59ce4c7603207a8255284fdbbffff1a2e	difftool: add a skeleton for the upcoming builtin	15	0.06
+f172f334fde49ce29d0afa21749bf85463a2db9a	git: s/run_command/run_builtin/	14	0.05
+4df096a5ca24f2f39042c51cf51b8a2bec66a2b5	Add git-archive	14	0.05
+ae533c4a92aef6ab180441dbb76ef83521fc87d6	Merge branch 'jm/cache-entry-from-mem-pool'	13	0.05
+8af84dadb142f7321ff0ce8690385e99da8ede2f	git wrapper: DWIM mistyped commands	13	0.05
+d824cbba02a4061400a0e382f9bd241fbbff34f0	Convert existing die(..., strerror(errno)) to die_errno()	12	0.05
+c31820c26b8f164433e67d28c403ca0df0316055	Make git-branch a builtin	12	0.05
+2e0afafebd8c5a1a8cdddb0714073461229ecfef	Add git-bundle: move objects and references by archive	12	0.05
+376bb3a352d6512a318706c2fba5737ffd7cc92b	Merge branch 'lt/dirwalk'	12	0.05
+217542640ed219c980fff2b3c307c4520120f20f	built-in tar-tree and remote tar-tree	12	0.05
+c9c6cc8d7db312b9e8502f8d55422b8309cde2f3	Merge branch 'maint'	12	0.05
+b02f5aeda6f66ac3be9b2e35f9b237d4f1f80d73	Merge branch 'jl/submodule-mv'	11	0.04
+a7412ae1342b09f16d659d75da5d25f137800a60	alias.c: mark split_cmdline_strerror() strings for translation	11	0.04
+96c48153c9a2905fb2f1d588c11e36272635cb79	Merge branch 'ml/worktree'	11	0.04
+1da1b3a3e06fdcbbd0b154a6930fc0261a5ee866	branch: work in subdirectories.	11	0.04
+8112894d82637c199294702942cac477b756b678	Make count-objects, describe and merge-tree work in subdirectory	11	0.04
+56d1398ad305498faf57d6e433f97ad393d7909e	Builtin git-tar-tree.	11	0.04
+fcab40a389e99786a8276108cdbc1cda8caf502f	Merge branch 'mv/merge-in-c'	11	0.04
+3ea3c215c02dc4a4e7d0881c25b2223540960797	Fix typos / spelling in comments	11	0.04
+5b6dedd6a0b7566f7e8466b6aefe8f019c52f5d3	annotate: make it work from subdirectories.	10	0.04
+1d541c120b4de5c70e73f8a20e1d961324cc55fe	shortlog: use pager	10	0.04
+52b70d56bd23811003a72866cc23a0a44b9da1b7	git log [diff-tree options]...	9	0.03
+ea77e675e564211513ebedb4f5bdcda482d7fd30	Make "git help" react to window size correctly	9	0.03
+d75307084da5f89329de190bb9b4a3196cec1d0e	remove trailing LF in die() messages	9	0.03
+102cb08521df5f33b30c0ef41a1078a61e593943	Merge branch 'master' into mk/rename	9	0.03
+68a2e6a2c80303144807c8c91a087427e3c8e727	Merge branch 'nd/multiple-work-trees'	9	0.03
+d7ed183a918bf6330d9036ca2d710d771b4b6198	Merge branch 'rt/help-unknown'	9	0.03
+59f0f2f33a420e9a14bb8cef20d38f508f0d098e	Refactor working tree setup	8	0.03
+8ab99476ec2298a43e94949e0bb7aa5125793a28	builtin-diff: call it "git-diff", really.	8	0.03
+efca578eec57869994da0982e05dcf1dee0bc213	Merge branch 'jc/grep'	8	0.03
+5fb61b8dcfdf7bcec0793c071813e255d1803859	Make "git rev-list" be a builtin	8	0.03
+27bd38d4e5a44da233a9e7d01c6a518aba355297	git.c: treat RUN_SETUP_GENTLY and RUN_SETUP as mutually exclusive	7	0.03
+cbd9fc2366abd6bd4bd3a544e2fe438b53ca0d2f	interpret-trailers: allow running outside a repository	7	0.03
+89d07f750a3f878c42b3de96ee93dc571b42b230	diff: don't run pager if user asked for a diff style exit code	7	0.03
+5709e0363a891b72eb9e9756d7fb121d9bf6a7c7	run_command: return exit code as positive value	7	0.03
+293b07f114796d39c5571d5fe4808e898e5af0c8	Fix 'git' wrapper usage string	6	0.02
+9665627d8cc6f0263f0019e92c67a38223804b57	i18n: help: mark strings for translation	6	0.02
+20de316e33446f37200e51aa333ba7d824dfd478	difftool: allow running outside Git worktrees with --no-index	6	0.02
+a2f8028d3d661b314d5a784764f2f5f9e4c2dde0	Make '!' aliases more useful	6	0.02
+59556548230e617b837343c2c07e357e688e2ca4	replace {pre,suf}fixcmp() with {starts,ends}_with()	6	0.02
+b72e90712eb0e802b232ad4c88460d04279c7111	Merge branch 'js/difftool-no-index'	6	0.02
+33ebb8717f15a85615f712df125c37737062e1b2	git wrapper: fix command name in an error message.	6	0.02
+ad5fe3771b50f3862130d150b5cc8bb316ef6f1c	grammofix in user-facing messages	5	0.02
+4a73aaaf18099ec1897330dd6c4a09f10ea2f573	patch-id: use RUN_SETUP_GENTLY	5	0.02
+da6bf70ebf7d485e3643ba3569962a4c08e37906	git: grok 'help' to mean '--help'.	5	0.02
+6e353a5e5de9da021c7c6c0bc2dc5f95a39900a1	Merge branch 'cc/bisect-filter'	5	0.02
+6634f05454662b62e1f34766d3684b99fb53ad66	trailer: add interpret-trailers command	5	0.02
+7559a1be8a0afb10df41d25e4cf4c5285a5faef1	unblock and unignore SIGPIPE	5	0.02
+4d3ab44d26c47d100cec39d0ef9ed9746eb7e454	use xgetcwd() to set $GIT_DIR	4	0.02
+2b64fc894dada0916558fd0bfd19c50631f978cb	pass "git -c foo=bar" params through environment	4	0.02
+53bbcfbde7c29611f16722c3fbcdb2b78718f633	rebase -i: implement the main part of interactive rebase as a builtin	4	0.02
+d8498500ba5cf348577202e0bb7810cbd68fa120	fix git alias	4	0.02
+71dfbf224ff980f4085f75868dc409118418731e	Make merge-base a built-in.	4	0.02
+755225de6ce4c7b39137afefb35208d0dbc14d9d	git builtin "push"	4	0.02
+131f0315c46c30d5a9e6743354808230cf4908c0	Merge branch 'pr/use-default-sigpipe-setting'	4	0.02
+477f2b41310c4b1040a9e7f72720b9c39d82caf9	git log --full-diff	4	0.02
+2cd72b0b290e40fb4d6a925ce26603503f01aa09	git_extract_argv0_path(): Move check for valid argv0 from caller to callee	4	0.02
+421a97694590c2be58f3ccebf301c7239289aa00	Translate git_more_info_string consistently	4	0.02
+f0853837d6ee69dccfa59222a0e869de94bdddc6	git-log: match rev-list --abbrev and --abbrev-commit	3	0.01
+069c053222bfc62a6522430a137e9b2c7ff36e4c	add GIT_SHALLOW_FILE to propagate --shallow-file to subprocesses	3	0.01
+67c116bb26b4ee31889e5ee15d6a9d3b7e972b7b	Merge branch 'jk/pager-with-external-command'	3	0.01
+6a2df51c848c86e5620dcdf1a0ee2de637937b77	shallow: add repository argument to set_alternate_shallow_file	2	0.01
+4264dc15e198bf9e9a2bb4ee897dd8e3eaabca47	git reflog expire	2	0.01
+9277d60233a1829742aa2d9d20ddbfc3b2b7acde	git --bare cmd: do not unconditionally nuke GIT_DIR	2	0.01
+e85dc0a3c7a3f4f8d5aade83fd340b8df73471cd	Accept git aliases outside a git repository	2	0.01
+6c8d06aff107aa2132648d682a278111c1d08565	git-push: allow pushing from subdirectories	2	0.01
+d9b814cc97f16daac06566a5340121c446136d22	Add builtin "git rm" command	2	0.01
+6a257f03ba9b86c744064d08df98db1847cf1722	multi-pack-index: add builtin	2	0.01
+f285a2d7ed6548666989406de8f0e7233eb84368	Replace calls to strbuf_init(&foo, 0) with STRBUF_INIT initializer	2	0.01
+d807c4a01db2b06db047fc6d5d18ac25c8f05bd7	exec_cmd: rename to use dash in file name	1	0.0
+4050c0df8ec7043315e2192695de432875239775	Clean up compatibility definitions.	1	0.0
+ef5ddb2fe0cdb3bd09acb7229512b6ae9193423f	Use PATH_MAX constant for --bare.	1	0.0
+e90fdc39b6903502192b2dd11e5503cea721a1ad	Clean up work-tree handling	1	0.0
+f4ed0af6e2762bc43de474d1fcaa2863b00268eb	Merge branch 'nd/columns'	1	0.0
+230f544e877641666f8c3718ac4563294c2b305e	Merge branch 'jc/diff'	1	0.0
+11529ecec914d2f0d7575e6d443c2d5a6ff75424	Merge branch 'jk/tighten-alloc'	1	0.0
+3f2e2297b9c88a6ab5fc4bff02cf2a07ce057589	add an extra level of indirection to main()	1	0.0
+89c8626557621ef000930da3c8a23fa03ad7e01a	submodule helper: support super prefix	1	0.0
+9d04401ffe18138138e8f765c2bb31420f3efe25	Merge branch 'cc/interpret-trailers'	1	0.0
+2ae68fcb785a617793813abcea19893e13e436b0	Make verify-tag a builtin.	1	0.0
