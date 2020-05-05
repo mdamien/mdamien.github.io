@@ -14,7 +14,44 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-3" style='text-align:right'>
-            <textarea class="form-control" id='editor' rows='20' style='margin:10px'></textarea>
+            <textarea class="form-control" id='editor' rows='20' style='margin:10px'>
+#Ontologie
+
+#Syntaxe:
+#relation: "noeud1 - relation - noeud2"
+#alias: nom_court: Nom long
+#note: NOTE nom du noeud: liens/texte/commentaires
+
+
+#relations
+num_dans_ville - concerne - sujet
+villes_num - concerne - sujet
+villes_co - concerne - sujet
+publicite - concerne - num_dans_ville
+transport - concerne - num_dans_ville
+habitat - concerne - num_dans_ville
+surveillance - concerne - num_dans_ville
+open_data - concerne - villes_num
+
+#- pub
+borne interactive - is_a - publicite
+tracking - is_a - publicite
+transport - has - publicite
+transport - has - Localisation GPS
+
+#alias
+sujet: Ville numerique, Villes connectees
+num_dans_ville: Le numerique dans la ville
+villes_num: Les villes en numerique
+villes_co: Villes connectees
+
+
+#notes
+NOTE villes_num: Note a propos de ce noeud
+NOTE open_data: Note a propose de l'open data
+
+
+            </textarea>
             <button onclick="build()" type="button" class="btn btn-lg btn-primary">Build</button>
         </div>
         <div class="col-md-9">
