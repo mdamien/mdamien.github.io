@@ -4,8 +4,8 @@ var context, gainNode, buffers = {};
 
 window.addEventListener("load",init);
 function init(){
-	context = new webkitAudioContext();
-	gainNode = context.createGainNode();
+	context = new AudioContext();
+	gainNode = context.createGain();
 	gainNode.gain.value = document.getElementById('volume').value;
 	gainNode.connect(context.destination);
 
@@ -38,7 +38,7 @@ function play(note,time){
 	var source = context.createBufferSource();
 	source.buffer = buffers[note];
 	source.connect(gainNode);
-	source.noteOn(context.currentTime + time);
+	source.start(context.currentTime + time);
 }
 
 
