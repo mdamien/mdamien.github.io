@@ -19,6 +19,7 @@
 <p>
   darkest green = 10+ contributions | lightest green = at least one contribution
 </p>
+<div id="viz">
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
 <script>
@@ -37,63 +38,10 @@ if (!queryDict["username"]) {
 
 document.getElementById("username").value = username
 
+
 var width = 960,
     height = 136,
     cellSize = 17;
-
-var color = d3.scaleQuantize()
-    .domain([0, 10])
-    .range("#1D9A6C #39A96B #56B870 #74C67A #99D492 #BFE1B0 #DEEDCF".split(' ').reverse());
-
-var svg = d3.select("body")
-  .selectAll("svg")
-  .data(d3.range(2005, 2021))
-  .enter().append("svg")
-    .attr("width", width)
-    .attr("height", height)
-  .append("g")
-    .attr("transform", "translate(" + ((width - cellSize * 53) / 2) + "," + (height - cellSize * 7 - 1) + ")");
-
-svg.append("text")
-    .attr("transform", "translate(-6," + cellSize * 3.5 + ")rotate(-90)")
-    .attr("font-family", "sans-serif")
-    .attr("font-size", 10)
-    .attr("text-anchor", "middle")
-    .text(function(d) { return d; });
-
-var rect = svg.append("g")
-    .attr("fill", "none")
-    .attr("stroke", "#ccc")
-  .selectAll("rect")
-  .data(function(d) { return d3.timeDays(new Date(d, 0, 1), new Date(d + 1, 0, 1)); })
-  .enter().append("rect")
-    .attr("width", cellSize)
-    .attr("height", cellSize)
-    .attr("x", function(d) { return d3.timeWeek.count(d3.timeYear(d), d) * cellSize; })
-    .attr("y", function(d) { return d.getDay() * cellSize; })
-    .datum(d3.timeFormat("%Y-%m-%d"));
-
-svg.append("g")
-    .attr("fill", "none")
-    .attr("stroke", "#000")
-  .selectAll("path")
-  .data(function(d) { return d3.timeMonths(new Date(d, 0, 1), new Date(d + 1, 0, 1)); })
-  .enter().append("path")
-    .attr("d", pathMonth);
-
-// generate grey blocks
-var data = {};
-var date = moment(new Date());
-date = date.add('1', 'day')
-while (date < moment('2021-01-01')) {
-  data[date.format('YYYY-MM-DD')] = 1
-  date = date.add('1', 'day')
-}
-
-rect.filter(function(d) { return d in data; })
-    .attr("fill", function(d) { return '#bbf'; });
-
-
 
 function pathMonth(t0) {
   var t1 = new Date(t0.getFullYear(), t0.getMonth() + 1, 0),
@@ -130,9 +78,87 @@ function loadData(page) {
 }
 loadData();
 
+function minYear() {
+  var min = null;
+  csv.forEach(line => {
+    date = moment(line.date);
+    if (min === null || date < min) {
+      min = date;
+    }
+  })
+  return min.year();
+}
+
+
+function maxYear() {
+  var max = null;
+  csv.forEach(line => {
+    date = moment(line.date);
+    if (max === null || date > max) {
+      max = date;
+    }
+  })
+  return max.year();
+}
+
 
 function updateViz() {
+  document.getElementById('viz').innerHTML = '';
 
+  var color = d3.scaleQuantize()
+      .domain([0, 10])
+      .range("#1D9A6C #39A96B #56B870 #74C67A #99D492 #BFE1B0 #DEEDCF".split(' ').reverse());
+
+  var svg = d3.select("#viz")
+    .selectAll("svg")
+    .data(d3.range(minYear(), maxYear() + 1))
+    .enter().append("svg")
+      .attr("width", width)
+      .attr("height", height)
+    .append("g")
+      .attr("transform", "translate(" + ((width - cellSize * 53) / 2) + "," + (height - cellSize * 7 - 1) + ")");
+
+  svg.append("text")
+      .attr("transform", "translate(-6," + cellSize * 3.5 + ")rotate(-90)")
+      .attr("font-family", "sans-serif")
+      .attr("font-size", 10)
+      .attr("text-anchor", "middle")
+      .text(function(d) { return d; });
+
+  var rect = svg.append("g")
+      .attr("fill", "none")
+      .attr("stroke", "#ccc")
+    .selectAll("rect")
+    .data(function(d) { return d3.timeDays(new Date(d, 0, 1), new Date(d + 1, 0, 1)); })
+    .enter().append("rect")
+      .attr("width", cellSize)
+      .attr("height", cellSize)
+      .attr("x", function(d) { return d3.timeWeek.count(d3.timeYear(d), d) * cellSize; })
+      .attr("y", function(d) { return d.getDay() * cellSize; })
+      .datum(d3.timeFormat("%Y-%m-%d"));
+
+  svg.append("g")
+      .attr("fill", "none")
+      .attr("stroke", "#000")
+    .selectAll("path")
+    .data(function(d) { return d3.timeMonths(new Date(d, 0, 1), new Date(d + 1, 0, 1)); })
+    .enter().append("path")
+      .attr("d", pathMonth);
+
+  // generate grey blocks
+  var data = {};
+  var date = moment(new Date());
+  date = date.add('1', 'day')
+  while (date < moment(maxYear() + '-01-01')) {
+    data[date.format('YYYY-MM-DD')] = 1
+    date = date.add('1', 'day')
+  }
+
+  rect.filter(function(d) { return d in data; })
+      .attr("fill", function(d) { return '#bbf'; });
+
+
+  // color the cells
   var data = d3.nest()
       .key(function(d) { return d.date; })
       .rollup(function(d) { return d.length; })
