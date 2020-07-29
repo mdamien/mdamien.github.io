@@ -112,7 +112,7 @@ var csv = [];
 
 function loadData(page) {
   d3.json(
-    `https://www.reddit.com/user/${username}/.json` + (page ? ("?after=" + page) : ''),
+    `https://cors-anywhere.herokuapp.com/https://www.reddit.com/user/${username}/.json` + (page ? ("?after=" + page) : ''),
     function(error, json) {
     if (error) throw error
 
