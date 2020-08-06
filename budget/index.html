@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Budget Tracker</title>
+</head>
+<body>
+<div id="app"/>
+<script src="https://cdn.jsdelivr.net/lodash/4/lodash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment-with-locales.min.js"></script>
+<script src="lys.js"></script>
+<script>
+function render() {
+  console.log(SPENDINGS)
+  var html = [
+    L.h1("Budget Tracker", { onClick: () => console.log("what")}),
+    L.p(L.i("Total: " + total(SPENDINGS) + "€")),
+    render_spending_form(today()),
+    render_dates()
+  ]
+  app.innerHTML = ""
+  app.appendChild(L.div(html))
+}
+
+function total(spendings) {
+  var total = 0;
+  spendings.forEach(s => total += s.amount)
+  return total
+}
+
+function render_dates() {
+  var grouped_by_date = group_by_date()
+  var dates = sort_dates(Object.keys(grouped_by_date))
+  return L.ul(
+       dates.map(date => render_date(date, grouped_by_date[date]))
+    )
+}
+
+function render_date(date, day_spendings) {
+  return L.li([
+    //"➡️",
+    render_date_for_human(date),
+    day_spendings.length > 0 ? [
+      ": ", total(day_spendings), "€"
+    ] : "",
+    render_spending_form(date),
+    render_date_spendings(day_spendings)
+  ])
+}
+
+function render_date_spendings(day_spendings) {
+  return L.ul(
+    day_spendings.map(
+      s => L.li(render_spending(s))
+    )
+  )
+}
+
+function render_spending(spending) {
+  return [
+    spending.description,
+    ": ",
+    spending.amount,
+    "€ ",
+    render_delete_button(spending),
+  ]
+}
+
+function render_delete_button(spending) {
+  return L.button({
+    onClick: () => delete_spending(spending)
+  }, "❎")
+}
+
+function delete_spending(spending) {
+  SPENDINGS = SPENDINGS.filter(
+    s => s.id != spending.id
+  )
+  save_to_local_storage()
+  render()
+}
+
+function render_spending_form(date) {
+  var input_date = L.input({
+    placeholder:"date",
+    value: date,
+    type: "date",
+  })
+  var input_description = L.input({
+    placeholder:"description"
+  })
+  var input_amount = L.input({
+    placeholder:"amount",
+    type: "number"
+  })
+  return L.p([
+    input_date,
+    ' ',
+    input_description,
+    ": ",
+    input_amount,
+    L.button({
+      onClick:
+        () => add_spending({
+          id: uuidv4(),
+          description: input_description.value,
+          amount: parseFloat(input_amount.value),
+          date: input_date.value,
+        })
+    }, "add")
+  ])
+}
+
+function uuidv4() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
+}
+
+function sort_dates(dates) {
+  return dates.sort().reverse()
+}
+
+function group_by_date() {
+  return _.groupBy(SPENDINGS, "date")
+}
+
+function render_date_for_human(date) {
+  return moment(date).format("dddd Do MMMM")
+}
+
+function today() {
+  return moment().format("YYYY-MM-DD")
+}
+
+function save_to_local_storage() {
+  localStorage.setItem("spendings",
+    JSON.stringify(SPENDINGS))
+}
+
+function load_from_local_storage() {
+  var spendings = localStorage.getItem("spendings")
+  if (spendings) {
+    SPENDINGS = JSON.parse(spendings)
+  } else {
+    SPENDINGS = []
+  }
+}
+
+function add_spending(spending) {
+  SPENDINGS.push(spending)
+  save_to_local_storage()
+  render()
+}
+
+var SPENDINGS;
+function main() {
+  load_from_local_storage()
+  render()
+}
+
+main()
+</script>
+</body>
+</html>
