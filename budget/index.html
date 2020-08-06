@@ -12,15 +12,22 @@
 <script src="lys.js"></script>
 <script>
 function render() {
-  console.log(SPENDINGS)
-  var html = [
+  var html = L.div({
+      style: {
+        "font-family": "sans-serif",
+        "max-width": "600px",
+        "margin": "auto",
+        "border": "1px solid black",
+        "padding": "10px",
+      }
+    }, [
     L.h1("Budget Tracker", { onClick: () => console.log("what")}),
     L.p(L.i("Total: " + total(SPENDINGS) + "€")),
     render_spending_form(today()),
     render_dates()
-  ]
+  ])
   app.innerHTML = ""
-  app.appendChild(L.div(html))
+  app.appendChild(html)
 }
 
 function total(spendings) {
@@ -44,16 +51,13 @@ function render_date(date, day_spendings) {
     day_spendings.length > 0 ? [
       ": ", total(day_spendings), "€"
     ] : "",
-    render_spending_form(date),
     render_date_spendings(day_spendings)
   ])
 }
 
 function render_date_spendings(day_spendings) {
   return L.ul(
-    day_spendings.map(
-      s => L.li(render_spending(s))
-    )
+    day_spendings.map(s => L.li(render_spending(s)))
   )
 }
 
@@ -74,9 +78,7 @@ function render_delete_button(spending) {
 }
 
 function delete_spending(spending) {
-  SPENDINGS = SPENDINGS.filter(
-    s => s.id != spending.id
-  )
+  SPENDINGS = SPENDINGS.filter(s => s.id != spending.id)
   save_to_local_storage()
   render()
 }
@@ -92,7 +94,10 @@ function render_spending_form(date) {
   })
   var input_amount = L.input({
     placeholder:"amount",
-    type: "number"
+    type: "number",
+    style: {
+      "max-width": "80px",
+    }
   })
   return L.p([
     input_date,
