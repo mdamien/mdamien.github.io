@@ -53,11 +53,16 @@ R._ = function () {
 }
 /* ---------------------------------------- */
 
+var SpendingContext = React.createContext({
+  addSpending: null,
+  deleteSpending: null,
+})
+
 class SpendingDeleteButton extends React.Component {
   render() {
-    return R.button({
-      onClick: () => this.props.deleteSpending(this.props.spending)
-    }, "❌")
+    return R.el(SpendingContext.Consumer, (context) => R.button({
+      onClick: () => context.deleteSpending(this.props.spending)
+    }, "❌"))
   }
 }
 
@@ -70,7 +75,6 @@ class Spending extends React.Component {
       '€ ',
       R.el(SpendingDeleteButton, {
         spending: this.props.spending,
-        deleteSpending: this.props.deleteSpending,
       })
     ])
   }
@@ -87,7 +91,6 @@ class SpendingsDate extends React.Component {
         this.props.spendings.map(
           spending => R.el(Spending, {
             spending: spending,
-            deleteSpending: this.props.deleteSpending,
           })
         )
       )
@@ -103,7 +106,6 @@ class Spendings extends React.Component {
       date => R.el(SpendingsDate, {
         date: date,
         spendings: grouped_by_date[date],
-        deleteSpending: this.props.deleteSpending,
       })
     ))
   }
@@ -119,7 +121,7 @@ class SpendingForm extends React.Component {
   }
 
   render() {
-    return R.p([
+    return R.el(SpendingContext.Consumer, (context) => R.p([
       R.input({
         type: "date",
         ref: this.date_ref,
@@ -139,7 +141,7 @@ class SpendingForm extends React.Component {
       ' € ',
       R.button({
         onClick: () => {
-          this.props.addSpending({
+          context.addSpending({
             id: uuidv4(),
             date: this.date_ref.current.value,
             description: this.description_ref.current.value,
@@ -147,7 +149,7 @@ class SpendingForm extends React.Component {
           })
         }
       }, "add")
-    ])
+    ]))
   }
 }
 
@@ -168,23 +170,28 @@ class App extends React.Component {
     save_to_local_storage(spendings)
   }
   render() {
-    return R.div({
-      style: {
-        "fontFamily": "sans-serif",
-        "maxWidth": "600px",
-        "margin": "auto",
-        "border": "1px solid black",
-        "padding": "10px",
+    return R.el(SpendingContext.Provider, {
+      value: {
+        addSpending: this.addSpending.bind(this),
+        deleteSpending: this.deleteSpending.bind(this),
       }
-    }, [
-      R.h1(`Budget Tracker`),
-      R.p(R.i("Total: " + total(this.state.spendings) + "€")),
-      R.el(SpendingForm, {addSpending: this.addSpending.bind(this)}),
-      R.el(Spendings, {
-        spendings: this.state.spendings,
-        deleteSpending: this.deleteSpending.bind(this)
-      })
-    ])
+    }, R.div({
+        style: {
+          "fontFamily": "sans-serif",
+          "maxWidth": "600px",
+          "margin": "auto",
+          "border": "1px solid black",
+          "padding": "10px",
+        }
+      }, [
+        R.h1(`Budget Tracker`),
+        R.p(R.i("Total: " + total(this.state.spendings) + "€")),
+        R.el(SpendingForm),
+        R.el(Spendings, {
+          spendings: this.state.spendings,
+        })
+      ])
+    )
   }
 }
 
