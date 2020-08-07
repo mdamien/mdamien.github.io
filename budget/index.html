@@ -11,6 +11,9 @@
 <script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment-with-locales.min.js"></script>
 <script src="lys.js"></script>
 <script>
+var SPENDINGS;
+var SELECTED_DATE = today();
+
 function render() {
   var html = L.div({
       style: {
@@ -74,7 +77,7 @@ function render_spending(spending) {
 function render_delete_button(spending) {
   return L.button({
     onClick: () => delete_spending(spending)
-  }, "❎")
+  }, "❌")
 }
 
 function delete_spending(spending) {
@@ -86,11 +89,17 @@ function delete_spending(spending) {
 function render_spending_form(date) {
   var input_date = L.input({
     placeholder:"date",
-    value: date,
+    value: SELECTED_DATE,
     type: "date",
+    onChange: () => {
+      SELECTED_DATE = input_date.value
+    }
   })
   var input_description = L.input({
-    placeholder:"description"
+    placeholder:"description",
+    style: {
+      "max-width": "80px",
+    }
   })
   var input_amount = L.input({
     placeholder:"amount",
@@ -160,7 +169,6 @@ function add_spending(spending) {
   render()
 }
 
-var SPENDINGS;
 function main() {
   load_from_local_storage()
   render()
