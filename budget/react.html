@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Budget Tracker</title>
+</head>
+<body>
+<div id="app"/>
+<script src="https://cdn.jsdelivr.net/lodash/4/lodash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment-with-locales.min.js"></script>
+
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+<script>
+/* ---------------lys-react----------------------- */
+var isObject = function (a) {
+    return (!!a) && (a.constructor === Object)
+}
+
+var R = {}
+
+R.el = function (el, content, attrs) {
+  if (isObject(content) && !React.isValidElement(content)) {
+    var attrs_tmp = content
+    content = attrs
+    attrs = attrs_tmp
+  }
+
+  attrs = attrs || {}
+  attrs['key'] = uuidv4()
+
+  return React.createElement(el, attrs, content);
+}
+
+function uuidv4() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
+}
+
+var html_elements = "a,abbr,address,area,article,aside,audio,b,base,bdi,bdo,blockquote,body,br,button,canvas,caption,cite,code,col,colgroup,data,datalist,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,head,header,hgroup,hr,html,i,iframe,img,input,ins,kbd,label,legend,li,link,main,map,mark,menu,meta,meter,nav,noscript,object,ol,optgroup,option,output,p,param,picture,pre,progress,q,rp,rt,ruby,s,samp,script,section,select,slot,small,source,span,strong,style,sub,summary,sup,table,tbody,td,template,textarea,tfoot,th,thead,time,title,tr,track,u,ul,var,video,wbr"
+html_elements.split(',').forEach(el => {
+  R[el] = function (content, attrs) {
+    return R.el(el, content, attrs)
+  }
+})
+
+R._ = function () {
+  return R.el(React.Fragment, Array.from(arguments))
+}
+/* ---------------------------------------- */
+
+class SpendingDeleteButton extends React.Component {
+  render() {
+    return R.button({
+      onClick: () => this.props.deleteSpending(this.props.spending)
+    }, "❌")
+  }
+}
+
+class Spending extends React.Component {
+  render() {
+    return R.li([
+      this.props.spending.description,
+      ': ',
+      this.props.spending.amount,
+      '€ ',
+      R.el(SpendingDeleteButton, {
+        spending: this.props.spending,
+        deleteSpending: this.props.deleteSpending,
+      })
+    ])
+  }
+}
+
+class SpendingsDate extends React.Component {
+  render() {
+    return R.li([
+      moment(this.props.date).format("dddd Do MMMM"),
+      ': ',
+      total(this.props.spendings),
+      '€',
+      R.ul(
+        this.props.spendings.map(
+          spending => R.el(Spending, {
+            spending: spending,
+            deleteSpending: this.props.deleteSpending,
+          })
+        )
+      )
+    ])
+  }
+}
+
+class Spendings extends React.Component {
+  render() {
+    var grouped_by_date = _.groupBy(this.props.spendings, "date")
+    var dates = Object.keys(grouped_by_date).sort().reverse()
+    return R.ul(dates.map(
+      date => R.el(SpendingsDate, {
+        date: date,
+        spendings: grouped_by_date[date],
+        deleteSpending: this.props.deleteSpending,
+      })
+    ))
+  }
+}
+
+
+class SpendingForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.date_ref = React.createRef();
+    this.description_ref = React.createRef();
+    this.amount_ref = React.createRef();
+  }
+
+  render() {
+    return R.p([
+      R.input({
+        type: "date",
+        ref: this.date_ref,
+        defaultValue: moment().format("YYYY-MM-DD"),
+      }),
+      ' ',
+      R.input({
+        placeholder:"description",
+        ref: this.description_ref,
+      }),
+      ' : ',
+      R.input({
+        placeholder:"amount",
+        type: "number",
+        ref: this.amount_ref,
+      }),
+      ' € ',
+      R.button({
+        onClick: () => {
+          this.props.addSpending({
+            id: uuidv4(),
+            date: this.date_ref.current.value,
+            description: this.description_ref.current.value,
+            amount: parseFloat(this.amount_ref.current.value),
+          })
+        }
+      }, "add")
+    ])
+  }
+}
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {spendings: load_from_local_storage()};
+  }
+  addSpending(spending) {
+    var spendings = this.state.spendings;
+    spendings.push(spending);
+    this.setState({spendings: spendings})
+    save_to_local_storage(spendings)
+  }
+  deleteSpending(spending) {
+    var spendings = this.state.spendings.filter(s => s.id != spending.id);
+    this.setState({spendings: spendings})
+    save_to_local_storage(spendings)
+  }
+  render() {
+    return R.div({
+      style: {
+        "fontFamily": "sans-serif",
+        "maxWidth": "600px",
+        "margin": "auto",
+        "border": "1px solid black",
+        "padding": "10px",
+      }
+    }, [
+      R.h1(`Budget Tracker`),
+      R.p(R.i("Total: " + total(this.state.spendings) + "€")),
+      R.el(SpendingForm, {addSpending: this.addSpending.bind(this)}),
+      R.el(Spendings, {
+        spendings: this.state.spendings,
+        deleteSpending: this.deleteSpending.bind(this)
+      })
+    ])
+  }
+}
+
+
+function total(spendings) {
+  var total = 0;
+  spendings.forEach(s => total += s.amount)
+  return total
+}
+
+function save_to_local_storage(spendings) {
+  localStorage.setItem("spendings",
+    JSON.stringify(spendings))
+}
+
+function load_from_local_storage() {
+  var spendings = localStorage.getItem("spendings")
+  if (spendings) {
+    return JSON.parse(spendings)
+  } else {
+    return []
+  }
+}
+
+ReactDOM.render(
+  R.el(App),
+  document.getElementById('app')
+);
+
+</script>
+</body>
+</html>
