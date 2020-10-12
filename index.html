@@ -1,61 +1,10 @@
-<meta charset="utf-8"><body style="background:black;color:grey;font-size: 1.9rem;"><style>a { color: inherit; }</style>
-<div style="position: fixed;bottom: 0;left: 0;width: 50px;height: 100%;">
-    <canvas style="background: grey; height: 100%; width: 100%"></canvas>
-</div>
-<pre style="margin-left: 50px">
-damien@dam.io - <a href="cv.pdf">Curriculum Vitae.pdf</a>
+<meta charset="utf-8"><body style="background:black;color:grey;font-size: 1.2rem;"><style>a { color: inherit; }</style>
+<pre>
+damien@dam.io
+github.com/mdamien
+dam.io/cv.pdf
+@dam_io
 
-<u># Big and small projects</u>
-<small>
-- <a href="https://github.com/mdamien/python-3v4l">python-3v4l</a>: Web interface to compare the output of a python script in many versions of python
-  <small>Code is run inside docker containers, built with Django</small>
-
-- <a href="http://dam.io/dishwasher-simulator/">Dishwasher Simulator</a>: A little game where you have to do the dishwasher
-
-- <a href="https://github.com/mdamien/wikidiff2-git-viewer">wikidiff2-git-viewer</a>
-
-- <a href="https://github.com/regardscitoyens/pjl-retraites">pjl-retraites</a>: Improve readability of the new law in the making about retirement
-
-- <a href="https://github.com/mdamien/twitter-followers-network">Twitter Followers network</a>: Make a network of twitter followers for a specific account
-  Examples: <a href="http://dam.io/twitter-followers-network/dam_io/">@dam_io</a>, <a href="http://dam.io/twitter-followers-network/medialab_ScPo/">@medialab_ScPo</a>, <a href="http://dam.io/twitter-followers-network/anvaka/">@anvaka</a>
-
-- <a href="https://nbviewer.jupyter.org/github/mdamien/GOG-map/blob/master/carte.ipynb">Game recommendation on GOG.com</a>
-
-- *** <a href="https://pypi.org/project/git-word-blame/">git-word-blame</a>: Show word-by-word authors of a file
-
-- <a href="https://framagit.org/mdamien/wiki2git">wiki2git</a>: Convert a MediaWiki article into a git repository
-
-- <a href="http://dam.io/133/">133</a>: My own version of the game Dobble with 12 symbols per card, <a href="https://dam.io/dobble.pdf">printable at home</a>
-
-- *** <a href="https://lafabriquedelaloi.fr">lafabriquedelaloi.fr</a>: Contributed to this website to make the law-making process easier to follow
-
-- <a href="https://gist.github.com/mdamien/7b71ef06f49de1189fb75f8fed91ae82">Find all the broken links on a website</a>
-
-- *** <a href="https://linkage.fr">linkage.fr</a>: Research demonstration website of a novel method of graph clustering
-
-- <a href="https://pypi.org/project/django-admin-gitlog/">django-admin-gitlog</a>: Display a `git log` in your admin
-
-- <a href="https://web.archive.org/web/20200330043502/https://crx.dam.io/">Chrome Extensions Archive</a>
-
-- *** <a href="https://pypi.org/project/lys/">lys</a>: HTML templating for Python
-
-- <a href="https://dam.io/fun/bike.html">bike.html</a>: Yet another little game, warning: last level is super-hard
-
-- <a href="https://dam.io/mt10">MT10</a>: A demonstration of concepts teached in the crypto course of my university
-
-- <a href="https://dam.io/IC01">IC01</a>: Automatic summarization of student notes of a philosophy course
-
-- <a href="https://dam.io/carrot">Carrot</a>: A little game for my ex-girlfriend
-
-- <a href="https://dam.io/fun/pony">Pony</a>: Make music in the browser
-
-- <a href="https://dam.io/fun/keepmoving">Keep moving</a>: A little game
-
-- *** <a href="https://dam.io/real">Real</a>: A game where you play on drawings and you can make you own level on your own drawing
-
-
-</small>
-----------------------------------------------------
  __________________________________________________
 ( Excusez moi ! J'ai oublié que j'étais amnésique. )
 (         -+- Devise Shadok -+-                    )
@@ -66,36 +15,3 @@ damien@dam.io - <a href="cv.pdf">Curriculum Vitae.pdf</a>
   \/ __ .- |
    // //  @
 
-<script>
-var canvas = document.querySelector('canvas')
-
-function fitToContainer(canvas){
-    canvas.width  = canvas.offsetWidth
-    canvas.height = canvas.offsetHeight
-}
-window.onresize = fitToContainer.bind(null, canvas)
-fitToContainer(canvas)
-
-mousePos = {
-    x: 0,
-    y: 0
-}
-
-function draw(){
-    var ctx = canvas.getContext('2d')
-    ctx.clearRect(0,0,canvas.width,canvas.height)
-    ctx.fillStyle = 'white'
-    ctx.fillRect(0, Math.floor(mousePos.y / 20)*20, 50, 10)
-    window.requestAnimationFrame(draw)
-}
-window.requestAnimationFrame(draw);
-
-function handleMouseMove(event) {
-    console.log(event)
-    mousePos = {
-        x: event.clientX,
-        y: event.clientY
-    }
-}
-document.onmousemove = handleMouseMove
-</script>
