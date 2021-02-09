@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Liste des adresses mails de tout les députés</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/lumen/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a href="/" class="navbar-brand">Liste des adresses mails de tout les députés</a>
+        <small>via NosDéputés.fr</small>
+      </div>
+    </div>
+
+    <div class="container">
+      <pre id="mails">Chargement...
+      </pre>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script type="text/javascript">
+      Papa.parse("https://nosdeputes.fr/deputes/csv", {
+        download: true,
+        header: true,
+        complete: function(results) {
+          var output = "";
+          results.data.forEach(result => {
+            if (result.ancien_depute == "1") {
+              return
+            }
+            if (!result.emails) {
+              console.log('no email', result);
+              if (result.prenom) {
+                result.emails = result.prenom + '.' + result.nom_de_famille + "@assemblee-nationale.fr";
+              } else {
+                return;
+              }
+            }
+            var mails = result.emails.split('|');
+            var mail = mails.filter(mail => mail.indexOf('@assemblee-nationale.fr') !== -1)[0]
+            output += mail + '\n';
+          });
+          mails.innerHTML = output;
+        }
+      });
+    </script>
+  </body>
+</html>
